@@ -502,7 +502,7 @@ var bioData_en = [
             'Junky',
             'Kind of goofy',     
             'Get excited easily',
-            'Has tremendous strength',
+            'Has destructive strength',
             'Actually kind of rich'
         ],
         outfits:[
