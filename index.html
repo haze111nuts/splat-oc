@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+    <head> 
+		<meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <title>Squid stuff</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Haze's Splatoon OC profile dump" />
+		
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+		<script type="text/javascript" src="scripts/mainScript.js" ></script>
+		<link rel="stylesheet" type="text/css" href="styles/style.css" />
+    </head>
+    <body>
+		<div class="md-modal md-window" id="modal-blur">
+			<div id="charaBio" class="md-content">
+				<div class="bioArt"></div>
+				<div class="bioCloseBT md-close">
+					<svg viewBox="0 0 30 30" width="90" height="90">
+					  <path fill="#fff"  d="M7 4a.995.995 0 0 0-.707.293l-2 2a.999.999 0 0 0 0 1.414L11.586 15l-7.293 7.293a.999.999 0 0 0 0 1.414l2 2a.999.999 0 0 0 1.414 0L15 18.414l7.293 7.293a.999.999 0 0 0 1.414 0l2-2a.999.999 0 0 0 0-1.414L18.414 15l7.293-7.293a.999.999 0 0 0 0-1.414l-2-2a.999.999 0 0 0-1.414 0L15 11.586 7.707 4.293A.996.996 0 0 0 7 4z"/>
+					</svg>			
+				</div>
+				<div class="bioHeader"></div>
+				<div class="bioOutfits">
+					<ul class="outfitSelect">
+					</ul>
+				</div>
+				<div class="bioBasic">
+				</div>
+				<div class="bioDetail">
+
+				</div>
+				
+			</div>
+		</div>
+
+		<div class="container">
+			<div id="chartNav">
+				<div id="langSwitch">中文</div>
+			</div>
+			<div class="chartWrapper">
+				<svg id="chartSVG" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+					<path id="line_HM" class="basePath" d="M174.848 274.191 537.473 69H625" fill="none" stroke="#fff" stroke-width="1"/>
+					<path id="line_EM" class="basePath" d="M775 69h33.303v246.157H775" fill="none" stroke="#fff" stroke-width="1"/>				
+					<path id="line_BM" class="basePath" d="m625 131.072-161.518 110.76" fill="none" stroke="#fff" stroke-width="1"/>
+					<path id="line_SB" class="basePath" d="M495 284.053 621.681 210H835" fill="none" stroke="#fff" stroke-width="1"/>
+					<path id="line_EX" class="basePath" d="M775 335h51.51v180" fill="none" stroke="#fff" stroke-width="1"/>
+					<path id="line_EB" class="basePath" d="M494.775 334.215h130" fill="none" stroke="#fff" stroke-width="1" transform="translate(.225 .785)" />
+					<path id="line_HB" class="basePath" d="M174.254 333.247h170" fill="none" stroke="#fff" stroke-width="1" transform="translate(.746 1.753)" />
+					<path id="line_EA" class="basePath" d="m675.083 410-85.792 105" fill="none" stroke="#fff" stroke-width="1"/>
+					<path id="line_XB" class="basePath" d="M495.625 350.722 770 556.513" fill="none" stroke="#fff" stroke-width="1"/>
+					<path id="line_AB" class="basePath" d="m461.838 410 70.692 105" fill="none" stroke="#fff" stroke-width="1"/>
+					<path id="line_YB" class="basePath" d="m369.373 410-59.582 109.688" fill="none" stroke="#fff" stroke-width="1"/>
+					<path id="line_LB" class="basePath" d="M345 360.558 140.864 515" fill="none" stroke="#fff" stroke-width="1"/>
+					<path id="line_LH" class="basePath" d="M91.564 410v105" fill="none" stroke="#fff" stroke-width="1"/>
+					<path id="line_SA" class="basePath" d="M630 585.714h20.509L887.959 310" fill="none" stroke="#fff" stroke-width="1"/>
+					<path id="line_YA" class="basePath" d="M365.392 623.802H478.99" fill="none" stroke="#fff" stroke-width="1" transform="matrix(1.01235 0 0 1 -4.903 1.198)" />
+					<path id="line_XA" class="basePath" d="M630 623.043h135" fill="none" stroke="#fff" stroke-width="1" transform="translate(0 1.957)"/>
+					<path id="line_LY" class="basePath" d="M88.857 681.207v46.444h191.174v-46.444" fill="none" stroke="#fff" transform="translate(0 3.793)" />
+					<path id="line_XY" class="basePath" d="M311.135 681.207v46.444h512.833v-46.444" fill="none" stroke="#fff" transform="translate(0 3.793)" />
+					<path id="line_AE" class="basePath" d="M575 805.99h26.198V685" fill="none" stroke="#fff" stroke-width="1"/>
+					<path id="line_BE" class="basePath" d="M400.92 410v430h25.793" fill="none" stroke="#fff" stroke-width="1"/>
+					<path id="line_XE" class="basePath" d="M575 840h275.787V685" fill="none" stroke="#fff" stroke-width="1"/>
+
+					<path id="line_HM_fill" class="clonePath" d="M174.848 274.191 537.473 69H625" fill="none" stroke-width="1"/>
+					<path id="line_EM_fill" class="clonePath" d="M775 69h33.303v246.157H775" fill="none" stroke-width="1"/>				
+					<path id="line_BM_fill" class="clonePath" d="m625 131.072-161.518 110.76" fill="none" stroke-width="1"/>
+					<path id="line_SB_fill" class="clonePath" d="M495 284.053 621.681 210H835" fill="none" stroke-width="1"/>
+					<path id="line_EX_fill" class="clonePath" d="M775 335h51.51v180" fill="none" stroke-width="1"/>
+					<path id="line_EB_fill" class="clonePath" d="M494.775 334.215h130" fill="none" stroke-width="1" transform="translate(.225 .785)" />
+					<path id="line_HB_fill" class="clonePath" d="M174.254 333.247h170" fill="none" stroke-width="1" transform="translate(.746 1.753)" />
+					<path id="line_EA_fill" class="clonePath" d="m675.083 410-85.792 105" fill="none" stroke-width="1"/>
+					<path id="line_XB_fill" class="clonePath" d="M495.625 350.722 770 556.513" fill="none" stroke-width="1"/>
+					<path id="line_AB_fill" class="clonePath" d="m461.838 410 70.692 105" fill="none" stroke-width="1"/>
+					<path id="line_YB_fill" class="clonePath" d="m369.373 410-59.582 109.688" fill="none" stroke-width="1"/>
+					<path id="line_LB_fill" class="clonePath" d="M345 360.558 140.864 515" fill="none" stroke-width="1"/>
+					<path id="line_LH_fill" class="clonePath" d="M91.564 410v105" fill="none" stroke-width="1"/>
+					<path id="line_SA_fill" class="clonePath" d="M630 585.714h20.509L887.959 310" fill="none" stroke-width="1"/>
+					<path id="line_YA_fill" class="clonePath" d="M365.392 623.802H478.99" fill="none" stroke-width="1" transform="matrix(1.01235 0 0 1 -4.903 1.198)" />
+					<path id="line_XA_fill" class="clonePath" d="M630 623.043h135" fill="none" stroke-width="1" transform="translate(0 1.957)"/>
+					<path id="line_LY_fill" class="clonePath" d="M88.857 681.207v46.444h191.174v-46.444" fill="none" transform="translate(0 3.793)" />
+					<path id="line_XY_fill" class="clonePath" d="M311.135 681.207v46.444h512.833v-46.444" fill="none" transform="translate(0 3.793)" />
+					<path id="line_AE_fill" class="clonePath" d="M575 805.99h26.198V685" fill="none" stroke-width="1"/>
+					<path id="line_BE_fill" class="clonePath" d="M400.92 410v430h25.793" fill="none" stroke-width="1"/>
+					<path id="line_XE_fill" class="clonePath" d="M575 840h275.787V685" fill="none" stroke-width="1"/>	
+
+				</svg>
+				<div id="chart"></div>
+			</div>
+		</div>
+
+		<div class="md-overlay"></div>
+		<script src="scripts/classie.js"></script>
+		<script>
+			var polyfilter_scriptpath = '/js/';
+		</script>
+	</body>
+</html>

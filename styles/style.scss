@@ -1,0 +1,740 @@
+@use "sass:map";
+
+$chart-width: 1000px ;
+$chart-height: 950px ;
+$chara-icon-width: 130px;
+$chara-icon-height: 130px;
+
+$charaColors: (
+  blade: rgb(127, 180, 57),
+  axel: rgb(221, 155, 33),
+  xiu: rgb(65, 173, 206),
+  yoni: rgb(224, 213, 54),
+  hannah: rgb(41, 81, 194),
+  lance: rgb(148, 77, 206),
+  ellie: rgb(17, 148, 87),
+  edd: rgb(211, 43, 43),
+  minerva: rgb(167, 87, 83),
+  simon: rgb(216, 40, 163),
+);
+
+@font-face {
+  font-family: DirtyBrush;
+  src: url(../assets/fonts/DirtyBrush.ttf);
+}
+@font-face {
+  font-family: BastradRegular;
+  src: url(../assets/fonts/BastradRegular.otf);
+}
+@font-face {
+  font-family: JamstreetGraffiti;
+  src: url(../assets/fonts/JamstreetGraffiti.ttf);
+}
+@font-face {
+  font-family: RevnosaRegular;
+  src: url(../assets/fonts/RevnosaRegular.ttf);
+}
+@font-face {
+  font-family: TexasGrungeDemo;
+  src: url(../assets/fonts/TexasGrungeDemo.ttf);
+}
+@font-face {
+  font-family: WickhopHandwriting;
+  src: url(../assets/fonts/WickhopHandwriting.ttf);
+}
+@font-face {
+  font-family: Crossbar;
+  src: url(../assets/fonts/Crossbar.otf);
+}
+@font-face {
+  font-family: SlugRegular;
+  src: url(../assets/fonts/SlugRegular.otf);
+}
+
+*{
+    margin: 0px;
+    padding: 0px; 
+}
+  
+html{
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(44, 44, 44);
+}
+
+ul{
+  list-style: none;
+}
+
+#chartNav{
+  width: 100%;
+  padding: 20px 0px;
+}
+
+#langSwitch{
+  background-color: dimgrey;
+  width: 100px;
+  margin: 0px auto;
+  cursor: pointer;
+}
+
+
+//=======================//
+//===                 ===//
+//===   Chart Stuff   ===//
+//===                 ===//
+//=======================//
+
+.chartWrapper{
+  position: relative;
+  width: $chart-width;
+  margin: 0 auto;
+}
+
+#chartSVG{
+  padding-bottom: 50px;
+  width: $chart-width;
+  height: $chart-height;
+  position: absolute;
+  display: block;
+}
+
+#chartSVG path{
+  transition: 0.4s ease;
+  stroke-linecap: round;
+  stroke-width: 3px;
+}
+
+.basePath{
+  stroke-opacity: 0.2;
+}
+
+.clonePath{
+  stroke: rgb(255, 255, 255);
+  stroke-opacity: 0;
+  stroke-dashoffset: 1000;  
+  stroke-dasharray: 1000;
+
+  // stroke-dasharray: 10;
+}
+
+.animatedPath{
+  stroke-opacity: 1 !important;
+  // animation: dash 0.8s forwards infinite linear;
+  animation: draw 1s forwards linear;
+}
+
+
+@keyframes draw {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: 19;
+  }
+}
+
+@keyframes reversed-dash {
+  from {
+    stroke-dashoffset: 19;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+#chart{
+  border: 1px solid #000;
+  width: $chart-width;
+  height: $chart-height;
+  position: absolute;
+}
+
+#chart ul{
+  display: block;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+#chart li{
+  position: absolute;
+  display: block;
+}
+
+.chara{
+  cursor: pointer;
+  border-color: white;
+  border-style: solid ;
+  border-width: 5px 5px 30px 5px;
+  width: $chara-icon-width;
+  height: $chara-icon-height;
+  background-color: lightgray;
+  background-size:     cover;
+  background-repeat:   no-repeat;
+  background-position: center center;
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5); 
+  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3), inset 0px 0px 10px 3px rgba(0,0,0,0.4);
+  opacity: 1;
+  transition: 0.4s ease;
+}
+
+.relation{
+  text-align: center;
+  border: 0px solid lightgrey;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+  cursor: pointer;
+  font-size: 0.8em;
+  transition: 0.4s ease;
+}
+
+.relLabel{
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.3em;
+  border: 0px solid #000;
+  padding: 2px 0 2px 0;
+  line-height: 100%;
+  transition: 0.4s ease;
+	text-shadow: 
+        -2px 2px 0 black,
+        2px 2px 0 black,
+        2px -2px 0 black,
+        -2px -2px 0 black;
+}
+
+.faded{
+  opacity: 0.1;
+}
+
+//===========================//
+//===                     ===//
+//===   Pop open window   ===//
+//===                     ===//
+//===========================//
+.noscroll { overflow: hidden; }
+.md-modal {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	z-index: 2000;
+	visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.md-show {
+	visibility: visible;
+}
+
+.md-overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	visibility: hidden;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	opacity: 0;
+	background: rgba(0,0,0,0.6);
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.md-show ~ .md-overlay {
+	opacity: 1;
+	visibility: visible;
+}
+
+.md-content {
+	color: #fff;
+	width: 900px;
+	height: 700px;
+  text-align: left;
+	position: relative;
+	margin: 0 auto;
+}
+
+.md-content > div{
+  position: absolute;
+}
+
+//=====================//
+//===   Bio Stuff   ===//
+//=====================//
+
+.bioBasic, .bioDetail{
+  font-size: 14px;
+}
+// Header
+.bioHeader{
+  z-index: 10;
+  top: 60px;
+  left: 550px;
+  color: white;
+  font-size: 55px;
+  font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat";
+}
+// Basic Info Panel
+.bioBasic{
+  background-color: #000;
+  padding: 25px 30px 30px 30px;
+  width: 215px;
+  top: 50px;
+  left: 260px;
+  z-index: 5;
+}
+.bioBasic table tr td:first-child{
+  padding: 1px 7px 1px 5px;
+  // color: map.get($charaColors, "blade");
+  // border-right: 3px solid map.get($charaColors, "blade");
+}
+.bioBasic table tr td:nth-child(2) {
+  padding-left: 5px;
+}
+.bioBasic td div{
+  width: 15px;
+  height: 15px;
+  margin-right: 3px;
+  border-radius: 15px;
+  display: inline-block;
+  // clip-path: polygon(100% 50%, 80% 50%, 80% 100%, 20% 100%, 20% 50%, 0 50%, 50% 0);
+  // clip-path: polygon(0 60%, 20% 30%, 7% 16%, 100% 0, 85% 95%, 70% 80%, 40% 100%);
+}
+.iconBi{
+  background: linear-gradient(-45deg, rgba(214,2,112,1) 40%, rgba(155,79,150,1) 45%, rgba(155,79,150,1) 55%, rgba(0,56,168,1) 60%);
+}
+.iconPan{
+  background: linear-gradient(-45deg, rgba(255,33,140,1) 36%, rgba(255,216,0,1) 45%, rgba(255,216,0,1) 55%, rgba(33,177,255,1) 64%);  
+}
+
+.traitLabel{
+  margin: 15px auto 5px auto;
+  padding-bottom: 2px;
+  width: 150px;
+  text-align: center;
+}
+td li, .traits li {
+  text-align: center;
+  color: white;
+}
+.traits li:before{
+  content: "➤ ";
+}
+// Chara art Panel
+.bioArt{
+  z-index: 10;
+  position: relative;
+}
+.bioArt >  img{
+  left:120px;
+  top: 350px;
+  position: absolute;
+  -webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	transition: all 0.4s;  
+}
+
+// Oufits Panel
+.bioOutfits{
+  padding: 0;
+  width: 240px;
+  height: 230px;
+  bottom: 70px;
+  left: 280px;
+  z-index: 6;
+}
+.outfitSelect{
+  position: relative;
+}
+.outfitSelect li{
+  cursor: pointer;
+  color: rgb(92, 92, 92);
+  right: 0px;
+  font-size: 25px;
+  font-family: TexasGrungeDemo;
+  position: absolute;
+  min-width: 80px;
+  padding: 8px 18px;
+  text-align: center;
+  background-image: linear-gradient(137deg, #2b2b2b 14.29%, #000000 14.29%, #000000 50%, #2b2b2b 50%, #2b2b2b 64.29%, #000000 64.29%, #000000 100%);
+  background-size: 51.32px 47.86px;
+  box-shadow: -5px -5px 5px 0px rgba(0,0,0,0.5);
+  transition: 0.2s ease;  
+}
+.outfitSelect li:hover, .focusedOutfit{
+  color: white !important;
+}
+.outfitSelect li:nth-child(1) {
+  transform: rotate(7deg);
+  top: 5px;
+}
+.outfitSelect li:nth-child(2) {
+  transform: rotate(-6deg);
+  top: 50px;
+  right: -5px;
+}
+.outfitSelect li:nth-child(3) {
+  transform: rotate(2deg);
+  top: 100px;
+  right: -10px;
+}
+.outfitSelect li:nth-child(4) {
+  transform: rotate(-7deg);
+  top: 155px;
+  right: -10px;
+}
+
+// Detail Bio Panel
+.bioDetail{
+  padding: 40px 50px;
+  width: 310px;
+  height: 440px;
+  right: -20px;
+  bottom: 50px;
+  background-color: rgba(50, 50, 50, 1);
+  // box-shadow: -25px -25px 0 map.get($charaColors, "blade");
+}
+
+// Bio Close button
+.bioCloseBT{
+  cursor: pointer;
+  z-index: 10;
+  top: 30px;
+  right: -20px;
+}
+
+// Window effect stuff
+.md-show.md-window ~ .container {
+	-webkit-filter: blur(3px);
+	-moz-filter: blur(3px);
+	filter: blur(3px);
+}
+
+.md-window .md-content .bioBasic,
+.md-window .md-content .bioOutfits,
+.md-window .md-content .bioDetail,
+.md-window .md-content .bioCloseBT,
+.md-window .md-content .bioHeader{
+	opacity: 0;
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.md-window .md-content .bioBasic{
+  -webkit-transform: translateY(-5%);
+	-moz-transform: translateY(-5%);
+	-ms-transform: translateY(-5%);
+	transform: translateY(-5%);
+  -webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	transition: all 0.4s;  
+}
+
+.md-window .md-content .bioOutfits{
+  -webkit-transform: translateY(5%);
+	-moz-transform: translateY(5%);
+	-ms-transform: translateY(5%);
+	transform: translateT(5%);
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;  
+}
+
+.md-window .md-content .bioDetail,
+.md-window .md-content .bioCloseBT{
+  -webkit-transform: translateX(10%);
+	-moz-transform: translateX(10%);
+	-ms-transform: translateX(10%);
+	transform: translateX(10%);
+  -webkit-transition: all 0.6s;
+	-moz-transition: all 0.6s;
+	transition: all 0.6s;  
+}
+
+.md-window .md-content .bioHeader{
+  -webkit-transform: translateY(15%);
+	-moz-transform: translateY(15%);
+	-ms-transform: translateY(15%);
+	transform: translateY(15%);
+  -webkit-transition: all 0.7s;
+	-moz-transition: all 0.7s;
+	transition: all 0.7s;  
+}
+
+.md-show.md-window .md-content .bioBasic,
+.md-show.md-window .md-content .bioOutfits,
+.md-show.md-window .md-content .bioDetail,
+.md-show.md-window .md-content .bioCloseBT,
+.md-show.md-window .md-content .bioHeader{
+	-webkit-transform: translateY(0) translateX(0) ;
+	-moz-transform: translateY(0) translateX(0) ;
+	-ms-transform: translateY(0) translateX(0) ;
+	transform: translateY(0) translateX(0) ;
+	opacity: 1;
+}
+
+.md-window .md-content .bioArt img{
+	-webkit-transform: translateX(-60%) translateY(-50%);
+	-moz-transform: translateX(-60%) translateY(-50%);
+	-ms-transform: translateX(-60%) translateY(-50%);
+	transform: translateX(-60%) translateY(-50%); 
+  opacity: 0;
+}
+
+.md-show.md-window .md-content .bioArt img{
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+  opacity: 1;
+}
+
+.hide{
+  opacity: 0 !important;
+  z-index: -1;
+}
+
+//=====================================//
+//===                               ===//
+//===                               ===//
+//===   Character Specific Styles   ===//
+//===                               ===//
+//===                               ===//
+//=====================================//
+
+.blade{
+  color: map.get($charaColors, "blade");
+  stroke: map.get($charaColors, "blade");  
+}
+.axel{
+  color: map.get($charaColors, "axel");
+  stroke: map.get($charaColors, "axel");
+}
+.xiu{
+  color: map.get($charaColors, "xiu");
+  stroke: map.get($charaColors, "xiu");
+}
+.yoni{
+  color: map.get($charaColors, "yoni");
+  stroke: map.get($charaColors, "yoni");
+}
+.hannah{
+  color: map.get($charaColors, "hannah");
+  stroke: map.get($charaColors, "hannah");
+}
+.lance{
+  color: map.get($charaColors, "lance");
+  stroke: map.get($charaColors, "lance");
+}
+.ellie{
+  color: map.get($charaColors, "ellie");
+  stroke: map.get($charaColors, "ellie");
+}
+.edd{
+  color: map.get($charaColors, "edd");
+  stroke: map.get($charaColors, "edd");
+}
+.minerva{
+  color: map.get($charaColors, "minerva");
+  stroke: map.get($charaColors, "minerva");
+}
+.simon{
+  color: map.get($charaColors, "simon");
+  stroke: map.get($charaColors, "simon");
+}
+
+#blade{
+  background-color: map.get($charaColors, "blade");
+}
+#axel{
+  background-color: map.get($charaColors, "axel");
+}
+#xiu{
+  background-color: map.get($charaColors, "xiu");
+}
+#yoni{
+  background-color: map.get($charaColors, "yoni");
+}
+#hannah{
+  background-color: map.get($charaColors, "hannah");
+}
+#lance{
+  background-color: map.get($charaColors, "lance");
+}
+#ellie{
+  background-color: map.get($charaColors, "ellie");
+}
+#edd{
+  background-color: map.get($charaColors, "edd");
+}
+#minerva{
+  background-color: map.get($charaColors, "minerva");
+}
+#simon{
+  background-color: map.get($charaColors, "simon");
+}
+
+.nameSticker{
+  position: absolute;
+  box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.3);
+  color: black;
+}
+#blade .nameSticker{
+  width: 100px;
+  font-family: Crossbar;
+  font-size: 25px;
+  background: rgba(255, 255, 255, 0.95);
+  right: -10px;
+  bottom: -15px;
+  padding: 0;
+  transform: rotate(-10deg);
+}
+#axel .nameSticker{
+  width: 100px;
+  font-family: JamstreetGraffiti;
+  font-size: 30px;
+  background: rgba(255, 255, 255, 0.95);
+  right: 20px;
+  bottom: -30px;
+  padding: 3px 0 0 0;
+  line-height: 1;
+  transform: rotate(15deg);
+}
+#xiu .nameSticker{
+  color: white;
+  width: 100px;
+  font-family: RevnosaRegular;
+  font-size: 23px;
+  background: rgb(27, 27, 27);
+  right: 5px;
+  bottom: -15px;
+  padding: 5px 2px 2px 2px;
+  transform: rotate(-13deg);
+}
+#xiu .nameSticker::after {
+  content: ' <3';
+  color: crimson;
+}
+#yoni .nameSticker{
+  width: 100px;
+  font-family: DirtyBrush;
+  font-size: 30px;
+  background: rgba(255, 255, 255, 0.7);
+  left: -20px;
+  top: -10px;
+  padding: 2px 10px 0 10px;
+  transform: rotate(-15deg);
+}
+#yoni .nameSticker::after {
+  content: '   :D';
+}
+#lance .nameSticker{
+  color: white;
+  width: 100px;
+  font-family: SlugRegular;
+  font-size: 23px;
+  background: black;
+  right: 12px;
+  bottom: -20px;
+  padding: 2px;
+}
+#ellie .nameSticker{
+  width: 100px;
+  font-family: WickhopHandwriting;
+  font-size: 20px;
+  background: rgba(map.get($charaColors, "axel"), 0.9);
+  right: 20px;
+  top: -20px;
+  padding: 2px 0 0 0;
+  transform: rotate(-10deg);
+}
+#ellie .nameSticker::after {
+  content: ' lol';
+}
+#hannah .nameSticker{
+  width: 85px;
+  font-weight: bold;
+  color: rgb(7, 15, 122);
+  font-family: RevnosaRegular;
+  font-size: 22px;
+  background: rgba(255, 255, 255, 0.8);
+  right: -20px;
+  top: -10px;
+  padding: 6px 10px 2px 10px;
+  transform: rotate(15deg);
+}
+#edd .nameSticker{
+  width: 110px;
+  font-family: WickhopHandwriting;
+  font-size: 20px;
+  background: rgba(218, 185, 124, 0.95);
+  left: -10px;
+  bottom: -10px;
+  padding: 2px 0;
+  transform: rotate(10deg);
+}
+#minerva .nameSticker{
+  width: 120px;
+  font-family: BastradRegular;
+  font-size: 35px;
+  background: rgba(218, 185, 124, 0.95);
+  right: 5px;
+  bottom: -20px;
+  padding: 0;
+  transform: rotate(-5deg);
+  line-height: 1;
+}
+#simon .nameSticker{
+  width: 80px;
+  font-family: JamstreetGraffiti;
+  font-size: 26px;
+  color: rgb(90, 5, 72);
+  background: rgb(41, 206, 41);
+  left: -20px;
+  top: -10px;
+  padding: 2px 20px 0 10px;
+  transform: rotate(-15deg);
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;  
+}
+#temp .nameSticker{
+  width: 80px;
+  font-family: TexasGrungeDemo;
+  font-size: 26px;
+  background: rgba(255, 255, 255, 0.7);
+  right: -20px;
+  bottom: -10px;
+  padding: 2px 20px 0 10px;
+  transform: rotate(-15deg);
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px rgb(255, 255, 155), 0 0 15px rgb(255, 255, 255), 0 0 25px #e60073, 0 0 35px #e60073, 0 0 45px ;
+  }
+  to {
+    text-shadow: 0 0 15px #fff, 0 0 25px #ff4da6, 0 0 35px #ff4da6, 0 0 45px #ff4da6, 0 0 55px ;
+  }
+}
+
+
