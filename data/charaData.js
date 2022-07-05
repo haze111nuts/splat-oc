@@ -32,8 +32,6 @@ var relationshipPosData = [
   {id:"XE", x : 850, y: 800},
 ]
 
-
-
 const charaData = {
     blade: {
       color: "rgb(127, 180, 57)",
