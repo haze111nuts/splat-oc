@@ -18,6 +18,14 @@ $charaColors: (
   simon: rgb(216, 40, 163),
 );
 
+
+@mixin prefix($property, $value, $prefixes: ()) {
+  @each $prefix in $prefixes {
+    #{'-' + $prefix + '-' + $property}: $value;
+  }
+  #{$property}: $value;
+}
+
 @font-face {
   font-family: DirtyBrush;
   src: url(../assets/fonts/DirtyBrush.ttf);
@@ -100,9 +108,9 @@ ul{
 }
 
 #chartSVG path{
-  transition: 0.4s ease;
   stroke-linecap: round;
   stroke-width: 3px;
+  @include prefix(transition, all 0.3s, webkit moz);    
 }
 
 .basePath{
@@ -110,18 +118,16 @@ ul{
 }
 
 .clonePath{
-  stroke: rgb(255, 255, 255);
   stroke-opacity: 0;
   stroke-dashoffset: 1000;  
   stroke-dasharray: 1000;
-
   // stroke-dasharray: 10;
 }
 
 .animatedPath{
-  stroke-opacity: 1 !important;
+  stroke-opacity: 1;
+  animation: draw 0.8s forwards linear;
   // animation: dash 0.8s forwards infinite linear;
-  animation: draw 1s forwards linear;
 }
 
 
@@ -181,7 +187,7 @@ ul{
   background-size:     cover;
   background-repeat:   no-repeat;
   background-position: center center;
-  -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5); 
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3), inset 0px 0px 10px 3px rgba(0,0,0,0.4); 
   box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3), inset 0px 0px 10px 3px rgba(0,0,0,0.4);
   opacity: 1;
   transition: 0.4s ease;
@@ -190,13 +196,10 @@ ul{
 .relation{
   text-align: center;
   border: 0px solid lightgrey;
-	-webkit-transform: translateX(-50%) translateY(-50%);
-	-moz-transform: translateX(-50%) translateY(-50%);
-	-ms-transform: translateX(-50%) translateY(-50%);
-	transform: translateX(-50%) translateY(-50%);
-  cursor: pointer;
   font-size: 0.8em;
+  cursor: pointer;
   transition: 0.4s ease;
+  @include prefix(transform, translateX(-50%) translateY(-50%), webkit moz ms);  
 }
 
 .relLabel{
@@ -229,18 +232,13 @@ ul{
 	top: 50%;
 	left: 50%;
 	z-index: 2000;
-	visibility: hidden;
-	-webkit-backface-visibility: hidden;
-	-moz-backface-visibility: hidden;
 	backface-visibility: hidden;
-	-webkit-transform: translateX(-50%) translateY(-50%);
-	-moz-transform: translateX(-50%) translateY(-50%);
-	-ms-transform: translateX(-50%) translateY(-50%);
-	transform: translateX(-50%) translateY(-50%);
+  @include prefix(visibility, hidden, webkit moz ms);
+  @include prefix(transform, translateX(-50%) translateY(-50%), webkit moz ms);  
 }
 
 .md-show {
-	visibility: visible;
+	@include prefix(visibility, visible, webkit moz ms);
 }
 
 .md-overlay {
@@ -253,9 +251,7 @@ ul{
 	z-index: 1000;
 	opacity: 0;
 	background: rgba(0,0,0,0.6);
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	transition: all 0.3s;
+  @include prefix(transition, all 0.3s, webkit moz);  
 }
 
 .md-show ~ .md-overlay {
@@ -303,8 +299,6 @@ ul{
 }
 .bioBasic table tr td:first-child{
   padding: 1px 7px 1px 5px;
-  // color: map.get($charaColors, "blade");
-  // border-right: 3px solid map.get($charaColors, "blade");
 }
 .bioBasic table tr td:nth-child(2) {
   padding-left: 5px;
@@ -325,6 +319,7 @@ ul{
   background: linear-gradient(-45deg, rgba(255,33,140,1) 36%, rgba(255,216,0,1) 45%, rgba(255,216,0,1) 55%, rgba(33,177,255,1) 64%);  
 }
 
+// Traits section
 .traitLabel{
   margin: 15px auto 5px auto;
   padding-bottom: 2px;
@@ -338,7 +333,8 @@ td li, .traits li {
 .traits li:before{
   content: "➤ ";
 }
-// Chara art Panel
+
+// Chara Art Panel
 .bioArt{
   z-index: 10;
   position: relative;
@@ -347,9 +343,7 @@ td li, .traits li {
   left:120px;
   top: 350px;
   position: absolute;
-  -webkit-transition: all 0.4s;
-	-moz-transition: all 0.4s;
-	transition: all 0.4s;  
+  @include prefix(transition, all 0.4s, webkit moz);
 }
 
 // Oufits Panel
@@ -410,7 +404,6 @@ td li, .traits li {
   right: -20px;
   bottom: 50px;
   background-color: rgba(50, 50, 50, 1);
-  // box-shadow: -25px -25px 0 map.get($charaColors, "blade");
 }
 
 // Bio Close button
@@ -423,9 +416,7 @@ td li, .traits li {
 
 // Window effect stuff
 .md-show.md-window ~ .container {
-	-webkit-filter: blur(3px);
-	-moz-filter: blur(3px);
-	filter: blur(3px);
+  @include prefix(filter, blur(3px), webkit moz);  
 }
 
 .md-window .md-content .bioBasic,
@@ -434,77 +425,47 @@ td li, .traits li {
 .md-window .md-content .bioCloseBT,
 .md-window .md-content .bioHeader{
 	opacity: 0;
-  -webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	transition: all 0.3s;
+  @include prefix(transition, all 0.3s, webkit moz);
 }
 
 .md-window .md-content .bioBasic{
-  -webkit-transform: translateY(-5%);
-	-moz-transform: translateY(-5%);
-	-ms-transform: translateY(-5%);
-	transform: translateY(-5%);
-  -webkit-transition: all 0.4s;
-	-moz-transition: all 0.4s;
-	transition: all 0.4s;  
+  @include prefix(transform, translateY(-5%), webkit moz ms);  
+  @include prefix(transition, all 0.4s, webkit moz);  
 }
 
 .md-window .md-content .bioOutfits{
-  -webkit-transform: translateY(5%);
-	-moz-transform: translateY(5%);
-	-ms-transform: translateY(5%);
-	transform: translateT(5%);
-	-webkit-transition: all 0.5s;
-	-moz-transition: all 0.5s;
-	transition: all 0.5s;  
+  @include prefix(transform, translateY(5%), webkit moz ms);  
+  @include prefix(transition, all 0.5s, webkit moz);  
 }
 
 .md-window .md-content .bioDetail,
 .md-window .md-content .bioCloseBT{
-  -webkit-transform: translateX(10%);
-	-moz-transform: translateX(10%);
-	-ms-transform: translateX(10%);
-	transform: translateX(10%);
-  -webkit-transition: all 0.6s;
-	-moz-transition: all 0.6s;
-	transition: all 0.6s;  
+  @include prefix(transform, translateY(10%), webkit moz ms);
+  @include prefix(transition, all 0.6s, webkit moz);
 }
 
 .md-window .md-content .bioHeader{
-  -webkit-transform: translateY(15%);
-	-moz-transform: translateY(15%);
-	-ms-transform: translateY(15%);
-	transform: translateY(15%);
-  -webkit-transition: all 0.7s;
-	-moz-transition: all 0.7s;
-	transition: all 0.7s;  
+  @include prefix(transform, translateY(15%), webkit moz ms);
+  @include prefix(transition, all 0.7s, webkit moz);
 }
 
+.md-window .md-content .bioArt img{
+  @include prefix(transform, translateX(-60%) translateY(-50%), webkit moz ms);
+  opacity: 0;
+}
+
+//style of panels when window is visible
 .md-show.md-window .md-content .bioBasic,
 .md-show.md-window .md-content .bioOutfits,
 .md-show.md-window .md-content .bioDetail,
 .md-show.md-window .md-content .bioCloseBT,
 .md-show.md-window .md-content .bioHeader{
-	-webkit-transform: translateY(0) translateX(0) ;
-	-moz-transform: translateY(0) translateX(0) ;
-	-ms-transform: translateY(0) translateX(0) ;
-	transform: translateY(0) translateX(0) ;
+  @include prefix(transform, translateY(0) translateX(0), webkit moz ms);
 	opacity: 1;
 }
 
-.md-window .md-content .bioArt img{
-	-webkit-transform: translateX(-60%) translateY(-50%);
-	-moz-transform: translateX(-60%) translateY(-50%);
-	-ms-transform: translateX(-60%) translateY(-50%);
-	transform: translateX(-60%) translateY(-50%); 
-  opacity: 0;
-}
-
 .md-show.md-window .md-content .bioArt img{
-	-webkit-transform: translateX(-50%) translateY(-50%);
-	-moz-transform: translateX(-50%) translateY(-50%);
-	-ms-transform: translateX(-50%) translateY(-50%);
-	transform: translateX(-50%) translateY(-50%);
+  @include prefix(transform, translateX(-50%) translateY(-50%), webkit moz ms);
   opacity: 1;
 }
 

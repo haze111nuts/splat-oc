@@ -776,10 +776,8 @@ function setUpBioPageFor(charaBioData){
 
     //Fill outfit panel
     var outfitListHTML = ""
-    var i = 1;
     for(const ourfitData of charaBioData.outfits){
         outfitListHTML += "<li>"+ ourfitData.name +"</li>";
-        i++;
     }
     $(".outfitSelect").html(outfitListHTML);    
     setUpOutfitSwitchEvents(charaBioData);
@@ -885,6 +883,10 @@ function setupStuff(relationshipData, iconPosData, relationshipPosData, bioData)
     relationshipHoverEvent(relationshipData);
     charaHoverEvent(relationshipData, iconPosData);
     arrangeChartContent(relationshipPosData, iconPosData);  
+}
+
+function setupLangSwitch(){
+
 }
 
 //======================//
