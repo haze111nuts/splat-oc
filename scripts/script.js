@@ -897,6 +897,9 @@ var lang = "EN";
 
 $(document).ready(function(){
 
+    // console.log(charaData.get("blade")); // 'bar'
+    console.log(charaData["blade"]); // 'bar'
+
     setupStuff(relationshipData_en, photoPosData, relationshipPosData, bioData_en)
 
     $( "#langSwitch" ).click(function() {
