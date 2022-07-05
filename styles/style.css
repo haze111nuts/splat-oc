@@ -73,9 +73,11 @@ ul {
 }
 
 #chartSVG path {
-  transition: 0.4s ease;
   stroke-linecap: round;
   stroke-width: 3px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .basePath {
@@ -83,15 +85,18 @@ ul {
 }
 
 .clonePath {
-  stroke: rgb(255, 255, 255);
   stroke-opacity: 0;
-  stroke-dashoffset: 1000;
-  stroke-dasharray: 1000;
+  stroke-dasharray: 10;
 }
 
 .animatedPath {
-  stroke-opacity: 1 !important;
-  animation: draw 1s forwards linear;
+  stroke-opacity: 1;
+  animation: dash 0.8s forwards infinite linear;
+}
+
+.animatedPath2 {
+  stroke-opacity: 1;
+  animation: dash-reverse 0.8s forwards infinite linear;
 }
 
 @keyframes draw {
@@ -110,7 +115,7 @@ ul {
     stroke-dashoffset: 19;
   }
 }
-@keyframes reversed-dash {
+@keyframes dash-reverse {
   from {
     stroke-dashoffset: 19;
   }
@@ -147,7 +152,7 @@ ul {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3), inset 0px 0px 10px 3px rgba(0, 0, 0, 0.4);
   box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3), inset 0px 0px 10px 3px rgba(0, 0, 0, 0.4);
   opacity: 1;
   transition: 0.4s ease;
@@ -156,13 +161,13 @@ ul {
 .relation {
   text-align: center;
   border: 0px solid lightgrey;
+  font-size: 0.8em;
+  cursor: pointer;
+  transition: 0.4s ease;
   -webkit-transform: translateX(-50%) translateY(-50%);
   -moz-transform: translateX(-50%) translateY(-50%);
   -ms-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  cursor: pointer;
-  font-size: 0.8em;
-  transition: 0.4s ease;
 }
 
 .relLabel {
@@ -189,10 +194,11 @@ ul {
   top: 50%;
   left: 50%;
   z-index: 2000;
-  visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
   backface-visibility: hidden;
+  -webkit-visibility: hidden;
+  -moz-visibility: hidden;
+  -ms-visibility: hidden;
+  visibility: hidden;
   -webkit-transform: translateX(-50%) translateY(-50%);
   -moz-transform: translateX(-50%) translateY(-50%);
   -ms-transform: translateX(-50%) translateY(-50%);
@@ -200,6 +206,9 @@ ul {
 }
 
 .md-show {
+  -webkit-visibility: visible;
+  -moz-visibility: visible;
+  -ms-visibility: visible;
   visibility: visible;
 }
 
@@ -415,7 +424,7 @@ td li, .traits li {
   -webkit-transform: translateY(5%);
   -moz-transform: translateY(5%);
   -ms-transform: translateY(5%);
-  transform: translateT(5%);
+  transform: translateY(5%);
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   transition: all 0.5s;
@@ -423,10 +432,10 @@ td li, .traits li {
 
 .md-window .md-content .bioDetail,
 .md-window .md-content .bioCloseBT {
-  -webkit-transform: translateX(10%);
-  -moz-transform: translateX(10%);
-  -ms-transform: translateX(10%);
-  transform: translateX(10%);
+  -webkit-transform: translateY(10%);
+  -moz-transform: translateY(10%);
+  -ms-transform: translateY(10%);
+  transform: translateY(10%);
   -webkit-transition: all 0.6s;
   -moz-transition: all 0.6s;
   transition: all 0.6s;
@@ -442,6 +451,14 @@ td li, .traits li {
   transition: all 0.7s;
 }
 
+.md-window .md-content .bioArt img {
+  -webkit-transform: translateX(-60%) translateY(-50%);
+  -moz-transform: translateX(-60%) translateY(-50%);
+  -ms-transform: translateX(-60%) translateY(-50%);
+  transform: translateX(-60%) translateY(-50%);
+  opacity: 0;
+}
+
 .md-show.md-window .md-content .bioBasic,
 .md-show.md-window .md-content .bioOutfits,
 .md-show.md-window .md-content .bioDetail,
@@ -452,14 +469,6 @@ td li, .traits li {
   -ms-transform: translateY(0) translateX(0);
   transform: translateY(0) translateX(0);
   opacity: 1;
-}
-
-.md-window .md-content .bioArt img {
-  -webkit-transform: translateX(-60%) translateY(-50%);
-  -moz-transform: translateX(-60%) translateY(-50%);
-  -ms-transform: translateX(-60%) translateY(-50%);
-  transform: translateX(-60%) translateY(-50%);
-  opacity: 0;
 }
 
 .md-show.md-window .md-content .bioArt img {
