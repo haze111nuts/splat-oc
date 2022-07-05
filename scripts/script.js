@@ -1,49 +1,6 @@
 //=====================//
 //===   variables   ===//
 //=====================//
-var charaNameData = [
-    "blade",
-    "axel",
-    "xiu",
-    "yoni",
-    "hannah",
-    "lance",
-    "ellie",
-    "edd",
-    "minerva",
-    "simon",
-    "temp"
-]
-
-const charaBasicData = new Map([
-    ["blade", "rgb(127, 180, 57)"],
-    ["axel", "rgb(221, 155, 33)"],
-    ["xiu", "rgb(65, 173, 206)"],
-    ["yoni", "rgb(224, 213, 54)"],
-    ["hannah", "rgb(41, 81, 194)"],
-    ["lance", "rgb(148, 77, 206)"],
-    ["ellie", "rgb(17, 148, 87)"],
-    ["edd", "rgb(211, 43, 43)"],
-    ["minerva", "rgb(167, 87, 83)"],
-    ["simon", "rgb(216, 40, 163)"]
-  ]);
-
-var photoPosData = [
-    {id:"minerva", x : 635, y: 15, rot: 2},
-    {id:"simon", x : 845, y: 150, rot: 12},
-    {id:"temp", x : 130, y: 40, rot: 15},
-
-    {id:"blade", x : 345, y: 245, rot: 5},
-    {id:"hannah", x : 35, y: 250, rot: -6},
-    {id:"edd", x : 630, y: 250, rot: -5},
-
-    {id:"lance", x : 35, y: 525, rot: 0},
-    {id:"yoni", x : 225, y: 525, rot: 10},
-    {id:"axel", x : 485, y: 525, rot: -8},
-    {id:"xiu", x : 775, y: 525, rot: 3},
-
-    {id:"ellie", x : 435, y: 780, rot: 5},
-]
 
 var relationshipPosData = [
     {id:"HM", x : 345, y: 180},
@@ -650,9 +607,9 @@ function buildChart(relationshipData){
     var chartHTML = "";
     chartHTML += "<ul>";
     chartHTML += "<li class='group teamBB'></li>";
-    for(var i=0; i<charaNameData.length; i++){
-        chartHTML += "<li class='chara md-trigger' id='"+ charaNameData[i] +"' data-modal='modal-blur'>";
-        chartHTML += "<div class='nameSticker'>"+ charaNameData[i].charAt(0).toUpperCase() + charaNameData[i].slice(1); +"</div>";
+    for (var chara in charaData) {
+        chartHTML += "<li class='chara md-trigger' id='"+ chara +"' data-modal='modal-blur'>";
+        chartHTML += "<div class='nameSticker'>"+ chara.charAt(0).toUpperCase() + chara.slice(1); +"</div>";
         chartHTML += "</li>";
     }
     for(var j=0; j<relationshipData.length; j++){
@@ -666,15 +623,17 @@ function buildChart(relationshipData){
     $("#chart").html(chartHTML);
 }
 
-function arrangeChartContent(relationshipPosData, iconPosData){
+function arrangeChartContent(relationshipPosData){
     //set icon positions
-    for (const iconPos of iconPosData) {
-        $("#"+iconPos.id).css("left", iconPos.x);
-        $("#"+iconPos.id).css("top", iconPos.y);
-        $("#"+iconPos.id).css("-webkit-transform", "rotate(" +iconPos.rot+"deg)");
-        $("#"+iconPos.id).css("-ms-transform", "rotate(" +iconPos.rot+"deg)");
-        $("#"+iconPos.id).css("transform", "rotate(" +iconPos.rot+"deg)");
+
+    for (var chara in charaData) {
+        $("#"+chara).css("left",  charaData[chara].photoPos.x);
+        $("#"+chara).css("top", charaData[chara].photoPos.y);
+        $("#"+chara).css("-webkit-transform", "rotate(" +charaData[chara].photoPos.rotation+"deg)");
+        $("#"+chara).css("-ms-transform", "rotate(" +charaData[chara].photoPos.rotation+"deg)");
+        $("#"+chara).css("transform", "rotate(" +charaData[chara].photoPos.rotation+"deg)");
     }
+
     //set relationship label positions
     for (const relPos of relationshipPosData) {
         $("#rel_"+relPos.id).css("left",relPos.x);
@@ -682,9 +641,9 @@ function arrangeChartContent(relationshipPosData, iconPosData){
     }
 }
 
-function transformRotatedCharaIcon(id, posData, scale){
+function transformRotatedCharaIcon(id, scale){
     //need this bc transform is too dumb to remember the initial rotation
-    var currentHoverCharaRot = posData.find(e => e.id == id).rot;
+    var currentHoverCharaRot = charaData[id].photoPos.rotation;
     $("#"+id).css("-webkit-transform", "rotate(" + currentHoverCharaRot +"deg) " + scale);
     $("#"+id).css("-ms-transform", "rotate(" + currentHoverCharaRot +"deg) " + scale);
     $("#"+id).css("transform", "rotate(" + currentHoverCharaRot +"deg) "+ scale);
@@ -694,7 +653,7 @@ function relationshipHoverEvent(relationshipData){
     $('[id^=rel_]').each(function () {
         const id = this.id.replace("rel_","");
         const relationship = relationshipData.find( r => r.id == id);
-        const otherChara = charaNameData.filter(e => e !== relationship.chara1 && e !== relationship.chara2 );           
+        const otherChara = Object.keys(charaData).filter(e => e !== relationship.chara1 && e !== relationship.chara2 );           
         const otherRelation = relationshipData.filter(r => r !== relationship );
         $(this).hover(function() {
             $("#line_"+id+"_fill").addClass('animatedPath');
@@ -722,13 +681,13 @@ function relationshipHoverEvent(relationshipData){
     });
 }
 
-function charaHoverEvent(relationshipData, iconPosData){
+function charaHoverEvent(relationshipData){
     $('.chara').each(function () {
         var unrelatedChara = getUnrelated(this.id, relationshipData);
         var unrelatedRelations = relationshipData.filter(r => r.chara1 !== this.id && r.chara2 !== this.id );
         var relatedRelations = relationshipData.filter(r => r.chara1 === this.id || r.chara2 === this.id );
         $(this).hover(function() {
-            transformRotatedCharaIcon(this.id, iconPosData, "scale(1.1)");
+            transformRotatedCharaIcon(this.id, "scale(1.1)");
             for(const chara of unrelatedChara){
                 $("#"+chara).addClass("faded");
             }
@@ -746,7 +705,7 @@ function charaHoverEvent(relationshipData, iconPosData){
                 $("#line_"+relation.id+"_fill").addClass(this.id);
             }
         }, function() {
-            transformRotatedCharaIcon(this.id, iconPosData, "")
+            transformRotatedCharaIcon(this.id, "")
             for(const chara of unrelatedChara){
                 $("#"+chara).removeClass("faded");
             }
@@ -766,7 +725,7 @@ function charaHoverEvent(relationshipData, iconPosData){
     });
 
     function getUnrelated(name, relationshipData) {
-        var unrelated = charaNameData.slice();
+        var unrelated = Object.keys(charaData).slice();
         unrelated = unrelated.filter(e => e !== name);
     
         for (const relation of relationshipData) {
@@ -818,7 +777,7 @@ function setUpBioPageFor(charaBioData){
     $(".bioDetail").html(bioLinesHTML);
 
     //Set up character-specific page style
-    var color = charaBasicData.get(charaBioData.id);
+    var color = charaData[charaBioData.id].color;
     $(".bioBasic table tr td:first-child").css("color", color );
     $(".bioBasic table tr td:first-child").css("border-right", "3px solid "+color );
     $(".traitLabel").css("border-bottom", "3px solid "+ color );
@@ -886,12 +845,12 @@ function modalEffectsInit(bioData) {
 	} );
 }
 
-function setupStuff(relationshipData, iconPosData, relationshipPosData, bioData){
+function setupStuff(relationshipData, relationshipPosData, bioData){
     buildChart(relationshipData);
     modalEffectsInit(bioData);
     relationshipHoverEvent(relationshipData);
-    charaHoverEvent(relationshipData, iconPosData);
-    arrangeChartContent(relationshipPosData, iconPosData);  
+    charaHoverEvent(relationshipData);
+    arrangeChartContent(relationshipPosData);  
 }
 
 function setupLangSwitch(){
@@ -908,15 +867,15 @@ var lang = "EN";
 
 $(document).ready(function(){
 
-    setupStuff(relationshipData_en, photoPosData, relationshipPosData, bioData_en)
+    setupStuff(relationshipData_en, relationshipPosData, bioData_en)
 
     $( "#langSwitch" ).click(function() {
         if(lang == "EN"){
             lang = "CH";
-            setupStuff(relationshipData_ch, photoPosData, relationshipPosData, bioData_en)
+            setupStuff(relationshipData_ch, relationshipPosData, bioData_en)
         }else{
             lang = "EN";
-            setupStuff(relationshipData_en, photoPosData, relationshipPosData, bioData_en)
+            setupStuff(relationshipData_en, relationshipPosData, bioData_en)
         }
     });
 
