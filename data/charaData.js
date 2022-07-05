@@ -1,90 +1,90 @@
 const charaData = {
     blade: {
       color: "rgb(127, 180, 57)",
-      pos: {
+      photoPos: {
         x: 345,
         y: 245,
-        rot: 5
+        rotation: 5
       }
     },
     axel: {
       color: "rgb(221, 155, 33)",
-      pos: {
+      photoPos: {
         x: 485,
         y: 525,
-        rot: -8
+        rotation: -8
       }
     },
     xiu: {
       color: "rgb(65, 173, 206)",
-      pos: {
+      photoPos: {
         x: 775,
         y: 525,
-        rot: 3
+        rotation: 3
       }
     },
     yoni: {
       color: "rgb(224, 213, 54)",
-      pos: {
+      photoPos: {
         x: 225,
         y: 525,
-        rot: 10
+        rotation: 10
       }
     },
     hannah: {
       color: "rgb(41, 81, 194)",
-      pos: {
+      photoPos: {
         x: 35,
         y: 250,
-        rot: -6
+        rotation: -6
       }
     },
     lance: {
       color: "rgb(148, 77, 206)",
-      pos: {
+      photoPos: {
         x: 35,
         y: 525,
-        rot: 0
+        rotation: 0
       }
     },
     ellie: {
       color: "rgb(17, 148, 87)",
-      pos: {
+      photoPos: {
         x: 435,
         y: 780,
-        rot: 5
+        rotation: 5
       }
     },
     edd: {
       color: "rgb(211, 43, 43)",
-      pos: {
+      photoPos: {
         x: 630,
         y: 250,
-        rot: -5
+        rotation: -5
       }
     },
     minerva: {
       color: "rgb(167, 87, 83)",
-      pos: {
+      photoPos: {
         x: 635,
         y: 15,
-        rot: 2
+        rotation: 2
       }
     },
     simon: {
       color: "rgb(216, 40, 163)",
-      pos: {
+      photoPos: {
         x: 845,
         y: 150,
-        rot: 12
+        rotation: 12
       }
     },
     temp: {
       color: "rgb(200, 200, 200)",
-      pos: {
+      photoPos: {
         x: 130,
         y: 40,
-        rot: 15
+        rotation: 15
       }
     }
   }

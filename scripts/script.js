@@ -627,11 +627,11 @@ function arrangeChartContent(relationshipPosData){
     //set icon positions
 
     for (var chara in charaData) {
-        $("#"+chara).css("left",  charaData[chara].pos.x);
-        $("#"+chara).css("top", charaData[chara].pos.y);
-        $("#"+chara).css("-webkit-transform", "rotate(" +charaData[chara].pos.rot+"deg)");
-        $("#"+chara).css("-ms-transform", "rotate(" +charaData[chara].pos.rot+"deg)");
-        $("#"+chara).css("transform", "rotate(" +charaData[chara].pos.rot+"deg)");
+        $("#"+chara).css("left",  charaData[chara].photoPos.x);
+        $("#"+chara).css("top", charaData[chara].photoPos.y);
+        $("#"+chara).css("-webkit-transform", "rotate(" +charaData[chara].photoPos.rotation+"deg)");
+        $("#"+chara).css("-ms-transform", "rotate(" +charaData[chara].photoPos.rotation+"deg)");
+        $("#"+chara).css("transform", "rotate(" +charaData[chara].photoPos.rotation+"deg)");
     }
 
     //set relationship label positions
@@ -643,7 +643,7 @@ function arrangeChartContent(relationshipPosData){
 
 function transformRotatedCharaIcon(id, scale){
     //need this bc transform is too dumb to remember the initial rotation
-    var currentHoverCharaRot = charaData[id].pos.rot;
+    var currentHoverCharaRot = charaData[id].photoPos.rotation;
     $("#"+id).css("-webkit-transform", "rotate(" + currentHoverCharaRot +"deg) " + scale);
     $("#"+id).css("-ms-transform", "rotate(" + currentHoverCharaRot +"deg) " + scale);
     $("#"+id).css("transform", "rotate(" + currentHoverCharaRot +"deg) "+ scale);
