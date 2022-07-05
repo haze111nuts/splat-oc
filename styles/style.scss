@@ -18,7 +18,6 @@ $charaColors: (
   simon: rgb(216, 40, 163),
 );
 
-
 @mixin prefix($property, $value, $prefixes: ()) {
   @each $prefix in $prefixes {
     #{'-' + $prefix + '-' + $property}: $value;
