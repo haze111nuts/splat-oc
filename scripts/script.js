@@ -737,7 +737,12 @@ function charaHoverEvent(relationshipData, iconPosData){
                 $("#line_"+relation.id).addClass("faded");
             }
             for(const relation of relatedRelations){
-                $("#line_"+relation.id+"_fill").addClass('animatedPath');
+                
+                if(relation.id == "HB" || relation.id == "BM"){
+                    $("#line_"+relation.id+"_fill").addClass('animatedPath2');
+                }else{
+                    $("#line_"+relation.id+"_fill").addClass('animatedPath');
+                }
                 $("#line_"+relation.id+"_fill").addClass(this.id);
             }
         }, function() {
@@ -750,7 +755,11 @@ function charaHoverEvent(relationshipData, iconPosData){
                 $("#line_"+relation.id).removeClass("faded");
             }
             for(const relation of relatedRelations){
-                $("#line_"+relation.id+"_fill").removeClass('animatedPath');
+                if(relation.id == "HB" || relation.id == "BM"){
+                    $("#line_"+relation.id+"_fill").removeClass('animatedPath2');
+                }else{
+                    $("#line_"+relation.id+"_fill").removeClass('animatedPath');
+                }
                 $("#line_"+relation.id+"_fill").removeClass(this.id);
             }            
         });

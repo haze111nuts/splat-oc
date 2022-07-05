@@ -119,15 +119,21 @@ ul{
 
 .clonePath{
   stroke-opacity: 0;
-  stroke-dashoffset: 1000;  
-  stroke-dasharray: 1000;
-  // stroke-dasharray: 10;
+  // stroke-dashoffset: 1000;  
+  // stroke-dasharray: 1000;
+  stroke-dasharray: 10;
 }
 
 .animatedPath{
   stroke-opacity: 1;
-  animation: draw 0.8s forwards linear;
-  // animation: dash 0.8s forwards infinite linear;
+  // animation: draw 0.8s forwards linear;
+  animation: dash 0.8s forwards infinite linear;
+}
+
+.animatedPath2{
+  stroke-opacity: 1;
+  // animation: draw 0.8s forwards linear;
+  animation: dash-reverse 0.8s forwards infinite linear;
 }
 
 
@@ -149,7 +155,7 @@ ul{
   }
 }
 
-@keyframes reversed-dash {
+@keyframes dash-reverse {
   from {
     stroke-dashoffset: 19;
   }
