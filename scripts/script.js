@@ -867,9 +867,6 @@ var lang = "EN";
 
 $(document).ready(function(){
 
-    for (var chara in charaData) {
-        console.log(chara + " -> " + charaData[chara].color);
-    }
     setupStuff(relationshipData_en, relationshipPosData, bioData_en)
 
     $( "#langSwitch" ).click(function() {
