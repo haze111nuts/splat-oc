@@ -43,8 +43,8 @@ const charaData = {
       color: "rgb(148, 77, 206)",
       pos: {
         x: 35,
-        y: 250,
-        rot: -6
+        y: 525,
+        rot: 0
       }
     },
     ellie: {
