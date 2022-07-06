@@ -1,5 +1,6 @@
 
 ### @TODOs
+- ~~fix lang button blur issue~~
 - refine svg path animation (add some kind of direction attribute?)
 - set up actual profile pics
 - ~~separate the data into different js file or json file instead of having them as variables~~

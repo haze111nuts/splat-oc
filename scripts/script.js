@@ -211,7 +211,6 @@ function modalEffectsInit(bioData) {
 
 		function removeModal( hasPerspective ) {
 			classie.remove( modal, 'md-show' );
-
 			if( hasPerspective ) {
 				classie.remove( document.documentElement, 'md-perspective' );
 			}
@@ -219,6 +218,7 @@ function modalEffectsInit(bioData) {
 
 		function removeModalHandler() {
 			removeModal( classie.has( el, 'md-setperspective' ) );
+            $(".langNav").removeClass("blur");
 			// document.body.classList.toggle('noscroll');
 		}
 
@@ -227,15 +227,15 @@ function modalEffectsInit(bioData) {
                 var currentCharaBio = bioData.find(b => b.id === el.id);
                 setUpBioPageFor(currentCharaBio);
             }else{
+                //fill relationship page
             }
-
             setTimeout(function(){
                 classie.add( modal, 'md-show' );
                 overlay.removeEventListener( 'click', removeModalHandler );
                 overlay.addEventListener( 'click', removeModalHandler );
             }, 1);
+            $(".langNav").addClass("blur");
             // document.body.classList.toggle('noscroll');
-
 			if( classie.has( el, 'md-setperspective' ) ) {
 				setTimeout( function() {
 					classie.add( document.documentElement, 'md-perspective' );
