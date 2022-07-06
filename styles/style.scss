@@ -128,7 +128,6 @@ ul{
   background-color: rgb(44, 44, 44);
   margin: 0px auto;
   background:url(../assets/img/bg1.png) fixed repeat;
-  // background:url(https://cdn.masto.host/mastodonart/media_attachments/files/105/781/634/905/100/465/original/daaa8e7972fd45c1.jpg) fixed repeat center 200%;
   // background-size: cover;
   color: #fff;
   text-align:center;
@@ -172,9 +171,13 @@ ul{
   z-index: -1;
 }
 
-.noSelect {
+.noSelect{
   -webkit-touch-callout: none; /* iOS Safari */
   @include prefix(user-select, none, webkit khtml moz ms);  
+}
+
+.blur{
+  @include prefix(filter, blur(5px), webkit moz);    
 }
 
 //=======================//

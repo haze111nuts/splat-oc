@@ -162,6 +162,12 @@ ul {
   user-select: none;
 }
 
+.blur {
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  filter: blur(5px);
+}
+
 .chartWrapper {
   position: relative;
   width: 1000px;
@@ -202,7 +208,7 @@ ul {
   animation: dash 0.8s forwards infinite linear;
 }
 
-.animatedPath2 {
+.animatedPathReverse {
   stroke-opacity: 1;
   animation: dash-reverse 0.8s forwards infinite linear;
 }
