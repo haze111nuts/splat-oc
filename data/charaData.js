@@ -207,7 +207,7 @@ var relationshipData_ch = [
   },
   {
       id: "LH",
-      label: "老朋友",
+      label: "舊識",
       chara1: "hannah",
       chara2: "lance",
       desc1: "↓吐苦水",
@@ -513,7 +513,8 @@ var bioData_en = [
           { name: 'Agent 4', url: 'xxx.png'}
       ],
       bio:[
-          ' :P '
+          'He picked a fight with Blade on a fateful day and decided that he wanted to form a team with him.',
+          'He chased him through the sewer system in Inkopolis Square where he become Agent 4 just for another chance to meet Blade.'
       ]
   },
   {
@@ -536,7 +537,7 @@ var bioData_en = [
           { name: 'Agent 4', url: 'xxx.png'}
       ],
       bio:[
-          ' :P '
+          ''
       ]
   },
   {
@@ -567,7 +568,7 @@ var bioData_en = [
       name: 'Hannah',
       gender: 'Female',
       like: '???',
-      dislike: '??',
+      dislike: 'Blade',
       rank: "X",
       mains: "N-zap, .52/.96",
       traits: [
