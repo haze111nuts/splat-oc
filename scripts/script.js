@@ -97,9 +97,9 @@ function charaHoverEvent(relationshipData){
                 $("#line_"+relation.id).addClass("faded");
             }
             for(const relation of relatedRelations){
-                
-                if(relation.id == "HB" || relation.id == "BM"){
-                    $("#line_"+relation.id+"_fill").addClass('animatedPath2');
+                var start = relationshipPosData.find(r => r.id === relation.id).start;
+                if(start !== this.id){
+                    $("#line_"+relation.id+"_fill").addClass('animatedPathReverse');
                 }else{
                     $("#line_"+relation.id+"_fill").addClass('animatedPath');
                 }
@@ -115,8 +115,9 @@ function charaHoverEvent(relationshipData){
                 $("#line_"+relation.id).removeClass("faded");
             }
             for(const relation of relatedRelations){
-                if(relation.id == "HB" || relation.id == "BM"){
-                    $("#line_"+relation.id+"_fill").removeClass('animatedPath2');
+                var start = relationshipPosData.find(r => r.id === relation.id).start;
+                if(start !== this.id){
+                    $("#line_"+relation.id+"_fill").removeClass('animatedPathReverse');
                 }else{
                     $("#line_"+relation.id+"_fill").removeClass('animatedPath');
                 }
