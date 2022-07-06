@@ -476,7 +476,7 @@ var bioData_en = [
         rank: "S+ to X",
         mains: "Splattershot Pro, Carbon, .52/.96",
         traits: [
-            'Emo & angsty',
+            'Emo, angsty, quiet',
             'Has anxiety issue',
             'Lack of confidence',
             'Tries to act cool',
@@ -497,15 +497,15 @@ var bioData_en = [
         id: 'axel',
         name: 'Axel',
         gender: 'Male',
-        like: 'Fight',
+        like: 'Sports??',
         dislike: 'Losing or getting mocked',
         rank: "S+ to X",
         mains: "Dualies",
         traits: [
-            'Aggressive behaviors',
-            "Always gets into fights",
             'Rude, brusque, cocky',
-            'Hot headed',
+            'Has anger management issue',
+            'Aggressive behaviors',
+            "Picks fights daily",
             'Cares about his grandma'
         ],
         outfits: [
@@ -514,6 +514,7 @@ var bioData_en = [
         ],
         bio: [
             'A boy who lives around Inkopolis Square.',
+            // ' Despite hot-headed rascal ',
             'He picked a fight with Blade on a fateful day and decided that he wanted to form a team with him.',
             'He chased him through the sewer system in Inkopolis Square where he become Agent 4 just for another chance to meet Blade.'
         ]
