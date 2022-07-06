@@ -101,7 +101,7 @@ const charaData = {
         color: "rgb(167, 87, 83)",
         photoPos: {
             x: 635,
-            y: 15,
+            y: 5,
             rotation: 2
         }
     },

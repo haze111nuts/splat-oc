@@ -1,3 +1,16 @@
+//=====================//
+//===   variables   ===//
+//=====================//
+
+var siteData_en = {
+    title : "Haze's Splat OC Ref",
+    description : ["Splatoon OC info/bio dump", "by twitter@haze111nuts"]
+}
+
+var siteData_ch = {
+    title : "HAZE家漆彈角色整理",
+    description : ["懶人總整理+全員簡介用頁面", "素材先放草圖😔有生之年慢慢補"]
+}
 
 //=====================//
 //===   functions   ===//
@@ -172,11 +185,7 @@ function setUpBioPageFor(charaBioData){
     $(".bioBasic").html(bioBasicHTML + bioTraitsHTML);
 
     //Fill detailed bio panel
-    var bioLinesHTML = "";
-    for(const bioLines of charaBioData.bio){
-        bioLinesHTML += bioLines + "<br><br>";
-    }
-    $(".bioDetail").html(bioLinesHTML);
+    $(".bioDetailInner").html(printLinesWithBreak(charaBioData.bio, 2));
 
     //Set up character-specific page style
     var color = charaData[charaBioData.id].color;
@@ -252,12 +261,32 @@ function modalEffectsInit(bioData) {
 	} );
 }
 
-function setupStuff(relationshipData, bioData){
+function setUpSiteInfo(siteInfo){
+    var beta = "<span class='beta'>BETA</span>";
+    $(".header .title").html(siteInfo.title+beta);
+    $(".header h2").html(printLinesWithBreak(siteInfo.description,1));
+}
+
+function printLinesWithBreak(array, numberOfBr){
+    var result = "";
+    for(const line of array){
+        result += line;
+        if(line != array.at(-1)){
+            for (let i = 0; i < numberOfBr; i++) {
+                result += "<br>";
+            }
+        }
+    }
+    return result;
+}
+
+function setupStuff(relationshipData, bioData, siteInfo){
+    setUpSiteInfo(siteInfo)
     buildChart(relationshipData);
     modalEffectsInit(bioData);
     relationshipHoverEvent(relationshipData);
     charaHoverEvent(relationshipData);
-    arrangeChartContent();  
+    arrangeChartContent();
 }
 
 
@@ -273,7 +302,7 @@ $(document).ready(function(){
 
     currentLang = "EN";
     $(".langNav").addClass("focusOnCH");
-    setupStuff(relationshipData_en, bioData_en);
+    setupStuff(relationshipData_en, bioData_en, siteData_en);
 
 
     $(".langCh").click(function() {
@@ -281,7 +310,7 @@ $(document).ready(function(){
             currentLang = "CH";
             $(".langNav").removeClass("focusOnCH");
             $(".langNav").addClass("focusOnEN");         
-            setupStuff(relationshipData_ch, bioData_en);
+            setupStuff(relationshipData_ch, bioData_en, siteData_ch);
         }
     });
     $(".langEn").click(function() {
@@ -289,7 +318,7 @@ $(document).ready(function(){
             currentLang = "EN";
             $(".langNav").removeClass("focusOnEN");
             $(".langNav").addClass("focusOnCH");
-            setupStuff(relationshipData_en, bioData_en);
+            setupStuff(relationshipData_en, bioData_en, siteData_en);
         }
     });
 

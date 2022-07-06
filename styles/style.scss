@@ -137,23 +137,24 @@ ul{
     font-family: "-apple-system", BlinkMacSystemFont, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "Noto Sans Japanese", "ヒラギノ角ゴ Pro W3", "メイリオ", "Hiragino Kaku Gothic ProN", "MS PGothic", Osaka, "sans-serif";
     font-size: 34px;
     margin-bottom: 8px;
-    span{
+    .title{
         padding:0px 15px;
     }
   }
-  
+
+  h2{
+    font-size: 14px;
+    line-height: 1.5em;
+    font-weight: 500;
+    margin-top: 0px;
+    color:#aaa;
+  }
+
   .beta{
     font-size: 15px;
     padding: 0px 5px;
     color: map.get($charaColors, "blade");
   }
-
-  h2{
-    font-size: 14px;
-    font-weight: 100;
-    margin-top: 0px;
-    color:#999;
-  }  
 }
 
 .breather{
@@ -212,7 +213,6 @@ ul{
 
 .clonePath{
   stroke-opacity: 0;
-  // stroke-dashoffset: 1000;  
   // stroke-dasharray: 1000;
   stroke-dasharray: 10;
 }
@@ -223,25 +223,33 @@ ul{
 
 .animatedPath{
   stroke-opacity: 1;
-  // animation: draw 0.8s forwards linear;
+  // animation: draw 0.8s forwards linear ;
   animation: dash 0.8s forwards infinite linear;
 }
 
 .animatedPathReverse{
   stroke-opacity: 1;
-  // animation: draw 0.8s forwards linear;
+  // animation: draw-reverse 0.8s forwards linear;
   animation: dash-reverse 0.8s forwards infinite linear;
 }
 
+// @keyframes draw {
+//   from {
+//     stroke-dashoffset: 1000;
+//   }
+//   to {
+//     stroke-dashoffset: 2000;
+//   }
+// }
 
-@keyframes draw {
-  from {
-    stroke-dashoffset: 1000;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
+// @keyframes draw-reverse {
+//   from {
+//     stroke-dashoffset: 1000;
+//   }
+//   to {
+//     stroke-dashoffset: 0;
+//   }
+// }
 
 @keyframes dash {
   from {
@@ -406,7 +414,7 @@ ul{
 // Basic Info Panel
 .bioBasic{
   background-color: #000;
-  padding: 25px 30px 30px 30px;
+  padding: 30px 25px 30px 25px;
   width: 215px;
   top: 50px;
   left: 260px;
@@ -513,12 +521,18 @@ td li, .traits li {
 
 // Detail Bio Panel
 .bioDetail{
-  padding: 40px 50px;
-  width: 310px;
-  height: 440px;
+  padding: 35px 50px 100px 50px;
+  background-color: rgba(50, 50, 50, 1);
   right: -20px;
   bottom: 50px;
-  background-color: rgba(50, 50, 50, 1);
+
+}
+.bioDetailInner{
+  padding: 10px;
+  overflow-y: auto;
+  width:  310px;
+  height: 350px;
+
 }
 
 // Window effect stuff

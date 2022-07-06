@@ -11,6 +11,8 @@
 /*jshint browser: true, strict: true, undef: true */
 /*global define: false */
 
+var polyfilter_scriptpath = '/js/';
+
 ( function( window ) {
 
 'use strict';
