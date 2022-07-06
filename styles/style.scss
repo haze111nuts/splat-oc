@@ -73,19 +73,68 @@ ul{
   list-style: none;
 }
 
-#chartNav{
-  width: 100%;
-  padding: 20px 0px;
+.langNav{
+  border: 3px solid dimgrey;
+  width: 120px;
+  height: 120px;
+  position: fixed;
+  top:-60px;
+  left:-60px;
+  z-index: 10;
+  border-radius: 120px;
+  @include prefix(transition, all 0.3s, webkit moz);   
+
 }
 
-#langSwitch{
-  background-color: dimgrey;
-  width:  80px;
-  height: 80px;
-  margin: 0px auto;
+.langSwitch{
   cursor: pointer;
+  position: absolute;
+  background-color: dimgrey;
+  display:block;
+  width:60px;
+  height:60px;
+  line-height:60px;
+  border-radius: 50%;
+  color:#f5f5f5;
+  text-align:center;
+  text-decoration:none;
+  font-size:20px;
+  font-weight:bold;
 }
 
+.focusOnCH{
+  @include prefix(transform, rotate(45deg), webkit moz ms);    
+}
+
+.focusOnEN{
+  @include prefix(transform, rotate(-45deg), webkit moz ms);    
+}
+
+.langCh{
+  right: -30px;
+  bottom: 30px;
+  @include prefix(transform, rotate(-45deg), webkit moz ms);  
+}
+
+.langEn{
+  right: 30px;
+  bottom: -30px;
+  @include prefix(transform, rotate(45deg), webkit moz ms);  
+}
+
+.faded{
+  opacity: 0.1;
+}
+
+.hide{
+  opacity: 0 !important;
+  z-index: -1;
+}
+
+.noSelect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  @include prefix(user-select, none, webkit khtml moz ms);  
+}
 
 //=======================//
 //===                 ===//
@@ -122,6 +171,10 @@ ul{
   // stroke-dashoffset: 1000;  
   // stroke-dasharray: 1000;
   stroke-dasharray: 10;
+}
+
+.tempStrokeStyle{
+  stroke: #fff;
 }
 
 .animatedPath{
@@ -223,9 +276,6 @@ ul{
         -2px -2px 0 black;
 }
 
-.faded{
-  opacity: 0.1;
-}
 
 //===========================//
 //===                     ===//
@@ -267,8 +317,6 @@ ul{
 
 .md-content {
 	color: #fff;
-	width: 900px;
-	height: 700px;
   text-align: left;
 	position: relative;
 	margin: 0 auto;
@@ -278,10 +326,27 @@ ul{
   position: absolute;
 }
 
-//=====================//
-//===   Bio Stuff   ===//
-//=====================//
+// Bio Close button
+.closeBT{
+  cursor: pointer;
+  z-index: 10;
+}
 
+.md-show.md-window ~ .container {
+  @include prefix(filter, blur(5px), webkit moz);  
+}
+
+//==============================//
+//===   Style for Bio page   ===//
+//==============================//
+.charaBio{
+	width: 900px;
+	height: 700px;
+}
+.charaBio .closeBT{
+  top: 30px;
+  right: -20px;  
+}
 .bioBasic, .bioDetail{
   font-size: 14px;
 }
@@ -412,19 +477,7 @@ td li, .traits li {
   background-color: rgba(50, 50, 50, 1);
 }
 
-// Bio Close button
-.bioCloseBT{
-  cursor: pointer;
-  z-index: 10;
-  top: 30px;
-  right: -20px;
-}
-
 // Window effect stuff
-.md-show.md-window ~ .container {
-  @include prefix(filter, blur(3px), webkit moz);  
-}
-
 .md-window .md-content .bioBasic,
 .md-window .md-content .bioOutfits,
 .md-window .md-content .bioDetail,
@@ -475,9 +528,20 @@ td li, .traits li {
   opacity: 1;
 }
 
-.hide{
-  opacity: 0 !important;
-  z-index: -1;
+//==============================//
+//===   Style for Bio page   ===//
+//==============================//
+
+.relationshipPage{
+  // background-color: rgba(50, 50, 50, 1);
+  border: #fff 1px solid;
+  width: 550px;
+	height: 700px;
+}
+
+.relationshipPage .closeBT{
+  top: -30px;
+  right: -30px;  
 }
 
 //=====================================//

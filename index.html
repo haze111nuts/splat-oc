@@ -18,10 +18,11 @@
 		<link rel="stylesheet" type="text/css" href="styles/style.css" />
     </head>
     <body>
-		<div class="md-modal md-window" id="modal-blur">
-			<div id="charaBio" class="md-content">
+		<!--hidden pop-ups-->
+		<div class="md-modal md-window" id="modal-chara">
+			<div class="md-content charaBio">
 				<div class="bioArt"></div>
-				<div class="bioCloseBT md-close">
+				<div class="closeBT md-close">
 					<svg viewBox="0 0 30 30" width="90" height="90">
 					  <path fill="#fff" d="M7 4a.995.995 0 0 0-.707.293l-2 2a.999.999 0 0 0 0 1.414L11.586 15l-7.293 7.293a.999.999 0 0 0 0 1.414l2 2a.999.999 0 0 0 1.414 0L15 18.414l7.293 7.293a.999.999 0 0 0 1.414 0l2-2a.999.999 0 0 0 0-1.414L18.414 15l7.293-7.293a.999.999 0 0 0 0-1.414l-2-2a.999.999 0 0 0-1.414 0L15 11.586 7.707 4.293A.996.996 0 0 0 7 4z"/>
 					</svg>		
@@ -34,15 +35,25 @@
 				<div class="bioBasic">
 				</div>
 				<div class="bioDetail">
-
 				</div>
-				
 			</div>
 		</div>
 
+		<div class="md-modal md-window" id="modal-relationship">
+			<div class="md-content relationshipPage">
+				<div class="closeBT md-close">
+					<svg viewBox="0 0 30 30" width="90" height="90">
+					  <path fill="#fff" d="M7 4a.995.995 0 0 0-.707.293l-2 2a.999.999 0 0 0 0 1.414L11.586 15l-7.293 7.293a.999.999 0 0 0 0 1.414l2 2a.999.999 0 0 0 1.414 0L15 18.414l7.293 7.293a.999.999 0 0 0 1.414 0l2-2a.999.999 0 0 0 0-1.414L18.414 15l7.293-7.293a.999.999 0 0 0 0-1.414l-2-2a.999.999 0 0 0-1.414 0L15 11.586 7.707 4.293A.996.996 0 0 0 7 4z"/>
+					</svg>		
+				</div>
+			</div>
+		</div>
+
+		<!--actual content-->
 		<div class="container">
-			<div id="chartNav">
-				<div id="langSwitch"></div>
+			<div class="langNav">
+				<div class="langSwitch langCh noSelect">中文</div>
+				<div class="langSwitch langEn noSelect">ENG</div>
 			</div>
 			<div class="chartWrapper">
 				<svg id="chartSVG" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">

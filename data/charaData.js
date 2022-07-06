@@ -150,11 +150,11 @@ var relationshipData_ch = [
   },
   {
       id: "HB",
-      label: "分居姊弟",
+      label: "姊弟",
       chara1: "blade",
       chara2: "hannah",
       desc1: "←畏懼",
-      desc2: "家暴→"
+      desc2: "非常痛恨→"
   },
   {
       id: "LB",
@@ -199,7 +199,7 @@ var relationshipData_ch = [
   },
   {
       id: "LY",
-      label: "同居兄弟",
+      label: "兄弟",
       chara1: "yoni",
       chara2: "lance",
       desc1: "←吃軟糖ㄇ！",
@@ -251,7 +251,7 @@ var relationshipData_ch = [
       chara1: "blade",
       chara2: "ellie",
       desc1: "↓人還不錯",
-      desc2: "有點崇拜↑"
+      desc2: "在意&崇拜↑"
   },
   {
       id: "HM",
@@ -275,7 +275,7 @@ var relationshipData_ch = [
       chara1: "minerva",
       chara2: "blade",
       desc1: "↙有點感興趣",
-      desc2: "佩服↗"
+      desc2: "覺得很厲害↗"
   },
   {
       id: "SB",

@@ -8,12 +8,12 @@ function buildChart(relationshipData){
     chartHTML += "<ul>";
     chartHTML += "<li class='group teamBB'></li>";
     for (var chara in charaData) {
-        chartHTML += "<li class='chara md-trigger' id='"+ chara +"' data-modal='modal-blur'>";
+        chartHTML += "<li class='chara md-trigger' id='"+ chara +"' data-modal='modal-chara'>";
         chartHTML += "<div class='nameSticker'>"+ chara.charAt(0).toUpperCase() + chara.slice(1); +"</div>";
         chartHTML += "</li>";
     }
     for(var j=0; j<relationshipData.length; j++){
-        chartHTML += "<li class='relation' id='rel_"+ relationshipData[j].id +"'>";
+        chartHTML += "<li class='relation md-trigger' id='rel_"+ relationshipData[j].id +"' data-modal='modal-relationship'>";
         chartHTML += "<span class='relDesc "+ relationshipData[j].chara1 +"' >"+ relationshipData[j].desc1 +"</span>"
         chartHTML += "<div class='relLabel'>"+ relationshipData[j].label +"</div>";
         chartHTML += "<span class='relDesc "+ relationshipData[j].chara2 +"' >"+ relationshipData[j].desc2 +"</span>"
@@ -56,6 +56,7 @@ function relationshipHoverEvent(relationshipData){
         const otherRelation = relationshipData.filter(r => r !== relationship );
         $(this).hover(function() {
             $("#line_"+id+"_fill").addClass('animatedPath');
+            $("#line_"+id+"_fill").addClass('tempStrokeStyle');
             // hide other chara
             for(const chara of otherChara ){
                 $("#"+chara).addClass("faded");
@@ -67,6 +68,7 @@ function relationshipHoverEvent(relationshipData){
             }
         }, function() {
             $("#line_"+id+"_fill").removeClass('animatedPath');
+            $("#line_"+id+"_fill").removeClass('tempStrokeStyle');
             // unhide other chara
             for(const chara of otherChara ){
                 $("#"+chara).removeClass("faded");
@@ -203,6 +205,7 @@ function setUpOutfitSwitchEvents(charaBioData){
 function modalEffectsInit(bioData) {
 	var overlay = document.querySelector( '.md-overlay' );
 	[].slice.call( document.querySelectorAll( '.md-trigger' ) ).forEach( function( el, i ) {
+
 		var modal = document.querySelector( '#' + el.getAttribute( 'data-modal' ) ),
 			close = modal.querySelector( '.md-close' );
 
@@ -220,8 +223,12 @@ function modalEffectsInit(bioData) {
 		}
 
 		el.addEventListener( 'click', function( ev ) {
-            var currentCharaBio = bioData.find(b => b.id === el.id);
-            setUpBioPageFor(currentCharaBio);
+            if(el.getAttribute( 'data-modal' ) == "modal-chara"){
+                var currentCharaBio = bioData.find(b => b.id === el.id);
+                setUpBioPageFor(currentCharaBio);
+            }else{
+            }
+
             setTimeout(function(){
                 classie.add( modal, 'md-show' );
                 overlay.removeEventListener( 'click', removeModalHandler );
@@ -259,23 +266,29 @@ function setupStuff(relationshipData, bioData){
 //===                ===//
 //======================//
 
-var lang;
+var currentLang;
 
 $(document).ready(function(){
 
-    lang = "EN";
-    $("#langSwitch").html("中文");
-    setupStuff(relationshipData_en, bioData_en)
+    currentLang = "EN";
+    $(".langNav").addClass("focusOnCH");
+    setupStuff(relationshipData_en, bioData_en);
 
-    $("#langSwitch").click(function() {
-        if(lang == "EN"){
-            lang = "CH";
-            $("#langSwitch").html("ENG");
-            setupStuff(relationshipData_ch, bioData_en)
-        }else{
-            lang = "EN";
-            $("#langSwitch").html("中文");
-            setupStuff(relationshipData_en, bioData_en)
+
+    $(".langCh").click(function() {
+        if(currentLang == "EN"){
+            currentLang = "CH";
+            $(".langNav").removeClass("focusOnCH");
+            $(".langNav").addClass("focusOnEN");         
+            setupStuff(relationshipData_ch, bioData_en);
+        }
+    });
+    $(".langEn").click(function() {
+        if(currentLang == "CH"){
+            currentLang = "EN";
+            $(".langNav").removeClass("focusOnEN");
+            $(".langNav").addClass("focusOnCH");
+            setupStuff(relationshipData_en, bioData_en);
         }
     });
 
