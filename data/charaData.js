@@ -4,32 +4,32 @@
 //=====================//
 
 var relationshipPosData = [
-    { id: "HM", x: 345, y: 180 },
-    { id: "BM", x: 540, y: 195 },
-    { id: "SB", x: 680, y: 212 },
-    { id: "EM", x: 812, y: 110 },
+  {id:"HM", x: 345, y: 180, start:"minerva"},
+  {id:"BM", x: 540, y: 195, start:"blade"},
+  {id:"SB", x: 680, y: 212, start:"simon"},
+  {id:"EM", x: 812, y: 110, start:"edd"},
 
-    { id: "HB", x: 250, y: 330 },
-    { id: "EB", x: 565, y: 330 },
-    { id: "XB", x: 565, y: 400 },
+  {id:"HB", x: 250, y: 330, start:"blade"},
+  {id:"EB", x: 565, y: 330, start:"edd"},
+  {id:"XB", x: 565, y: 400, start:"xiu"},
 
-    { id: "LH", x: 90, y: 465 },
-    { id: "LB", x: 210, y: 465 },
-    { id: "YB", x: 335, y: 465 },
-    { id: "AB", x: 490, y: 465 },
-    { id: "EA", x: 640, y: 465 },
-    { id: "SA", x: 760, y: 465 },
-    { id: "EX", x: 860, y: 465 },
+  {id:"LH", x: 90,  y: 465, start:"lance"},
+  {id:"LB", x: 210, y: 465, start:"lance"},
+  {id:"YB", x: 335, y: 465, start:"yoni"},
+  {id:"AB", x: 490, y: 465, start:"axel"},
+  {id:"EA", x: 640, y: 465, start:"axel"},
+  {id:"SA", x: 760, y: 465, start:"simon"},
+  {id:"EX", x: 860, y: 465, start:"xiu"},
 
-    { id: "YA", x: 425, y: 625 },
-    { id: "XA", x: 695, y: 625 },
+  {id:"YA", x: 425, y: 625, start:"axel"},
+  {id:"XA", x: 695, y: 625, start:"xiu"},
 
-    { id: "LY", x: 185, y: 730 },
-    { id: "XY", x: 735, y: 730 },
+  {id:"LY", x: 185, y: 730, start:"yoni"},
+  {id:"XY", x: 735, y: 730, start:"xiu"},
 
-    { id: "AE", x: 610, y: 760 },
-    { id: "BE", x: 370, y: 800 },
-    { id: "XE", x: 850, y: 800 },
+  {id:"AE", x: 610, y: 760, start:"axel"},
+  {id:"BE", x: 370, y: 800, start:"ellie"},
+  {id:"XE", x: 850, y: 800, start:"xiu"}
 ]
 
 const charaData = {
