@@ -3,6 +3,7 @@
 - ~~fix lang button blur issue~~
 - add extra div in profile page for name translation
 - add age into bio
+- adjust font style for chinese
 - ~~refine svg path animation (add some kind of direction attribute?)~~
 - set up actual profile pics
 - ~~separate the data into different js file or json file instead of having them as variables~~

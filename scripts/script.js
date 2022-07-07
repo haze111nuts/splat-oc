@@ -310,7 +310,7 @@ $(document).ready(function(){
             currentLang = "CH";
             $(".langNav").removeClass("focusOnCH");
             $(".langNav").addClass("focusOnEN");         
-            setupStuff(relationshipData_ch, bioData_en, siteData_ch);
+            setupStuff(relationshipData_ch, bioData_ch, siteData_ch);
         }
     });
     $(".langEn").click(function() {

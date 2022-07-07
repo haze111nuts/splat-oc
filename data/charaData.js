@@ -113,7 +113,7 @@ const charaData = {
             rotation: 12
         }
     },
-    temp: {
+    ryan: {
         color: "rgb(200, 200, 200)",
         photoPos: {
             x: 130,
@@ -690,6 +690,273 @@ var bioData_en = [
         bio: [
             ':/'
         ]
+    },
+    {
+        id: 'ryan',
+        name: 'Ryan Joseph "RJ" Cameron',
+        gender: 'Male',
+        like: '???',
+        dislike: '???',
+        rank: "X",
+        mains: "Chargers",
+        traits: [
+            '',
+            '',
+            ''
+        ],
+        outfits: [
+            { name: 'Regular', url: 'xxx.png' }
+        ],
+        bio: [
+            ':/'
+        ]
     }
-
 ]
+
+var bioData_ch = [
+    {
+        id: 'blade',
+        name: '布雷德(小布)',
+        gender: '男',
+        like: '獨處',
+        dislike: '自己&所有事物',
+        rank: "S+ ~ X",
+        mains: "P槍、輕滾、.52/.96",
+        traits: [
+            '彆扭、孤僻',
+            '有焦慮問題',
+            '沒自信',
+            '會裝酷',
+            '其實很乖+很認真'
+        ],
+        outfits: [
+            { name: '通常服', url: 'bl1.png' },
+            { name: '3號', url: 'bl2.png' },
+            { name: '洗腦3號', url: 'bl3.png' }
+        ],
+        bio: [
+            'A boy who lives around Inkopolis Plaza.',
+            '[S1] He used to refuse playing any turf/ranked game and would push away anyone who wants to be friend due to his anxious nature, which resulted from being bullied by his older sister for a long period of time. After being abruptly scouted by Captain Cuttlefish as agent 3, he received support from captain’s grandkids, it was then he decided to move out and live on his own with the new name “Blade”, he started practicing and eventually became able to play competitively.',
+            '[S2] He then met Axel and other friends and eventually got along since he is now a bit more opened-up to other people, and they decided to form a team called “Bad Buttons” with Blade as leader.'
+        ]
+    },
+    {
+        id: 'axel',
+        name: 'Axel',
+        gender: 'Male',
+        like: 'Sports??',
+        dislike: 'Losing or getting mocked',
+        rank: "S+ to X",
+        mains: "Dualies",
+        traits: [
+            'Rude, brusque, cocky',
+            'Has anger management issue',
+            'Aggressive behaviors',
+            "Picks fights daily",
+            'Cares about his grandma'
+        ],
+        outfits: [
+            { name: 'Regular', url: 'xxx.png' },
+            { name: 'Agent 4', url: 'xxx.png' }
+        ],
+        bio: [
+            'A boy who lives around Inkopolis Square.',
+            // ' Despite hot-headed rascal ',
+            'He picked a fight with Blade on a fateful day and decided that he wanted to form a team with him.',
+            'He chased him through the sewer system in Inkopolis Square where he become Agent 4 just for another chance to meet Blade.'
+        ]
+    },
+    {
+        id: 'xiu',
+        name: 'Xiu',
+        gender: 'Male',
+        like: 'Attentions',
+        dislike: 'Losing followers',
+        rank: "S+ to X",
+        mains: "Sloshers and Brellas",
+        traits: [
+            "Social media addict",
+            "Charming, sociable, stylish",
+            "Cares about his appearance",
+            "Kind of a drama queen",
+            "Is quite popular"
+        ],
+        outfits: [
+            { name: 'Regular', url: 'xxx.png' },
+            { name: 'Agent 4', url: 'xxx.png' }
+        ],
+        bio: [
+            ''
+        ]
+    },
+    {
+        id: 'yoni',
+        name: 'Yoni',
+        gender: 'Male',
+        like: 'Anything that gets him high',
+        dislike: 'No acces to substance',
+        rank: "S+",
+        mains: "Hydra, Dynamo Roller",
+        traits: [
+            'Junky',
+            'Kind of goofy',
+            'Get excited easily',
+            'Has destructive strength',
+            'Actually kind of rich'
+        ],
+        outfits: [
+            { name: 'Regular', url: 'xxx.png' }
+        ],
+        bio: [
+            'He loves to be get high using some substence, but ever since he joined Bad Buttons he had cut out most of it, due to Turf War Association\'s ban on use of illegal drug. Although He wasn\'t able resist the temptation of getting high so he has been looking for a solution that would allow him to play Turf War.',
+            'He is involved in some low level gang activity, mostly selling drugs.'
+        ]
+    },
+    {
+        id: 'hannah',
+        name: 'Hannah',
+        gender: 'Female',
+        like: '???',
+        dislike: 'Blade',
+        rank: "X",
+        mains: "N-zap, .52/.96",
+        traits: [
+            'Bully',
+            '',
+            '',
+            ''
+        ],
+        outfits: [
+            { name: 'Regular', url: 'xxx.png' },
+            { name: 'Agent 3', url: 'xxx.png' }
+        ],
+        bio: [
+            ':/'
+        ]
+    },
+    {
+        id: 'lance',
+        name: 'Lance',
+        gender: 'Male',
+        like: '???',
+        dislike: '??',
+        rank: "X",
+        mains: "Nozzlenose and Blasters",
+        traits: [
+            'Has OCD',
+            'Perfectionist',
+            ''
+        ],
+        outfits: [
+            { name: 'Regular', url: 'xxx.png' },
+            { name: 'Agent 3', url: 'xxx.png' }
+        ],
+        bio: [
+            ':/'
+        ]
+    },
+    {
+        id: 'ellie',
+        name: 'Estelle "Ellie"',
+        gender: 'Female',
+        like: '???',
+        dislike: '???',
+        rank: "A+",
+        mains: "???",
+        traits: [
+            'SWJ',
+            'Engage in online shaming',
+            ''
+        ],
+        outfits: [
+            { name: 'Regular', url: 'xxx.png' },
+            { name: 'Agent 4', url: 'xxx.png' }
+        ],
+        bio: [
+            ':/'
+        ]
+    },
+    {
+        id: 'edd',
+        name: 'Edd',
+        gender: 'Male',
+        like: '???',
+        dislike: '???',
+        rank: "S+ to X",
+        mains: "???",
+        traits: [
+            '',
+            '',
+            ''
+        ],
+        outfits: [
+            { name: 'Regular', url: 'xxx.png' },
+            { name: 'Agent 8', url: 'xxx.png' }
+        ],
+        bio: [
+            ':/'
+        ]
+    },
+    {
+        id: 'minerva',
+        name: 'Minerva',
+        gender: 'Female',
+        like: '???',
+        dislike: '???',
+        rank: "X",
+        mains: "???",
+        traits: [
+            '',
+            '',
+            ''
+        ],
+        outfits: [
+            { name: 'Regular', url: 'xxx.png' },
+            { name: 'Agent 8', url: 'xxx.png' }
+        ],
+        bio: [
+            ':/'
+        ]
+    },
+    {
+        id: 'simon',
+        name: 'Simon',
+        gender: 'Male',
+        like: '???',
+        dislike: '???',
+        rank: "?",
+        mains: "???",
+        traits: [
+            '',
+            '',
+            ''
+        ],
+        outfits: [
+            { name: 'Regular', url: 'xxx.png' }
+        ],
+        bio: [
+            ':/'
+        ]
+    },
+    {
+        id: 'ryan',
+        name: 'Ryan Joseph "RJ" Cameron',
+        gender: 'Male',
+        like: '???',
+        dislike: '???',
+        rank: "X",
+        mains: "Chargers",
+        traits: [
+            '',
+            '',
+            ''
+        ],
+        outfits: [
+            { name: 'Regular', url: 'xxx.png' }
+        ],
+        bio: [
+            ':/'
+        ]
+    }
+]
+

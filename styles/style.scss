@@ -806,7 +806,7 @@ td li, .traits li {
   -moz-animation: glow 1s ease-in-out infinite alternate;
   animation: glow 1s ease-in-out infinite alternate;  
 }
-#temp .nameSticker{
+#ryan .nameSticker{
   width: 80px;
   font-family: TexasGrungeDemo;
   font-size: 26px;
@@ -824,8 +824,4 @@ td li, .traits li {
   to {
     text-shadow: 0 0 15px #fff, 0 0 25px #ff4da6, 0 0 35px #ff4da6, 0 0 45px #ff4da6, 0 0 55px ;
   }
-}
-
-#temp{
-  display: none !important;
 }
