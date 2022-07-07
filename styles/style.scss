@@ -1,7 +1,7 @@
 @use "sass:map";
 
 $chart-width: 1000px ;
-$chart-height: 950px ;
+$chart-height: 1000px ;
 $chara-icon-width: 130px;
 $chara-icon-height: 130px;
 
@@ -163,10 +163,6 @@ ul{
   background-color: #000;
 }
 
-.faded{
-  opacity: 0.1;
-}
-
 .hide{
   opacity: 0 !important;
   z-index: -1;
@@ -190,6 +186,7 @@ ul{
 .chartWrapper{
   position: relative;
   width: $chart-width;
+  height: $chart-height;
   margin: 50px auto 0 auto;
 }
 
@@ -328,6 +325,9 @@ ul{
         -2px -2px 0 black;
 }
 
+.faded{
+  opacity: 0.1;
+}
 
 //===========================//
 //===                     ===//

@@ -3,13 +3,13 @@
 //=====================//
 
 var siteData_en = {
-    title : "Haze's Splat OC Ref",
+    title : "Haze's Splat OC Stuff",
     description : ["Splatoon OC info/bio dump", "by twitter@haze111nuts"]
 }
 
 var siteData_ch = {
     title : "HAZE家漆彈角色整理",
-    description : ["懶人總整理+全員簡介用頁面", "素材先放草圖😔有生之年慢慢補"]
+    description : ["懶人總整理+全員介紹頁面", "素材先放草圖😔有生之年慢慢補"]
 }
 
 //=====================//

@@ -145,10 +145,6 @@ ul {
   background-color: #000;
 }
 
-.faded {
-  opacity: 0.1;
-}
-
 .hide {
   opacity: 0 !important;
   z-index: -1;
@@ -172,13 +168,14 @@ ul {
 .chartWrapper {
   position: relative;
   width: 1000px;
+  height: 1000px;
   margin: 50px auto 0 auto;
 }
 
 #chartSVG {
   padding-bottom: 50px;
   width: 1000px;
-  height: 950px;
+  height: 1000px;
   position: absolute;
   display: block;
 }
@@ -233,7 +230,7 @@ ul {
 #chart {
   border: 0px solid #000;
   width: 1000px;
-  height: 950px;
+  height: 1000px;
   position: absolute;
 }
 
@@ -286,6 +283,10 @@ ul {
   line-height: 100%;
   transition: 0.4s ease;
   text-shadow: -2px 2px 0 black, 2px 2px 0 black, 2px -2px 0 black, -2px -2px 0 black;
+}
+
+.faded {
+  opacity: 0.1;
 }
 
 .noscroll {
