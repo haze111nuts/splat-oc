@@ -513,8 +513,8 @@ var bioData_en = [
             { name: 'Agent 4', url: 'xxx.png' }
         ],
         bio: [
-            'A boy who lives around Inkopolis Square.',
-            // ' Despite hot-headed rascal ',
+            'A boy who lives around Inkopolis Square with his sister Ellie and grandma.', 
+            'He had trouble finding teammate for competitive game due to his bad temper.',
             'He picked a fight with Blade on a fateful day and decided that he wanted to form a team with him.',
             'He chased him through the sewer system in Inkopolis Square where he become Agent 4 just for another chance to meet Blade.'
         ]
@@ -539,7 +539,10 @@ var bioData_en = [
             { name: 'Agent 4', url: 'xxx.png' }
         ],
         bio: [
-            ''
+            'He lives by himself in Inkopolis Square. He spend most of his time maintaining his social life and his oline images',
+            'He took interest in learning bartending and works part-time in a bar after he dropped out school.',
+            'He used to compete in tourament with Axel when they are still in relationship, but he completely stopped playing after they broke out.',
+            'He took interest in Blade when he found out Axel is hanging out with him, and decide to start play turf war again.'
         ]
     },
     {
