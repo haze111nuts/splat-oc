@@ -154,7 +154,7 @@ var relationshipData_ch = [
         chara1: "blade",
         chara2: "hannah",
         desc1: "←畏懼",
-        desc2: "非常痛恨→"
+        desc2: "非常厭惡→"
     },
     {
         id: "LB",
@@ -717,6 +717,7 @@ var bioData_ch = [
     {
         id: 'blade',
         name: '布雷德(小布)',
+        jpname: 'ブレイド',
         gender: '男',
         like: '獨處',
         dislike: '自己&所有事物',
@@ -735,58 +736,62 @@ var bioData_ch = [
             { name: '洗腦3號', url: 'bl3.png' }
         ],
         bio: [
-            'A boy who lives around Inkopolis Plaza.',
-            '[S1] He used to refuse playing any turf/ranked game and would push away anyone who wants to be friend due to his anxious nature, which resulted from being bullied by his older sister for a long period of time. After being abruptly scouted by Captain Cuttlefish as agent 3, he received support from captain’s grandkids, it was then he decided to move out and live on his own with the new name “Blade”, he started practicing and eventually became able to play competitively.',
-            '[S2] He then met Axel and other friends and eventually got along since he is now a bit more opened-up to other people, and they decided to form a team called “Bad Buttons” with Blade as leader.'
+            '住在ハイカラシティ廣場附近。',
+            '原名布蘭登(Branden)，因為長期被姐姐欺負跟貶低所以性格孤僻。原本不肯玩任何塗地排位戰並且很抗拒交朋友，後來因緣際會遇上司令勉強同意變成3號，之間也結識了1號與2號，在三人的支持下決定開始嘗試改變態度和擺脫陰影，透過3號的任務持續練習後終於漸漸變得可以和別人比賽，也是這時決定改名布雷德並搬出去自己住。',
+            '在認識亞克和其他朋友後開始打開心房並逐漸變得要好，並以小布為中心決定組一個小隊。'
         ]
     },
     {
         id: 'axel',
-        name: 'Axel',
-        gender: 'Male',
-        like: 'Sports??',
-        dislike: 'Losing or getting mocked',
-        rank: "S+ to X",
-        mains: "Dualies",
+        name: '亞克索爾(亞克)',
+        jpname: 'アクセル',
+        gender: '男',
+        like: '比賽',
+        dislike: '輸or被嘲笑',
+        rank: "S+ ~ X",
+        mains: "雙槍類",
         traits: [
-            'Rude, brusque, cocky',
-            'Has anger management issue',
-            'Aggressive behaviors',
-            "Picks fights daily",
-            'Cares about his grandma'
+            '無禮、暴躁、囂張',
+            '有憤怒管理問題',
+            '攻擊&侵略行為',
+            "總是打架&找麻煩",
+            '很照顧自己家奶奶'
         ],
         outfits: [
-            { name: 'Regular', url: 'xxx.png' },
-            { name: 'Agent 4', url: 'xxx.png' }
+            { name: '通常服', url: 'xxx.png' },
+            { name: '4號', url: 'xxx.png' }
         ],
         bio: [
-            'A boy who lives around Inkopolis Square.',
-            // ' Despite hot-headed rascal ',
-            'He picked a fight with Blade on a fateful day and decided that he wanted to form a team with him.',
-            'He chased him through the sewer system in Inkopolis Square where he become Agent 4 just for another chance to meet Blade.'
+            '住在ハイカラスクエア附近。跟奶奶和妹妹同住。',
+            '小混混性格，因為脾氣暴躁所以總是跟人處不來。一直很想找可以一起比賽的隊友。',
+            '一次比賽隨機排到小布，兩人起了衝突並且演變成打架，最後搞到不歡而散時，忽然萌生了想和小布組隊的想法便追了回去。結果在下水道追丟對方，接著誤打誤撞進入峽谷區遇到了螢，為了要問出小布的下落而同意當上了4號。經過一番漫長的考驗最後終於如願認識小布，並且一同組成隊伍。' 
         ]
     },
     {
         id: 'xiu',
-        name: 'Xiu',
-        gender: 'Male',
-        like: 'Attentions',
-        dislike: 'Losing followers',
-        rank: "S+ to X",
-        mains: "Sloshers and Brellas",
+        name: '修',
+        jpname: 'シュウ',        
+        gender: '男',
+        like: '人氣，流行音樂',
+        dislike: '掉粉',
+        rank: "S+ ~ X",
+        mains: "桶或傘",
         traits: [
-            "Social media addict",
-            "Charming, sociable, stylish",
-            "Cares about his appearance",
-            "Kind of a drama queen",
-            "Is quite popular"
+            "有風度、善社交、很時尚",
+            '有社交平台成癮問題',
+            "很注重自己儀表",
+            "是挺受歡迎的網紅",
+            "老是搞八卦&小題大作"
         ],
         outfits: [
-            { name: 'Regular', url: 'xxx.png' },
-            { name: 'Agent 4', url: 'xxx.png' }
+            { name: '通常服', url: 'xxx.png' },
+            { name: '通常服2', url: 'xxx.png' },            
+            { name: '4號', url: 'xxx.png' }
         ],
         bio: [
-            ''
+            '住在ハイカラスクエア附近。',
+            '是個生活充滿社交和網路的傢伙，輟學後馬上去學調酒，目前在酒吧打工。',
+            '起初跟亞克在一起時還會偶爾和他一起比賽，但分手後就全力投入網路社交媒體世界，再也沒再碰過武器。直到一次透過亞克打聽到小布而起了興趣，一起相處一陣子後決定回歸並和他們組隊。'
         ]
     },
     {

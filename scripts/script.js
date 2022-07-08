@@ -155,7 +155,8 @@ function charaHoverEvent(relationshipData){
 
 function setUpBioPageFor(charaBioData){
     //Fill header
-    $(".bioHeader").html(charaBioData.id.toUpperCase());
+    $(".bioHeader span:first-child").html(charaBioData.id.toUpperCase());
+    $(".bioHeader span:nth-child(2)").html(charaBioData.jpname);
 
     //Fill outfit panel
     var outfitListHTML = ""
@@ -164,6 +165,11 @@ function setUpBioPageFor(charaBioData){
     }
     $(".outfitSelect").html(outfitListHTML);    
     setUpOutfitSwitchEvents(charaBioData);
+
+    if(currentLang == "CH")
+        $(".outfitSelect li").addClass("outfitSelect-ch");
+    else
+        $(".outfitSelect li").removeClass("outfitSelect-ch");
 
     //Fill basic bio panel
     var bioBasicHTML = "<table>";
@@ -309,7 +315,7 @@ $(document).ready(function(){
         if(currentLang == "EN"){
             currentLang = "CH";
             $(".langNav").removeClass("focusOnCH");
-            $(".langNav").addClass("focusOnEN");         
+            $(".langNav").addClass("focusOnEN");
             setupStuff(relationshipData_ch, bioData_ch, siteData_ch);
         }
     });

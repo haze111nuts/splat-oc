@@ -69,6 +69,13 @@ html{
   background-color: rgb(44, 44, 44);
 }
 
+::selection {
+  background: rgb(120, 120, 120);
+}
+::-moz-selection {
+  background: rgb(120, 120, 120);
+}
+
 ul{
   list-style: none;
 }
@@ -408,8 +415,13 @@ ul{
   top: 60px;
   left: 550px;
   color: white;
-  font-size: 55px;
-  font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat";
+  :first-child{
+    font-size: 55px;
+    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat";  
+  }
+  :nth-child(2){
+    font-size: 15px;
+  }
 }
 // Basic Info Panel
 .bioBasic{
@@ -495,6 +507,10 @@ td li, .traits li {
   background-size: 51.32px 47.86px;
   box-shadow: -5px -5px 5px 0px rgba(0,0,0,0.5);
   transition: 0.2s ease;  
+}
+.outfitSelect-ch{
+  font-size: 22px !important;
+  padding: 4px 23px !important;
 }
 .outfitSelect li:hover, .focusedOutfit{
   color: white !important;
