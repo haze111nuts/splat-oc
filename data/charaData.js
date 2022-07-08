@@ -497,7 +497,7 @@ var bioData_en = [
         id: 'axel',
         name: 'Axel',
         gender: 'Male',
-        like: 'Sports??',
+        like: 'Compete',
         dislike: 'Losing or getting mocked',
         rank: "S+ to X",
         mains: "Dualies",
@@ -523,7 +523,7 @@ var bioData_en = [
         id: 'xiu',
         name: 'Xiu',
         gender: 'Male',
-        like: 'Attentions',
+        like: 'Trendy things',
         dislike: 'Losing followers',
         rank: "S+ to X",
         mains: "Sloshers and Brellas",
@@ -737,7 +737,7 @@ var bioData_ch = [
         ],
         bio: [
             '住在ハイカラシティ廣場附近。',
-            '原名布蘭登(Branden)，因為長期被姐姐欺負跟貶低所以性格孤僻。原本不肯玩任何塗地排位戰並且很抗拒交朋友，後來因緣際會遇上司令勉強同意變成3號，之間也結識了1號與2號，在三人的支持下決定開始嘗試改變態度和擺脫陰影，透過3號的任務持續練習後終於漸漸變得可以和別人比賽，也是這時決定改名布雷德並搬出去自己住。',
+            '原名布蘭登，因為長期被姐姐欺負跟貶低所以性格孤僻。原本不肯玩任何塗地排位戰並且很抗拒交朋友，後來因緣際會遇上司令勉強同意變成3號，之間也結識了1號與2號，在三人的支持下決定開始嘗試改變態度和擺脫陰影，透過3號的任務持續練習後終於漸漸變得可以和別人比賽，也是這時決定改名布雷德並搬出去自己住。',
             '在認識亞克和其他朋友後開始打開心房並逐漸變得要好，並以小布為中心決定組一個小隊。'
         ]
     },
