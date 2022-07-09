@@ -488,9 +488,9 @@ var bioData_en = [
             { name: 'Sanitized', url: 'bl3.png' }
         ],
         bio: [
-            'A boy who lives around Inkopolis Plaza.',
-            '[S1] He used to refuse playing any turf/ranked game and would push away anyone who wants to be friend due to his anxious nature, which resulted from being bullied by his older sister for a long period of time. After being abruptly scouted by Captain Cuttlefish as agent 3, he received support from captain’s grandkids, it was then he decided to move out and live on his own with the new name “Blade”, he started practicing and eventually became able to play competitively.',
-            '[S2] He then met Axel and other friends and eventually got along since he is now a bit more opened-up to other people, and they decided to form a team called “Bad Buttons” with Blade as leader.'
+            'A boy who lives around Inkopolis City Plaza.',
+            'He used to refuse playing any turf/ranked game and would push away anyone who wants to be friend due to his anxious nature, which resulted from being bullied by his older sister for a long period of time. After being abruptly scouted by Captain Cuttlefish as agent 3, he received support from captain’s grandkids, it was then he decided to move out and live on his own with the new name “Blade”, he started practicing and eventually became able to play competitively.',
+            'He then met Axel and other friends and eventually got along since he is now a bit more opened-up to other people, and they decided to form a team called “Bad Buttons” with Blade as leader.'
         ]
     },
     {
@@ -513,10 +513,9 @@ var bioData_en = [
             { name: 'Agent 4', url: 'xxx.png' }
         ],
         bio: [
-            'A boy who lives around Inkopolis Square with his sister Ellie and grandma.', 
-            'He had trouble finding teammate for competitive game due to his bad temper.',
-            'He picked a fight with Blade on a fateful day and decided that he wanted to form a team with him.',
-            'He chased him through the sewer system in Inkopolis Square where he become Agent 4 just for another chance to meet Blade.'
+            'A boy who lives around Inkopolis Square with his grandma and sister Ellie.', 
+            'He had trouble finding teammate for competitive games due to his bad temper.',
+            'One day in a random match he met Blade and picked a fight with him, and later realized that Blade could be the teammate he has been looking for. He then chased him through the sewer system in Inkopolis Square where he became Agent 4 just for another chance to meet Blade. He eventually found Blade and was able to befriend him and form a team like he wanted to.'
         ]
     },
     {
@@ -539,10 +538,9 @@ var bioData_en = [
             { name: 'Agent 4', url: 'xxx.png' }
         ],
         bio: [
-            'He lives by himself in Inkopolis Square. He spend most of his time maintaining his social life and his oline images',
-            'He took interest in learning bartending and works part-time in a bar after he dropped out school.',
-            'He used to compete in tourament with Axel when they are still in relationship, but he completely stopped playing after they broke out.',
-            'He took interest in Blade when he found out Axel is hanging out with him, and decide to start play turf war again.'
+            'He lives around Inkopolis Square.',
+            'He spend most of his time maintaining his social life and his online images, he also took interest in bartending and is working part-time in a bar after he dropped out of school.',
+            'He used to play with Axel until they broke up, he then shifted his focus onto social media. He then took interest in Blade when he found out Axel is hanging out with him, and decided to start playing again.'
         ]
     },
     {
@@ -767,7 +765,7 @@ var bioData_ch = [
         bio: [
             '住在ハイカラスクエア附近。跟奶奶和妹妹同住。',
             '小混混性格，因為脾氣暴躁所以總是跟人處不來。一直很想找可以一起比賽的隊友。',
-            '一次比賽隨機排到小布，兩人起了衝突並且演變成打架，最後搞到不歡而散時，忽然萌生了想和小布組隊的想法便追了回去。結果在下水道追丟對方，接著誤打誤撞進入峽谷區遇到了螢，為了要問出小布的下落而同意當上了4號。經過一番漫長的考驗最後終於如願認識小布，並且一同組成隊伍。' 
+            '一次比賽隨機排到小布，兩人起了衝突並且演變成打架，最後搞到不歡而散時，忽然萌生了想和小布組隊的想法便追了回去。結果在下水道追丟對方，接著誤打誤撞進入峽谷區遇到了螢，為了要問出小布的下落而同意當上了4號。經過一番漫長的折騰後終於如願認識小布並且組成隊伍。' 
         ]
     },
     {
