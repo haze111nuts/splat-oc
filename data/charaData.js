@@ -799,25 +799,25 @@ var bioData_ch = [
     },
     {
         id: 'yoni',
-        name: 'Yoni',
-        gender: 'Male',
-        like: 'Anything that gets him high',
-        dislike: 'No acces to substance',
+        name: '尤尼',
+        gender: '男',
+        like: '能讓人上癮的東西',
+        dislike: '取不到藥物',
         rank: "S+",
-        mains: "Hydra, Dynamo Roller",
+        mains: "水栓或重滾",
         traits: [
-            'Junky',
-            'Kind of goofy',
-            'Get excited easily',
-            'Has destructive strength',
-            'Actually kind of rich'
+            '友善、傻裡傻氣、高能量',
+            '有毒癮問題',
+            '很容易就興奮',
+            '有怪力',
+            '挺有錢的'
         ],
         outfits: [
             { name: 'Regular', url: 'xxx.png' }
         ],
         bio: [
-            'He loves to be get high using some substence, but ever since he joined Bad Buttons he had cut out most of it, due to Turf War Association\'s ban on use of illegal drug. Although He wasn\'t able resist the temptation of getting high so he has been looking for a solution that would allow him to play Turf War.',
-            'He is involved in some low level gang activity, mostly selling drugs.'
+            '他很喜歡成癮的感覺，但因為漆彈協會禁止玩家使用非法藥物，所以自從加入小布和亞克的隊伍之後就漸漸不用了。不過毒癮終究難戒，所以他正在找一種能讓他上癮又能繼玩漆彈的辦法。',
+            '他有參與低階的黑道活動，大部分他做的都是販毒。'
         ]
     },
     {
