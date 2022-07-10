@@ -814,43 +814,43 @@ var bioData_ch = [
             { name: 'Regular', url: 'xxx.png' }
         ],
         bio: [
+            '住在ハイカラシティ廣場附近,跟哥哥一起住。',
             '他很喜歡成癮的感覺，但因為漆彈協會禁止玩家使用非法藥物，所以自從加入小布和亞克的隊伍之後就漸漸不用了。不過毒癮終究難戒，所以他正在找一種能讓他上癮又能繼玩漆彈的辦法。',
-            '他有參與低階的黑道活動，大部分他做的都是販毒。'
+            '他有參與低階的黑道活動，大部分都是販毒。'
         ]
     },
     {
         id: 'hannah',
-        name: 'Hannah',
-        gender: 'Female',
-        like: '???',
-        dislike: 'Blade',
+        name: '漢娜',
+        gender: '女',
+        like: '漆彈',
+        dislike: '她弟',
         rank: "X",
         mains: "N-zap, .52/.96",
         traits: [
-            'Bully',
-            '',
-            '',
-            ''
+            '凶狠，冷漠，難親近',
+            '有家暴弟弟的問題',
+            '講話惡毒',
         ],
         outfits: [
             { name: 'Regular', url: 'xxx.png' },
             { name: 'Agent 3', url: 'xxx.png' }
         ],
         bio: [
-            ':/'
+            ''
         ]
     },
     {
         id: 'lance',
-        name: 'Lance',
-        gender: 'Male',
-        like: '???',
+        name: '蘭斯',
+        gender: '男',
+        like: '乾淨整齊對稱',
         dislike: '??',
         rank: "X",
         mains: "Nozzlenose and Blasters",
         traits: [
-            'Has OCD',
-            'Perfectionist',
+            '冷靜，',
+            '有強迫症的問題',
             ''
         ],
         outfits: [
@@ -871,7 +871,7 @@ var bioData_ch = [
         mains: "???",
         traits: [
             'SWJ',
-            'Engage in online shaming',
+            '有網路霸凌別人的問題',
             ''
         ],
         outfits: [
@@ -884,15 +884,15 @@ var bioData_ch = [
     },
     {
         id: 'edd',
-        name: 'Edd',
-        gender: 'Male',
+        name: '艾德',
+        gender: '男',
         like: '???',
         dislike: '???',
         rank: "S+ to X",
         mains: "???",
         traits: [
             '',
-            '',
+            '有慣性說謊的問題',
             ''
         ],
         outfits: [
