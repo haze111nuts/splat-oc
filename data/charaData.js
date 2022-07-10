@@ -4,121 +4,123 @@
 //=====================//
 
 var relationshipPosData = [
-  {id:"HM", x: 345, y: 180, start:"minerva"},
-  {id:"BM", x: 540, y: 195, start:"blade"},
-  {id:"SB", x: 680, y: 212, start:"simon"},
-  {id:"EM", x: 812, y: 110, start:"edd"},
-
-  {id:"HB", x: 250, y: 330, start:"blade"},
-  {id:"EB", x: 565, y: 330, start:"edd"},
-  {id:"XB", x: 565, y: 400, start:"xiu"},
-
-  {id:"LH", x: 90,  y: 465, start:"lance"},
-  {id:"LB", x: 210, y: 465, start:"lance"},
-  {id:"YB", x: 335, y: 465, start:"yoni"},
-  {id:"AB", x: 490, y: 465, start:"axel"},
-  {id:"EA", x: 640, y: 465, start:"axel"},
-  {id:"SA", x: 760, y: 465, start:"simon"},
-  {id:"EX", x: 860, y: 465, start:"xiu"},
-
-  {id:"YA", x: 425, y: 625, start:"axel"},
-  {id:"XA", x: 695, y: 625, start:"xiu"},
-
-  {id:"LY", x: 185, y: 730, start:"yoni"},
-  {id:"XY", x: 735, y: 730, start:"xiu"},
-
-  {id:"AE", x: 610, y: 760, start:"axel"},
-  {id:"BE", x: 370, y: 800, start:"ellie"},
-  {id:"XE", x: 850, y: 800, start:"xiu"}
+    {id:"RY", x: 170, y: 50, start:"ryan"},
+    {id:"YE", x: 1030, y: 50, start:"yoni"},
+    {id:"XY", x: 745, y: 25, start:"yoni"},
+    {id:"RL", x: 170, y: 130, start:"lance"},
+    {id:"LM", x: 220, y: 635, start:"minerva"},
+    {id:"LY", x: 455, y: 130, start:"lance"},
+    {id:"LB", x: 455, y: 280, start:"lance"},
+    {id:"XB", x: 715, y: 185, start:"xiu"},
+    {id:"EX", x: 1105, y: 745, start:"edd"},
+    {id:"XE", x: 1015, y: 145, start:"xiu"},
+    {id:"XA", x: 945, y: 265, start:"xiu"},
+    {id:"RH", x: 180, y: 405, start:"ryan"},
+    {id:"LH", x: 315, y: 280, start:"lance"},
+    {id:"YB", x: 560, y: 285, start:"yoni"},
+    {id:"YA", x: 710, y: 265, start:"yoni"},
+    {id:"BE", x: 850, y: 295, start:"blade"},
+    {id:"HB", x: 455, y: 405, start:"hannah"},
+    {id:"AB", x: 715, y: 405, start:"blade"},
+    {id:"AE", x: 1000, y: 435, start:"ellie"},
+    {id:"RM", x: 105, y: 670, start:"minerva"},
+    {id:"RB", x: 345, y: 520, start:"ryan"},
+    {id:"HM", x: 280, y: 560, start:"minerva"},
+    {id:"BM", x: 455, y: 470, start:"blade"},
+    {id:"EB", x: 570, y: 625, start:"edd"},
+    {id:"EA", x: 845, y: 625, start:"edd"},
+    {id:"EM", x: 560, y: 745, start:"minerva"},
+    {id:"SB", x: 780, y: 530, start:"simon"},
+    {id:"SA", x: 975, y: 520, start:"simon"}
 ]
 
 const charaData = {
     blade: {
         color: "rgb(127, 180, 57)",
         photoPos: {
-            x: 345,
-            y: 245,
-            rotation: 5
+            x: 520,
+            y: 330,
+            rotation: 4
         }
     },
     axel: {
         color: "rgb(221, 155, 33)",
         photoPos: {
-            x: 485,
-            y: 525,
-            rotation: -8
+            x: 770,
+            y: 330,
+            rotation: -4
         }
     },
     xiu: {
         color: "rgb(65, 173, 206)",
         photoPos: {
-            x: 775,
-            y: 525,
+            x: 770,
+            y: 80,
             rotation: 3
         }
     },
     yoni: {
         color: "rgb(224, 213, 54)",
         photoPos: {
-            x: 225,
-            y: 525,
-            rotation: 10
+            x: 520,
+            y: 80,
+            rotation: -5
         }
     },
     hannah: {
         color: "rgb(41, 81, 194)",
         photoPos: {
-            x: 35,
-            y: 250,
-            rotation: -6
+            x: 245,
+            y: 320,
+            rotation: -2
         }
     },
     lance: {
         color: "rgb(148, 77, 206)",
         photoPos: {
-            x: 35,
-            y: 525,
+            x: 250,
+            y: 80,
             rotation: 0
         }
     },
     ellie: {
         color: "rgb(17, 148, 87)",
         photoPos: {
-            x: 435,
-            y: 780,
-            rotation: 5
+            x: 1005,
+            y: 200,
+            rotation: 3
         }
     },
     edd: {
         color: "rgb(211, 43, 43)",
         photoPos: {
             x: 630,
-            y: 250,
-            rotation: -5
+            y: 570,
+            rotation: -2
         }
     },
     minerva: {
         color: "rgb(167, 87, 83)",
         photoPos: {
-            x: 635,
-            y: 5,
-            rotation: 2
+            x: 360,
+            y: 570,
+            rotation: 3
         }
     },
     simon: {
         color: "rgb(216, 40, 163)",
         photoPos: {
-            x: 845,
-            y: 150,
-            rotation: 12
+            x: 920,
+            y: 570,
+            rotation: 6
         }
     },
     ryan: {
         color: "rgb(200, 200, 200)",
         photoPos: {
-            x: 130,
-            y: 40,
-            rotation: 15
+            x: 55,
+            y: 200,
+            rotation: 5
         }
     }
 }
@@ -297,172 +299,228 @@ var relationshipData_ch = [
 
 var relationshipData_en = [
     {
-        id: "AB",
-        label: "Close Friends",
-        chara1: "blade",
-        chara2: "axel",
-        desc1: "Annoyed by↘",
-        desc2: "↖Has feelings for"
-    },
-    {
-        id: "XB",
-        label: "Close Friends",
-        chara1: "blade",
-        chara2: "xiu",
-        desc1: "Annoyed by↘",
-        desc2: "↖Really likes"
-    },
-    {
-        id: "YB",
-        label: "Childhood<br>Friends",
-        chara1: "blade",
+        id: "RY",
+        label: "Acquaintance",
+        chara1: "ryan",
         chara2: "yoni",
-        desc1: "↙Annoyed by",
-        desc2: "U r awesome!!↗"
+        desc1: "You little shit...",
+        desc2: "So badass!!!"
     },
     {
-        id: "HB",
-        label: "Siblings",
-        chara1: "blade",
-        chara2: "hannah",
-        desc1: "←Hates/afraid of",
-        desc2: "Hates/torments→"
-    },
-    {
-        id: "LB",
-        label: "Mentorship",
-        chara1: "blade",
-        chara2: "lance",
-        desc1: "↙Admires/likes",
-        desc2: "Strict but caring↗"
-    },
-    {
-        id: "EB",
-        label: "Friends",
-        chara1: "blade",
-        chara2: "edd",
-        desc1: "Annoyed by→",
-        desc2: "←Wants to be close"
-    },
-    {
-        id: "XA",
-        label: "Ex Boyfriends",
-        chara1: "axel",
-        chara2: "xiu",
-        desc1: "Not happy about→",
-        desc2: "←You need to chill"
-    },
-    {
-        id: "YA",
-        label: "Friends",
-        chara1: "axel",
-        chara2: "yoni",
-        desc1: "←What an oddball",
-        desc2: "*Shoves gummies*→"
+        id: "YE",
+        label: "Friends?",
+        chara1: "yoni",
+        chara2: "ellie",
+        desc1: "*Shoves gummies*",
+        desc2: "So funny and weird"
     },
     {
         id: "XY",
         label: "Friends",
         chara1: "xiu",
         chara2: "yoni",
-        desc1: "←A little wary of",
-        desc2: "*Shoves gummies*→"
+        desc1: "A little wary of",
+        desc2: "*Shoves gummies*"
+    },
+    {
+        id: "RL",
+        label: "Close Friends",
+        chara1: "lance",
+        chara2: "ryan",
+        desc1: "Get your shit together.",
+        desc2: "What shit?"
+    },
+    {
+        id: "LM",
+        label: "Teammates",
+        chara1: "lance",
+        chara2: "minerva",
+        desc1: "Newbie with potential",
+        desc2: "Slightly awkward"
     },
     {
         id: "LY",
         label: "Siblings",
         chara1: "yoni",
         chara2: "lance",
-        desc1: "←*Shoves gummies*",
-        desc2: "*Rejects gummies*→"
+        desc1: "*touch belongings*",
+        desc2: "*throws out of window*"
     },
     {
-        id: "LH",
-        label: "Old friends",
-        chara1: "hannah",
-        chara2: "lance",
-        desc1: "↓Vents to",
-        desc2: "Knows well↑"
+        id: "LB",
+        label: "Mentorship",
+        chara1: "lance",
+        chara2: "blade",
+        desc1: "Cares",
+        desc2: "Admires/likes"
     },
     {
-        id: "EA",
-        label: "Love Rivals?",
-        chara1: "edd",
-        chara2: "axel",
-        desc1: "↙Displeased",
-        desc2: "Strong dislike↗"
-    },
-    {
-        id: "AE",
-        label: "Siblings",
-        chara1: "axel",
-        chara2: "ellie",
-        desc1: "↓Urgh!",
-        desc2: "Nags↑"
+        id: "XB",
+        label: "Close Friends",
+        chara1: "xiu",
+        chara2: "blade",
+        desc1: "Really likes",
+        desc2: "Annoyed by"
     },
     {
         id: "EX",
         label: "Co-workers",
-        chara1: "edd",
-        chara2: "xiu",
-        desc1: "Tries to impress↓",
-        desc2: "↑Sarcastic"
+        chara1: "xiu",
+        chara2: "edd",
+        desc1: "Sarcastic",
+        desc2: "Tries to impress"
     },
     {
         id: "XE",
         label: "Online Pals",
         chara1: "xiu",
         chara2: "ellie",
-        desc1: "↓Trusts",
-        desc2: "Supportive↑"
+        desc1: "Trusts",
+        desc2: "Supportive"
+    },
+    {
+        id: "XA",
+        label: "Ex Boyfriends",
+        chara1: "xiu",
+        chara2: "axel",
+        desc1: "Chill bro!",
+        desc2: "Not happy about"
+    },
+    {
+        id: "RH",
+        label: "Teammates",
+        chara1: "ryan",
+        chara2: "hannah",
+        desc1: "Follows orders",
+        desc2: "A little wary of"
+    },
+    {
+        id: "LH",
+        label: "Old friends",
+        chara1: "lance",
+        chara2: "hannah",
+        desc1: "Knows well",
+        desc2: "Trust"
+    },
+    {
+        id: "YB",
+        label: "Childhood<br>Friends",
+        chara1: "yoni",
+        chara2: "blade",
+        desc1: "Love you bro!",
+        desc2: "Annoyed by"
+    },
+    {
+        id: "YA",
+        label: "Friends",
+        chara1: "yoni",
+        chara2: "axel",
+        desc1: "*Shoves gummies*",
+        desc2: "What an oddball"
     },
     {
         id: "BE",
         label: "Friends",
+        chara1: "ellie",
+        chara2: "blade",
+        desc1: "Slight crush",
+        desc2: "A bit noisy"
+    },
+    {
+        id: "HB",
+        label: "Siblings",
         chara1: "blade",
-        chara2: "ellie",
-        desc1: "↓A bit noisy",
-        desc2: "Kind of admires↑"
+        chara2: "hannah",
+        desc1: "Hates/afraid of",
+        desc2: "Hates/torments"
+    },    
+    {
+        id: "AB",
+        label: "Close Friends",
+        chara1: "blade",
+        chara2: "axel",
+        desc1: "Annoyed by",
+        desc2: "Has feelings for"
+    },
+    {
+        id: "AE",
+        label: "Siblings",
+        chara1: "ellie",
+        chara2: "axel",
+        desc1: "Nags",
+        desc2: "Urgh!"
+    },
+    {
+        id: "RM",
+        label: "Teammates",
+        chara1: "ryan",
+        chara2: "minerva",
+        desc1: "May I help you?",
+        desc2: "Scary..."
+    },
+    {
+        id: "RB",
+        label: "Teammates",
+        chara1: "ryan",
+        chara2: "blade",
+        desc1: "So vulnerable",
+        desc2: "Scary..."
     },
     {
         id: "HM",
         label: "Friends",
-        chara1: "minerva",
-        chara2: "hannah",
-        desc1: "↙Crush",
-        desc2: "Not too shabby↗"
+        chara1: "hannah",
+        chara2: "minerva",
+        desc1: "Recruits",
+        desc2: "Why me?"
+    },
+    {
+        id: "BM",
+        label: "Acquaintance",
+        chara1: "blade",
+        chara2: "minerva",
+        desc1: "Respects",
+        desc2: "Slightly interested"
+    },
+    {
+        id: "EB",
+        label: "Friends",
+        chara1: "blade",
+        chara2: "edd",
+        desc1: "Annoyed by",
+        desc2: "Wants to be close"
+    },
+    {
+        id: "EA",
+        label: "Rivals",
+        chara1: "axel",
+        chara2: "edd",
+        desc1: "Dislike",
+        desc2: "Displeased"
     },
     {
         id: "EM",
         label: "Twins",
         chara1: "minerva",
         chara2: "edd",
-        desc1: "Let's train↓",
-        desc2: "↑Catching up"
-    },
-    {
-        id: "BM",
-        label: "Acquaintance",
-        chara1: "minerva",
-        chara2: "blade",
-        desc1: "↙Slightly interested",
-        desc2: "Respects↗"
+        desc1: "Let's train",
+        desc2: "Catching up"
     },
     {
         id: "SB",
         label: "Enemies...?",
-        chara1: "simon",
-        chara2: "blade",
-        desc1: "←One-side rivalry",
-        desc2: "Annoyed by→"
+        chara1: "blade",
+        chara2: "simon",
+        desc1: "God you're Annoying",
+        desc2: "One-side rivalry"
     },
     {
         id: "SA",
         label: "Enemies",
-        chara1: "simon",
-        chara2: "axel",
-        desc1: "↙Inkling pest!",
-        desc2: "Octarian scum!↗"
+        chara1: "axel",
+        chara2: "simon",
+        desc1: "Fucking Octarian scum!",
+        desc2: "Shut up Inkling pest!"
     }
 ]
 

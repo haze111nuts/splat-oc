@@ -21,7 +21,8 @@ function buildChart(relationshipData){
     chartHTML += "<ul>";
     chartHTML += "<li class='group teamBB'></li>";
     for (var chara in charaData) {
-        chartHTML += "<li class='chara md-trigger' id='"+ chara +"' data-modal='modal-chara'>";
+        chartHTML += "<li class='charaPhotoBox md-trigger' id='"+ chara +"' data-modal='modal-chara'>";
+        chartHTML += "<div class='charaPhoto "+ chara +"Photo'></div>";
         chartHTML += "<div class='nameSticker'>"+ chara.charAt(0).toUpperCase() + chara.slice(1); +"</div>";
         chartHTML += "</li>";
     }
@@ -96,7 +97,7 @@ function relationshipHoverEvent(relationshipData){
 }
 
 function charaHoverEvent(relationshipData){
-    $('.chara').each(function () {
+    $('.charaPhotoBox').each(function () {
         var unrelatedChara = getUnrelated(this.id, relationshipData);
         var unrelatedRelations = relationshipData.filter(r => r.chara1 !== this.id && r.chara2 !== this.id );
         var relatedRelations = relationshipData.filter(r => r.chara1 === this.id || r.chara2 === this.id );
