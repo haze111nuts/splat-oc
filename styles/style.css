@@ -181,7 +181,6 @@ ul {
 }
 
 #chart {
-  border: 1px solid #000;
   width: 1185px;
   height: 780px;
   position: absolute;
@@ -225,7 +224,7 @@ ul {
 }
 
 #chartSVG path {
-  stroke-width: 2.5px;
+  stroke-width: 2.3px;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
@@ -237,7 +236,7 @@ ul {
 
 .clonePath {
   stroke-opacity: 0;
-  stroke-dasharray: 10;
+  stroke-dasharray: 1500;
 }
 
 .duoPath {
@@ -249,12 +248,12 @@ ul {
 
 .animatedPath {
   stroke-opacity: 1;
-  animation: dash 0.8s forwards infinite linear;
+  animation: draw 1s forwards linear;
 }
 
 .animatedPathReverse {
   stroke-opacity: 1;
-  animation: dash-reverse 0.8s forwards infinite linear;
+  animation: draw 1s backwards linear;
 }
 
 @keyframes draw {
@@ -291,6 +290,7 @@ ul {
   -moz-transform: translateX(-50%) translateY(-50%);
   -ms-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
+  text-shadow: 1px 1px 0 black;
 }
 
 .relLabel {
@@ -306,6 +306,24 @@ ul {
 
 .faded {
   opacity: 0.1;
+}
+
+.group {
+  stroke-width: 0.5px;
+}
+
+#RB {
+  stroke: rgb(127, 180, 57);
+  stroke-opacity: 0.3;
+  fill: rgb(127, 180, 57);
+  fill-opacity: 0.1;
+}
+
+#MM {
+  stroke: rgb(41, 81, 194);
+  stroke-opacity: 0.3;
+  fill: rgb(41, 81, 194);
+  fill-opacity: 0.1;
 }
 
 .noscroll {
@@ -685,8 +703,8 @@ td li, .traits li {
 }
 
 .ryan {
-  color: rgb(200, 200, 200);
-  stroke: rgb(200, 200, 200);
+  color: rgb(180, 180, 180);
+  stroke: rgb(180, 180, 180);
 }
 
 .charaPhoto {
@@ -749,7 +767,7 @@ td li, .traits li {
 }
 
 .ryanPhoto {
-  background-color: rgb(200, 200, 200);
+  background-color: rgb(180, 180, 180);
   background-position: -240px -120px;
 }
 

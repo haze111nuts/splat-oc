@@ -8,7 +8,7 @@ var relationshipPosData = [
     {id:"YE", x: 1030, y: 50, start:"yoni"},
     {id:"XY", x: 745, y: 25, start:"yoni"},
     {id:"RL", x: 170, y: 130, start:"lance"},
-    {id:"LM", x: 220, y: 635, start:"minerva"},
+    {id:"LM", x: 220, y: 630, start:"minerva"},
     {id:"LY", x: 455, y: 130, start:"lance"},
     {id:"LB", x: 455, y: 280, start:"lance"},
     {id:"XB", x: 715, y: 185, start:"xiu"},
@@ -24,9 +24,9 @@ var relationshipPosData = [
     {id:"AB", x: 715, y: 405, start:"blade"},
     {id:"AE", x: 1000, y: 435, start:"ellie"},
     {id:"RM", x: 105, y: 670, start:"minerva"},
-    {id:"RB", x: 345, y: 520, start:"ryan"},
+    {id:"RB", x: 355, y: 520, start:"ryan"},
     {id:"HM", x: 280, y: 560, start:"minerva"},
-    {id:"BM", x: 455, y: 470, start:"blade"},
+    {id:"BM", x: 455, y: 480, start:"blade"},
     {id:"EB", x: 570, y: 625, start:"edd"},
     {id:"EA", x: 845, y: 625, start:"edd"},
     {id:"EM", x: 560, y: 745, start:"minerva"},
@@ -116,7 +116,7 @@ const charaData = {
         }
     },
     ryan: {
-        color: "rgb(200, 200, 200)",
+        color: "rgb(180, 180, 180)",
         photoPos: {
             x: 55,
             y: 200,
@@ -128,11 +128,11 @@ const charaData = {
 var relationshipData_ch = [
     {
         id: "RY",
-        label: "點頭之交",
-        chara1: "ryan",
-        chara2: "yoni",
-        desc1: "你這小鬼…",
-        desc2: "好酷！！"
+        label: "一觸即發",
+        chara1: "yoni",
+        chara2: "ryan",
+        desc1: "好強！！！",
+        desc2: "臭小鬼殺了你"
     },
     {
         id: "YE",
@@ -140,22 +140,22 @@ var relationshipData_ch = [
         chara1: "yoni",
         chara2: "ellie",
         desc1: "吃軟糖ㄇ！",
-        desc2: "好笑的怪人"
+        desc2: "超怪的人笑死"
     },
     {
         id: "XY",
         label: "朋友",
-        chara1: "xiu",
-        chara2: "yoni",
-        desc1: "覺得有點危險",
-        desc2: "吃軟糖ㄇ！"
+        chara1: "yoni",
+        chara2: "xiu",
+        desc1: "吃軟糖ㄇ！",
+        desc2: "覺得有點危險"
     },
     {
         id: "RL",
         label: "親友",
         chara1: "lance",
         chara2: "ryan",
-        desc1: "不要再給我添麻煩了",
+        desc1: "不要再添麻煩了",
         desc2: "什麼麻煩？"
     },
     {
@@ -164,23 +164,23 @@ var relationshipData_ch = [
         chara1: "lance",
         chara2: "minerva",
         desc1: "有潛力的新人",
-        desc2: "有點尷尬"
+        desc2: "不太敢搭話"
     },
     {
         id: "LY",
         label: "兄弟",
         chara1: "yoni",
         chara2: "lance",
-        desc1: "亂碰私人物品",
-        desc2: "扔出窗外"
+        desc1: "(亂碰私人物品)",
+        desc2: "(抓住扔出窗外)"
     },
     {
         id: "LB",
         label: "前後輩",
-        chara1: "blade",
-        chara2: "lance",
-        desc1: "指導",
-        desc2: "仰慕&喜歡"
+        chara1: "lance",
+        chara2: "blade",
+        desc1: "指導＆照顧",
+        desc2: "仰慕＆喜歡"
     },
     {
         id: "XB",
@@ -216,7 +216,7 @@ var relationshipData_ch = [
     },
     {
         id: "RH",
-        label: "Teammates",
+        label: "隊友",
         chara1: "ryan",
         chara2: "hannah",
         desc1: "遵從指示",
@@ -227,15 +227,15 @@ var relationshipData_ch = [
         label: "舊識",
         chara1: "lance",
         chara2: "hannah",
-        desc1: "吐苦水",
-        desc2: "很瞭解"
+        desc1: "很瞭解",
+        desc2: "信賴"
     },
     {
         id: "YB",
         label: "兒時玩伴",
         chara1: "yoni",
         chara2: "blade",
-        desc1: "小布讚讚讚",
+        desc1: "小布讚讚",
         desc2: "別煩"
     },
     {
@@ -260,7 +260,7 @@ var relationshipData_ch = [
         chara1: "blade",
         chara2: "hannah",
         desc1: "畏懼",
-        desc2: "非常厭惡"
+        desc2: "家暴＆厭惡"
     },
     {
         id: "AB",
@@ -280,26 +280,26 @@ var relationshipData_ch = [
     },
     {
         id: "RM",
-        label: "Teammates",
+        label: "隊友",
         chara1: "ryan",
         chara2: "minerva",
-        desc1: "有什麼能幫忙的嗎?",
-        desc2: "可怕的人..."
+        desc1: "有何貴幹?",
+        desc2: "可怕的人…"
     },
     {
         id: "RB",
-        label: "Teammates",
+        label: "微妙",
         chara1: "ryan",
         chara2: "blade",
-        desc1: "真多破綻",
-        desc2: "可怕的人..."
+        desc1: "真好欺負",
+        desc2: "可怕的人…"
     },
     {
         id: "HM",
         label: "朋友",
         chara1: "hannah",
         chara2: "minerva",
-        desc1: "招進隊裡",
+        desc1: "堅持拉進隊裡",
         desc2: "為什麼特別選我？"
     },
     {
@@ -347,8 +347,8 @@ var relationshipData_ch = [
         label: "死對頭",
         chara1: "axel",
         chara2: "simon",
-        desc1: "臭章螂給我滾！",
-        desc2: "礙事的浮魷垃圾！"
+        desc1: "幹臭章螂滾啦！",
+        desc2: "浮魷垃圾閉嘴！"
     }
 ]
 
@@ -356,10 +356,10 @@ var relationshipData_en = [
     {
         id: "RY",
         label: "Acquaintance",
-        chara1: "ryan",
-        chara2: "yoni",
-        desc1: "You little shit...",
-        desc2: "So badass!!!"
+        chara1: "yoni",
+        chara2: "ryan",
+        desc1: "So badass!!!",
+        desc2: "You little shit..."
     },
     {
         id: "YE",
@@ -372,10 +372,10 @@ var relationshipData_en = [
     {
         id: "XY",
         label: "Friends",
-        chara1: "xiu",
-        chara2: "yoni",
-        desc1: "A little wary of",
-        desc2: "*Shoves gummies*"
+        chara1: "yoni",
+        chara2: "xiu",
+        desc1: "*Shoves gummies*",
+        desc2: "A little wary of"
     },
     {
         id: "RL",

@@ -23,7 +23,13 @@ function buildChart(relationshipData){
     for (var chara in charaData) {
         chartHTML += "<li class='charaPhotoBox md-trigger' id='"+ chara +"' data-modal='modal-chara'>";
         chartHTML += "<div class='charaPhoto "+ chara +"Photo'></div>";
-        chartHTML += "<div class='nameSticker'>"+ chara.charAt(0).toUpperCase() + chara.slice(1); +"</div>";
+        var name = ""
+        if(chara == "ryan"){
+            name = "R.J.";
+        }else{
+            name = chara.charAt(0).toUpperCase() + chara.slice(1) ;
+        }
+        chartHTML += "<div class='nameSticker'>"+ name +"</div>";
         chartHTML += "</li>";
     }
     for(var j=0; j<relationshipData.length; j++){

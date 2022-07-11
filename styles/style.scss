@@ -17,7 +17,7 @@ $charaColors: (
   edd: rgb(211, 43, 43),
   minerva: rgb(136, 44, 64),
   simon: rgb(216, 40, 163),
-  ryan: rgb(200, 200, 200)
+  ryan: rgb(180, 180, 180)
 );
 
 @mixin prefix($property, $value, $prefixes: ()) {
@@ -200,7 +200,7 @@ ul{
 }
 
 #chart{
-  border: 1px solid #000;
+  // border: 1px solid #000;
   width: $chart-width;
   height: $chart-height;
   position: absolute;
@@ -244,7 +244,7 @@ ul{
 }
 
 #chartSVG path{
-  stroke-width: 2.5px;
+  stroke-width: 2.3px;
   @include prefix(transition, all 0.3s, webkit moz);    
 }
 
@@ -254,8 +254,8 @@ ul{
 
 .clonePath{
   stroke-opacity: 0;
-  // stroke-dasharray: 1000;
-  stroke-dasharray: 10;
+  stroke-dasharray: 1500;
+  // stroke-dasharray: 10;
 }
 
 .duoPath{
@@ -265,17 +265,16 @@ ul{
   animation: draw 0.7s forwards linear ;
 }
 
-
 .animatedPath{
   stroke-opacity: 1;
-  // animation: draw 0.8s forwards linear ;
-  animation: dash 0.8s forwards infinite linear;
+  animation: draw 1s forwards linear ;
+  // animation: dash 0.8s forwards infinite linear;
 }
 
 .animatedPathReverse{
   stroke-opacity: 1;
-  // animation: draw-reverse 0.8s forwards linear;
-  animation: dash-reverse 0.8s forwards infinite linear;
+  animation: draw 1s backwards linear;
+  // animation: dash-reverse 0.8s forwards infinite linear;
 }
 
 @keyframes draw {
@@ -321,6 +320,7 @@ ul{
   cursor: pointer;
   transition: 0.4s ease;
   @include prefix(transform, translateX(-50%) translateY(-50%), webkit moz ms);  
+	text-shadow: 1px 1px 0 black,
 }
 
 .relLabel{
@@ -340,6 +340,22 @@ ul{
 
 .faded{
   opacity: 0.1;
+}
+
+.group{
+  stroke-width: 0.5px;
+}
+#RB{
+  stroke: map.get($charaColors, "blade");
+  stroke-opacity: 0.3;
+  fill: map.get($charaColors, "blade");
+  fill-opacity: 0.1;
+}
+#MM{
+  stroke: map.get($charaColors, "hannah");
+  stroke-opacity: 0.3;
+  fill: map.get($charaColors, "hannah");
+  fill-opacity: 0.1;
 }
 
 //===========================//
