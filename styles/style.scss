@@ -229,13 +229,6 @@ ul{
   transition: 0.4s ease;
 }
 
-.charaPhoto{
-  width: $chara-photo-size;
-  height: $chara-photo-size;
-  background-color: cadetblue;
-  margin: 8px auto 0px auto;
-}
-
 .nameSticker{
   color: white;
   font-family: RevnosaRegular;
@@ -329,7 +322,7 @@ ul{
 .relLabel{
   color: white;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 1.3em;
+  font-size: 1.25em;
   border: 0px solid #000;
   padding: 2px 0 2px 0;
   line-height: 100%;
@@ -680,174 +673,60 @@ td li, .traits li {
   stroke: map.get($charaColors, "ryan");
 }
 
+.charaPhoto{
+  width: $chara-photo-size;
+  height: $chara-photo-size;
+  background-image: url(../assets/img/profilePics.png);
+  background-repeat: no-repeat;
+  background-size: 360px auto;
+  margin: 8px auto 0px auto;
+}
+
 .bladePhoto{
   background-color: map.get($charaColors, "blade");
+  background-position: 0px 0px;
 }
 .axelPhoto{
   background-color: map.get($charaColors, "axel");
+  background-position: -120px 0px;
 }
 .xiuPhoto{
   background-color: map.get($charaColors, "xiu");
+  background-position: -240px 0px;
 }
 .yoniPhoto{
   background-color: map.get($charaColors, "yoni");
+  background-position: 0px -120px;
 }
 .hannahPhoto{
   background-color: map.get($charaColors, "hannah");
+  background-position: 0px -240px;
 }
 .lancePhoto{
   background-color: map.get($charaColors, "lance");
+  background-position: -120px -120px;
 }
 .elliePhoto{
   background-color: map.get($charaColors, "ellie");
+  background-position: -120px -240px;
 }
 .eddPhoto{
   background-color: map.get($charaColors, "edd");
+  background-position: -120px -360px;
 }
 .minervaPhoto{
   background-color: map.get($charaColors, "minerva");
+  background-position: 0px -360px;
 }
 .simonPhoto{
   background-color: map.get($charaColors, "simon");
+  background-position: -240px -360px;
 }
 .ryanPhoto{
   background-color: map.get($charaColors, "ryan");
+  background-position: -240px -120px;
 }
 
-// .nameSticker{
-//   position: absolute;
-//   box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.3);
-//   color: black;
-// }
-// #blade .nameSticker{
-//   width: 100px;
-//   font-family: Crossbar;
-//   font-size: 25px;
-//   background: rgba(255, 255, 255, 0.95);
-//   right: -10px;
-//   bottom: -15px;
-//   padding: 0;
-//   transform: rotate(-10deg);
-// }
-// #axel .nameSticker{
-//   width: 100px;
-//   font-family: JamstreetGraffiti;
-//   font-size: 30px;
-//   background: rgba(255, 255, 255, 0.95);
-//   right: 20px;
-//   bottom: -30px;
-//   padding: 3px 0 0 0;
-//   line-height: 1;
-//   transform: rotate(15deg);
-// }
-// #xiu .nameSticker{
-//   color: white;
-//   width: 100px;
-//   font-family: RevnosaRegular;
-//   font-size: 23px;
-//   background: rgb(27, 27, 27);
-//   right: 5px;
-//   bottom: -15px;
-//   padding: 5px 2px 2px 2px;
-//   transform: rotate(-13deg);
-// }
-// #xiu .nameSticker::after {
-//   content: ' <3';
-//   color: crimson;
-// }
-// #yoni .nameSticker{
-//   width: 100px;
-//   font-family: DirtyBrush;
-//   font-size: 30px;
-//   background: rgba(255, 255, 255, 0.7);
-//   left: -20px;
-//   top: -10px;
-//   padding: 2px 10px 0 10px;
-//   transform: rotate(-15deg);
-// }
-// #yoni .nameSticker::after {
-//   content: '   :D';
-// }
-// #lance .nameSticker{
-//   color: white;
-//   width: 100px;
-//   font-family: SlugRegular;
-//   font-size: 23px;
-//   background: black;
-//   right: 12px;
-//   bottom: -20px;
-//   padding: 2px;
-// }
-// #ellie .nameSticker{
-//   width: 100px;
-//   font-family: WickhopHandwriting;
-//   font-size: 20px;
-//   background: rgba(map.get($charaColors, "axel"), 0.9);
-//   right: 20px;
-//   top: -20px;
-//   padding: 2px 0 0 0;
-//   transform: rotate(-10deg);
-// }
-// #ellie .nameSticker::after {
-//   content: ' lol';
-// }
-// #hannah .nameSticker{
-//   width: 85px;
-//   font-weight: bold;
-//   color: rgb(7, 15, 122);
-//   font-family: RevnosaRegular;
-//   font-size: 22px;
-//   background: rgba(255, 255, 255, 0.8);
-//   right: -20px;
-//   top: -10px;
-//   padding: 6px 10px 2px 10px;
-//   transform: rotate(15deg);
-// }
-// #edd .nameSticker{
-//   width: 110px;
-//   font-family: WickhopHandwriting;
-//   font-size: 20px;
-//   background: rgba(218, 185, 124, 0.95);
-//   left: -10px;
-//   bottom: -10px;
-//   padding: 2px 0;
-//   transform: rotate(10deg);
-// }
-// #minerva .nameSticker{
-//   width: 120px;
-//   font-family: BastradRegular;
-//   font-size: 35px;
-//   background: rgba(218, 185, 124, 0.95);
-//   right: 5px;
-//   bottom: -20px;
-//   padding: 0;
-//   transform: rotate(-5deg);
-//   line-height: 1;
-// }
-// #simon .nameSticker{
-//   width: 80px;
-//   font-family: JamstreetGraffiti;
-//   font-size: 26px;
-//   color: rgb(90, 5, 72);
-//   background: rgb(41, 206, 41);
-//   left: -20px;
-//   top: -10px;
-//   padding: 2px 20px 0 10px;
-//   transform: rotate(-15deg);
-//   -webkit-animation: glow 1s ease-in-out infinite alternate;
-//   -moz-animation: glow 1s ease-in-out infinite alternate;
-//   animation: glow 1s ease-in-out infinite alternate;  
-// }
-// #ryan .nameSticker{
-//   width: 80px;
-//   font-family: TexasGrungeDemo;
-//   font-size: 26px;
-//   background: rgba(255, 255, 255, 0.7);
-//   right: -20px;
-//   bottom: -10px;
-//   padding: 2px 20px 0 10px;
-//   transform: rotate(-15deg);
-// }
 
 // @keyframes glow {
 //   from {

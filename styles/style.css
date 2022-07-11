@@ -210,13 +210,6 @@ ul {
   transition: 0.4s ease;
 }
 
-.charaPhoto {
-  width: 120px;
-  height: 120px;
-  background-color: cadetblue;
-  margin: 8px auto 0px auto;
-}
-
 .nameSticker {
   color: white;
   font-family: RevnosaRegular;
@@ -292,7 +285,7 @@ ul {
 .relLabel {
   color: white;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 1.3em;
+  font-size: 1.25em;
   border: 0px solid #000;
   padding: 2px 0 2px 0;
   line-height: 100%;
@@ -685,48 +678,68 @@ td li, .traits li {
   stroke: rgb(200, 200, 200);
 }
 
+.charaPhoto {
+  width: 120px;
+  height: 120px;
+  background-image: url(../assets/img/profilePics.png);
+  background-repeat: no-repeat;
+  background-size: 360px auto;
+  margin: 8px auto 0px auto;
+}
+
 .bladePhoto {
   background-color: rgb(127, 180, 57);
+  background-position: 0px 0px;
 }
 
 .axelPhoto {
   background-color: rgb(221, 155, 33);
+  background-position: -120px 0px;
 }
 
 .xiuPhoto {
   background-color: rgb(65, 173, 206);
+  background-position: -240px 0px;
 }
 
 .yoniPhoto {
   background-color: rgb(224, 213, 54);
+  background-position: 0px -120px;
 }
 
 .hannahPhoto {
   background-color: rgb(41, 81, 194);
+  background-position: 0px -240px;
 }
 
 .lancePhoto {
   background-color: rgb(148, 77, 206);
+  background-position: -120px -120px;
 }
 
 .elliePhoto {
   background-color: rgb(17, 148, 87);
+  background-position: -120px -240px;
 }
 
 .eddPhoto {
   background-color: rgb(211, 43, 43);
+  background-position: -120px -360px;
 }
 
 .minervaPhoto {
   background-color: rgb(136, 44, 64);
+  background-position: 0px -360px;
 }
 
 .simonPhoto {
   background-color: rgb(216, 40, 163);
+  background-position: -240px -360px;
 }
 
 .ryanPhoto {
   background-color: rgb(200, 200, 200);
+  background-position: -240px -120px;
 }
 
 /*# sourceMappingURL=style.css.map */
