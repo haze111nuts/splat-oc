@@ -39,7 +39,7 @@ const charaData = {
         color: "rgb(127, 180, 57)",
         photoPos: {
             x: 520,
-            y: 330,
+            y: 335,
             rotation: 4
         }
     },
@@ -63,8 +63,8 @@ const charaData = {
         color: "rgb(224, 213, 54)",
         photoPos: {
             x: 520,
-            y: 80,
-            rotation: -5
+            y: 75,
+            rotation: -4
         }
     },
     hannah: {
@@ -78,7 +78,7 @@ const charaData = {
     lance: {
         color: "rgb(148, 77, 206)",
         photoPos: {
-            x: 250,
+            x: 245,
             y: 80,
             rotation: 0
         }

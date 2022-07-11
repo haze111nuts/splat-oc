@@ -69,8 +69,7 @@ function relationshipHoverEvent(relationshipData){
         const otherChara = Object.keys(charaData).filter(e => e !== relationship.chara1 && e !== relationship.chara2 );           
         const otherRelation = relationshipData.filter(r => r !== relationship );
         $(this).hover(function() {
-            $("#line_"+id+"_fill").addClass('animatedPath');
-            $("#line_"+id+"_fill").addClass('tempStrokeStyle');
+            $("#line_"+id).addClass("duoPath");
             // hide other chara
             for(const chara of otherChara ){
                 $("#"+chara).addClass("faded");
@@ -81,8 +80,7 @@ function relationshipHoverEvent(relationshipData){
                 $("#line_"+relation.id).addClass("faded");
             }
         }, function() {
-            $("#line_"+id+"_fill").removeClass('animatedPath');
-            $("#line_"+id+"_fill").removeClass('tempStrokeStyle');
+            $("#line_"+id).removeClass("duoPath");
             // unhide other chara
             for(const chara of otherChara ){
                 $("#"+chara).removeClass("faded");
