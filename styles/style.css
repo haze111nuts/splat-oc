@@ -225,14 +225,14 @@ ul {
 }
 
 #chartSVG path {
-  stroke-width: 3px;
+  stroke-width: 2.5px;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
 }
 
 .basePath {
-  stroke-opacity: 0.2;
+  stroke-opacity: 0.25;
 }
 
 .clonePath {
@@ -240,8 +240,11 @@ ul {
   stroke-dasharray: 10;
 }
 
-.tempStrokeStyle {
-  stroke: #fff;
+.duoPath {
+  stroke-opacity: 1;
+  stroke-dasharray: 1500;
+  stroke: white !important;
+  animation: draw 0.7s forwards linear;
 }
 
 .animatedPath {
@@ -254,6 +257,14 @@ ul {
   animation: dash-reverse 0.8s forwards infinite linear;
 }
 
+@keyframes draw {
+  from {
+    stroke-dashoffset: 1500;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
 @keyframes dash {
   from {
     stroke-dashoffset: 0;
