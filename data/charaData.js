@@ -127,173 +127,228 @@ const charaData = {
 
 var relationshipData_ch = [
     {
-        id: "AB",
-        label: "親友&勁敵",
-        chara1: "blade",
-        chara2: "axel",
-        desc1: "別煩↘",
-        desc2: "↖有好感"
-    },
-    {
-        id: "XB",
-        label: "親友",
-        chara1: "blade",
-        chara2: "xiu",
-        desc1: "別煩↘",
-        desc2: "↖很喜歡"
-    },
-    {
-        id: "YB",
-        label: "兒時玩伴",
-        chara1: "blade",
+        id: "RY",
+        label: "點頭之交",
+        chara1: "ryan",
         chara2: "yoni",
-        desc1: "↙別煩",
-        desc2: "小布讚讚讚↗"
+        desc1: "你這小鬼…",
+        desc2: "好酷！！"
     },
     {
-        id: "HB",
-        label: "姊弟",
-        chara1: "blade",
-        chara2: "hannah",
-        desc1: "←畏懼",
-        desc2: "非常厭惡→"
-    },
-    {
-        id: "LB",
-        label: "前後輩",
-        chara1: "blade",
-        chara2: "lance",
-        desc1: "↙仰慕&喜歡",
-        desc2: "指導↗"
-    },
-    {
-        id: "EB",
-        label: "朋友",
-        chara1: "blade",
-        chara2: "edd",
-        desc1: "別煩→",
-        desc2: "←想更親密"
-    },
-    {
-        id: "XA",
-        label: "已分手",
-        chara1: "axel",
-        chara2: "xiu",
-        desc1: "還是有點不爽→",
-        desc2: "←別計較了嘛"
-
-    },
-    {
-        id: "YA",
-        label: "朋友",
-        chara1: "axel",
-        chara2: "yoni",
-        desc1: "←怪胎欸",
-        desc2: "吃軟糖ㄇ！→"
+        id: "YE",
+        label: "朋友？",
+        chara1: "yoni",
+        chara2: "ellie",
+        desc1: "吃軟糖ㄇ！",
+        desc2: "好笑的怪人"
     },
     {
         id: "XY",
         label: "朋友",
         chara1: "xiu",
         chara2: "yoni",
-        desc1: "←覺得有點危險",
-        desc2: "吃軟糖ㄇ！→"
+        desc1: "覺得有點危險",
+        desc2: "吃軟糖ㄇ！"
+    },
+    {
+        id: "RL",
+        label: "親友",
+        chara1: "lance",
+        chara2: "ryan",
+        desc1: "不要再給我添麻煩了",
+        desc2: "什麼麻煩？"
+    },
+    {
+        id: "LM",
+        label: "隊友",
+        chara1: "lance",
+        chara2: "minerva",
+        desc1: "有潛力的新人",
+        desc2: "有點尷尬"
     },
     {
         id: "LY",
         label: "兄弟",
         chara1: "yoni",
         chara2: "lance",
-        desc1: "←吃軟糖ㄇ！",
-        desc2: "不要。→"
+        desc1: "亂碰私人物品",
+        desc2: "扔出窗外"
     },
     {
-        id: "LH",
-        label: "舊識",
-        chara1: "hannah",
+        id: "LB",
+        label: "前後輩",
+        chara1: "blade",
         chara2: "lance",
-        desc1: "↓吐苦水",
-        desc2: "很瞭解↑"
+        desc1: "指導",
+        desc2: "仰慕&喜歡"
     },
     {
-        id: "EA",
-        label: "關係不佳",
-        chara1: "edd",
-        chara2: "axel",
-        desc1: "↙令人不愉快",
-        desc2: "非常不爽↗"
-    },
-    {
-        id: "AE",
-        label: "兄妹",
-        chara1: "axel",
-        chara2: "ellie",
-        desc1: "↓吵死了!",
-        desc2: "你才吵!↑"
+        id: "XB",
+        label: "親友",
+        chara1: "xiu",
+        chara2: "blade",
+        desc1: "很喜歡",
+        desc2: "別煩"
     },
     {
         id: "EX",
         label: "朋友&同事",
-        chara1: "edd",
-        chara2: "xiu",
-        desc1: "酸言酸語↓",
-        desc2: "↑酸言酸語"
+        chara1: "xiu",
+        chara2: "edd",
+        desc1: "酸言酸語",
+        desc2: "酸言酸語"
     },
     {
         id: "XE",
         label: "網路閨密",
         chara1: "xiu",
         chara2: "ellie",
-        desc1: "↓信賴",
-        desc2: "支持↑"
+        desc1: "信賴",
+        desc2: "支持"
+    },
+    {
+        id: "XA",
+        label: "已分手",
+        chara1: "xiu",
+        chara2: "axel",
+        desc1: "別計較了嘛",
+        desc2: "還是有點不爽"
+    },
+    {
+        id: "RH",
+        label: "Teammates",
+        chara1: "ryan",
+        chara2: "hannah",
+        desc1: "遵從指示",
+        desc2: "覺得有點危險"
+    },
+    {
+        id: "LH",
+        label: "舊識",
+        chara1: "lance",
+        chara2: "hannah",
+        desc1: "吐苦水",
+        desc2: "很瞭解"
+    },
+    {
+        id: "YB",
+        label: "兒時玩伴",
+        chara1: "yoni",
+        chara2: "blade",
+        desc1: "小布讚讚讚",
+        desc2: "別煩"
+    },
+    {
+        id: "YA",
+        label: "朋友",
+        chara1: "yoni",
+        chara2: "axel",
+        desc1: "吃軟糖ㄇ！",
+        desc2: "怪胎欸"
     },
     {
         id: "BE",
         label: "朋友",
+        chara1: "ellie",
+        chara2: "blade",
+        desc1: "在意＆崇拜",
+        desc2: "有點吵"
+    },
+    {
+        id: "HB",
+        label: "姊弟",
         chara1: "blade",
-        chara2: "ellie",
-        desc1: "↓人還不錯",
-        desc2: "在意&崇拜↑"
+        chara2: "hannah",
+        desc1: "畏懼",
+        desc2: "非常厭惡"
+    },
+    {
+        id: "AB",
+        label: "親友&勁敵",
+        chara1: "blade",
+        chara2: "axel",
+        desc1: "別煩",
+        desc2: "有好感"
+    },
+    {
+        id: "AE",
+        label: "兄妹",
+        chara1: "ellie",
+        chara2: "axel",
+        desc1: "吵死了！",
+        desc2: "你才吵！",
+    },
+    {
+        id: "RM",
+        label: "Teammates",
+        chara1: "ryan",
+        chara2: "minerva",
+        desc1: "有什麼能幫忙的嗎?",
+        desc2: "可怕的人..."
+    },
+    {
+        id: "RB",
+        label: "Teammates",
+        chara1: "ryan",
+        chara2: "blade",
+        desc1: "真多破綻",
+        desc2: "可怕的人..."
     },
     {
         id: "HM",
         label: "朋友",
-        chara1: "minerva",
-        chara2: "hannah",
-        desc1: "↙仰慕&喜歡",
-        desc2: "實力不錯↗"
+        chara1: "hannah",
+        chara2: "minerva",
+        desc1: "招進隊裡",
+        desc2: "為什麼特別選我？"
+    },
+    {
+        id: "BM",
+        label: "點頭之交",
+        chara1: "blade",
+        chara2: "minerva",
+        desc1: "覺得很厲害",
+        desc2: "有點感興趣"
+    },
+    {
+        id: "EB",
+        label: "朋友",
+        chara1: "blade",
+        chara2: "edd",
+        desc1: "別煩",
+        desc2: "想更親密"
+    },
+    {
+        id: "EA",
+        label: "關係不佳",
+        chara1: "axel",
+        chara2: "edd",
+        desc1: "非常不爽",
+        desc2: "令人不愉快"
     },
     {
         id: "EM",
         label: "雙胞胎",
         chara1: "minerva",
         chara2: "edd",
-        desc1: "訓練對象↓",
-        desc2: "↑努力追趕"
-    },
-    {
-        id: "BM",
-        label: "點頭之交",
-        chara1: "minerva",
-        chara2: "blade",
-        desc1: "↙有點感興趣",
-        desc2: "覺得很厲害↗"
+        desc1: "訓練對象",
+        desc2: "努力追趕"
     },
     {
         id: "SB",
         label: "英雄vs惡役",
-        chara1: "simon",
-        chara2: "blade",
-        desc1: "←永遠的勁敵",
-        desc2: "你超煩→"
+        chara1: "blade",
+        chara2: "simon",
+        desc1: "你超煩",
+        desc2: "永遠的勁敵"
     },
     {
         id: "SA",
         label: "死對頭",
-        chara1: "simon",
-        chara2: "axel",
-        desc1: "↙礙事的浮魷垃圾！",
-        desc2: "臭章螂給我滾！↗"
+        chara1: "axel",
+        chara2: "simon",
+        desc1: "臭章螂給我滾！",
+        desc2: "礙事的浮魷垃圾！"
     }
 ]
 
