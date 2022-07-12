@@ -161,7 +161,7 @@ function charaHoverEvent(relationshipData){
 function setUpBioPageFor(charaBioData){
     //Fill header
     $(".bioHeader span:first-child").html(charaBioData.id.toUpperCase());
-    $(".bioHeader span:nth-child(2)").html(charaBioData.jpname);
+    $(".bioHeader span:nth-child(2)").html(charaData[charaBioData.id].jpname);
 
     //Fill outfit panel
     var outfitListHTML = ""
@@ -204,7 +204,7 @@ function setUpBioPageFor(charaBioData){
     $(".bioBasic table tr td:first-child").css("border-right", "3px solid "+color );
     $(".traitLabel").css("border-bottom", "3px solid "+ color );
     $(".traitLabel").css("color", color);
-    $(".bioDetail").css("box-shadow", "-25px -25px 0 " + color);
+    $(".bioDetail").css("box-shadow", "-25px -20px 0 " + color);
 }
 
 function setUpOutfitSwitchEvents(charaBioData){

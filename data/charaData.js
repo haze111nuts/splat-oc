@@ -12,7 +12,7 @@ var relationshipPosData = [
     {id:"LY", x: 455, y: 130, start:"lance"},
     {id:"LB", x: 455, y: 280, start:"lance"},
     {id:"XB", x: 715, y: 185, start:"xiu"},
-    {id:"EX", x: 1105, y: 745, start:"edd"},
+    {id:"EX", x: 1102, y: 745, start:"edd"},
     {id:"XE", x: 1015, y: 145, start:"xiu"},
     {id:"XA", x: 945, y: 265, start:"xiu"},
     {id:"RH", x: 180, y: 405, start:"ryan"},
@@ -36,6 +36,7 @@ var relationshipPosData = [
 
 const charaData = {
     blade: {
+        jpname: 'ブレイド',
         color: "rgb(127, 180, 57)",
         photoPos: {
             x: 520,
@@ -44,6 +45,7 @@ const charaData = {
         }
     },
     axel: {
+        jpname: 'アクセル',
         color: "rgb(221, 155, 33)",
         photoPos: {
             x: 770,
@@ -52,6 +54,7 @@ const charaData = {
         }
     },
     xiu: {
+        jpname: 'シュウ',
         color: "rgb(65, 173, 206)",
         photoPos: {
             x: 770,
@@ -60,6 +63,7 @@ const charaData = {
         }
     },
     yoni: {
+        jpname: 'ヨニ',
         color: "rgb(224, 213, 54)",
         photoPos: {
             x: 520,
@@ -68,6 +72,7 @@ const charaData = {
         }
     },
     hannah: {
+        jpname: 'ハンナ',        
         color: "rgb(41, 81, 194)",
         photoPos: {
             x: 245,
@@ -76,6 +81,7 @@ const charaData = {
         }
     },
     lance: {
+        jpname: 'ランス',        
         color: "rgb(148, 77, 206)",
         photoPos: {
             x: 245,
@@ -84,6 +90,7 @@ const charaData = {
         }
     },
     ellie: {
+        jpname: 'エリ（エステル）',        
         color: "rgb(17, 148, 87)",
         photoPos: {
             x: 1005,
@@ -92,6 +99,7 @@ const charaData = {
         }
     },
     edd: {
+        jpname: 'エッド',        
         color: "rgb(211, 43, 43)",
         photoPos: {
             x: 630,
@@ -100,6 +108,7 @@ const charaData = {
         }
     },
     minerva: {
+        jpname: 'ミネルヴァ',        
         color: "rgb(167, 87, 83)",
         photoPos: {
             x: 360,
@@ -108,6 +117,7 @@ const charaData = {
         }
     },
     simon: {
+        jpname: 'サイモン',        
         color: "rgb(216, 40, 163)",
         photoPos: {
             x: 920,
@@ -116,6 +126,7 @@ const charaData = {
         }
     },
     ryan: {
+        jpname: '',
         color: "rgb(180, 180, 180)",
         photoPos: {
             x: 55,
@@ -136,7 +147,7 @@ var relationshipData_ch = [
     },
     {
         id: "YE",
-        label: "朋友？",
+        label: "朋友",
         chara1: "yoni",
         chara2: "ellie",
         desc1: "吃軟糖ㄇ！",
@@ -332,7 +343,7 @@ var relationshipData_ch = [
         chara1: "minerva",
         chara2: "edd",
         desc1: "訓練對象",
-        desc2: "努力追趕"
+        desc2: "追趕中"
     },
     {
         id: "SB",
@@ -355,7 +366,7 @@ var relationshipData_ch = [
 var relationshipData_en = [
     {
         id: "RY",
-        label: "Acquaintance",
+        label: "At war",
         chara1: "yoni",
         chara2: "ryan",
         desc1: "So badass!!!",
@@ -363,7 +374,7 @@ var relationshipData_en = [
     },
     {
         id: "YE",
-        label: "Friends?",
+        label: "Friends",
         chara1: "yoni",
         chara2: "ellie",
         desc1: "*Shoves gummies*",
@@ -398,7 +409,7 @@ var relationshipData_en = [
         label: "Siblings",
         chara1: "yoni",
         chara2: "lance",
-        desc1: "*touch belongings*",
+        desc1: "*invades space*",
         desc2: "*throws out of window*"
     },
     {
@@ -510,15 +521,15 @@ var relationshipData_en = [
         label: "Teammates",
         chara1: "ryan",
         chara2: "minerva",
-        desc1: "May I help you?",
+        desc1: "Cooperates",
         desc2: "Scary..."
     },
     {
         id: "RB",
-        label: "Teammates",
+        label: "Friends???",
         chara1: "ryan",
         chara2: "blade",
-        desc1: "So vulnerable",
+        desc1: "Teases",
         desc2: "Scary..."
     },
     {
@@ -582,7 +593,7 @@ var relationshipData_en = [
 var bioData_en = [
     {
         id: 'blade',
-        name: 'Branden “Blade”',
+        name: 'Branden “Blade”',   
         gender: 'Male',
         like: 'To be alone',
         dislike: 'Self…and everything',
@@ -608,7 +619,7 @@ var bioData_en = [
     },
     {
         id: 'axel',
-        name: 'Axel',
+        name: 'Axel',   
         gender: 'Male',
         like: 'Compete',
         dislike: 'Losing or getting mocked',
@@ -633,7 +644,7 @@ var bioData_en = [
     },
     {
         id: 'xiu',
-        name: 'Xiu',
+        name: 'Xiu',    
         gender: 'Male',
         like: 'Trendy things',
         dislike: 'Losing followers',
@@ -660,16 +671,16 @@ var bioData_en = [
         id: 'yoni',
         name: 'Yoni',
         gender: 'Male',
-        like: 'Anything that gets him high',
+        like: 'Getting high',
         dislike: 'No acces to substance',
         rank: "S+",
         mains: "Hydra, Dynamo Roller",
         traits: [
-            'Junky',
-            'Kind of goofy',
+            'Goofy, happy, bizarre',
+            'Is a junkie',
             'Get excited easily',
             'Has destructive strength',
-            'Actually kind of rich'
+            'Can make lots of money'
         ],
         outfits: [
             { name: 'Regular', url: 'xxx.png' }
@@ -752,7 +763,7 @@ var bioData_en = [
         rank: "S+ to X",
         mains: "???",
         traits: [
-            '',
+            'Stoic',
             '',
             ''
         ],
@@ -831,18 +842,17 @@ var bioData_ch = [
     {
         id: 'blade',
         name: '布雷德(小布)',
-        jpname: 'ブレイド',
         gender: '男',
         like: '獨處',
-        dislike: '自己&所有事物',
+        dislike: '自己',
         rank: "S+ ~ X",
-        mains: "P槍、輕滾、.52/.96",
+        mains: "P槍、.52/.96",
         traits: [
-            '彆扭、孤僻',
-            '有焦慮問題',
-            '沒自信',
-            '會裝酷',
-            '其實很乖+很認真'
+            '孤僻、彆扭',
+            '有嚴重焦慮問題',
+            '沒自信、排斥社交',
+            '在不熟的人面前會裝酷',
+            '其實很乖、很認真'
         ],
         outfits: [
             { name: '通常服', url: 'bl1.png' },
@@ -858,10 +868,9 @@ var bioData_ch = [
     {
         id: 'axel',
         name: '亞克索爾(亞克)',
-        jpname: 'アクセル',
         gender: '男',
-        like: '比賽',
-        dislike: '輸or被嘲笑',
+        like: '漆彈',
+        dislike: '輸、被嘲笑',
         rank: "S+ ~ X",
         mains: "雙槍類",
         traits: [
@@ -869,7 +878,7 @@ var bioData_ch = [
             '有憤怒管理問題',
             '攻擊&侵略行為',
             "總是打架&找麻煩",
-            '很照顧自己家奶奶'
+            '很照顧自己的奶奶'
         ],
         outfits: [
             { name: '通常服', url: 'xxx.png' },
@@ -884,14 +893,13 @@ var bioData_ch = [
     {
         id: 'xiu',
         name: '修',
-        jpname: 'シュウ',        
         gender: '男',
-        like: '人氣，流行音樂',
+        like: '流行的東西',
         dislike: '掉粉',
         rank: "S+ ~ X",
         mains: "桶或傘",
         traits: [
-            "有風度、善社交、很時尚",
+            "有風度、善社交",
             '有社交平台成癮問題',
             "很注重自己儀表",
             "是挺受歡迎的網紅",
@@ -917,19 +925,19 @@ var bioData_ch = [
         rank: "S+",
         mains: "水栓或重滾",
         traits: [
-            '友善、傻裡傻氣、高能量',
+            '精力旺盛、少根筋',
             '有毒癮問題',
             '很容易就興奮',
-            '有怪力',
-            '挺有錢的'
+            '力氣很大',
+            '非常會賺錢'
         ],
         outfits: [
-            { name: 'Regular', url: 'xxx.png' }
+            { name: '通常服', url: 'xxx.png' }
         ],
         bio: [
             '住在ハイカラシティ廣場附近,跟哥哥一起住。',
             '他很喜歡成癮的感覺，但因為漆彈協會禁止玩家使用非法藥物，所以自從加入小布和亞克的隊伍之後就漸漸不用了。不過毒癮終究難戒，所以他正在找一種能讓他上癮又能繼玩漆彈的辦法。',
-            '他有參與低階的黑道活動，大部分都是販毒。'
+            '似乎有參與一些可疑活動。'
         ]
     },
     {
@@ -937,19 +945,21 @@ var bioData_ch = [
         name: '漢娜',
         gender: '女',
         like: '漆彈',
-        dislike: '她弟',
+        dislike: '自己的弟弟',
         rank: "X",
-        mains: "N-zap, .52/.96",
+        mains: "N-zap、.52/.96",
         traits: [
-            '凶狠，冷漠，難親近',
-            '有家暴弟弟的問題',
-            '講話惡毒',
+            '凶狠，易怒，難親近',
+            '有家暴弟弟的行為',
+            '講話惡毒的不良少女',
+            '其實是個稱職的隊長'
         ],
         outfits: [
-            { name: 'Regular', url: 'xxx.png' },
-            { name: 'Agent 3', url: 'xxx.png' }
+            { name: '通常服', url: 'xxx.png' },
+            { name: '3號', url: 'xxx.png' }
         ],
         bio: [
+            '住在ハイカラシティ廣場附近。',
             ''
         ]
     },
@@ -958,17 +968,19 @@ var bioData_ch = [
         name: '蘭斯',
         gender: '男',
         like: '乾淨整齊對稱',
-        dislike: '??',
+        dislike: '骯髒凌亂不對稱',
         rank: "X",
-        mains: "Nozzlenose and Blasters",
+        mains: "三點槍或爆裂槍",
         traits: [
-            '冷靜，',
-            '有強迫症的問題',
-            ''
+            '冷靜、正直、重義氣',
+            'OCPD+輕度潔癖',
+            '可靠的大哥類型',
+            '力氣比弟弟大',            
+            '很擅長聽人訴苦'
         ],
         outfits: [
-            { name: 'Regular', url: 'xxx.png' },
-            { name: 'Agent 3', url: 'xxx.png' }
+            { name: '通常服', url: 'xxx.png' },
+            { name: '3號', url: 'xxx.png' }
         ],
         bio: [
             ':/'
@@ -976,20 +988,22 @@ var bioData_ch = [
     },
     {
         id: 'ellie',
-        name: 'Estelle "Ellie"',
-        gender: 'Female',
-        like: '???',
-        dislike: '???',
+        name: '艾絲泰爾(艾莉)',
+        gender: '女',
+        like: '聊八卦、甜食',
+        dislike: '自私的人',
         rank: "A+",
-        mains: "???",
+        mains: "針槍",
         traits: [
-            'SWJ',
-            '有網路霸凌別人的問題',
-            ''
+            '開朗、幽默、重義氣',
+            '會網路霸凌他人的SJW',
+            '擅長蒐集資料跟人肉',
+            '愛閒聊的小妹',
+            '意外的很會讀空氣'
         ],
         outfits: [
-            { name: 'Regular', url: 'xxx.png' },
-            { name: 'Agent 4', url: 'xxx.png' }
+            { name: '通常服', url: 'xxx.png' },
+            { name: '4號', url: 'xxx.png' }
         ],
         bio: [
             ':/'
@@ -999,18 +1013,19 @@ var bioData_ch = [
         id: 'edd',
         name: '艾德',
         gender: '男',
-        like: '???',
+        like: '籃球',
         dislike: '???',
         rank: "S+ to X",
-        mains: "???",
+        mains: "北齋",
         traits: [
-            '',
-            '有慣性說謊的問題',
-            ''
+            '沉穩、表情不多',
+            '不擇手段＆慣性說謊',
+            '會抑制感情的人',
+            '其實很想被接納',
         ],
         outfits: [
-            { name: 'Regular', url: 'xxx.png' },
-            { name: 'Agent 8', url: 'xxx.png' }
+            { name: '通常服', url: 'xxx.png' },
+            { name: '8號', url: 'xxx.png' }
         ],
         bio: [
             ':/'
@@ -1018,20 +1033,22 @@ var bioData_ch = [
     },
     {
         id: 'minerva',
-        name: 'Minerva',
-        gender: 'Female',
-        like: '???',
-        dislike: '???',
+        name: '米娜瓦',
+        gender: '女',
+        like: '訓練',
+        dislike: '太亮的地方',
         rank: "X",
-        mains: "???",
+        mains: "章魚槍",
         traits: [
-            '',
-            '',
-            ''
+            '忠心、誠實',
+            '疑似斯德哥爾摩綜合症',
+            '做事認真的工作狂',
+            '很常進入心流狀態',
+            '其實是個普通老實人'
         ],
         outfits: [
-            { name: 'Regular', url: 'xxx.png' },
-            { name: 'Agent 8', url: 'xxx.png' }
+            { name: '通常服', url: 'xxx.png' },
+            { name: '8號', url: 'xxx.png' }
         ],
         bio: [
             ':/'
@@ -1039,19 +1056,21 @@ var bioData_ch = [
     },
     {
         id: 'simon',
-        name: 'Simon',
-        gender: 'Male',
+        name: '西蒙',
+        gender: '男',
         like: '???',
         dislike: '???',
-        rank: "?",
+        rank: "???",
         mains: "???",
         traits: [
-            '',
-            '',
-            ''
+            '任性、自大、中二病',
+            '似乎有妄想性障礙',
+            'DJ將軍的頭號粉絲',
+            '纏著英雄不放的定番惡役',
+            '工程師、擅長做機器人'
         ],
         outfits: [
-            { name: 'Regular', url: 'xxx.png' }
+            { name: '通常服', url: 'xxx.png' }
         ],
         bio: [
             ':/'
@@ -1059,19 +1078,21 @@ var bioData_ch = [
     },
     {
         id: 'ryan',
-        name: 'Ryan Joseph "RJ" Cameron',
-        gender: 'Male',
+        name: 'R.J.',
+        gender: '男',
         like: '???',
         dislike: '???',
         rank: "X",
-        mains: "Chargers",
+        mains: "狙擊類",
         traits: [
-            '',
-            '',
-            ''
+            '冷血、殘酷、沒耐心',
+            '毫無同理心',
+            '各方面抖S',
+            '辦事專業俐落、高效率',
+            '某種程度的天然呆'
         ],
         outfits: [
-            { name: 'Regular', url: 'xxx.png' }
+            { name: '通常服', url: 'xxx.png' }
         ],
         bio: [
             ':/'
