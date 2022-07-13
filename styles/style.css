@@ -384,7 +384,7 @@ ul {
   position: absolute;
 }
 
-.closeBT {
+.relCloseBT, .bioCloseBT {
   cursor: pointer;
   z-index: 10;
 }
@@ -400,8 +400,8 @@ ul {
   height: 700px;
 }
 
-.charaBio .closeBT {
-  top: 30px;
+.charaBio .bioCloseBT {
+  top: 40px;
   right: -20px;
 }
 
@@ -647,7 +647,7 @@ td li, .traits li {
   height: 700px;
 }
 
-.relationshipPage .closeBT {
+.relationshipPage .relCloseBT {
   top: -30px;
   right: -30px;
 }
