@@ -469,7 +469,7 @@ td li, .traits li {
 }
 
 .traits li:before {
-  content: "➤ ";
+  content: "＃ ";
 }
 
 .bioArt {
@@ -548,7 +548,7 @@ td li, .traits li {
 }
 
 .bioDetail {
-  padding: 30px 50px 120px 50px;
+  padding: 30px 45px 120px 50px;
   background-color: rgb(50, 50, 50);
   right: -20px;
   bottom: 50px;
@@ -693,8 +693,8 @@ td li, .traits li {
 }
 
 .minerva {
-  color: rgb(136, 44, 64);
-  stroke: rgb(136, 44, 64);
+  color: rgb(167, 87, 83);
+  stroke: rgb(167, 87, 83);
 }
 
 .simon {
@@ -757,7 +757,7 @@ td li, .traits li {
 }
 
 .minervaPhoto {
-  background-color: rgb(136, 44, 64);
+  background-color: rgb(167, 87, 83);
   background-position: 0px -360px;
 }
 

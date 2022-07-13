@@ -4,9 +4,8 @@
 - ~~add extra div in profile page for name translation~~
 - ~~refine svg path animation (add some kind of direction attribute?)~~
 - ~~separate the data into different js file or json file instead of having them as variables~~
-- separate data of diff language into diff js files (easier to handle stuff?)
+- ~~separate data of diff language into diff js files (easier to handle stuff?)~~
 - adjust font style for chinese
-- bio label needs to be translated to chinese when lang button is clicked
 - build realtionship info pop-up page ((in progress))
 - add lightbox overlay function for image pop-up
 - build warning pop-up page for TWCC
