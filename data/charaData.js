@@ -612,7 +612,6 @@ var bioData_en = [
             { name: 'Sanitized', url: 'bl3.png' }
         ],
         bio: [
-            'A boy who lives around Inkopolis City Plaza.',
             'He used to refuse playing any turf/ranked game and would push away anyone who wants to be friend due to his anxious nature, which resulted from being bullied by his older sister for a long period of time. After being abruptly scouted by Captain Cuttlefish as agent 3, he received support from captain’s grandkids, it was then he decided to move out and live on his own with the new name “Blade”, he started practicing and eventually became able to play competitively.',
             'He then met Axel and other friends and eventually got along since he is now a bit more opened-up to other people, and they decided to form a team called “Bad Buttons” with Blade as leader.'
         ]
@@ -637,7 +636,6 @@ var bioData_en = [
             { name: 'Agent 4', url: 'xxx.png' }
         ],
         bio: [
-            'A boy who lives around Inkopolis Square with his grandma and sister Ellie.', 
             'He had trouble finding teammate for competitive games due to his bad temper.',
             'One day in a random match he met Blade and picked a fight with him, and later realized that Blade could be the teammate he has been looking for. He then chased him through the sewer system in Inkopolis Square where he became Agent 4 just for another chance to meet Blade. He eventually found Blade and was able to befriend him and form a team like he wanted to.'
         ]
@@ -651,19 +649,18 @@ var bioData_en = [
         rank: "S+ to X",
         mains: "Sloshers and Brellas",
         traits: [
-            "Social media addict",
             "Charming, sociable, stylish",
+            "Social media addict",
+            "Craves for attention",
             "Cares about his appearance",
-            "Kind of a drama queen",
-            "Is quite popular"
+            "Kind of a drama queen"
         ],
         outfits: [
             { name: 'Regular', url: 'xxx.png' },
             { name: 'Agent 4', url: 'xxx.png' }
         ],
         bio: [
-            'He lives around Inkopolis Square.',
-            'He spend most of his time maintaining his social life and his online images, he also took interest in bartending and is working part-time in a bar after he dropped out of school.',
+            'A very social person, he is very good at coming up with party game ideas.',
             'He used to play with Axel until they broke up, he then shifted his focus onto social media. He then took interest in Blade when he found out Axel is hanging out with him, and decided to start playing again.'
         ]
     },
@@ -686,8 +683,9 @@ var bioData_en = [
             { name: 'Regular', url: 'xxx.png' }
         ],
         bio: [
+            'A care-free and cheerful boy.',
             'He loves to be get high using some substence, but ever since he joined Bad Buttons he had cut out most of it, due to Turf War Association\'s ban on use of illegal drug. Although He wasn\'t able resist the temptation of getting high so he has been looking for a solution that would allow him to play Turf War.',
-            'He is involved in some low level gang activity, mostly selling drugs.'
+            'Seems to be involved in some suspicious activities.'
         ]
     },
     {
@@ -699,38 +697,44 @@ var bioData_en = [
         rank: "X",
         mains: "N-zap, .52/.96",
         traits: [
-            'Bully',
-            '',
-            '',
-            ''
+            'Vicious, intimidating, hostile',
+            'Abuse her brother a lot',
+            'Very mean',
+            'Laugh like a maniac',
+            'Is actually a great leader'
         ],
         outfits: [
             { name: 'Regular', url: 'xxx.png' },
             { name: 'Agent 3', url: 'xxx.png' }
         ],
         bio: [
-            ':/'
+            'She was very neglected by her mother when she is little. She hold grudges against Blade because he gets all the attention, after their mother passed, she starts to abuse her brother.',
+            'Because splat battle is her only outlet for her anger, her play style is very aggresive, and she is unreasonably good at it due to playing all the time. She formed an elite team with Lance, RJ and Minerva.',
+            'She is aware of her flaws and had thought of fixing her relationship with her brother, but she gave up before even makes an attempt, saying "It\'s too late now".'
         ]
     },
     {
         id: 'lance',
         name: 'Lance',
         gender: 'Male',
-        like: '???',
-        dislike: '??',
+        like: 'Everything being tidy and in order',
+        dislike: 'Sudden change in plan',
         rank: "X",
         mains: "Nozzlenose and Blasters",
         traits: [
-            'Has OCD',
-            'Perfectionist',
-            ''
+            'level-headed, righteous, loyal',
+            'Has OCPD, is a neat freak',
+            'Very reliable',
+            'Has even greater strength than his brother',
+            'Is a good listener'
         ],
         outfits: [
             { name: 'Regular', url: 'xxx.png' },
             { name: 'Agent 3', url: 'xxx.png' }
         ],
         bio: [
-            ':/'
+            'Yoni\'s older brother, he is childhood friend to both Hannah and Blade. He looked intimidating, but he is a very reliable person and care for his friend a lot. He is very organized, highly efficient pefectionist. He often offers great life advice with a poker face. He is trying really hard to live with his OCPD.',
+            'He is the first member Hannah recruited, he helps with things that Hannah had trouble to deal with.'
         ]
     },
     {
