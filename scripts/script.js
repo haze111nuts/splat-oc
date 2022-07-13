@@ -23,12 +23,7 @@ function buildChart(relationshipData){
     for (var chara in charaData) {
         chartHTML += "<li class='charaPhotoBox md-trigger' id='"+ chara +"' data-modal='modal-chara'>";
         chartHTML += "<div class='charaPhoto "+ chara +"Photo'></div>";
-        var name = ""
-        if(chara == "ryan"){
-            name = "R.J.";
-        }else{
-            name = chara.charAt(0).toUpperCase() + chara.slice(1) ;
-        }
+        var name = (chara == "ryan") ? "R.J." : chara.charAt(0).toUpperCase() + chara.slice(1);
         chartHTML += "<div class='nameSticker'>"+ name +"</div>";
         chartHTML += "</li>";
     }
@@ -160,7 +155,8 @@ function charaHoverEvent(relationshipData){
 
 function setUpBioPageFor(charaBioData){
     //Fill header
-    $(".bioHeader span:first-child").html(charaBioData.id.toUpperCase());
+    var bioHeaderName = (charaBioData.id == "ryan") ? "R.J." : charaBioData.id.toUpperCase();
+    $(".bioHeader span:first-child").html(bioHeaderName);
     $(".bioHeader span:nth-child(2)").html(charaData[charaBioData.id].jpname);
 
     //Fill outfit panel

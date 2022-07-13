@@ -412,7 +412,7 @@ ul{
 }
 
 // Bio Close button
-.closeBT{
+.relCloseBT, .bioCloseBT{
   cursor: pointer;
   z-index: 10;
 }
@@ -428,8 +428,8 @@ ul{
 	width: 900px;
 	height: 700px;
 }
-.charaBio .closeBT{
-  top: 30px;
+.charaBio .bioCloseBT{
+  top: 40px;
   right: -20px;  
 }
 .bioBasic, .bioDetail{
@@ -639,7 +639,7 @@ td li, .traits li {
 	height: 700px;
 }
 
-.relationshipPage .closeBT{
+.relationshipPage .relCloseBT{
   top: -30px;
   right: -30px;  
 }
