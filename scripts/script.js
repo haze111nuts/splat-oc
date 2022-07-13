@@ -3,7 +3,7 @@
 //=====================//
 
 var siteData_en = {
-    title : "Haze's Splat OC Stuff",
+    title : "Haze's Splatverse",
     description : ["Splatoon OC info/bio dump", "by twitter@haze111nuts"]
 }
 
@@ -236,7 +236,7 @@ function modalEffectsInit(bioData) {
 		function removeModalHandler() {
 			removeModal( classie.has( el, 'md-setperspective' ) );
             $(".langNav").removeClass("blur");
-			// document.body.classList.toggle('noscroll');
+			// document.body.classList.toggle('noscroll');         
 		}
 
 		el.addEventListener( 'click', function( ev ) {

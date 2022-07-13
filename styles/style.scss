@@ -15,7 +15,7 @@ $charaColors: (
   lance: rgb(148, 77, 206),
   ellie: rgb(17, 148, 87),
   edd: rgb(211, 43, 43),
-  minerva: rgb(136, 44, 64),
+  minerva: rgb(167, 87, 83),
   simon: rgb(216, 40, 163),
   ryan: rgb(180, 180, 180)
 );
@@ -492,7 +492,7 @@ td li, .traits li {
   color: white;
 }
 .traits li:before{
-  content: "➤ ";
+  content: "＃ ";
 }
 
 // Chara Art Panel
@@ -563,7 +563,7 @@ td li, .traits li {
 
 // Detail Bio Panel
 .bioDetail{
-  padding: 30px 50px 120px 50px;
+  padding: 30px 45px 120px 50px;
   background-color: rgba(50, 50, 50, 1);
   right: -20px;
   bottom: 50px;
