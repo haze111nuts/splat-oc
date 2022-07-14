@@ -517,21 +517,26 @@ var bioData_en = [
         id: 'ellie',
         name: 'Estelle "Ellie"',
         gender: 'Female',
-        like: '???',
-        dislike: '???',
+        like: 'Gossip, sweets',
+        dislike: 'Selfish people',
         rank: "A+",
-        mains: "???",
+        mains: "Splash-o-matic",
         traits: [
-            'SWJ',
-            'Engage in online shaming',
-            ''
+            'outgoing, humorous, loyal',
+            'Is a SJW',
+            'Engage in online shaming and doxxing',
+            'Loves to chitchat',
+            'is actually very empathetic to others'
+            
         ],
         outfits: [
             { name: 'Regular', url: 'xxx.png' },
             { name: 'Agent 4', url: 'xxx.png' }
         ],
         bio: [
-            ':/'
+            'Axel\'s yonger sister. She is friendly but immature, her sense of justice is so strong that she actively seek out questionable people to cancel.',
+            'She likes to socialize with others, and developed interest for splat battle under Axel and his team\'s influence. She is on a good term with all members of Rotten Buttons.',
+            'She manages a community that specialize in harrasment and doxxing, but she has been cutting down on related activities after her crush Blade questions the morality of her actions.'
         ]
     },
     {
@@ -559,21 +564,25 @@ var bioData_en = [
         id: 'minerva',
         name: 'Minerva',
         gender: 'Female',
-        like: '???',
-        dislike: '???',
+        like: 'Underground life',
+        dislike: 'Bright place',
         rank: "X",
-        mains: "???",
+        mains: "Octoshot",
         traits: [
-            '',
-            '',
-            ''
+            'Loyal, honest',
+            'Seems to have Stockholm syndrome',
+            'Workholic',
+            'Easily get into flow state',
+            'Just a law-abiding normal girl'
         ],
         outfits: [
             { name: 'Regular', url: 'xxx.png' },
             { name: 'Agent 8', url: 'xxx.png' }
         ],
         bio: [
-            ':/'
+            'She was raised in Octarian army since she was very little. She hated the training regimen at first, but eventually she grow fond of the army deeply. She has no intention to leave even after hearing Squid Sister\'s Calamari Inkantation, even begin to loathe the apperarence of surface world.',
+            'She encountered Hannah as Agent 3 in a battle. Hannah is commited to recruit her and bring her to the surface after witnessed her excellent abilty fo splat battle, much to Minerva\'s dismay. After many battle, Minerva relucantly agreed going with her. Now a member of Midnight Mayhem, she hasn\'t get used to the surface life.',
+            'She is almost unbeatable when she enter the flow.'
         ]
     },
     {
