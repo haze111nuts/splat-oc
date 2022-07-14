@@ -459,8 +459,8 @@ var bioData_en = [
             { name: 'Regular', url: 'xxx.png' }
         ],
         bio: [
-            'A care-free and cheerful boy, also bit of a joker who can be pretty naughty sometimes. Speaks and behaves in a comical and silly way. He finds a lot of things funny and will laugh everything off even when the timing is inappropriate.',
-            'He loves getting high using...some substence, which is obviously banned in all sports. While wanting to play with Blade as a member of Rotten Buttons, he had cut out most of it. However, he wasn\'t able to fully resist the temptation of such things, so he has been looking for a solution so he can have it both ways',
+            'A care-free and cheerful boy, also a bit of a joker who can be pretty naughty sometimes. Speaks and behaves in a comical and silly way. He finds a lot of things funny and will laugh everything off even when the timing is inappropriate.',
+            'He loves getting high using...some substance, which is obviously banned in all sports. While wanting to play with Blade as a member of Rotten Buttons, he had cut out most of it. However, he wasn\'t able to fully resist the temptation of such things, so he has been looking for a solution so he can have it both ways',
             'Seems to be involved in some suspicious activities.'
         ]
     },
@@ -468,13 +468,13 @@ var bioData_en = [
         id: 'hannah',
         name: 'Hannah',
         gender: 'Female',
-        like: '???',
+        like: 'Splat Battles',
         dislike: 'Blade',
         rank: "X",
         mains: "N-zap, .52/.96",
         traits: [
             'Vicious, intimidating, hostile',
-            'Abuse her brother a lot',
+            'Abusive to her brother',
             'Very mean',
             'Laugh like a maniac',
             'Is actually a great leader'
@@ -484,9 +484,9 @@ var bioData_en = [
             { name: 'Agent 3', url: 'xxx.png' }
         ],
         bio: [
-            'She was very neglected by her mother when she is little. She hold grudges against Blade because he gets all the attention, after their mother passed, she starts to abuse her brother.',
-            'Because splat battle is her only outlet for her anger, her play style is very aggresive, and she is unreasonably good at it due to playing all the time. She formed an elite team with Lance, RJ and Minerva.',
-            'She is aware of her flaws and had thought of fixing her relationship with her brother, but she gave up before even makes an attempt, saying "It\'s too late now".'
+            'Hannah was specially neglected by her mother when she was little, and her mother heavily favored the younger brother Blade over her,  this caused Hannah to hold a strong grudge against Blade. After their mother passed away, the grudge soon turned into abuse.',
+            'Splat battle has been an outlet for her anger. As she poured her heart and soul into the games, she became unreasonably good at them. She actively searched for long-term teammates and eventually got Lance, RJ and Minerva to form an elite team.',
+            'She is aware of her flaws and had thought of fixing the relationship with Blade, but gave up after failing to make any attempt, stating "It\'s too late now".'
         ]
     },
     {
@@ -496,9 +496,9 @@ var bioData_en = [
         like: 'Pop rocks candy',
         dislike: 'Sudden change in plan',
         rank: "X",
-        mains: "Nozzlenose, Blasters",
+        mains: "Blasters & Nozzlenose",
         traits: [
-            'level-headed, righteous',
+            'Level-headed, righteous',
             'OCPD, a bit of a neat freak',
             'A reliable brotherly figure',
             'Also has destructive strength',
@@ -509,8 +509,9 @@ var bioData_en = [
             { name: 'Agent 3', url: 'xxx.png' }
         ],
         bio: [
-            'Yoni\'s older brother, he is childhood friend to both Hannah and Blade. He looked intimidating, but he is a very reliable person and care for his friend a lot. He is very organized, highly efficient pefectionist. He often offers great life advice with a poker face. He is trying really hard to live with his OCPD.',
-            'He is the first member Hannah recruited, he helps with things that Hannah had trouble to deal with.'
+            'Yoni\'s older brother, he is a childhood friend to both Hannah and Blade. He may look and act intimidating, but he is a very reliable, supportive and caring person. He is also a very organized perfectionist with high standards, he also has incredibly (and sometimes unnecessarily ) sharp attention to details. He occasionally bursts out life advice with a poker face.',
+            'He was the first member Hannah recruited in Midnight Mayhem, he deals with things Hannah doesn\'t know how to do or had trouble with.',
+            'He works really hard to live with his OCPD and is always seen wearing a pair of black gloves. He <u>MUST</u> eat at least one pack of pop rocks before going to any battle in the morning.'
         ]
     },
     {
