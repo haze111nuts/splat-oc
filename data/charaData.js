@@ -37,6 +37,7 @@ var relationshipPosData = [
 const charaData = {
     blade: {
         jpname: 'ブレイド',
+        age: 16,
         color: "rgb(127, 180, 57)",
         photoPos: {
             x: 520,
@@ -46,6 +47,7 @@ const charaData = {
     },
     axel: {
         jpname: 'アクセル',
+        age: 15,
         color: "rgb(221, 155, 33)",
         photoPos: {
             x: 770,
@@ -55,6 +57,7 @@ const charaData = {
     },
     xiu: {
         jpname: 'シュウ',
+        age: 18,
         color: "rgb(65, 173, 206)",
         photoPos: {
             x: 770,
@@ -64,6 +67,7 @@ const charaData = {
     },
     yoni: {
         jpname: 'ヨニ',
+        age: 16,
         color: "rgb(224, 213, 54)",
         photoPos: {
             x: 520,
@@ -72,7 +76,8 @@ const charaData = {
         }
     },
     hannah: {
-        jpname: 'ハンナ',        
+        jpname: 'ハンナ',
+        age: 19,
         color: "rgb(41, 81, 194)",
         photoPos: {
             x: 245,
@@ -81,7 +86,8 @@ const charaData = {
         }
     },
     lance: {
-        jpname: 'ランス',        
+        jpname: 'ランス',
+        age: 19,
         color: "rgb(148, 77, 206)",
         photoPos: {
             x: 245,
@@ -90,7 +96,8 @@ const charaData = {
         }
     },
     ellie: {
-        jpname: 'エリ（エステル）',        
+        jpname: 'エリ（エステル）',
+        age: 14,        
         color: "rgb(17, 148, 87)",
         photoPos: {
             x: 1005,
@@ -99,7 +106,8 @@ const charaData = {
         }
     },
     edd: {
-        jpname: 'エッド',        
+        jpname: 'エッド',
+        age: 18,    
         color: "rgb(211, 43, 43)",
         photoPos: {
             x: 630,
@@ -108,7 +116,8 @@ const charaData = {
         }
     },
     minerva: {
-        jpname: 'ミネルヴァ',        
+        jpname: 'ミネルヴァ',
+        age: 18,         
         color: "rgb(167, 87, 83)",
         photoPos: {
             x: 360,
@@ -117,7 +126,8 @@ const charaData = {
         }
     },
     simon: {
-        jpname: 'サイモン',        
+        jpname: 'サイモン',
+        age: 18,
         color: "rgb(216, 40, 163)",
         photoPos: {
             x: 920,
@@ -127,6 +137,7 @@ const charaData = {
     },
     ryan: {
         jpname: '',
+        age: 23,         
         color: "rgb(180, 180, 180)",
         photoPos: {
             x: 55,
@@ -509,7 +520,7 @@ var bioData_en = [
             { name: 'Agent 3', url: 'xxx.png' }
         ],
         bio: [
-            'Yoni\'s older brother, he is a childhood friend to both Hannah and Blade. He may look and act intimidating, but he is a very reliable, supportive and caring person. He is also a very organized perfectionist with high standards, he also has incredibly (and sometimes unnecessarily ) sharp attention to details. He occasionally bursts out life advice with a poker face.',
+            'Yoni\'s older brother, he is a childhood friend to both Hannah and Blade. He may look and act intimidating, but he is a very reliable, supportive and caring person. He is also a very organized perfectionist with high standards, he also has incredibly (and sometimes unnecessarily) sharp attention to details. He occasionally bursts out life advice with a poker face.',
             'He was the first member Hannah recruited in Midnight Mayhem, he deals with things Hannah doesn\'t know how to do or had trouble with.',
             'He works really hard to live with his OCPD and is always seen wearing a pair of black gloves. He <u>MUST</u> eat at least one pack of pop rocks before going to any battle in the morning.'
         ]
@@ -544,21 +555,24 @@ var bioData_en = [
         id: 'edd',
         name: 'Edd',
         gender: 'Male',
-        like: '???',
-        dislike: '???',
+        like: 'Sports',
+        dislike: 'Dark places',
         rank: "S+ to X",
-        mains: "???",
+        mains: "Octo brushes",
         traits: [
-            'Stoic',
-            '',
-            ''
+            'Stoic, aloof',
+            'Compulsize lying',
+            'Somewhat cunning',
+            'Daydreams about...stuff',
+            'Can\'t stand loneliness'
         ],
         outfits: [
             { name: 'Regular', url: 'xxx.png' },
             { name: 'Agent 8', url: 'xxx.png' }
         ],
         bio: [
-            ':/'
+            'Minerva\'s twin brother who was also born underground; however, unlike Minerva, he did not like the life and treatment he had as an Octorian. After hearing Squid Sisters\' song on that fateful day, he started planning for escape, using any means he could.',
+            'Metro shenanigans, though the whole thing did manage to give him a chance to leave at the end. During this ordeal he met Blade who was operating as Agent 3 at the time , he was convinced that Blade is his "Savior" and went looking for him right away even before settling down on the inkopolis. After the two befriended, Edd became the fifth member of Rotten Buttons.'
         ]
     },
     {
@@ -590,20 +604,24 @@ var bioData_en = [
         id: 'simon',
         name: 'Simon',
         gender: 'Male',
-        like: '???',
-        dislike: '???',
-        rank: "?",
+        like: 'DJ Octavio, robotic stuff',
+        dislike: 'Heroes',
+        rank: "???",
         mains: "???",
         traits: [
-            '',
-            '',
-            ''
+            'Arrogant, ambitious',
+            'Delusional',
+            'DJ Octavio\'s biggest fanboy',
+            'Just your typical villian',
+            'Always fails miserably'
         ],
         outfits: [
             { name: 'Regular', url: 'xxx.png' }
         ],
         bio: [
-            ':/'
+            'A member of the Octorian underground army. He is obsessed with DJ Octavio. A self-proclaimed "DJ Octavio\'s greated assistant" and "Evil genius Octorian engineer" or some such. He seems to be extremely skilled and efficient when it comes to tech stuff, which includes programming AI, building robotics or even hacking.',
+            'He was initially a shut-in who only stays in his lab, one day he was out on Octo Vally to inspect damages on some of the gadget he made, that was when he found Blade -- who just started his Agent 3 work --, he then hijacked Blade\'s radio to confronted him. After a couple conflicts he determined that Blade is to be his archenemy and begin the life-long entanglement. He holds similar attitude toward Axel who operates as Agent 4. His plans never seem to bare fruits due to his own foolishness and some glaring shortcommings. Despite all the constant failures, he has no intension to stop bugging the two heros.',
+            'He has never been to the surface and neither has he ever wished for such thing.'
         ]
     },
     {
