@@ -521,7 +521,7 @@ var bioData_en = [
         bio: [
             'Yoni\'s older brother, he is a childhood friend to both Hannah and Blade. He may look and act intimidating, but he is a very reliable, supportive and caring person. He is also a very organized perfectionist with high standards, he also has incredibly (and sometimes unnecessarily) sharp attention to details. He occasionally bursts out life advice with that poker face of his.',
             'He was the first member Hannah recruited in Midnight Mayhem, he deals with things Hannah doesn\'t know how to do or had trouble with.',
-            'He tries his best to live with his OCPD and is always seen wearing a pair of black gloves. He <u>MUST</u> eat at least one pack of pop rocks before going to any battle in the morning.'
+            'He tries his best to live with his OCPD and is always seen wearing a pair of black gloves. Pop rocks inspired him to pick up Blaster when he was young, now he must eat a pack of pop rocks every morning.'
         ]
     },
     {
