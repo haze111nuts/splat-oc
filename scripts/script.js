@@ -194,6 +194,7 @@ function setUpBioPageFor(charaBioData){
 
     //Fill detailed bio panel
     $(".bioDetailInner").html(printLinesWithBreak(charaBioData.bio, 2));
+    $(".bioDetailInner").scrollTop(0);
 
     //Set up character-specific page style
     var color = charaData[charaBioData.id].color;
