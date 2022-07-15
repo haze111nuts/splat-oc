@@ -1,4 +1,5 @@
 @use "sass:map";
+@use 'sass:math';
 @import url(https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap);
 
 $chart-width: 1185px ;
@@ -7,18 +8,68 @@ $chara-box-width: 135px;
 $chara-box-height: 155px;
 $chara-photo-size: 120px;
 
-$charaColors: (
-  blade: rgb(127, 180, 57),
-  axel: rgb(221, 155, 33),
-  xiu: rgb(65, 173, 206),
-  yoni: rgb(224, 213, 54),
-  hannah: rgb(41, 81, 194),
-  lance: rgb(148, 77, 206),
-  ellie: rgb(17, 148, 87),
-  edd: rgb(211, 43, 43),
-  minerva: rgb(167, 87, 83),
-  simon: rgb(216, 40, 163),
-  ryan: rgb(180, 180, 180)
+$raw-photo-size: 150px;
+$raw-photo-asset-x: 450px;
+$raw-photo-asset-y: 600px;
+
+@function photo-pos($index) {
+  $array-x-length: math.div($raw-photo-asset-x, $raw-photo-size);
+  $array-y-length: math.div($raw-photo-asset-y, $raw-photo-size);
+
+  $x-position: $index % $array-x-length;
+  $y-position: floor(math.div($index, $array-x-length)); 
+
+  $result-x: $x-position * $chara-photo-size * -1;
+  $result-y: $y-position * $chara-photo-size * -1;
+
+  @return $result-x $result-y;
+}
+
+$chara: (
+  blade: (
+    color: rgb(127, 180, 57),
+    photo-index: 0
+  ),
+  axel: (
+    color: rgb(221, 155, 33),
+    photo-index: 1
+  ),
+  xiu: (
+    color: rgb(65, 173, 206),
+    photo-index: 2
+  ),
+  yoni: (
+    color: rgb(224, 213, 54),
+    photo-index: 3
+  ),
+  hannah: (
+    color: rgb(41, 81, 194),
+    photo-index: 6
+  ),
+  lance: (
+    color: rgb(148, 77, 206),
+    photo-index: 4
+  ),
+  ellie: (
+    color: rgb(17, 148, 87),
+    photo-index: 7
+  ),
+  edd: (
+    color: rgb(211, 43, 43),
+    photo-index: 10
+  ),
+  minerva: (
+    color: rgb(167, 87, 83),
+    photo-index: 9
+  ),
+  simon: (
+    color: rgb(216, 40, 163),
+    photo-index: 11
+  ),
+  ryan: (
+    color: rgb(180, 180, 180),
+    photo-index: 5
+  )
 );
 
 @mixin prefix($property, $value, $prefixes: ()) {
@@ -163,7 +214,7 @@ ul{
   .beta{
     font-size: 15px;
     padding: 0px 5px;
-    color: map.get($charaColors, "blade");
+    color: map.get(map.get($chara, "blade"),"color");
   }
 }
 
@@ -351,15 +402,15 @@ ul{
   stroke-width: 0.5px;
 }
 #RB{
-  stroke: map.get($charaColors, "blade");
+  stroke: map.get(map.get($chara, "blade"),"color");
   stroke-opacity: 0.3;
-  fill: map.get($charaColors, "blade");
+  fill: map.get(map.get($chara, "blade"),"color");
   fill-opacity: 0.1;
 }
 #MM{
-  stroke: map.get($charaColors, "hannah");
+  stroke: map.get(map.get($chara, "hannah"),"color");
   stroke-opacity: 0.3;
-  fill: map.get($charaColors, "hannah");
+  fill: map.get(map.get($chara, "hannah"),"color");
   fill-opacity: 0.1;
 }
 
@@ -647,113 +698,31 @@ td li, .traits li {
   right: -30px;  
 }
 
-//=====================================//
-//===                               ===//
-//===                               ===//
-//===   Character Specific Styles   ===//
-//===                               ===//
-//===                               ===//
-//=====================================//
-
-.blade{
-  color: map.get($charaColors, "blade");
-  stroke: map.get($charaColors, "blade");  
-}
-.axel{
-  color: map.get($charaColors, "axel");
-  stroke: map.get($charaColors, "axel");
-}
-.xiu{
-  color: map.get($charaColors, "xiu");
-  stroke: map.get($charaColors, "xiu");
-}
-.yoni{
-  color: map.get($charaColors, "yoni");
-  stroke: map.get($charaColors, "yoni");
-}
-.hannah{
-  color: map.get($charaColors, "hannah");
-  stroke: map.get($charaColors, "hannah");
-}
-.lance{
-  color: map.get($charaColors, "lance");
-  stroke: map.get($charaColors, "lance");
-}
-.ellie{
-  color: map.get($charaColors, "ellie");
-  stroke: map.get($charaColors, "ellie");
-}
-.edd{
-  color: map.get($charaColors, "edd");
-  stroke: map.get($charaColors, "edd");
-}
-.minerva{
-  color: map.get($charaColors, "minerva");
-  stroke: map.get($charaColors, "minerva");
-}
-.simon{
-  color: map.get($charaColors, "simon");
-  stroke: map.get($charaColors, "simon");
-}
-.ryan{
-  color: map.get($charaColors, "ryan");
-  stroke: map.get($charaColors, "ryan");
-}
-
 .charaPhoto{
   width: $chara-photo-size;
   height: $chara-photo-size;
   background-image: url(../assets/img/profilePics.png);
   background-repeat: no-repeat;
-  background-size: 360px auto;
+  background-size: $chara-photo-size * math.div($raw-photo-asset-x, $raw-photo-size) auto;
   margin: 8px auto 0px auto;
 }
 
-.bladePhoto{
-  background-color: map.get($charaColors, "blade");
-  background-position: 0px 0px;
-}
-.axelPhoto{
-  background-color: map.get($charaColors, "axel");
-  background-position: -120px 0px;
-}
-.xiuPhoto{
-  background-color: map.get($charaColors, "xiu");
-  background-position: -240px 0px;
-}
-.yoniPhoto{
-  background-color: map.get($charaColors, "yoni");
-  background-position: 0px -120px;
-}
-.hannahPhoto{
-  background-color: map.get($charaColors, "hannah");
-  background-position: 0px -240px;
-}
-.lancePhoto{
-  background-color: map.get($charaColors, "lance");
-  background-position: -120px -120px;
-}
-.elliePhoto{
-  background-color: map.get($charaColors, "ellie");
-  background-position: -120px -240px;
-}
-.eddPhoto{
-  background-color: map.get($charaColors, "edd");
-  background-position: -120px -360px;
-}
-.minervaPhoto{
-  background-color: map.get($charaColors, "minerva");
-  background-position: 0px -360px;
-}
-.simonPhoto{
-  background-color: map.get($charaColors, "simon");
-  background-position: -240px -360px;
-}
-.ryanPhoto{
-  background-color: map.get($charaColors, "ryan");
-  background-position: -240px -120px;
-}
 
+//====================================//
+//===   Character specific style   ===//
+//====================================//
+
+@each $name, $data in $chara {
+  .#{$name} {
+    color: map.get($data, "color");
+    stroke: map.get($data, "color");
+  }
+
+  .#{$name}Photo {
+    background-color: map.get($data, "color");
+    background-position: photo-pos(map.get($data, "photo-index"));
+  }
+}
 
 // @keyframes glow {
 //   from {
