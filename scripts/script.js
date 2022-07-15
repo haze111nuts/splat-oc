@@ -70,7 +70,11 @@ function relationshipHoverEvent(relationshipData){
         const otherChara = Object.keys(charaData).filter(e => e !== relationship.chara1 && e !== relationship.chara2 );           
         const otherRelation = relationshipData.filter(r => r !== relationship );
         $(this).hover(function() {
-            $("#line_"+id).addClass("duoPath");
+            //$("#line_"+id).addClass("duoPath");
+            $("#line_"+id+"_fill").addClass('duoPath');
+            $("#line_"+id+"_fill").addClass(relationship.chara1);
+            $("#line_"+id).addClass(relationship.chara2);
+            $("#line_"+id).addClass("duoPathBase");           
             // hide other chara
             for(const chara of otherChara ){
                 $("#"+chara).addClass("faded");
@@ -81,7 +85,11 @@ function relationshipHoverEvent(relationshipData){
                 $("#line_"+relation.id).addClass("faded");
             }
         }, function() {
-            $("#line_"+id).removeClass("duoPath");
+            //$("#line_"+id).removeClass("duoPath");
+            $("#line_"+id+"_fill").removeClass('duoPath');
+            $("#line_"+id+"_fill").removeClass(relationship.chara1);
+            $("#line_"+id).removeClass(relationship.chara2);
+            $("#line_"+id).removeClass("duoPathBase");             
             // unhide other chara
             for(const chara of otherChara ){
                 $("#"+chara).removeClass("faded");
@@ -112,11 +120,12 @@ function charaHoverEvent(relationshipData){
             for(const relation of relatedRelations){
                 var start = relationshipPosData.find(r => r.id === relation.id).start;
                 if(start !== this.id){
-                    $("#line_"+relation.id+"_fill").addClass('animatedPathReverse');
+                    $("#line_"+relation.id+"_fill_rev").addClass('animatedPath');
                 }else{
                     $("#line_"+relation.id+"_fill").addClass('animatedPath');
                 }
                 $("#line_"+relation.id+"_fill").addClass(this.id);
+                $("#line_"+relation.id+"_fill_rev").addClass(this.id);
             }
         }, function() {
             transformRotatedCharaIcon(this.id, "")
@@ -130,11 +139,12 @@ function charaHoverEvent(relationshipData){
             for(const relation of relatedRelations){
                 var start = relationshipPosData.find(r => r.id === relation.id).start;
                 if(start !== this.id){
-                    $("#line_"+relation.id+"_fill").removeClass('animatedPathReverse');
+                    $("#line_"+relation.id+"_fill_rev").removeClass('animatedPath');
                 }else{
                     $("#line_"+relation.id+"_fill").removeClass('animatedPath');
                 }
                 $("#line_"+relation.id+"_fill").removeClass(this.id);
+                $("#line_"+relation.id+"_fill_rev").removeClass(this.id);
             }            
         });
     });
