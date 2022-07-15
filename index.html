@@ -7,21 +7,23 @@
         <meta name="description" content="Haze's Splatoon OC profile dump" />
 		<meta http-equiv="Content-Language" content="en">
 
-        <title>Squid stuff</title>
+        <title>Haze's Splatverse</title>
 		
 		<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 		<script type="text/javascript" src="data/charaData.js"></script>
 		<script type="text/javascript" src="data/charaData_ch.js"></script>
-
 		<script type="text/javascript" src="scripts/script.js" ></script>
 		<script type="text/javascript" src="scripts/classie.js"></script>
 
-		<link rel="stylesheet" type="text/css" href="styles/style.css" />
+		<link rel="stylesheet" href="styles/lightbox.min.css">
+		<link rel="stylesheet" href="styles/style.css" />
     </head>
-    <body>
-		<!--hidden pop-ups-->
+    <body scroll="no">
+		<!--================-->
+		<!--   Bio pop-up   -->
+		<!--================-->
 		<div class="md-modal md-window" id="modal-chara">
 			<div class="md-content charaBio">
 				<div class="bioArt"></div>
@@ -44,8 +46,19 @@
 					<div class="bioDetailInner">
 					</div>
 				</div>
+				<div class="refSheets">
+					<!-- <a data-lightbox="img" href="">
+						<div><img src=""></div>
+					</a>
+					<a data-lightbox="img" href="">
+						<div><img src=""></div>
+					</a>						 -->
+				</div>				
 			</div>
 		</div>
+		<!--=========================-->
+		<!--   Relationship pop-up   -->
+		<!--=========================-->		
 		<div class="md-modal md-window" id="modal-relationship">
 			<div class="md-content relationshipPage">
 				<div class="relCloseBT md-close">
@@ -59,20 +72,22 @@
 			<div class="langSwitch langCh noSelect">中文</div>
 			<div class="langSwitch langEn noSelect">ENG</div>
 		</div>
-		<!--actual content-->
+		<!--====================-->
+		<!--   Actual content   -->
+		<!--====================-->	
 		<div class="container">
 			<div class="header">
 				<h1>{<span class="title"><span class="beta">BETA</span></span>}</h1>
 				<h2></h2>
 			</div>
 			<div class="breather"></div>
-			
 			<div class="chartWrapper">
 				<svg id="chartSVG" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.5;">
 					<!--Groups-->
 					<path id="MM" class="group" d="M309.261 567.541v182.978a4.363 4.363 0 0 0 4.362 4.362h217.408a4.364 4.364 0 0 0 4.362-4.362V541.147a4.364 4.364 0 0 0-4.362-4.362H410.955V48.535A7.538 7.538 0 0 0 403.42 41H41.724a7.539 7.539 0 0 0-7.536 7.535v511.471a7.539 7.539 0 0 0 7.536 7.535h267.537Z"/>
 					<path id="RB" class="group" d="M680.117 517.145v26.465c-51.201 8.759-90.217 53.395-90.217 107.071 0 59.954 48.675 108.628 108.628 108.628h4.457c59.953 0 108.628-48.674 108.628-108.628 0-53.388-38.599-97.833-89.395-106.927v-26.609h205.554c4.946 0 8.962-4.016 8.962-8.962V49.962c0-4.946-4.016-8.962-8.962-8.962H497.618c-4.946 0-8.961 4.016-8.961 8.962v458.221c0 4.946 4.015 8.962 8.961 8.962h182.499Z"/>					
 
+					<!--Long ass wall of repetitive svg codes-->
 					<path id="line_RY" class="basePath" fill="none" stroke="#fff" d="M105 195V55h460v25"/>
 					<path id="line_YE" class="basePath" fill="none" stroke="#fff" d="M585 80V55h490v140"/>
 					<path id="line_XY" class="basePath" fill="none" stroke="#fff" d="M630 80V25h210v55"/>
@@ -163,10 +178,13 @@
 				</svg>
 				<div id="chart"></div>
 			</div>
-			
 			<div class="breather"></div>
 		</div>
 
 		<div class="md-overlay"></div>
+		<script src="scripts/lightbox.min.js"></script>
+		<script>
+            const lb = lightbox();
+        </script>
 	</body>
 </html>

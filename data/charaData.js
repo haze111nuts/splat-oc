@@ -431,7 +431,7 @@ var bioData_en = [
         id: 'xiu',
         name: 'Xiu',    
         gender: 'Male',
-        like: 'Performing, coral collecting',
+        like: 'Coral collecting',
         dislike: 'Losing followers',
         rank: "S+ to X",
         mains: "Sloshers and Brellas",
@@ -487,7 +487,7 @@ var bioData_en = [
             'Vicious, intimidating, hostile',
             'Abusive to her brother',
             'Very mean',
-            'Laugh like a maniac',
+            'Laughs like a maniac',
             'Is actually a great leader'
         ],
         outfits: [

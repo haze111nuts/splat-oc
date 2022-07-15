@@ -417,10 +417,10 @@ ul{
 .charaBio{
 	width: 900px;
 	height: 700px;
-}
-.charaBio .bioCloseBT{
-  top: 40px;
-  right: -20px;  
+  .bioCloseBT{
+    top: 40px;
+    right: -20px;  
+  }  
 }
 .bioBasic, .bioDetail{
   font-size: 14px;
@@ -447,22 +447,40 @@ ul{
   top: 50px;
   left: 260px;
   z-index: 5;
+
+  table tr td:first-child{
+    padding: 1px 7px 1px 5px;
+  }
+  table tr td:nth-child(2) {
+    padding-left: 5px;
+  }
+  td div{
+    width: 15px;
+    height: 15px;
+    margin-right: 3px;
+    border-radius: 15px;
+    display: inline-block;
+    // clip-path: polygon(100% 50%, 80% 50%, 80% 100%, 20% 100%, 20% 50%, 0 50%, 50% 0);
+    // clip-path: polygon(0 60%, 20% 30%, 7% 16%, 100% 0, 85% 95%, 70% 80%, 40% 100%);
+  }
+
+  // Traits section
+  .traitLabel{
+    margin: 15px auto 5px auto;
+    padding-bottom: 2px;
+    width: 150px;
+    text-align: center;
+  }
+  td li, .traits li {
+    text-align: center;
+    color: white;
+  }
+  .traits li:before{
+    content: "＃ ";
+  }
+
 }
-.bioBasic table tr td:first-child{
-  padding: 1px 7px 1px 5px;
-}
-.bioBasic table tr td:nth-child(2) {
-  padding-left: 5px;
-}
-.bioBasic td div{
-  width: 15px;
-  height: 15px;
-  margin-right: 3px;
-  border-radius: 15px;
-  display: inline-block;
-  // clip-path: polygon(100% 50%, 80% 50%, 80% 100%, 20% 100%, 20% 50%, 0 50%, 50% 0);
-  // clip-path: polygon(0 60%, 20% 30%, 7% 16%, 100% 0, 85% 95%, 70% 80%, 40% 100%);
-}
+
 .iconBi{
   background: linear-gradient(-45deg, rgba(214,2,112,1) 40%, rgba(155,79,150,1) 45%, rgba(155,79,150,1) 55%, rgba(0,56,168,1) 60%);
 }
@@ -470,31 +488,16 @@ ul{
   background: linear-gradient(-45deg, rgba(255,33,140,1) 36%, rgba(255,216,0,1) 45%, rgba(255,216,0,1) 55%, rgba(33,177,255,1) 64%);  
 }
 
-// Traits section
-.traitLabel{
-  margin: 15px auto 5px auto;
-  padding-bottom: 2px;
-  width: 150px;
-  text-align: center;
-}
-td li, .traits li {
-  text-align: center;
-  color: white;
-}
-.traits li:before{
-  content: "＃ ";
-}
-
 // Chara Art Panel
 .bioArt{
   z-index: 10;
   position: relative;
-}
-.bioArt >  img{
-  left:120px;
-  top: 350px;
-  position: absolute;
-  @include prefix(transition, all 0.4s, webkit moz);
+  > img{
+    left:120px;
+    top: 350px;
+    position: absolute;
+    @include prefix(transition, all 0.4s, webkit moz);
+  }
 }
 
 // Oufits Panel
@@ -506,51 +509,54 @@ td li, .traits li {
   left: 280px;
   z-index: 6;
 }
-.outfitSelect{
-  position: relative;
-}
-.outfitSelect li{
-  cursor: pointer;
-  color: rgb(92, 92, 92);
-  right: 0px;
-  font-size: 24px;
-  font-family: TexasGrungeDemo;
-  position: absolute;
-  min-width: 80px;
-  padding: 8px 18px;
-  text-align: center;
-  background-image: linear-gradient(137deg, #2b2b2b 14.29%, #000000 14.29%, #000000 50%, #2b2b2b 50%, #2b2b2b 64.29%, #000000 64.29%, #000000 100%);
-  background-size: 51.32px 47.86px;
-  box-shadow: -5px -5px 5px 0px rgba(0,0,0,0.5);
-  transition: 0.2s ease;  
-}
+
 .outfitSelect-ch{
   font-size: 22px !important;
   padding: 2px 23px 4px 23px !important;
   font-family: 'Yusei Magic', sans-serif !important;
 }
-.outfitSelect li:hover, .focusedOutfit{
-  color: white !important;
+
+.outfitSelect{
+  position: relative;
+  li{
+    cursor: pointer;
+    color: rgb(92, 92, 92);
+    right: 0px;
+    font-size: 24px;
+    font-family: TexasGrungeDemo;
+    position: absolute;
+    min-width: 80px;
+    padding: 8px 18px;
+    text-align: center;
+    background-image: linear-gradient(137deg, #2b2b2b 14.29%, #000000 14.29%, #000000 50%, #2b2b2b 50%, #2b2b2b 64.29%, #000000 64.29%, #000000 100%);
+    background-size: 51.32px 47.86px;
+    box-shadow: -5px -5px 5px 0px rgba(0,0,0,0.5);
+    transition: 0.2s ease;  
+  }
+  li:hover, .focusedOutfit{
+    color: white !important;
+  }
+  li:nth-child(1) {
+    transform: rotate(7deg);
+    top: 5px;
+  }
+  li:nth-child(2) {
+    transform: rotate(-6deg);
+    top: 50px;
+    right: -5px;
+  }
+  li:nth-child(3) {
+    transform: rotate(2deg);
+    top: 100px;
+    right: -10px;
+  }
+  li:nth-child(4) {
+    transform: rotate(-7deg);
+    top: 155px;
+    right: -10px;
+  }  
 }
-.outfitSelect li:nth-child(1) {
-  transform: rotate(7deg);
-  top: 5px;
-}
-.outfitSelect li:nth-child(2) {
-  transform: rotate(-6deg);
-  top: 50px;
-  right: -5px;
-}
-.outfitSelect li:nth-child(3) {
-  transform: rotate(2deg);
-  top: 100px;
-  right: -10px;
-}
-.outfitSelect li:nth-child(4) {
-  transform: rotate(-7deg);
-  top: 155px;
-  right: -10px;
-}
+
 
 // Detail Bio Panel
 .bioDetail{
@@ -559,22 +565,49 @@ td li, .traits li {
   line-height: 150%;
   right: -20px;
   bottom: 50px;
-
 }
 .bioDetailInner{
   padding: 10px;
   overflow-y: auto;
   width:  310px;
-  height: 350px;
-
+  height: 340px;
 }
+
+// Detail Bio Panel
+.refSheets{
+  bottom: 60px;
+  right: -40px;
+  width: 400px;
+  height: 90px;
+  > a div{
+    width: 90px;
+    height: 90px;
+    margin-left: 20px;
+    float: right;
+    background-color: white;
+    overflow: hidden;
+    @include prefix(box-shadow, -8px -8px 0px 0px rgba(0,0,0,1), webkit );  
+    @include prefix(transition, all 0.4s, webkit moz);
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      image-rendering: auto;
+    }
+  }
+  > a div:hover{
+    @include prefix(box-shadow, -8px -8px 0px 0px map.get($charaColors, "blade"), webkit );  
+  }
+}
+
 
 // Window effect stuff
 .md-window .md-content .bioBasic,
 .md-window .md-content .bioOutfits,
 .md-window .md-content .bioDetail,
 .md-window .md-content .bioCloseBT,
-.md-window .md-content .bioHeader{
+.md-window .md-content .bioHeader,
+.md-window .md-content .refSheets{
 	opacity: 0;
   @include prefix(transition, all 0.3s, webkit moz);
 }
@@ -590,7 +623,8 @@ td li, .traits li {
 }
 
 .md-window .md-content .bioDetail,
-.md-window .md-content .bioCloseBT{
+.md-window .md-content .bioCloseBT,
+.md-window .md-content .refSheets{
   @include prefix(transform, translateX(10%), webkit moz ms);
   @include prefix(transition, all 0.6s, webkit moz);
 }
@@ -610,7 +644,8 @@ td li, .traits li {
 .md-show.md-window .md-content .bioOutfits,
 .md-show.md-window .md-content .bioDetail,
 .md-show.md-window .md-content .bioCloseBT,
-.md-show.md-window .md-content .bioHeader{
+.md-show.md-window .md-content .bioHeader,
+.md-show.md-window .md-content .refSheets{
   @include prefix(transform, translateY(0) translateX(0), webkit moz ms);
 	opacity: 1;
 }
@@ -620,9 +655,9 @@ td li, .traits li {
   opacity: 1;
 }
 
-//==============================//
-//===   Style for Bio page   ===//
-//==============================//
+//=======================================//
+//===   Style for Relationship page   ===//
+//=======================================//
 
 .relationshipPage{
   // background-color: rgba(50, 50, 50, 1);
@@ -635,6 +670,32 @@ td li, .traits li {
   top: -30px;
   right: -30px;  
 }
+
+
+//============================//
+//===                      ===//
+//===   Custom Scrollbar   ===//
+//===                      ===//
+//============================//
+::-webkit-scrollbar {
+  width: 18px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a1a1a1;
+}
+
 
 //=====================================//
 //===                               ===//
@@ -752,24 +813,3 @@ td li, .traits li {
 //     text-shadow: 0 0 15px #fff, 0 0 25px #ff4da6, 0 0 35px #ff4da6, 0 0 45px #ff4da6, 0 0 55px ;
 //   }
 // }
-
-
-/* custom scrollbar */
-::-webkit-scrollbar {
-  width: 18px;
-}
-
-::-webkit-scrollbar-track {
-  background-color: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #d6dee1;
-  border-radius: 20px;
-  border: 6px solid transparent;
-  background-clip: content-box;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background-color: #a1a1a1;
-}
