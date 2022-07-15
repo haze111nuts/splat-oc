@@ -226,35 +226,36 @@ ul {
 
 #chartSVG path {
   stroke-width: 2.3px;
+}
+
+.basePath {
+  stroke-opacity: 0.2;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
 }
 
-.basePath {
-  stroke-opacity: 0.25;
-}
-
 .clonePath {
   stroke-opacity: 0;
   stroke-dasharray: 1500;
+  -webkit-stroke-opacity: all 0.3s;
+  -moz-stroke-opacity: all 0.3s;
+  stroke-opacity: all 0.3s;
 }
 
 .duoPath {
   stroke-opacity: 1;
-  stroke-dasharray: 1500;
-  stroke: white !important;
-  animation: draw 0.7s forwards linear;
+  stroke-dasharray: 10;
+  animation: dash 0.7s forwards linear infinite;
+}
+
+.duoPathBase {
+  stroke-opacity: 1 !important;
 }
 
 .animatedPath {
   stroke-opacity: 1;
-  animation: draw 1s forwards linear;
-}
-
-.animatedPathReverse {
-  stroke-opacity: 1;
-  animation: draw 1s backwards linear;
+  animation: draw 1.3s forwards linear;
 }
 
 @keyframes draw {
@@ -271,14 +272,6 @@ ul {
   }
   to {
     stroke-dashoffset: 19;
-  }
-}
-@keyframes dash-reverse {
-  from {
-    stroke-dashoffset: 19;
-  }
-  to {
-    stroke-dashoffset: 0;
   }
 }
 .relation {
@@ -776,7 +769,7 @@ td li, .traits li {
 
 /* custom scrollbar */
 ::-webkit-scrollbar {
-  width: 20px;
+  width: 18px;
 }
 
 ::-webkit-scrollbar-track {
