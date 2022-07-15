@@ -648,61 +648,6 @@ td li, .traits li {
   right: -30px;
 }
 
-.blade {
-  color: rgb(127, 180, 57);
-  stroke: rgb(127, 180, 57);
-}
-
-.axel {
-  color: rgb(221, 155, 33);
-  stroke: rgb(221, 155, 33);
-}
-
-.xiu {
-  color: rgb(65, 173, 206);
-  stroke: rgb(65, 173, 206);
-}
-
-.yoni {
-  color: rgb(224, 213, 54);
-  stroke: rgb(224, 213, 54);
-}
-
-.hannah {
-  color: rgb(41, 81, 194);
-  stroke: rgb(41, 81, 194);
-}
-
-.lance {
-  color: rgb(148, 77, 206);
-  stroke: rgb(148, 77, 206);
-}
-
-.ellie {
-  color: rgb(17, 148, 87);
-  stroke: rgb(17, 148, 87);
-}
-
-.edd {
-  color: rgb(211, 43, 43);
-  stroke: rgb(211, 43, 43);
-}
-
-.minerva {
-  color: rgb(167, 87, 83);
-  stroke: rgb(167, 87, 83);
-}
-
-.simon {
-  color: rgb(216, 40, 163);
-  stroke: rgb(216, 40, 163);
-}
-
-.ryan {
-  color: rgb(180, 180, 180);
-  stroke: rgb(180, 180, 180);
-}
-
 .charaPhoto {
   width: 120px;
   height: 120px;
@@ -712,9 +657,19 @@ td li, .traits li {
   margin: 8px auto 0px auto;
 }
 
+.blade {
+  color: rgb(127, 180, 57);
+  stroke: rgb(127, 180, 57);
+}
+
 .bladePhoto {
   background-color: rgb(127, 180, 57);
   background-position: 0px 0px;
+}
+
+.axel {
+  color: rgb(221, 155, 33);
+  stroke: rgb(221, 155, 33);
 }
 
 .axelPhoto {
@@ -722,9 +677,19 @@ td li, .traits li {
   background-position: -120px 0px;
 }
 
+.xiu {
+  color: rgb(65, 173, 206);
+  stroke: rgb(65, 173, 206);
+}
+
 .xiuPhoto {
   background-color: rgb(65, 173, 206);
   background-position: -240px 0px;
+}
+
+.yoni {
+  color: rgb(224, 213, 54);
+  stroke: rgb(224, 213, 54);
 }
 
 .yoniPhoto {
@@ -732,9 +697,19 @@ td li, .traits li {
   background-position: 0px -120px;
 }
 
+.hannah {
+  color: rgb(41, 81, 194);
+  stroke: rgb(41, 81, 194);
+}
+
 .hannahPhoto {
   background-color: rgb(41, 81, 194);
   background-position: 0px -240px;
+}
+
+.lance {
+  color: rgb(148, 77, 206);
+  stroke: rgb(148, 77, 206);
 }
 
 .lancePhoto {
@@ -742,9 +717,19 @@ td li, .traits li {
   background-position: -120px -120px;
 }
 
+.ellie {
+  color: rgb(17, 148, 87);
+  stroke: rgb(17, 148, 87);
+}
+
 .elliePhoto {
   background-color: rgb(17, 148, 87);
   background-position: -120px -240px;
+}
+
+.edd {
+  color: rgb(211, 43, 43);
+  stroke: rgb(211, 43, 43);
 }
 
 .eddPhoto {
@@ -752,14 +737,29 @@ td li, .traits li {
   background-position: -120px -360px;
 }
 
+.minerva {
+  color: rgb(167, 87, 83);
+  stroke: rgb(167, 87, 83);
+}
+
 .minervaPhoto {
   background-color: rgb(167, 87, 83);
   background-position: 0px -360px;
 }
 
+.simon {
+  color: rgb(216, 40, 163);
+  stroke: rgb(216, 40, 163);
+}
+
 .simonPhoto {
   background-color: rgb(216, 40, 163);
   background-position: -240px -360px;
+}
+
+.ryan {
+  color: rgb(180, 180, 180);
+  stroke: rgb(180, 180, 180);
 }
 
 .ryanPhoto {
