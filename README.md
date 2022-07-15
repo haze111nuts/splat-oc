@@ -5,8 +5,13 @@
 - ~~refine svg path animation (add some kind of direction attribute?)~~
 - ~~separate the data into different js file or json file instead of having them as variables~~
 - ~~separate data of diff language into diff js files (easier to handle stuff?)~~
-- adjust font style for chinese
+- ~~adjust font style for chinese~~
 - build realtionship info pop-up page ((in progress))
+- fix path animation once and for all!!!!!!
+- ~~better scroll bar!!~~
+- fix an issue where the bio detail scroll bar stays at bottom even after switching character??
+- flip bio detail to show trivia
+- drawing anims for groups
 - add lightbox overlay function for image pop-up
 - build warning pop-up page for TWCC
   - MENTAL/VERBAL ABUSE

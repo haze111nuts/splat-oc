@@ -176,6 +176,7 @@ function setUpBioPageFor(charaBioData){
     var bioBasicHTML = "<table>";
     bioBasicHTML += "<tr><td>Name</td><td>"+ charaBioData.name +"</td></tr>";
     bioBasicHTML += "<tr><td>Gender</td><td>"+ charaBioData.gender +"</td></tr>";
+    bioBasicHTML += currentLang == "CH"? "<tr><td>Age</td><td>"+ charaData[charaBioData.id].age +"歲</td></tr>":"";
     // bioBasicHTML += "<tr><td>Sexuality</td><td><div class='iconBi'></div>or<div class='iconPan'></div></td></tr>";
     bioBasicHTML += "<tr><td>Likes</td><td>"+ charaBioData.like +"</td></tr>";
     bioBasicHTML += "<tr><td>Dislike</td><td>"+ charaBioData.dislike +"</td></tr>";

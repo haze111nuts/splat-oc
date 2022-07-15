@@ -87,7 +87,7 @@ const charaData = {
     },
     lance: {
         jpname: 'ランス',
-        age: 19,
+        age: 20,
         color: "rgb(148, 77, 206)",
         photoPos: {
             x: 245,
@@ -96,7 +96,7 @@ const charaData = {
         }
     },
     ellie: {
-        jpname: 'エリ（エステル）',
+        jpname: 'エステル（エリ）',
         age: 14,        
         color: "rgb(17, 148, 87)",
         photoPos: {
@@ -137,7 +137,7 @@ const charaData = {
     },
     ryan: {
         jpname: '',
-        age: 23,         
+        age: 21,         
         color: "rgb(180, 180, 180)",
         photoPos: {
             x: 55,
@@ -233,7 +233,7 @@ var relationshipData_en = [
         label: "Ex Boyfriends",
         chara1: "xiu",
         chara2: "axel",
-        desc1: "Chill bro!",
+        desc1: "Hey chill",
         desc2: "Not happy about"
     },
     {
@@ -382,7 +382,7 @@ var bioData_en = [
         like: 'To be alone',
         dislike: 'Self…and everything',
         rank: "S+ to X",
-        mains: "Splattershot Pro, Carbon, .52/.96",
+        mains: "Splattershot Pro, .96, Carbon",
         traits: [
             'Gloomy, angsty, quiet',
             'Has anxiety issue',
@@ -396,9 +396,10 @@ var bioData_en = [
             { name: 'Sanitized', url: 'bl3.png' }
         ],
         bio: [
-            'He used to go by the name Branden. The constant bullying and abusing from his older sister made him a very gloomy introvert, he often puts up a cool look to cover up the insecure side of him.',
-            'He used to refuse playing any turf/ranked and would push away anyone who wants to be friend due to his anxious nature. After being abruptly scouted by Captain Cuttlefish as Agent 3, he received support from captain and the other two agents, it was then he decided to make change and begin the process of healing. Operating as agent 3 has helped him both mentally and physically, he is now able to play competitively. It was around this time he moved out to live on his own with a new name “Blade”.',
-            'He then met Axel and other friends and eventually got along since he is now a bit more opened-up to other people, and they decided to form a team called “Rotten Buttons” with Blade as leader.'
+            'The constant bullying and abusing from his older sister made him a very gloomy introvert, he often puts up a cool look to cover up the insecure side of him.',
+            'He used to refuse playing any turf/ranked and would push away anyone who wants to be friend due to his anxious nature. After being abruptly scouted by Captain Cuttlefish as Agent 3, he received support from captain and the other two agents, it was then he decided to make change and begin the process of healing. Operating as agent 3 has helped him both mentally and physically, he is now able to play competitively. It was around this time he moved out to live on his own.',
+            'He then met Axel and other friends and eventually got along since he is now a bit more opened-up to other people, and they decided to form a team called “Rotten Buttons” with Blade as leader.',
+            'His actual name is Branden, Axel was the one who started calling him "Blade", which came from his online handle, and the rest of his friends started doing the same. His braclet, ear clips, hair ties and ring are all gifts from other members of the team.'
         ]
     },
     {
@@ -442,8 +443,7 @@ var bioData_en = [
             "Kind of a drama queen"
         ],
         outfits: [
-            { name: 'Regular', url: 'xxx.png' },
-            { name: 'Agent 4', url: 'xxx.png' }
+            { name: 'Regular', url: 'xxx.png' }
         ],
         bio: [
             'Was once a very caring and kindhearted nerd boy. After falling victim to bullying and harassment, he started to change and would resort to revenge. Although this has made him more confident and brave, it nevertheless brought him more trouble than before.',
@@ -472,7 +472,7 @@ var bioData_en = [
         bio: [
             'A care-free and cheerful boy, also a bit of a joker who can be pretty naughty sometimes. Speaks and behaves in a comical and silly way. He finds a lot of things funny and will laugh everything off even when the timing is inappropriate.',
             'He loves getting high using...some substance, which is obviously banned in all sports. While wanting to play with Blade as a member of Rotten Buttons, he had cut out most of it. However, he wasn\'t able to fully resist the temptation of such things, so he has been looking for a solution so he can have it both ways',
-            'Seems to be involved in some suspicious activities.'
+            'Seems to be involved in some shady business.'
         ]
     },
     {
@@ -482,7 +482,7 @@ var bioData_en = [
         like: 'Splat Battles',
         dislike: 'Blade',
         rank: "X",
-        mains: "N-zap, .52/.96",
+        mains: "N-zap, .52",
         traits: [
             'Vicious, intimidating, hostile',
             'Abusive to her brother',
@@ -496,7 +496,7 @@ var bioData_en = [
         ],
         bio: [
             'Hannah was specially neglected by her mother when she was little, and her mother heavily favored the younger brother Blade over her,  this caused Hannah to hold a strong grudge against Blade. After their mother passed away, the grudge soon turned into abuse.',
-            'Splat battle has been an outlet for her anger. As she poured her heart and soul into the games, she became unreasonably good at them. She actively searched for long-term teammates and eventually got Lance, RJ and Minerva to form an elite team.',
+            'Splat battle has been an outlet for her anger. As she poured her heart and soul into the games, she became unreasonably good at them. She actively searched for long-term teammates and eventually got Lance, RJ and Minerva to form an elite team. She was actually Captain Cuttlefish\'s the first candidate for Agent 3, but she quitted in order to focus on competitive games, which ultimately made Blade the next Agent 3. Now she only goes back to help when it\'s absolutely necessary.',
             'She is aware of her flaws and had thought of fixing the relationship with Blade, but gave up after failing to make any attempt, stating "It\'s too late now".'
         ]
     },
@@ -516,8 +516,7 @@ var bioData_en = [
             'Is a good listener'
         ],
         outfits: [
-            { name: 'Regular', url: 'xxx.png' },
-            { name: 'Agent 3', url: 'xxx.png' }
+            { name: 'Regular', url: 'xxx.png' }
         ],
         bio: [
             'Yoni\'s older brother, he is a childhood friend to both Hannah and Blade. He may look and act intimidating, but he is a very reliable, supportive and caring person. He is also a very organized perfectionist with high standards, he also has incredibly (and sometimes unnecessarily) sharp attention to details. He occasionally bursts out life advice with that poker face of his.',
@@ -547,7 +546,7 @@ var bioData_en = [
         ],
         bio: [
             'Axel\'s younger sister,  a typical happy teenage girl. She is friendly and nice but rather immature, her sense of justice is so strong that she would actively seek out questionable people online to harass and "cancel".',
-            'Initially, socializing was about the only thing she cared about, but seeing Axel hanging out with his teammates all the time, she started developing interest for splat battle under their influence. She got along with all the members of Rotten Buttons.',
+            'Initially, socializing was about the only thing she cared about, but seeing Axel hanging out with his teammates all the time, she started developing interest in splat battle under their influence. She got along with all the members of Rotten Buttons. At some point she found out that Axel has been doing hero stuff and she eventually got involved, she helps out with the Agent 4 tasks when necessary.',
             'She is one of the mods of a community that specializes in harassment and doxxing, but she decided to cut down any related activities after her crush Blade questions the morality of their actions.'
         ]
     },
@@ -592,7 +591,7 @@ var bioData_en = [
         ],
         outfits: [
             { name: 'Regular', url: 'xxx.png' },
-            { name: 'Agent 8', url: 'xxx.png' }
+            { name: 'Octorian', url: 'xxx.png' }
         ],
         bio: [
             'She was raised in the Octarian army since she was very little. She hated the training regimen at first, but eventually she grew attached to the army deeply. She was shown to have no intention to leave even after hearing Squid Sister\'s Calamari Inkantation on that fateful day. She even began to loathe the so-called "surface world" that suddenly came into their life.',
@@ -625,7 +624,7 @@ var bioData_en = [
     },
     {
         id: 'ryan',
-        name: 'Ryan',
+        name: 'Ryan "RJ"',
         gender: 'Male',
         like: 'Doppio espresso',
         dislike: 'Broken promise',
@@ -642,8 +641,8 @@ var bioData_en = [
             { name: 'Regular', url: 'xxx.png' }
         ],
         bio: [
-            'Not much is known about him and it\'s not like he has intention to disclose anything of sorts.',
-            'One day he just appears out of nowhere in ranked battles like a phantom. Despite having very few battle records, his performance and splat counts are off the charts, to an extend that is almost alarming. At several points he got matched with Lance, and after going through multiple intense showdowns, the two somehow became friends. Hannah then took this chance to invite him into her team; though he did took the offer and joined, he seems to be busy with some other shady business most of the time.'
+            'Not much is known about this guy and it\'s not like he has intention to disclose anything whatsoever.',
+            'One day he just appears out of nowhere in ranked battles like a phantom. Despite having very few battle records, his performance and splat counts are off the charts (to an extend that is almost alarming). At several points he got matched with Lance and they had multiple intense showdowns, the two ended up becoming friends. Hannah then took this chance to invite him into her team; though he did took the offer, he seems to be busy with some other shady business most of the time.'
         ]
     }
 ]
