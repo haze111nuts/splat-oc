@@ -9,7 +9,7 @@ $chara-box-height: 155px;
 $chara-photo-size: 120px;
 
 $raw-photo-size: 150px;
-$raw-photo-asset-x: 450px;
+$raw-photo-asset-x: 450px; 
 $raw-photo-asset-y: 600px;
 
 @function photo-pos($index) {
@@ -647,7 +647,7 @@ ul{
     }
   }
   > a div:hover{
-    @include prefix(box-shadow, -8px -8px 0px 0px map.get($charaColors, "blade"), webkit );  
+    @include prefix(box-shadow, -8px -8px 0px 0px map.get(map.get($chara, "blade"),"color"), webkit );  
   }
 }
 
