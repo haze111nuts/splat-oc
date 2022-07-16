@@ -329,10 +329,10 @@ function checkWindowSize() {
         $(".md-modal").height(windowHeight);
     }
 
-    // if (windowSize <= 1200) {
-    //     console.log("screen width is less than 1200");
-    //     $(".chartWrapper").draggable();
-    // }
+    if (windowWidth <= 1200) {
+        var scrollto = ($("#chart").width() / 2) - ($(".chartWrapper").width() / 2);
+        $(".chartWrapper").scrollLeft(scrollto);
+    }
 }
 
 
