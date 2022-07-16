@@ -788,6 +788,9 @@ ul {
   .header h1 {
     font-size: 25px;
   }
+  .header .beta {
+    font-size: 12px;
+  }
   .md-modal {
     background-color: rgba(0, 0, 0, 0.2);
     width: 100%;
@@ -815,8 +818,8 @@ ul {
   }
   .bioArt > img {
     margin: 0px auto;
-    left: 210px;
-    top: 350px;
+    left: 350px;
+    top: 360px;
   }
   .bioBasic {
     margin: 0 0 0 auto;
@@ -838,6 +841,11 @@ ul {
     margin-top: -110px;
     padding-bottom: 50px;
     width: 90%;
+  }
+}
+@media only screen and (max-width: 959px) and (max-width: 719px) {
+  .bioArt > img {
+    left: 210px;
   }
 }
 @media only screen and (max-width: 959px) and (max-width: 479px) {

@@ -770,6 +770,9 @@ ul{
     h1{
       font-size: 25px;
     }
+    .beta{
+      font-size: 12px;
+    }    
   }
 
   .md-modal {
@@ -804,8 +807,8 @@ ul{
   .bioArt{
     > img{
       margin: 0px auto;
-      left:210px;
-      top: 350px;
+      left:350px;
+      top: 360px;
     }
   }
 
@@ -831,6 +834,13 @@ ul{
     width: 90%;
   }
 
+  @media only screen and (max-width: 719px) {
+    .bioArt{
+      > img{
+        left: 210px;
+      }
+    }
+  }
 
   @media only screen and (max-width: 479px) {
     .header{
