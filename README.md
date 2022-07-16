@@ -7,7 +7,7 @@
 - ~~separate data of diff language into diff js files (easier to handle stuff?)~~
 - ~~adjust font style for chinese~~
 - drawing anims for groups
-- add lightbox overlay function for image pop-up
+- ~~add lightbox overlay function for image pop-up~~
 - build realtionship info pop-up page ((in progress))
 - ~~fix path animation once and for all!!!!!!~~
 - ~~better scroll bar!!~~

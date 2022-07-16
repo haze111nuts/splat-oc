@@ -1,36 +1,12 @@
 @charset "UTF-8";
 @import url(https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap);
 @font-face {
-  font-family: DirtyBrush;
-  src: url(../assets/fonts/DirtyBrush.ttf);
-}
-@font-face {
-  font-family: BastradRegular;
-  src: url(../assets/fonts/BastradRegular.otf);
-}
-@font-face {
-  font-family: JamstreetGraffiti;
-  src: url(../assets/fonts/JamstreetGraffiti.ttf);
-}
-@font-face {
   font-family: RevnosaRegular;
   src: url(../assets/fonts/RevnosaRegular.ttf);
 }
 @font-face {
   font-family: TexasGrungeDemo;
   src: url(../assets/fonts/TexasGrungeDemo.ttf);
-}
-@font-face {
-  font-family: WickhopHandwriting;
-  src: url(../assets/fonts/WickhopHandwriting.ttf);
-}
-@font-face {
-  font-family: Crossbar;
-  src: url(../assets/fonts/Crossbar.otf);
-}
-@font-face {
-  font-family: SlugRegular;
-  src: url(../assets/fonts/SlugRegular.otf);
 }
 * {
   margin: 0px;
@@ -230,17 +206,14 @@ ul {
 
 .basePath {
   stroke-opacity: 0.2;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  transition: all 0.7s;
 }
 
 .clonePath {
   stroke-opacity: 0;
   stroke-dasharray: 1500;
-  -webkit-stroke-opacity: all 0.3s;
-  -moz-stroke-opacity: all 0.3s;
-  stroke-opacity: all 0.3s;
 }
 
 .duoPath {
@@ -461,7 +434,6 @@ ul {
 
 .bioArt {
   z-index: 10;
-  position: relative;
 }
 .bioArt > img {
   left: 120px;
@@ -475,7 +447,7 @@ ul {
 .bioOutfits {
   padding: 0;
   width: 240px;
-  height: 230px;
+  height: 200px;
   bottom: 70px;
   left: 280px;
   z-index: 6;
@@ -510,21 +482,21 @@ ul {
 }
 .outfitSelect li:nth-child(1) {
   transform: rotate(7deg);
-  top: 5px;
+  top: 20px;
 }
 .outfitSelect li:nth-child(2) {
   transform: rotate(-6deg);
-  top: 50px;
+  top: 65px;
   right: -5px;
 }
 .outfitSelect li:nth-child(3) {
   transform: rotate(2deg);
-  top: 100px;
+  top: 115px;
   right: -10px;
 }
 .outfitSelect li:nth-child(4) {
   transform: rotate(-7deg);
-  top: 155px;
+  top: 170px;
   right: -10px;
 }
 
@@ -540,7 +512,7 @@ ul {
   padding: 10px;
   overflow-y: auto;
   width: 310px;
-  height: 340px;
+  height: 350px;
 }
 
 .refSheets {
@@ -567,10 +539,6 @@ ul {
   height: 100%;
   object-fit: cover;
   image-rendering: auto;
-}
-.refSheets > a div:hover {
-  -webkit-box-shadow: -8px -8px 0px 0px rgb(127, 180, 57);
-  box-shadow: -8px -8px 0px 0px rgb(127, 180, 57);
 }
 
 .md-window .md-content .bioBasic,
@@ -669,6 +637,10 @@ ul {
 
 ::-webkit-scrollbar {
   width: 18px;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
 }
 
 ::-webkit-scrollbar-track {
@@ -803,6 +775,99 @@ ul {
 .ryanPhoto {
   background-color: rgb(180, 180, 180);
   background-position: -240px -120px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .chartWrapper {
+    width: 100%;
+    overflow-x: auto;
+    padding: 20px 0px;
+  }
+}
+@media only screen and (max-width: 959px) {
+  .header h1 {
+    font-size: 25px;
+  }
+  .md-modal {
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    overflow-y: auto;
+  }
+  .md-content .bioArt,
+.md-content .bioBasic,
+.md-content .bioDetail,
+.md-content .bioOutfits,
+.md-content .refSheets {
+    position: static;
+  }
+  .bioHeader {
+    top: 20px;
+    left: 20px;
+  }
+  .charaBio {
+    width: 100%;
+    height: 100%;
+  }
+  .charaBio .bioCloseBT {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+  .bioArt > img {
+    margin: 0px auto;
+    left: 210px;
+    top: 350px;
+  }
+  .bioBasic {
+    margin: 0 0 0 auto;
+  }
+  .bioOutfits {
+    padding-top: 130px;
+    margin: 0px 50px 0 auto;
+  }
+  .bioDetail {
+    margin: 40px 0 50px auto;
+    padding: 50px 50px 100px 50px;
+    width: 75%;
+  }
+  .bioDetailInner {
+    width: 100%;
+    height: 100%;
+  }
+  .refSheets {
+    margin-top: -110px;
+    padding-bottom: 50px;
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 959px) and (max-width: 479px) {
+  .header h1 {
+    font-size: 25px;
+  }
+  .bioOutfits {
+    padding-top: 500px;
+  }
+  .bioArt > img {
+    width: 100%;
+    left: 0px;
+    top: 80px;
+  }
+  .bioDetail {
+    padding: 20px 20px 100px 20px;
+    width: 75%;
+  }
+  .md-show.md-window .md-content .bioArt img {
+    -webkit-transform: translateX(0%) translateY(0%);
+    -moz-transform: translateX(0%) translateY(0%);
+    -ms-transform: translateX(0%) translateY(0%);
+    transform: translateX(0%) translateY(0%);
+  }
+  .md-window .md-content .bioArt img {
+    -webkit-transform: translateX(0%) translateY(0%);
+    -moz-transform: translateX(0%) translateY(0%);
+    -ms-transform: translateX(0%) translateY(0%);
+    transform: translateX(0%) translateY(0%);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

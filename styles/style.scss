@@ -80,18 +80,6 @@ $chara: (
 }
 
 @font-face {
-  font-family: DirtyBrush;
-  src: url(../assets/fonts/DirtyBrush.ttf);
-}
-@font-face {
-  font-family: BastradRegular;
-  src: url(../assets/fonts/BastradRegular.otf);
-}
-@font-face {
-  font-family: JamstreetGraffiti;
-  src: url(../assets/fonts/JamstreetGraffiti.ttf);
-}
-@font-face {
   font-family: RevnosaRegular;
   src: url(../assets/fonts/RevnosaRegular.ttf);
 }
@@ -99,18 +87,7 @@ $chara: (
   font-family: TexasGrungeDemo;
   src: url(../assets/fonts/TexasGrungeDemo.ttf);
 }
-@font-face {
-  font-family: WickhopHandwriting;
-  src: url(../assets/fonts/WickhopHandwriting.ttf);
-}
-@font-face {
-  font-family: Crossbar;
-  src: url(../assets/fonts/Crossbar.otf);
-}
-@font-face {
-  font-family: SlugRegular;
-  src: url(../assets/fonts/SlugRegular.otf);
-}
+
 
 *{
     margin: 0px;
@@ -301,14 +278,13 @@ ul{
 
 .basePath{
   stroke-opacity: 0.2;
-  @include prefix(transition, all 0.3s, webkit moz);
+  @include prefix(transition, all 0.7s, webkit moz);
 }
 
 .clonePath{
   stroke-opacity: 0;
   stroke-dasharray: 1500;
   // stroke-dasharray: 10;
-  @include prefix(stroke-opacity, all 0.3s, webkit moz);
 }
 
 .duoPath{
@@ -529,7 +505,6 @@ ul{
   .traits li:before{
     content: "＃ ";
   }
-
 }
 
 .iconBi{
@@ -542,7 +517,6 @@ ul{
 // Chara Art Panel
 .bioArt{
   z-index: 10;
-  position: relative;
   > img{
     left:120px;
     top: 350px;
@@ -555,7 +529,7 @@ ul{
 .bioOutfits{
   padding: 0;
   width: 240px;
-  height: 230px;
+  height: 200px;
   bottom: 70px;
   left: 280px;
   z-index: 6;
@@ -589,21 +563,21 @@ ul{
   }
   li:nth-child(1) {
     transform: rotate(7deg);
-    top: 5px;
+    top: 20px;
   }
   li:nth-child(2) {
     transform: rotate(-6deg);
-    top: 50px;
+    top: 65px;
     right: -5px;
   }
   li:nth-child(3) {
     transform: rotate(2deg);
-    top: 100px;
+    top: 115px;
     right: -10px;
   }
   li:nth-child(4) {
     transform: rotate(-7deg);
-    top: 155px;
+    top: 170px;
     right: -10px;
   }  
 }
@@ -621,7 +595,7 @@ ul{
   padding: 10px;
   overflow-y: auto;
   width:  310px;
-  height: 340px;
+  height: 350px;
 }
 
 // Detail Bio Panel
@@ -645,9 +619,6 @@ ul{
       object-fit: cover;
       image-rendering: auto;
     }
-  }
-  > a div:hover{
-    @include prefix(box-shadow, -8px -8px 0px 0px map.get(map.get($chara, "blade"),"color"), webkit );  
   }
 }
 
@@ -732,6 +703,10 @@ ul{
   width: 18px;
 }
 
+::-webkit-scrollbar-corner { 
+  background: transparent; 
+}
+
 ::-webkit-scrollbar-track {
   background-color: transparent;
 }
@@ -781,3 +756,110 @@ ul{
 //     text-shadow: 0 0 15px #fff, 0 0 25px #ff4da6, 0 0 35px #ff4da6, 0 0 45px #ff4da6, 0 0 55px ;
 //   }
 // }
+
+@media only screen and (max-width: 1200px) {
+  .chartWrapper{
+    width: 100%;
+    overflow-x: auto;
+    padding: 20px 0px;
+  }
+}
+
+@media only screen and (max-width: 959px) {
+  .header{
+    h1{
+      font-size: 25px;
+    }
+  }
+
+  .md-modal {
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    overflow-y: auto;
+  }
+
+  .md-content .bioArt,
+  .md-content .bioBasic,  
+  .md-content .bioDetail,
+  .md-content .bioOutfits,  
+  .md-content .refSheets{
+    position: static;
+  }
+
+  .bioHeader{
+    top: 20px;
+    left: 20px;
+  }
+
+  .charaBio{
+    width: 100%;
+    height: 100%;
+    .bioCloseBT{
+      position: absolute;
+      top: 0px;
+      right: 0px;  
+    }      
+  }
+
+  .bioArt{
+    > img{
+      margin: 0px auto;
+      left:210px;
+      top: 350px;
+    }
+  }
+
+  .bioBasic{
+    margin: 0 0 0 auto;   
+  }
+  .bioOutfits{
+    padding-top: 130px;
+    margin: 0px 50px 0 auto;
+  }
+  .bioDetail{
+    margin: 40px 0 50px auto;
+    padding: 50px 50px 100px 50px;
+    width: 75%;
+  }
+  .bioDetailInner{
+    width:  100%;
+    height: 100%;
+  }
+  .refSheets{
+    margin-top: -110px;
+    padding-bottom: 50px;
+    width: 90%;
+  }
+
+
+  @media only screen and (max-width: 479px) {
+    .header{
+      h1{
+        font-size: 25px;
+      }
+    }
+    .bioOutfits{
+      padding-top: 500px;
+    }
+    .bioArt{
+      > img{
+        width: 100%;
+        left: 0px;
+        top:  80px;        
+      }
+    }    
+    .bioDetail{
+      padding: 20px 20px 100px 20px;
+      width: 75%;
+    }
+    .md-show.md-window .md-content .bioArt img{
+      @include prefix(transform, translateX(0%) translateY(0%), webkit moz ms);
+    }    
+    .md-window .md-content .bioArt img{
+      @include prefix(transform, translateX(0%) translateY(0%), webkit moz ms);
+    }
+  }
+}
+
+
+

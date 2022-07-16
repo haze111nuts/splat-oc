@@ -193,8 +193,8 @@ var relationshipData_en = [
         label: "Siblings",
         chara1: "yoni",
         chara2: "lance",
-        desc1: "*invades space*",
-        desc2: "*throws out of window*"
+        desc1: "*Invades space*",
+        desc2: "*Punches*"
     },
     {
         id: "LB",
@@ -400,6 +400,9 @@ var bioData_en = [
             'He used to refuse playing any turf/ranked and would push away anyone who wants to be friend due to his anxious nature. After being abruptly scouted by Captain Cuttlefish as Agent 3, he received support from captain and the other two agents, it was then he decided to make change and begin the process of healing. Operating as agent 3 has helped him both mentally and physically, he is now able to play competitively. It was around this time he moved out to live on his own.',
             'He then met Axel and other friends and eventually got along since he is now a bit more opened-up to other people, and they decided to form a team called “Rotten Buttons” with Blade as leader.',
             'His actual name is Branden, Axel was the one who started calling him "Blade", which came from his online handle, and the rest of his friends started doing the same. His braclet, ear clips, hair ties and ring are all gifts from other members of the team.'
+        ],
+        refsheets: [
+            "",
         ]
     },
     {
@@ -434,7 +437,7 @@ var bioData_en = [
         like: 'Coral collecting',
         dislike: 'Losing followers',
         rank: "S+ to X",
-        mains: "Sloshers and Brellas",
+        mains: "Sloshing Machine",
         traits: [
             "Dashing, charming, sociable",
             "Social media addict",
@@ -559,7 +562,7 @@ var bioData_en = [
         rank: "S+ to X",
         mains: "Octo brushes",
         traits: [
-            'Stoic, aloof',
+            'Stoic, aloof, curious',
             'Compulsize lying',
             'Somewhat cunning',
             'Daydreams about...stuff',

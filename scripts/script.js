@@ -128,7 +128,7 @@ function charaHoverEvent(relationshipData){
                 $("#line_"+relation.id+"_fill_rev").addClass(this.id);
             }
         }, function() {
-            transformRotatedCharaIcon(this.id, "")
+            transformRotatedCharaIcon(this.id, "");
             for(const chara of unrelatedChara){
                 $("#"+chara).removeClass("faded");
             }
@@ -206,6 +206,18 @@ function setUpBioPageFor(charaBioData){
     $(".bioDetailInner").html(printLinesWithBreak(charaBioData.bio, 2));
     $(".bioDetailInner").scrollTop(0);
 
+    //Fill refsheets
+    var refSheetHTML = "";
+    if(charaBioData.refsheets){
+        for(const imgUrl of charaBioData.refsheets){
+            refSheetHTML += "<a data-lightbox='img' href='"+ imgUrl +"' >";
+            refSheetHTML += "<div><img src='"+ imgUrl +"'></div>";
+            refSheetHTML += "</a>";
+        }
+    }
+    $(".refSheets").html(refSheetHTML);
+    lightbox();
+
     //Set up character-specific page style
     var color = charaData[charaBioData.id].color;
     $(".bioBasic table tr td:first-child").css("color", color );
@@ -213,6 +225,14 @@ function setUpBioPageFor(charaBioData){
     $(".traitLabel").css("border-bottom", "3px solid "+ color );
     $(".traitLabel").css("color", color);
     $(".bioDetail").css("box-shadow", "-25px -20px 0 " + color);
+    // $(".refSheets > a div:hover").css("box-shadow", "-8px -8px 0px 0px "+color);
+    $(".refSheets").children().children().hover(function(){
+        $(this).css("box-shadow", "-8px -8px 0px 0px "+color);
+    },function(){
+        $(this).css("box-shadow", "-8px -8px 0px 0px black");
+    });
+    
+    
 }
 
 function setUpOutfitSwitchEvents(charaBioData){
@@ -299,6 +319,23 @@ function printLinesWithBreak(array, numberOfBr){
     return result;
 }
 
+
+function checkWindowSize() {
+    var windowWidth = $(window).width();
+    var windowHeight = $(window).height();
+
+    if (windowWidth <= 959) {
+        console.log("screen width is less than 959");
+        $(".md-modal").height(windowHeight);
+    }
+
+    // if (windowSize <= 1200) {
+    //     console.log("screen width is less than 1200");
+    //     $(".chartWrapper").draggable();
+    // }
+}
+
+
 function setupStuff(relationshipData, bioData, siteInfo){
     setUpSiteInfo(siteInfo)
     buildChart(relationshipData);
@@ -318,6 +355,9 @@ function setupStuff(relationshipData, bioData, siteInfo){
 var currentLang;
 
 $(document).ready(function(){
+
+    checkWindowSize();
+    $(window).resize(checkWindowSize);
 
     currentLang = "EN";
     $(".langNav").addClass("focusOnCH");
