@@ -171,8 +171,10 @@ function setUpBioPageFor(charaBioData){
 
     //Fill outfit panel
     var outfitListHTML = ""
-    for(const ourfitData of charaBioData.outfits){
-        outfitListHTML += "<li>"+ ourfitData.name +"</li>";
+    if(charaBioData.outfits.length > 1){
+        for(const ourfitData of charaBioData.outfits){
+            outfitListHTML += "<li>"+ ourfitData.name +"</li>";
+        }
     }
     $(".outfitSelect").html(outfitListHTML);    
     setUpOutfitSwitchEvents(charaBioData);
@@ -319,16 +321,21 @@ function printLinesWithBreak(array, numberOfBr){
     return result;
 }
 
+//======================================//
+//=== Thing to do when window resize ===//
+//======================================//
 
 function checkWindowSize() {
     var windowWidth = $(window).width();
     var windowHeight = $(window).height();
 
+    //control pop up section heights
     if (windowWidth <= 959) {
         $(".md-modal").height(windowHeight);
     }else{
         $(".md-modal").height("auto");        
     }
+    //scroll to center for chart
     if (windowWidth <= 1200) {
         var scrollto = ($("#chart").width() / 2) - ($(".chartWrapper").width() / 2);
         $(".chartWrapper").scrollLeft(scrollto);

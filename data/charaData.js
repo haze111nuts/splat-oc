@@ -499,7 +499,8 @@ var bioData_en = [
         ],
         bio: [
             'Hannah was specially neglected by her mother when she was little, and her mother heavily favored the younger brother Blade over her,  this caused Hannah to hold a strong grudge against Blade. After their mother passed away, the grudge soon turned into abuse.',
-            'Splat battle has been an outlet for her anger. As she poured her heart and soul into the games, she became unreasonably good at them. She actively searched for long-term teammates and eventually got Lance, RJ and Minerva to form an elite team. She was actually Captain Cuttlefish\'s the first candidate for Agent 3, but she quitted in order to focus on competitive games, which ultimately made Blade the next Agent 3. Now she only goes back to help when it\'s absolutely necessary.',
+            'Splat battle has been an outlet for her anger. As she poured her heart and soul into the games, she became unreasonably good at them. She actively searched for long-term teammates and eventually got Lance, RJ and Minerva to form an elite team.', 
+            'She was actually Captain Cuttlefish\'s the first candidate for Agent 3, but she quitted in order to focus on competitive games, which ultimately made Blade the next Agent 3. Now she only goes back to help when it\'s absolutely necessary.',
             'She is aware of her flaws and had thought of fixing the relationship with Blade, but gave up after failing to make any attempt, stating "It\'s too late now".'
         ]
     },
@@ -523,7 +524,7 @@ var bioData_en = [
         ],
         bio: [
             'Yoni\'s older brother, he is a childhood friend to both Hannah and Blade. He may look and act intimidating, but he is a very reliable, supportive and caring person. He is also a very organized perfectionist with high standards, he also has incredibly (and sometimes unnecessarily) sharp attention to details. He occasionally bursts out life advice with that poker face of his.',
-            'He was the first member Hannah recruited in Midnight Mayhem, he deals with things Hannah doesn\'t know how to do or had trouble with.',
+            'He was the first member Hannah recruited in Inner Monster, he deals with things Hannah doesn\'t know how to do or had trouble with.',
             'He tries his best to live with his OCPD and is always seen wearing a pair of black gloves. Pop rocks inspired him to pick up Blaster when he was young, now he must eat a pack of pop rocks every morning.'
         ]
     },
@@ -598,7 +599,7 @@ var bioData_en = [
         ],
         bio: [
             'She was raised in the Octarian army since she was very little. She hated the training regimen at first, but eventually she grew attached to the army deeply. She was shown to have no intention to leave even after hearing Squid Sister\'s Calamari Inkantation on that fateful day. She even began to loathe the so-called "surface world" that suddenly came into their life.',
-            'One day she encountered Hannah who was operating as Agent 3 at the time; after engaging in battle, Hannah was committed to recruit Minerva into her team and wanted to bring her to the surface after witnessing Minerva\'s battle skills, but Minerva rejected as she never wanted to leave the Octarian army. After multiple encounters and battles with Hannah, Minerva eventually (and reluctantly) agreed to go with her. She is now a member of Midnight Mayhem, she is still trying to get used to the surface life.'
+            'One day she encountered Hannah who was operating as Agent 3 at the time; after engaging in battle, Hannah was committed to recruit Minerva into her team and wanted to bring her to the surface after witnessing Minerva\'s battle skills, but Minerva rejected as she never wanted to leave the Octarian army. After multiple encounters and battles with Hannah, Minerva eventually (and reluctantly) agreed to go with her. She is now a member of Inner Monster, she is still trying to get used to the surface life.'
         ]
     },
     {
