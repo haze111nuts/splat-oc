@@ -684,7 +684,7 @@ ul{
 .relationshipPage{
   // background-color: rgba(50, 50, 50, 1);
   border: #fff 1px solid;
-  width: 550px;
+  width: 650px;
 	height: 700px;
 }
 
@@ -839,6 +839,9 @@ ul{
       > img{
         left: 210px;
       }
+    }
+    .relationshipPage{
+      width: 100%;
     }
   }
 

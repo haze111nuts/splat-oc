@@ -325,10 +325,10 @@ function checkWindowSize() {
     var windowHeight = $(window).height();
 
     if (windowWidth <= 959) {
-        console.log("screen width is less than 959");
         $(".md-modal").height(windowHeight);
+    }else{
+        $(".md-modal").height("auto");        
     }
-
     if (windowWidth <= 1200) {
         var scrollto = ($("#chart").width() / 2) - ($(".chartWrapper").width() / 2);
         $(".chartWrapper").scrollLeft(scrollto);

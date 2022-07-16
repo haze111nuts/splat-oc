@@ -626,7 +626,7 @@ ul {
 
 .relationshipPage {
   border: #fff 1px solid;
-  width: 550px;
+  width: 650px;
   height: 700px;
 }
 
@@ -846,6 +846,9 @@ ul {
 @media only screen and (max-width: 959px) and (max-width: 719px) {
   .bioArt > img {
     left: 210px;
+  }
+  .relationshipPage {
+    width: 100%;
   }
 }
 @media only screen and (max-width: 959px) and (max-width: 479px) {
