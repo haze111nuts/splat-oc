@@ -25,6 +25,13 @@ $raw-photo-asset-y: 600px;
   @return $result-x $result-y;
 }
 
+@function map-deep-get($map, $keys...) {
+  @each $key in $keys {
+      $map: map-get($map, $key);
+  }
+  @return $map;
+}
+
 $chara: (
   blade: (
     color: rgb(127, 180, 57),
@@ -191,7 +198,7 @@ ul{
   .beta{
     font-size: 15px;
     padding: 0px 5px;
-    color: map.get(map.get($chara, "blade"),"color");
+    color: map-deep-get($chara, "blade", "color");
   }
 }
 
@@ -367,15 +374,15 @@ ul{
   stroke-width: 0.5px;
 }
 #RB{
-  stroke: map.get(map.get($chara, "blade"),"color");
+  stroke: map-deep-get($chara, "blade", "color");
   stroke-opacity: 0.3;
-  fill: map.get(map.get($chara, "blade"),"color");
+  fill: map-deep-get($chara, "blade", "color");
   fill-opacity: 0.1;
 }
 #MM{
-  stroke: map.get(map.get($chara, "hannah"),"color");
+  stroke: map-deep-get($chara, "hannah", "color");
   stroke-opacity: 0.3;
-  fill: map.get(map.get($chara, "hannah"),"color");
+  fill: map-deep-get($chara, "hannah", "color");
   fill-opacity: 0.1;
 }
 
