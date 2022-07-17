@@ -352,7 +352,6 @@ function setupStuff(relationshipData, bioData, siteInfo){
     arrangeChartContent();
 }
 
-
 //======================//
 //===                ===//
 //=== Ready Function ===//

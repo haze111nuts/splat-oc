@@ -402,7 +402,7 @@ var bioData_en = [
             'His actual name is Branden, Axel was the one who started calling him "Blade", which came from his online handle, and the rest of his friends started doing the same. His braclet, ear clips, hair ties and ring are all gifts from other members of the team.'
         ],
         refsheets: [
-            "",
+            "assets/img/blade_ref1.png",
         ]
     },
     {
@@ -452,7 +452,10 @@ var bioData_en = [
             'Was once a very caring and kindhearted nerd boy. After falling victim to bullying and harassment, he started to change and would resort to revenge. Although this has made him more confident and brave, it nevertheless brought him more trouble than before.',
             'When he was still coping with the harassment, he met Axel and eventually started dating. He used to play league with him until they broke up, he then shifted his focus onto social media and flair bartending. He then took interest in Blade when he found out Axel was hanging out with him, and decided to start playing again.',
             'He is an extrovert who can blend himself into all kinds of groups, he is the one who comes up with party game ideas that are often questionable. His right eye was damaged as a result of a dangerous streaming challenge, therefore a strange pupil shape.'
-        ]
+        ],
+        refsheets: [
+            "assets/img/xiu_ref1.png",
+        ]        
     },
     {
         id: 'yoni',
