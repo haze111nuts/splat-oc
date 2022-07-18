@@ -219,7 +219,7 @@ ul{
 }
 
 .blur{
-  @include prefix(filter, blur(5px), webkit moz);    
+  @include prefix(filter, blur(5px), webkit moz);
 }
 
 //=======================//
@@ -623,8 +623,7 @@ ul{
     img {
       width: 100%;
       height: 100%;
-      object-fit: cover;
-      image-rendering: auto;
+      object-fit: cover;        
     }
   }
 }
