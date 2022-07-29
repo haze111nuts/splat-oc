@@ -568,8 +568,8 @@ var bioData_en = [
         mains: "Octo brushes",
         traits: [
             'Stoic, aloof, curious',
-            'Compulsive lying',
-            'Somewhat cunning',
+            'Very horny and cunning',
+            'Is a pervert',
             'Daydreams about...stuff',
             'Can\'t stand loneliness'
         ],
@@ -578,7 +578,7 @@ var bioData_en = [
             { name: 'Agent 8', url: 'xxx.png' }
         ],
         bio: [
-            'Minerva\'s twin brother who was also born underground; however, unlike Minerva, he did not like the life and treatment he had as an Octorian. ',
+            'Minerva\'s twin brother who was also born underground; however, unlike Minerva, he did not like the life and treatment he had as an Octarian. ',
             'After hearing Squid Sisters\' song on that fateful day, he started planning for escape, using any means he could; however, before anything can be done, he got caught in the whole Deepsea Metro shenanigans, though the whole thing did manage to give him a chance to leave at the end. During this ordeal he met Blade who was operating as Agent 3 at the time. Believing that Blade is his "Savior", he went looking for him right away even before settling down in the Inkopolis. After the befriended Blade, Edd became the fifth member of Rotten Buttons.',
             'He managed to go through a hacking boot camp when he was still in Octarian army, so he knows his way around cyber security shenanigans.'
         ]
