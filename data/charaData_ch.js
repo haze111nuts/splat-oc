@@ -14,7 +14,11 @@ var relationshipData_ch = [
         chara1: "yoni",
         chara2: "ellie",
         desc1: "吃軟糖ㄇ！",
-        desc2: "超怪的人笑死"
+        desc2: "超怪的人笑死",
+        content: [
+            "Rotton Buttons剛組成不久後認識的",
+            "艾莉因為接觸到一些"
+        ]
     },
     {
         id: "XY",
@@ -46,7 +50,12 @@ var relationshipData_ch = [
         chara1: "yoni",
         chara2: "lance",
         desc1: "(亂碰私人物品)",
-        desc2: "(抓住扔出窗外)"
+        desc2: "(抓住扔出窗外)",
+        content: [
+            "兩人住在一起。",
+            "蘭斯把家裡的某些共用空間(例如冰箱)完美地劃分成兩半來保障自己的私人空間，因為尤尼常常好奇亂翻蘭斯東西，雖然這並沒有完全停止尤尼亂看。",
+            "關係並不差"
+        ]
     },
     {
         id: "LB",
@@ -54,7 +63,13 @@ var relationshipData_ch = [
         chara1: "lance",
         chara2: "blade",
         desc1: "指導＆照顧",
-        desc2: "仰慕＆喜歡"
+        desc2: "仰慕＆喜歡",
+        content: [
+            "蘭斯是小布被姐姐欺負時的唯一依靠，小時候曾經跟小布說過\"我一定會保護你的\"這種話",
+            "在小布變成3號前蘭斯是少數讓小布能支持下去的存在",
+            "蘭斯教了小布很多事情，包含漆彈煮飯之類的",
+            "蘭斯是小布心目中的英雄，小布對他的喜歡是用言語也無法表達的"
+        ]
     },
     {
         id: "XB",
@@ -62,7 +77,13 @@ var relationshipData_ch = [
         chara1: "xiu",
         chara2: "blade",
         desc1: "很喜歡",
-        desc2: "別煩"
+        desc2: "別煩",
+        content: [
+            "修透過亞克接觸到了小布，因為亞克對小布的執著也對小布產生了興趣，起初只是為了讓亞克忌妒而有目的的接近小布，但跟小布黏久了卻真的產生了深厚的感情。",
+            "修常常請小布喝飲料／吃點心，也常常跑去小布家拜訪，總是會刻意阻止亞克跟小布獨處。",
+            "修常常會帶小布去參加派對／聚會，可能是想要幫助小布的自閉問題。雖然讓小布蠻困擾的，但是也讓小布感到窩心",
+            "小布戴的魚鉤手環是亞克在他生日時送的"
+        ]
     },
     {
         id: "EX",
@@ -78,7 +99,12 @@ var relationshipData_ch = [
         chara1: "xiu",
         chara2: "ellie",
         desc1: "信賴",
-        desc2: "支持"
+        desc2: "支持",
+        content: [
+            "兩人是透過亞克認識的，一開始並沒有什麼特別交際，在亞克和修分手之後兩人開始變得比較常聊天。兩個人很合得來也常常會聊八卦。",
+            "修的社交帳號養的成功的原因有部分是因為艾莉的支持。",
+            "艾莉視修為要好的朋友，只要有人在網路上黑修她便會召集網軍黑回去。"
+        ]
     },
     {
         id: "XA",
@@ -86,7 +112,13 @@ var relationshipData_ch = [
         chara1: "xiu",
         chara2: "axel",
         desc1: "別計較了嘛",
-        desc2: "還是有點不爽"
+        desc2: "還是有點不爽",
+        content: [
+            "修透過亞克接觸到了小布，因為亞克對小布的執著也對小布產生了興趣，起初只是為了讓亞克忌妒而有目的的接近小布，但跟小布黏久了卻真的產生了深厚的感情。",
+            "修常常請小布喝飲料／吃點心，也常常跑去小布家拜訪，總是會刻意阻止亞克跟小布獨處。",
+            "修常常會帶小布去參加派對／聚會，可能是想要幫助小布的自閉問題。雖然讓小布蠻困擾的，但是也讓小布感到窩心",
+            "小布戴的魚鉤手環是亞克在他生日時送的"
+        ]
     },
     {
         id: "RH",
@@ -102,7 +134,13 @@ var relationshipData_ch = [
         chara1: "lance",
         chara2: "hannah",
         desc1: "很瞭解",
-        desc2: "信賴"
+        desc2: "信賴",
+        content: [
+            "從小就和漢娜認識，是漢娜少數能信賴的人，漢娜常常跟他吐苦水。",
+            "Lance is sort of Hannah's morality chain and he nudges Hannah into correct direction.",
+            "蘭斯是漢娜的理智防線。",
+            "小布的髮帶是尤尼在他生日時送漢娜雖然很不喜歡這點，但是蘭斯會在漢娜面前幫小布說話。的。"
+        ]
     },
     {
         id: "YB",
@@ -110,7 +148,13 @@ var relationshipData_ch = [
         chara1: "yoni",
         chara2: "blade",
         desc1: "小布讚讚",
-        desc2: "別煩"
+        desc2: "別煩",
+        content: [
+            "尤尼是小布小時候少數的玩伴，總是在小布和蘭斯旁邊湊熱鬧。",
+            "在超級開朗活寶的尤尼在小布最陰暗的時期帶來了一點笑容。",
+            "小布跟亞克組成Rotten Buttons後邀了尤尼進隊伍。",
+            "小布的髮帶是尤尼在他生日時送的。"
+        ]
     },
     {
         id: "YA",
@@ -118,7 +162,10 @@ var relationshipData_ch = [
         chara1: "yoni",
         chara2: "axel",
         desc1: "吃軟糖ㄇ！",
-        desc2: "怪胎欸"
+        desc2: "怪胎欸",
+        content: [
+            "藉由小布認識的"
+       ]
     },
     {
         id: "BE",
@@ -126,7 +173,11 @@ var relationshipData_ch = [
         chara1: "ellie",
         chara2: "blade",
         desc1: "在意＆崇拜",
-        desc2: "有點吵"
+        desc2: "有點吵",
+        content: [
+            "艾莉透過亞克認識了小布。",
+            " 開始參與4號的事以後開始仰慕身為前輩3號的小布。知道哥哥也對小布有好感但對感情方面比較開放"
+        ]
     },
     {
         id: "HB",
@@ -134,7 +185,13 @@ var relationshipData_ch = [
         chara1: "blade",
         chara2: "hannah",
         desc1: "畏懼",
-        desc2: "家暴＆厭惡"
+        desc2: "家暴＆厭惡",
+        content: [
+            "自從兩人的媽媽過世以後漢娜就開始家暴小布，言語和肢體上都有。漢娜脾氣好的時候冷落他，脾氣差的時候會用很惡劣的言語去刺激或是乾脆揍他。",
+            "漢娜受不了他搬出去以後小布才終於不用受如此折騰。",
+            "小布平常能盡量躲避漢娜就盡量躲避。",
+            "雖然很怕漢娜，但是住一起時小布還是會在弄食物時準備她的份，這件事也讓漢娜覺得很煩，因為漢娜覺得互相討厭對兩人比較輕鬆。"
+        ]
     },
     {
         id: "AB",
@@ -142,7 +199,14 @@ var relationshipData_ch = [
         chara1: "blade",
         chara2: "axel",
         desc1: "別煩",
-        desc2: "有好感"
+        desc2: "有好感",
+        content: [
+            "雖然是打架認識的，但亞克對小布有點像是一見鍾情的感覺，亞克本人不知道就是了。",
+            "亞克常常會跑去小布家拜訪，雖然希望可以跟小布獨處但是常事與願違。",
+            "小不管是妹妹還是前男友都要跟他搶小布讓他很困擾。",
+            "雖然表面上一直拒絕，但是小布其實很感謝亞克的陪伴。",
+            "小布身上戴的耳飾是亞克在他生日時送的。"
+        ]
     },
     {
         id: "AE",
@@ -151,6 +215,11 @@ var relationshipData_ch = [
         chara2: "axel",
         desc1: "吵死了！",
         desc2: "你才吵！",
+        content: [
+            "Often have sibling squabble and throws mean word around, but deep down still cared for each other",
+            "they cares for their grandma together.",
+            "-只有被妹妹打的時候才會縮起來。"
+        ]
     },
     {
         id: "RM",
