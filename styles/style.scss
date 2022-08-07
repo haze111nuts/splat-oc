@@ -525,7 +525,7 @@ ul{
 .bioArt{
   z-index: 10;
   > img{
-    left:120px;
+    left:130px;
     top: 350px;
     position: absolute;
     @include prefix(transition, all 0.4s, webkit moz);
@@ -620,11 +620,12 @@ ul{
     overflow: hidden;
     @include prefix(box-shadow, -8px -8px 0px 0px rgba(0,0,0,1), webkit );  
     @include prefix(transition, all 0.4s, webkit moz);
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;        
-    }
+    image-rendering: -moz-crisp-edges;
+    // img {
+    //   width: 100%;
+    //   height: 100%;
+    //   object-fit: cover;        
+    // }
   }
 }
 
@@ -731,7 +732,7 @@ ul{
 .charaPhoto{
   width: $chara-photo-size;
   height: $chara-photo-size;
-  background-image: url(../assets/img/profilePics.png);
+  background-image: url(../assets/img/profile/_thumbs.png);
   background-repeat: no-repeat;
   background-size: $chara-photo-size * math.div($raw-photo-asset-x, $raw-photo-size) auto;
   margin: 8px auto 0px auto;

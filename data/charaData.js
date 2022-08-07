@@ -391,9 +391,7 @@ var bioData_en = [
             'Is actually a sweet boy'
         ],
         outfits: [
-            { name: 'Regular', url: 'bl1.png' },
-            { name: 'Agent 3', url: 'bl2.png' },
-            { name: 'Sanitized', url: 'bl3.png' }
+            { name: 'Regular', url: 'profile/blade.png' }
         ],
         bio: [
             'The constant bullying and abusing from his older sister made him a very gloomy introvert, he often puts up a cool look to cover up the insecure side of him.',
@@ -403,7 +401,7 @@ var bioData_en = [
             'He is also a great cook, mostly excels in home style cooking.'
         ],
         refsheets: [
-            "assets/img/blade_ref1.png",
+            "assets/img/refsheets/blade1.png",
         ]
     },
     {
@@ -422,14 +420,16 @@ var bioData_en = [
             'Cares about his grandma'
         ],
         outfits: [
-            { name: 'Regular', url: 'xxx.png' },
-            { name: 'Agent 4', url: 'xxx.png' }
+            { name: 'Regular', url: 'profile/axel.png' }
         ],
         bio: [
             'He had been trying to form a competitive team with skilled players; however, due to his short-temper and violent nature, they often fell out very quickly, and usually in a pretty bad way.',
             'One day in a random match he met Blade and picked a fight with him, and later realized that Blade could be the teammate he had been looking for. He then chased him through the sewer system in Inkopolis Square where he became Agent 4 just for another chance to meet Blade. He eventually got to meet Blade again and was able to befriend him and formed a team "Rotten Buttons" like he always wanted to.',
             'Ever since Blade walked into his life, he is shown to have less frequent temper issues.'
-        ]
+        ],
+        refsheets: [
+            "assets/img/refsheets/axel1.png",
+        ]     
     },
     {
         id: 'xiu',
@@ -447,7 +447,7 @@ var bioData_en = [
             "Kind of a drama queen"
         ],
         outfits: [
-            { name: 'Regular', url: 'xxx.png' }
+            { name: 'Regular', url: 'profile/xiu.png' }
         ],
         bio: [
             'Was once a very caring and kindhearted nerd boy. After falling victim to bullying and harassment, he started to change and would resort to revenge. Although this has made him more confident and brave, it nevertheless brought him more trouble than before.',
@@ -455,7 +455,7 @@ var bioData_en = [
             'He is an extrovert who can blend himself into all kinds of groups, he is the one who comes up with party game ideas that are often questionable. His right eye was damaged as a result of a dangerous streaming challenge, therefore a strange pupil shape.'
         ],
         refsheets: [
-            "assets/img/xiu_ref1.png",
+            "assets/img/refsheets/xiu1.png",
         ]        
     },
     {
@@ -474,12 +474,15 @@ var bioData_en = [
             'Can make lots of money'
         ],
         outfits: [
-            { name: 'Regular', url: 'xxx.png' }
+            { name: 'Regular', url: 'profile/yoni.png' }
         ],
         bio: [
             'A care-free and cheerful boy, also a bit of a joker who can be pretty naughty sometimes. Speaks and behaves in a comical and silly way. He finds a lot of things funny and will laugh everything off even when the timing is inappropriate.',
             'He loves getting high using...some substance, which is obviously banned in all sports. While wanting to play with Blade as a member of Rotten Buttons, he had cut out most of it. However, he wasn\'t able to fully resist the temptation of such things, so he has been looking for a solution so he can have it both ways',
             'Seems to be involved in some shady business.'
+        ],
+        refsheets: [
+            "assets/img/refsheets/yoni1.png",
         ]
     },
     {
@@ -498,8 +501,7 @@ var bioData_en = [
             'Is actually a great leader'
         ],
         outfits: [
-            { name: 'Regular', url: 'xxx.png' },
-            { name: 'Agent 3', url: 'xxx.png' }
+            { name: 'Regular', url: 'profile/hannah.png' }
         ],
         bio: [
             'Hannah was specially neglected by her mother when she was little, and her mother heavily favored the younger brother Blade over her,  this caused Hannah to hold a strong grudge against Blade. After their mother passed away, the grudge soon turned into abuse.',
@@ -524,7 +526,7 @@ var bioData_en = [
             'Is a good listener'
         ],
         outfits: [
-            { name: 'Regular', url: 'xxx.png' }
+            { name: 'Regular', url: 'profile/lance.png' }
         ],
         bio: [
             'Yoni\'s older brother, he is a childhood friend to both Hannah and Blade. He may look and act intimidating, but he is a very reliable, supportive and caring person. He is also a very organized perfectionist with high standards, he also has incredibly (and sometimes unnecessarily) sharp attention to details. He occasionally bursts out life advice with that poker face of his.',
@@ -549,8 +551,7 @@ var bioData_en = [
             
         ],
         outfits: [
-            { name: 'Regular', url: 'xxx.png' },
-            { name: 'Agent 4', url: 'xxx.png' }
+            { name: 'Regular', url: 'profile/ellie.png' }
         ],
         bio: [
             'Axel\'s younger sister,  a typical happy teenage girl. She is friendly and nice but rather immature, her sense of justice is so strong that she would actively seek out questionable people online to harass and "cancel".',
@@ -574,8 +575,7 @@ var bioData_en = [
             'Can\'t stand loneliness'
         ],
         outfits: [
-            { name: 'Regular', url: 'xxx.png' },
-            { name: 'Agent 8', url: 'xxx.png' }
+            { name: 'Regular', url: 'profile/edd.png' }
         ],
         bio: [
             'Minerva\'s twin brother who was also born underground; however, unlike Minerva, he did not like the life and treatment he had as an Octarian. ',
@@ -599,8 +599,7 @@ var bioData_en = [
             'Just a law-abiding normal girl'
         ],
         outfits: [
-            { name: 'Regular', url: 'xxx.png' },
-            { name: 'Octorian', url: 'xxx.png' }
+            { name: 'Regular', url: 'profile/minerva.png' }
         ],
         bio: [
             'She was raised in the Octarian army since she was very little. She hated the training regimen at first, but eventually she grew attached to the army deeply. She was shown to have no intention to leave even after hearing Squid Sister\'s Calamari Inkantation on that fateful day. She even began to loathe the so-called "surface world" that suddenly came into their life.',
@@ -623,7 +622,7 @@ var bioData_en = [
             'Always fails miserably'
         ],
         outfits: [
-            { name: 'Regular', url: 'xxx.png' }
+            { name: 'Regular', url: 'profile/simon.png' }
         ],
         bio: [
             'A member of the Octorian underground army. He is obsessed with DJ Octavio. A self-proclaimed "DJ Octavio\'s greatest assistant" and "Evil genius Octorian engineer" or some such. He seems to be extremely skilled and efficient when it comes to tech stuff, which includes programming AI, building robotics or even hacking.',
@@ -647,7 +646,7 @@ var bioData_en = [
             'Doesn\'t know how to socialize'
         ],
         outfits: [
-            { name: 'Regular', url: 'xxx.png' }
+            { name: 'Regular', url: 'profile/rj.png' }
         ],
         bio: [
             'Not much is known about this guy and it\'s not like he has intention to disclose anything whatsoever.',
