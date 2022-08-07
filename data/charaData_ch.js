@@ -2,9 +2,9 @@
 var relationshipData_ch = [
     {
         id: "RY",
-        label: "一觸即發",
         chara1: "yoni",
         chara2: "ryan",
+        label: "一觸即發",        
         desc1: "好強！！！",
         desc2: "臭小鬼殺了你",
         content: [
@@ -15,9 +15,9 @@ var relationshipData_ch = [
     },
     {
         id: "YE",
-        label: "朋友",
         chara1: "yoni",
         chara2: "ellie",
+        label: "朋友",        
         desc1: "吃軟糖ㄇ！",
         desc2: "超怪的人笑死",
         content: [
@@ -26,9 +26,9 @@ var relationshipData_ch = [
     },
     {
         id: "XY",
-        label: "朋友",
         chara1: "yoni",
         chara2: "xiu",
+        label: "朋友",        
         desc1: "吃軟糖ㄇ！",
         desc2: "覺得有點危險",
         content: [
@@ -37,9 +37,9 @@ var relationshipData_ch = [
     },
     {
         id: "RL",
-        label: "親友",
         chara1: "lance",
         chara2: "ryan",
+        label: "親友",        
         desc1: "不要再添麻煩了",
         desc2: "什麼麻煩？",
         content: [
@@ -49,9 +49,9 @@ var relationshipData_ch = [
     },
     {
         id: "LM",
-        label: "隊友",
         chara1: "lance",
         chara2: "minerva",
+        label: "隊友",        
         desc1: "有潛力的新人",
         desc2: "不太敢搭話",
         content: [
@@ -61,9 +61,9 @@ var relationshipData_ch = [
     },
     {
         id: "LY",
-        label: "兄弟",
         chara1: "yoni",
         chara2: "lance",
+        label: "兄弟",        
         desc1: "(亂碰私人物品)",
         desc2: "(抓住扔出窗外)",
         content: [
@@ -74,9 +74,9 @@ var relationshipData_ch = [
     },
     {
         id: "LB",
-        label: "前後輩",
         chara1: "lance",
         chara2: "blade",
+        label: "前後輩",
         desc1: "指導＆照顧",
         desc2: "仰慕＆喜歡",
         content: [
@@ -88,23 +88,23 @@ var relationshipData_ch = [
     },
     {
         id: "XB",
-        label: "親友",
         chara1: "xiu",
         chara2: "blade",
+        label: "親友",
         desc1: "很喜歡",
         desc2: "別煩",
         content: [
             "修透過亞克接觸到了小布，因為亞克對小布的執著也對小布產生了興趣，起初只是為了讓亞克忌妒而有目的的接近小布，但跟小布黏久了卻真的產生了深厚的感情。",
             "修常常請小布喝飲料／吃點心，也常常跑去小布家拜訪，總是會刻意阻止亞克跟小布獨處。",
             "修常常會帶小布去參加派對／聚會，可能是想要幫助小布的自閉問題。雖然讓小布蠻困擾的，但是也讓小布感到窩心",
-            "小布戴的魚鉤手環是亞克在他生日時送的"
+            "小布戴的魚鉤手環是修在他生日時送的"
         ]
     },
     {
         id: "EX",
-        label: "朋友&同事",
         chara1: "xiu",
         chara2: "edd",
+        label: "朋友&同事",        
         desc1: "酸言酸語",
         desc2: "酸言酸語",
         content: [
@@ -113,9 +113,9 @@ var relationshipData_ch = [
     },
     {
         id: "XE",
-        label: "網路閨密",
         chara1: "xiu",
         chara2: "ellie",
+        label: "網路閨密",        
         desc1: "信賴",
         desc2: "支持",
         content: [
@@ -126,9 +126,9 @@ var relationshipData_ch = [
     },
     {
         id: "XA",
-        label: "已分手",
         chara1: "xiu",
         chara2: "axel",
+        label: "已分手",        
         desc1: "別計較了嘛",
         desc2: "還是有點不爽",
         content: [
@@ -140,9 +140,9 @@ var relationshipData_ch = [
     },
     {
         id: "RH",
-        label: "隊友",
         chara1: "ryan",
         chara2: "hannah",
+        label: "隊友",        
         desc1: "遵從指示",
         desc2: "覺得有點危險",
         content: [
@@ -152,9 +152,9 @@ var relationshipData_ch = [
     },
     {
         id: "LH",
-        label: "舊識",
         chara1: "lance",
         chara2: "hannah",
+        label: "舊識",        
         desc1: "很瞭解",
         desc2: "信賴",
         content: [
@@ -166,9 +166,9 @@ var relationshipData_ch = [
     },
     {
         id: "YB",
-        label: "兒時玩伴",
         chara1: "yoni",
         chara2: "blade",
+        label: "兒時玩伴",        
         desc1: "小布讚讚",
         desc2: "別煩",
         content: [
@@ -180,9 +180,9 @@ var relationshipData_ch = [
     },
     {
         id: "YA",
-        label: "朋友",
         chara1: "yoni",
         chara2: "axel",
+        label: "朋友",        
         desc1: "吃軟糖ㄇ！",
         desc2: "怪胎欸",
         content: [
@@ -191,21 +191,21 @@ var relationshipData_ch = [
     },
     {
         id: "BE",
-        label: "朋友",
         chara1: "ellie",
         chara2: "blade",
+        label: "朋友",        
         desc1: "在意＆崇拜",
         desc2: "有點吵",
         content: [
             "艾莉透過亞克認識了小布。",
-            " 開始參與4號的事以後開始仰慕身為前輩3號的小布。知道哥哥也對小布有好感但對感情方面比較開放"
+            "開始參與4號的事以後開始仰慕身為前輩3號的小布。知道哥哥也對小布有好感但對感情方面比較開放"
         ]
     },
     {
         id: "HB",
-        label: "姊弟",
         chara1: "blade",
-        chara2: "hannah", 
+        chara2: "hannah",
+        label: "姊弟",
         desc1: "畏懼",
         desc2: "家暴＆厭惡",
         content: [
@@ -217,9 +217,9 @@ var relationshipData_ch = [
     },
     {
         id: "AB",
-        label: "親友&勁敵",
         chara1: "blade",
         chara2: "axel",
+        label: "親友&勁敵",        
         desc1: "別煩",
         desc2: "有好感",
         content: [
@@ -232,9 +232,9 @@ var relationshipData_ch = [
     },
     {
         id: "AE",
-        label: "兄妹",
         chara1: "ellie",
         chara2: "axel",
+        label: "兄妹",        
         desc1: "吵死了！",
         desc2: "你才吵！",
         content: [
@@ -245,9 +245,9 @@ var relationshipData_ch = [
     },
     {
         id: "RM",
-        label: "隊友",
         chara1: "ryan",
         chara2: "minerva",
+        label: "隊友",        
         desc1: "有何貴幹?",
         desc2: "可怕的人…",
         content: [
@@ -258,33 +258,33 @@ var relationshipData_ch = [
     },
     {
         id: "RB",
-        label: "微妙",
         chara1: "ryan",
         chara2: "blade",
+        label: "微妙",        
         desc1: "真好欺負",
         desc2: "可怕的人…"
     },
     {
         id: "HM",
-        label: "朋友",
         chara1: "hannah",
         chara2: "minerva",
+        label: "朋友",        
         desc1: "堅持拉進隊裡",
         desc2: "為什麼特別選我？"
     },
     {
         id: "BM",
-        label: "點頭之交",
         chara1: "blade",
         chara2: "minerva",
+        label: "點頭之交",        
         desc1: "覺得很厲害",
         desc2: "有點感興趣"
     },
     {
         id: "EB",
-        label: "朋友",
         chara1: "blade",
         chara2: "edd",
+        label: "朋友",        
         desc1: "別煩",
         desc2: "想更親密",
         content: ["艾德在深海地鐵認識了做為三號的小布",
@@ -294,33 +294,33 @@ var relationshipData_ch = [
     },
     {
         id: "EA",
-        label: "關係不佳",
         chara1: "axel",
         chara2: "edd",
+        label: "朋友?敵人?",        
         desc1: "非常不爽",
-        desc2: "令人不愉快"
+        desc2: "令人不快"
     },
     {
         id: "EM",
-        label: "雙胞胎",
         chara1: "minerva",
         chara2: "edd",
+        label: "雙胞胎",        
         desc1: "訓練對象",
         desc2: "追趕中"
     },
     {
         id: "SB",
-        label: "英雄vs惡役",
         chara1: "blade",
         chara2: "simon",
+        label: "英雄vs惡役",        
         desc1: "你超煩",
         desc2: "永遠的勁敵"
     },
     {
         id: "SA",
-        label: "死對頭",
         chara1: "axel",
         chara2: "simon",
+        label: "死對頭",        
         desc1: "幹臭章螂滾啦！",
         desc2: "浮魷垃圾閉嘴！"
     }
@@ -333,7 +333,7 @@ var bioData_ch = [
         gender: '男',
         like: '獨處',
         dislike: '自己',
-        rank: "S+ ~ X",
+        rank: "S+",
         mains: "P槍、.96、炭滾",
         traits: [
             '陰鬱、孤僻、彆扭',
@@ -349,8 +349,8 @@ var bioData_ch = [
             '因為長期被姐姐欺負跟貶低所以性格孤僻又內向。習慣用酷酷的樣子掩蓋自己的破碎的自信跟自尊以及安全感。',
             '原本是個不肯參加任何漆彈戰鬥並且非常抗拒交朋友的叛逆男孩，後來因緣際會遇上司令勉強同意變成３號，之間也結識了１號與２號，在三人的支持下決定開始嘗試改變態度和擺脫陰影，透過英雄任務持續練習的他終於變得可以和別人比賽，也是這時決定搬出去自己住。',
             '在認識亞克和其他朋友後開始打開心房並逐漸變得要好，他們也決定以小布為中心組成一個四人隊伍Rotten Buttons。',
-            '其實名字是布蘭登，「Blade」是他網路ID的一部分，被亞克當成暱稱在叫，結果其他人也跟進。他的耳飾，手環，髮帶，戒指都是隊裡的人送的生日禮物。',
-            '對煮菜挺拿手的，擅長家庭料理。'
+            '其實名字是布蘭登，「Blade」是他網路ID的一部分，被亞克當成暱稱在叫，結果其他人也跟進。他身上的耳扣，手環，髮帶，項鍊都是好友送的生日禮物。',
+            '對煮菜挺拿手，擅長家庭料理。'
         ],
         refsheets: [
             "assets/img/refsheets/blade1.png",
@@ -362,7 +362,7 @@ var bioData_ch = [
         gender: '男',
         like: '漆彈',
         dislike: '輸、被嘲笑',
-        rank: "S+ ~ X",
+        rank: "S+",
         mains: "雙槍類",
         traits: [
             '無禮、暴躁、囂張',
@@ -376,7 +376,7 @@ var bioData_ch = [
         ],
         bio: [
             '小混混性格，因為脾氣暴躁常常鬧事所以總是跟人處不來。一直在找可以一起比賽且能信賴的隊友。',
-            '一次比賽隨機排到小布，兩人起了衝突並且演變成打架，最後搞到不歡而散時，忽然萌生了想和小布組隊的想法便追了回去。結果在下水道追丟對方，接著誤打誤撞進入蛸壺峽谷遇到了螢，為了要問出小布的下落而同意當上了４號。經過一番折騰後終於如願認識小布並且組成Rotten Buttons。',
+            '一次比賽隨機排到小布，兩人起了衝突並且演變成打架，最後搞到不歡而散時，忽然萌生了想和小布組隊的想法便追了回去。結果在下水道追丟對方，接著誤打誤撞進入蛸壺峽谷遇到了螢，為了要問出小布的下落而同意當上了４號。經過一番折騰後終於如願再度和他見面，認識後一起組成了Rotten Buttons。',
             '自從小布走進自己人生後，生氣跟打架的次數有變少的跡象。' 
         ],
         refsheets: [
@@ -389,7 +389,7 @@ var bioData_ch = [
         gender: '男',
         like: '收藏珊瑚',
         dislike: '掉粉',
-        rank: "S+ ~ X",
+        rank: "S+",
         mains: "迴旋潑桶",
         traits: [
             "有風度、外向、擅長社交",
@@ -431,8 +431,8 @@ var bioData_ch = [
         bio: [
             '從小就是無憂無慮、開朗的性格。是個有點調皮愛開玩笑的人，擅長製造娛樂。講話常常沒頭沒腦，不管是什麼事都可以哈哈的笑過，就連不合時宜的時候也是。',
             '喜歡成癮的感覺，但因為漆彈協會禁止玩家使用非法藥物，所以自從被小布拉進Rotten Buttons之後就漸漸不用了。不過毒癮終究難戒，所以他正在找一種能讓他上癮又能繼玩漆彈的辦法。',
-            '他其實無法正常表現自己的負面情緒。',
-            '似乎有參與一些可疑活動。'
+            '似乎無法正常表現自己的負面情緒。',
+            '看起來有參與一些可疑活動。'
         ],
         refsheets: [
             "assets/img/refsheets/yoni1.png",
@@ -457,7 +457,7 @@ var bioData_ch = [
             { name: '通常服', url: 'profile/hannah.png' }
         ],
         bio: [
-            '小布的姐姐。小時候總是被媽媽忽視，因為媽媽非常偏袒弟弟所以對弟弟有極大的心結。在媽媽病逝後，心結更是演變成了家暴。',
+            '小布的姐姐。小時候總是被媽媽忽視，因為媽媽非常偏袒弟弟所以對弟弟有極大的心結。在媽媽病離世後，心結更是演變成了家暴。',
             '漆彈戰鬥就是她的全部，只要心情一不好就會去戰鬥發洩。大概是因為將身心都投入漆彈比賽中所以技術高超，是玩風猛烈的前鋒系。自主拉了蘭斯、RJ、米奈瓦組了一個表現頂尖的隊伍Inner Monster。',
             "實際上她是當初第一個被司令找上的３號人選，但因為想專注比賽就沒有繼續參與，這也間接導致小布變成下一個３號。目前只有在不得已需要人手時會回去幫忙。",
             '其實對自己的性格問題有一定程度的理解，曾透露出想和弟弟緩解關係的念頭，但還是在沒能做出任何有用的嘗試後放棄，並表示「已經無法回頭了」。',
@@ -482,7 +482,7 @@ var bioData_ch = [
             { name: '通常服', url: 'profile/lance.png' }
         ],
         bio: [
-            '尤尼的哥哥，從小就認識小布姊弟。看上去總是凶狠又沒表情，實際上是個可靠又很照顧人的傢伙。做事有條有理的高標準完美主義著，經常過度注重細節。三觀端正，常會突然口出人生諫言。',
+            '尤尼的哥哥，從小就認識小布姊弟。看上去總是凶狠又沒表情，實際上是個可靠又很照顧人的傢伙。是個做事有條有理的高標準完美主義著，經常過度注重細節。三觀端正，常會突然口出人生諫言。',
             '是漢娜最早拉進Inner Monster的成員，漢娜處理不了的事情都是他在處理。',
             '努力與自己的OCPD共存中，總是戴著黑手套。小時候因為吃了跳跳糖才喜歡上爆裂槍，現在每天早上一定要吃一包。'
         ]
@@ -516,21 +516,21 @@ var bioData_ch = [
         name: '艾德',
         gender: '男',
         like: '被稱讚',
-        dislike: '過於黑暗的場所',
-        rank: "S+ to X",
+        dislike: '幽閉&黑暗場所',
+        rank: "S+",
         mains: "北齋",
         traits: [
             '沉穩、表情不多',
-            '很色＆不擇手段＆變態',
+            '做事不擇手段',
             '常會亂幻想些有的沒的',
-            '其實很受不了孤獨感',
+            '強烈的性衝動',
         ],
         outfits: [
             { name: '通常服', url: 'profile/edd.png' }
         ],
         bio: [
             '米奈瓦的雙胞胎弟弟，在地下成長，但和米奈瓦不同，對於在地下受到的待遇跟生活很不滿意，在那天聽到潮色姊妹的歌之後下定決心，不管用什麼手段都想逃脫。',
-            '在還沒能逃出之前被捲入深海地下鐵事件，但也因此在最後如願到達陸上。因為把當時作為３號出勤的小布視為救世主般的存在，甚至都還沒安頓就先跑去找他。兩人當上朋友後，艾德成為了Rotten Buttons的第五個成員。',
+            '在還沒能逃出之前被捲入深海地下鐵事件，但也因此在最後如願到達陸上。他把當時作為３號出勤的小布視為救世主般的存在，兩人當上朋友後，艾德成為了Rotten Buttons的第五個成員。',
             '在章魚軍團時有參加駭客訓練營，所以對於入侵電腦還滿有一套的。'
         ]
     },
@@ -569,7 +569,7 @@ var bioData_ch = [
             '自大、野心強、死纏不放',
             '似乎有妄想性障礙',
             'DJ芥葵將軍的頭號粉絲',
-            '就是個經典定番惡役',
+            '經典定番惡役',
             '是個老是出包的白痴'
         ],
         outfits: [

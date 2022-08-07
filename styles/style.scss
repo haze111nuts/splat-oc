@@ -456,7 +456,7 @@ ul{
     right: -20px;  
   }  
 }
-.bioBasic, .bioDetail{
+.bioBasic, .bioDetail, .relDetail{
   font-size: 14px;
 }
 // Header
@@ -688,11 +688,31 @@ ul{
 //===   Style for Relationship page   ===//
 //=======================================//
 
+$rel-page-width: 600px;
+$rel-page-height: 550px;
+$rel-page-outerPaddingLR: 50px;
+$rel-page-innerPaddingLR: 20px;
+$rel-title-top-offset: -20px;
+$rel-arrow-width: 160px;
+
 .relationshipPage{
-  // background-color: rgba(50, 50, 50, 1);
-  border: #fff 1px solid;
-  width: 650px;
-	height: 700px;
+  background-color: rgba(50, 50, 50, 1);
+  line-height: 150%;
+  width: $rel-page-width;
+	height: $rel-page-height;
+  padding: 170px $rel-page-outerPaddingLR 0 $rel-page-outerPaddingLR;
+}
+
+.relDetail{
+  width: $rel-page-width - $rel-page-innerPaddingLR*2;
+  height: $rel-page-height - 90px;
+  padding: $rel-page-innerPaddingLR;
+  border: 1px gray solid ;
+  overflow-y: auto;
+}
+
+.relDetail p{
+  margin-bottom: 15px;
 }
 
 .relationshipPage .relCloseBT{
@@ -700,6 +720,127 @@ ul{
   right: -30px;  
 }
 
+.relPhotoBox{
+  border: 2px white solid ;
+  width: $chara-box-width;
+  height: $chara-box-height;
+  background:url(../assets/img/bg1.png) fixed repeat;
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3), inset 0px 0px 10px 3px rgba(0,0,0,0.4); 
+  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3), inset 0px 0px 10px 3px rgba(0,0,0,0.4);
+}
+
+.relTitle{
+  top: -10px;
+  left: $rel-page-outerPaddingLR + $rel-page-width * 0.5 ;
+  // border: 1px solid red;
+  width: $rel-arrow-width;
+  height: $chara-box-height;
+  @include prefix(transform, translateX(-50%), webkit moz ms);
+
+
+  .label{
+    width: $rel-arrow-width;
+    text-align: center;
+    position: absolute;
+    margin: 0;    
+    left: 50%;
+    font-size: 0.8rem;
+  }
+
+  .middle{
+    font-size: 20px;
+    top: 50%;
+    @include prefix(transform, translate(-50%, -50%), webkit moz ms);
+  }
+
+  
+  .upper, .lower{
+    height: 50px;
+  }
+  .upper{
+    top: 0;
+    @include prefix(transform, translateX(-50%), webkit moz ms);
+    div{
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+    }
+  }
+  .lower{
+    bottom: 0;
+    @include prefix(transform, translateX(-50%), webkit moz ms);
+  }
+
+}
+
+.relationshipPage{
+  .relTitle svg{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);    
+  }
+
+  .nameSticker{
+    text-align: center;
+  }  
+
+  .relPhotoBox:nth-child(1){
+    top: $rel-title-top-offset;
+    left: 120px;
+  }
+
+  .relPhotoBox:nth-child(2){
+    top: $rel-title-top-offset;
+    right: 120px;
+  }
+}
+
+// Window effect stuff
+.md-window .md-content .relPhotoBox,
+.md-window .md-content .relCloseBT,
+.md-window .md-content .relDetail{
+	opacity: 0;
+  @include prefix(transition, all 0.3s, webkit moz);
+}
+
+.md-window .md-content .relPhotoBox:nth-child(1){
+  @include prefix(transform, translateX(-5%) rotate(-2deg), webkit moz ms);  
+  @include prefix(transition, all 0.4s, webkit moz);  
+}
+
+.md-window .md-content .relPhotoBox:nth-child(2){
+  @include prefix(transform, translateX(5%) rotate(4deg), webkit moz ms);  
+  @include prefix(transition, all 0.4s, webkit moz);  
+}
+
+.md-window .md-content .relCloseBT{
+  @include prefix(transform, translateX(5%), webkit moz ms);  
+  @include prefix(transition, all 0.6s, webkit moz);  
+}
+
+.md-window .md-content .relDetail{
+  @include prefix(transform, translateY(5%), webkit moz ms);  
+  @include prefix(transition, all 0.4s, webkit moz);  
+}
+
+//style of panels when window is visible
+.md-show.md-window .md-content .relCloseBT,
+.md-show.md-window .md-content .relDetail{
+  @include prefix(transform, translateY(0) translateX(0), webkit moz ms);
+	opacity: 1;
+}
+
+.md-show.md-window .md-content .relPhotoBox:nth-child(1){
+  @include prefix(transform, translateY(0) translateX(0) rotate(-2deg), webkit moz ms);
+  opacity: 1;
+}
+
+.md-show.md-window .md-content .relPhotoBox:nth-child(2){
+  @include prefix(transform, translateY(0) translateX(0) rotate(4deg), webkit moz ms);
+  opacity: 1;
+}
 
 //============================//
 //===                      ===//

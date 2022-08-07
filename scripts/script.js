@@ -55,12 +55,12 @@ function arrangeChartContent(){
     }
 }
 
-function transformRotatedCharaIcon(id, scale){
+function transformRotatedCharaIcon(selector, id, scale){
     //need this bc transform is too dumb to remember the initial rotation
     var currentHoverCharaRot = charaData[id].photoPos.rotation;
-    $("#"+id).css("-webkit-transform", "rotate(" + currentHoverCharaRot +"deg) " + scale);
-    $("#"+id).css("-ms-transform", "rotate(" + currentHoverCharaRot +"deg) " + scale);
-    $("#"+id).css("transform", "rotate(" + currentHoverCharaRot +"deg) "+ scale);
+    $(selector).css("-webkit-transform", "rotate(" + currentHoverCharaRot +"deg) " + scale);
+    $(selector).css("-ms-transform", "rotate(" + currentHoverCharaRot +"deg) " + scale);
+    $(selector).css("transform", "rotate(" + currentHoverCharaRot +"deg) "+ scale);
 }
 
 function relationshipHoverEvent(relationshipData){
@@ -109,7 +109,7 @@ function charaHoverEvent(relationshipData){
         var unrelatedRelations = relationshipData.filter(r => r.chara1 !== this.id && r.chara2 !== this.id );
         var relatedRelations = relationshipData.filter(r => r.chara1 === this.id || r.chara2 === this.id );
         $(this).hover(function() {
-            transformRotatedCharaIcon(this.id, "scale(1.1)");
+            transformRotatedCharaIcon("#"+this.id, this.id, "scale(1.1)");
             for(const chara of unrelatedChara){
                 $("#"+chara).addClass("faded");
             }
@@ -128,7 +128,7 @@ function charaHoverEvent(relationshipData){
                 $("#line_"+relation.id+"_fill_rev").addClass(this.id);
             }
         }, function() {
-            transformRotatedCharaIcon(this.id, "");
+            transformRotatedCharaIcon("#"+this.id, this.id, "");
             for(const chara of unrelatedChara){
                 $("#"+chara).removeClass("faded");
             }
@@ -222,14 +222,11 @@ function setUpBioPageFor(charaBioData){
 
     if(charaBioData.refsheets){
         for(var i=0; i<charaBioData.refsheets.length; i++){
-            console.log("url("+charaBioData.refsheets[i]+") cover");
             $(".refSheets").children().children().eq(i).css("background","url("+charaBioData.refsheets[i]+") no-repeat");
             $(".refSheets").children().children().eq(i).css("background-size","210%");
             $(".refSheets").children().children().eq(i).css("background-position","center top");
-
         }
     }
-
 
     //Set up character-specific page style
     var color = charaData[charaBioData.id].color;
@@ -245,7 +242,36 @@ function setUpBioPageFor(charaBioData){
         $(this).css("box-shadow", "-8px -8px 0px 0px black");
     });
     
-    
+}
+
+function setUpRelationPageFor(relationData){
+    //fill two profile photo and name
+    var chara1name = (relationData.chara1 == "ryan") ? "R.J." : relationData.chara1.charAt(0).toUpperCase() + relationData.chara1.slice(1);
+    var chara2name = (relationData.chara2 == "ryan") ? "R.J." : relationData.chara2.charAt(0).toUpperCase() + relationData.chara2.slice(1);
+    var chara1photoHTML= "<div class='charaPhoto "+relationData.chara1+"Photo'></div>"
+                    + "<div class='nameSticker'>"+ chara1name +"</div>";
+    var chara2photoHTML= "<div class='charaPhoto "+relationData.chara2+"Photo'></div>"
+                    + "<div class='nameSticker'>"+ chara2name +"</div>";
+    $(".relPhotoBox:nth-child(1)").html(chara1photoHTML);
+    $(".relPhotoBox:nth-child(2)").html(chara2photoHTML);
+
+    //fill label
+    $(".relTitle .middle").html(relationData.label);
+    $(".relTitle .upper").html("<div>"+relationData.desc1+"</div>");
+    $(".relTitle .lower").html(relationData.desc2);
+
+    //fill detail
+    var relationContentHTML = "";
+    for(const sentence of relationData.content){
+        relationContentHTML += "<p>"+ sentence +"</p>";
+    }
+    $(".relDetail").html(relationContentHTML);
+
+    //apply style
+    $(".relTitle .upper").css("color",charaData[relationData.chara1].color);
+    $(".relTitle .lower").css("color",charaData[relationData.chara2].color);
+    $("#upperArrow").css("fill",charaData[relationData.chara1].color);
+    $("#lowerArrow").css("fill",charaData[relationData.chara2].color);
 }
 
 function setUpOutfitSwitchEvents(charaBioData){
@@ -264,7 +290,7 @@ function setUpOutfitSwitchEvents(charaBioData){
     });
 }
 
-function modalEffectsInit(bioData) {
+function modalEffectsInit(bioData, relationshipData) {
 	var overlay = document.querySelector( '.md-overlay' );
 	[].slice.call( document.querySelectorAll( '.md-trigger' ) ).forEach( function( el, i ) {
 
@@ -286,10 +312,13 @@ function modalEffectsInit(bioData) {
 
 		el.addEventListener( 'click', function( ev ) {
             if(el.getAttribute( 'data-modal' ) == "modal-chara"){
+                //fill bio page
                 var currentCharaBio = bioData.find(b => b.id === el.id);
                 setUpBioPageFor(currentCharaBio);
             }else{
                 //fill relationship page
+                var currentRelation = relationshipData.find(r => "rel_"+r.id === el.id);
+                setUpRelationPageFor(currentRelation);
             }
             setTimeout(function(){
                 classie.add( modal, 'md-show' );
@@ -357,7 +386,7 @@ function checkWindowSize() {
 function setupStuff(relationshipData, bioData, siteInfo){
     setUpSiteInfo(siteInfo)
     buildChart(relationshipData);
-    modalEffectsInit(bioData);
+    modalEffectsInit(bioData, relationshipData);
     relationshipHoverEvent(relationshipData);
     charaHoverEvent(relationshipData);
     arrangeChartContent();
