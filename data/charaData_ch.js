@@ -243,9 +243,7 @@ var bioData_ch = [
             '其實很乖、很為人著想'
         ],
         outfits: [
-            { name: '通常服', url: 'bl1.png' },
-            { name: '3號', url: 'bl2.png' },
-            { name: '洗腦3號', url: 'bl3.png' }
+            { name: '通常服', url: 'profile/blade.png' }
         ],
         bio: [
             '因為長期被姐姐欺負跟貶低所以性格孤僻又內向。習慣用酷酷的樣子掩蓋自己的破碎的自信跟自尊以及安全感。',
@@ -254,7 +252,7 @@ var bioData_ch = [
             '其實名字是布蘭登，「Blade」是他網路ID的一部分，被亞克當成暱稱在叫，結果其他人也跟進。他的耳飾，手環，髮帶，戒指都是隊裡的人送的生日禮物。'
         ],
         refsheets: [
-            "assets/img/blade_ref1.png",
+            "assets/img/refsheets/blade1.png",
         ]        
     },
     {
@@ -273,14 +271,16 @@ var bioData_ch = [
             '很照顧自己的奶奶'
         ],
         outfits: [
-            { name: '通常服', url: 'xxx.png' },
-            { name: '4號', url: 'xxx.png' }
+            { name: '通常服', url: 'profile/axel.png' }
         ],
         bio: [
             '小混混性格，因為脾氣暴躁常常鬧事所以總是跟人處不來。一直在找可以一起比賽且能信賴的隊友。',
             '一次比賽隨機排到小布，兩人起了衝突並且演變成打架，最後搞到不歡而散時，忽然萌生了想和小布組隊的想法便追了回去。結果在下水道追丟對方，接著誤打誤撞進入蛸壺峽谷遇到了螢，為了要問出小布的下落而同意當上了４號。經過一番折騰後終於如願認識小布並且組成Rotten Buttons。',
             '自從小布走進自己人生後，生氣跟打架的次數有變少的跡象。' 
-        ]
+        ],
+        refsheets: [
+            "assets/img/refsheets/axel1.png",
+        ]     
     },
     {
         id: 'xiu',
@@ -298,7 +298,7 @@ var bioData_ch = [
             "老是搞八卦&小題大作"
         ],
         outfits: [
-            { name: '通常服', url: 'xxx.png' }
+            { name: '通常服', url: 'profile/xiu.png' }
         ],
         bio: [
             '曾經是很和平又善解人意的書呆子男孩，在受到了霸凌事件的打擊後性情大變並且學會報復，雖然變得更大膽有自信，但也開始惹上不少麻煩事。',
@@ -306,7 +306,7 @@ var bioData_ch = [
             '可以輕易融入人群的性格，是那種會在聚會跟派對提出一堆危險的團康鬼點子的人。右眼在做危險直播挑戰時受過傷，所以瞳孔形狀特殊。'
         ],
         refsheets: [
-            "assets/img/xiu_ref1.png",
+            "assets/img/refsheets/xiu1.png",
         ]       
     },
     {
@@ -325,12 +325,15 @@ var bioData_ch = [
             '非常會賺錢'
         ],
         outfits: [
-            { name: '通常服', url: 'xxx.png' }
+            { name: '通常服', url: 'profile/yoni.png' }
         ],
         bio: [
             '從小就是無憂無慮、開朗的性格。是個有點調皮愛開玩笑的人，擅長製造娛樂。講話常常沒頭沒腦，不管是什麼事都可以哈哈的笑過，就連不合時宜的時候也是。',
             '喜歡成癮的感覺，但因為漆彈協會禁止玩家使用非法藥物，所以自從被小布拉進Rotten Buttons之後就漸漸不用了。不過毒癮終究難戒，所以他正在找一種能讓他上癮又能繼玩漆彈的辦法。',
             '似乎有參與一些可疑活動。'
+        ],
+        refsheets: [
+            "assets/img/refsheets/yoni1.png",
         ]
     },
     {
@@ -349,8 +352,7 @@ var bioData_ch = [
             '其實是個稱職的隊長'
         ],
         outfits: [
-            { name: '通常服', url: 'xxx.png' },
-            { name: '3號', url: 'xxx.png' }
+            { name: '通常服', url: 'profile/hannah.png' }
         ],
         bio: [
             '小布的姐姐。小時候總是被媽媽忽視，因為媽媽非常偏袒弟弟所以對弟弟有極大的心結。在媽媽病逝後，心結更是演變成了家暴。',
@@ -375,7 +377,7 @@ var bioData_ch = [
             '很擅長聽人訴苦'
         ],
         outfits: [
-            { name: '通常服', url: 'xxx.png' }
+            { name: '通常服', url: 'profile/lance.png' }
         ],
         bio: [
             '尤尼的哥哥，從小就認識小布姊弟。看上去總是凶狠又沒表情，實際上是個可靠又很照顧人的傢伙。做事有條有理的高標準完美主義著，經常過度注重細節。三觀端正，常會突然口出人生諫言。',
@@ -399,8 +401,7 @@ var bioData_ch = [
             '意外的很會讀空氣'
         ],
         outfits: [
-            { name: '通常服', url: 'xxx.png' },
-            { name: '4號', url: 'xxx.png' }
+            { name: '通常服', url: 'profile/ellie.png' }
         ],
         bio: [
             '亞克索爾的妹妹，青春洋溢的女生，雖然很好相處但不夠成熟，正義感過剩。經常在網路上炎上別人。',
@@ -423,8 +424,7 @@ var bioData_ch = [
             '其實很受不了孤獨感',
         ],
         outfits: [
-            { name: '通常服', url: 'xxx.png' },
-            { name: '8號', url: 'xxx.png' }
+            { name: '通常服', url: 'profile/edd.png' }
         ],
         bio: [
             '米奈瓦的雙胞胎弟弟，在地下成長，但和米奈瓦不同，對於在地下受到的待遇跟生活很不滿意，在那天聽到潮色姊妹的歌之後下定決心，不管用什麼手段都想逃脫。',
@@ -447,8 +447,7 @@ var bioData_ch = [
             '是個中規中矩的老實人'
         ],
         outfits: [
-            { name: '通常服', url: 'xxx.png' },
-            { name: '章魚軍團', url: 'xxx.png' }
+            { name: '通常服', url: 'profile/minerva.png' }
         ],
         bio: [
             '在地下成長，才剛能拿槍就被強迫接受格外嚴苛的訓練，起先過得很不快樂，但是久了對軍團產生深厚的感情，即使聽到了那天潮色姊妹的歌或是有了逃生的機會都沒有打算離開，甚至對陸上世界的出現感到不滿。',
@@ -471,7 +470,7 @@ var bioData_ch = [
             '是個老是出包的白痴'
         ],
         outfits: [
-            { name: '通常服', url: 'xxx.png' }
+            { name: '通常服', url: 'profile/simon.png' }
         ],
         bio: [
             '章魚軍團的人，非常非常癡迷DJ芥葵將軍，自稱是「將軍的心腹」或「章魚軍團的天才工程師」之類的。有著非凡高超的機器人工程知識和技術。',
@@ -495,7 +494,7 @@ var bioData_ch = [
             '算是種天然呆？'
         ],
         outfits: [
-            { name: '通常服', url: 'xxx.png' }
+            { name: '通常服', url: 'profile/rj.png' }
         ],
         bio: [
             '身世和來歷都不明的傢伙，他似乎也沒有要透露的意願。',

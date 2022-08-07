@@ -4,12 +4,12 @@
 
 var siteData_en = {
     title : "Haze's Splatverse",
-    description : ["Splatoon OC info/bio dump", "by twitter@haze111nuts"]
+    description : ["Splatoon OC info/bio dump", "Currently under construction :/"]
 }
 
 var siteData_ch = {
     title : "HAZE家漆彈小孩",
-    description : ["懶人總整理+全員介紹頁面", "素材先放草圖😔有生之年慢慢補"]
+    description : ["懶人總整理+全員介紹頁面", "施工中😔有生之年慢慢加素材跟設定"]
 }
 
 //=====================//
@@ -213,12 +213,23 @@ function setUpBioPageFor(charaBioData){
     if(charaBioData.refsheets){
         for(const imgUrl of charaBioData.refsheets){
             refSheetHTML += "<a data-lightbox='img' href='"+ imgUrl +"' >";
-            refSheetHTML += "<div><img src='"+ imgUrl +"'></div>";
+            refSheetHTML += "<div></div>";
             refSheetHTML += "</a>";
         }
     }
     $(".refSheets").html(refSheetHTML);
     lightbox();
+
+    if(charaBioData.refsheets){
+        for(var i=0; i<charaBioData.refsheets.length; i++){
+            console.log("url("+charaBioData.refsheets[i]+") cover");
+            $(".refSheets").children().children().eq(i).css("background","url("+charaBioData.refsheets[i]+") no-repeat");
+            $(".refSheets").children().children().eq(i).css("background-size","210%");
+            $(".refSheets").children().children().eq(i).css("background-position","center top");
+
+        }
+    }
+
 
     //Set up character-specific page style
     var color = charaData[charaBioData.id].color;

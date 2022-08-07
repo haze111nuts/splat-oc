@@ -436,7 +436,7 @@ ul {
   z-index: 10;
 }
 .bioArt > img {
-  left: 120px;
+  left: 130px;
   top: 350px;
   position: absolute;
   -webkit-transition: all 0.4s;
@@ -533,11 +533,7 @@ ul {
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
   transition: all 0.4s;
-}
-.refSheets > a div img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  image-rendering: -moz-crisp-edges;
 }
 
 .md-window .md-content .bioBasic,
@@ -660,7 +656,7 @@ ul {
 .charaPhoto {
   width: 120px;
   height: 120px;
-  background-image: url(../assets/img/profilePics.png);
+  background-image: url(../assets/img/profile/_thumbs.png);
   background-repeat: no-repeat;
   background-size: 360px auto;
   margin: 8px auto 0px auto;
