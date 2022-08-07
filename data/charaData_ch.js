@@ -6,7 +6,12 @@ var relationshipData_ch = [
         chara1: "yoni",
         chara2: "ryan",
         desc1: "好強！！！",
-        desc2: "臭小鬼殺了你"
+        desc2: "臭小鬼殺了你",
+        content: [
+            "尤尼是少數能偶爾打中RJ的人，這導致RJ對他很不爽",
+            "尤尼每次對上RJ時總是忍不住想要先瞄他，常常造成兩人同時互相KO對方。",
+            "似乎一起參與了什麼可疑活動。"
+        ]
     },
     {
         id: "YE",
@@ -16,8 +21,7 @@ var relationshipData_ch = [
         desc1: "吃軟糖ㄇ！",
         desc2: "超怪的人笑死",
         content: [
-            "Rotton Buttons剛組成不久後認識的",
-            "艾莉因為接觸到一些"
+            "Rotton Buttons剛組成不久後認識的。"
         ]
     },
     {
@@ -26,7 +30,10 @@ var relationshipData_ch = [
         chara1: "yoni",
         chara2: "xiu",
         desc1: "吃軟糖ㄇ！",
-        desc2: "覺得有點危險"
+        desc2: "覺得有點危險",
+        content: [
+            "藉由小布認識的"
+       ]
     },
     {
         id: "RL",
@@ -34,7 +41,11 @@ var relationshipData_ch = [
         chara1: "lance",
         chara2: "ryan",
         desc1: "不要再添麻煩了",
-        desc2: "什麼麻煩？"
+        desc2: "什麼麻煩？",
+        content: [
+            "總是會互相諷刺對方",
+            ""
+       ]
     },
     {
         id: "LM",
@@ -42,7 +53,11 @@ var relationshipData_ch = [
         chara1: "lance",
         chara2: "minerva",
         desc1: "有潛力的新人",
-        desc2: "不太敢搭話"
+        desc2: "不太敢搭話",
+        content: [
+            "",
+       ]
+  
     },
     {
         id: "LY",
@@ -54,7 +69,7 @@ var relationshipData_ch = [
         content: [
             "兩人住在一起。",
             "蘭斯把家裡的某些共用空間(例如冰箱)完美地劃分成兩半來保障自己的私人空間，因為尤尼常常好奇亂翻蘭斯東西，雖然這並沒有完全停止尤尼亂看。",
-            "關係並不差"
+            "蘭斯大概知道尤尼似乎在跟可疑團體打交道，他並不希望尤尼誤入歧途。"
         ]
     },
     {
@@ -91,7 +106,10 @@ var relationshipData_ch = [
         chara1: "xiu",
         chara2: "edd",
         desc1: "酸言酸語",
-        desc2: "酸言酸語"
+        desc2: "酸言酸語",
+        content: [
+            "在同個酒吧打工，修是調酒師學徒，艾德是送酒的服務生"
+        ]
     },
     {
         id: "XE",
@@ -126,7 +144,11 @@ var relationshipData_ch = [
         chara1: "ryan",
         chara2: "hannah",
         desc1: "遵從指示",
-        desc2: "覺得有點危險"
+        desc2: "覺得有點危險",
+        content: [
+            "漢娜透過蘭斯認識了RJ才得以將他招入隊。",
+            ""
+        ]
     },
     {
         id: "LH",
@@ -227,7 +249,12 @@ var relationshipData_ch = [
         chara1: "ryan",
         chara2: "minerva",
         desc1: "有何貴幹?",
-        desc2: "可怕的人…"
+        desc2: "可怕的人…",
+        content: [
+            "Often have sibling squabble and throws mean word around, but deep down still cared for each other",
+            "they cares for their grandma together.",
+            "-只有被妹妹打的時候才會縮起來。"
+        ]
     },
     {
         id: "RB",
