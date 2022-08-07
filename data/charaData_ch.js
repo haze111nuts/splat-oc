@@ -205,7 +205,7 @@ var relationshipData_ch = [
         id: "HB",
         label: "姊弟",
         chara1: "blade",
-        chara2: "hannah",
+        chara2: "hannah", 
         desc1: "畏懼",
         desc2: "家暴＆厭惡",
         content: [
@@ -286,7 +286,11 @@ var relationshipData_ch = [
         chara1: "blade",
         chara2: "edd",
         desc1: "別煩",
-        desc2: "想更親密"
+        desc2: "想更親密",
+        content: ["艾德在深海地鐵認識了做為三號的小布",
+        "艾德自從認識做為3號的小布後就成天只想著他，希望可以成為他生活中的一部份",
+        "艾德老是沒事就忍不住開始意淫小布，讓小布很困擾",
+        ""]
     },
     {
         id: "EA",
