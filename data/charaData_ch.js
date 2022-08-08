@@ -206,7 +206,7 @@ var relationshipData_ch = [
         label: "姊弟",
         desc1: "畏懼",
         desc2: "家暴＆厭惡",
-        descDetail1: "能不要遇到就好了<br>對不起…",
+        descDetail1: "什麼都做不了<br>對不起…",
         descDetail2: "看到就噁心<br>讓人憤怒的存在",
         content: [
             "自從兩人的媽媽過世以後漢娜就開始家暴小布，言語和肢體上都有。漢娜脾氣好的時候冷落他，脾氣差的時候會用很惡劣的言語去刺激或是乾脆揍他。",
