@@ -31,6 +31,19 @@ ul {
   list-style: none;
 }
 
+.dash {
+  position: relative;
+  list-style: none;
+  margin-left: 0;
+  padding-left: 1.2em;
+}
+
+.dash li:before {
+  content: "-";
+  position: absolute;
+  left: 0;
+}
+
 .langNav {
   border: 3px solid dimgrey;
   width: 120px;
