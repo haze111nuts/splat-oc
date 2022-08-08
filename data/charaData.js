@@ -654,5 +654,9 @@ var bioData_en = [
     }
 ]
 
+var relationPhotoReverse = [
+    "HB","EB"
+]
+
 
 
