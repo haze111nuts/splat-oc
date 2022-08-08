@@ -426,9 +426,9 @@ $(document).ready(function(){
     checkWindowSize();
     $(window).resize(checkWindowSize);
 
-    currentLang = "EN";
-    $(".langNav").addClass("focusOnCH");
-    setupStuff(relationshipData_en, bioData_en, siteData_en);
+    currentLang = "CH";
+    $(".langNav").addClass("focusOnEN");
+    setupStuff(relationshipData_ch, bioData_ch, siteData_ch);
 
 
     $(".langCh").click(function() {
