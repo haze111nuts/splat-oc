@@ -706,6 +706,7 @@ $rel-arrow-width: 160px;
   padding-top: 20px;
   border-top: 1px gray solid ;
   overflow-y: auto;
+  position: static !important;
 }
 
 .relDetail li{
@@ -758,6 +759,7 @@ $rel-arrow-width: 160px;
 
   .upper, .lower{
     height: 50px;
+    line-height: 130%;
   }
   .upper{
     top: 0;

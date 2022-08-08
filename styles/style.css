@@ -631,6 +631,7 @@ ul {
   padding-top: 20px;
   border-top: 1px gray solid;
   overflow-y: auto;
+  position: static !important;
 }
 
 .relDetail li {
@@ -685,6 +686,7 @@ ul {
 }
 .relTitle .upper, .relTitle .lower {
   height: 50px;
+  line-height: 130%;
 }
 .relTitle .upper {
   top: 0;
