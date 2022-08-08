@@ -266,14 +266,15 @@ function setUpRelationPageFor(relationData){
 
     //fill label
     $(".relTitle .middle").html(relationData.label);
-    $(".relTitle .upper").html("<div>"+relationData.desc1+"</div>");
-    $(".relTitle .lower").html(relationData.desc2);
+    $(".relTitle .upper").html("<div>"+ (relationData.descDetail1||relationData.desc1)+"</div>");
+    $(".relTitle .lower").html((relationData.descDetail2||relationData.desc2));
 
     //fill detail
-    var relationContentHTML = "";
+    var relationContentHTML = "<ul>";
     for(const sentence of relationData.content){
-        relationContentHTML += "<p>"+ sentence +"</p>";
+        relationContentHTML += "<li>"+ sentence +"</li>";
     }
+    relationContentHTML += "</ul>"
     $(".relDetail").html(relationContentHTML);
 
     //apply style
@@ -281,6 +282,8 @@ function setUpRelationPageFor(relationData){
     $(".relTitle .lower").css("color",charaData[relationData.chara2].color);
     $("#upperArrow").css("fill",charaData[relationData.chara1].color);
     $("#lowerArrow").css("fill",charaData[relationData.chara2].color);
+    $(".relationshipPage").css("border-left", "25px solid " + charaData[relationData.chara1].color);
+    $(".relationshipPage").css("border-right", "25px solid " + charaData[relationData.chara2].color);
 }
 
 function setUpOutfitSwitchEvents(charaBioData){
