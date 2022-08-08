@@ -7,10 +7,11 @@ var relationshipData_ch = [
         label: "一觸即發",        
         desc1: "好強！！！",
         desc2: "臭小鬼殺了你",
+        descDetail1: "大哥的超強超兇隊友？？！！",
+        descDetail2: "死吧過動兒。",
         content: [
-            "尤尼是少數能偶爾打中RJ的人，這導致RJ對他很不爽",
-            "尤尼每次對上RJ時總是忍不住想要先瞄他，常常造成兩人同時互相KO對方。",
-            "似乎一起參與了什麼可疑活動。"
+            "尤尼是少數在對戰時能偶爾打中RJ的人，雖然每次都只是互相ＫＯ，但這導致RJ對他很不爽",
+            "兩人似乎一起參與了一些可疑活動。"
         ]
     },
     {
@@ -21,7 +22,7 @@ var relationshipData_ch = [
         desc1: "吃軟糖ㄇ！",
         desc2: "超怪的人笑死",
         descDetail1: "亞克的老妹耶<br>安安～～～～",
-        descDetail2: "讓人哭笑不得的<br>超怪傢伙",        
+        descDetail2: "讓人哭笑不得的<br>超怪傢伙",
         content: [
             "Rotton Buttons剛組成不久後認識的。"
         ]
@@ -162,7 +163,7 @@ var relationshipData_ch = [
         desc1: "遵從指示",
         desc2: "覺得有點危險",
         descDetail1: "我只做<br>合約概括到的事情",
-        descDetail2: "幹別把我們隊<br>搞得像黑道好嗎",        
+        descDetail2: "幹別把我們隊<br>搞得像黑道好嗎",
         content: [
             "漢娜透過蘭斯認識了RJ才得以將他招入隊。",
             ""
@@ -250,6 +251,8 @@ var relationshipData_ch = [
         label: "親友&勁敵",        
         desc1: "別煩",
         desc2: "有好感",
+        descDetail1: "不可或缺的大親友<br>偶爾讓人操心",
+        descDetail2: "各種方面都好喜歡<br>想一直一直混一起",
         content: [
             "雖然是打架認識的，但亞克對小布有點像是一見鍾情的感覺，亞克本人不知道就是了。",
             "亞克常常會跑去小布家拜訪，雖然希望可以跟小布獨處但是常事與願違。",
@@ -265,6 +268,8 @@ var relationshipData_ch = [
         label: "兄妹",        
         desc1: "吵死了！",
         desc2: "你才吵！",
+        descDetail1: "北七少打點架啦<br>奶奶很擔心你欸",
+        descDetail2: "幹不要吵<br>你才北七",   
         content: [
             "Often have sibling squabble and throws mean word around, but deep down still cared for each other",
             "they cares for their grandma together.",
@@ -277,12 +282,7 @@ var relationshipData_ch = [
         chara2: "minerva",
         label: "隊友",        
         desc1: "有何貴幹?",
-        desc2: "可怕的人…",
-        content: [
-            "Often have sibling squabble and throws mean word around, but deep down still cared for each other",
-            "they cares for their grandma together.",
-            "-只有被妹妹打的時候才會縮起來。"
-        ]
+        desc2: "可怕的人…"
     },
     {
         id: "RB",
@@ -315,6 +315,8 @@ var relationshipData_ch = [
         label: "朋友",        
         desc1: "別煩",
         desc2: "想更親密",
+        descDetail1: "這傢伙<br>也太黏了吧…",
+        descDetail2: "真是完美的存在",          
         content: ["艾德在深海地鐵認識了做為三號的小布",
         "艾德自從認識做為3號的小布後就成天只想著他，希望可以成為他生活中的一部份",
         "艾德老是沒事就忍不住開始意淫小布，讓小布很困擾",
