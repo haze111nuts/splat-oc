@@ -23,8 +23,7 @@ function buildChart(relationshipData){
     for (var chara in charaData) {
         chartHTML += "<li class='charaPhotoBox md-trigger' id='"+ chara +"' data-modal='modal-chara'>";
         chartHTML += "<div class='charaPhoto "+ chara +"Photo'></div>";
-        var name = (chara == "ryan") ? "R.J." : chara.charAt(0).toUpperCase() + chara.slice(1);
-        chartHTML += "<div class='nameSticker'>"+ name +"</div>";
+        chartHTML += "<div class='nameSticker'>"+ getPrintName(chara) +"</div>";
         chartHTML += "</li>";
     }
     for(var j=0; j<relationshipData.length; j++){
@@ -244,14 +243,24 @@ function setUpBioPageFor(charaBioData){
     
 }
 
+function getPrintName(name) {
+    return (name == "ryan") ? "R.J." : name.charAt(0).toUpperCase() + name.slice(1);
+}
+
 function setUpRelationPageFor(relationData){
     //fill two profile photo and name
-    var chara1name = (relationData.chara1 == "ryan") ? "R.J." : relationData.chara1.charAt(0).toUpperCase() + relationData.chara1.slice(1);
-    var chara2name = (relationData.chara2 == "ryan") ? "R.J." : relationData.chara2.charAt(0).toUpperCase() + relationData.chara2.slice(1);
-    var chara1photoHTML= "<div class='charaPhoto "+relationData.chara1+"Photo'></div>"
-                    + "<div class='nameSticker'>"+ chara1name +"</div>";
-    var chara2photoHTML= "<div class='charaPhoto "+relationData.chara2+"Photo'></div>"
-                    + "<div class='nameSticker'>"+ chara2name +"</div>";
+
+    var chara1 = relationData.chara1;
+    var chara2 = relationData.chara2;
+
+    if (relationPhotoReverse.includes(relationData.id)) {
+        [chara1, chara2] = [chara2, chara1];
+    }
+
+    var chara1photoHTML= "<div class='charaPhoto "+chara1+"Photo'></div>"
+                    + "<div class='nameSticker'>"+ getPrintName(chara1) +"</div>";
+    var chara2photoHTML= "<div class='charaPhoto "+chara2+"Photo'></div>"
+                    + "<div class='nameSticker'>"+ getPrintName(chara2) +"</div>";
     $(".relPhotoBox:nth-child(1)").html(chara1photoHTML);
     $(".relPhotoBox:nth-child(2)").html(chara2photoHTML);
 
