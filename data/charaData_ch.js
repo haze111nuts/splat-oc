@@ -277,9 +277,9 @@ var relationshipData_ch = [
         descDetail1: "北七少打點架啦<br>奶奶很擔心你欸",
         descDetail2: "幹不要吵<br>你才北七",   
         content: [
-            "Often have sibling squabble and throws mean word around, but deep down still cared for each other",
-            "they cares for their grandma together.",
-            "-只有被妹妹打的時候才會縮起來。"
+            "兩人經常鬥嘴互嗆，但是兩人心理都還是會關心對方，大概是越吵感情越好的那種手足。",
+            "會一起照顧奶奶，都是奶奶的乖孫。",
+            "平時跟別人打架很兇的亞克只有被妹妹打的時候才會縮起來。"
         ]
     },
     {
