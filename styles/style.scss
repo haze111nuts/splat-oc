@@ -688,10 +688,9 @@ ul{
 //===   Style for Relationship page   ===//
 //=======================================//
 
-$rel-page-width: 600px;
-$rel-page-height: 550px;
-$rel-page-outerPaddingLR: 50px;
-$rel-page-innerPaddingLR: 20px;
+$rel-page-width: 550px;
+$rel-page-height: 500px;
+$rel-page-outerPaddingLR: 40px;
 $rel-title-top-offset: -20px;
 $rel-arrow-width: 160px;
 
@@ -704,20 +703,24 @@ $rel-arrow-width: 160px;
 }
 
 .relDetail{
-  width: $rel-page-width - $rel-page-innerPaddingLR*2;
-  height: $rel-page-height - 90px;
-  padding: $rel-page-innerPaddingLR;
-  border: 1px gray solid ;
+  padding-top: 20px;
+  border-top: 1px gray solid ;
   overflow-y: auto;
 }
 
-.relDetail p{
+.relDetail li{
   margin-bottom: 15px;
 }
 
-.relationshipPage .relCloseBT{
+.relDetail li::before {
+  content: "- ";
+  display: inline-block; 
+  width: 1em;
+}
+
+.relCloseBT{
   top: -30px;
-  right: -30px;  
+  right: -45px;  
 }
 
 .relPhotoBox{
@@ -753,7 +756,6 @@ $rel-arrow-width: 160px;
     @include prefix(transform, translate(-50%, -50%), webkit moz ms);
   }
 
-  
   .upper, .lower{
     height: 50px;
   }
@@ -788,12 +790,12 @@ $rel-arrow-width: 160px;
 
   .relPhotoBox:nth-child(1){
     top: $rel-title-top-offset;
-    left: 120px;
+    left: 85px;
   }
 
   .relPhotoBox:nth-child(2){
     top: $rel-title-top-offset;
-    right: 120px;
+    right: 85px;
   }
 }
 
@@ -880,10 +882,6 @@ $rel-arrow-width: 160px;
 }
 
 
-//====================================//
-//===   Character specific style   ===//
-//====================================//
-
 @each $name, $data in $chara {
   .#{$name} {
     color: map.get($data, "color");
@@ -947,7 +945,9 @@ $rel-arrow-width: 160px;
     top: 20px;
     left: 20px;
   }
-
+  .relationshipPage{
+    margin-top: 100px;
+  }
   .charaBio{
     width: 100%;
     height: 100%;
@@ -995,8 +995,35 @@ $rel-arrow-width: 160px;
       }
     }
     .relationshipPage{
-      width: 100%;
+      margin-top: 120px;
+      width: 90%;
+      padding-left: 0px;
+      padding-right: 0px;
+      border-width: 5px !important;
     }
+    .relDetail{
+      padding: 20px;
+    }
+    .relCloseBT{
+      top: -120px;
+      right: 0px;  
+    }
+
+    .relTitle{
+      margin: 0 auto;
+      width: 25%;
+      left: 50%;
+    }
+
+    .relationshipPage{
+      .relPhotoBox:nth-child(1){
+        left: 15px;
+      }
+      .relPhotoBox:nth-child(2){
+        right: 15px;
+      }
+    }
+
   }
 
   @media only screen and (max-width: 479px) {
