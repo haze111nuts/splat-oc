@@ -890,7 +890,7 @@ $rel-arrow-width: 160px;
 .charaPhoto{
   width: $chara-photo-size;
   height: $chara-photo-size;
-  background-image: url(../assets/img/profile/_thumbs.png);
+  background-image: url(../assets/img/profile/0thumbs.png);
   background-repeat: no-repeat;
   background-size: $chara-photo-size * math.div($raw-photo-asset-x, $raw-photo-size) auto;
   margin: 8px auto 0px auto;
