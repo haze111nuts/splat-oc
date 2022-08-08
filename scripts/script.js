@@ -250,24 +250,33 @@ function getPrintName(name) {
 function setUpRelationPageFor(relationData){
     //fill two profile photo and name
 
-    var chara1 = relationData.chara1;
-    var chara2 = relationData.chara2;
+    var chara1 = {
+        name: relationData.chara1,
+        desc: relationData.desc1,
+        descDetail: relationData.descDetail1
+    }
+    
+    var chara2 = {
+        name: relationData.chara2,
+        desc: relationData.desc2,
+        descDetail: relationData.descDetail2
+    }
 
     if (relationPhotoReverse.includes(relationData.id)) {
         [chara1, chara2] = [chara2, chara1];
     }
 
-    var chara1photoHTML= "<div class='charaPhoto "+chara1+"Photo'></div>"
-                    + "<div class='nameSticker'>"+ getPrintName(chara1) +"</div>";
-    var chara2photoHTML= "<div class='charaPhoto "+chara2+"Photo'></div>"
-                    + "<div class='nameSticker'>"+ getPrintName(chara2) +"</div>";
+    var chara1photoHTML= "<div class='charaPhoto "+chara1.name+"Photo'></div>"
+                    + "<div class='nameSticker'>"+ getPrintName(chara1.name) +"</div>";
+    var chara2photoHTML= "<div class='charaPhoto "+chara2.name+"Photo'></div>"
+                    + "<div class='nameSticker'>"+ getPrintName(chara2.name) +"</div>";
     $(".relPhotoBox:nth-child(1)").html(chara1photoHTML);
     $(".relPhotoBox:nth-child(2)").html(chara2photoHTML);
 
     //fill label
     $(".relTitle .middle").html(relationData.label);
-    $(".relTitle .upper").html("<div>"+ (relationData.descDetail1||relationData.desc1)+"</div>");
-    $(".relTitle .lower").html((relationData.descDetail2||relationData.desc2));
+    $(".relTitle .upper").html("<div>"+ (chara1.descDetail||chara1.desc)+"</div>");
+    $(".relTitle .lower").html((chara2.descDetail||chara2.desc));
 
     //fill detail
     var relationContentHTML = "<ul>";
@@ -278,12 +287,12 @@ function setUpRelationPageFor(relationData){
     $(".relDetail").html(relationContentHTML);
 
     //apply style
-    $(".relTitle .upper").css("color",charaData[chara1].color);
-    $(".relTitle .lower").css("color",charaData[chara2].color);
-    $("#upperArrow").css("fill",charaData[chara1].color);
-    $("#lowerArrow").css("fill",charaData[chara2].color);
-    $(".relationshipPage").css("border-left", "25px solid " + charaData[chara1].color);
-    $(".relationshipPage").css("border-right", "25px solid " + charaData[chara2].color);
+    $(".relTitle .upper").css("color",charaData[chara1.name].color);
+    $(".relTitle .lower").css("color",charaData[chara2.name].color);
+    $("#upperArrow").css("fill",charaData[chara1.name].color);
+    $("#lowerArrow").css("fill",charaData[chara2.name].color);
+    $(".relationshipPage").css("border-left", "25px solid " + charaData[chara1.name].color);
+    $(".relationshipPage").css("border-right", "25px solid " + charaData[chara2.name].color);
 }
 
 function setUpOutfitSwitchEvents(charaBioData){
