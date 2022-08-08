@@ -279,7 +279,7 @@ function setUpRelationPageFor(relationData){
     $(".relTitle .lower").html((chara2.descDetail||chara2.desc));
 
     //fill detail
-    var relationContentHTML = "<ul>";
+    var relationContentHTML = "<ul class='dash'>";
     for(const sentence of relationData.content){
         relationContentHTML += "<li>"+ sentence +"</li>";
     }
