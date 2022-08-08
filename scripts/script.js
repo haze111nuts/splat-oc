@@ -278,12 +278,12 @@ function setUpRelationPageFor(relationData){
     $(".relDetail").html(relationContentHTML);
 
     //apply style
-    $(".relTitle .upper").css("color",charaData[relationData.chara1].color);
-    $(".relTitle .lower").css("color",charaData[relationData.chara2].color);
-    $("#upperArrow").css("fill",charaData[relationData.chara1].color);
-    $("#lowerArrow").css("fill",charaData[relationData.chara2].color);
-    $(".relationshipPage").css("border-left", "25px solid " + charaData[relationData.chara1].color);
-    $(".relationshipPage").css("border-right", "25px solid " + charaData[relationData.chara2].color);
+    $(".relTitle .upper").css("color",charaData[chara1].color);
+    $(".relTitle .lower").css("color",charaData[chara2].color);
+    $("#upperArrow").css("fill",charaData[chara1].color);
+    $("#lowerArrow").css("fill",charaData[chara2].color);
+    $(".relationshipPage").css("border-left", "25px solid " + charaData[chara1].color);
+    $(".relationshipPage").css("border-right", "25px solid " + charaData[chara2].color);
 }
 
 function setUpOutfitSwitchEvents(charaBioData){

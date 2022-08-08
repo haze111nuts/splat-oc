@@ -33,6 +33,8 @@ var relationshipData_ch = [
         label: "朋友",        
         desc1: "吃軟糖ㄇ！",
         desc2: "覺得有點危險",
+        descDetail1: "我也可以<br>喝酒嗎！！！！！",
+        descDetail2: "不行啦！（這小子<br>真會添麻煩www）",        
         content: [
             "藉由小布認識的"
        ]
@@ -43,7 +45,7 @@ var relationshipData_ch = [
         chara2: "ryan",
         label: "親友",        
         desc1: "不要再添麻煩了",
-        desc2: "什麼麻煩？",
+        desc2: "什麼麻煩？",           
         content: [
             "總是會互相諷刺對方",
             ""
@@ -68,7 +70,7 @@ var relationshipData_ch = [
         label: "兄弟",        
         desc1: "(亂碰私人物品)",
         desc2: "(抓住扔出窗外)",
-        descDetail1: "大哥酷爆",
+        descDetail1: "大哥酷爆！！！",
         descDetail2: "到底要講幾遍<br>不要弄亂我東西",
         content: [
             "兩人住在一起。",
@@ -84,7 +86,7 @@ var relationshipData_ch = [
         desc1: "指導＆照顧",
         desc2: "仰慕＆喜歡",
         descDetail1: "需要幫忙的話<br>儘管說",
-        descDetail2: "很厲害很可靠<br>最喜歡了",        
+        descDetail2: "很厲害很可靠<br>最喜歡了…",        
         content: [
             "蘭斯是小布被姐姐欺負時的唯一依靠，小時候曾經跟小布說過\"我一定會保護你的\"這種話",
             "在小布變成3號前蘭斯是少數讓小布能支持下去的存在",
@@ -115,6 +117,8 @@ var relationshipData_ch = [
         label: "朋友&同事",        
         desc1: "酸言酸語",
         desc2: "酸言酸語",
+        descDetail1: "好難捉摸的傢伙啊",
+        descDetail2: "社交很有一套<br>有點羨慕",            
         content: [
             "在同個酒吧打工，修是調酒師學徒，艾德是送酒的服務生"
         ]
@@ -157,6 +161,8 @@ var relationshipData_ch = [
         label: "隊友",        
         desc1: "遵從指示",
         desc2: "覺得有點危險",
+        descDetail1: "我只做<br>合約概括到的事情",
+        descDetail2: "幹別把我們隊<br>搞得像黑道好嗎",        
         content: [
             "漢娜透過蘭斯認識了RJ才得以將他招入隊。",
             ""
