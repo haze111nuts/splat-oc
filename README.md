@@ -14,7 +14,8 @@
 - ~~add group shapes under chart (as svg?)~~
 - ~~change mouse highlight focus style~~
 - ~~set up actual profile pics~~
-- build realtionship info pop-up page ((in progress))
+- ~~build realtionship info pop-up page~~
+- light box is acting weird
 - drawing anims for groups
 - build warning pop-up page for TWCC
   - MENTAL/VERBAL ABUSE
@@ -22,5 +23,5 @@
   - DEPRESSION
   - PHYSICAL VIOLENCE
   - OPEN RELATIONSHIPS
-- flip bio detail to show trivia  
+- flip bio detail to show trivia??
 - cite sources somewhere

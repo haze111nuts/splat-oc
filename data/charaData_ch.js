@@ -4,7 +4,7 @@ var relationshipData_ch = [
         id: "RY",
         chara1: "yoni",
         chara2: "ryan",
-        label: "一觸即發",        
+        label: "一觸即發",
         desc1: "好強！！！",
         desc2: "臭小鬼殺了你",
         descDetail1: "大哥的超強超兇隊友？？！！",
@@ -18,7 +18,7 @@ var relationshipData_ch = [
         id: "YE",
         chara1: "yoni",
         chara2: "ellie",
-        label: "朋友",        
+        label: "朋友",
         desc1: "吃軟糖ㄇ！",
         desc2: "超怪的人笑死",
         descDetail1: "亞克的老妹耶<br>安安～～～～",
@@ -32,7 +32,7 @@ var relationshipData_ch = [
         id: "XY",
         chara1: "yoni",
         chara2: "xiu",
-        label: "朋友",        
+        label: "朋友",
         desc1: "吃軟糖ㄇ！",
         desc2: "覺得有點危險",
         descDetail1: "我也可以<br>喝酒嗎！！！！！",
@@ -40,13 +40,13 @@ var relationshipData_ch = [
         content: [
             "小布跟亞克在組隊招人時認識的，因為同是Rotton Buttons成員，很常一起出去玩。",
             "修時常吐槽尤尼，也常幫小布一起阻止尤尼添麻煩，不過因為修力氣不大也不太有耐心所以偶爾會演變成兩人一起鬧事。"
-       ]
+        ]
     },
     {
         id: "RL",
         chara1: "lance",
         chara2: "ryan",
-        label: "親友",        
+        label: "親友",
         desc1: "不要再添麻煩了",
         desc2: "什麼麻煩？",
         descDetail1: "只要不碰到界線<br>就是個很好的戰友跟朋友",
@@ -56,13 +56,13 @@ var relationshipData_ch = [
             "RJ基本上是因為被蘭斯說服才答應加入漢娜的隊。",
             "兩人連平常最普通的聊天吃飯付錢開作戰會議等事情都可以演變成生死搏鬥。看的米奈瓦滿頭問號。",
             "RJ時常捉弄蘭斯。例如神不知鬼不覺的把蘭斯的跳跳糖摸走然後吃掉或是直接當著他的面灑在地上。"
-       ]
+        ]
     },
     {
         id: "LM",
         chara1: "lance",
         chara2: "minerva",
-        label: "隊友",        
+        label: "隊友",
         desc1: "有潛力的新人",
         desc2: "不太敢搭話"
     },
@@ -70,7 +70,7 @@ var relationshipData_ch = [
         id: "LY",
         chara1: "yoni",
         chara2: "lance",
-        label: "兄弟",        
+        label: "兄弟",
         desc1: "(亂碰私人物品)",
         desc2: "(抓住扔出窗外)",
         descDetail1: "大哥酷爆！！！",
@@ -89,7 +89,7 @@ var relationshipData_ch = [
         desc1: "指導＆照顧",
         desc2: "仰慕＆喜歡",
         descDetail1: "需要幫忙的話<br>儘管說",
-        descDetail2: "很厲害很可靠<br>最喜歡了…",        
+        descDetail2: "很厲害很可靠<br>最喜歡了…",
         content: [
             "蘭斯從小就認識小布姊弟，所以兩人算是兒時玩伴。",
             "蘭斯一直都是小布被姐姐欺負時的唯一依靠，小時侯常對小布說「我一定會保護你的」",
@@ -119,11 +119,11 @@ var relationshipData_ch = [
         id: "EX",
         chara1: "xiu",
         chara2: "edd",
-        label: "朋友&同事",        
+        label: "朋友&同事",
         desc1: "酸言酸語",
         desc2: "酸言酸語",
         descDetail1: "好難捉摸的傢伙啊",
-        descDetail2: "社交很有一套呢<br>真羨慕。",            
+        descDetail2: "社交很有一套呢<br>真羨慕。",
         content: [
             "在同個餐酒吧工作，修是酒吧的學徒，艾德則是半職服務生。",
             "待補"
@@ -133,11 +133,11 @@ var relationshipData_ch = [
         id: "XE",
         chara1: "xiu",
         chara2: "ellie",
-        label: "網路閨密",        
+        label: "網路閨密",
         desc1: "信賴",
         desc2: "支持",
         descDetail1: "聊天八卦好搭檔<3",
-        descDetail2: "有發文一秒衝去按讚<br>くコ:彡~~~~",        
+        descDetail2: "有發文一秒衝去按讚<br>くコ:彡~~~~",
         content: [
             "兩人是透過亞克認識的，在亞克和修分手之後兩人開始變得比較常聊天。兩個人很合得來，也常常會聊八卦。",
             "修的社交帳號養的成功的原因有部分是因為艾莉的支持。",
@@ -148,7 +148,7 @@ var relationshipData_ch = [
         id: "XA",
         chara1: "xiu",
         chara2: "axel",
-        label: "已分手",        
+        label: "已分手",
         desc1: "別計較了嘛",
         desc2: "還是有點不爽",
         descDetail1: "其實對於被甩<br>一直都有些不甘心",
@@ -164,7 +164,7 @@ var relationshipData_ch = [
         id: "RH",
         chara1: "ryan",
         chara2: "hannah",
-        label: "隊友",        
+        label: "隊友",
         desc1: "遵從指示",
         desc2: "覺得有點危險",
         descDetail1: "我只做<br>合約概括到的事情",
@@ -177,11 +177,11 @@ var relationshipData_ch = [
         id: "LH",
         chara1: "lance",
         chara2: "hannah",
-        label: "舊識",        
+        label: "舊識",
         desc1: "很瞭解",
         desc2: "信賴",
         descDetail1: "真是老樣子",
-        descDetail2: "混帳快回我簡訊",        
+        descDetail2: "混帳快回我簡訊",
         content: [
             "蘭斯從小就和漢娜認識，是漢娜少數能信賴的人，漢娜常常跟他吐苦水。",
             "蘭斯有點像是漢娜的理智防線，總是能把漢娜從崩潰跟發狂的懸崖邊抓回來。",
@@ -192,7 +192,7 @@ var relationshipData_ch = [
         id: "YB",
         chara1: "yoni",
         chara2: "blade",
-        label: "兒時玩伴",        
+        label: "兒時玩伴",
         desc1: "小布讚讚",
         desc2: "別煩",
         descDetail1: "小布小布小布<br>快快快快陪我玩",
@@ -208,20 +208,20 @@ var relationshipData_ch = [
         id: "YA",
         chara1: "yoni",
         chara2: "axel",
-        label: "朋友",        
+        label: "朋友",
         desc1: "吃軟糖ㄇ！",
         desc2: "怪胎欸",
         descDetail1: "小惡愛生氣～～",
         descDetail2: "少根筋的白癡<br>（但是個很好玩的傢伙）",
         content: [
             "待補"
-       ]
+        ]
     },
     {
         id: "BE",
         chara1: "ellie",
         chara2: "blade",
-        label: "朋友",        
+        label: "朋友",
         desc1: "在意＆崇拜",
         desc2: "有點吵但人不錯",
         descDetail1: "酷酷的又很貼心<br>超級在意的啦",
@@ -252,7 +252,7 @@ var relationshipData_ch = [
         id: "AB",
         chara1: "blade",
         chara2: "axel",
-        label: "親友&勁敵",        
+        label: "親友&勁敵",
         desc1: "別煩",
         desc2: "有好感",
         descDetail1: "不可或缺的大親友<br>偶爾讓人操心",
@@ -260,7 +260,7 @@ var relationshipData_ch = [
         content: [
             "第一次見面是亞克比賽隨機排到小布，兩人起了衝突並且演變成打架，最後搞到不歡而散時，忽然萌生了想和小布組隊的想法。接著為了要獲得小布聯絡方式還特地答應螢的請求，當上了４號。經過一番折騰後才終於如願以償。",
             "雖然是打架認識的，但亞克對小布有點像是一見鍾情的感覺，亞克本人不知情就是了。",
-            "亞克一直把小布當成厲害的勁敵，喜歡和他比較跟切磋。這份感情後來妥妥的演變成了強烈的好感。",            
+            "亞克一直把小布當成厲害的勁敵，喜歡和他比較跟切磋。這份感情後來妥妥的演變成了強烈的好感。",
             "亞克常常會跑去小布家拜訪，每次想跟小布獨處都事與願違，慘。",
             "不管是妹妹還是前男友都要跟他搶男人，這讓亞克非常靠北。",
             "雖然表面上一直表現得很煩，但是小布其實很珍惜亞克的陪伴。",
@@ -271,11 +271,11 @@ var relationshipData_ch = [
         id: "AE",
         chara1: "ellie",
         chara2: "axel",
-        label: "兄妹",        
+        label: "兄妹",
         desc1: "吵死了！",
         desc2: "你才吵！",
         descDetail1: "北七少打點架啦<br>奶奶很擔心你欸",
-        descDetail2: "幹不要吵<br>你才北七",   
+        descDetail2: "幹不要吵<br>你才北七",
         content: [
             "兄妹兩個人目前跟奶奶一起住。",
             "兩人經常鬥嘴互嗆，但實際上還是很關心對方，大概是越吵感情越好的那種手足。",
@@ -288,7 +288,7 @@ var relationshipData_ch = [
         id: "RM",
         chara1: "ryan",
         chara2: "minerva",
-        label: "隊友",        
+        label: "隊友",
         desc1: "有何貴幹?",
         desc2: "可怕的人…"
     },
@@ -296,7 +296,7 @@ var relationshipData_ch = [
         id: "RB",
         chara1: "ryan",
         chara2: "blade",
-        label: "微妙",        
+        label: "微妙",
         desc1: "真好欺負",
         desc2: "可怕的人…"
     },
@@ -304,23 +304,23 @@ var relationshipData_ch = [
         id: "HM",
         chara1: "hannah",
         chara2: "minerva",
-        label: "朋友",        
+        label: "朋友",
         desc1: "堅持拉進隊裡",
         desc2: "為什麼特別選我？",
         descDetail1: "廢話少說乖乖練槍<br>有才華就該培養",
-        descDetail2: "很好奇那尖銳的外在<br>之下的她是什麼樣的", 
+        descDetail2: "很好奇那尖銳的外在<br>之下的她是什麼樣的",
         content: [
             "初次會面是作為章魚軍團一員的米奈瓦對上了以３號身分出勤的漢娜，見到米奈瓦實力的漢娜希望她來陸上加入自己的隊伍，起先米奈瓦毫無意願，但在漢娜堅持不懈多次交戰後終於妥協，就這樣半推半就的到了陸上。",
             "對於為什麼漢娜如此執著要米奈瓦加入，漢娜一直沒有給出明確的答案。",
             "米奈瓦有辦法看穿漢娜心思，幾次漢娜情緒瀕臨崩潰時米奈瓦陪她聊天緩解，漢娜才對她稍微開了一點心房。",
             "待補"
-        ]        
+        ]
     },
     {
         id: "BM",
         chara1: "blade",
         chara2: "minerva",
-        label: "點頭之交",        
+        label: "點頭之交",
         desc1: "覺得很厲害",
         desc2: "有點感興趣"
     },
@@ -328,11 +328,11 @@ var relationshipData_ch = [
         id: "EB",
         chara1: "blade",
         chara2: "edd",
-        label: "朋友",        
+        label: "朋友",
         desc1: "別煩",
         desc2: "想更親密",
         descDetail1: "這傢伙<br>也太黏了吧…",
-        descDetail2: "真是完美的存在",          
+        descDetail2: "真是完美的存在",
         content: [
             "兩人相識的契機是深海地鐵事件，小布在當時作為３號出勤。",
             "艾德原本就對陸上世界有無限憧憬，並對魷魚這個種族抱有強烈好奇心，並因為無法脫離地下軍團一直在心智崩潰的邊緣。因此小布那天的現身跟幫助給他帶來了巨大的衝擊。被他說是什麼「幽暗絕望中的那一絲美好」，還會時不時說對方是「救世主」，讓小布聽得滿頭問號。",
@@ -344,11 +344,11 @@ var relationshipData_ch = [
         id: "EA",
         chara1: "axel",
         chara2: "edd",
-        label: "朋友?敵人?",        
+        label: "朋友?敵人?",
         desc1: "非常不爽",
         desc2: "令人不快",
         descDetail1: "一看到他的臉就<br>超想直接揍下去",
-        descDetail2: "礙事…礙事…礙事…",          
+        descDetail2: "礙事…礙事…礙事…",
         content: [
             "對亞克來說艾德就是一個莫名其妙忽然冒出然後毫無顧忌介入小布的交友圈的怪人，艾德的各種言行舉止都讓亞克非常不爽，老是被亞克嗆的艾德也不打算給他好臉色看。",
             "也不是完全合不來，偶爾還會主動互約訓練。兩人強烈的競爭心態跟似有似無的友情讓兩人的關係變得非常的微妙，一定程度上擦出了特別的火花。",
@@ -359,7 +359,7 @@ var relationshipData_ch = [
         id: "EM",
         chara1: "minerva",
         chara2: "edd",
-        label: "雙胞胎",        
+        label: "雙胞胎",
         desc1: "訓練對象",
         desc2: "追趕中"
     },
@@ -367,7 +367,7 @@ var relationshipData_ch = [
         id: "SB",
         chara1: "blade",
         chara2: "simon",
-        label: "英雄vs惡役",        
+        label: "英雄vs惡役",
         desc1: "你超煩",
         desc2: "永遠的勁敵"
     },
@@ -375,7 +375,7 @@ var relationshipData_ch = [
         id: "SA",
         chara1: "axel",
         chara2: "simon",
-        label: "死對頭",        
+        label: "死對頭",
         desc1: "幹臭章螂滾啦！",
         desc2: "浮魷垃圾閉嘴！"
     }
@@ -390,6 +390,7 @@ var bioData_ch = [
         dislike: '自己',
         rank: "S+",
         mains: "P槍、.96、炭滾",
+        favFood: { url: "", alt: "水果塔" },
         traits: [
             '陰鬱、孤僻、彆扭',
             '有嚴重焦慮問題',
@@ -409,7 +410,7 @@ var bioData_ch = [
         ],
         refsheets: [
             "assets/img/refsheets/blade1.png",
-        ]        
+        ]
     },
     {
         id: 'axel',
@@ -419,6 +420,7 @@ var bioData_ch = [
         dislike: '輸、被嘲笑',
         rank: "S+",
         mains: "雙槍類",
+        favFood: { url: "", alt: "奶奶的夏威夷蓋飯(鮭魚)" },
         traits: [
             '無禮、暴躁、囂張',
             '有憤怒管理問題',
@@ -432,11 +434,11 @@ var bioData_ch = [
         bio: [
             '小混混性格，因為脾氣暴躁常常鬧事所以總是跟人處不來。一直在找可以一起比賽且能信賴的隊友。',
             '一次比賽隨機排到小布，兩人起了衝突並且演變成打架，最後搞到不歡而散時，忽然萌生了想和小布組隊的想法便追了回去。結果在下水道追丟對方，接著誤打誤撞進入蛸壺峽谷遇到了螢，為了要問出小布的下落而同意當上了４號。經過一番折騰後終於如願再度和他見面，認識後一起組成了Rotten Buttons。',
-            '自從小布走進自己人生後，生氣跟打架的次數有變少的跡象。' 
+            '自從小布走進自己人生後，生氣跟打架的次數有變少的跡象。'
         ],
         refsheets: [
             "assets/img/refsheets/axel1.png",
-        ]     
+        ]
     },
     {
         id: 'xiu',
@@ -446,6 +448,7 @@ var bioData_ch = [
         dislike: '掉粉',
         rank: "S+",
         mains: "迴旋潑桶",
+        favFood: { url: "", alt: "用真的蘭姆酒做的提拉米蘇" },
         traits: [
             "有風度、外向、擅長社交",
             '有社交平台成癮問題',
@@ -463,7 +466,7 @@ var bioData_ch = [
         ],
         refsheets: [
             "assets/img/refsheets/xiu1.png",
-        ]       
+        ]
     },
     {
         id: 'yoni',
@@ -473,6 +476,7 @@ var bioData_ch = [
         dislike: '偷竊行為',
         rank: "S+",
         mains: "水栓或重滾",
+        favFood: { url: "", alt: "熊先生軟糖" },
         traits: [
             '精力旺盛、少根筋',
             '有毒癮問題',
@@ -501,6 +505,7 @@ var bioData_ch = [
         dislike: '自己的弟弟',
         rank: "X",
         mains: "N-zap、.52",
+        favFood: { url: "", alt: "能量飲料" },
         traits: [
             '凶狠，易怒，難親近',
             '有家暴弟弟的行為',
@@ -522,10 +527,11 @@ var bioData_ch = [
         id: 'lance',
         name: '蘭斯',
         gender: '男',
-        like: '跳跳糖',
+        like: '整潔',
         dislike: '計畫被打亂',
         rank: "X",
         mains: "爆裂槍和三點槍",
+        favFood: { url: "", alt: "跳跳糖" },
         traits: [
             '冷靜、正直、重義氣',
             'OCPD＆輕度潔癖',
@@ -550,6 +556,7 @@ var bioData_ch = [
         dislike: '自私的人',
         rank: "A",
         mains: "針槍",
+        favFood: { url: "", alt: "奶奶的夏威夷蓋飯(鮪魚)" },
         traits: [
             '開朗、幽默、重義氣',
             '會網路霸凌他人的SJW',
@@ -574,6 +581,7 @@ var bioData_ch = [
         dislike: '幽閉&黑暗場所',
         rank: "S+",
         mains: "北齋",
+        favFood: { url: "", alt: "義式奶凍" },
         traits: [
             '沉穩、表情不多',
             '做事不擇手段',
@@ -598,6 +606,7 @@ var bioData_ch = [
         dislike: '太亮的地方',
         rank: "X",
         mains: "章魚槍",
+        favFood: { url: "", alt: "碳酸水" },
         traits: [
             '忠心、誠實',
             '疑似斯德哥爾摩綜合症',
@@ -621,6 +630,7 @@ var bioData_ch = [
         dislike: '英雄',
         rank: "???",
         mains: "???",
+        favFood: { url: "", alt: "巧克力" },
         traits: [
             '自大、野心強、死纏不放',
             '似乎有妄想性障礙',
@@ -641,10 +651,11 @@ var bioData_ch = [
         id: 'ryan',
         name: 'R.J.',
         gender: '男',
-        like: '雙倍義式濃縮咖啡',
+        like: '復古槍械',
         dislike: '不守信用者',
         rank: "X",
         mains: "狙擊全般",
+        favFood: { url: "", alt: "雙倍義式濃縮咖啡" },
         traits: [
             '冷血、殘酷、沒耐性',
             '毫無同理心和憐憫心',

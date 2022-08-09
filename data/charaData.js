@@ -4,34 +4,34 @@
 //=====================//
 
 var relationshipPosData = [
-    {id:"RY", x: 170, y: 50, start:"ryan"},
-    {id:"YE", x: 1030, y: 50, start:"yoni"},
-    {id:"XY", x: 745, y: 25, start:"yoni"},
-    {id:"RL", x: 170, y: 130, start:"lance"},
-    {id:"LM", x: 220, y: 630, start:"minerva"},
-    {id:"LY", x: 455, y: 130, start:"lance"},
-    {id:"LB", x: 455, y: 280, start:"lance"},
-    {id:"XB", x: 715, y: 185, start:"xiu"},
-    {id:"EX", x: 1102, y: 745, start:"edd"},
-    {id:"XE", x: 1015, y: 145, start:"xiu"},
-    {id:"XA", x: 945, y: 265, start:"xiu"},
-    {id:"RH", x: 180, y: 405, start:"ryan"},
-    {id:"LH", x: 315, y: 280, start:"lance"},
-    {id:"YB", x: 560, y: 285, start:"yoni"},
-    {id:"YA", x: 710, y: 265, start:"yoni"},
-    {id:"BE", x: 850, y: 295, start:"blade"},
-    {id:"HB", x: 455, y: 405, start:"hannah"},
-    {id:"AB", x: 715, y: 405, start:"blade"},
-    {id:"AE", x: 1000, y: 435, start:"ellie"},
-    {id:"RM", x: 105, y: 670, start:"minerva"},
-    {id:"RB", x: 355, y: 520, start:"ryan"},
-    {id:"HM", x: 280, y: 560, start:"minerva"},
-    {id:"BM", x: 455, y: 480, start:"blade"},
-    {id:"EB", x: 570, y: 625, start:"edd"},
-    {id:"EA", x: 845, y: 625, start:"edd"},
-    {id:"EM", x: 560, y: 745, start:"minerva"},
-    {id:"SB", x: 780, y: 530, start:"simon"},
-    {id:"SA", x: 975, y: 520, start:"simon"}
+    { id: "RY", x: 170, y: 50, start: "ryan" },
+    { id: "YE", x: 1030, y: 50, start: "yoni" },
+    { id: "XY", x: 745, y: 25, start: "yoni" },
+    { id: "RL", x: 170, y: 130, start: "lance" },
+    { id: "LM", x: 220, y: 630, start: "minerva" },
+    { id: "LY", x: 455, y: 130, start: "lance" },
+    { id: "LB", x: 455, y: 280, start: "lance" },
+    { id: "XB", x: 715, y: 185, start: "xiu" },
+    { id: "EX", x: 1102, y: 745, start: "edd" },
+    { id: "XE", x: 1015, y: 145, start: "xiu" },
+    { id: "XA", x: 945, y: 265, start: "xiu" },
+    { id: "RH", x: 180, y: 405, start: "ryan" },
+    { id: "LH", x: 315, y: 280, start: "lance" },
+    { id: "YB", x: 560, y: 285, start: "yoni" },
+    { id: "YA", x: 710, y: 265, start: "yoni" },
+    { id: "BE", x: 850, y: 295, start: "blade" },
+    { id: "HB", x: 455, y: 405, start: "hannah" },
+    { id: "AB", x: 715, y: 405, start: "blade" },
+    { id: "AE", x: 1000, y: 435, start: "ellie" },
+    { id: "RM", x: 105, y: 670, start: "minerva" },
+    { id: "RB", x: 355, y: 520, start: "ryan" },
+    { id: "HM", x: 280, y: 560, start: "minerva" },
+    { id: "BM", x: 455, y: 480, start: "blade" },
+    { id: "EB", x: 570, y: 625, start: "edd" },
+    { id: "EA", x: 845, y: 625, start: "edd" },
+    { id: "EM", x: 560, y: 745, start: "minerva" },
+    { id: "SB", x: 780, y: 530, start: "simon" },
+    { id: "SA", x: 975, y: 520, start: "simon" }
 ]
 
 const charaData = {
@@ -97,7 +97,7 @@ const charaData = {
     },
     ellie: {
         jpname: 'エステル（エリ）',
-        age: 14,        
+        age: 14,
         color: "rgb(17, 148, 87)",
         photoPos: {
             x: 1005,
@@ -107,7 +107,7 @@ const charaData = {
     },
     edd: {
         jpname: 'エッド',
-        age: 18,    
+        age: 18,
         color: "rgb(211, 43, 43)",
         photoPos: {
             x: 630,
@@ -117,7 +117,7 @@ const charaData = {
     },
     minerva: {
         jpname: 'ミネルヴァ',
-        age: 18,         
+        age: 18,
         color: "rgb(167, 87, 83)",
         photoPos: {
             x: 360,
@@ -137,7 +137,7 @@ const charaData = {
     },
     ryan: {
         jpname: '',
-        age: 21,         
+        age: 21,
         color: "rgb(180, 180, 180)",
         photoPos: {
             x: 55,
@@ -150,11 +150,16 @@ const charaData = {
 var relationshipData_en = [
     {
         id: "RY",
-        label: "At war",
         chara1: "yoni",
         chara2: "ryan",
+        label: "At war",
         desc1: "So badass!!!",
-        desc2: "You little shit..."
+        desc2: "You little shit...",
+        descDetail1: "Bro's badass friend!!<br> SO COOL",
+        descDetail2: "Die, prick",
+        content: [
+            "--"
+        ]
     },
     {
         id: "YE",
@@ -283,7 +288,7 @@ var relationshipData_en = [
         chara2: "hannah",
         desc1: "Hates/afraid of",
         desc2: "Hates/torments"
-    },    
+    },
     {
         id: "AB",
         label: "Close Friends",
@@ -377,7 +382,7 @@ var relationshipData_en = [
 var bioData_en = [
     {
         id: 'blade',
-        name: 'Branden “Blade”',   
+        name: 'Branden “Blade”',
         gender: 'Male',
         like: 'To be alone',
         dislike: 'Self…and everything',
@@ -406,12 +411,13 @@ var bioData_en = [
     },
     {
         id: 'axel',
-        name: 'Axel',   
+        name: 'Axel',
         gender: 'Male',
         like: 'Compete',
         dislike: 'Losing or getting mocked',
         rank: "S+",
         mains: "Dualies",
+        favFood: { url: "", alt: "Grandma's Poke bowl (with Salmon)" },
         traits: [
             'Rude, brusque, cocky',
             'Has anger management issue',
@@ -429,16 +435,17 @@ var bioData_en = [
         ],
         refsheets: [
             "assets/img/refsheets/axel1.png",
-        ]     
+        ]
     },
     {
         id: 'xiu',
-        name: 'Xiu',    
+        name: 'Xiu',
         gender: 'Male',
         like: 'Coral collecting',
         dislike: 'Losing followers',
         rank: "S+",
         mains: "Sloshing Machine",
+        favFood: { url: "", alt: "Tiramisu wmade ith real rum" },
         traits: [
             "Dashing, charming, sociable",
             "Social media addict",
@@ -456,7 +463,7 @@ var bioData_en = [
         ],
         refsheets: [
             "assets/img/refsheets/xiu1.png",
-        ]        
+        ]
     },
     {
         id: 'yoni',
@@ -466,6 +473,7 @@ var bioData_en = [
         dislike: 'Theft',
         rank: "S+",
         mains: "Hydra, Dynamo Roller",
+        favFood: { url: "", alt: "Gummy Grizz" },
         traits: [
             'Goofy, happy, bizarre',
             'Is a junkie',
@@ -479,6 +487,7 @@ var bioData_en = [
         bio: [
             'A care-free and cheerful boy, also a bit of a joker who can be pretty naughty sometimes. Speaks and behaves in a comical and silly way. He finds a lot of things funny and will laugh everything off even when the timing is inappropriate.',
             'He loves getting high using...some substance, which is obviously banned in all sports. While wanting to play with Blade as a member of Rotten Buttons, he had cut out most of it. However, he wasn\'t able to fully resist the temptation of such things, so he has been looking for a solution so he can have it both ways',
+            'He is not very good at expressing his negative emotion.',
             'Seems to be involved in some shady business.'
         ],
         refsheets: [
@@ -493,6 +502,7 @@ var bioData_en = [
         dislike: 'Blade',
         rank: "X",
         mains: "N-zap, .52",
+        favFood: { url: "", alt: "Energy drink" },
         traits: [
             'Vicious, intimidating, hostile',
             'Abusive to her brother',
@@ -505,7 +515,7 @@ var bioData_en = [
         ],
         bio: [
             'Hannah was specially neglected by her mother when she was little, and her mother heavily favored the younger brother Blade over her,  this caused Hannah to hold a strong grudge against Blade. After their mother passed away, the grudge soon turned into abuse.',
-            'Splat battle has been an outlet for her anger. As she poured her heart and soul into the games, she became unreasonably good at them. She actively searched for long-term teammates and eventually got Lance, RJ and Minerva to form an elite team.', 
+            'Splat battle has been an outlet for her anger. As she poured her heart and soul into the games, she became unreasonably good at them. She actively searched for long-term teammates and eventually got Lance, RJ and Minerva to form an elite team.',
             'She was actually Captain Cuttlefish\'s the first candidate for Agent 3, but she quitted in order to focus on competitive games, which ultimately made Blade the next Agent 3. Now she only goes back to help when it\'s absolutely necessary.',
             'She is aware of her flaws and had thought of fixing the relationship with Blade, but gave up after failing to make any attempt, stating "It\'s too late now".'
         ]
@@ -514,10 +524,11 @@ var bioData_en = [
         id: 'lance',
         name: 'Lance',
         gender: 'Male',
-        like: 'Pop rocks candy',
+        like: 'Tidy places',
         dislike: 'Sudden change in plan',
         rank: "X",
         mains: "Blasters & Nozzlenose",
+        favFood: { url: "", alt: "Pop Rocks candy" },
         traits: [
             'Level-headed, righteous',
             'OCPD, a bit of a neat freak',
@@ -542,13 +553,14 @@ var bioData_en = [
         dislike: 'Selfish people',
         rank: "A+",
         mains: "Splash-o-matic",
+        favFood: { url: "", alt: "Grandma's Poke bowl (with Tuna)" },
         traits: [
             'Outgoing, humorous',
             'Is a SJW',
             'Engages in online shaming',
             'Loves to chitchat',
             'Is actually very empathetic'
-            
+
         ],
         outfits: [
             { name: 'Regular', url: 'profile/ellie.png' }
@@ -567,9 +579,11 @@ var bioData_en = [
         dislike: 'Dark places',
         rank: "S+",
         mains: "Octo brushes",
+        favFood: { url: "", alt: "Panna Cotta" },
         traits: [
             'Stoic, aloof, curious',
             'Rather cunning',
+            'Talks in a distant/dreamy way',
             'Daydreams about...stuff',
             'Horny af'
         ],
@@ -579,7 +593,7 @@ var bioData_en = [
         bio: [
             'Minerva\'s twin brother who was also born underground; however, unlike Minerva, he did not like the life and treatment he had as an Octarian. ',
             'After hearing Squid Sisters\' song on that fateful day, he started planning for escape, using any means he could; however, before anything can be done, he got caught in the whole Deepsea Metro shenanigans, though the whole thing did manage to give him a chance to leave at the end. During this ordeal he met Blade who was operating as Agent 3 at the time and took a great liking to him, after the befriended Blade, Edd became the fifth member of Rotten Buttons.',
-            'He managed to go through a hacking boot camp when he was still in Octarian army, so he knows his way around cyber security shenanigans.'
+            'He managed to graduate from a hacking boot camp when he was still in Octarian army, so he knows his way around cyber security shenanigans.'
         ]
     },
     {
@@ -590,6 +604,7 @@ var bioData_en = [
         dislike: 'Bright place',
         rank: "X",
         mains: "Octoshot",
+        favFood: { url: "", alt: "Carbonated water" },
         traits: [
             'Loyal, honest',
             'Stockholm Syndrome?',
@@ -613,6 +628,7 @@ var bioData_en = [
         dislike: 'Heroes',
         rank: "???",
         mains: "???",
+        favFood: { url: "", alt: "Chocolate" },
         traits: [
             'Arrogant, ambitious',
             'Delusional',
@@ -633,14 +649,15 @@ var bioData_en = [
         id: 'ryan',
         name: 'Ryan "RJ"',
         gender: 'Male',
-        like: 'Doppio espresso',
+        like: 'Retro firearms',
         dislike: 'Broken promise',
         rank: "X",
         mains: "All chargers",
+        favFood: { url: "", alt: "Doppio espresso" },
         traits: [
             'Cruel, cold-blooded, impatient',
             'Lack of empathy',
-            'Rather sadistic',            
+            'Rather sadistic',
             'Efficient and professional',
             'Doesn\'t know how to socialize'
         ],
@@ -655,7 +672,7 @@ var bioData_en = [
 ]
 
 var relationPhotoReverse = [
-    "HB","EB","LY","AB"
+    "HB", "EB", "LY", "AB"
 ]
 
 
