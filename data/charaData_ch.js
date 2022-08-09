@@ -527,7 +527,7 @@ var bioData_ch = [
         id: 'lance',
         name: '蘭斯',
         gender: '男',
-        like: '整潔',
+        like: '???',
         dislike: '計畫被打亂',
         rank: "X",
         mains: "爆裂槍和三點槍",

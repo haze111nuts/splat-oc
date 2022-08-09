@@ -388,6 +388,7 @@ var bioData_en = [
         dislike: 'Self…and everything',
         rank: "S+",
         mains: "Splattershot Pro, .96, Carbon",
+        favFood: { url: "", alt: "Fruit tart" },        
         traits: [
             'Gloomy, angsty, quiet',
             'Has anxiety issue',
@@ -524,7 +525,7 @@ var bioData_en = [
         id: 'lance',
         name: 'Lance',
         gender: 'Male',
-        like: 'Tidy places',
+        like: '???',
         dislike: 'Sudden change in plan',
         rank: "X",
         mains: "Blasters & Nozzlenose",
