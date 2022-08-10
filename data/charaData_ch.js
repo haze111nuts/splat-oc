@@ -549,7 +549,7 @@ var bioData_ch = [
         id: 'ellie',
         name: '艾絲泰爾（艾莉）',
         gender: '女',
-        like: '聊八卦、甜食',
+        like: '聊八卦',
         dislike: '自私的人',
         rank: "A",
         mains: "針槍",

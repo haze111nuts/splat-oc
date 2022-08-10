@@ -544,7 +544,7 @@ var bioData_en = [
         id: 'ellie',
         name: 'Estelle "Ellie"',
         gender: 'Female',
-        like: 'Gossip, sweets',
+        like: 'Gossips',
         dislike: 'Selfish people',
         rank: "A+",
         mains: "Splash-o-matic",
