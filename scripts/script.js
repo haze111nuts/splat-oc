@@ -187,12 +187,15 @@ function setUpBioPageFor(charaBioData) {
     var bioBasicHTML = "<table>";
     bioBasicHTML += "<tr><td>Name</td><td>" + charaBioData.name + "</td></tr>";
     bioBasicHTML += "<tr><td>Gender</td><td>" + charaBioData.gender + "</td></tr>";
-    bioBasicHTML += currentLang == "CH" ? "<tr><td>Age</td><td>" + charaData[charaBioData.id].age + "歲</td></tr>" : "";
+    bioBasicHTML += "<tr><td>Age</td><td>" + charaData[charaBioData.id].age + "</td></tr>";
+    //bioBasicHTML += currentLang == "CH" ? "<tr><td>Age</td><td>" + charaData[charaBioData.id].age + "歲</td></tr>" : "";
     // bioBasicHTML += "<tr><td>Sexuality</td><td><div class='iconBi'></div>or<div class='iconPan'></div></td></tr>";
     bioBasicHTML += "<tr><td>Likes</td><td>" + charaBioData.like + "</td></tr>";
     bioBasicHTML += "<tr><td>Dislike</td><td>" + charaBioData.dislike + "</td></tr>";
     bioBasicHTML += "<tr><td>Rank</td><td>" + charaBioData.rank + "</td></tr>";
     bioBasicHTML += "<tr><td>Mains</td><td>" + charaBioData.mains + "</td></tr>";
+    // bioBasicHTML += "<tr><td>Fav.<br>Food</td><td>" + "<img src='assets/img/profile/favfood/"+ charaBioData.id +".png' title='" + charaBioData.favFood + "'></td></tr>";
+
     bioBasicHTML += "</table>";
 
     var bioTraitsHTML = "<div class='traitLabel'>Traits</div>";
@@ -204,7 +207,7 @@ function setUpBioPageFor(charaBioData) {
     $(".bioBasic").html(bioBasicHTML + bioTraitsHTML);
 
     //Fill detailed bio panel
-    $(".bioDetailInner").html(printLinesWithBreak(charaBioData.bio, 2));
+    $(".bioDetailInner").html(printLinesWithBreak(parseToIcon(charaBioData.bio), 2));
     $(".bioDetailInner").scrollTop(0);
 
     //Fill refsheets
@@ -241,6 +244,21 @@ function setUpBioPageFor(charaBioData) {
         $(this).css("box-shadow", "-8px -8px 0px 0px black");
     });
 
+}
+
+function parseToIcon(bioLines) {
+    //help parses words formatted like this: %fruitTart/水果塔% to an image with title label
+    var result = [];
+    var regExp = /%([^%]+)\/([^%]+)%/g;
+    for (const line of bioLines) {
+        var matches = regExp.exec(line);
+        if (matches === null) {
+                result.push(line);
+        } else {
+            result.push(line.replaceAll(regExp, "<img class='item' src='assets/img/profile/items/"+ matches[1]+".png' title='" + matches[2] + "'>"));
+        }
+    }
+    return result;
 }
 
 function getPrintName(name) {
@@ -381,6 +399,8 @@ function printLinesWithBreak(array, numberOfBr) {
     }
     return result;
 }
+
+
 
 //======================================//
 //=== Thing to do when window resize ===//

@@ -527,6 +527,11 @@ ul {
   width: 310px;
   height: 350px;
 }
+.bioDetailInner .item {
+  height: 40px;
+  display: inline-block;
+  vertical-align: bottom;
+}
 
 .refSheets {
   bottom: 60px;

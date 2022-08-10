@@ -385,10 +385,9 @@ var bioData_en = [
         name: 'Branden “Blade”',
         gender: 'Male',
         like: 'To be alone',
-        dislike: 'Self…and everything',
+        dislike: 'Self',
         rank: "S+",
         mains: "Splattershot Pro, .96, Carbon",
-        favFood: { url: "", alt: "Fruit tart" },        
         traits: [
             'Gloomy, angsty, quiet',
             'Has anxiety issue',
@@ -418,7 +417,6 @@ var bioData_en = [
         dislike: 'Losing or getting mocked',
         rank: "S+",
         mains: "Dualies",
-        favFood: { url: "", alt: "Grandma's Poke bowl (with Salmon)" },
         traits: [
             'Rude, brusque, cocky',
             'Has anger management issue',
@@ -446,7 +444,6 @@ var bioData_en = [
         dislike: 'Losing followers',
         rank: "S+",
         mains: "Sloshing Machine",
-        favFood: { url: "", alt: "Tiramisu wmade ith real rum" },
         traits: [
             "Dashing, charming, sociable",
             "Social media addict",
@@ -474,7 +471,6 @@ var bioData_en = [
         dislike: 'Theft',
         rank: "S+",
         mains: "Hydra, Dynamo Roller",
-        favFood: { url: "", alt: "Gummy Grizz" },
         traits: [
             'Goofy, happy, bizarre',
             'Is a junkie',
@@ -503,7 +499,6 @@ var bioData_en = [
         dislike: 'Blade',
         rank: "X",
         mains: "N-zap, .52",
-        favFood: { url: "", alt: "Energy drink" },
         traits: [
             'Vicious, intimidating, hostile',
             'Abusive to her brother',
@@ -529,7 +524,6 @@ var bioData_en = [
         dislike: 'Sudden change in plan',
         rank: "X",
         mains: "Blasters & Nozzlenose",
-        favFood: { url: "", alt: "Pop Rocks candy" },
         traits: [
             'Level-headed, righteous',
             'OCPD, a bit of a neat freak',
@@ -554,7 +548,6 @@ var bioData_en = [
         dislike: 'Selfish people',
         rank: "A+",
         mains: "Splash-o-matic",
-        favFood: { url: "", alt: "Grandma's Poke bowl (with Tuna)" },
         traits: [
             'Outgoing, humorous',
             'Is a SJW',
@@ -580,7 +573,6 @@ var bioData_en = [
         dislike: 'Dark places',
         rank: "S+",
         mains: "Octo brushes",
-        favFood: { url: "", alt: "Panna Cotta" },
         traits: [
             'Stoic, aloof, curious',
             'Rather cunning',
@@ -605,7 +597,6 @@ var bioData_en = [
         dislike: 'Bright place',
         rank: "X",
         mains: "Octoshot",
-        favFood: { url: "", alt: "Carbonated water" },
         traits: [
             'Loyal, honest',
             'Stockholm Syndrome?',
@@ -629,7 +620,6 @@ var bioData_en = [
         dislike: 'Heroes',
         rank: "???",
         mains: "???",
-        favFood: { url: "", alt: "Chocolate" },
         traits: [
             'Arrogant, ambitious',
             'Delusional',
@@ -654,7 +644,6 @@ var bioData_en = [
         dislike: 'Broken promise',
         rank: "X",
         mains: "All chargers",
-        favFood: { url: "", alt: "Doppio espresso" },
         traits: [
             'Cruel, cold-blooded, impatient',
             'Lack of empathy',
@@ -667,7 +656,8 @@ var bioData_en = [
         ],
         bio: [
             'Not much is known about this guy and it\'s not like he has intention to disclose anything whatsoever.',
-            'One day he just appears out of nowhere in ranked battles like a phantom. Despite having very few battle records, his performance and splat counts are off the charts (to an extend that is almost alarming). At several points he got matched with Lance and they had multiple intense showdowns, the two ended up becoming friends. Hannah then took this chance to invite him into her team; though he did took the offer, he seems to be busy with some other shady business most of the time.'
+            'One day he just appears out of nowhere in ranked battles like a phantom. Despite having very few battle records, his performance and splat counts are off the charts (to an extend that is almost alarming). At several points he got matched with Lance and they had multiple intense showdowns, the two ended up becoming friends. Hannah then took this chance to invite him into her team; though he did took the offer, he seems to be busy with some other shady business most of the time.',
+            'Drinks only straight espresso.'
         ]
     }
 ]

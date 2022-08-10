@@ -12,7 +12,7 @@ $raw-photo-size: 150px;
 $raw-photo-asset-x: 450px; 
 $raw-photo-asset-y: 600px;
 
-@function photo-pos($index) {
+@function photo-bg-pos($index) {
   $array-x-length: math.div($raw-photo-asset-x, $raw-photo-size);
   $array-y-length: math.div($raw-photo-asset-y, $raw-photo-size);
 
@@ -609,13 +609,18 @@ ul{
   background-color: rgba(50, 50, 50, 1);
   line-height: 150%;
   right: -20px;
-  bottom: 50px;
+  bottom: 50px; 
 }
 .bioDetailInner{
   padding: 10px;
   overflow-y: auto;
   width:  310px;
   height: 350px;
+  .item{
+    height: 40px;
+    display: inline-block;
+    vertical-align: bottom;
+  }
 }
 
 // Detail Bio Panel
@@ -905,7 +910,7 @@ $rel-arrow-width: 160px;
 
   .#{$name}Photo {
     background-color: map.get($data, "color");
-    background-position: photo-pos(map.get($data, "photo-index"));
+    background-position: photo-bg-pos(map.get($data, "photo-index"));
   }
 }
 
