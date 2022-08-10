@@ -211,16 +211,22 @@ function setUpBioPageFor(charaBioData) {
     $(".bioDetailInner").scrollTop(0);
 
     //Fill refsheets
-    var refSheetHTML = "";
-    if (charaBioData.refsheets) {
-        for (const imgUrl of charaBioData.refsheets) {
-            refSheetHTML += "<a data-lightbox='img' href='" + imgUrl + "' >";
-            refSheetHTML += "<div></div>";
-            refSheetHTML += "</a>";
-        }
-    }
-    $(".refSheets").html(refSheetHTML);
-    lightbox();
+    // var refSheetHTML = "";
+    // if (charaBioData.refsheets) {
+    //     for (const imgUrl of charaBioData.refsheets) {
+    //         refSheetHTML += "<a href='" + imgUrl + "' >";
+    //         refSheetHTML += "<div></div>";
+    //         refSheetHTML += "</a>";
+    //     }
+    // }
+    // $(".refSheets").html(refSheetHTML);
+
+    // document.querySelector('.refSheets a').onclick = () => {
+    //     basicLightbox.create(`
+    //         <img src="`+imgUrl+`">
+    //     `).show()
+    // }
+
 
     if (charaBioData.refsheets) {
         for (var i = 0; i < charaBioData.refsheets.length; i++) {
