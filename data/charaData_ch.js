@@ -36,7 +36,7 @@ var relationshipData_ch = [
         desc1: "吃軟糖ㄇ！",
         desc2: "覺得有點危險",
         descDetail1: "我也可以<br>喝酒嗎！！！！！",
-        descDetail2: "不行啦（這小子<br>真會添麻煩www）",
+        descDetail2: "不行啦www<br>老愛添麻煩的小子",
         content: [
             "小布跟亞克在組隊招人時認識的，因為同是Rotton Buttons成員，很常一起出去玩。",
             "修時常吐槽尤尼，也常幫小布一起阻止尤尼添麻煩，不過因為修力氣不大也不太有耐心所以偶爾會演變成兩人一起鬧事。"
