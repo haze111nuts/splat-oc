@@ -452,13 +452,18 @@ $(document).ready(function () {
     checkWindowSize();
     $(window).resize(checkWindowSize);
 
-    // currentLang = "CH";
-    // $(".langNav").addClass("focusOnEN");
-    // setupStuff(relationshipData_ch, bioData_ch, siteData_ch);
 
-    currentLang = "EN";
-    $(".langNav").addClass("focusOnCH");
-    setupStuff(relationshipData_en, bioData_en, siteData_en);
+    var language = window.navigator.userLanguage || window.navigator.language;
+
+    if (language === "zh-TW" || language === "zh-CN") {
+        currentLang = "CH";
+        $(".langNav").addClass("focusOnEN");
+        setupStuff(relationshipData_ch, bioData_ch, siteData_ch);
+    } else {
+        currentLang = "EN";
+        $(".langNav").addClass("focusOnCH");
+        setupStuff(relationshipData_en, bioData_en, siteData_en);
+    }
 
     $(".langCh").click(function () {
         if (currentLang == "EN") {
