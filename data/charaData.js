@@ -158,7 +158,7 @@ var relationshipData_en = [
         descDetail1: "Bro's badass friend!!<br> SO COOL",
         descDetail2: "Die, prick",
         content: [
-            "--"
+            "Under construction..."
         ]
     },
     {
@@ -167,7 +167,10 @@ var relationshipData_en = [
         chara1: "yoni",
         chara2: "ellie",
         desc1: "*Shoves gummies*",
-        desc2: "So funny and weird"
+        desc2: "So funny and weird",
+        content: [
+            "Under construction..."
+        ]
     },
     {
         id: "XY",
@@ -175,7 +178,10 @@ var relationshipData_en = [
         chara1: "yoni",
         chara2: "xiu",
         desc1: "*Shoves gummies*",
-        desc2: "A little wary of"
+        desc2: "A little wary of",
+        content: [
+            "Under construction..."
+        ]
     },
     {
         id: "RL",
@@ -183,7 +189,10 @@ var relationshipData_en = [
         chara1: "lance",
         chara2: "ryan",
         desc1: "Get your shit together.",
-        desc2: "What shit?"
+        desc2: "What shit?",
+        content: [
+            "Under construction..."
+        ]
     },
     {
         id: "LM",
@@ -191,7 +200,10 @@ var relationshipData_en = [
         chara1: "lance",
         chara2: "minerva",
         desc1: "Newbie with potential",
-        desc2: "Slightly awkward"
+        desc2: "Slightly awkward",
+        content: [
+            "Under construction..."
+        ]
     },
     {
         id: "LY",
@@ -199,7 +211,10 @@ var relationshipData_en = [
         chara1: "yoni",
         chara2: "lance",
         desc1: "*Invades space*",
-        desc2: "*Punches*"
+        desc2: "*Punches*",
+        content: [
+            "Under construction..."
+        ]
     },
     {
         id: "LB",
@@ -207,7 +222,10 @@ var relationshipData_en = [
         chara1: "lance",
         chara2: "blade",
         desc1: "Cares",
-        desc2: "Admires/likes"
+        desc2: "Admires/likes",
+        content: [
+            "Under construction..."
+        ]
     },
     {
         id: "XB",
@@ -215,7 +233,10 @@ var relationshipData_en = [
         chara1: "xiu",
         chara2: "blade",
         desc1: "Really likes",
-        desc2: "Annoyed by"
+        desc2: "Annoyed by",
+        content: [
+            "Under construction..."
+        ]
     },
     {
         id: "EX",
@@ -223,7 +244,10 @@ var relationshipData_en = [
         chara1: "xiu",
         chara2: "edd",
         desc1: "Sarcastic",
-        desc2: "Tries to impress"
+        desc2: "Tries to impress",
+        content: [
+            "Under construction..."
+        ]
     },
     {
         id: "XE",
@@ -231,7 +255,10 @@ var relationshipData_en = [
         chara1: "xiu",
         chara2: "ellie",
         desc1: "Trusts",
-        desc2: "Supportive"
+        desc2: "Supportive",
+        content: [
+            "Under construction..."
+        ]
     },
     {
         id: "XA",
@@ -239,7 +266,10 @@ var relationshipData_en = [
         chara1: "xiu",
         chara2: "axel",
         desc1: "Hey chill",
-        desc2: "Not happy about"
+        desc2: "Not happy about",
+        content: [
+            "Under construction..."
+        ]
     },
     {
         id: "RH",
@@ -247,7 +277,10 @@ var relationshipData_en = [
         chara1: "ryan",
         chara2: "hannah",
         desc1: "Follows orders",
-        desc2: "A little wary of"
+        desc2: "A little wary of",
+        content: [
+            "Under construction..."
+        ]
     },
     {
         id: "LH",
@@ -255,7 +288,10 @@ var relationshipData_en = [
         chara1: "lance",
         chara2: "hannah",
         desc1: "Knows well",
-        desc2: "Trust"
+        desc2: "Trust",
+        content: [
+            "Under construction..."
+        ]
     },
     {
         id: "YB",
@@ -263,7 +299,10 @@ var relationshipData_en = [
         chara1: "yoni",
         chara2: "blade",
         desc1: "Love you bro!",
-        desc2: "Annoyed by"
+        desc2: "Annoyed by",
+        content: [
+            "Under construction..."
+        ]
     },
     {
         id: "YA",
@@ -271,7 +310,10 @@ var relationshipData_en = [
         chara1: "yoni",
         chara2: "axel",
         desc1: "*Shoves gummies*",
-        desc2: "What an oddball"
+        desc2: "What an oddball",
+        content: [
+            "Under construction..."
+        ]
     },
     {
         id: "BE",
@@ -279,7 +321,10 @@ var relationshipData_en = [
         chara1: "ellie",
         chara2: "blade",
         desc1: "Slight crush",
-        desc2: "A bit noisy"
+        desc2: "A bit noisy",
+        content: [
+            "Under construction..."
+        ]
     },
     {
         id: "HB",
@@ -287,7 +332,10 @@ var relationshipData_en = [
         chara1: "blade",
         chara2: "hannah",
         desc1: "Hates/afraid of",
-        desc2: "Hates/torments"
+        desc2: "Hates/torments",
+        content: [
+            "Under construction..."
+        ]
     },
     {
         id: "AB",
@@ -295,7 +343,10 @@ var relationshipData_en = [
         chara1: "blade",
         chara2: "axel",
         desc1: "Annoyed by",
-        desc2: "Has feelings for"
+        desc2: "Has feelings for",
+        content: [
+            "Under construction..."
+        ]
     },
     {
         id: "AE",
@@ -303,7 +354,10 @@ var relationshipData_en = [
         chara1: "ellie",
         chara2: "axel",
         desc1: "Nags",
-        desc2: "Urgh!"
+        desc2: "Urgh!",
+        content: [
+            "Under construction..."
+        ]
     },
     {
         id: "RM",
@@ -311,7 +365,10 @@ var relationshipData_en = [
         chara1: "ryan",
         chara2: "minerva",
         desc1: "Cooperates",
-        desc2: "Scary..."
+        desc2: "Scary...",
+        content: [
+            "Under construction..."
+        ]
     },
     {
         id: "RB",
@@ -319,7 +376,10 @@ var relationshipData_en = [
         chara1: "ryan",
         chara2: "blade",
         desc1: "Teases",
-        desc2: "Scary..."
+        desc2: "Scary...",
+        content: [
+            "Under construction..."
+        ]
     },
     {
         id: "HM",
@@ -327,7 +387,10 @@ var relationshipData_en = [
         chara1: "hannah",
         chara2: "minerva",
         desc1: "Recruits",
-        desc2: "Why me?"
+        desc2: "Why me?",
+        content: [
+            "Under construction..."
+        ]
     },
     {
         id: "BM",
@@ -335,7 +398,10 @@ var relationshipData_en = [
         chara1: "blade",
         chara2: "minerva",
         desc1: "Respects",
-        desc2: "Slightly interested"
+        desc2: "Slightly interested",
+        content: [
+            "Under construction..."
+        ]
     },
     {
         id: "EB",
@@ -343,7 +409,10 @@ var relationshipData_en = [
         chara1: "blade",
         chara2: "edd",
         desc1: "Annoyed by",
-        desc2: "Wants to be close"
+        desc2: "Wants to be close",
+        content: [
+            "Under construction..."
+        ]
     },
     {
         id: "EA",
@@ -351,7 +420,10 @@ var relationshipData_en = [
         chara1: "axel",
         chara2: "edd",
         desc1: "Dislike",
-        desc2: "Displeased"
+        desc2: "Displeased",
+        content: [
+            "Under construction..."
+        ]
     },
     {
         id: "EM",
@@ -359,7 +431,10 @@ var relationshipData_en = [
         chara1: "minerva",
         chara2: "edd",
         desc1: "Let's train",
-        desc2: "Catching up"
+        desc2: "Catching up",
+        content: [
+            "Under construction..."
+        ]
     },
     {
         id: "SB",
@@ -367,7 +442,10 @@ var relationshipData_en = [
         chara1: "blade",
         chara2: "simon",
         desc1: "God you're ANNOYING",
-        desc2: "One-side rivalry"
+        desc2: "One-side rivalry",
+        content: [
+            "Under construction..."
+        ]
     },
     {
         id: "SA",
@@ -375,7 +453,10 @@ var relationshipData_en = [
         chara1: "axel",
         chara2: "simon",
         desc1: "Fucking Octarian scum!",
-        desc2: "Shut up Inkling pest!"
+        desc2: "Shut up Inkling pest!",
+        content: [
+            "Under construction..."
+        ]
     }
 ]
 
