@@ -520,7 +520,7 @@ var bioData_en = [
         id: 'lance',
         name: 'Lance',
         gender: 'Male',
-        like: '???',
+        like: 'Pop rocks candy',
         dislike: 'Sudden change in plan',
         rank: "X",
         mains: "Blasters & Nozzlenose",
