@@ -530,7 +530,7 @@ var bioData_en = [
             "Social media addict",
             "Craves for attention",
             "Cares about his appearance",
-            "Kind of a drama queen"
+            "Is a train wreck inside"
         ],
         outfits: [
             { name: 'Regular', url: 'profile/xiu.png' }
