@@ -16,11 +16,27 @@
 		<script type="text/javascript" src="data/charaData_ch.js"></script>
 		<script type="text/javascript" src="scripts/script.js" ></script>
 		<script type="text/javascript" src="scripts/classie.js"></script>
+		<script type='text/javascript' src='scripts/loadImg.js'></script>
+		<script type='text/javascript'>
+			$(function(){
+				$("#core_only").click(function(){ 
+				$(".notcore").hide(); 
+				$(".core").show(); 
+				
+			   }); 
+			   $("#all").click(function(){ 
+				$(".core").show(); 
+				$(".notcore").show(); 
+			   }); 
+			   $('img').imgPreload();
+			})	
+		</script>
 
 		<link rel="stylesheet" href="styles/lightbox.css">
 		<link rel="stylesheet" href="styles/style.css" />
     </head>
     <body>
+		<div class="se-pre-con"></div>
 		<!--================-->
 		<!--   Bio pop-up   -->
 		<!--================-->
