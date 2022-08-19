@@ -66,14 +66,14 @@ function transformRotatedCharaIcon(selector, id, scale) {
 }
 
 function setUpRelationshipHoverEvent(relationshipData) {
-    $('[id^=rel_]').each(function () {
+    $("[id^=rel_]").each(function () {
         const id = this.id.replace("rel_", "");
         const relationship = relationshipData.find(r => r.id == id);
         const otherChara = Object.keys(charaData).filter(e => e !== relationship.chara1 && e !== relationship.chara2);
         const otherRelation = relationshipData.filter(r => r !== relationship);
         $(this).hover(function () {
             //$("#line_"+id).addClass("duoPath");
-            $("#line_" + id + "_fill").addClass('duoPath');
+            $("#line_" + id + "_fill").addClass("duoPath");
             $("#line_" + id + "_fill").addClass(relationship.chara1);
             $("#line_" + id).addClass(relationship.chara2);
             $("#line_" + id).addClass("duoPathBase");
@@ -88,7 +88,7 @@ function setUpRelationshipHoverEvent(relationshipData) {
             }
         }, function () {
             //$("#line_"+id).removeClass("duoPath");
-            $("#line_" + id + "_fill").removeClass('duoPath');
+            $("#line_" + id + "_fill").removeClass("duoPath");
             $("#line_" + id + "_fill").removeClass(relationship.chara1);
             $("#line_" + id).removeClass(relationship.chara2);
             $("#line_" + id).removeClass("duoPathBase");
@@ -106,7 +106,7 @@ function setUpRelationshipHoverEvent(relationshipData) {
 }
 
 function setUpCharaHoverEvent(relationshipData) {
-    $('.charaPhotoBox').each(function () {
+    $(".charaPhotoBox").each(function () {
         var unrelatedChara = getUnrelated(this.id, relationshipData);
         var unrelatedRelations = relationshipData.filter(r => r.chara1 !== this.id && r.chara2 !== this.id);
         var relatedRelations = relationshipData.filter(r => r.chara1 === this.id || r.chara2 === this.id);
@@ -122,9 +122,9 @@ function setUpCharaHoverEvent(relationshipData) {
             for (const relation of relatedRelations) {
                 var start = relationshipPosData.find(r => r.id === relation.id).start;
                 if (start !== this.id) {
-                    $("#line_" + relation.id + "_fill_rev").addClass('animatedPath');
+                    $("#line_" + relation.id + "_fill_rev").addClass("animatedPath");
                 } else {
-                    $("#line_" + relation.id + "_fill").addClass('animatedPath');
+                    $("#line_" + relation.id + "_fill").addClass("animatedPath");
                 }
                 $("#line_" + relation.id + "_fill").addClass(this.id);
                 $("#line_" + relation.id + "_fill_rev").addClass(this.id);
@@ -141,9 +141,9 @@ function setUpCharaHoverEvent(relationshipData) {
             for (const relation of relatedRelations) {
                 var start = relationshipPosData.find(r => r.id === relation.id).start;
                 if (start !== this.id) {
-                    $("#line_" + relation.id + "_fill_rev").removeClass('animatedPath');
+                    $("#line_" + relation.id + "_fill_rev").removeClass("animatedPath");
                 } else {
-                    $("#line_" + relation.id + "_fill").removeClass('animatedPath');
+                    $("#line_" + relation.id + "_fill").removeClass("animatedPath");
                 }
                 $("#line_" + relation.id + "_fill").removeClass(this.id);
                 $("#line_" + relation.id + "_fill_rev").removeClass(this.id);
@@ -224,7 +224,7 @@ function setUpBioPageFor(charaBioData) {
     }
     $(".refSheets").html(refSheetHTML);
 
-    // document.querySelector('.refSheets a').onclick = () => {
+    // document.querySelector(".refSheets a").onclick = () => {
     //     basicLightbox.create(`
     //         <img src="`+imgUrl+`">
     //     `).show()
@@ -338,27 +338,27 @@ function setUpBioSwitchEvents(charaBioData) {
 }
 
 function modalEffectsInit(bioData, relationshipData) {
-    var overlay = document.querySelector('.md-overlay');
-    [].slice.call(document.querySelectorAll('.md-trigger')).forEach(function (el, i) {
+    var overlay = document.querySelector(".md-overlay");
+    [].slice.call(document.querySelectorAll(".md-trigger")).forEach(function (el, i) {
 
-        var modal = document.querySelector('#' + el.getAttribute('data-modal')),
-            close = modal.querySelector('.md-close');
+        var modal = document.querySelector("#" + el.getAttribute("data-modal")),
+            close = modal.querySelector(".md-close");
 
         function removeModal(hasPerspective) {
-            classie.remove(modal, 'md-show');
+            classie.remove(modal, "md-show");
             if (hasPerspective) {
-                classie.remove(document.documentElement, 'md-perspective');
+                classie.remove(document.documentElement, "md-perspective");
             }
         }
 
         function removeModalHandler() {
-            removeModal(classie.has(el, 'md-setperspective'));
+            removeModal(classie.has(el, "md-setperspective"));
             $(".langNav").removeClass("blur");
-            // document.body.classList.toggle('noscroll');         
+            // document.body.classList.toggle("noscroll");         
         }
 
-        el.addEventListener('click', function (ev) {
-            if (el.getAttribute('data-modal') == "modal-chara") {
+        el.addEventListener("click", function (ev) {
+            if (el.getAttribute("data-modal") == "modal-chara") {
                 //fill bio page
                 var currentCharaBio = bioData.find(b => b.id === el.id);
                 setUpBioPageFor(currentCharaBio);
@@ -368,20 +368,20 @@ function modalEffectsInit(bioData, relationshipData) {
                 setUpRelationPageFor(currentRelation);
             }
             setTimeout(function () {
-                classie.add(modal, 'md-show');
-                overlay.removeEventListener('click', removeModalHandler);
-                overlay.addEventListener('click', removeModalHandler);
+                classie.add(modal, "md-show");
+                overlay.removeEventListener("click", removeModalHandler);
+                overlay.addEventListener("click", removeModalHandler);
             }, 1);
             $(".langNav").addClass("blur");
-            // document.body.classList.toggle('noscroll');
-            if (classie.has(el, 'md-setperspective')) {
+            // document.body.classList.toggle("noscroll");
+            if (classie.has(el, "md-setperspective")) {
                 setTimeout(function () {
-                    classie.add(document.documentElement, 'md-perspective');
+                    classie.add(document.documentElement, "md-perspective");
                 }, 25);
             }
         });
 
-        close.addEventListener('click', function (ev) {
+        close.addEventListener("click", function (ev) {
             ev.stopPropagation();
             removeModalHandler();
         });
