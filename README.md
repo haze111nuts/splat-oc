@@ -15,11 +15,12 @@
 - ~~change mouse highlight focus style~~
 - ~~set up actual profile pics~~
 - ~~build realtionship info pop-up page~~
-- script not loading in certain on certain phone??
+- swap out character page name title font for ios
+- script not loading on certain phone??
 - better refresh cache solution?
-- ~~all the string in charaData should use the same kind of quotes~~
-- light box is acting weird
-- drawing anims for groups
+- all the string in charaData should use the same kind of quotes
+- light box is acting weird...needs fix
+- drawing anims and a page for teams???
 - build warning pop-up page for TWCC
   - MENTAL/VERBAL ABUSE
   - ADDICTION
