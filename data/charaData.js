@@ -36,7 +36,7 @@ var relationshipPosData = [
 
 const charaData = {
     blade: {
-        jpname: 'ブレイド',
+        jpname: "ブレイド",
         age: 16,
         color: "rgb(127, 180, 57)",
         photoPos: {
@@ -46,7 +46,7 @@ const charaData = {
         }
     },
     axel: {
-        jpname: 'アクセル',
+        jpname: "アクセル",
         age: 15,
         color: "rgb(221, 155, 33)",
         photoPos: {
@@ -56,7 +56,7 @@ const charaData = {
         }
     },
     xiu: {
-        jpname: 'シュウ',
+        jpname: "シュウ",
         age: 18,
         color: "rgb(65, 173, 206)",
         photoPos: {
@@ -66,7 +66,7 @@ const charaData = {
         }
     },
     yoni: {
-        jpname: 'ヨニ',
+        jpname: "ヨニ",
         age: 16,
         color: "rgb(224, 213, 54)",
         photoPos: {
@@ -76,7 +76,7 @@ const charaData = {
         }
     },
     hannah: {
-        jpname: 'ハンナ',
+        jpname: "ハンナ",
         age: 19,
         color: "rgb(41, 81, 194)",
         photoPos: {
@@ -86,7 +86,7 @@ const charaData = {
         }
     },
     lance: {
-        jpname: 'ランス',
+        jpname: "ランス",
         age: 20,
         color: "rgb(148, 77, 206)",
         photoPos: {
@@ -96,7 +96,7 @@ const charaData = {
         }
     },
     ellie: {
-        jpname: 'エステル（エリ）',
+        jpname: "エステル（エリ）",
         age: 14,
         color: "rgb(17, 148, 87)",
         photoPos: {
@@ -106,7 +106,7 @@ const charaData = {
         }
     },
     edd: {
-        jpname: 'エッド',
+        jpname: "エッド",
         age: 18,
         color: "rgb(211, 43, 43)",
         photoPos: {
@@ -116,7 +116,7 @@ const charaData = {
         }
     },
     minerva: {
-        jpname: 'ミネルヴァ',
+        jpname: "ミネルヴァ",
         age: 18,
         color: "rgb(167, 87, 83)",
         photoPos: {
@@ -126,7 +126,7 @@ const charaData = {
         }
     },
     simon: {
-        jpname: 'サイモン',
+        jpname: "サイモン",
         age: 18,
         color: "rgb(216, 40, 163)",
         photoPos: {
@@ -136,7 +136,7 @@ const charaData = {
         }
     },
     ryan: {
-        jpname: '',
+        jpname: "",
         age: 21,
         color: "rgb(180, 180, 180)",
         photoPos: {
@@ -462,74 +462,74 @@ var relationshipData_en = [
 
 var bioData_en = [
     {
-        id: 'blade',
-        name: 'Branden “Blade”',
-        gender: 'Male',
-        like: 'To be alone',
-        dislike: 'Self',
+        id: "blade",
+        name: "Branden “Blade”",
+        gender: "Male",
+        like: "To be alone",
+        dislike: "Self",
         rank: "S+",
         mains: "Splattershot Pro, .96, Carbon",
         traits: [
-            'Gloomy, angsty, quiet',
-            'Has anxiety issue',
-            'Lack of confidence',
-            'Tries to act cool',
-            'Is actually a sweet boy'
+            "Gloomy, angsty, quiet",
+            "Has anxiety issue",
+            "Lack of confidence",
+            "Tries to act cool",
+            "Is actually a sweet boy"
         ],
         outfits: [
-            { name: 'Regular', url: 'profile/blade.png' },
-            { name: 'Agent 3', url: 'profile/blade.png' },
-            { name: 'Younger', url: 'profile/blade.png' }            
+            { name: "Regular", url: "profile/blade.png" },
+            { name: "Agent 3", url: "profile/blade.png" },
+            { name: "Younger", url: "profile/blade.png" }            
         ],
         bio: [
-            'He used to refuse playing any turf/ranked and would push away anyone who wants to be friend due to his anxious nature. After being abruptly scouted by Captain Cuttlefish as Agent 3, he received support from captain and the other two agents, it was then he decided to make change and begin the process of healing. Operating as agent 3 has helped him both mentally and physically, he is now able to play competitively. It was around this time he moved out to live on his own.',
-            'He then met Axel and other friends and eventually got along since he is now a bit more opened-up to other people, and they decided to form a team called “Rotten Buttons” with Blade as leader.',
+            "He used to refuse playing any turf/ranked and would push away anyone who wants to be friend due to his anxious nature. After being abruptly scouted by Captain Cuttlefish as Agent 3, he received support from captain and the other two agents, it was then he decided to make change and begin the process of healing. Operating as agent 3 has helped him both mentally and physically, he is now able to play competitively. It was around this time he moved out to live on his own.",
+            "He then met Axel and other friends and eventually got along since he is now a bit more opened-up to other people, and they decided to form a team called “Rotten Buttons” with Blade as leader.",
         ],
         personality:[
-            'The constant bullying and abusing from his older sister made him a very gloomy introvert, he often puts up a cool look to cover up the insecure side of him.'
+            "The constant bullying and abusing from his older sister made him a very gloomy introvert, he often puts up a cool look to cover up the insecure side of him."
         ],
         trivia:[
-            'His actual name is Branden, Axel was the one who started calling him "Blade", which came from his online handle, and the rest of his friends started doing the same.',            
-            'He is a great cook, mostly excels in home style cooking.',
-            'His braclet, ear cuff, hair ties and necklace are all gifts from other members of the team.'            
+            "His actual name is Branden, Axel was the one who started calling him \"Blade\", which came from his online handle, and the rest of his friends started doing the same.",            
+            "He is a great cook, mostly excels in home style cooking.",
+            "His braclet, ear cuff, hair ties and necklace are all gifts from other members of the team."            
         ],
         refsheets: [
             "assets/img/refsheets/blade_v2.png",
         ]
     },
     {
-        id: 'axel',
-        name: 'Axel',
-        gender: 'Male',
-        like: 'Compete',
-        dislike: 'Losing or getting mocked',
+        id: "axel",
+        name: "Axel",
+        gender: "Male",
+        like: "Compete",
+        dislike: "Losing or getting mocked",
         rank: "S+",
         mains: "Dualies",
         traits: [
-            'Rude, brusque, cocky',
-            'Has anger management issue',
-            'Aggressive behaviors',
+            "Rude, brusque, cocky",
+            "Has anger management issue",
+            "Aggressive behaviors",
             "Picks fights daily",
-            'Cares about his grandma'
+            "Cares about his grandma"
         ],
         outfits: [
-            { name: 'Regular', url: 'profile/axel.png' }
+            { name: "Regular", url: "profile/axel.png" }
         ],
         bio: [
-            'He had been trying to form a competitive team with skilled players; however, due to his short-temper and violent nature, they often fell out very quickly, and usually in a pretty bad way.',
-            'One day in a random match he met Blade and picked a fight with him, and later realized that Blade could be the teammate he had been looking for. He then chased him through the sewer system in Inkopolis Square where he became Agent 4 just for another chance to meet Blade. He eventually got to meet Blade again and was able to befriend him and formed a team "Rotten Buttons" like he always wanted to.',
-            'Ever since Blade walked into his life, he is shown to have less frequent temper issues.'
+            "He had been trying to form a competitive team with skilled players; however, due to his short-temper and violent nature, they often fell out very quickly, and usually in a pretty bad way.",
+            "One day in a random match he met Blade and picked a fight with him, and later realized that Blade could be the teammate he had been looking for. He then chased him through the sewer system in Inkopolis Square where he became Agent 4 just for another chance to meet Blade. He eventually got to meet Blade again and was able to befriend him and formed a team \"Rotten Buttons\" like he always wanted to.",
+            "Ever since Blade walked into his life, he is shown to have less frequent temper issues."
         ],
         refsheets: [
             "assets/img/refsheets/axel1.png",
         ]
     },
     {
-        id: 'xiu',
-        name: 'Xiu',
-        gender: 'Male',
-        like: 'Coral collecting',
-        dislike: 'Losing followers',
+        id: "xiu",
+        name: "Xiu",
+        gender: "Male",
+        like: "Coral collecting",
+        dislike: "Losing followers",
         rank: "S+",
         mains: "Sloshing Machine",
         traits: [
@@ -540,212 +540,212 @@ var bioData_en = [
             "Is a train wreck inside"
         ],
         outfits: [
-            { name: 'Regular', url: 'profile/xiu.png' }
+            { name: "Regular", url: "profile/xiu.png" }
         ],
         bio: [
-            'Was once a very caring and kindhearted nerd boy. After falling victim to bullying and harassment, he started to change and would resort to revenge. Although this has made him more confident and brave, it nevertheless brought him more trouble than before.',
-            'When he was still coping with the harassment, he met Axel and eventually started dating. He used to play league with him until they broke up, he then shifted his focus onto social media and flair bartending. He then took interest in Blade when he found out Axel was hanging out with him, and decided to start playing again.',
-            'He is an extrovert who can blend himself into all kinds of groups, he is the one who comes up with party game ideas that are often questionable. His right eye was damaged as a result of a dangerous streaming challenge, therefore a strange pupil shape.'
+            "Was once a very caring and kindhearted nerd boy. After falling victim to bullying and harassment, he started to change and would resort to revenge. Although this has made him more confident and brave, it nevertheless brought him more trouble than before.",
+            "When he was still coping with the harassment, he met Axel and eventually started dating. He used to play league with him until they broke up, he then shifted his focus onto social media and flair bartending. He then took interest in Blade when he found out Axel was hanging out with him, and decided to start playing again.",
+            "He is an extrovert who can blend himself into all kinds of groups, he is the one who comes up with party game ideas that are often questionable. His right eye was damaged as a result of a dangerous streaming challenge, therefore a strange pupil shape."
         ],
         refsheets: [
             "assets/img/refsheets/xiu1.png",
         ]
     },
     {
-        id: 'yoni',
-        name: 'Yoni',
-        gender: 'Male',
-        like: 'Happy stuff',
-        dislike: 'Theft',
+        id: "yoni",
+        name: "Yoni",
+        gender: "Male",
+        like: "Happy stuff",
+        dislike: "Theft",
         rank: "S+",
         mains: "Hydra, Dynamo Roller",
         traits: [
-            'Goofy, happy, bizarre',
-            'Is a junkie',
-            'Get excited easily',
-            'Has destructive strength',
-            'Can make lots of money'
+            "Goofy, happy, bizarre",
+            "Is a junkie",
+            "Get excited easily",
+            "Has destructive strength",
+            "Can make lots of money"
         ],
         outfits: [
-            { name: 'Regular', url: 'profile/yoni.png' }
+            { name: "Regular", url: "profile/yoni.png" }
         ],
         bio: [
-            'A care-free and cheerful boy, also a bit of a joker who can be pretty naughty sometimes. Speaks and behaves in a comical and silly way. He finds a lot of things funny and will laugh everything off even when the timing is inappropriate.',
-            'He loves getting high using...some substance, which is obviously banned in all sports. While wanting to play with Blade as a member of Rotten Buttons, he had cut out most of it. However, he wasn\'t able to fully resist the temptation of such things, so he has been looking for a solution so he can have it both ways',
-            'He is not very good at expressing his negative emotion.',
-            'Seems to be involved in some shady business.'
+            "A care-free and cheerful boy, also a bit of a joker who can be pretty naughty sometimes. Speaks and behaves in a comical and silly way. He finds a lot of things funny and will laugh everything off even when the timing is inappropriate.",
+            "He loves getting high using...some substance, which is obviously banned in all sports. While wanting to play with Blade as a member of Rotten Buttons, he had cut out most of it. However, he wasn't able to fully resist the temptation of such things, so he has been looking for a solution so he can have it both ways",
+            "He is not very good at expressing his negative emotion.",
+            "Seems to be involved in some shady business."
         ],
         refsheets: [
             "assets/img/refsheets/yoni1.png",
         ]
     },
     {
-        id: 'hannah',
-        name: 'Hannah',
-        gender: 'Female',
-        like: 'Splat Battles',
-        dislike: 'Blade',
+        id: "hannah",
+        name: "Hannah",
+        gender: "Female",
+        like: "Splat Battles",
+        dislike: "Blade",
         rank: "X",
         mains: "N-zap, .52",
         traits: [
-            'Vicious, intimidating, hostile',
-            'Abusive to her brother',
-            'Very mean',
-            'Laughs like a maniac',
-            'Is actually a great leader'
+            "Vicious, intimidating, hostile",
+            "Abusive to her brother",
+            "Very mean",
+            "Laughs like a maniac",
+            "Is actually a great leader"
         ],
         outfits: [
-            { name: 'Regular', url: 'profile/hannah.png' }
+            { name: "Regular", url: "profile/hannah.png" }
         ],
         bio: [
-            'Hannah was specially neglected by her mother when she was little, and her mother heavily favored the younger brother Blade over her,  this caused Hannah to hold a strong grudge against Blade. After their mother passed away, the grudge soon turned into abuse.',
-            'Splat battle has been an outlet for her anger. As she poured her heart and soul into the games, she became unreasonably good at them. She actively searched for long-term teammates and eventually got Lance, RJ and Minerva to form an elite team.',
-            'She was actually Captain Cuttlefish\'s the first candidate for Agent 3, but she quitted in order to focus on competitive games, which ultimately made Blade the next Agent 3. Now she only goes back to help when it\'s absolutely necessary.',
-            'She is aware of her flaws and had thought of fixing the relationship with Blade, but gave up after failing to make any attempt, stating "It\'s too late now".'
+            "Hannah was specially neglected by her mother when she was little, and her mother heavily favored the younger brother Blade over her,  this caused Hannah to hold a strong grudge against Blade. After their mother passed away, the grudge soon turned into abuse.",
+            "Splat battle has been an outlet for her anger. As she poured her heart and soul into the games, she became unreasonably good at them. She actively searched for long-term teammates and eventually got Lance, RJ and Minerva to form an elite team.",
+            "She was actually Captain Cuttlefish's the first candidate for Agent 3, but she quitted in order to focus on competitive games, which ultimately made Blade the next Agent 3. Now she only goes back to help when it's absolutely necessary.",
+            "She is aware of her flaws and had thought of fixing the relationship with Blade, but gave up after failing to make any attempt, stating \"It's too late now\"."
         ]
     },
     {
-        id: 'lance',
-        name: 'Lance',
-        gender: 'Male',
-        like: 'Pop rocks candy',
-        dislike: 'Sudden change in plan',
+        id: "lance",
+        name: "Lance",
+        gender: "Male",
+        like: "Pop rocks candy",
+        dislike: "Sudden change in plan",
         rank: "X",
         mains: "Blasters & Nozzlenose",
         traits: [
-            'Level-headed, righteous',
-            'OCPD, a bit of a neat freak',
-            'A reliable brotherly figure',
-            'Also has destructive strength',
-            'Is a good listener'
+            "Level-headed, righteous",
+            "OCPD, a bit of a neat freak",
+            "A reliable brotherly figure",
+            "Also has destructive strength",
+            "Is a good listener"
         ],
         outfits: [
-            { name: 'Regular', url: 'profile/lance.png' }
+            { name: "Regular", url: "profile/lance.png" }
         ],
         bio: [
-            'Yoni\'s older brother, he is a childhood friend to both Hannah and Blade. He may look and act intimidating, but he is a very reliable, supportive and caring person. He is also a very organized perfectionist with high standards, he also has incredibly (and sometimes unnecessarily) sharp attention to details. He occasionally bursts out life advice with that poker face of his.',
-            'He was the first member Hannah recruited in Inner Monster, he deals with things Hannah doesn\'t know how to do or had trouble with.',
-            'He tries his best to live with his OCPD and is always seen wearing a pair of black gloves. Pop rocks inspired him to pick up Blaster when he was young, now he must eat a pack of pop rocks every morning.'
+            "Yoni's older brother, he is a childhood friend to both Hannah and Blade. He may look and act intimidating, but he is a very reliable, supportive and caring person. He is also a very organized perfectionist with high standards, he also has incredibly (and sometimes unnecessarily) sharp attention to details. He occasionally bursts out life advice with that poker face of his.",
+            "He was the first member Hannah recruited in Inner Monster, he deals with things Hannah doesn't know how to do or had trouble with.",
+            "He tries his best to live with his OCPD and is always seen wearing a pair of black gloves. Pop rocks inspired him to pick up Blaster when he was young, now he must eat a pack of pop rocks every morning."
         ]
     },
     {
-        id: 'ellie',
-        name: 'Estelle "Ellie"',
-        gender: 'Female',
-        like: 'Gossips',
-        dislike: 'Selfish people',
+        id: "ellie",
+        name: "Estelle \"Ellie\"",
+        gender: "Female",
+        like: "Gossips",
+        dislike: "Selfish people",
         rank: "A+",
         mains: "Splash-o-matic",
         traits: [
-            'Outgoing, humorous',
-            'Is a SJW',
-            'Engages in online shaming',
-            'Loves to chitchat',
-            'Is actually very empathetic'
+            "Outgoing, humorous",
+            "Is a SJW",
+            "Engages in online shaming",
+            "Loves to chitchat",
+            "Is actually very empathetic"
 
         ],
         outfits: [
-            { name: 'Regular', url: 'profile/ellie.png' }
+            { name: "Regular", url: "profile/ellie.png" }
         ],
         bio: [
-            'Axel\'s younger sister,  a typical happy teenage girl. She is friendly and nice but rather immature, her sense of justice is so strong that she would actively seek out questionable people online to harass and "cancel".',
-            'Initially, socializing was about the only thing she cared about, but seeing Axel hanging out with his teammates all the time, she started developing interest in splat battle under their influence. She got along with all the members of Rotten Buttons. At some point she found out that Axel has been doing hero stuff and she eventually got involved, she helps out with the Agent 4 tasks on many occasions.',
-            'She is one of the mods of a community that specializes in harassment and doxxing, but she decided to cut down any related activities after her crush Blade questions the morality of their actions.'
+            "Axel\'s younger sister,  a typical happy teenage girl. She is friendly and nice but rather immature, her sense of justice is so strong that she would actively seek out questionable people online to harass and \"cancel\".",
+            "Initially, socializing was about the only thing she cared about, but seeing Axel hanging out with his teammates all the time, she started developing interest in splat battle under their influence. She got along with all the members of Rotten Buttons. At some point she found out that Axel has been doing hero stuff and she eventually got involved, she helps out with the Agent 4 tasks on many occasions.",
+            "She is one of the mods of a community that specializes in harassment and doxxing, but she decided to cut down any related activities after her crush Blade questions the morality of their actions."
         ]
     },
     {
-        id: 'edd',
-        name: 'Edd',
-        gender: 'Male',
-        like: 'Compliment',
-        dislike: 'Dark places',
+        id: "edd",
+        name: "Edd",
+        gender: "Male",
+        like: "Compliment",
+        dislike: "Dark places",
         rank: "S+",
         mains: "Octo brushes",
         traits: [
-            'Stoic, aloof, curious',
-            'Rather cunning',
-            'Talks in a distant/dreamy way',
-            'Daydreams about...stuff',
-            'Horny af'
+            "Stoic, aloof, curious",
+            "Rather cunning",
+            "Talks in a distant/dreamy way",
+            "Daydreams about...stuff",
+            "Horny af"
         ],
         outfits: [
-            { name: 'Regular', url: 'profile/edd.png' }
+            { name: "Regular", url: "profile/edd.png" }
         ],
         bio: [
-            'Minerva\'s twin brother who was also born underground; however, unlike Minerva, he did not like the life and treatment he had as an Octarian. ',
-            'After hearing Squid Sisters\' song on that fateful day, he started planning for escape, using any means he could; however, before anything can be done, he got caught in the whole Deepsea Metro shenanigans, though the whole thing did manage to give him a chance to leave at the end. During this ordeal he met Blade who was operating as Agent 3 at the time and took a great liking to him, after the befriended Blade, Edd became the fifth member of Rotten Buttons.',
-            'He managed to graduate from a hacking boot camp when he was still in Octarian army, so he knows his way around cyber security shenanigans.'
+            "Minerva's twin brother who was also born underground; however, unlike Minerva, he did not like the life and treatment he had as an Octarian. ",
+            "After hearing Squid Sisters' song on that fateful day, he started planning for escape, using any means he could; however, before anything can be done, he got caught in the whole Deepsea Metro shenanigans, though the whole thing did manage to give him a chance to leave at the end. During this ordeal he met Blade who was operating as Agent 3 at the time and took a great liking to him, after the befriended Blade, Edd became the fifth member of Rotten Buttons.",
+            "He managed to graduate from a hacking boot camp when he was still in Octarian army, so he knows his way around cyber security shenanigans."
         ]
     },
     {
-        id: 'minerva',
-        name: 'Minerva',
-        gender: 'Female',
-        like: 'Underground life',
-        dislike: 'Bright place',
+        id: "minerva",
+        name: "Minerva",
+        gender: "Female",
+        like: "Underground life",
+        dislike: "Bright place",
         rank: "X",
         mains: "Octoshot",
         traits: [
-            'Loyal, honest',
-            'Stockholm Syndrome?',
-            'Workholic',
-            'Enters "flow state" often',
-            'Just a law-abiding normal girl'
+            "Loyal, honest",
+            "Stockholm Syndrome?",
+            "Workholic",
+            "Enters \"flow state\" often",
+            "Just a law-abiding normal girl"
         ],
         outfits: [
-            { name: 'Regular', url: 'profile/minerva.png' }
+            { name: "Regular", url: "profile/minerva.png" }
         ],
         bio: [
-            'She was raised in the Octarian army since she was very little. She hated the training regimen at first, but eventually she grew attached to the army deeply. She was shown to have no intention to leave even after hearing Squid Sister\'s Calamari Inkantation on that fateful day. She even began to loathe the so-called "surface world" that suddenly came into their life.',
-            'One day she encountered Hannah who was operating as Agent 3 at the time; after engaging in battle, Hannah was committed to recruit Minerva into her team and wanted to bring her to the surface after witnessing Minerva\'s battle skills, but Minerva rejected as she never wanted to leave the Octarian army. After multiple encounters and battles with Hannah, Minerva eventually (and reluctantly) agreed to go with her. She is now a member of Inner Monster, she is still trying to get used to the surface life.'
+            "She was raised in the Octarian army since she was very little. She hated the training regimen at first, but eventually she grew attached to the army deeply. She was shown to have no intention to leave even after hearing Squid Sister's Calamari Inkantation on that fateful day. She even began to loathe the so-called \"surface world\" that suddenly came into their life.",
+            "One day she encountered Hannah who was operating as Agent 3 at the time; after engaging in battle, Hannah was committed to recruit Minerva into her team and wanted to bring her to the surface after witnessing Minerva's battle skills, but Minerva rejected as she never wanted to leave the Octarian army. After multiple encounters and battles with Hannah, Minerva eventually (and reluctantly) agreed to go with her. She is now a member of Inner Monster, she is still trying to get used to the surface life."
         ]
     },
     {
-        id: 'simon',
-        name: 'Simon',
-        gender: 'Male',
-        like: 'DJ Octavio, robotic stuff',
-        dislike: 'Heroes',
+        id: "simon",
+        name: "Simon",
+        gender: "Male",
+        like: "DJ Octavio, robotic stuff",
+        dislike: "Heroes",
         rank: "???",
         mains: "???",
         traits: [
-            'Arrogant, ambitious',
-            'Delusional',
-            'DJ Octavio\'s biggest fanboy',
-            'Just your typical villian',
-            'Always fails miserably'
+            "Arrogant, ambitious",
+            "Delusional",
+            "DJ Octavio's biggest fanboy",
+            "Just your typical villian",
+            "Always fails miserably"
         ],
         outfits: [
-            { name: 'Regular', url: 'profile/simon.png' }
+            { name: "Regular", url: "profile/simon.png" }
         ],
         bio: [
-            'A member of the Octorian underground army. He is obsessed with DJ Octavio. A self-proclaimed "DJ Octavio\'s greatest assistant" and "Evil genius Octorian engineer" or some such. He seems to be extremely skilled and efficient when it comes to tech stuff, which includes programming AI, building robotics or even hacking.',
-            'He was initially a shut-in who only stays in his lab, one day he was out on Octo Valley to inspect damages on some of the gadget he made, that was when he found out about Blade (who had just started his Agent 3 work), he then hijacked Blade\'s radio to confronted him. After a couple conflicts he determined that Blade is to be his archenemy and begin the life-long entanglement. He holds similar attitude toward Axel who operates as Agent 4. His plans never seem to bare fruits due to his own foolishness and some glaring shortcomings. Despite all the failures, he has no intension to stop bugging the two heros.',
-            'He has never been to the surface and neither has he ever wished for such thing.'
+            "A member of the Octorian underground army. He is obsessed with DJ Octavio. A self-proclaimed \"DJ Octavio\'s greatest assistant\" and \"Evil genius Octorian engineer\" or some such. He seems to be extremely skilled and efficient when it comes to tech stuff, which includes programming AI, building robotics or even hacking.",
+            "He was initially a shut-in who only stays in his lab, one day he was out on Octo Valley to inspect damages on some of the gadget he made, that was when he found out about Blade (who had just started his Agent 3 work), he then hijacked Blade's radio to confronted him. After a couple conflicts he determined that Blade is to be his archenemy and begin the life-long entanglement. He holds similar attitude toward Axel who operates as Agent 4. His plans never seem to bare fruits due to his own foolishness and some glaring shortcomings. Despite all the failures, he has no intension to stop bugging the two heros.",
+            "He has never been to the surface and neither has he ever wished for such thing."
         ]
     },
     {
-        id: 'ryan',
-        name: 'Ryan "RJ"',
-        gender: 'Male',
-        like: 'Retro firearms',
-        dislike: 'Broken promise',
+        id: "ryan",
+        name: "Ryan \"RJ\"",
+        gender: "Male",
+        like: "Retro firearms",
+        dislike: "Broken promise",
         rank: "X",
         mains: "All chargers",
         traits: [
-            'Cruel, cold-blooded, impatient',
-            'Lack of empathy',
-            'Rather sadistic',
-            'Efficient and professional',
-            'Doesn\'t know how to socialize'
+            "Cruel, cold-blooded, impatient",
+            "Lack of empathy",
+            "Rather sadistic",
+            "Efficient and professional",
+            "Doesn't know how to socialize"
         ],
         outfits: [
-            { name: 'Regular', url: 'profile/rj.png' }
+            { name: "Regular", url: "profile/rj.png" }
         ],
         bio: [
-            'Not much is known about this guy and it\'s not like he has intention to disclose anything whatsoever.',
-            'One day he just appears out of nowhere in ranked battles like a phantom. Despite having very few battle records, his performance and splat counts are off the charts (to an extend that is almost alarming). At several points he got matched with Lance and they had multiple intense showdowns, the two ended up becoming friends. Hannah then took this chance to invite him into her team; though he did took the offer, he seems to be busy with some other shady business most of the time.',
-            'Drinks only straight espresso.'
+            "Not much is known about this guy and it's not like he has intention to disclose anything whatsoever.",
+            "One day he just appears out of nowhere in ranked battles like a phantom. Despite having very few battle records, his performance and splat counts are off the charts (to an extend that is almost alarming). At several points he got matched with Lance and they had multiple intense showdowns, the two ended up becoming friends. Hannah then took this chance to invite him into her team; though he did took the offer, he seems to be busy with some other shady business most of the time.",
+            "Drinks only straight espresso."
         ]
     }
 ]
