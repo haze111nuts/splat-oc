@@ -15,6 +15,9 @@
 - ~~change mouse highlight focus style~~
 - ~~set up actual profile pics~~
 - ~~build realtionship info pop-up page~~
+- script not loading in certain on certain phone??
+- better refresh cache solution?
+- all the string in charaData should use the same kind of quotes
 - light box is acting weird
 - drawing anims for groups
 - build warning pop-up page for TWCC
@@ -22,6 +25,4 @@
   - ADDICTION
   - DEPRESSION
   - PHYSICAL VIOLENCE
-  - OPEN RELATIONSHIPS
-- flip bio detail to show trivia??
 - cite sources somewhere

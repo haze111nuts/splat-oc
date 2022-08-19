@@ -477,17 +477,24 @@ var bioData_en = [
             'Is actually a sweet boy'
         ],
         outfits: [
-            { name: 'Regular', url: 'profile/blade.png' }
+            { name: 'Regular', url: 'profile/blade.png' },
+            { name: 'Agent 3', url: 'profile/blade.png' },
+            { name: 'Younger', url: 'profile/blade.png' }            
         ],
         bio: [
-            'The constant bullying and abusing from his older sister made him a very gloomy introvert, he often puts up a cool look to cover up the insecure side of him.',
             'He used to refuse playing any turf/ranked and would push away anyone who wants to be friend due to his anxious nature. After being abruptly scouted by Captain Cuttlefish as Agent 3, he received support from captain and the other two agents, it was then he decided to make change and begin the process of healing. Operating as agent 3 has helped him both mentally and physically, he is now able to play competitively. It was around this time he moved out to live on his own.',
             'He then met Axel and other friends and eventually got along since he is now a bit more opened-up to other people, and they decided to form a team called “Rotten Buttons” with Blade as leader.',
-            'His actual name is Branden, Axel was the one who started calling him "Blade", which came from his online handle, and the rest of his friends started doing the same. His braclet, ear cuff, hair ties and necklace are all gifts from other members of the team.',
-            'He is also a great cook, mostly excels in home style cooking.'
+        ],
+        personality:[
+            'The constant bullying and abusing from his older sister made him a very gloomy introvert, he often puts up a cool look to cover up the insecure side of him.'
+        ],
+        trivia:[
+            'His actual name is Branden, Axel was the one who started calling him "Blade", which came from his online handle, and the rest of his friends started doing the same.',            
+            'He is a great cook, mostly excels in home style cooking.',
+            'His braclet, ear cuff, hair ties and necklace are all gifts from other members of the team.'            
         ],
         refsheets: [
-            "assets/img/refsheets/blade1.png",
+            "assets/img/refsheets/blade_v2.png",
         ]
     },
     {

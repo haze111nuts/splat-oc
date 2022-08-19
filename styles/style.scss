@@ -550,8 +550,8 @@ ul{
   padding: 0;
   width: 240px;
   height: 200px;
-  top: 400px;
-  left: 280px;
+  top: 420px;
+  left: 250px;
   z-index: 6;
 }
 
@@ -604,17 +604,37 @@ ul{
 
 
 // Detail Bio Panel
+
+.bioDetailTabs{
+  position: absolute;
+  top: -28px;
+}
+.bioDetailTabs li{
+  opacity: 0.5;
+  font-size: 15px;
+  background-color: rgba(50, 50, 50, 1);
+  padding: 5px 15px 3px 15px;
+  float: left;
+  margin-left: 10px;
+  border-top-left-radius: 8px;  
+  border-top-right-radius: 8px;
+  cursor: pointer;
+  @include prefix(transition, all 0.3s, webkit moz);
+}
+.bioTabFocused{
+  opacity: 1 !important;
+}
 .bioDetail{
-  padding: 30px 45px 120px 50px;
+  padding: 20px 45px 110px 50px;
   background-color: rgba(50, 50, 50, 1);
   line-height: 150%;
-  right: -20px;
-  bottom: 50px; 
+  right: -30px;
+  bottom: 40px; 
 }
 .bioDetailInner{
   padding: 10px;
   overflow-y: auto;
-  width:  310px;
+  width:  320px;
   height: 350px;
   .item{
     height: 40px;
@@ -625,7 +645,7 @@ ul{
 
 // Detail Bio Panel
 .refSheets{
-  bottom: 60px;
+  bottom: 50px;
   right: -40px;
   width: 400px;
   height: 90px;
@@ -995,7 +1015,7 @@ $rel-arrow-width: 160px;
   }
   .bioDetail{
     margin: 40px 0 40px auto;
-    padding: 50px 50px 100px 50px;
+    padding: 30px 50px 100px 50px;
     width: 75%;
   }
   .bioDetailInner{

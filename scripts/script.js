@@ -4,12 +4,15 @@
 
 var siteData_en = {
     title: "Haze's Splatverse",
-    description: ["Splatoon OC info/bio dump", "Currently under construction :/"]
+    description: ["Splatoon OC info/bio dump", "Currently under construction :/"],
+    bioDetailTabs: ["Bio","Personality","Trivia"]
 }
 
 var siteData_ch = {
     title: "HAZE家漆彈小孩",
-    description: ["懶人總整理+全員介紹頁面", "施工中😔有生之年慢慢加素材跟設定"]
+    description: ["懶人總整理+全員介紹頁面", "施工中😔有生之年慢慢加素材跟設定"],
+    bioDetailTabs: ["背景","性格","其他設定"]
+
 }
 
 //=====================//
@@ -23,7 +26,7 @@ function buildChart(relationshipData) {
     for (var chara in charaData) {
         chartHTML += "<li class='charaPhotoBox md-trigger' id='" + chara + "' data-modal='modal-chara'>";
         chartHTML += "<div class='charaPhoto " + chara + "Photo'></div>";
-        chartHTML += "<div class='nameSticker'>" + getPrintName(chara) + "</div>";
+        chartHTML += "<div class='nameSticker'>" + getDisplayName(chara) + "</div>";
         chartHTML += "</li>";
     }
     for (var j = 0; j < relationshipData.length; j++) {
@@ -62,7 +65,7 @@ function transformRotatedCharaIcon(selector, id, scale) {
     $(selector).css("transform", "rotate(" + currentHoverCharaRot + "deg) " + scale);
 }
 
-function relationshipHoverEvent(relationshipData) {
+function setUpRelationshipHoverEvent(relationshipData) {
     $('[id^=rel_]').each(function () {
         const id = this.id.replace("rel_", "");
         const relationship = relationshipData.find(r => r.id == id);
@@ -102,7 +105,7 @@ function relationshipHoverEvent(relationshipData) {
     });
 }
 
-function charaHoverEvent(relationshipData) {
+function setUpCharaHoverEvent(relationshipData) {
     $('.charaPhotoBox').each(function () {
         var unrelatedChara = getUnrelated(this.id, relationshipData);
         var unrelatedRelations = relationshipData.filter(r => r.chara1 !== this.id && r.chara2 !== this.id);
@@ -187,8 +190,8 @@ function setUpBioPageFor(charaBioData) {
     var bioBasicHTML = "<table>";
     bioBasicHTML += "<tr><td>Name</td><td>" + charaBioData.name + "</td></tr>";
     bioBasicHTML += "<tr><td>Gender</td><td>" + charaBioData.gender + "</td></tr>";
-    // bioBasicHTML += "<tr><td>Age</td><td>" + charaData[charaBioData.id].age + "</td></tr>";
-    bioBasicHTML += currentLang == "CH" ? "<tr><td>Age</td><td>" + charaData[charaBioData.id].age + "歲</td></tr>" : "";
+    bioBasicHTML += "<tr><td>Age</td><td>" + charaData[charaBioData.id].age + "+</td></tr>";
+    // bioBasicHTML += currentLang == "CH" ? "<tr><td>Age</td><td>" + charaData[charaBioData.id].age + "歲</td></tr>" : "";
     // bioBasicHTML += "<tr><td>Sexuality</td><td><div class='iconBi'></div>or<div class='iconPan'></div></td></tr>";
     bioBasicHTML += "<tr><td>Likes</td><td>" + charaBioData.like + "</td></tr>";
     bioBasicHTML += "<tr><td>Dislike</td><td>" + charaBioData.dislike + "</td></tr>";
@@ -207,19 +210,19 @@ function setUpBioPageFor(charaBioData) {
     $(".bioBasic").html(bioBasicHTML + bioTraitsHTML);
 
     //Fill detailed bio panel
-    $(".bioDetailInner").html(printLinesWithBreak(parseToIcon(charaBioData.bio), 2));
+    setUpBioSwitchEvents(charaBioData);    
     $(".bioDetailInner").scrollTop(0);
 
     //Fill refsheets
-    // var refSheetHTML = "";
-    // if (charaBioData.refsheets) {
-    //     for (const imgUrl of charaBioData.refsheets) {
-    //         refSheetHTML += "<a href='" + imgUrl + "' >";
-    //         refSheetHTML += "<div></div>";
-    //         refSheetHTML += "</a>";
-    //     }
-    // }
-    // $(".refSheets").html(refSheetHTML);
+    var refSheetHTML = "";
+    if (charaBioData.refsheets) {
+        for (const imgUrl of charaBioData.refsheets) {
+            refSheetHTML += "<a href='" + imgUrl + "' >";
+            refSheetHTML += "<div></div>";
+            refSheetHTML += "</a>";
+        }
+    }
+    $(".refSheets").html(refSheetHTML);
 
     // document.querySelector('.refSheets a').onclick = () => {
     //     basicLightbox.create(`
@@ -227,11 +230,10 @@ function setUpBioPageFor(charaBioData) {
     //     `).show()
     // }
 
-
     if (charaBioData.refsheets) {
         for (var i = 0; i < charaBioData.refsheets.length; i++) {
             $(".refSheets").children().children().eq(i).css("background", "url(" + charaBioData.refsheets[i] + ") no-repeat");
-            $(".refSheets").children().children().eq(i).css("background-size", "210%");
+            $(".refSheets").children().children().eq(i).css("background-size", "200%");
             $(".refSheets").children().children().eq(i).css("background-position", "center top");
         }
     }
@@ -242,7 +244,7 @@ function setUpBioPageFor(charaBioData) {
     $(".bioBasic table tr td:first-child").css("border-right", "3px solid " + color);
     $(".traitLabel").css("border-bottom", "3px solid " + color);
     $(".traitLabel").css("color", color);
-    $(".bioDetail").css("box-shadow", "-25px -20px 0 " + color);
+    $(".bioDetail").css("box-shadow", "-25px -45px 0 " + color);
     // $(".refSheets > a div:hover").css("box-shadow", "-8px -8px 0px 0px "+color);
     $(".refSheets").children().children().hover(function () {
         $(this).css("box-shadow", "-8px -8px 0px 0px " + color);
@@ -250,25 +252,6 @@ function setUpBioPageFor(charaBioData) {
         $(this).css("box-shadow", "-8px -8px 0px 0px black");
     });
 
-}
-
-function parseToIcon(bioLines) {
-    //help parses words formatted like this: %fruitTart/水果塔% to an image with title label
-    var result = [];
-    var regExp = /%([^%]+)\/([^%]+)%/g;
-    for (const line of bioLines) {
-        var matches = regExp.exec(line);
-        if (matches === null) {
-                result.push(line);
-        } else {
-            result.push(line.replaceAll(regExp, "<img class='item' src='assets/img/profile/items/"+ matches[1]+".png' title='" + matches[2] + "'>"));
-        }
-    }
-    return result;
-}
-
-function getPrintName(name) {
-    return (name == "ryan") ? "R.J." : name.charAt(0).toUpperCase() + name.slice(1);
 }
 
 function setUpRelationPageFor(relationData) {
@@ -291,9 +274,9 @@ function setUpRelationPageFor(relationData) {
     }
 
     var chara1photoHTML = "<div class='charaPhoto " + chara1.name + "Photo'></div>"
-        + "<div class='nameSticker'>" + getPrintName(chara1.name) + "</div>";
+        + "<div class='nameSticker'>" + getDisplayName(chara1.name) + "</div>";
     var chara2photoHTML = "<div class='charaPhoto " + chara2.name + "Photo'></div>"
-        + "<div class='nameSticker'>" + getPrintName(chara2.name) + "</div>";
+        + "<div class='nameSticker'>" + getDisplayName(chara2.name) + "</div>";
     $(".relPhotoBox:nth-child(1)").html(chara1photoHTML);
     $(".relPhotoBox:nth-child(2)").html(chara2photoHTML);
 
@@ -332,6 +315,25 @@ function setUpOutfitSwitchEvents(charaBioData) {
         $(this).siblings().removeClass("focusedOutfit");
         $(".bioArt img:nth-child(" + ($(this).index() + 1) + ")").removeClass("hide");
         $(".bioArt img:not(:nth-child(" + ($(this).index() + 1) + "))").addClass("hide");
+    });
+}
+
+function setUpBioSwitchEvents(charaBioData) {
+    //load bio and focus on bio
+    $(".bioDetailInner").html(printLinesWithBreak(parseToIcon(charaBioData.bio), 2));
+    $(".bioDetailTabs li:first-child").addClass("bioTabFocused");
+    $(".bioDetailTabs li:first-child").siblings().removeClass("bioTabFocused");  
+
+    $(".bioDetailTabs li").click(function () {
+        $(this).addClass("bioTabFocused");
+        $(this).siblings().removeClass("bioTabFocused");
+        if($(this).index() == 1){
+            $(".bioDetailInner").html(printLinesWithBreak(charaBioData.personality?charaBioData.personality:charaBioData.bio, 2));
+        }else if($(this).index() == 2){
+            $(".bioDetailInner").html(printLinesWithBreak(charaBioData.trivia?charaBioData.trivia:charaBioData.bio, 2));
+        }else{
+            $(".bioDetailInner").html(printLinesWithBreak(charaBioData.bio, 2));
+        }
     });
 }
 
@@ -387,12 +389,6 @@ function modalEffectsInit(bioData, relationshipData) {
     });
 }
 
-function setUpSiteInfo(siteInfo) {
-    var beta = "<span class='beta'>BETA</span>";
-    $(".header .title").html(siteInfo.title + beta);
-    $(".header h2").html(printLinesWithBreak(siteInfo.description, 1));
-}
-
 function printLinesWithBreak(array, numberOfBr) {
     var result = "";
     for (const line of array) {
@@ -406,7 +402,48 @@ function printLinesWithBreak(array, numberOfBr) {
     return result;
 }
 
+function getDisplayName(name) {
+    return (name == "ryan") ? "R.J." : name.charAt(0).toUpperCase() + name.slice(1);
+}
 
+function parseToIcon(bioLines) {
+    //help parses words formatted like this: %fruitTart/水果塔% to an image with title label
+    //$(".bioDetailInner").html(printLinesWithBreak(parseToIcon(charaBioData.bio), 2))
+    var result = [];
+    var regExp = /%([^%]+)\/([^%]+)%/g;
+    for (const line of bioLines) {
+        var matches = regExp.exec(line);
+        if (matches === null) {
+                result.push(line);
+        } else {
+            result.push(line.replaceAll(regExp, "<img class='item' src='assets/img/profile/items/"+ matches[1]+".png' title='" + matches[2] + "'>"));
+        }
+    }
+    return result;
+}
+
+//========================//
+//=== Setting up stuff ===//
+//========================//
+
+function setUpSiteInfo(siteInfo) {
+    var beta = "<span class='beta'>BETA</span>";
+    $(".header .title").html(siteInfo.title + beta);
+    $(".header h2").html(printLinesWithBreak(siteInfo.description, 1));
+    //set up bio info tab texts
+    for(var i=0; i<siteInfo.bioDetailTabs.length; i++){
+        $(".bioDetailTabs li:nth-child("+ (i+1) +")").html(siteInfo.bioDetailTabs[i]);
+    }
+}
+
+function setupStuff(relationshipData, bioData, siteInfo) {
+    setUpSiteInfo(siteInfo)
+    buildChart(relationshipData);
+    modalEffectsInit(bioData, relationshipData);
+    setUpRelationshipHoverEvent(relationshipData);
+    setUpCharaHoverEvent(relationshipData);
+    arrangeChartContent();
+}
 
 //======================================//
 //=== Thing to do when window resize ===//
@@ -429,16 +466,6 @@ function checkWindowSize() {
     }
 }
 
-
-function setupStuff(relationshipData, bioData, siteInfo) {
-    setUpSiteInfo(siteInfo)
-    buildChart(relationshipData);
-    modalEffectsInit(bioData, relationshipData);
-    relationshipHoverEvent(relationshipData);
-    charaHoverEvent(relationshipData);
-    arrangeChartContent();
-}
-
 //======================//
 //===                ===//
 //=== Ready Function ===//
@@ -453,6 +480,7 @@ $(document).ready(function () {
     $(window).resize(checkWindowSize);
 
 
+    //can we please refactor language switching logic it looks so messy
     var language = window.navigator.userLanguage || window.navigator.language;
 
     if (language === "zh-TW" || language === "zh-CN") {

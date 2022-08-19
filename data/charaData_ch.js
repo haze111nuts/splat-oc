@@ -399,7 +399,9 @@ var bioData_ch = [
             '其實很乖、很為人著想'
         ],
         outfits: [
-            { name: '通常服', url: 'profile/blade.png' }
+            { name: '通常服', url: 'profile/blade.png' },
+            { name: '3號', url: 'profile/blade.png' },
+            { name: '小時候', url: 'profile/blade.png' }
         ],
         bio: [
             '因為長期被姐姐欺負跟貶低所以性格孤僻又內向。習慣用酷酷的樣子掩蓋自己的破碎的自信跟自尊以及安全感。',
@@ -409,7 +411,7 @@ var bioData_ch = [
             '對煮菜挺拿手，擅長家庭料理。'
         ],
         refsheets: [
-            "assets/img/refsheets/blade1.png",
+            "assets/img/refsheets/blade_v2.png",
         ]
     },
     {
