@@ -426,6 +426,7 @@ function parseToIcon(bioLines) {
 //=== Setting up stuff ===//
 //========================//
 
+
 function setUpSiteInfo(siteInfo) {
     var beta = "<span class='beta'>BETA</span>";
     $(".header .title").html(siteInfo.title + beta);
@@ -433,6 +434,16 @@ function setUpSiteInfo(siteInfo) {
     //set up bio info tab texts
     for(var i=0; i<siteInfo.bioDetailTabs.length; i++){
         $(".bioDetailTabs li:nth-child("+ (i+1) +")").html(siteInfo.bioDetailTabs[i]);
+    }
+}
+
+function setupLang() {
+    $(".langNav").removeClass("focusOn" + currentLang);
+    $(".langNav").addClass("focusOn" + nextLang);
+    if (currentLang == "CH") {
+        setupStuff(relationshipData_ch, bioData_ch, siteData_ch);
+    } else {
+        setupStuff(relationshipData_en, bioData_en, siteData_en);
     }
 }
 
@@ -466,16 +477,6 @@ function checkWindowSize() {
     }
 }
 
-function setup() {
-    $(".langNav").removeClass("focusOn" + currentLang);
-    $(".langNav").addClass("focusOn" + nextLang);
-    if (currentLang == "CH") {
-        setupStuff(relationshipData_ch, bioData_ch, siteData_ch);
-    } else {
-        setupStuff(relationshipData_en, bioData_en, siteData_en);
-    }
-}
-
 //======================//
 //===                ===//
 //=== Ready Function ===//
@@ -495,12 +496,12 @@ $(document).ready(function () {
     if (language === "zh-TW" || language === "zh-CN") {
         [currentLang, nextLang] = [nextLang, currentLang];
     }
-    setup();
+    setupLang();
 
     $("[id^=lang]").each(function(){
         $(this).click(function () {
             [currentLang, nextLang] = [nextLang, currentLang];
-            setup();
+            setupLang();
         })
     })
 
