@@ -17,8 +17,7 @@
 - ~~build realtionship info pop-up page~~
 - swap out character page name title font for ios
 - script not loading on certain phone??
-- better refresh cache solution?
-- all the string in charaData should use the same kind of quotes
+- ~~all the string in charaData should use the same kind of quotes~~
 - light box is acting weird...needs fix
 - drawing anims and a page for teams???
 - build warning pop-up page for TWCC
