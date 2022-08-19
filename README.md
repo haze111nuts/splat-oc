@@ -15,6 +15,7 @@
 - ~~change mouse highlight focus style~~
 - ~~set up actual profile pics~~
 - ~~build realtionship info pop-up page~~
+- swap out character name font when a character page is open for ios
 - script not loading in certain on certain phone??
 - better refresh cache solution?
 - all the string in charaData should use the same kind of quotes
