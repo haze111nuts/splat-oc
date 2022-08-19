@@ -426,7 +426,6 @@ function parseToIcon(bioLines) {
 //=== Setting up stuff ===//
 //========================//
 
-
 function setUpSiteInfo(siteInfo) {
     var beta = "<span class='beta'>BETA</span>";
     $(".header .title").html(siteInfo.title + beta);
