@@ -471,8 +471,7 @@ function setup() {
     $(".langNav").addClass("focusOn" + nextLang);
     if (currentLang == "CH") {
         setupStuff(relationshipData_ch, bioData_ch, siteData_ch);
-    }
-    else {
+    } else {
         setupStuff(relationshipData_en, bioData_en, siteData_en);
     }
 }
