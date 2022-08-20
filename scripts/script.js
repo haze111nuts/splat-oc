@@ -11,7 +11,7 @@ var siteData_en = {
 var siteData_ch = {
     title: "HAZE家漆彈小孩",
     description: ["懶人總整理+全員介紹頁面", "施工中😔有生之年慢慢加素材跟設定"],
-    bioDetailTabs: ["背景","性格","其他設定"]
+    bioDetailTabs: ["背景","性格","補充"]
 
 }
 
@@ -197,10 +197,8 @@ function setUpBioPageFor(charaBioData) {
     bioBasicHTML += "<tr><td>Dislike</td><td>" + charaBioData.dislike + "</td></tr>";
     bioBasicHTML += "<tr><td>Rank</td><td>" + charaBioData.rank + "</td></tr>";
     bioBasicHTML += "<tr><td>Mains</td><td>" + charaBioData.mains + "</td></tr>";
-    // bioBasicHTML += "<tr><td>Fav.<br>Food</td><td>" + "<img src='assets/img/profile/favfood/"+ charaBioData.id +".png' title='" + charaBioData.favFood + "'></td></tr>";
-
+    // bioBasicHTML += "<tr><td>Fav.<br>Food</td><td>" + "<img src='assets/img/profile/favfood/"+ charaBioData.id +".png' title='" + charaBioData.favFood + "'></td></tr>"
     bioBasicHTML += "</table>";
-
     var bioTraitsHTML = "<div class='traitLabel'>Traits</div>";
     bioTraitsHTML += "<ul class='traits'>";
     for (const traitsData of charaBioData.traits)
@@ -210,7 +208,7 @@ function setUpBioPageFor(charaBioData) {
     $(".bioBasic").html(bioBasicHTML + bioTraitsHTML);
 
     //Fill detailed bio panel
-    setUpBioSwitchEvents(charaBioData);    
+    setUpBioSwitchEvents(charaBioData);  
     $(".bioDetailInner").scrollTop(0);
 
     //Fill refsheets
@@ -223,13 +221,6 @@ function setUpBioPageFor(charaBioData) {
         }
     }
     $(".refSheets").html(refSheetHTML);
-
-    // document.querySelector(".refSheets a").onclick = () => {
-    //     basicLightbox.create(`
-    //         <img src="`+imgUrl+`">
-    //     `).show()
-    // }
-
     if (charaBioData.refsheets) {
         for (var i = 0; i < charaBioData.refsheets.length; i++) {
             $(".refSheets").children().children().eq(i).css("background", "url(" + charaBioData.refsheets[i] + ") no-repeat");
@@ -330,7 +321,7 @@ function setUpBioSwitchEvents(charaBioData) {
         if($(this).index() == 1){
             $(".bioDetailInner").html(printLinesWithBreak(charaBioData.personality?charaBioData.personality:charaBioData.bio, 2));
         }else if($(this).index() == 2){
-            $(".bioDetailInner").html(printLinesWithBreak(charaBioData.trivia?charaBioData.trivia:charaBioData.bio, 2));
+            $(".bioDetailInner").html(printLinesAsList(parseToIcon(charaBioData.trivia?charaBioData.trivia:"")));
         }else{
             $(".bioDetailInner").html(printLinesWithBreak(charaBioData.bio, 2));
         }
@@ -402,6 +393,14 @@ function printLinesWithBreak(array, numberOfBr) {
     return result;
 }
 
+function printLinesAsList(array) {
+    var result = "<ul class='dash'>"
+    for (const line of array) {
+        result += "<li>"+line+"</li>";
+    }
+    return result;
+}
+
 function getDisplayName(name) {
     return (name == "ryan") ? "R.J." : name.charAt(0).toUpperCase() + name.slice(1);
 }
@@ -416,7 +415,7 @@ function parseToIcon(bioLines) {
         if (matches === null) {
                 result.push(line);
         } else {
-            result.push(line.replaceAll(regExp, "<img class='item' src='assets/img/profile/items/"+ matches[1]+".png' title='" + matches[2] + "'>"));
+            result.push(line.replaceAll(regExp, "<img class='itemIcon' src='assets/img/profile/items/"+ matches[1]+".png' title='" + matches[2] + "'>"));
         }
     }
     return result;

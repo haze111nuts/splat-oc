@@ -122,7 +122,7 @@ ul{
 	position: relative;
 	list-style: none;
 	margin-left: 0;
-	padding-left: 1.2em;
+	padding-left: 0.9em;
 }
 .dash li:before {
 	content: "-";
@@ -602,9 +602,7 @@ ul{
   }  
 }
 
-
 // Detail Bio Panel
-
 .bioDetailTabs{
   position: absolute;
   top: -28px;
@@ -622,6 +620,7 @@ ul{
   @include prefix(transition, all 0.3s, webkit moz);
 }
 .bioTabFocused{
+  cursor: default !important;
   opacity: 1 !important;
 }
 .bioDetail{
@@ -636,14 +635,17 @@ ul{
   overflow-y: auto;
   width:  320px;
   height: 350px;
-  .item{
+  .itemIcon{
     height: 40px;
     display: inline-block;
-    vertical-align: bottom;
+    vertical-align: top;
+  }
+  ul li{
+    margin-bottom: 10px;
   }
 }
 
-// Detail Bio Panel
+// refsheet section
 .refSheets{
   bottom: 50px;
   right: -40px;
