@@ -88,7 +88,7 @@ ul {
   transform: rotate(-45deg);
 }
 
-.langCh {
+#langCH {
   right: -30px;
   bottom: 30px;
   -webkit-transform: rotate(-45deg);
@@ -97,7 +97,7 @@ ul {
   transform: rotate(-45deg);
 }
 
-.langEn {
+#langEN {
   right: 30px;
   bottom: -30px;
   -webkit-transform: rotate(45deg);

@@ -435,6 +435,16 @@ function setUpSiteInfo(siteInfo) {
     }
 }
 
+function setupLang() {
+    $(".langNav").removeClass("focusOn" + currentLang);
+    $(".langNav").addClass("focusOn" + nextLang);
+    if (currentLang == "CH") {
+        setupStuff(relationshipData_ch, bioData_ch, siteData_ch);
+    } else {
+        setupStuff(relationshipData_en, bioData_en, siteData_en);
+    }
+}
+
 function setupStuff(relationshipData, bioData, siteInfo) {
     setUpSiteInfo(siteInfo)
     buildChart(relationshipData);
@@ -471,43 +481,27 @@ function checkWindowSize() {
 //===                ===//
 //======================//
 
-var currentLang;
+var currentLang = "EN";
+var nextLang = "CH";    
 
 $(document).ready(function () {
 
     checkWindowSize();
     $(window).resize(checkWindowSize);
 
-
-    //can we please refactor language switching logic it looks so messy
     var language = window.navigator.userLanguage || window.navigator.language;
 
     if (language === "zh-TW" || language === "zh-CN") {
-        currentLang = "CH";
-        $(".langNav").addClass("focusOnEN");
-        setupStuff(relationshipData_ch, bioData_ch, siteData_ch);
-    } else {
-        currentLang = "EN";
-        $(".langNav").addClass("focusOnCH");
-        setupStuff(relationshipData_en, bioData_en, siteData_en);
+        [currentLang, nextLang] = [nextLang, currentLang];
     }
+    setupLang();
 
-    $(".langCh").click(function () {
-        if (currentLang == "EN") {
-            currentLang = "CH";
-            $(".langNav").removeClass("focusOnCH");
-            $(".langNav").addClass("focusOnEN");
-            setupStuff(relationshipData_ch, bioData_ch, siteData_ch);
-        }
-    });
-    $(".langEn").click(function () {
-        if (currentLang == "CH") {
-            currentLang = "EN";
-            $(".langNav").removeClass("focusOnEN");
-            $(".langNav").addClass("focusOnCH");
-            setupStuff(relationshipData_en, bioData_en, siteData_en);
-        }
-    });
+    $("[id^=lang]").each(function(){
+        $(this).click(function () {
+            [currentLang, nextLang] = [nextLang, currentLang];
+            setupLang();
+        })
+    })
 
     $(".se-pre-con").fadeOut("slow");;
 

@@ -19,6 +19,8 @@
 - ~~better refresh cache solution? (github refresh it every 10 mins?)~~
 - ~~all the string in charaData should use the same kind of quotes~~
 - swap out character page name title font for ios
+- script not loading on certain phone??
+- ~~all the string in charaData should use the same kind of quotes~~
 - light box is acting weird...needs fix
 - drawing anims and a page for teams???
 - build warning pop-up page for TWCC

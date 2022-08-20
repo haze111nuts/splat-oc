@@ -168,13 +168,13 @@ ul{
   @include prefix(transform, rotate(-45deg), webkit moz ms);    
 }
 
-.langCh{
+#langCH{
   right: -30px;
   bottom: 30px;
   @include prefix(transform, rotate(-45deg), webkit moz ms);  
 }
 
-.langEn{
+#langEN{
   right: 30px;
   bottom: -30px;
   @include prefix(transform, rotate(45deg), webkit moz ms);  
