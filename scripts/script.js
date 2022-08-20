@@ -341,11 +341,9 @@ function modalEffectsInit(bioData, relationshipData) {
                 classie.remove(document.documentElement, "md-perspective");
             }
         }
-
         function removeModalHandler() {
             removeModal(classie.has(el, "md-setperspective"));
             $(".langNav").removeClass("blur");
-            // document.body.classList.toggle("noscroll");         
         }
 
         el.addEventListener("click", function (ev) {
@@ -364,7 +362,6 @@ function modalEffectsInit(bioData, relationshipData) {
                 overlay.addEventListener("click", removeModalHandler);
             }, 1);
             $(".langNav").addClass("blur");
-            // document.body.classList.toggle("noscroll");
             if (classie.has(el, "md-setperspective")) {
                 setTimeout(function () {
                     classie.add(document.documentElement, "md-perspective");
