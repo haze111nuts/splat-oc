@@ -330,21 +330,30 @@ function setUpBioSwitchEvents(charaBioData) {
 
 function modalEffectsInit(bioData, relationshipData) {
     var overlay = document.querySelector(".md-overlay");
-    [].slice.call(document.querySelectorAll(".md-trigger")).forEach(function (el, i) {
+    var modal = document.querySelectorAll("[id^='modal']");
 
-        var modal = document.querySelector("#" + el.getAttribute("data-modal")),
-            close = modal.querySelector(".md-close");
-
-        function removeModal(hasPerspective) {
-            classie.remove(modal, "md-show");
-            if (hasPerspective) {
-                classie.remove(document.documentElement, "md-perspective");
-            }
-        }
+    //loop thru two pop-ups
+    modal.forEach(function(el){
+        var close = el.querySelector(".md-close");
         function removeModalHandler() {
-            removeModal(classie.has(el, "md-setperspective"));
+            // removeModal(classie.has(el, "md-setperspective"));
+            classie.remove(el, "md-show");
             $(".langNav").removeClass("blur");
+            $(document.body).removeClass("noscroll");
         }
+        setTimeout(function () {
+            overlay.addEventListener("click", removeModalHandler);
+        }, 1);
+        close.addEventListener("click", function (ev) {
+            
+            ev.stopPropagation();
+            removeModalHandler();
+        });    
+    });
+
+    //loop thru all photo and relationship with md-trigger class
+    [].slice.call(document.querySelectorAll(".md-trigger")).forEach(function (el, i) {
+        var currentModal = document.querySelector("#" + el.getAttribute("data-modal"));
 
         el.addEventListener("click", function (ev) {
             if (el.getAttribute("data-modal") == "modal-chara") {
@@ -356,10 +365,9 @@ function modalEffectsInit(bioData, relationshipData) {
                 var currentRelation = relationshipData.find(r => "rel_" + r.id === el.id);
                 setUpRelationPageFor(currentRelation);
             }
+            $(document.body).addClass("noscroll");
             setTimeout(function () {
-                classie.add(modal, "md-show");
-                overlay.removeEventListener("click", removeModalHandler);
-                overlay.addEventListener("click", removeModalHandler);
+                classie.add(currentModal, "md-show");
             }, 1);
             $(".langNav").addClass("blur");
             if (classie.has(el, "md-setperspective")) {
@@ -367,11 +375,6 @@ function modalEffectsInit(bioData, relationshipData) {
                     classie.add(document.documentElement, "md-perspective");
                 }, 25);
             }
-        });
-
-        close.addEventListener("click", function (ev) {
-            ev.stopPropagation();
-            removeModalHandler();
         });
 
     });
