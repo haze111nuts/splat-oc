@@ -209,7 +209,6 @@ function setUpBioPageFor(charaBioData) {
 
     //Fill detailed bio panel
     setUpBioSwitchEvents(charaBioData);  
-    $(".bioDetailInner").scrollTop(0);
 
     //Fill refsheets
     var refSheetHTML = "";
@@ -314,8 +313,10 @@ function setUpBioSwitchEvents(charaBioData) {
     $(".bioDetailInner").html(printLinesWithBreak(parseToIcon(charaBioData.bio), 2));
     $(".bioDetailTabs li:first-child").addClass("bioTabFocused");
     $(".bioDetailTabs li:first-child").siblings().removeClass("bioTabFocused");  
-
+    $(".bioDetailInner").scrollTop(0);
+    
     $(".bioDetailTabs li").click(function () {
+        $(".bioDetailInner").scrollTop(0);
         $(this).addClass("bioTabFocused");
         $(this).siblings().removeClass("bioTabFocused");
         if($(this).index() == 1){
@@ -326,6 +327,7 @@ function setUpBioSwitchEvents(charaBioData) {
             $(".bioDetailInner").html(printLinesWithBreak(charaBioData.bio, 2));
         }
     });
+
 }
 
 function modalEffectsInit(bioData, relationshipData) {
