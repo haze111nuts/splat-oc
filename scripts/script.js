@@ -197,7 +197,6 @@ function setUpBioPageFor(charaBioData) {
     bioBasicHTML += "<tr><td>Dislike</td><td>" + charaBioData.dislike + "</td></tr>";
     bioBasicHTML += "<tr><td>Rank</td><td>" + charaBioData.rank + "</td></tr>";
     bioBasicHTML += "<tr><td>Mains</td><td>" + charaBioData.mains + "</td></tr>";
-    // bioBasicHTML += "<tr><td>Fav.<br>Food</td><td>" + "<img src='assets/img/profile/favfood/"+ charaBioData.id +".png' title='" + charaBioData.favFood + "'></td></tr>"
     bioBasicHTML += "</table>";
     var bioTraitsHTML = "<div class='traitLabel'>Traits</div>";
     bioTraitsHTML += "<ul class='traits'>";

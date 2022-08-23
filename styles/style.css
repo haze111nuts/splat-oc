@@ -582,12 +582,33 @@ ul {
   image-rendering: -moz-crisp-edges;
 }
 
+.themes {
+  right: -50px;
+  top: 200px;
+}
+
+.themes a div {
+  width: 40px;
+  height: 40px;
+  background: rgb(110, 110, 110) url(../assets/img/music-note.svg) no-repeat center center;
+  border-radius: 40px;
+  margin-bottom: 10px;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.themes a div:hover {
+  background-color: #bbb;
+}
+
 .md-window .md-content .bioBasic,
 .md-window .md-content .bioOutfits,
 .md-window .md-content .bioDetail,
 .md-window .md-content .bioCloseBT,
 .md-window .md-content .bioHeader,
-.md-window .md-content .refSheets {
+.md-window .md-content .refSheets,
+.md-window .md-content .themes {
   opacity: 0;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -626,6 +647,16 @@ ul {
   transition: all 0.6s;
 }
 
+.md-window .md-content .themes {
+  -webkit-transform: translateX(40%);
+  -moz-transform: translateX(40%);
+  -ms-transform: translateX(40%);
+  transform: translateX(40%);
+  -webkit-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  transition: all 0.6s;
+}
+
 .md-window .md-content .bioHeader {
   -webkit-transform: translateY(15%);
   -moz-transform: translateY(15%);
@@ -649,7 +680,8 @@ ul {
 .md-show.md-window .md-content .bioDetail,
 .md-show.md-window .md-content .bioCloseBT,
 .md-show.md-window .md-content .bioHeader,
-.md-show.md-window .md-content .refSheets {
+.md-show.md-window .md-content .refSheets,
+.md-show.md-window .md-content .themes {
   -webkit-transform: translateY(0) translateX(0);
   -moz-transform: translateY(0) translateX(0);
   -ms-transform: translateY(0) translateX(0);
@@ -771,6 +803,13 @@ ul {
 .relationshipPage .relPhotoBox:nth-child(2) {
   top: -20px;
   right: 85px;
+}
+
+.miniPlayer {
+  z-index: 2100;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
 }
 
 .md-window .md-content .relPhotoBox,
