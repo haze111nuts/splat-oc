@@ -149,7 +149,8 @@ ul {
 }
 
 .noSelect {
-  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-touch-callout: none;
+  /* iOS Safari */
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
@@ -364,7 +365,8 @@ ul {
   position: absolute;
 }
 
-.relCloseBT, .bioCloseBT {
+.relCloseBT,
+.bioCloseBT {
   cursor: pointer;
   z-index: 10;
 }
@@ -384,7 +386,9 @@ ul {
   right: -20px;
 }
 
-.bioBasic, .bioDetail, .relDetail {
+.bioBasic,
+.bioDetail,
+.relDetail {
   font-size: 14px;
 }
 
@@ -429,7 +433,8 @@ ul {
   width: 150px;
   text-align: center;
 }
-.bioBasic td li, .bioBasic .traits li {
+.bioBasic td li,
+.bioBasic .traits li {
   text-align: center;
   color: white;
 }
@@ -490,7 +495,8 @@ ul {
   box-shadow: -5px -5px 5px 0px rgba(0, 0, 0, 0.5);
   transition: 0.2s ease;
 }
-.outfitSelect li:hover, .outfitSelect .focusedOutfit {
+.outfitSelect li:hover,
+.outfitSelect .focusedOutfit {
   color: white !important;
 }
 .outfitSelect li:nth-child(1) {
@@ -832,7 +838,8 @@ ul {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-.relTitle .upper, .relTitle .lower {
+.relTitle .upper,
+.relTitle .lower {
   height: 50px;
   line-height: 130%;
 }
@@ -1181,10 +1188,23 @@ ul {
     padding-bottom: 40px;
     width: 90%;
   }
+  .themes {
+    left: 40px;
+    top: 800px;
+  }
+  .barHide {
+    left: -210px;
+  }
+  .barShow {
+    left: 50px;
+  }
 }
-@media only screen and (max-width: 959px) and (max-width: 719px) {
+@media only screen and (max-width: 719px) {
   .bioArt > img {
     left: 210px;
+  }
+  .themes {
+    left: 10px;
   }
   .relationshipPage {
     margin-top: 120px;
@@ -1212,7 +1232,7 @@ ul {
     right: 15px;
   }
 }
-@media only screen and (max-width: 959px) and (max-width: 479px) {
+@media only screen and (max-width: 479px) {
   .header h1 {
     font-size: 25px;
   }
@@ -1227,6 +1247,9 @@ ul {
   .bioDetail {
     padding: 20px 20px 100px 20px;
     width: 75%;
+  }
+  .themes {
+    left: 60px;
   }
   .md-show.md-window .md-content .bioArt img {
     -webkit-transform: translateX(0%) translateY(0%);

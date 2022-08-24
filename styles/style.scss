@@ -2,14 +2,14 @@
 @use 'sass:math';
 @import url(https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap);
 
-$chart-width: 1185px ;
-$chart-height: 780px ;
+$chart-width: 1185px;
+$chart-height: 780px;
 $chara-box-width: 135px;
 $chara-box-height: 155px;
 $chara-photo-size: 120px;
 
 $raw-photo-size: 150px;
-$raw-photo-asset-x: 450px; 
+$raw-photo-asset-x: 450px;
 $raw-photo-asset-y: 600px;
 
 @function photo-bg-pos($index) {
@@ -17,7 +17,7 @@ $raw-photo-asset-y: 600px;
   $array-y-length: math.div($raw-photo-asset-y, $raw-photo-size);
 
   $x-position: $index % $array-x-length;
-  $y-position: floor(math.div($index, $array-x-length)); 
+  $y-position: floor(math.div($index, $array-x-length));
 
   $result-x: $x-position * $chara-photo-size * -1;
   $result-y: $y-position * $chara-photo-size * -1;
@@ -27,62 +27,42 @@ $raw-photo-asset-y: 600px;
 
 @function map-deep-get($map, $keys...) {
   @each $key in $keys {
-      $map: map-get($map, $key);
+    $map: map-get($map, $key);
   }
+
   @return $map;
 }
 
 $chara: (
-  blade: (
-    color: rgb(127, 180, 57),
-    photo-index: 0
-  ),
-  axel: (
-    color: rgb(221, 155, 33),
-    photo-index: 1
-  ),
-  xiu: (
-    color: rgb(65, 173, 206),
-    photo-index: 2
-  ),
-  yoni: (
-    color: rgb(224, 213, 54),
-    photo-index: 3
-  ),
-  hannah: (
-    color: rgb(41, 81, 194),
-    photo-index: 6
-  ),
-  lance: (
-    color: rgb(148, 77, 206),
-    photo-index: 4
-  ),
-  ellie: (
-    color: rgb(17, 148, 87),
-    photo-index: 7
-  ),
-  edd: (
-    color: rgb(211, 43, 43),
-    photo-index: 10
-  ),
-  minerva: (
-    color: rgb(167, 87, 83),
-    photo-index: 9
-  ),
-  simon: (
-    color: rgb(216, 40, 163),
-    photo-index: 11
-  ),
-  ryan: (
-    color: rgb(180, 180, 180),
-    photo-index: 5
-  )
+  blade: (color: rgb(127, 180, 57),
+    photo-index: 0),
+  axel: (color: rgb(221, 155, 33),
+    photo-index: 1),
+  xiu: (color: rgb(65, 173, 206),
+    photo-index: 2),
+  yoni: (color: rgb(224, 213, 54),
+    photo-index: 3),
+  hannah: (color: rgb(41, 81, 194),
+    photo-index: 6),
+  lance: (color: rgb(148, 77, 206),
+    photo-index: 4),
+  ellie: (color: rgb(17, 148, 87),
+    photo-index: 7),
+  edd: (color: rgb(211, 43, 43),
+    photo-index: 10),
+  minerva: (color: rgb(167, 87, 83),
+    photo-index: 9),
+  simon: (color: rgb(216, 40, 163),
+    photo-index: 11),
+  ryan: (color: rgb(180, 180, 180),
+    photo-index: 5)
 );
 
 @mixin prefix($property, $value, $prefixes: ()) {
   @each $prefix in $prefixes {
     #{'-' + $prefix + '-' + $property}: $value;
   }
+
   #{$property}: $value;
 }
 
@@ -90,18 +70,19 @@ $chara: (
   font-family: RevnosaRegular;
   src: url(../assets/fonts/RevnosaRegular.ttf);
 }
+
 @font-face {
   font-family: TexasGrungeDemo;
   src: url(../assets/fonts/TexasGrungeDemo.ttf);
 }
 
 
-*{
-    margin: 0px;
-    padding: 0px; 
+* {
+  margin: 0px;
+  padding: 0px;
 }
-  
-html{
+
+html {
   text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: rgb(28, 28, 28);
@@ -110,128 +91,132 @@ html{
 ::selection {
   background: rgb(120, 120, 120);
 }
+
 ::-moz-selection {
   background: rgb(120, 120, 120);
 }
 
-ul{
+ul {
   list-style: none;
 }
 
-.dash{
-	position: relative;
-	list-style: none;
-	margin-left: 0;
-	padding-left: 0.9em;
+.dash {
+  position: relative;
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0.9em;
 }
+
 .dash li:before {
-	content: "-";
-	position: absolute;
-	left: 0;
+  content: "-";
+  position: absolute;
+  left: 0;
 }
 
 
-.langNav{
+.langNav {
   border: 3px solid dimgrey;
   width: 120px;
   height: 120px;
   position: fixed;
-  top:-60px;
-  left:-60px;
+  top: -60px;
+  left: -60px;
   z-index: 10;
   border-radius: 120px;
-  @include prefix(transition, all 0.3s, webkit moz);   
+  @include prefix(transition, all 0.3s, webkit moz);
 
 }
 
-.langSwitch{
+.langSwitch {
   cursor: pointer;
   position: absolute;
   background-color: dimgrey;
-  display:block;
-  width:60px;
-  height:60px;
-  line-height:60px;
+  display: block;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
   border-radius: 50%;
-  color:#f5f5f5;
-  text-align:center;
-  text-decoration:none;
-  font-size:20px;
-  font-weight:bold;
+  color: #f5f5f5;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
 }
 
-.focusOnCH{
-  @include prefix(transform, rotate(45deg), webkit moz ms);    
+.focusOnCH {
+  @include prefix(transform, rotate(45deg), webkit moz ms);
 }
 
-.focusOnEN{
-  @include prefix(transform, rotate(-45deg), webkit moz ms);    
+.focusOnEN {
+  @include prefix(transform, rotate(-45deg), webkit moz ms);
 }
 
-#langCH{
+#langCH {
   right: -30px;
   bottom: 30px;
-  @include prefix(transform, rotate(-45deg), webkit moz ms);  
+  @include prefix(transform, rotate(-45deg), webkit moz ms);
 }
 
-#langEN{
+#langEN {
   right: 30px;
   bottom: -30px;
-  @include prefix(transform, rotate(45deg), webkit moz ms);  
+  @include prefix(transform, rotate(45deg), webkit moz ms);
 }
 
-.header{
+.header {
   width: 100%;
   border: #f5f5f5 0px solid;
   background-color: rgb(44, 44, 44);
   margin: 0px auto;
-  background:url(../assets/img/bg1.png) fixed repeat;
+  background: url(../assets/img/bg1.png) fixed repeat;
   // background-size: cover;
   color: #fff;
-  text-align:center;
-  padding: 100px 0px; 
+  text-align: center;
+  padding: 100px 0px;
 
-  h1{
+  h1 {
     font-family: "-apple-system", BlinkMacSystemFont, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "Noto Sans Japanese", "ヒラギノ角ゴ Pro W3", "メイリオ", "Hiragino Kaku Gothic ProN", "MS PGothic", Osaka, "sans-serif";
     font-size: 34px;
     margin-bottom: 8px;
-    .title{
-        padding:0px 15px;
+
+    .title {
+      padding: 0px 15px;
     }
   }
 
-  h2{
+  h2 {
     font-size: 14px;
     line-height: 1.5em;
     font-weight: 500;
     margin-top: 0px;
-    color:#aaa;
+    color: #aaa;
   }
 
-  .beta{
+  .beta {
     font-size: 15px;
     padding: 0px 5px;
     color: map-deep-get($chara, "blade", "color");
   }
 }
 
-.breather{
+.breather {
   width: 100%;
   height: 80px;
   background-color: #000;
 }
 
-.hide{
+.hide {
   opacity: 0 !important;
   z-index: -1;
 }
 
-.noSelect{
-  -webkit-touch-callout: none; /* iOS Safari */
-  @include prefix(user-select, none, webkit khtml moz ms);  
+.noSelect {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  @include prefix(user-select, none, webkit khtml moz ms);
 }
 
-.blur{
+.blur {
   @include prefix(filter, blur(5px), webkit moz);
 }
 
@@ -241,85 +226,85 @@ ul{
 //===                 ===//
 //=======================//
 
-.chartWrapper{
+.chartWrapper {
   position: relative;
   width: $chart-width;
   height: $chart-height;
   margin: 50px auto 50px auto;
 }
 
-#chart{
+#chart {
   // border: 1px solid #000;
   width: $chart-width;
   height: $chart-height;
   position: absolute;
 }
 
-#chart ul{
+#chart ul {
   display: block;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
 
-#chart li{
+#chart li {
   position: absolute;
   display: block;
 }
 
-.charaPhotoBox{
+.charaPhotoBox {
   cursor: pointer;
-  border: 2px white solid ;
+  border: 2px white solid;
   width: $chara-box-width;
   height: $chara-box-height;
-  background:url(../assets/img/bg1.png) fixed repeat;
-  -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3), inset 0px 0px 10px 3px rgba(0,0,0,0.4); 
-  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3), inset 0px 0px 10px 3px rgba(0,0,0,0.4);
+  background: url(../assets/img/bg1.png) fixed repeat;
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3), inset 0px 0px 10px 3px rgba(0, 0, 0, 0.4);
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3), inset 0px 0px 10px 3px rgba(0, 0, 0, 0.4);
   opacity: 1;
   transition: 0.4s ease;
 }
 
-.nameSticker{
+.nameSticker {
   color: white;
   font-family: RevnosaRegular;
   padding-top: 3px;
   font-size: 19px;
 }
 
-#chartSVG{
+#chartSVG {
   width: $chart-width;
   height: $chart-height;
   position: absolute;
   display: block;
 }
 
-#chartSVG path{
+#chartSVG path {
   stroke-width: 2.3px;
 }
 
-.basePath{
+.basePath {
   stroke-opacity: 0.2;
   @include prefix(transition, all 0.7s, webkit moz);
 }
 
-.clonePath{
+.clonePath {
   stroke-opacity: 0;
   stroke-dasharray: 1500;
   // stroke-dasharray: 10;
 }
 
-.duoPath{
+.duoPath {
   stroke-opacity: 1;
   stroke-dasharray: 10;
   animation: dash 0.7s forwards linear infinite;
 }
 
-.duoPathBase{
+.duoPathBase {
   stroke-opacity: 1 !important;
 }
 
-.animatedPath{
+.animatedPath {
   stroke-opacity: 1;
-  animation: draw 1.3s forwards linear ;
+  animation: draw 1.3s forwards linear;
   // animation: dash 0.8s forwards infinite linear;
 }
 
@@ -327,6 +312,7 @@ ul{
   from {
     stroke-dashoffset: 1500;
   }
+
   to {
     stroke-dashoffset: 0;
   }
@@ -336,6 +322,7 @@ ul{
   from {
     stroke-dashoffset: 0;
   }
+
   to {
     stroke-dashoffset: 19;
   }
@@ -350,17 +337,17 @@ ul{
 //   }
 // }
 
-.relation{
+.relation {
   text-align: center;
   border: 0px solid lightgrey;
   font-size: 0.75em;
   cursor: pointer;
   transition: 0.4s ease;
-  @include prefix(transform, translateX(-50%) translateY(-50%), webkit moz ms);  
-	text-shadow: 1px 1px 0 black,
+  @include prefix(transform, translateX(-50%) translateY(-50%), webkit moz ms);
+  text-shadow: 1px 1px 0 black,
 }
 
-.relLabel{
+.relLabel {
   color: white;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1.25em;
@@ -368,31 +355,33 @@ ul{
   padding: 2px 0 2px 0;
   line-height: 100%;
   transition: 0.4s ease;
-	text-shadow: 
-        -1px 1px 0 black,
-        1px 1px 0 black,
-        1px -1px 0 black,
-        -1px -1px 0 black,
-        -2px 2px 0 black,
-        2px 2px 0 black,
-        2px -2px 0 black,
-        -2px -2px 0 black;
+  text-shadow:
+    -1px 1px 0 black,
+    1px 1px 0 black,
+    1px -1px 0 black,
+    -1px -1px 0 black,
+    -2px 2px 0 black,
+    2px 2px 0 black,
+    2px -2px 0 black,
+    -2px -2px 0 black;
 }
 
-.faded{
+.faded {
   opacity: 0.1;
 }
 
-.group{
+.group {
   stroke-width: 0.5px;
 }
-#RB{
+
+#RB {
   stroke: map-deep-get($chara, "blade", "color");
   stroke-opacity: 0.3;
   fill: map-deep-get($chara, "blade", "color");
   fill-opacity: 0.1;
 }
-#MM{
+
+#MM {
   stroke: map-deep-get($chara, "hannah", "color");
   stroke-opacity: 0.3;
   fill: map-deep-get($chara, "hannah", "color");
@@ -404,90 +393,102 @@ ul{
 //===   Pop open window   ===//
 //===                     ===//
 //===========================//
-.noscroll { overflow: hidden; }
+.noscroll {
+  overflow: hidden;
+}
+
 .md-modal {
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	z-index: 2000;
-	backface-visibility: hidden;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 2000;
+  backface-visibility: hidden;
   @include prefix(visibility, hidden, webkit moz ms);
-  @include prefix(transform, translateX(-50%) translateY(-50%), webkit moz ms);  
+  @include prefix(transform, translateX(-50%) translateY(-50%), webkit moz ms);
 }
 
 .md-show {
-	@include prefix(visibility, visible, webkit moz ms);
+  @include prefix(visibility, visible, webkit moz ms);
 }
 
 .md-overlay {
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	visibility: hidden;
-	top: 0;
-	left: 0;
-	z-index: 1000;
-	opacity: 0;
-	background: rgba(0,0,0,0.6);
-  @include prefix(transition, all 0.3s, webkit moz);  
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.6);
+  @include prefix(transition, all 0.3s, webkit moz);
 }
 
-.md-show ~ .md-overlay {
-	opacity: 1;
-	visibility: visible;
+.md-show~.md-overlay {
+  opacity: 1;
+  visibility: visible;
 }
 
 .md-content {
-	color: #fff;
+  color: #fff;
   text-align: left;
-	position: relative;
-	margin: 0 auto;
+  position: relative;
+  margin: 0 auto;
 }
 
-.md-content > div{
+.md-content>div {
   position: absolute;
 }
 
 // Bio Close button
-.relCloseBT, .bioCloseBT{
+.relCloseBT,
+.bioCloseBT {
   cursor: pointer;
   z-index: 10;
 }
 
-.md-show.md-window ~ .container {
-  @include prefix(filter, blur(5px), webkit moz);  
+.md-show.md-window~.container {
+  @include prefix(filter, blur(5px), webkit moz);
 }
 
 //==============================//
 //===   Style for Bio page   ===//
 //==============================//
-.charaBio{
-	width: 900px;
-	height: 700px;
-  .bioCloseBT{
+.charaBio {
+  width: 900px;
+  height: 700px;
+
+  .bioCloseBT {
     top: 40px;
-    right: -20px;  
-  }  
+    right: -20px;
+  }
 }
-.bioBasic, .bioDetail, .relDetail{
+
+.bioBasic,
+.bioDetail,
+.relDetail {
   font-size: 14px;
 }
+
 // Header
-.bioHeader{
+.bioHeader {
   z-index: 10;
   top: 60px;
   left: 550px;
   color: white;
-  :first-child{
+
+  :first-child {
     font-size: 55px;
-    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat";  
+    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat";
   }
-  :nth-child(2){
+
+  :nth-child(2) {
     font-size: 15px;
   }
 }
+
 // Basic Info Panel
-.bioBasic{
+.bioBasic {
   background-color: #000;
   padding: 30px 25px 30px 25px;
   width: 215px;
@@ -495,13 +496,15 @@ ul{
   left: 260px;
   z-index: 5;
 
-  table tr td:first-child{
+  table tr td:first-child {
     padding: 1px 7px 1px 5px;
   }
+
   table tr td:nth-child(2) {
     padding-left: 5px;
   }
-  td div{
+
+  td div {
     width: 15px;
     height: 15px;
     margin-right: 3px;
@@ -512,33 +515,38 @@ ul{
   }
 
   // Traits section
-  .traitLabel{
+  .traitLabel {
     margin: 15px auto 5px auto;
     padding-bottom: 2px;
     width: 150px;
     text-align: center;
   }
-  td li, .traits li {
+
+  td li,
+  .traits li {
     text-align: center;
     color: white;
   }
-  .traits li:before{
+
+  .traits li:before {
     content: "＃ ";
   }
 }
 
-.iconBi{
-  background: linear-gradient(-45deg, rgba(214,2,112,1) 40%, rgba(155,79,150,1) 45%, rgba(155,79,150,1) 55%, rgba(0,56,168,1) 60%);
+.iconBi {
+  background: linear-gradient(-45deg, rgba(214, 2, 112, 1) 40%, rgba(155, 79, 150, 1) 45%, rgba(155, 79, 150, 1) 55%, rgba(0, 56, 168, 1) 60%);
 }
-.iconPan{
-  background: linear-gradient(-45deg, rgba(255,33,140,1) 36%, rgba(255,216,0,1) 45%, rgba(255,216,0,1) 55%, rgba(33,177,255,1) 64%);  
+
+.iconPan {
+  background: linear-gradient(-45deg, rgba(255, 33, 140, 1) 36%, rgba(255, 216, 0, 1) 45%, rgba(255, 216, 0, 1) 55%, rgba(33, 177, 255, 1) 64%);
 }
 
 // Chara Art Panel
-.bioArt{
+.bioArt {
   z-index: 10;
-  > img{
-    left:130px;
+
+  >img {
+    left: 130px;
     top: 350px;
     position: absolute;
     @include prefix(transition, all 0.4s, webkit moz);
@@ -546,7 +554,7 @@ ul{
 }
 
 // Oufits Panel
-.bioOutfits{
+.bioOutfits {
   padding: 0;
   width: 240px;
   height: 200px;
@@ -555,15 +563,16 @@ ul{
   z-index: 6;
 }
 
-.outfitSelect-ch{
+.outfitSelect-ch {
   font-size: 22px !important;
   padding: 2px 23px 4px 23px !important;
   font-family: 'Yusei Magic', sans-serif !important;
 }
 
-.outfitSelect{
+.outfitSelect {
   position: relative;
-  li{
+
+  li {
     cursor: pointer;
     color: rgb(92, 92, 92);
     right: 0px;
@@ -575,90 +584,103 @@ ul{
     text-align: center;
     background-image: linear-gradient(137deg, #2b2b2b 14.29%, #000000 14.29%, #000000 50%, #2b2b2b 50%, #2b2b2b 64.29%, #000000 64.29%, #000000 100%);
     background-size: 51.32px 47.86px;
-    box-shadow: -5px -5px 5px 0px rgba(0,0,0,0.5);
-    transition: 0.2s ease;  
+    box-shadow: -5px -5px 5px 0px rgba(0, 0, 0, 0.5);
+    transition: 0.2s ease;
   }
-  li:hover, .focusedOutfit{
+
+  li:hover,
+  .focusedOutfit {
     color: white !important;
   }
+
   li:nth-child(1) {
     transform: rotate(7deg);
     top: 20px;
   }
+
   li:nth-child(2) {
     transform: rotate(-6deg);
     top: 65px;
     right: -5px;
   }
+
   li:nth-child(3) {
     transform: rotate(2deg);
     top: 115px;
     right: -10px;
   }
+
   li:nth-child(4) {
     transform: rotate(-7deg);
     top: 170px;
     right: -10px;
-  }  
+  }
 }
 
 // Detail Bio Panel
-.bioDetailTabs{
+.bioDetailTabs {
   position: absolute;
   top: -28px;
 }
-.bioDetailTabs li{
+
+.bioDetailTabs li {
   opacity: 0.5;
   font-size: 15px;
   background-color: rgba(50, 50, 50, 1);
   padding: 5px 15px 3px 15px;
   float: left;
   margin-left: 10px;
-  border-top-left-radius: 8px;  
+  border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   cursor: pointer;
   @include prefix(transition, all 0.3s, webkit moz);
 }
-.bioTabFocused{
+
+.bioTabFocused {
   cursor: default !important;
   opacity: 1 !important;
 }
-.bioDetail{
+
+.bioDetail {
   padding: 20px 45px 110px 50px;
   background-color: rgba(50, 50, 50, 1);
   line-height: 150%;
   right: -30px;
-  bottom: 40px; 
+  bottom: 40px;
 }
-.bioDetailInner{
+
+.bioDetailInner {
   padding: 10px;
   overflow-y: auto;
-  width:  320px;
+  width: 320px;
   height: 350px;
-  .itemIcon{
+
+  .itemIcon {
     height: 40px;
     display: inline-block;
     vertical-align: top;
   }
-  ul li{
+
+  ul li {
     margin-bottom: 10px;
   }
 }
 
 // refsheet section
-.refSheets{
+.refSheets {
   bottom: 50px;
   right: -40px;
   width: 400px;
   height: 90px;
-  > a div{
+
+  >a div {
     width: 90px;
     height: 90px;
     margin-left: 20px;
     float: right;
     background-color: white;
     overflow: hidden;
-    @include prefix(box-shadow, -8px -8px 0px 0px rgba(0,0,0,1), webkit );  
+    @include prefix(box-shadow, -8px -8px 0px 0px rgba(0, 0, 0, 1), webkit);
     @include prefix(transition, all 0.4s, webkit moz);
     image-rendering: -moz-crisp-edges;
     // img {
@@ -674,7 +696,8 @@ ul{
   right: -50px;
   top: 180px;
 }
-.themes div{
+
+.themes div {
   width: 35px;
   height: 35px;
   background: rgb(110, 110, 110) url(../assets/img/music-note.svg) no-repeat center center;
@@ -683,11 +706,13 @@ ul{
   cursor: pointer;
   @include prefix(transition, all 0.3s, webkit moz);
 }
-.focusedTheme{
+
+.focusedTheme {
   background-color: #bbb !important;
 }
+
 // Mini player
-.miniBar{
+.miniBar {
   z-index: 2100;
   position: fixed;
   bottom: 30px;
@@ -695,11 +720,11 @@ ul{
   @include prefix(transition, all 0.6s, webkit moz);
 }
 
-.barHide{
+.barHide {
   right: -210px;
 }
 
-.barShow{
+.barShow {
   right: 50px;
 }
 
@@ -711,6 +736,7 @@ ul{
   max-width: 100%;
   background: #000;
   margin: 5px;
+
   iframe {
     position: absolute;
     top: 0;
@@ -764,39 +790,39 @@ ul{
 .md-window .md-content .bioCloseBT,
 .md-window .md-content .bioHeader,
 .md-window .md-content .refSheets,
-.md-window .md-content .themes{
-	opacity: 0;
+.md-window .md-content .themes {
+  opacity: 0;
   @include prefix(transition, all 0.3s, webkit moz);
 }
 
-.md-window .md-content .bioBasic{
-  @include prefix(transform, translateY(-5%), webkit moz ms);  
-  @include prefix(transition, all 0.4s, webkit moz);  
+.md-window .md-content .bioBasic {
+  @include prefix(transform, translateY(-5%), webkit moz ms);
+  @include prefix(transition, all 0.4s, webkit moz);
 }
 
-.md-window .md-content .bioOutfits{
-  @include prefix(transform, translateY(5%), webkit moz ms);  
-  @include prefix(transition, all 0.5s, webkit moz);  
+.md-window .md-content .bioOutfits {
+  @include prefix(transform, translateY(5%), webkit moz ms);
+  @include prefix(transition, all 0.5s, webkit moz);
 }
 
 .md-window .md-content .bioDetail,
 .md-window .md-content .bioCloseBT,
-.md-window .md-content .refSheets{
+.md-window .md-content .refSheets {
   @include prefix(transform, translateX(10%), webkit moz ms);
   @include prefix(transition, all 0.6s, webkit moz);
 }
 
-.md-window .md-content .themes{
+.md-window .md-content .themes {
   @include prefix(transform, translateX(40%), webkit moz ms);
   @include prefix(transition, all 0.6s, webkit moz);
 }
 
-.md-window .md-content .bioHeader{
+.md-window .md-content .bioHeader {
   @include prefix(transform, translateY(15%), webkit moz ms);
   @include prefix(transition, all 0.7s, webkit moz);
 }
 
-.md-window .md-content .bioArt img{
+.md-window .md-content .bioArt img {
   @include prefix(transform, translateX(-60%) translateY(-50%), webkit moz ms);
   opacity: 0;
 }
@@ -808,12 +834,12 @@ ul{
 .md-show.md-window .md-content .bioCloseBT,
 .md-show.md-window .md-content .bioHeader,
 .md-show.md-window .md-content .refSheets,
-.md-show.md-window .md-content .themes{
+.md-show.md-window .md-content .themes {
   @include prefix(transform, translateY(0) translateX(0), webkit moz ms);
-	opacity: 1;
+  opacity: 1;
 }
 
-.md-show.md-window .md-content .bioArt img{
+.md-show.md-window .md-content .bioArt img {
   @include prefix(transform, translateX(-50%) translateY(-50%), webkit moz ms);
   opacity: 1;
 }
@@ -828,108 +854,112 @@ $rel-page-outerPaddingLR: 40px;
 $rel-title-top-offset: -20px;
 $rel-arrow-width: 160px;
 
-.relationshipPage{
+.relationshipPage {
   background-color: rgba(40, 40, 40, 1);
   line-height: 150%;
   width: $rel-page-width;
-	height: $rel-page-height;
+  height: $rel-page-height;
   padding: 170px $rel-page-outerPaddingLR 0 $rel-page-outerPaddingLR;
 }
 
-.relDetail{
+.relDetail {
   padding-top: 20px;
-  border-top: 1px gray solid ;
+  border-top: 1px gray solid;
   overflow-y: auto;
   position: static !important;
 }
 
-.relDetail li{
+.relDetail li {
   margin-bottom: 15px;
 }
 
 .relDetail li::before {
   content: "- ";
-  display: inline-block; 
+  display: inline-block;
   width: 1em;
 }
 
-.relCloseBT{
+.relCloseBT {
   top: -30px;
-  right: -45px;  
+  right: -45px;
 }
 
-.relPhotoBox{
-  border: 2px white solid ;
+.relPhotoBox {
+  border: 2px white solid;
   width: $chara-box-width;
   height: $chara-box-height;
-  background:url(../assets/img/bg1.png) fixed repeat;
-  -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3), inset 0px 0px 10px 3px rgba(0,0,0,0.4); 
-  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3), inset 0px 0px 10px 3px rgba(0,0,0,0.4);
+  background: url(../assets/img/bg1.png) fixed repeat;
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3), inset 0px 0px 10px 3px rgba(0, 0, 0, 0.4);
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3), inset 0px 0px 10px 3px rgba(0, 0, 0, 0.4);
 }
 
-.relTitle{
+.relTitle {
   top: -10px;
-  left: $rel-page-outerPaddingLR + $rel-page-width * 0.5 ;
+  left: $rel-page-outerPaddingLR + $rel-page-width * 0.5;
   // border: 1px solid red;
   width: $rel-arrow-width;
   height: $chara-box-height;
   @include prefix(transform, translateX(-50%), webkit moz ms);
 
 
-  .label{
+  .label {
     width: $rel-arrow-width;
     text-align: center;
     position: absolute;
-    margin: 0;    
+    margin: 0;
     left: 50%;
     font-size: 0.8rem;
   }
 
-  .middle{
+  .middle {
     font-size: 20px;
     top: 50%;
     @include prefix(transform, translate(-50%, -50%), webkit moz ms);
   }
 
-  .upper, .lower{
+  .upper,
+  .lower {
     height: 50px;
     line-height: 130%;
   }
-  .upper{
+
+  .upper {
     top: 0;
     @include prefix(transform, translateX(-50%), webkit moz ms);
-    div{
+
+    div {
       position: absolute;
       width: 100%;
       bottom: 0;
     }
   }
-  .lower{
+
+  .lower {
     bottom: 0;
     @include prefix(transform, translateX(-50%), webkit moz ms);
   }
 
 }
 
-.relationshipPage{
-  .relTitle svg{
+.relationshipPage {
+  .relTitle svg {
     margin: 0;
     position: absolute;
     top: 50%;
     -ms-transform: translateY(-50%);
-    transform: translateY(-50%);    
+    transform: translateY(-50%);
   }
 
-  .nameSticker{
+  .nameSticker {
     text-align: center;
-  }  
+  }
 
-  .relPhotoBox:nth-child(1){
+  .relPhotoBox:nth-child(1) {
     top: $rel-title-top-offset;
     left: 85px;
   }
 
-  .relPhotoBox:nth-child(2){
+  .relPhotoBox:nth-child(2) {
     top: $rel-title-top-offset;
     right: 85px;
   }
@@ -941,44 +971,44 @@ $rel-arrow-width: 160px;
 // Window effect stuff
 .md-window .md-content .relPhotoBox,
 .md-window .md-content .relCloseBT,
-.md-window .md-content .relDetail{
-	opacity: 0;
+.md-window .md-content .relDetail {
+  opacity: 0;
   @include prefix(transition, all 0.3s, webkit moz);
 }
 
-.md-window .md-content .relPhotoBox:nth-child(1){
-  @include prefix(transform, translateX(-5%) rotate(-2deg), webkit moz ms);  
-  @include prefix(transition, all 0.4s, webkit moz);  
+.md-window .md-content .relPhotoBox:nth-child(1) {
+  @include prefix(transform, translateX(-5%) rotate(-2deg), webkit moz ms);
+  @include prefix(transition, all 0.4s, webkit moz);
 }
 
-.md-window .md-content .relPhotoBox:nth-child(2){
-  @include prefix(transform, translateX(5%) rotate(4deg), webkit moz ms);  
-  @include prefix(transition, all 0.4s, webkit moz);  
+.md-window .md-content .relPhotoBox:nth-child(2) {
+  @include prefix(transform, translateX(5%) rotate(4deg), webkit moz ms);
+  @include prefix(transition, all 0.4s, webkit moz);
 }
 
-.md-window .md-content .relCloseBT{
-  @include prefix(transform, translateX(5%), webkit moz ms);  
-  @include prefix(transition, all 0.6s, webkit moz);  
+.md-window .md-content .relCloseBT {
+  @include prefix(transform, translateX(5%), webkit moz ms);
+  @include prefix(transition, all 0.6s, webkit moz);
 }
 
-.md-window .md-content .relDetail{
-  @include prefix(transform, translateY(5%), webkit moz ms);  
-  @include prefix(transition, all 0.4s, webkit moz);  
+.md-window .md-content .relDetail {
+  @include prefix(transform, translateY(5%), webkit moz ms);
+  @include prefix(transition, all 0.4s, webkit moz);
 }
 
 //style of panels when window is visible
 .md-show.md-window .md-content .relCloseBT,
-.md-show.md-window .md-content .relDetail{
+.md-show.md-window .md-content .relDetail {
   @include prefix(transform, translateY(0) translateX(0), webkit moz ms);
-	opacity: 1;
+  opacity: 1;
 }
 
-.md-show.md-window .md-content .relPhotoBox:nth-child(1){
+.md-show.md-window .md-content .relPhotoBox:nth-child(1) {
   @include prefix(transform, translateY(0) translateX(0) rotate(-2deg), webkit moz ms);
   opacity: 1;
 }
 
-.md-show.md-window .md-content .relPhotoBox:nth-child(2){
+.md-show.md-window .md-content .relPhotoBox:nth-child(2) {
   @include prefix(transform, translateY(0) translateX(0) rotate(4deg), webkit moz ms);
   opacity: 1;
 }
@@ -992,8 +1022,8 @@ $rel-arrow-width: 160px;
   width: 18px;
 }
 
-::-webkit-scrollbar-corner { 
-  background: transparent; 
+::-webkit-scrollbar-corner {
+  background: transparent;
 }
 
 ::-webkit-scrollbar-track {
@@ -1011,7 +1041,7 @@ $rel-arrow-width: 160px;
   background-color: #a1a1a1;
 }
 
-.charaPhoto{
+.charaPhoto {
   width: $chara-photo-size;
   height: $chara-photo-size;
   background-image: url(../assets/img/profile/0thumbs.png);
@@ -1021,7 +1051,8 @@ $rel-arrow-width: 160px;
 }
 
 
-@each $name, $data in $chara {
+@each $name,
+$data in $chara {
   .#{$name} {
     color: map.get($data, "color");
     stroke: map.get($data, "color");
@@ -1050,21 +1081,30 @@ $rel-arrow-width: 160px;
 
 
 
-.no-js #loader { display: none;  }
-.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.no-js #loader {
+  display: none;
+}
+
+.js #loader {
+  display: block;
+  position: absolute;
+  left: 100px;
+  top: 0;
+}
+
 .se-pre-con {
-	position: fixed;
-	left: 0px;
-	top: 0px;
-	width: 100%;
-	height: 100%;
-	z-index: 9999;
-	background: url(../assets/img/loading.gif) center no-repeat #000;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url(../assets/img/loading.gif) center no-repeat #000;
   background-size: 100px 100px;
 }
 
 @media only screen and (max-width: 1200px) {
-  .chartWrapper{
+  .chartWrapper {
     width: 100%;
     overflow-x: auto;
     padding: 20px 0px;
@@ -1072,13 +1112,14 @@ $rel-arrow-width: 160px;
 }
 
 @media only screen and (max-width: 959px) {
-  .header{
-    h1{
+  .header {
+    h1 {
       font-size: 25px;
     }
-    .beta{
+
+    .beta {
       font-size: 12px;
-    }    
+    }
   }
 
   .md-modal {
@@ -1088,126 +1129,159 @@ $rel-arrow-width: 160px;
   }
 
   .md-content .bioArt,
-  .md-content .bioBasic,  
+  .md-content .bioBasic,
   .md-content .bioDetail,
-  .md-content .bioOutfits,  
-  .md-content .refSheets{
+  .md-content .bioOutfits,
+  .md-content .refSheets {
     position: static;
   }
 
-  .bioHeader{
+  .bioHeader {
     top: 20px;
     left: 20px;
   }
-  .relationshipPage{
+
+  .relationshipPage {
     margin-top: 100px;
   }
-  .charaBio{
+
+  .charaBio {
     width: 100%;
     height: 100%;
-    .bioCloseBT{
+
+    .bioCloseBT {
       position: absolute;
       top: 0px;
-      right: 0px;  
+      right: 0px;
     }
   }
 
-  .bioArt{
-    > img{
+  .bioArt {
+    >img {
       margin: 0px auto;
-      left:350px;
+      left: 350px;
       top: 360px;
     }
   }
 
-  .bioBasic{
-    margin: 0 0 0 auto;   
+  .bioBasic {
+    margin: 0 0 0 auto;
   }
-  .bioOutfits{
+
+  .bioOutfits {
     padding-top: 130px;
     margin: 0px 50px 0 auto;
   }
-  .bioDetail{
+
+  .bioDetail {
     margin: 40px 0 40px auto;
     padding: 30px 50px 100px 50px;
     width: 75%;
   }
-  .bioDetailInner{
-    width:  100%;
+
+  .bioDetailInner {
+    width: 100%;
     height: 100%;
   }
-  .refSheets{
+
+  .refSheets {
     margin-top: -110px;
     padding-bottom: 40px;
     width: 90%;
   }
 
-  @media only screen and (max-width: 719px) {
-    .bioArt{
-      > img{
-        left: 210px;
-      }
-    }
-    .relationshipPage{
-      margin-top: 120px;
-      width: 90%;
-      padding-left: 0px;
-      padding-right: 0px;
-      border-width: 5px !important;
-    }
-    .relDetail{
-      padding: 20px;
-    }
-    .relCloseBT{
-      top: -120px;
-      right: 0px;  
-    }
-
-    .relTitle{
-      margin: 0 auto;
-      width: 25%;
-      left: 50%;
-    }
-
-    .relationshipPage{
-      .relPhotoBox:nth-child(1){
-        left: 15px;
-      }
-      .relPhotoBox:nth-child(2){
-        right: 15px;
-      }
-    }
-
+  .themes {
+    left: 40px;
+    top: 800px;
   }
 
-  @media only screen and (max-width: 479px) {
-    .header{
-      h1{
-        font-size: 25px;
-      }
-    }
-    .bioOutfits{
-      padding-top: 500px;
-    }
-    .bioArt{
-      > img{
-        width: 100%;
-        left: 0px;
-        top:  80px;        
-      }
-    }    
-    .bioDetail{
-      padding: 20px 20px 100px 20px;
-      width: 75%;
-    }
-    .md-show.md-window .md-content .bioArt img{
-      @include prefix(transform, translateX(0%) translateY(0%), webkit moz ms);
-    }    
-    .md-window .md-content .bioArt img{
-      @include prefix(transform, translateX(0%) translateY(0%), webkit moz ms);
-    }
+  .barHide {
+    left: -210px;
   }
+
+  .barShow {
+    left: 50px;
+  }
+
 }
 
+@media only screen and (max-width: 719px) {
+  .bioArt {
+    >img {
+      left: 210px;
+    }
+  }
+  .themes {
+    left: 10px;
+  }
+  .relationshipPage {
+    margin-top: 120px;
+    width: 90%;
+    padding-left: 0px;
+    padding-right: 0px;
+    border-width: 5px !important;
+  }
 
+  .relDetail {
+    padding: 20px;
+  }
 
+  .relCloseBT {
+    top: -120px;
+    right: 0px;
+  }
+
+  .relTitle {
+    margin: 0 auto;
+    width: 25%;
+    left: 50%;
+  }
+
+  .relationshipPage {
+    .relPhotoBox:nth-child(1) {
+      left: 15px;
+    }
+
+    .relPhotoBox:nth-child(2) {
+      right: 15px;
+    }
+  }
+
+}
+
+@media only screen and (max-width: 479px) {
+  .header {
+    h1 {
+      font-size: 25px;
+    }
+  }
+
+  .bioOutfits {
+    padding-top: 500px;
+  }
+
+  .bioArt {
+    >img {
+      width: 100%;
+      left: 0px;
+      top: 80px;
+    }
+  }
+
+  .bioDetail {
+    padding: 20px 20px 100px 20px;
+    width: 75%;
+  }
+
+  .themes {
+    left: 60px;
+  }
+
+  .md-show.md-window .md-content .bioArt img {
+    @include prefix(transform, translateX(0%) translateY(0%), webkit moz ms);
+  }
+
+  .md-window .md-content .bioArt img {
+    @include prefix(transform, translateX(0%) translateY(0%), webkit moz ms);
+  }
+}
