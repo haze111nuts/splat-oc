@@ -512,8 +512,8 @@ var bioData_ch = [
         themes:[
             {"id":"HD3t-FUdJC4"},
             {"id":"YLt6PtXzp5E"},
-            {"id":"TG_i1FgK6u0"},
-            {"id":"KM83uMBz8Zg"}
+            {"id":"KM83uMBz8Zg"},
+            {"id":"TG_i1FgK6u0"}            
         ]
     },
     {
