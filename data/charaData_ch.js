@@ -423,7 +423,6 @@ var bioData_ch = [
             "assets/img/refsheets/blade_v2.png",
         ],
         themes: [
-            {id : "n9fhvm-Q1JY"},
             {id : "euiCw4e-E28"},
             {id : "JlcZmA7aEJc"}                        
         ]
