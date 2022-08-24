@@ -464,7 +464,6 @@ var bioData_ch = [
             "喜歡吃奶奶做的%salmonPoke/鮭魚夏威夷蓋飯%"
         ],
         refsheets: [
-            "assets/img/refsheets/axel1.png",
         ],
         themes:[
             {id:"gYxRVIVUwVM"},
@@ -509,7 +508,6 @@ var bioData_ch = [
             "很喜歡吃%tiramisu/提拉米蘇%（必須是有含蘭姆酒的那種）"
         ],
         refsheets: [
-            "assets/img/refsheets/xiu1.png",
         ],
         themes:[
             {"id":"HD3t-FUdJC4"},
@@ -554,7 +552,6 @@ var bioData_ch = [
             "喜歡的東西是%gummyGrizz/熊先生軟糖%其成分非常可疑。"
         ],
         refsheets: [
-            "assets/img/refsheets/yoni1.png",
         ],
         themes: [
             {id : "krCa3uD5I4M"},
@@ -621,8 +618,7 @@ var bioData_ch = [
             "小時候因為吃了跳跳糖才喜歡上爆裂槍，現在每天早上一定要吃一包。"
         ],
         themes:[
-            {id:"vLCQTJqvRKM"},
-            {id:"JlcZmA7aEJc"}
+            {id:"LB5GJWgRepY"}
         ]
     },
     {
