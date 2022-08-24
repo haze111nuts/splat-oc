@@ -5,13 +5,13 @@
 var siteData_en = {
     title: "Haze's Splatverse",
     description: ["Splatoon OC info/bio dump", "Currently under construction :/"],
-    bioDetailTabs: ["Bio","Personality","Trivia"]
+    bioDetailTabs: ["Bio", "Personality", "Trivia"]
 }
 
 var siteData_ch = {
     title: "HAZE家漆彈小孩",
     description: ["懶人總整理+全員介紹頁面", "施工中😔有生之年慢慢加素材跟設定"],
-    bioDetailTabs: ["背景","性格","補充"]
+    bioDetailTabs: ["背景", "性格", "補充"]
 
 }
 
@@ -197,7 +197,6 @@ function setUpBioPageFor(charaBioData) {
     bioBasicHTML += "<tr><td>Dislike</td><td>" + charaBioData.dislike + "</td></tr>";
     bioBasicHTML += "<tr><td>Rank</td><td>" + charaBioData.rank + "</td></tr>";
     bioBasicHTML += "<tr><td>Mains</td><td>" + charaBioData.mains + "</td></tr>";
-    // bioBasicHTML += "<tr><td>Fav.<br>Food</td><td>" + "<img src='assets/img/profile/favfood/"+ charaBioData.id +".png' title='" + charaBioData.favFood + "'></td></tr>"
     bioBasicHTML += "</table>";
     var bioTraitsHTML = "<div class='traitLabel'>Traits</div>";
     bioTraitsHTML += "<ul class='traits'>";
@@ -208,7 +207,7 @@ function setUpBioPageFor(charaBioData) {
     $(".bioBasic").html(bioBasicHTML + bioTraitsHTML);
 
     //Fill detailed bio panel
-    setUpBioSwitchEvents(charaBioData);  
+    setUpBioSwitchEvents(charaBioData);
 
     //Fill refsheets
     var refSheetHTML = "";
@@ -228,6 +227,16 @@ function setUpBioPageFor(charaBioData) {
         }
     }
 
+    //Fill themes
+    var themeHTML = "";
+    if (charaBioData.themes) {
+        for (const theme of charaBioData.themes) {
+            themeHTML += "<div data-id='" + theme.id + "'></div>";
+        }
+    }
+    $(".themes").html(themeHTML);
+    setUpThemeClickEvents();
+
     //Set up character-specific page style
     var color = charaData[charaBioData.id].color;
     $(".bioBasic table tr td:first-child").css("color", color);
@@ -241,6 +250,7 @@ function setUpBioPageFor(charaBioData) {
     }, function () {
         $(this).css("box-shadow", "-8px -8px 0px 0px black");
     });
+    $(".miniBar").css("background",color);
 
 }
 
@@ -312,45 +322,83 @@ function setUpBioSwitchEvents(charaBioData) {
     //load bio and focus on bio
     $(".bioDetailInner").html(printLinesWithBreak(parseToIcon(charaBioData.bio), 2));
     $(".bioDetailTabs li:first-child").addClass("bioTabFocused");
-    $(".bioDetailTabs li:first-child").siblings().removeClass("bioTabFocused");  
+    $(".bioDetailTabs li:first-child").siblings().removeClass("bioTabFocused");
     $(".bioDetailInner").scrollTop(0);
-    
+
     $(".bioDetailTabs li").click(function () {
         $(".bioDetailInner").scrollTop(0);
         $(this).addClass("bioTabFocused");
         $(this).siblings().removeClass("bioTabFocused");
-        if($(this).index() == 1){
-            $(".bioDetailInner").html(printLinesWithBreak(charaBioData.personality?charaBioData.personality:charaBioData.bio, 2));
-        }else if($(this).index() == 2){
-            $(".bioDetailInner").html(printLinesAsList(parseToIcon(charaBioData.trivia?charaBioData.trivia:"")));
-        }else{
+        if ($(this).index() == 1) {
+            $(".bioDetailInner").html(printLinesWithBreak(charaBioData.personality ? charaBioData.personality : charaBioData.bio, 2));
+        } else if ($(this).index() == 2) {
+            $(".bioDetailInner").html(printLinesAsList(parseToIcon(charaBioData.trivia ? charaBioData.trivia : "")));
+        } else {
             $(".bioDetailInner").html(printLinesWithBreak(charaBioData.bio, 2));
         }
     });
 
 }
 
+function setUpThemeClickEvents() {
+    var currentVideoId = "";
+    $(".themes").children().removeClass("focusedTheme");
+    $(".themes div").click(function () {
+        //if the theme clicked is diff from the last one clicked
+        if(currentVideoId != this.dataset.id){
+            $(this).addClass("focusedTheme");
+            $(this).siblings().removeClass("focusedTheme");
+            removePlayer();
+            var delay = currentVideoId?400:0    
+            setTimeout(loadPlayer, delay, this.dataset.id);
+            currentVideoId = this.dataset.id;
+        }else{
+            $(this).removeClass("focusedTheme");
+            removePlayer();
+            currentVideoId = "";
+        }
+
+    });
+}
+
+function loadPlayer(videoId){
+    initYouTubeVideos(videoId); 
+    $(".miniBar").addClass("barShow");
+}
+
+function removePlayer(){
+    $(".miniBar").removeClass("barShow");
+    $(".miniBar").addClass("barHide");
+    $(".ytPlayer").html('');
+}
+
+//===============//
+//=== Add-ons ===//
+//===============//
+
+// -- Dialog Effects by Codrops (Edited/tuned)
+// -- Credit: https://github.com/codrops/DialogEffects
 function modalEffectsInit(bioData, relationshipData) {
     var overlay = document.querySelector(".md-overlay");
     var modal = document.querySelectorAll("[id^='modal']");
 
     //loop thru two pop-ups
-    modal.forEach(function(el){
+    modal.forEach(function (el) {
         var close = el.querySelector(".md-close");
         function removeModalHandler() {
             // removeModal(classie.has(el, "md-setperspective"));
             classie.remove(el, "md-show");
             $(".langNav").removeClass("blur");
             $(document.body).removeClass("noscroll");
+            removePlayer();
         }
         setTimeout(function () {
             overlay.addEventListener("click", removeModalHandler);
         }, 1);
         close.addEventListener("click", function (ev) {
-            
             ev.stopPropagation();
             removeModalHandler();
-        });    
+        });
     });
 
     //loop thru all photo and relationship with md-trigger class
@@ -382,6 +430,41 @@ function modalEffectsInit(bioData, relationshipData) {
     });
 }
 
+// -- Light YouTube Embeds by @labnol
+// -- Credit: https://www.labnol.org/
+function labnolIframe(div) {
+    var iframe = document.createElement('iframe');
+    iframe.setAttribute('src', 'https://www.youtube.com/embed/' + div.dataset.id + '?autoplay=1&rel=0');
+    iframe.setAttribute('frameborder', '0');
+    iframe.setAttribute('allowfullscreen', '0');
+    iframe.setAttribute('allow', 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture');
+    div.parentNode.replaceChild(iframe, div);
+}
+
+function initYouTubeVideos(videoId) {
+    console.log("loading video for " + videoId);
+    var playerElements = document.getElementsByClassName('ytPlayer'); 
+    for (var n = 0; n < playerElements.length; n++) {
+        var div = document.createElement('div');
+        div.setAttribute('data-id', videoId);
+        var thumbNode = document.createElement('img');
+        thumbNode.src = 'https://i.ytimg.com/vi/ID/hqdefault.jpg'.replace('ID', videoId);
+        div.appendChild(thumbNode); 
+        var playButton = document.createElement('div');
+        playButton.setAttribute('class', 'play');
+        div.appendChild(playButton);
+        div.onclick = function () {
+            labnolIframe(this);
+        };
+        playerElements[n].appendChild(div);
+    }
+}
+
+
+//=======================//
+//=== Parsing Helpers ===//
+//=======================//
+
 function printLinesWithBreak(array, numberOfBr) {
     var result = "";
     for (const line of array) {
@@ -398,7 +481,7 @@ function printLinesWithBreak(array, numberOfBr) {
 function printLinesAsList(array) {
     var result = "<ul class='dash'>"
     for (const line of array) {
-        result += "<li>"+line+"</li>";
+        result += "<li>" + line + "</li>";
     }
     return result;
 }
@@ -415,9 +498,9 @@ function parseToIcon(bioLines) {
     for (const line of bioLines) {
         var matches = regExp.exec(line);
         if (matches === null) {
-                result.push(line);
+            result.push(line);
         } else {
-            result.push(line.replaceAll(regExp, "<img class='itemIcon' src='assets/img/profile/items/"+ matches[1]+".png' title='" + matches[2] + "'>"));
+            result.push(line.replaceAll(regExp, "<img class='itemIcon' src='assets/img/profile/items/" + matches[1] + ".png' title='" + matches[2] + "'>"));
         }
     }
     return result;
@@ -432,8 +515,8 @@ function setUpSiteInfo(siteInfo) {
     $(".header .title").html(siteInfo.title + beta);
     $(".header h2").html(printLinesWithBreak(siteInfo.description, 1));
     //set up bio info tab texts
-    for(var i=0; i<siteInfo.bioDetailTabs.length; i++){
-        $(".bioDetailTabs li:nth-child("+ (i+1) +")").html(siteInfo.bioDetailTabs[i]);
+    for (var i = 0; i < siteInfo.bioDetailTabs.length; i++) {
+        $(".bioDetailTabs li:nth-child(" + (i + 1) + ")").html(siteInfo.bioDetailTabs[i]);
     }
 }
 
@@ -484,7 +567,7 @@ function checkWindowSize() {
 //======================//
 
 var currentLang = "EN";
-var nextLang = "CH";    
+var nextLang = "CH";
 
 $(document).ready(function () {
 
@@ -498,7 +581,7 @@ $(document).ready(function () {
     }
     setupLang();
 
-    $("[id^=lang]").each(function(){
+    $("[id^=lang]").each(function () {
         $(this).click(function () {
             [currentLang, nextLang] = [nextLang, currentLang];
             setupLang();
