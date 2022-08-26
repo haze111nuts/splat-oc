@@ -543,9 +543,16 @@ var bioData_en = [
             { name: "Regular", url: "profile/xiu.png" }
         ],
         bio: [
-            "Was once a very caring and kindhearted nerd boy. After falling victim to bullying and harassment, he started to change and would resort to revenge. Although this has made him more confident and brave, it nevertheless brought him more trouble than before.",
-            "When he was still coping with the harassment, he met Axel and eventually started dating. He used to play league with him until they broke up, he then shifted his focus onto social media and flair bartending. He then took interest in Blade when he found out Axel was hanging out with him, and decided to start playing again.",
-            "He is an extrovert who can blend himself into all kinds of groups, he is the one who comes up with party game ideas that are often questionable. His right eye was damaged as a result of a dangerous streaming challenge, therefore a strange pupil shape."
+            "Xiu was once a very caring and kindhearted nerd boy. He and Axel goes all the way back, they used to play league match together all the time and dated for a while. After Xiu falling victim to bullying and harassment, he started to change and would resort to revenge. Although this has made him more confident and brave, it nevertheless brought him more trouble than before, this also caused Axel to leave him.",
+            "After Axel broke up with him, He stopped playing games and shifted his focus onto social media. He starts to take interest in entertainment performence due to infulencers, especially flair bartending, and found a side job in a bar. He was able to earn a good amount of followers due to his charismatic personality, but also got himself in flame from time to time due to controvesal posts. His right eye was damaged as a result of a dangerous streaming challenge, resulted in a strange pupil shape.",
+            "He decides to meet Blade when he found out Axel was hanging out with him. The three boys become good friends and formed Rotton Buttons, Xiu also started playing turf war again."
+        ],
+        personality: [
+            "was once a very caring and kindhearted nerd boy. After",
+            "He is an extrovert who can blend himself into all kinds of groups, he is the one who comes up with party game ideas that are often questionable.",
+        ],
+        trivia: [
+            ""
         ],
         refsheets: [
             "assets/img/refsheets/xiu1.png",
