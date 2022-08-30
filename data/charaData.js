@@ -543,16 +543,21 @@ var bioData_en = [
             { name: "Regular", url: "profile/xiu.png" }
         ],
         bio: [
-            "Xiu was once a very caring and kindhearted nerd boy. He and Axel goes all the way back, they used to play league match together all the time and dated for a while. After Xiu falling victim to bullying and harassment, he started to change and would resort to revenge. Although this has made him more confident and brave, it nevertheless brought him more trouble than before, this also caused Axel to leave him.",
-            "After Axel broke up with him, He stopped playing games and shifted his focus onto social media. He starts to take interest in entertainment performence due to infulencers, especially flair bartending, and found a side job in a bar. He was able to earn a good amount of followers due to his charismatic personality, but also got himself in flame from time to time due to controvesal posts. His right eye was damaged as a result of a dangerous streaming challenge, resulted in a strange pupil shape.",
-            "He decides to meet Blade when he found out Axel was hanging out with him. The three boys become good friends and formed Rotton Buttons, Xiu also started playing turf war again."
+            "Xiu was once a very caring and kindhearted nerdy boy. He and Axel goes all the way back, they used to play league match together all the time and dated for a while. It all changed when Xiu started to get bullied by his \"friend\". Unable to handle the harassment, one day he just snapped and resorted to revenge. Although this has made him more confident and brave, it nevertheless brought him more trouble than before, and caused Axel to leave him.",
+            "After Axel broke up with him, He stopped playing games and shifted his focus onto social media. He took interest in entertainment performing due to infulencers, and found a side job in a bar to practice his new favorite stunt: flair bartending. He was able to earn a good amount of followers online due to his charismatic personality, but also got himself in flame from time to time due to problematic posts. It is around this time that he damaged his right eye from a dangerous streaming challange.",
+            "He decides to meet Blade when he found out Axel was hanging out with him. The three boys become good friends and formed Rotton Buttons, Xiu also started participating splat matches again."
         ],
         personality: [
-            "was once a very caring and kindhearted nerd boy. After",
-            "He is an extrovert who can blend himself into all kinds of groups, he is the one who comes up with party game ideas that are often questionable.",
+            "He used to be a gentle and kind boy, but his personality undergoes a sudden change after he was tormented by relentless harassment. Now believes in an eye for an eye, he became a very confident and daring person, even resorts to extreme means to make things go his way.",
+            "Is bisexual, but finds himself hitting on handsome men a lot. He is sexually open and has no self-restraint when it comes to sex. Likes to fanboy over person he is very attracted to.",
+            "An extrovert who can blend himself into all kinds of groups, likes to come up with dubious party game ideas. Got a New Yorker attitude.",
+            "An attention seeker, he shows off a lot and loves the idea of being an entertainer. He would do absolutely anything to be popular and often gets himself into trouble",
+            "Is the first person to go mad when things took a turn for worse. Would easily lose it if no one is around to pull him up. Will do all kind of horrible things imgainable when he went of of control."
         ],
         trivia: [
-            ""
+            "Damaged his right eye during a dangerous streaming challage, and caused his pupil to become a strange # shape. He can still see things, but has a blurry vision in his right eye.",
+            "Still working on his flair bartending skill, often break glasses while doing so.",
+            "His favorite dessert is %tiramisu/Tiramisu% (He claims that it has to have rum)"
         ],
         refsheets: [
             "assets/img/refsheets/xiu1.png",
