@@ -588,6 +588,5 @@ $(document).ready(function () {
         })
     })
 
-    $(".se-pre-con").fadeOut(1500);;
-
+    setTimeout(() => $(".se-pre-con").fadeOut("slow"), 1000);
 });
