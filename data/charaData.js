@@ -483,7 +483,7 @@ var bioData_en = [
         ],
         bio: [
             "He used to refuse playing any turf/ranked and would push away anyone who wants to be friend due to his anxious nature. After being abruptly scouted by Captain Cuttlefish as Agent 3, he received support from captain and the other two agents, it was then he decided to make change and begin the process of healing. Operating as agent 3 has helped him both mentally and physically, he is now able to play competitively. It was around this time he moved out to live on his own.",
-            "He then met Axel and other friends and eventually got along since he is now a bit more opened-up to other people, and they decided to form a team called “Rotten Buttons” with Blade as leader.",
+            "He then met Axel and other friends and eventually got along since he is now a bit more opened-up to other people, and they decided to form a team called “Bad Buttons” with Blade as leader.",
         ],
         personality:[
             "The constant bullying and abusing from his older sister made him a very gloomy introvert, he often puts up a cool look to cover up the insecure side of him."
@@ -516,8 +516,9 @@ var bioData_en = [
             { name: "Regular", url: "profile/axel.png" }
         ],
         bio: [
+            // "A short-temper and violent boy. He used to hang out with street thugs, but cut ties with them because",
             "He had been trying to form a competitive team with skilled players; however, due to his short-temper and violent nature, they often fell out very quickly, and usually in a pretty bad way.",
-            "One day in a random match he met Blade and picked a fight with him, and later realized that Blade could be the teammate he had been looking for. He then chased him through the sewer system in Inkopolis Square where he became Agent 4 just for another chance to meet Blade. He eventually got to meet Blade again and was able to befriend him and formed a team \"Rotten Buttons\" like he always wanted to.",
+            "One day in a random match he met Blade and picked a fight with him, and later realized that Blade could be the teammate he had been looking for. He then chased him through the sewer system in Inkopolis Square where he became Agent 4 just for another chance to meet Blade. He eventually got to meet Blade again and was able to befriend him and formed a team \"Bad Buttons\" like he always wanted to.",
             "Ever since Blade walked into his life, he is shown to have less frequent temper issues."
         ],
         refsheets: [
@@ -545,7 +546,7 @@ var bioData_en = [
         bio: [
             "Xiu was once a very caring and kindhearted nerd boy. He and Axel go way back; they used to play league matches together all the time and dated for a while. It all changed when Xiu's supposed \"friend\" started bullying him. Unable to handle the harassment, Xiu snapped at some point and resorted to revenge. Although this has made him more confident and brave, it nevertheless brought him more trouble than before, and caused Axel to leave him.",
             "After Axel broke up with him, he stopped playing matches and shifted his focus onto social media. He took great interest in entertainment/performing related activities, which was inspired by influencers he follows online. He then started working at bars to practice his new favorite stunt: flair bartending. He was able to earn a good amount of followers with his charismatic personality and performance, but he also got himself in flames from time to time due to his problematic posts and comments. It is around this time that he damaged his right eye from a dangerous streaming challenge.",
-            "At some point, he found out Axel was hanging out with Blade and he took an immediate liking to Blade. The three boys then became good friends and formed Rotton Buttons. Xiu also started participating in splat matches again."
+            "At some point, he found out Axel was hanging out with Blade and he took an immediate liking to Blade. The three boys then became good friends and formed Bad Buttons. Xiu also started participating in splat matches again."
         ],
         personality: [
             "He used to be a gentle and kind boy, but his personality undergoes a sudden change after he was tormented by relentless harassment. He has then became a very confident and daring person who believes in an eye for an eye; he would even resorts to extreme means to make things go his way.",
@@ -582,7 +583,7 @@ var bioData_en = [
         ],
         bio: [
             "A care-free and cheerful boy, also a bit of a joker who can be pretty naughty sometimes. Speaks and behaves in a comical and silly way. He finds a lot of things funny and will laugh everything off even when the timing is inappropriate.",
-            "He loves getting high using...some substance, which is obviously banned in all sports. While wanting to play with Blade as a member of Rotten Buttons, he had cut out most of it. However, he wasn't able to fully resist the temptation of such things, so he has been looking for a solution so he can have it both ways",
+            "He loves getting high using...some substance, which is obviously banned in all sports. While wanting to play with Blade as a member of Bad Buttons, he had cut out most of it. However, he wasn't able to fully resist the temptation of such things, so he has been looking for a solution so he can have it both ways",
             "He is not very good at expressing his negative emotion.",
             "Seems to be involved in some shady business."
         ],
@@ -660,7 +661,7 @@ var bioData_en = [
         ],
         bio: [
             "Axel\'s younger sister,  a typical happy teenage girl. She is friendly and nice but rather immature, her sense of justice is so strong that she would actively seek out questionable people online to harass and \"cancel\".",
-            "Initially, socializing was about the only thing she cared about, but seeing Axel hanging out with his teammates all the time, she started developing interest in splat battle under their influence. She got along with all the members of Rotten Buttons. At some point she found out that Axel has been doing hero stuff and she eventually got involved, she helps out with the Agent 4 tasks on many occasions.",
+            "Initially, socializing was about the only thing she cared about, but seeing Axel hanging out with his teammates all the time, she started developing interest in splat battle under their influence. She got along with all the members of Bad Buttons. At some point she found out that Axel has been doing hero stuff and she eventually got involved, she helps out with the Agent 4 tasks on many occasions.",
             "She is one of the mods of a community that specializes in harassment and doxxing, but she decided to cut down any related activities after her crush Blade questions the morality of their actions."
         ]
     },
@@ -684,7 +685,7 @@ var bioData_en = [
         ],
         bio: [
             "Minerva's twin brother who was also born underground; however, unlike Minerva, he did not like the life and treatment he had as an Octarian. ",
-            "After hearing Squid Sisters' song on that fateful day, he started planning for escape, using any means he could; however, before anything can be done, he got caught in the whole Deepsea Metro shenanigans, though the whole thing did manage to give him a chance to leave at the end. During this ordeal he met Blade who was operating as Agent 3 at the time and took a great liking to him, after the befriended Blade, Edd became the fifth member of Rotten Buttons.",
+            "After hearing Squid Sisters' song on that fateful day, he started planning for escape, using any means he could; however, before anything can be done, he got caught in the whole Deepsea Metro shenanigans, though the whole thing did manage to give him a chance to leave at the end. During this ordeal he met Blade who was operating as Agent 3 at the time and took a great liking to him, after the befriended Blade, Edd became the fifth member of Bad Buttons.",
             "He managed to graduate from a hacking boot camp when he was still in Octarian army, so he knows his way around cyber security shenanigans."
         ]
     },
