@@ -588,5 +588,5 @@ $(document).ready(function () {
         })
     })
 
-    setTimeout(() => $(".se-pre-con").fadeOut("slow"), 1000);
+    setTimeout(() => $(".se-pre-con").fadeOut("slow"), 200);
 });

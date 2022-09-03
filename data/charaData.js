@@ -557,7 +557,7 @@ var bioData_en = [
         ],
         trivia: [
             "His right eye was damaged during a dangerous streaming challenge; this caused his right pupil to become a strange # shape. He can still see, but his right eye now gives him a rather blurry vision.",
-            "He is still working on his flair bartending skill, though he often break glasses while doing so.",
+            "He is still working on his flair bartending skill; he often break glasses while doing so.",
             "His favorite dessert is %tiramisu/Tiramisu% (He stated that he only eats the ones that have rum)"
         ],
         refsheets: [
