@@ -543,24 +543,23 @@ var bioData_en = [
             { name: "Regular", url: "profile/xiu.png" }
         ],
         bio: [
-            "Xiu was once a very caring and kindhearted nerdy boy. He and Axel goes all the way back, they used to play league match together all the time and dated for a while. It all changed when Xiu started to get bullied by his \"friend\". Unable to handle the harassment, one day he just snapped and resorted to revenge. Although this has made him more confident and brave, it nevertheless brought him more trouble than before, and caused Axel to leave him.",
-            "After Axel broke up with him, He stopped playing games and shifted his focus onto social media. He took interest in entertainment performing due to infulencers, and found a side job in a bar to practice his new favorite stunt: flair bartending. He was able to earn a good amount of followers online due to his charismatic personality, but also got himself in flame from time to time due to problematic posts. It is around this time that he damaged his right eye from a dangerous streaming challange.",
-            "He decides to meet Blade when he found out Axel was hanging out with him. The three boys become good friends and formed Rotton Buttons, Xiu also started participating splat matches again."
+            "Xiu was once a very caring and kindhearted nerd boy. He and Axel go way back; they used to play league matches together all the time and dated for a while. It all changed when Xiu's supposed \"friend\" started bullying him. Unable to handle the harassment, Xiu snapped at some point and resorted to revenge. Although this has made him more confident and brave, it nevertheless brought him more trouble than before, and caused Axel to leave him.",
+            "After Axel broke up with him, he stopped playing matches and shifted his focus onto social media. He took great interest in entertainment/performing related activities, which was inspired by influencers he follows online. He then started working at bars to practice his new favorite stunt: flair bartending. He was able to earn a good amount of followers with his charismatic personality and performance, but he also got himself in flames from time to time due to his problematic posts and comments. It is around this time that he damaged his right eye from a dangerous streaming challenge.",
+            "At some point, he found out Axel was hanging out with Blade and he took an immediate liking to Blade. The three boys then became good friends and formed Rotton Buttons. Xiu also started participating in splat matches again."
         ],
         personality: [
-            "He used to be a gentle and kind boy, but his personality undergoes a sudden change after he was tormented by relentless harassment. Now believes in an eye for an eye, he became a very confident and daring person, even resorts to extreme means to make things go his way.",
-            "Is bisexual, but finds himself hitting on handsome men a lot. He is sexually open and has no self-restraint when it comes to sex. Likes to fanboy over person he is very attracted to.",
-            "An extrovert who can blend himself into all kinds of groups, likes to come up with dubious party game ideas. Got a New Yorker attitude.",
-            "An attention seeker, he shows off a lot and loves the idea of being an entertainer. He would do absolutely anything to be popular and often gets himself into trouble",
-            "Is the first person to go mad when things took a turn for worse. Would easily lose it if no one is around to pull him up. Will do all kind of horrible things imgainable when he went of of control."
+            "He used to be a gentle and kind boy, but his personality undergoes a sudden change after he was tormented by relentless harassment. He has then became a very confident and daring person who believes in an eye for an eye; he would even resorts to extreme means to make things go his way.",
+            "Xiu is bisexual, but finds himself hitting on hot guys a lot. He is sexually open and has not much self-restraint when it comes to sex. He tends to fanboy over person he is very attracted to.",
+            "He is an extrovert who can blend himself into all kinds of social groups; he is also very good at coming up with dubious party game ideas. He likes big-city and lives with sort of a New Yorker attitude.",
+            "He is an attention seeker who really likes to show off; he also loves the idea of being able to entertain others. He would do absolutely anything to be popular and often gets himself into trouble.",
+            "He is actually rather weak-minded and is not very good at handling stress when things take a turn for the worse. Would easily lose his mind if no one was around to pull him up. He will do all kind of horrible things imaginable when he goes out of control."
         ],
         trivia: [
-            "Damaged his right eye during a dangerous streaming challage, and caused his pupil to become a strange # shape. He can still see things, but has a blurry vision in his right eye.",
-            "Still working on his flair bartending skill, often break glasses while doing so.",
-            "His favorite dessert is %tiramisu/Tiramisu% (He claims that it has to have rum)"
+            "His right eye was damaged during a dangerous streaming challenge; this caused his right pupil to become a strange # shape. He can still see, but his right eye now gives him a rather blurry vision.",
+            "He is still working on his flair bartending skill, though he often break glasses while doing so.",
+            "His favorite dessert is %tiramisu/Tiramisu% (He stated that he only eats the ones that have rum)"
         ],
         refsheets: [
-            "assets/img/refsheets/xiu1.png",
         ]
     },
     {

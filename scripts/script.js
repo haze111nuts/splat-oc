@@ -3,14 +3,14 @@
 //=====================//
 
 var siteData_en = {
-    title: "Haze's Splatverse",
-    description: ["Splatoon OC info/bio dump", "Currently under construction :/"],
+    title: "Haze's Splatverse??",
+    description: ["Splatoon OC info/bio dump", "Currently under construction⚠️","Lots things are not final and TBD!! Will be updating frequently"],
     bioDetailTabs: ["Bio", "Personality", "Trivia"]
 }
 
 var siteData_ch = {
     title: "HAZE家漆彈小孩",
-    description: ["懶人總整理+全員介紹頁面", "施工中😔有生之年慢慢加素材跟設定"],
+    description: ["懶人總整理+全員介紹頁面", "初期施工階段，角色會微調⚠️","定期更新素材跟設定中"],
     bioDetailTabs: ["背景", "性格", "補充"]
 
 }
