@@ -588,6 +588,6 @@ $(document).ready(function () {
         })
     })
 
-    $(".se-pre-con").fadeOut("slow");;
+    $(".se-pre-con").fadeOut(1500);;
 
 });
