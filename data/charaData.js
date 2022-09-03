@@ -516,23 +516,10 @@ var bioData_en = [
             { name: "Regular", url: "profile/axel.png" }
         ],
         bio: [
-            "A short-temper and violent boy. He used to hang out with street thugs, but cut ties with them because",
+            // "A short-temper and violent boy. He used to hang out with street thugs, but cut ties with them because",
             "He had been trying to form a competitive team with skilled players; however, due to his short-temper and violent nature, they often fell out very quickly, and usually in a pretty bad way.",
             "One day in a random match he met Blade and picked a fight with him, and later realized that Blade could be the teammate he had been looking for. He then chased him through the sewer system in Inkopolis Square where he became Agent 4 just for another chance to meet Blade. He eventually got to meet Blade again and was able to befriend him and formed a team \"Rotten Buttons\" like he always wanted to.",
             "Ever since Blade walked into his life, he is shown to have less frequent temper issues."
-        ],
-        personality: [
-            "衝動、囂張、脾氣暴躁的小混混，流氓氣質、非常易怒、滿口髒話，典型的不良少年。非常不喜歡被使喚跟被嘲笑，要是有人讓自己不爽，第一反應就是拳腳相向，而且並不會因為對方體型比較大或人數比較多就退縮，就算是打不贏的架也會照打，然後被揍的都是傷。",
-            "因為太愛生氣容易跟人鬧翻，所以在不良少年同夥之間也沒辦法待太久。",
-            "重義氣，注重兄弟情誼，會主動幫朋友出氣。且做事光明正大，討厭卑鄙手段和小花招。",
-            "和家人（奶奶跟妹妹）關係不錯，雖然經常讓他們操心，但是很照顧奶奶。有時打架受傷後會因為不想讓家人擔心而跑去住在朋友家。",
-            "在喜歡的人面前會努力收斂，甚至會拉下臉道歉。是個同性戀。"
-        ],
-        trivia: [
-            "臉上跟手上常常有各種因為打架受傷而貼上的的紗布跟繃帶。",
-            "後腦杓刻著的是「ＡＸ」的字樣",
-            "常穿的衣服是トリスカベッチン，習慣把外套的拉鍊拉開，且裡面的汗衫是紅色的版本",
-            "喜歡吃奶奶做的%salmonPoke/鮭魚夏威夷蓋飯%"
         ],
         refsheets: [
             "assets/img/refsheets/axel1.png",
