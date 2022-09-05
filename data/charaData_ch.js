@@ -630,7 +630,7 @@ var bioData_ch = [
         ],
         trivia: [
             "他的力氣比他弟弟還要大。",
-            "如果當天要對戰，早上一定要吃一包%poprocks/跳跳糖%"
+            "如果當天要對戰，早上一定要吃一包%Poprocks/跳跳糖%"
         ],        
         themes:[
             {id:"LB5GJWgRepY"}
