@@ -137,7 +137,7 @@ const charaData = {
     },
     ryan: {
         jpname: "",
-        age: 21,
+        age: 20,
         color: "rgb(180, 180, 180)",
         photoPos: {
             x: 55,
