@@ -780,10 +780,15 @@ ul {
   padding: 170px 40px 0 40px;
 }
 
+.relHr {
+  border-bottom: 1px gray solid;
+  position: static !important;
+}
+
 .relDetail {
-  padding-top: 20px;
-  border-top: 1px gray solid;
+  margin-top: 20px;
   overflow-y: auto;
+  height: 410px;
   position: static !important;
 }
 

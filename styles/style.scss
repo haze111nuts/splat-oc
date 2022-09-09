@@ -862,10 +862,15 @@ $rel-arrow-width: 160px;
   padding: 170px $rel-page-outerPaddingLR 0 $rel-page-outerPaddingLR;
 }
 
+.relHr{
+  border-bottom: 1px gray solid;
+  position: static !important;
+
+}
 .relDetail {
-  padding-top: 20px;
-  border-top: 1px gray solid;
+  margin-top: 20px;
   overflow-y: auto;
+  height: 410px;
   position: static !important;
 }
 
