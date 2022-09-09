@@ -292,6 +292,7 @@ function setUpRelationPageFor(relationData) {
     }
     relationContentHTML += "</ul>"
     $(".relDetail").html(relationContentHTML);
+    $(".relDetail").scrollTop(0);
 
     //apply style
     $(".relTitle .upper").css("color", charaData[chara1.name].color);
