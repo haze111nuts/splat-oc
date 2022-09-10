@@ -76,6 +76,11 @@ $chara: (
   src: url(../assets/fonts/TexasGrungeDemo.ttf);
 }
 
+@font-face {
+  font-family: NintendoExtLE003;
+  src: url(../assets/fonts/nintendo_ext_LE_003.ttf);
+}
+
 
 * {
   margin: 0px;
@@ -203,6 +208,7 @@ ul {
   width: 100%;
   height: 80px;
   background-color: #000;
+  color: #fff;
 }
 
 .hide {
@@ -218,6 +224,12 @@ ul {
 
 .blur {
   @include prefix(filter, blur(5px), webkit moz);
+}
+
+.nsButton{
+  padding-left: 3px;
+  font-family: NintendoExtLE003 ;
+  font-size: 20px;
 }
 
 //=======================//
@@ -657,7 +669,7 @@ ul {
   height: 350px;
 
   .itemIcon {
-    height: 40px;
+    height: 37px;
     display: inline-block;
     vertical-align: top;
   }

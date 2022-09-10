@@ -5,14 +5,15 @@
 var siteData_en = {
     title: "Hazy Splatverse",
     description: ["Splatoon OC info/bio dump", "Currently under construction⚠️","Lots things are not final and TBD!! Will be updating frequently"],
-    bioDetailTabs: ["Bio", "Personality", "Trivia"]
+    bioDetailTabs: ["Bio", "Personality", "Trivia"],
+    buttonTrivia: "associated Nintendo Switch button is"
 }
 
 var siteData_ch = {
     title: "Hazy Splatverse",
     description: ["懶人總整理+全員介紹頁面", "初期施工階段，角色會微調⚠️","定期更新素材跟設定中"],
-    bioDetailTabs: ["背景", "性格", "補充"]
-
+    bioDetailTabs: ["背景", "性格", "補充"],
+    buttonTrivia: "代表的按鈕是"
 }
 
 //=====================//
@@ -333,7 +334,15 @@ function setUpBioSwitchEvents(charaBioData) {
         if ($(this).index() == 1) {
             $(".bioDetailInner").html(printLinesWithBreak(charaBioData.personality ? charaBioData.personality : charaBioData.bio, 2));
         } else if ($(this).index() == 2) {
-            $(".bioDetailInner").html(printLinesAsList(parseToIcon(charaBioData.trivia ? charaBioData.trivia : "")));
+            var copiedTrivia = charaBioData.trivia.slice();
+            //add button trivia
+            if (currentLang == "CH"){
+                copiedTrivia.push(siteData_ch.buttonTrivia + "<span class='nsButton'>" + charaData[charaBioData.id].button + "<span>");
+            }else{
+                var pronoun = charaBioData.gender == "Male" ? "His" : "Her";
+                copiedTrivia.push(pronoun +" "+ siteData_en.buttonTrivia + "<span class='nsButton'>" + charaData[charaBioData.id].button + "<span>");
+            }
+            $(".bioDetailInner").html(printLinesAsList(parseToIcon(copiedTrivia)));
         } else {
             $(".bioDetailInner").html(printLinesWithBreak(charaBioData.bio, 2));
         }
@@ -484,6 +493,7 @@ function printLinesAsList(array) {
     for (const line of array) {
         result += "<li>" + line + "</li>";
     }
+    result += "</ul>"
     return result;
 }
 

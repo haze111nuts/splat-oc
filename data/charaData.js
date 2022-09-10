@@ -39,6 +39,7 @@ const charaData = {
         jpname: "ブレイド",
         age: 16,
         color: "rgb(127, 180, 57)",
+        button: "",
         photoPos: {
             x: 520,
             y: 335,
@@ -49,6 +50,7 @@ const charaData = {
         jpname: "アクセル",
         age: 15,
         color: "rgb(221, 155, 33)",
+        button: "",
         photoPos: {
             x: 770,
             y: 330,
@@ -59,6 +61,7 @@ const charaData = {
         jpname: "シュウ",
         age: 18,
         color: "rgb(65, 173, 206)",
+        button: "",
         photoPos: {
             x: 770,
             y: 80,
@@ -69,6 +72,7 @@ const charaData = {
         jpname: "ヨニ",
         age: 16,
         color: "rgb(224, 213, 54)",
+        button: "",
         photoPos: {
             x: 520,
             y: 75,
@@ -79,6 +83,7 @@ const charaData = {
         jpname: "ハンナ",
         age: 19,
         color: "rgb(41, 81, 194)",
+        button: "",
         photoPos: {
             x: 245,
             y: 320,
@@ -89,6 +94,7 @@ const charaData = {
         jpname: "ランス",
         age: 20,
         color: "rgb(148, 77, 206)",
+        button: "",
         photoPos: {
             x: 245,
             y: 80,
@@ -99,6 +105,7 @@ const charaData = {
         jpname: "エステル（エリ）",
         age: 14,
         color: "rgb(17, 148, 87)",
+        button: "",        
         photoPos: {
             x: 1005,
             y: 200,
@@ -109,6 +116,7 @@ const charaData = {
         jpname: "エッド",
         age: 18,
         color: "rgb(211, 43, 43)",
+        button: "",
         photoPos: {
             x: 630,
             y: 570,
@@ -119,6 +127,7 @@ const charaData = {
         jpname: "ミネルヴァ",
         age: 18,
         color: "rgb(167, 87, 83)",
+        button: "",       
         photoPos: {
             x: 360,
             y: 570,
@@ -129,6 +138,7 @@ const charaData = {
         jpname: "サイモン",
         age: 18,
         color: "rgb(216, 40, 163)",
+        button: "",        
         photoPos: {
             x: 920,
             y: 570,
@@ -139,6 +149,7 @@ const charaData = {
         jpname: "",
         age: 20,
         color: "rgb(180, 180, 180)",
+        button: "",     
         photoPos: {
             x: 55,
             y: 200,
@@ -521,6 +532,9 @@ var bioData_en = [
             "One day in a random match he met Blade and picked a fight with him, and later realized that Blade could be the teammate he had been looking for. He then chased him through the sewer system in Inkopolis Square where he became Agent 4 just for another chance to meet Blade. He eventually got to meet Blade again and was able to befriend him and formed a team \"Bad Buttons\" like he always wanted to.",
             "Ever since Blade walked into his life, he is shown to have less frequent temper issues."
         ],
+        trivia:[
+            ""            
+        ],
         refsheets: [
             "assets/img/refsheets/axel1.png",
         ]
@@ -587,6 +601,9 @@ var bioData_en = [
             "He is not very good at expressing his negative emotion.",
             "Seems to be involved in some shady business."
         ],
+        trivia:[
+            ""            
+        ],        
         refsheets: [
             "assets/img/refsheets/yoni1.png",
         ]
@@ -614,7 +631,9 @@ var bioData_en = [
             "Splat battle has been an outlet for her anger. As she poured her heart and soul into the games, she became unreasonably good at them. She actively searched for long-term teammates and eventually got Lance, RJ and Minerva to form an elite team.",
             "She was actually Captain Cuttlefish's the first candidate for Agent 3, but she quitted in order to focus on competitive games, which ultimately made Blade the next Agent 3. Now she only goes back to help when it's absolutely necessary.",
             "She is aware of her flaws and had thought of fixing the relationship with Blade, but gave up after failing to make any attempt, stating \"It's too late now\"."
-        ]
+        ],
+        trivia:[]
+
     },
     {
         id: "lance",
@@ -638,7 +657,8 @@ var bioData_en = [
             "Yoni's older brother, he is a childhood friend to both Hannah and Blade. He may look and act intimidating, but he is a very reliable, supportive and caring person. He is also a very organized perfectionist with high standards, he also has incredibly (and sometimes unnecessarily) sharp attention to details. He occasionally bursts out life advice with that poker face of his.",
             "He was the first member Hannah recruited in Royal Flush, he deals with things Hannah doesn't know how to do or had trouble with.",
             "He tries his best to live with his OCPD and is always seen wearing a pair of black gloves. Pop rocks inspired him to pick up Blaster when he was young, now he must eat a pack of pop rocks every morning."
-        ]
+        ],
+        trivia:[]
     },
     {
         id: "ellie",
@@ -663,7 +683,8 @@ var bioData_en = [
             "Axel\'s younger sister,  a typical happy teenage girl. She is friendly and nice but rather immature, her sense of justice is so strong that she would actively seek out questionable people online to harass and \"cancel\".",
             "Initially, socializing was about the only thing she cared about, but seeing Axel hanging out with his teammates all the time, she started developing interest in splat battle under their influence. She got along with all the members of Bad Buttons. At some point she found out that Axel has been doing hero stuff and she eventually got involved, she helps out with the Agent 4 tasks on many occasions.",
             "She is one of the mods of a community that specializes in harassment and doxxing, but she decided to cut down any related activities after her crush Blade questions the morality of their actions."
-        ]
+        ],
+        trivia:[]
     },
     {
         id: "edd",
@@ -687,7 +708,8 @@ var bioData_en = [
             "Minerva's twin brother who was also born underground; however, unlike Minerva, he did not like the life and treatment he had as an Octarian. ",
             "After hearing Squid Sisters' song on that fateful day, he started planning for escape, using any means he could; however, before anything can be done, he got caught in the whole Deepsea Metro shenanigans, though the whole thing did manage to give him a chance to leave at the end. During this ordeal he met Blade who was operating as Agent 3 at the time and took a great liking to him, after the befriended Blade, Edd became the fifth member of Bad Buttons.",
             "He managed to graduate from a hacking boot camp when he was still in Octarian army, so he knows his way around cyber security shenanigans."
-        ]
+        ],
+        trivia:[]
     },
     {
         id: "minerva",
@@ -710,7 +732,8 @@ var bioData_en = [
         bio: [
             "She was raised in the Octarian army since she was very little. She hated the training regimen at first, but eventually she grew attached to the army deeply. She was shown to have no intention to leave even after hearing Squid Sister's Calamari Inkantation on that fateful day. She even began to loathe the so-called \"surface world\" that suddenly came into their life.",
             "One day she encountered Hannah who was operating as Agent 3 at the time; after engaging in battle, Hannah was committed to recruit Minerva into her team and wanted to bring her to the surface after witnessing Minerva's battle skills, but Minerva rejected as she never wanted to leave the Octarian army. After multiple encounters and battles with Hannah, Minerva eventually (and reluctantly) agreed to go with her. She is now a member of Royal Flush, she is still trying to get used to the surface life."
-        ]
+        ],
+        trivia:[]
     },
     {
         id: "simon",
@@ -734,7 +757,8 @@ var bioData_en = [
             "A member of the Octorian underground army. He is obsessed with DJ Octavio. A self-proclaimed \"DJ Octavio\'s greatest assistant\" and \"Evil genius Octorian engineer\" or some such. He seems to be extremely skilled and efficient when it comes to tech stuff, which includes programming AI, building robotics or even hacking.",
             "He was initially a shut-in who only stays in his lab, one day he was out on Octo Valley to inspect damages on some of the gadget he made, that was when he found out about Blade (who had just started his Agent 3 work), he then hijacked Blade's radio to confronted him. After a couple conflicts he determined that Blade is to be his archenemy and begin the life-long entanglement. He holds similar attitude toward Axel who operates as Agent 4. His plans never seem to bare fruits due to his own foolishness and some glaring shortcomings. Despite all the failures, he has no intension to stop bugging the two heros.",
             "He has never been to the surface and neither has he ever wished for such thing."
-        ]
+        ],
+        trivia:[]
     },
     {
         id: "ryan",
@@ -758,7 +782,8 @@ var bioData_en = [
             "Not much is known about this guy and it's not like he has intention to disclose anything whatsoever.",
             "One day he just appears out of nowhere in ranked battles like a phantom. Despite having very few battle records, his performance and splat counts are off the charts (to an extend that is almost alarming). At several points he got matched with Lance and they had multiple intense showdowns, the two ended up becoming friends. Hannah then took this chance to invite him into her team; though he did took the offer, he seems to be busy with some other shady business most of the time.",
             "Drinks only straight espresso."
-        ]
+        ],
+        trivia:[]
     }
 ]
 
