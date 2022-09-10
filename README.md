@@ -20,11 +20,11 @@
 - ~~all the string in charaData should use the same kind of quotes~~
 - ~~script not loading on certain phone?? (this is prob phone issue)~~
 - ~~all the string in charaData should use the same kind of quotes~~
-- remove unused fonts
+- ~~remove unused fonts~~
 - swap out character page name title font for ios
 - light box is acting weird...needs fix
 - drawing anims and a page for teams???
-- youtube iframe console error
+- ~~youtube iframe console error~~
 - build warning pop-up page for TWCC
   - MENTAL/VERBAL ABUSE
   - ADDICTION
