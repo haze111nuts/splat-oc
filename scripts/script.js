@@ -17,20 +17,6 @@ var siteData = {
     }
 }
 
-var siteData_en = {
-    title: "Hazy Splatverse",
-    description: ["Splatoon OC info/bio dump", "Currently under construction⚠️","Lots things are not final and TBD!! Will be updating frequently"],
-    bioDetailTabs: ["Bio", "Personality", "Trivia"],
-    buttonTrivia: "associated Nintendo Switch button is"
-}
-
-var siteData_ch = {
-    title: "Hazy Splatverse",
-    description: ["懶人總整理+全員介紹頁面", "初期施工階段，角色會微調⚠️","定期更新素材跟設定中"],
-    bioDetailTabs: ["背景", "性格", "補充"],
-    buttonTrivia: "代表的按鈕是"
-}
-
 //=====================//
 //===   functions   ===//
 //=====================//
