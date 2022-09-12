@@ -1,253 +1,270 @@
 <!DOCTYPE html>
 
-<html lang="en" xml:lang="en" xmlns= "http://www.w3.org/1999/xhtml">
-    <head> 
-		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-2QKQ1709HZ"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
-			gtag('config', 'G-2QKQ1709HZ');
-		</script>
-		<!--======================-->
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
-		<meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <meta name="description" content="Haze's Splatoon OC profile dump" />
-		<meta http-equiv="Content-Language" content="en">
+<head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-2QKQ1709HZ"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+		gtag('config', 'G-2QKQ1709HZ');
+	</script>
+	<!--======================-->
 
-        <title>Haze's Splatverse</title>
-		
-		<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-		
-		<script type="text/javascript" src="data/charaData.js"></script>
-		<script type="text/javascript" src="data/charaData_ch.js"></script>
-		<script type="text/javascript" src="scripts/script.js" ></script>
-		<script type="text/javascript" src="scripts/classie.js"></script>
-		<script type='text/javascript' src='scripts/loadImg.js'></script>
-		<script type='text/javascript'>
-			$(function(){
-				$('img').imgPreload();
-			})
-		</script>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Haze's Splatoon OC profile dump" />
+	<meta http-equiv="Content-Language" content="en">
 
-		<link rel="stylesheet" href="styles/lightbox.css">
-		<link rel="stylesheet" href="styles/style.css" />
-    </head>
-    <body>
-		<div class="se-pre-con"></div>
-		<!--================-->
-		<!--   Bio pop-up   -->
-		<!--================-->
-		<div class="md-modal md-window" id="modal-chara">
-			<div class="md-content charaBio">
-				<div class="bioCloseBT md-close">
-					<svg viewBox="0 0 30 30" width="90" height="90">
-					  <path fill="#fff" d="M7 4a.995.995 0 0 0-.707.293l-2 2a.999.999 0 0 0 0 1.414L11.586 15l-7.293 7.293a.999.999 0 0 0 0 1.414l2 2a.999.999 0 0 0 1.414 0L15 18.414l7.293 7.293a.999.999 0 0 0 1.414 0l2-2a.999.999 0 0 0 0-1.414L18.414 15l7.293-7.293a.999.999 0 0 0 0-1.414l-2-2a.999.999 0 0 0-1.414 0L15 11.586 7.707 4.293A.996.996 0 0 0 7 4z"/>
-					</svg>		
-				</div>
-				<div class="bioArt"></div>
-				<div class="bioHeader">
-					<span></span>
-					<span></span>
-				</div>
-				<div class="bioOutfits">
-					<ul class="outfitSelect">
-					</ul>
-				</div>
-				<div class="bioBasic">
-				</div>
-				<div class="bioDetail">
-					<ul class="bioDetailTabs">
-						<li></li>
-						<li></li>
-						<li></li>
-					</ul>
-					<div class="bioDetailInner">
-					</div>
-				</div>
-				<div class="refSheets">
-				</div>
-				<div class="themes">
-				</div>				
-			</div>
-		</div>
-		<!--=========================-->
-		<!--   Relationship pop-up   -->
-		<!--=========================-->
-		<div class="md-modal md-window" id="modal-relationship">
-			<div class="md-content relationshipPage">
-				<!--   Relationship Page Header   -->
-				<div class="relPhotoBox">
-				</div>
-				<div class="relPhotoBox">
-				</div>
-				<div class="relTitle">
-					<div class="label upper"></div>
-					<div class="label middle"></div>
-					<div class="label lower"></div>
-					<svg viewBox="0 0 175 62" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" clip-rule="evenodd" >
-						<path id="upperArrow" fill="#ebebeb" d="M269.606 93.71v-4.044h157.343l-5.145-8.089h2.573l6.431 10.111-6.431 10.11h-2.573l5.145-8.088H269.606Z" transform="matrix(1.0856 0 0 .69052 -292.683 -56.331)"/>
-						<path id="lowerArrow" fill="#ebebeb" d="m273.464 93.71 5.145 8.088h-2.572l-6.431-10.11 6.431-10.111h2.572l-5.145 8.089h157.344v4.044H273.464Z" transform="matrix(1.0856 0 0 .69052 -292.683 -8.593)"/>
-					</svg>
-				</div>
-				<div class="relCloseBT md-close">
-					<svg viewBox="0 0 30 30" width="90" height="90">
-					  <path fill="#fff" d="M7 4a.995.995 0 0 0-.707.293l-2 2a.999.999 0 0 0 0 1.414L11.586 15l-7.293 7.293a.999.999 0 0 0 0 1.414l2 2a.999.999 0 0 0 1.414 0L15 18.414l7.293 7.293a.999.999 0 0 0 1.414 0l2-2a.999.999 0 0 0 0-1.414L18.414 15l7.293-7.293a.999.999 0 0 0 0-1.414l-2-2a.999.999 0 0 0-1.414 0L15 11.586 7.707 4.293A.996.996 0 0 0 7 4z"/>
-					</svg>
-				</div>
-				<div class="relHr"></div>
-				<!--   Relationship Page Header END  -->
-				<div class="relDetail"></div>
-			</div>
-		</div>
-		<!--=================-->
-		<!--   Mini Player   -->
-		<!--=================-->
-		<div class="miniBar barHide">
-			<div class="ytPlayer">
-			</div>
-		</div>		
-		<!--====================-->
-		<!--   Actual content   -->
-		<!--====================-->			
-		<div class="langNav">
-			<div id="langCH" class="langSwitch noSelect">中文</div>
-			<div id="langEN" class="langSwitch noSelect">ENG</div>
-		</div>
-		<div class="container">
-			<div class="header">
-				<h1>{<span class="title"><span class="beta">BETA</span></span>}</h1>
-				<h2></h2>
-			</div>
-			<div class="breather"></div>
-			<div class="chartWrapper">
-				<svg id="chartSVG" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.5;">
+	<title>Hazy Splatverse</title>
 
-					<!-- svg codes -->
-					<!-- base lines -->
-					<path id="line_YE" class="basePath" fill="none" stroke="#fff" d="M690.674 200v-32.236h492.206V340"/>
-					<path id="line_XY" class="basePath" fill="none" stroke="#fff" d="M656.812 200v-54.004H937.38V200"/>
-					<path id="line_XE" class="basePath" fill="none" stroke="#fff" d="M990 249.999h167.48V340"/>
-					<path id="line_XB" class="basePath" fill="none" stroke="#fff" d="M855 289.297h-59.718v200.152H715"/>
-					<path id="line_YB" class="basePath" fill="none" stroke="#fff" d="M630 355v95"/>
-					<path id="line_YA" class="basePath" fill="none" stroke="#fff" d="M677.041 355v32.963h200.751V455"/>
-					<path id="line_BE" class="basePath" fill="none" stroke="#fff" d="M677 450v-35.242h428"/>
-					<path id="line_XA" class="basePath" fill="none" stroke="#fff" d="M990 323.017h51.48l-.58 177.656h-50.822"/>
-					<path id="line_AB" class="basePath" fill="none" stroke="#fff" d="M715 538.875h140"/>
-					<path id="line_EX" class="basePath" fill="none" stroke="#fff" d="M990 299.048h73.63V677.49H766.295V785H715"/>
-					<path id="line_AE" class="basePath" fill="none" stroke="#fff" d="M1174.46 500v47.493H990"/>
-					<path id="line_EB" class="basePath" fill="none" stroke="#fff" d="M630 605v115"/>
-					<path id="line_EA" class="basePath" fill="none" stroke="#fff" d="M915.245 605v50.78H692.339V720"/>
-					<path id="line_WB" class="basePath" fill="none" stroke="#fff" d="M715 569.007h97.108V785H855"/>
-					<path id="line_AW" class="basePath" fill="none" stroke="#fff" d="M990 566.048h40.05v198.655H990"/>
-					<path id="line_XW" class="basePath" fill="none" stroke="#fff" d="M990.033 276.057h97.387V785H990"/>
-					<path id="line_EW" class="basePath" fill="none" stroke="#fff" d="M715 828.368h140"/>
-					<path id="line_LY" class="basePath" fill="none" stroke="#fff" d="M400 315v-30h180"/>
-					<path id="line_LB" class="basePath" fill="none" stroke="#fff" d="M450 365h90v127.114h40"/>
-					<path id="line_RY" class="basePath" fill="none" stroke="#fff" d="M143.666 315v-55.812H580"/>
-					<path id="line_RL" class="basePath" fill="none" stroke="#fff" d="M210 365h110"/>
-					<path id="line_LH" class="basePath" fill="none" stroke="#fff" d="M320 400h-47.703v145"/>
-					<path id="line_LM" class="basePath" fill="none" stroke="#fff" d="M450 400h39.056v410H450"/>
-					<path id="line_RB" class="basePath" fill="none" stroke="#fff" d="M184.579 465v48.164H580"/>
-					<path id="line_HB" class="basePath" fill="none" stroke="#fff" d="M335 558.796h245"/>
-					<path id="line_BM" class="basePath" fill="none" stroke="#fff" d="M580 585.921h-40v283.792h-92.518"/>
-					<path id="line_MH" class="basePath" fill="none" stroke="#fff" d="M335 616.13h68.851V775"/>
-					<path id="line_EM" class="basePath" fill="none" stroke="#fff" d="M396.152 930v30H640v-90"/>
-					<path id="line_RH" class="basePath" fill="none" stroke="#fff" d="M141.246 465v129.152H200"/>
-					<path id="line_RM" class="basePath" fill="none" stroke="#fff" d="M116.479 465v265.785h242.177V775"/>
-					<path id="line_RVn" class="basePath" fill="none" stroke="#fff" d="M93.204 465v310"/>
-					<path id="line_LVn" class="basePath" fill="none" stroke="#fff" d="M379.999 315v-30H45.415v570.152H75"/>
-					<path id="line_HVn" class="basePath" fill="none" stroke="#fff" d="M261.332 695v158.348H210"/>
-					<path id="line_MVn" class="basePath" fill="none" stroke="#fff" d="M119.621 930.991V960H361.35v-30"/>
-					<path id="line_VpB" class="basePath" fill="none" stroke="#fff" d="M715 589.216h35.567v334.77l-23.214 5.978 37.163 8.978-25.962 10.136 12.013 3.008v21.756h102.746l8.751-23.594 12.904 39.284 6.001-28.675 7.991 23.156 6.999-17.854 5.535 15.181 4.305-7.498H1055"/>
-					<path id="line_VpA" class="basePath" fill="none" stroke="#fff" d="M990 522.152h129.6l-8.25 7.144v129.278l16.03 6.789-24.91 8.069 16.01 6.492-14.26 7.102 7.13 4.311v166.324l-15.8 7.928 27.37 15.01-11.57 9.071V950"/>
-										
-					<!-- lines for filling color animation -->
-					<path id="line_YE_fill" class="clonePath" fill="none" stroke="#fff" d="M690.674 200v-32.236h492.206V340"/>
-					<path id="line_XY_fill" class="clonePath" fill="none" stroke="#fff" d="M656.812 200v-54.004H937.38V200"/>
-					<path id="line_XE_fill" class="clonePath" fill="none" stroke="#fff" d="M990 249.999h167.48V340"/>
-					<path id="line_XB_fill" class="clonePath" fill="none" stroke="#fff" d="M855 289.297h-59.718v200.152H715"/>
-					<path id="line_YB_fill" class="clonePath" fill="none" stroke="#fff" d="M630 355v95"/>
-					<path id="line_YA_fill" class="clonePath" fill="none" stroke="#fff" d="M677.041 355v32.963h200.751V455"/>
-					<path id="line_BE_fill" class="clonePath" fill="none" stroke="#fff" d="M677 450v-35.242h428"/>
-					<path id="line_XA_fill" class="clonePath" fill="none" stroke="#fff" d="M990 323.017h51.48l-.58 177.656h-50.822"/>
-					<path id="line_AB_fill" class="clonePath" fill="none" stroke="#fff" d="M715 538.875h140"/>
-					<path id="line_EX_fill" class="clonePath" fill="none" stroke="#fff" d="M990 299.048h73.63V677.49H766.295V785H715"/>
-					<path id="line_AE_fill" class="clonePath" fill="none" stroke="#fff" d="M1174.46 500v47.493H990"/>
-					<path id="line_EB_fill" class="clonePath" fill="none" stroke="#fff" d="M630 605v115"/>
-					<path id="line_EA_fill" class="clonePath" fill="none" stroke="#fff" d="M915.245 605v50.78H692.339V720"/>
-					<path id="line_WB_fill" class="clonePath" fill="none" stroke="#fff" d="M715 569.007h97.108V785H855"/>
-					<path id="line_AW_fill" class="clonePath" fill="none" stroke="#fff" d="M990 566.048h40.05v198.655H990"/>
-					<path id="line_XW_fill" class="clonePath" fill="none" stroke="#fff" d="M990.033 276.057h97.387V785H990"/>
-					<path id="line_EW_fill" class="clonePath" fill="none" stroke="#fff" d="M715 828.368h140"/>
-					<path id="line_LY_fill" class="clonePath" fill="none" stroke="#fff" d="M400 315v-30h180"/>
-					<path id="line_LB_fill" class="clonePath" fill="none" stroke="#fff" d="M450 365h90v127.114h40"/>
-					<path id="line_RY_fill" class="clonePath" fill="none" stroke="#fff" d="M143.666 315v-55.812H580"/>
-					<path id="line_RL_fill" class="clonePath" fill="none" stroke="#fff" d="M210 365h110"/>
-					<path id="line_LH_fill" class="clonePath" fill="none" stroke="#fff" d="M320 400h-47.703v145"/>
-					<path id="line_LM_fill" class="clonePath" fill="none" stroke="#fff" d="M450 400h39.056v410H450"/>
-					<path id="line_RB_fill" class="clonePath" fill="none" stroke="#fff" d="M184.579 465v48.164H580"/>
-					<path id="line_HB_fill" class="clonePath" fill="none" stroke="#fff" d="M335 558.796h245"/>
-					<path id="line_BM_fill" class="clonePath" fill="none" stroke="#fff" d="M580 585.921h-40v283.792h-92.518"/>
-					<path id="line_MH_fill" class="clonePath" fill="none" stroke="#fff" d="M335 616.13h68.851V775"/>
-					<path id="line_EM_fill" class="clonePath" fill="none" stroke="#fff" d="M396.152 930v30H640v-90"/>
-					<path id="line_RH_fill" class="clonePath" fill="none" stroke="#fff" d="M141.246 465v129.152H200"/>
-					<path id="line_RM_fill" class="clonePath" fill="none" stroke="#fff" d="M116.479 465v265.785h242.177V775"/>
-					<path id="line_RVn_fill" class="clonePath" fill="none" stroke="#fff" d="M93.204 465v310"/>
-					<path id="line_LVn_fill" class="clonePath" fill="none" stroke="#fff" d="M379.999 315v-30H45.415v570.152H75"/>
-					<path id="line_HVn_fill" class="clonePath" fill="none" stroke="#fff" d="M261.332 695v158.348H210"/>
-					<path id="line_MVn_fill" class="clonePath" fill="none" stroke="#fff" d="M119.621 930.991V960H361.35v-30"/>
-					<path id="line_VpB_fill" class="clonePath" fill="none" stroke="#fff" d="M715 589.216h35.567v334.77l-23.214 5.978 37.163 8.978-25.962 10.136 12.013 3.008v21.756h102.746l8.751-23.594 12.904 39.284 6.001-28.675 7.991 23.156 6.999-17.854 5.535 15.181 4.305-7.498H1055"/>
-					<path id="line_VpA_fill" class="clonePath" fill="none" stroke="#fff" d="M990 522.152h129.6l-8.25 7.144v129.278l16.03 6.789-24.91 8.069 16.01 6.492-14.26 7.102 7.13 4.311v166.324l-15.8 7.928 27.37 15.01-11.57 9.071V950"/>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-					<!-- lines for filling color animation(reversed) -->
-					<path id="line_YE_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M1182.88 340V167.764H690.674V200"/>
-					<path id="line_XY_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M937.38 200v-54.004H656.812V200"/>
-					<path id="line_XE_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M1157.48 340v-90.001H990"/>
-					<path id="line_XB_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M715 489.449h80.282V289.297H855"/>
-					<path id="line_YB_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M630 450v-95"/>
-					<path id="line_YA_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M877.792 455v-67.037H677.041V355"/>
-					<path id="line_BE_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M1105 414.758H677V450"/>
-					<path id="line_XA_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M990.078 500.673h50.822l.58-177.656H990"/>
-					<path id="line_AB_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M855 538.875H715"/>
-					<path id="line_EX_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M715 785h51.295V677.49h297.335V299.048H990"/>
-					<path id="line_AE_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M990 547.493h184.46V500"/>
-					<path id="line_EB_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M630 720V605"/>
-					<path id="line_EA_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M692.339 720v-64.22h222.906V605"/>
-					<path id="line_WB_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M855 785h-42.892V569.007H715"/>
-					<path id="line_AW_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M990 764.703h40.05V566.048H990"/>
-					<path id="line_XW_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M990 785h97.42V276.057h-97.387"/>
-					<path id="line_EW_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M855 828.368H715"/>
-					<path id="line_LY_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M580 285H400v30"/>
-					<path id="line_LB_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M580 492.114h-40V365h-90"/>
-					<path id="line_RY_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M580 259.188H143.666V315"/>
-					<path id="line_RL_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M320 365H210"/>
-					<path id="line_LH_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M272.297 545V400H320"/>
-					<path id="line_LM_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M450 810h39.056V400H450"/>
-					<path id="line_RB_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M580 513.164H184.579V465"/>
-					<path id="line_HB_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M580 558.796H335"/>
-					<path id="line_BM_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M447.482 869.713H540V585.921h40"/>
-					<path id="line_MH_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M403.851 775V616.13H335"/>
-					<path id="line_EM_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M640 870v90H396.152v-30"/>
-					<path id="line_RH_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M200 594.152h-58.754V465"/>
-					<path id="line_RM_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M358.656 775v-44.215H116.479V465"/>
-					<path id="line_RVn_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M93.204 775V465"/>
-					<path id="line_LVn_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M75 855.152H45.415V285h334.584v30"/>
-					<path id="line_HVn_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M210 853.348h51.332V695"/>
-					<path id="line_MVn_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M361.35 930v30H119.621v-29.009"/>
-					<path id="line_VpB_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M1055 973.842H905.799l-4.305 7.498-5.535-15.181-6.999 17.854-7.991-23.156-6.001 28.675-12.904-39.284-8.751 23.594H750.567v-21.756l-12.013-3.008 25.962-10.136-37.163-8.978 23.214-5.978v-334.77H715"/>
-					<path id="line_VpA_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M1111.35 950v-60.33l11.57-9.071-27.37-15.01 15.8-7.928V691.337l-7.13-4.311 14.26-7.102-16.01-6.492 24.91-8.069-16.03-6.789V529.296l8.25-7.144H990"/>
-					
+	<script type="text/javascript" src="data/charaData.js"></script>
+	<script type="text/javascript" src="data/charaData_ch.js"></script>
+	<script type="text/javascript" src="scripts/script.js"></script>
+	<script type="text/javascript" src="scripts/classie.js"></script>
+	<script type='text/javascript' src='scripts/loadImg.js'></script>
+	<script type='text/javascript'>
+		$(function () {
+			$('img').imgPreload();
+		})
+	</script>
+
+	<link rel="stylesheet" href="styles/lightbox.css">
+	<link rel="stylesheet" href="styles/style.css" />
+</head>
+
+<body>
+	<div class="se-pre-con"></div>
+	<!--================-->
+	<!--   Bio pop-up   -->
+	<!--================-->
+	<div class="md-modal md-window" id="modal-chara">
+		<div class="md-content charaBio">
+			<div class="bioCloseBT md-close">
+				<svg viewBox="0 0 30 30" width="90" height="90">
+					<path fill="#fff"
+						d="M7 4a.995.995 0 0 0-.707.293l-2 2a.999.999 0 0 0 0 1.414L11.586 15l-7.293 7.293a.999.999 0 0 0 0 1.414l2 2a.999.999 0 0 0 1.414 0L15 18.414l7.293 7.293a.999.999 0 0 0 1.414 0l2-2a.999.999 0 0 0 0-1.414L18.414 15l7.293-7.293a.999.999 0 0 0 0-1.414l-2-2a.999.999 0 0 0-1.414 0L15 11.586 7.707 4.293A.996.996 0 0 0 7 4z" />
 				</svg>
-				<div id="chart"></div>
 			</div>
-			<div class="breather"></div>
+			<div class="bioArt"></div>
+			<div class="bioHeader">
+				<span></span>
+				<span></span>
+			</div>
+			<div class="bioOutfits">
+				<ul class="outfitSelect">
+				</ul>
+			</div>
+			<div class="bioBasic">
+			</div>
+			<div class="bioDetail">
+				<ul class="bioDetailTabs">
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<div class="bioDetailInner">
+				</div>
+			</div>
+			<div class="refSheets">
+			</div>
+			<div class="themes">
+			</div>
 		</div>
+	</div>
+	<!--=========================-->
+	<!--   Relationship pop-up   -->
+	<!--=========================-->
+	<div class="md-modal md-window" id="modal-relationship">
+		<div class="md-content relationshipPage">
+			<!--   Relationship Page Header   -->
+			<div class="relPhotoBox">
+			</div>
+			<div class="relPhotoBox">
+			</div>
+			<div class="relTitle">
+				<div class="label upper"></div>
+				<div class="label middle"></div>
+				<div class="label lower"></div>
+				<svg viewBox="0 0 175 62" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"
+					clip-rule="evenodd">
+					<path id="upperArrow" fill="#ebebeb"
+						d="M269.606 93.71v-4.044h157.343l-5.145-8.089h2.573l6.431 10.111-6.431 10.11h-2.573l5.145-8.088H269.606Z"
+						transform="matrix(1.0856 0 0 .69052 -292.683 -56.331)" />
+					<path id="lowerArrow" fill="#ebebeb"
+						d="m273.464 93.71 5.145 8.088h-2.572l-6.431-10.11 6.431-10.111h2.572l-5.145 8.089h157.344v4.044H273.464Z"
+						transform="matrix(1.0856 0 0 .69052 -292.683 -8.593)" />
+				</svg>
+			</div>
+			<div class="relCloseBT md-close">
+				<svg viewBox="0 0 30 30" width="90" height="90">
+					<path fill="#fff"
+						d="M7 4a.995.995 0 0 0-.707.293l-2 2a.999.999 0 0 0 0 1.414L11.586 15l-7.293 7.293a.999.999 0 0 0 0 1.414l2 2a.999.999 0 0 0 1.414 0L15 18.414l7.293 7.293a.999.999 0 0 0 1.414 0l2-2a.999.999 0 0 0 0-1.414L18.414 15l7.293-7.293a.999.999 0 0 0 0-1.414l-2-2a.999.999 0 0 0-1.414 0L15 11.586 7.707 4.293A.996.996 0 0 0 7 4z" />
+				</svg>
+			</div>
+			<div class="relHr"></div>
+			<!--   Relationship Page Header END  -->
+			<div class="relDetail"></div>
+		</div>
+	</div>
+	<!--=================-->
+	<!--   Mini Player   -->
+	<!--=================-->
+	<div class="miniBar barHide">
+		<div class="ytPlayer">
+		</div>
+	</div>
+	<!--====================-->
+	<!--   Actual content   -->
+	<!--====================-->
+	<div class="langNav">
+		<div id="langCH" class="langSwitch noSelect">中文</div>
+		<div id="langEN" class="langSwitch noSelect">ENG</div>
+	</div>
+	<div class="container">
+		<div class="header">
+			<h1>{<span class="title"><span class="beta">BETA</span></span>}</h1>
+			<h2></h2>
+		</div>
+		<div class="breather"></div>
+		<div class="chartWrapper">
+			<svg id="chartSVG" version="1.1" xml:space="preserve"
+				style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.5;">
 
-		<div class="md-overlay"></div>
-		<!-- <script src="scripts/lightbox.js"></script> -->
-	</body>
+				<!-- svg codes -->
+				<!-- base lines -->
+				<path id="line_YE" class="basePath" fill="none" stroke="#fff" d="M690.674 200v-32.236h492.206V340" />
+				<path id="line_XY" class="basePath" fill="none" stroke="#fff" d="M656.812 200v-54.004H937.38V200" />
+				<path id="line_XE" class="basePath" fill="none" stroke="#fff" d="M1000 249.999h157.48V340" />
+				<path id="line_XB" class="basePath" fill="none" stroke="#fff" d="M870 243.218h-74.718v246.231H730" />
+				<path id="line_YB" class="basePath" fill="none" stroke="#fff" d="M630 355v95" />
+				<path id="line_YA" class="basePath" fill="none" stroke="#fff" d="M690 355v32.963h201.85V455" />
+				<path id="line_BE" class="basePath" fill="none" stroke="#fff" d="M690 450v-40h415" />
+				<path id="line_XA" class="basePath" fill="none" stroke="#fff" d="M1000 323.017h41.48l-.58 177.656H1000" />
+				<path id="line_AB" class="basePath" fill="none" stroke="#fff" d="M730 532.277h140" />
+				<path id="line_EX" class="basePath" fill="none" stroke="#fff" d="M1000 299.048h63.63V677.49H781.915V785H730" />
+				<path id="line_AE" class="basePath" fill="none" stroke="#fff" d="M1174.46 500v47.493H1000" />
+				<path id="line_EB" class="basePath" fill="none" stroke="#fff" d="M620.628 605v115" />
+				<path id="line_EA" class="basePath" fill="none" stroke="#fff" d="M915.245 605v50.78H692.339V720" />
+				<path id="line_WB" class="basePath" fill="none" stroke="#fff" d="M730 569.007h88.942V785H870" />
+				<path id="line_AW" class="basePath" fill="none" stroke="#fff" d="M1000 566.048h30.05v198.655H1000" />
+				<path id="line_XW" class="basePath" fill="none" stroke="#fff" d="M1000 276.057h87.42V785H1000" />
+				<path id="line_EW" class="basePath" fill="none" stroke="#fff" d="M730 830h140" />
+				<path id="line_WE" class="basePath" fill="none" stroke="#fff" d="M1000 830h312.99V410h-65.9" />
+				<path id="line_LY" class="basePath" fill="none" stroke="#fff" d="M400 315v-30h195" />
+				<path id="line_LB" class="basePath" fill="none" stroke="#fff" d="M475 365h61.095v127.114H595" />
+				<path id="line_RY" class="basePath" fill="none" stroke="#fff" d="M143.666 315v-55.812H595" />
+				<path id="line_RL" class="basePath" fill="none" stroke="#fff" d="M210 365h135" />
+				<path id="line_LH" class="basePath" fill="none" stroke="#fff" d="M345 400h-66.846v145" />
+				<path id="line_LM" class="basePath" fill="none" stroke="#fff" d="M475 400h27.784v410H475" />
+				<path id="line_RB" class="basePath" fill="none" stroke="#fff" d="M184.579 465v48.164H595" />
+				<path id="line_HB" class="basePath" fill="none" stroke="#fff" d="M335 558.796h260" />
+				<path id="line_BM" class="basePath" fill="none" stroke="#fff" d="M595 536.034h-57.929v333.679H475" />
+				<path id="line_MH" class="basePath" fill="none" stroke="#fff" d="M335 616.13h68.851V775" />
+				<path id="line_EM" class="basePath" fill="none" stroke="#fff" d="M396.152 930v30H640v-90" />
+				<path id="line_RH" class="basePath" fill="none" stroke="#fff" d="M158.819 465v129.152H210" />
+				<path id="line_RM" class="basePath" fill="none" stroke="#fff" d="M131.611 465v270.159H375.74V775" />
+				<path id="line_RVn" class="basePath" fill="none" stroke="#fff" d="M93.204 465v310" />
+				<path id="line_LVn" class="basePath" fill="none" stroke="#fff" d="M379.999 315v-30H45.415v570.152H75" />
+				<path id="line_HVn" class="basePath" fill="none" stroke="#fff" d="M261.332 695v158.348H210" />
+				<path id="line_MVn" class="basePath" fill="none" stroke="#fff" d="M168.044 930.991V960H361.35v-30" />
+				<path id="line_BVn" class="basePath" fill="none" stroke="#fff" d="M132.798 931v60.969H565.72V579.866H595" />
+				<path id="line_VpB" class="basePath" fill="none" stroke="#fff" d="M1055 973.842H905.799l-4.305 7.498-5.535-15.181-6.999 17.854-7.991-23.156-6.001 28.675-12.904-39.284-8.751 23.594H761.55v-21.756l-12.013-3.008 25.962-10.136-37.163-8.978 23.214-5.978v-332.47l8.291-6.361H730" />
+				<path id="line_VpA" class="basePath" fill="none" stroke="#fff" d="M1111.35 950V837.962l11.57-8.252-27.37-10.097 15.8-7.211V691.337l-7.13-4.311 14.26-7.102-16.01-6.492 24.91-8.069-16.03-6.789V529.296l8.25-7.144H1000" />
+
+				<!-- lines for filling color animation -->
+				<path id="line_YE_fill" class="clonePath" fill="none" stroke="#fff" d="M690.674 200v-32.236h492.206V340" />
+				<path id="line_XY_fill" class="clonePath" fill="none" stroke="#fff" d="M656.812 200v-54.004H937.38V200" />
+				<path id="line_XE_fill" class="clonePath" fill="none" stroke="#fff" d="M1000 249.999h157.48V340" />
+				<path id="line_XB_fill" class="clonePath" fill="none" stroke="#fff" d="M870 243.218h-74.718v246.231H730" />
+				<path id="line_YB_fill" class="clonePath" fill="none" stroke="#fff" d="M630 355v95" />
+				<path id="line_YA_fill" class="clonePath" fill="none" stroke="#fff" d="M690 355v32.963h201.85V455" />
+				<path id="line_BE_fill" class="clonePath" fill="none" stroke="#fff" d="M690 450v-40h415" />
+				<path id="line_XA_fill" class="clonePath" fill="none" stroke="#fff" d="M1000 323.017h41.48l-.58 177.656H1000" />
+				<path id="line_AB_fill" class="clonePath" fill="none" stroke="#fff" d="M730 532.277h140" />
+				<path id="line_EX_fill" class="clonePath" fill="none" stroke="#fff" d="M1000 299.048h63.63V677.49H781.915V785H730" />
+				<path id="line_AE_fill" class="clonePath" fill="none" stroke="#fff" d="M1174.46 500v47.493H1000" />
+				<path id="line_EB_fill" class="clonePath" fill="none" stroke="#fff" d="M620.628 605v115" />
+				<path id="line_EA_fill" class="clonePath" fill="none" stroke="#fff" d="M915.245 605v50.78H692.339V720" />
+				<path id="line_WB_fill" class="clonePath" fill="none" stroke="#fff" d="M730 569.007h88.942V785H870" />
+				<path id="line_AW_fill" class="clonePath" fill="none" stroke="#fff" d="M1000 566.048h30.05v198.655H1000" />
+				<path id="line_XW_fill" class="clonePath" fill="none" stroke="#fff" d="M1000 276.057h87.42V785H1000" />
+				<path id="line_EW_fill" class="clonePath" fill="none" stroke="#fff" d="M730 830h140" />
+				<path id="line_WE_fill" class="clonePath" fill="none" stroke="#fff" d="M1000 830h312.99V410h-65.9" />
+				<path id="line_LY_fill" class="clonePath" fill="none" stroke="#fff" d="M400 315v-30h195" />
+				<path id="line_LB_fill" class="clonePath" fill="none" stroke="#fff" d="M475 365h61.095v127.114H595" />
+				<path id="line_RY_fill" class="clonePath" fill="none" stroke="#fff" d="M143.666 315v-55.812H595" />
+				<path id="line_RL_fill" class="clonePath" fill="none" stroke="#fff" d="M210 365h135" />
+				<path id="line_LH_fill" class="clonePath" fill="none" stroke="#fff" d="M345 400h-66.846v145" />
+				<path id="line_LM_fill" class="clonePath" fill="none" stroke="#fff" d="M475 400h27.784v410H475" />
+				<path id="line_RB_fill" class="clonePath" fill="none" stroke="#fff" d="M184.579 465v48.164H595" />
+				<path id="line_HB_fill" class="clonePath" fill="none" stroke="#fff" d="M335 558.796h260" />
+				<path id="line_BM_fill" class="clonePath" fill="none" stroke="#fff" d="M595 536.034h-57.929v333.679H475" />
+				<path id="line_MH_fill" class="clonePath" fill="none" stroke="#fff" d="M335 616.13h68.851V775" />
+				<path id="line_EM_fill" class="clonePath" fill="none" stroke="#fff" d="M396.152 930v30H640v-90" />
+				<path id="line_RH_fill" class="clonePath" fill="none" stroke="#fff" d="M158.819 465v129.152H210" />
+				<path id="line_RM_fill" class="clonePath" fill="none" stroke="#fff" d="M131.611 465v270.159H375.74V775" />
+				<path id="line_RVn_fill" class="clonePath" fill="none" stroke="#fff" d="M93.204 465v310" />
+				<path id="line_LVn_fill" class="clonePath" fill="none" stroke="#fff" d="M379.999 315v-30H45.415v570.152H75" />
+				<path id="line_HVn_fill" class="clonePath" fill="none" stroke="#fff" d="M261.332 695v158.348H210" />
+				<path id="line_MVn_fill" class="clonePath" fill="none" stroke="#fff" d="M168.044 930.991V960H361.35v-30" />
+				<path id="line_BVn_fill" class="clonePath" fill="none" stroke="#fff" d="M132.798 931v60.969H565.72V579.866H595" />
+				<path id="line_VpB_fill" class="clonePath" fill="none" stroke="#fff" d="M1055 973.842H905.799l-4.305 7.498-5.535-15.181-6.999 17.854-7.991-23.156-6.001 28.675-12.904-39.284-8.751 23.594H761.55v-21.756l-12.013-3.008 25.962-10.136-37.163-8.978 23.214-5.978v-332.47l8.291-6.361H730" />
+				<path id="line_VpA_fill" class="clonePath" fill="none" stroke="#fff" d="M1111.35 950V837.962l11.57-8.252-27.37-10.097 15.8-7.211V691.337l-7.13-4.311 14.26-7.102-16.01-6.492 24.91-8.069-16.03-6.789V529.296l8.25-7.144H1000" />
+
+				<!-- lines for filling color animation(reversed) -->
+				<path id="line_YE_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M1182.88 340V167.764H690.674V200" />
+				<path id="line_XY_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M937.38 200v-54.004H656.812V200" />
+				<path id="line_XE_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M1157.48 340v-90.001H1000" />
+				<path id="line_XB_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M730 489.449h65.282V243.218H870" />
+				<path id="line_YB_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M630 450v-95" />
+				<path id="line_YA_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M891.85 455v-67.037H690V355" />
+				<path id="line_BE_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M1105 410H690v40" />
+				<path id="line_XA_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M1000 500.673h40.9l.58-177.656H1000" />
+				<path id="line_AB_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M870 532.277H730" />
+				<path id="line_EX_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M730 785h51.915V677.49h281.715V299.048H1000" />
+				<path id="line_AE_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M1000 547.493h174.46V500" />
+				<path id="line_EB_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M620.628 720V605" />
+				<path id="line_EA_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M692.339 720v-64.22h222.906V605" />
+				<path id="line_WB_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M870 785h-51.058V569.007H730" />
+				<path id="line_AW_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M1000 764.703h30.05V566.048H1000" />
+				<path id="line_XW_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M1000 785h87.42V276.057H1000" />
+				<path id="line_EW_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M870 830H730" />
+				<path id="line_WE_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M1247.09 410h65.9v420H1000" />
+				<path id="line_LY_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M595 285H400v30" />
+				<path id="line_LB_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M595 492.114h-58.905V365H475" />
+				<path id="line_RY_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M595 259.188H143.666V315" />
+				<path id="line_RL_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M345 365H210" />
+				<path id="line_LH_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M278.154 545V400H345" />
+				<path id="line_LM_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M475 810h27.784V400H475" />
+				<path id="line_RB_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M595 513.164H184.579V465" />
+				<path id="line_HB_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M595 558.796H335" />
+				<path id="line_BM_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M475 869.713h62.071V536.034H595" />
+				<path id="line_MH_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M403.851 775V616.13H335" />
+				<path id="line_EM_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M640 870v90H396.152v-30" />
+				<path id="line_RH_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M210 594.152h-51.181V465" />
+				<path id="line_RM_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M375.74 775v-39.841H131.611V465" />
+				<path id="line_RVn_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M93.204 775V465" />
+				<path id="line_LVn_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M75 855.152H45.415V285h334.584v30" />
+				<path id="line_HVn_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M210 853.348h51.332V695" />
+				<path id="line_MVn_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M361.35 930v30H168.044v-29.009" />
+				<path id="line_BVn_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M595 579.866h-29.28v412.103H132.798V931" />
+				<path id="line_VpB_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M730 585.155h39.841l-8.291 6.361v332.47l-23.214 5.978 37.163 8.978-25.962 10.136 12.013 3.008v21.756h91.763l8.751-23.594 12.904 39.284 6.001-28.675 7.991 23.156 6.999-17.854 5.535 15.181 4.305-7.498H1055" />
+				<path id="line_VpA_fill_rev" class="clonePath" fill="none" stroke="#fff" d="M1000 522.152h119.6l-8.25 7.144v129.278l16.03 6.789-24.91 8.069 16.01 6.492-14.26 7.102 7.13 4.311v121.065l-15.8 7.211 27.37 10.097-11.57 8.252V950" />
+
+			</svg>
+			<div id="chart"></div>
+		</div>
+		<div class="breather"></div>
+	</div>
+
+	<div class="md-overlay"></div>
+	<!-- <script src="scripts/lightbox.js"></script> -->
+</body>
+
 </html>

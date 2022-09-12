@@ -7,39 +7,41 @@ var relationshipPosData = [
     { id: "RY", x: 275, y: 260, start: "ryan" },
     { id: "YE", x: 1180, y: 185, start: "yoni" },
     { id: "XY", x: 795, y: 145, start: "yoni" },
-    { id: "RL", x: 265, y: 365, start: "ryan" },
-    { id: "LM", x: 490, y: 625, start: "lance" },
-    { id: "LY", x: 525, y: 285, start: "lance" },
+    { id: "RL", x: 280, y: 365, start: "ryan" },
+    { id: "LM", x: 500, y: 625, start: "lance" },
+    { id: "LY", x: 530, y: 285, start: "lance" },
     { id: "LB", x: 535, y: 435, start: "lance" },
     { id: "XB", x: 795, y: 290, start: "xiu" },
     { id: "EX", x: 965, y: 675, start: "xiu" },
     { id: "XE", x: 1115, y: 250, start: "xiu" },
     { id: "XA", x: 1040, y: 380, start: "xiu" },
     { id: "RH", x: 155, y: 595, start: "ryan" },
-    { id: "LH", x: 270, y: 470, start: "lance" },
+    { id: "LH", x: 275, y: 470, start: "lance" },
     { id: "YB", x: 630, y: 405, start: "yoni" },
-    { id: "YA", x: 735, y: 385, start: "yoni" },
+    { id: "YA", x: 775, y: 385, start: "yoni" },
     { id: "BE", x: 910, y: 410, start: "blade" },
-    { id: "HB", x: 445, y: 560, start: "hannah" },
-    { id: "AB", x: 785, y: 540, start: "blade" },
-    { id: "AE", x: 1160, y: 545, start: "ellie" },
+    { id: "HB", x: 450, y: 560, start: "hannah" },
+    { id: "AB", x: 800, y: 530, start: "blade" },
+    { id: "AE", x: 1165, y: 545, start: "ellie" },
     { id: "RM", x: 290, y: 735, start: "ryan" },
-    { id: "RB", x: 380, y: 515, start: "ryan" },
+    { id: "RB", x: 390, y: 515, start: "ryan" },
     { id: "MH", x: 405, y: 695, start: "hannah" },
     { id: "BM", x: 540, y: 680, start: "blade" },
-    { id: "EB", x: 630, y: 655, start: "blade" },
-    { id: "EA", x: 695, y: 655, start: "axel" },
+    { id: "EB", x: 620, y: 655, start: "blade" },
+    { id: "EA", x: 715, y: 655, start: "axel" },
     { id: "EM", x: 520, y: 960, start: "minerva" },
     { id: "WB", x: 810, y: 615, start: "blade" },
     { id: "AW", x: 1030, y: 610, start: "axel" },
     { id: "XW", x: 1045, y: 785, start: "xiu" },
     { id: "EW", x: 785, y: 830, start: "edd" },
+    { id: "WE", x: 785, y: 830, start: "wade" },
+    { id: "BVn", x: 90, y: 670, start: "angel" },
     { id: "RVn", x: 90, y: 670, start: "ryan" },
     { id: "LVn", x: 85, y: 280, start: "lance" },
     { id: "HVn", x: 260, y: 850, start: "hannah" },
-    { id: "MVn", x: 245, y: 960, start: "angel" },    
-    { id: "VpB", x: 970, y: 975, start: "blade" },
-    { id: "VpA", x: 1110, y: 820, start: "axel" },
+    { id: "MVn", x: 245, y: 960, start: "angel" },
+    { id: "VpB", x: 970, y: 975, start: "viper" },
+    { id: "VpA", x: 1110, y: 880, start: "viper" },
 ]
 
 const charaData = {
@@ -49,7 +51,7 @@ const charaData = {
         color: "rgb(127, 180, 57)",
         button: "",
         photoPos: {
-            x: 580,
+            x: 595,
             y: 450,
             rotation: 4
         }
@@ -60,7 +62,7 @@ const charaData = {
         color: "rgb(221, 140, 33)",
         button: "",
         photoPos: {
-            x: 855,
+            x: 865,
             y: 450,
             rotation: -4
         }
@@ -71,7 +73,7 @@ const charaData = {
         color: "rgb(65, 173, 206)",
         button: "",
         photoPos: {
-            x: 855,
+            x: 865,
             y: 195,
             rotation: 3
         }
@@ -82,7 +84,7 @@ const charaData = {
         color: "rgb(224, 213, 54)",
         button: "",
         photoPos: {
-            x: 580,
+            x: 595,
             y: 195,
             rotation: -4
         }
@@ -93,8 +95,8 @@ const charaData = {
         color: "rgb(41, 81, 194)",
         button: "",
         photoPos: {
-            x: 200,
-            y: 540,
+            x: 210,
+            y: 535,
             rotation: -2
         }
     },
@@ -104,7 +106,7 @@ const charaData = {
         color: "rgb(148, 77, 206)",
         button: "",
         photoPos: {
-            x: 315,
+            x: 340,
             y: 310,
             rotation: 0
         }
@@ -113,9 +115,9 @@ const charaData = {
         jpname: "エステル（エリ）",
         age: 14,
         color: "rgb(17, 148, 87)",
-        button: "",        
+        button: "",
         photoPos: {
-            x: 1105,
+            x: 1110,
             y: 340,
             rotation: 3
         }
@@ -126,7 +128,7 @@ const charaData = {
         color: "rgb(211, 43, 43)",
         button: "",
         photoPos: {
-            x: 580,
+            x: 595,
             y: 715,
             rotation: -2
         }
@@ -135,9 +137,9 @@ const charaData = {
         jpname: "ミネルヴァ",
         age: 18,
         color: "rgb(167, 87, 83)",
-        button: "",       
+        button: "",
         photoPos: {
-            x: 315,
+            x: 340,
             y: 770,
             rotation: 3
         }
@@ -146,7 +148,7 @@ const charaData = {
         jpname: "サイモン",
         age: 18,
         color: "rgb(216, 40, 163)",
-        button: "",        
+        button: "",
         photoPos: {
             x: 1050,
             y: 950,
@@ -157,7 +159,7 @@ const charaData = {
         jpname: "",
         age: 20,
         color: "rgb(92, 165, 155)",
-        button: "",     
+        button: "",
         photoPos: {
             x: 75,
             y: 310,
@@ -168,57 +170,57 @@ const charaData = {
         jpname: "",
         age: 19,
         color: "rgb(190, 190, 190)",
-        button: "",     
+        button: "",
         photoPos: {
             x: 75,
             y: 770,
             rotation: -2
         }
-    },    
+    },
     wade: {
         jpname: "",
         age: 17,
         color: "rgb(87, 65, 168)",
-        button: "",     
+        button: "",
         photoPos: {
-            x: 855,
+            x: 865,
             y: 715,
             rotation: 5
         }
-    },  
+    },
     scott: {
         jpname: "",
         age: 19,
         color: "rgb(139, 114, 108)",
-        button: "",     
+        button: "",
         photoPos: {
             x: 1145,
             y: 610,
             rotation: 5
         }
-    },    
+    },
     zoelle: {
         jpname: "",
         age: 19,
         color: "rgb(58, 71, 101)",
-        button: "",     
+        button: "",
         photoPos: {
-            x: 315,
+            x: 340,
             y: 65,
             rotation: -3
         }
-    },    
+    },
     zarah: {
         jpname: "",
         age: 19,
         color: "rgb(64, 61, 41)",
-        button: "",     
+        button: "",
         photoPos: {
             x: 75,
             y: 65,
             rotation: 3
         }
-    },        
+    },
 }
 
 var relationshipData_en = [
@@ -563,6 +565,32 @@ var relationshipData_en = [
         ]
     },
     {
+        id: "WE",
+        chara1: "wade",
+        chara2: "ellie",
+        label: " ",
+        desc1: " ",
+        desc2: " ",
+        descDetail1: " ",
+        descDetail2: " ",
+        content: [
+            "--"
+        ]
+    },
+    {
+        id: "BVn",
+        chara1: "blade",
+        chara2: "angel",
+        label: " ",
+        desc1: " ",
+        desc2: " ",
+        descDetail1: " ",
+        descDetail2: " ",
+        content: [
+            "--"
+        ]
+    },
+    {
         id: "RVn",
         chara1: "ryan",
         chara2: "angel",
@@ -613,7 +641,7 @@ var relationshipData_en = [
         content: [
             "--"
         ]
-    },    
+    },
     {
         id: "VpB",
         label: "Enemies...?",
@@ -657,19 +685,19 @@ var bioData_en = [
         outfits: [
             { name: "Regular", url: "profile/blade.png" },
             { name: "Agent 3", url: "profile/blade.png" },
-            { name: "Younger", url: "profile/blade.png" }            
+            { name: "Younger", url: "profile/blade.png" }
         ],
         bio: [
             "He used to refuse playing any turf/ranked and would push away anyone who wants to be friend due to his anxious nature. After being abruptly scouted by Captain Cuttlefish as Agent 3, he received support from captain and the other two agents, it was then he decided to make change and begin the process of healing. Operating as agent 3 has helped him both mentally and physically, he is now able to play competitively. It was around this time he moved out to live on his own.",
             "He then met Axel and other friends and eventually got along since he is now a bit more opened-up to other people, and they decided to form a team called “Bad Buttons” with Blade as leader.",
         ],
-        personality:[
+        personality: [
             "The constant bullying and abusing from his older sister made him a very gloomy introvert, he often puts up a cool look to cover up the insecure side of him."
         ],
-        trivia:[
-            "His actual name is Branden, Axel was the one who started calling him \"Blade\", which came from his online handle, and the rest of his friends started doing the same.",            
+        trivia: [
+            "His actual name is Branden, Axel was the one who started calling him \"Blade\", which came from his online handle, and the rest of his friends started doing the same.",
             "He is a great cook, mostly excels in home style cooking.",
-            "His braclet, ear cuff, hair ties and necklace are all gifts from other members of the team."            
+            "His braclet, ear cuff, hair ties and necklace are all gifts from other members of the team."
         ],
         refsheets: [
             "assets/img/refsheets/blade_v2.png",
@@ -699,8 +727,8 @@ var bioData_en = [
             "One day in a random match he met Blade and picked a fight with him, and later realized that Blade could be the teammate he had been looking for. He then chased him through the sewer system in Inkopolis Square where he became Agent 4 just for another chance to meet Blade. He eventually got to meet Blade again and was able to befriend him and formed a team \"Bad Buttons\" like he always wanted to.",
             "Ever since Blade walked into his life, he is shown to have less frequent temper issues."
         ],
-        trivia:[
-            ""            
+        trivia: [
+            ""
         ],
         refsheets: [
         ]
@@ -767,9 +795,9 @@ var bioData_en = [
             "He is not very good at expressing his negative emotion.",
             "Seems to be involved in some shady business."
         ],
-        trivia:[
-            ""            
-        ],        
+        trivia: [
+            ""
+        ],
         refsheets: [
         ]
     },
@@ -797,7 +825,7 @@ var bioData_en = [
             "She was actually Captain Cuttlefish's the first candidate for Agent 3, but she quitted in order to focus on competitive games, which ultimately made Blade the next Agent 3. Now she only goes back to help when it's absolutely necessary.",
             "She is aware of her flaws and had thought of fixing the relationship with Blade, but gave up after failing to make any attempt, stating \"It's too late now\"."
         ],
-        trivia:[]
+        trivia: []
 
     },
     {
@@ -823,7 +851,7 @@ var bioData_en = [
             "He was the first member Hannah recruited in Royal Flush, he deals with things Hannah doesn't know how to do or had trouble with.",
             "He tries his best to live with his OCPD and is always seen wearing a pair of black gloves. Pop rocks inspired him to pick up Blaster when he was young, now he must eat a pack of pop rocks every morning."
         ],
-        trivia:[]
+        trivia: []
     },
     {
         id: "ellie",
@@ -849,7 +877,7 @@ var bioData_en = [
             "Initially, socializing was about the only thing she cared about, but seeing Axel hanging out with his teammates all the time, she started developing interest in splat battle under their influence. She got along with all the members of Bad Buttons. At some point she found out that Axel has been doing hero stuff and she eventually got involved, she helps out with the Agent 4 tasks on many occasions.",
             "She is one of the mods of a community that specializes in harassment and doxxing, but she decided to cut down any related activities after her crush Blade questions the morality of their actions."
         ],
-        trivia:[]
+        trivia: []
     },
     {
         id: "edd",
@@ -874,7 +902,7 @@ var bioData_en = [
             "After hearing Squid Sisters' song on that fateful day, he started planning for escape, using any means he could; however, before anything can be done, he got caught in the whole Deepsea Metro shenanigans, though the whole thing did manage to give him a chance to leave at the end. During this ordeal he met Blade who was operating as Agent 3 at the time and took a great liking to him, after the befriended Blade, Edd became the fifth member of Bad Buttons.",
             "He managed to graduate from a hacking boot camp when he was still in Octarian army, so he knows his way around cyber security shenanigans."
         ],
-        trivia:[]
+        trivia: []
     },
     {
         id: "minerva",
@@ -898,7 +926,7 @@ var bioData_en = [
             "She was raised in the Octarian army since she was very little. She hated the training regimen at first, but eventually she grew attached to the army deeply. She was shown to have no intention to leave even after hearing Squid Sister's Calamari Inkantation on that fateful day. She even began to loathe the so-called \"surface world\" that suddenly came into their life.",
             "One day she encountered Hannah who was operating as Agent 3 at the time; after engaging in battle, Hannah was committed to recruit Minerva into her team and wanted to bring her to the surface after witnessing Minerva's battle skills, but Minerva rejected as she never wanted to leave the Octarian army. After multiple encounters and battles with Hannah, Minerva eventually (and reluctantly) agreed to go with her. She is now a member of Royal Flush, she is still trying to get used to the surface life."
         ],
-        trivia:[]
+        trivia: []
     },
     {
         id: "viper",
@@ -923,7 +951,7 @@ var bioData_en = [
             "He was initially a shut-in who only stays in his lab, one day he was out on Octo Valley to inspect damages on some of the gadget he made, that was when he found out about Blade (who had just started his Agent 3 work), he then hijacked Blade's radio to confronted him. After a couple conflicts he determined that Blade is to be his archenemy and begin the life-long entanglement. He holds similar attitude toward Axel who operates as Agent 4. His plans never seem to bare fruits due to his own foolishness and some glaring shortcomings. Despite all the failures, he has no intension to stop bugging the two heros.",
             "He has never been to the surface and neither has he ever wished for such thing."
         ],
-        trivia:[]
+        trivia: []
     },
     {
         id: "ryan",
@@ -948,7 +976,7 @@ var bioData_en = [
             "One day he just appears out of nowhere in ranked battles like a phantom. Despite having very few battle records, his performance and splat counts are off the charts (to an extend that is almost alarming). At several points he got matched with Lance and they had multiple intense showdowns, the two ended up becoming friends. Hannah then took this chance to invite him into her team; though he did took the offer, he seems to be busy with some other shady business most of the time.",
             "Drinks only straight espresso."
         ],
-        trivia:[]
+        trivia: []
     }
 ]
 
