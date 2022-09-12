@@ -25,7 +25,7 @@ var relationshipPosData = [
     { id: "AE", x: 1160, y: 545, start: "ellie" },
     { id: "RM", x: 290, y: 735, start: "ryan" },
     { id: "RB", x: 380, y: 515, start: "ryan" },
-    { id: "MH", x: 405, y: 705, start: "hannah" },
+    { id: "MH", x: 405, y: 695, start: "hannah" },
     { id: "BM", x: 540, y: 680, start: "blade" },
     { id: "EB", x: 630, y: 655, start: "blade" },
     { id: "EA", x: 695, y: 655, start: "axel" },
@@ -156,7 +156,7 @@ const charaData = {
     ryan: {
         jpname: "",
         age: 20,
-        color: "rgb(96, 175, 183)",
+        color: "rgb(92, 165, 155)",
         button: "",     
         photoPos: {
             x: 75,
