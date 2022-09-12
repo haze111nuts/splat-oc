@@ -21,6 +21,7 @@
 - ~~script not loading on certain phone?? (this is prob phone issue)~~
 - ~~all the string in charaData should use the same kind of quotes~~
 - ~~remove unused fonts~~
+- need actual image loading functionality (the current one is prob not working)
 - swap out character page name title font for ios
 - light box is acting weird...needs fix
 - drawing anims and a page for teams???
@@ -30,4 +31,3 @@
   - ADDICTION
   - DEPRESSION
   - PHYSICAL VIOLENCE
-- cite sources somewhere

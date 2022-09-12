@@ -27,7 +27,7 @@ var relationshipPosData = [
     { id: "RB", x: 390, y: 510, start: "ryan" },
     { id: "MH", x: 405, y: 695, start: "hannah" },
     { id: "BM", x: 540, y: 680, start: "blade" },
-    { id: "EB", x: 620, y: 655, start: "blade" },
+    { id: "EB", x: 625, y: 655, start: "blade" },
     { id: "EA", x: 715, y: 655, start: "axel" },
     { id: "EM", x: 520, y: 960, start: "minerva" },
     { id: "WB", x: 820, y: 630, start: "blade" },
@@ -36,7 +36,7 @@ var relationshipPosData = [
     { id: "EW", x: 800, y: 830, start: "edd" },
     { id: "WE", x: 1250, y: 830, start: "wade" },
     { id: "BVn", x: 345, y: 990, start: "angel" },
-    { id: "RVn", x: 95, y: 640, start: "ryan" },
+    { id: "RVn", x: 100, y: 640, start: "ryan" },
     { id: "LVn", x: 45, y: 535, start: "lance" },
     { id: "HVn", x: 265, y: 810, start: "hannah" },
     { id: "MVn", x: 265, y: 960, start: "angel" },
@@ -145,7 +145,7 @@ const charaData = {
         }
     },
     viper: {
-        jpname: "サイモン",
+        jpname: "",
         age: 18,
         color: "rgb(216, 40, 163)",
         button: "",
@@ -275,8 +275,8 @@ var relationshipData_en = [
         label: "Teammates",
         chara1: "lance",
         chara2: "minerva",
-        desc1: "Newbie with potential",
-        desc2: "Slightly awkward",
+        desc1: "Trust",
+        desc2: "Respect",
         content: [
             "Under construction..."
         ]
@@ -316,7 +316,7 @@ var relationshipData_en = [
     },
     {
         id: "EX",
-        label: "Like-minded ",
+        label: "Like-minded",
         chara1: "xiu",
         chara2: "edd",
         desc1: "Interested",
@@ -448,7 +448,7 @@ var relationshipData_en = [
     },
     {
         id: "RB",
-        label: "Friends???",
+        label: "Acquaintance",
         chara1: "ryan",
         chara2: "blade",
         desc1: "Teases",
@@ -463,7 +463,7 @@ var relationshipData_en = [
         chara1: "hannah",
         chara2: "minerva",
         desc1: "Recruits",
-        desc2: "Why me?",
+        desc2: "Curious",
         content: [
             "Under construction..."
         ]
@@ -506,21 +506,21 @@ var relationshipData_en = [
         label: "Twins",
         chara1: "minerva",
         chara2: "edd",
-        desc1: "Let's train",
-        desc2: "Catching up",
+        desc1: "Thinks lowly of",
+        desc2: "Weirded out",
         content: [
             "Under construction..."
         ]
     },
     {
         id: "WB",
-        chara1: "wade",
-        chara2: "blade",
-        label: " ",
-        desc1: " ",
-        desc2: " ",
-        descDetail1: " ",
-        descDetail2: " ",
+        chara1: "blade",
+        chara2: "wade",
+        label: "Mentorship",
+        desc1: "Cares",
+        desc2: "Admires",
+        descDetail1: "",
+        descDetail2: "",
         content: [
             "--"
         ]
@@ -581,7 +581,7 @@ var relationshipData_en = [
         id: "BVn",
         chara1: "blade",
         chara2: "angel",
-        label: " ",
+        label: "Acquaintance",
         desc1: " ",
         desc2: " ",
         descDetail1: " ",
