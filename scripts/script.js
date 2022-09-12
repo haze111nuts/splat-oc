@@ -345,14 +345,6 @@ function setUpBioSwitchEvents(charaBioData) {
     });
 }
 
-function getPronoun(gender) {
-    if (currentLang == "CH") {
-        return "";
-        // return gender == "女" ? "她" : "他"
-    }
-    return gender == "Male" ? "His " : "Her ";
-}
-
 function setUpThemeClickEvents() {
     var currentVideoId = "";
     $(".themes").children().removeClass("focusedTheme");
@@ -477,6 +469,13 @@ function initYouTubeVideos(videoId) {
 //=======================//
 //=== Parsing Helpers ===//
 //=======================//
+
+function getPronoun(gender) {
+    if (currentLang == "CH") {
+        return gender == "男" ? "他的" : "她的";
+    }
+    return gender == "Male" ? "His " : "Her ";
+}
 
 function printLinesWithBreak(array, numberOfBr) {
     var result = "";

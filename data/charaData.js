@@ -8,7 +8,7 @@ var relationshipPosData = [
     { id: "YE", x: 1180, y: 185, start: "yoni" },
     { id: "XY", x: 795, y: 145, start: "yoni" },
     { id: "RL", x: 265, y: 365, start: "ryan" },
-    { id: "LM", x: 490, y: 615, start: "lance" },
+    { id: "LM", x: 490, y: 625, start: "lance" },
     { id: "LY", x: 525, y: 285, start: "lance" },
     { id: "LB", x: 535, y: 435, start: "lance" },
     { id: "XB", x: 795, y: 290, start: "xiu" },
