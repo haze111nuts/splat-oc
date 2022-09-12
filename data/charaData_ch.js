@@ -343,7 +343,7 @@ var relationshipData_ch = [
         ]       
     },
     {
-        id: "HM",
+        id: "MH",
         chara1: "hannah",
         chara2: "minerva",
         label: "朋友",
@@ -426,9 +426,113 @@ var relationshipData_ch = [
         ]              
     },
     {
-        id: "SB",
+        id: "WB",
+        chara1: "wade",
+        chara2: "blade",
+        label: " ",
+        desc1: " ",
+        desc2: " ",
+        descDetail1: " ",
+        descDetail2: " ",
+        content: [
+            "--"
+        ]
+    },
+    {
+        id: "AW",
+        chara1: "axel",
+        chara2: "wade",
+        label: " ",
+        desc1: " ",
+        desc2: " ",
+        descDetail1: " ",
+        descDetail2: " ",
+        content: [
+            "--"
+        ]
+    },
+    {
+        id: "XW",
+        chara1: "xiu",
+        chara2: "wade",
+        label: " ",
+        desc1: " ",
+        desc2: " ",
+        descDetail1: " ",
+        descDetail2: " ",
+        content: [
+            "--"
+        ]
+    },
+    {
+        id: "EW",
+        chara1: "edd",
+        chara2: "wade",
+        label: " ",
+        desc1: " ",
+        desc2: " ",
+        descDetail1: " ",
+        descDetail2: " ",
+        content: [
+            "--"
+        ]
+    },
+    {
+        id: "RVn",
+        chara1: "ryan",
+        chara2: "angel",
+        label: " ",
+        desc1: " ",
+        desc2: " ",
+        descDetail1: " ",
+        descDetail2: " ",
+        content: [
+            "--"
+        ]
+    },
+    {
+        id: "LVn",
+        chara1: "lance",
+        chara2: "angel",
+        label: " ",
+        desc1: " ",
+        desc2: " ",
+        descDetail1: " ",
+        descDetail2: " ",
+        content: [
+            "--"
+        ]
+    },
+    {
+        id: "HVn",
+        chara1: "hannah",
+        chara2: "angel",
+        label: " ",
+        desc1: " ",
+        desc2: " ",
+        descDetail1: " ",
+        descDetail2: " ",
+        content: [
+            "--"
+        ]
+    },
+    {
+        id: "MVn",
+        chara1: "minerva",
+        chara2: "angel",
+        label: " ",
+        desc1: " ",
+        desc2: " ",
+        descDetail1: " ",
+        descDetail2: " ",
+        content: [
+            "--"
+        ]
+    },           
+    {
+        id: "VpB",
         chara1: "blade",
-        chara2: "simon",
+        chara2: "viper",
         label: "英雄vs惡役",
         desc1: "你超煩",
         desc2: "永遠的勁敵",
@@ -441,9 +545,9 @@ var relationshipData_ch = [
         ]                
     },
     {
-        id: "SA",
+        id: "VpA",
         chara1: "axel",
-        chara2: "simon",
+        chara2: "viper",
         label: "死對頭",
         desc1: "幹臭章螂滾開！",
         desc2: "浮魷垃圾閉嘴！",
@@ -838,7 +942,7 @@ var bioData_ch = [
         ]
     },
     {
-        id: "simon",
+        id: "viper",
         name: "西蒙",
         gender: "男",
         like: "DJ芥葵將軍、機械工程",
@@ -853,7 +957,7 @@ var bioData_ch = [
             "是個老是出包的白痴"
         ],
         outfits: [
-            { name: "通常服", url: "profile/simon.png" }
+            { name: "通常服", url: "profile/viper.png" }
         ],
         bio: [
             "在地下出生，是個年紀小小就會自製無人機的小天才。現在是章魚軍團所屬工程師，是個成天窩在研究室的家裡蹲，有著非凡高超的機器人工程知識和技術，因此上級還給他一間他專用的研究室用來讓他研發機械兵器。他非常非常癡迷DJ芥葵將軍，自稱是「將軍的心腹」或「章魚軍團的天才工程師」之類的。",

@@ -20,7 +20,7 @@
 html {
   text-align: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: rgb(28, 28, 28);
+  background-color: rgb(25, 25, 25);
 }
 
 ::selection {
@@ -177,14 +177,14 @@ ul {
 
 .chartWrapper {
   position: relative;
-  width: 1185px;
-  height: 780px;
+  width: 1350px;
+  height: 1150px;
   margin: 50px auto 50px auto;
 }
 
 #chart {
-  width: 1185px;
-  height: 780px;
+  width: 1350px;
+  height: 1150px;
   position: absolute;
 }
 
@@ -219,8 +219,8 @@ ul {
 }
 
 #chartSVG {
-  width: 1185px;
-  height: 780px;
+  width: 1350px;
+  height: 1150px;
   position: absolute;
   display: block;
 }
@@ -999,7 +999,7 @@ ul {
   height: 120px;
   background-image: url(../assets/img/profile/0thumbs.png);
   background-repeat: no-repeat;
-  background-size: 360px auto;
+  background-size: 480px auto;
   margin: 8px auto 0px auto;
 }
 
@@ -1014,12 +1014,12 @@ ul {
 }
 
 .axel {
-  color: rgb(221, 155, 33);
-  stroke: rgb(221, 155, 33);
+  color: rgb(221, 140, 33);
+  stroke: rgb(221, 140, 33);
 }
 
 .axelPhoto {
-  background-color: rgb(221, 155, 33);
+  background-color: rgb(221, 140, 33);
   background-position: -120px 0px;
 }
 
@@ -1040,7 +1040,7 @@ ul {
 
 .yoniPhoto {
   background-color: rgb(224, 213, 54);
-  background-position: 0px -120px;
+  background-position: -360px 0px;
 }
 
 .hannah {
@@ -1050,7 +1050,7 @@ ul {
 
 .hannahPhoto {
   background-color: rgb(41, 81, 194);
-  background-position: 0px -240px;
+  background-position: 0px -120px;
 }
 
 .lance {
@@ -1070,7 +1070,7 @@ ul {
 
 .elliePhoto {
   background-color: rgb(17, 148, 87);
-  background-position: -120px -240px;
+  background-position: 0px -240px;
 }
 
 .edd {
@@ -1080,7 +1080,7 @@ ul {
 
 .eddPhoto {
   background-color: rgb(211, 43, 43);
-  background-position: -120px -360px;
+  background-position: -240px -240px;
 }
 
 .minerva {
@@ -1090,27 +1090,77 @@ ul {
 
 .minervaPhoto {
   background-color: rgb(167, 87, 83);
-  background-position: 0px -360px;
+  background-position: -240px -120px;
 }
 
-.simon {
+.viper {
   color: rgb(216, 40, 163);
   stroke: rgb(216, 40, 163);
 }
 
-.simonPhoto {
+.viperPhoto {
   background-color: rgb(216, 40, 163);
-  background-position: -240px -360px;
+  background-position: -120px -240px;
 }
 
 .ryan {
-  color: rgb(180, 180, 180);
-  stroke: rgb(180, 180, 180);
+  color: rgb(96, 175, 183);
+  stroke: rgb(96, 175, 183);
 }
 
 .ryanPhoto {
-  background-color: rgb(180, 180, 180);
-  background-position: -240px -120px;
+  background-color: rgb(96, 175, 183);
+  background-position: -360px -120px;
+}
+
+.angel {
+  color: rgb(190, 190, 190);
+  stroke: rgb(190, 190, 190);
+}
+
+.angelPhoto {
+  background-color: rgb(190, 190, 190);
+  background-position: -360px -240px;
+}
+
+.wade {
+  color: rgb(87, 65, 168);
+  stroke: rgb(87, 65, 168);
+}
+
+.wadePhoto {
+  background-color: rgb(87, 65, 168);
+  background-position: 0px -360px;
+}
+
+.scott {
+  color: rgb(139, 114, 108);
+  stroke: rgb(139, 114, 108);
+}
+
+.scottPhoto {
+  background-color: rgb(139, 114, 108);
+  background-position: -120px -360px;
+}
+
+.zoelle {
+  color: rgb(58, 71, 101);
+  stroke: rgb(58, 71, 101);
+}
+
+.zoellePhoto {
+  background-color: rgb(58, 71, 101);
+  background-position: -240px -360px;
+}
+
+.zarah {
+  color: rgb(64, 61, 41);
+  stroke: rgb(64, 61, 41);
+}
+
+.zarahPhoto {
+  background-color: rgb(64, 61, 41);
+  background-position: -360px -360px;
 }
 
 .no-js #loader {

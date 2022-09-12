@@ -2,14 +2,14 @@
 @use 'sass:math';
 @import url(https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap);
 
-$chart-width: 1185px;
-$chart-height: 780px;
+$chart-width: 1350px;
+$chart-height: 1150px;
 $chara-box-width: 135px;
 $chara-box-height: 155px;
 $chara-photo-size: 120px;
 
 $raw-photo-size: 150px;
-$raw-photo-asset-x: 450px;
+$raw-photo-asset-x: 600px;
 $raw-photo-asset-y: 600px;
 
 @function photo-bg-pos($index) {
@@ -36,26 +36,36 @@ $raw-photo-asset-y: 600px;
 $chara: (
   blade: (color: rgb(127, 180, 57),
     photo-index: 0),
-  axel: (color: rgb(221, 155, 33),
+  axel: (color: rgb(221, 140, 33),
     photo-index: 1),
   xiu: (color: rgb(65, 173, 206),
     photo-index: 2),
   yoni: (color: rgb(224, 213, 54),
     photo-index: 3),
   hannah: (color: rgb(41, 81, 194),
-    photo-index: 6),
-  lance: (color: rgb(148, 77, 206),
     photo-index: 4),
+  lance: (color: rgb(148, 77, 206),
+    photo-index: 5),
   ellie: (color: rgb(17, 148, 87),
-    photo-index: 7),
+    photo-index: 8),
   edd: (color: rgb(211, 43, 43),
     photo-index: 10),
   minerva: (color: rgb(167, 87, 83),
+    photo-index: 6),
+  viper: (color: rgb(216, 40, 163),
     photo-index: 9),
-  simon: (color: rgb(216, 40, 163),
+  ryan: (color: rgb(96, 175, 183),
+    photo-index: 7),
+  angel: (color: rgb(190, 190, 190),
     photo-index: 11),
-  ryan: (color: rgb(180, 180, 180),
-    photo-index: 5)
+  wade: (color: rgb(87, 65, 168),
+    photo-index: 12),
+  scott: (color: rgb(139, 114, 108),
+    photo-index: 13),
+  zoelle: (color: rgb(58, 71, 101),
+    photo-index: 14),
+    zarah: (color: rgb(64, 61, 41),
+    photo-index: 15)    
 );
 
 @mixin prefix($property, $value, $prefixes: ()) {
@@ -90,7 +100,7 @@ $chara: (
 html {
   text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: rgb(28, 28, 28);
+  background-color: rgb(25, 25, 25);
 }
 
 ::selection {

@@ -4,34 +4,42 @@
 //=====================//
 
 var relationshipPosData = [
-    { id: "RY", x: 170, y: 50, start: "ryan" },
-    { id: "YE", x: 1030, y: 50, start: "yoni" },
-    { id: "XY", x: 745, y: 25, start: "yoni" },
-    { id: "RL", x: 170, y: 130, start: "lance" },
-    { id: "LM", x: 220, y: 630, start: "minerva" },
-    { id: "LY", x: 455, y: 130, start: "lance" },
-    { id: "LB", x: 455, y: 280, start: "lance" },
-    { id: "XB", x: 715, y: 185, start: "xiu" },
-    { id: "EX", x: 1102, y: 745, start: "edd" },
-    { id: "XE", x: 1015, y: 145, start: "xiu" },
-    { id: "XA", x: 945, y: 265, start: "xiu" },
-    { id: "RH", x: 180, y: 405, start: "ryan" },
-    { id: "LH", x: 315, y: 280, start: "lance" },
-    { id: "YB", x: 560, y: 285, start: "yoni" },
-    { id: "YA", x: 710, y: 265, start: "yoni" },
-    { id: "BE", x: 850, y: 295, start: "blade" },
-    { id: "HB", x: 455, y: 405, start: "hannah" },
-    { id: "AB", x: 715, y: 405, start: "blade" },
-    { id: "AE", x: 1000, y: 435, start: "ellie" },
-    { id: "RM", x: 105, y: 670, start: "minerva" },
-    { id: "RB", x: 355, y: 520, start: "ryan" },
-    { id: "HM", x: 280, y: 560, start: "minerva" },
-    { id: "BM", x: 455, y: 480, start: "blade" },
-    { id: "EB", x: 570, y: 625, start: "edd" },
-    { id: "EA", x: 845, y: 625, start: "edd" },
-    { id: "EM", x: 560, y: 745, start: "minerva" },
-    { id: "SB", x: 780, y: 530, start: "simon" },
-    { id: "SA", x: 975, y: 520, start: "simon" }
+    { id: "RY", x: 275, y: 260, start: "ryan" },
+    { id: "YE", x: 1180, y: 185, start: "yoni" },
+    { id: "XY", x: 795, y: 145, start: "yoni" },
+    { id: "RL", x: 265, y: 365, start: "ryan" },
+    { id: "LM", x: 490, y: 615, start: "lance" },
+    { id: "LY", x: 525, y: 285, start: "lance" },
+    { id: "LB", x: 535, y: 435, start: "lance" },
+    { id: "XB", x: 795, y: 290, start: "xiu" },
+    { id: "EX", x: 965, y: 675, start: "xiu" },
+    { id: "XE", x: 1115, y: 250, start: "xiu" },
+    { id: "XA", x: 1040, y: 380, start: "xiu" },
+    { id: "RH", x: 155, y: 595, start: "ryan" },
+    { id: "LH", x: 270, y: 470, start: "lance" },
+    { id: "YB", x: 630, y: 405, start: "yoni" },
+    { id: "YA", x: 735, y: 385, start: "yoni" },
+    { id: "BE", x: 910, y: 410, start: "blade" },
+    { id: "HB", x: 445, y: 560, start: "hannah" },
+    { id: "AB", x: 785, y: 540, start: "blade" },
+    { id: "AE", x: 1160, y: 545, start: "ellie" },
+    { id: "RM", x: 290, y: 735, start: "ryan" },
+    { id: "RB", x: 380, y: 515, start: "ryan" },
+    { id: "MH", x: 405, y: 705, start: "hannah" },
+    { id: "BM", x: 540, y: 680, start: "blade" },
+    { id: "EB", x: 630, y: 655, start: "blade" },
+    { id: "EA", x: 695, y: 655, start: "axel" },
+    { id: "EM", x: 520, y: 960, start: "minerva" },
+    { id: "WB", x: 810, y: 615, start: "blade" },
+    { id: "AW", x: 1030, y: 610, start: "axel" },
+    { id: "XW", x: 1045, y: 785, start: "xiu" },
+    { id: "EW", x: 785, y: 830, start: "edd" },
+    { id: "RVn", x: 90, y: 670, start: "ryan" },
+    { id: "LVn", x: 85, y: 280, start: "lance" },
+    { id: "HVn", x: 260, y: 850, start: "hannah" },
+    { id: "MVn", x: 245, y: 960, start: "angel" },    
+    { id: "VpB", x: 970, y: 975, start: "blade" },
+    { id: "VpA", x: 1110, y: 820, start: "axel" },
 ]
 
 const charaData = {
@@ -41,19 +49,19 @@ const charaData = {
         color: "rgb(127, 180, 57)",
         button: "",
         photoPos: {
-            x: 520,
-            y: 335,
+            x: 580,
+            y: 450,
             rotation: 4
         }
     },
     axel: {
         jpname: "アクセル",
         age: 15,
-        color: "rgb(221, 155, 33)",
+        color: "rgb(221, 140, 33)",
         button: "",
         photoPos: {
-            x: 770,
-            y: 330,
+            x: 855,
+            y: 450,
             rotation: -4
         }
     },
@@ -63,8 +71,8 @@ const charaData = {
         color: "rgb(65, 173, 206)",
         button: "",
         photoPos: {
-            x: 770,
-            y: 80,
+            x: 855,
+            y: 195,
             rotation: 3
         }
     },
@@ -74,8 +82,8 @@ const charaData = {
         color: "rgb(224, 213, 54)",
         button: "",
         photoPos: {
-            x: 520,
-            y: 75,
+            x: 580,
+            y: 195,
             rotation: -4
         }
     },
@@ -85,8 +93,8 @@ const charaData = {
         color: "rgb(41, 81, 194)",
         button: "",
         photoPos: {
-            x: 245,
-            y: 320,
+            x: 200,
+            y: 540,
             rotation: -2
         }
     },
@@ -96,8 +104,8 @@ const charaData = {
         color: "rgb(148, 77, 206)",
         button: "",
         photoPos: {
-            x: 245,
-            y: 80,
+            x: 315,
+            y: 310,
             rotation: 0
         }
     },
@@ -107,8 +115,8 @@ const charaData = {
         color: "rgb(17, 148, 87)",
         button: "",        
         photoPos: {
-            x: 1005,
-            y: 200,
+            x: 1105,
+            y: 340,
             rotation: 3
         }
     },
@@ -118,8 +126,8 @@ const charaData = {
         color: "rgb(211, 43, 43)",
         button: "",
         photoPos: {
-            x: 630,
-            y: 570,
+            x: 580,
+            y: 715,
             rotation: -2
         }
     },
@@ -129,33 +137,88 @@ const charaData = {
         color: "rgb(167, 87, 83)",
         button: "",       
         photoPos: {
-            x: 360,
-            y: 570,
+            x: 315,
+            y: 770,
             rotation: 3
         }
     },
-    simon: {
+    viper: {
         jpname: "サイモン",
         age: 18,
         color: "rgb(216, 40, 163)",
         button: "",        
         photoPos: {
-            x: 920,
-            y: 570,
+            x: 1050,
+            y: 950,
             rotation: 6
         }
     },
     ryan: {
         jpname: "",
         age: 20,
-        color: "rgb(180, 180, 180)",
+        color: "rgb(96, 175, 183)",
         button: "",     
         photoPos: {
-            x: 55,
-            y: 200,
+            x: 75,
+            y: 310,
+            rotation: -5
+        }
+    },
+    angel: {
+        jpname: "",
+        age: 19,
+        color: "rgb(190, 190, 190)",
+        button: "",     
+        photoPos: {
+            x: 75,
+            y: 770,
+            rotation: -2
+        }
+    },    
+    wade: {
+        jpname: "",
+        age: 17,
+        color: "rgb(87, 65, 168)",
+        button: "",     
+        photoPos: {
+            x: 855,
+            y: 715,
             rotation: 5
         }
-    }
+    },  
+    scott: {
+        jpname: "",
+        age: 19,
+        color: "rgb(139, 114, 108)",
+        button: "",     
+        photoPos: {
+            x: 1145,
+            y: 610,
+            rotation: 5
+        }
+    },    
+    zoelle: {
+        jpname: "",
+        age: 19,
+        color: "rgb(58, 71, 101)",
+        button: "",     
+        photoPos: {
+            x: 315,
+            y: 65,
+            rotation: -3
+        }
+    },    
+    zarah: {
+        jpname: "",
+        age: 19,
+        color: "rgb(64, 61, 41)",
+        button: "",     
+        photoPos: {
+            x: 75,
+            y: 65,
+            rotation: 3
+        }
+    },        
 }
 
 var relationshipData_en = [
@@ -393,7 +456,7 @@ var relationshipData_en = [
         ]
     },
     {
-        id: "HM",
+        id: "MH",
         label: "Friends",
         chara1: "hannah",
         chara2: "minerva",
@@ -405,11 +468,11 @@ var relationshipData_en = [
     },
     {
         id: "BM",
-        label: "Acquaintance",
+        label: "Pen Pal",
         chara1: "blade",
         chara2: "minerva",
         desc1: "Respects",
-        desc2: "Slightly interested",
+        desc2: "Interested",
         content: [
             "Under construction..."
         ]
@@ -448,10 +511,114 @@ var relationshipData_en = [
         ]
     },
     {
-        id: "SB",
+        id: "WB",
+        chara1: "wade",
+        chara2: "blade",
+        label: " ",
+        desc1: " ",
+        desc2: " ",
+        descDetail1: " ",
+        descDetail2: " ",
+        content: [
+            "--"
+        ]
+    },
+    {
+        id: "AW",
+        chara1: "axel",
+        chara2: "wade",
+        label: " ",
+        desc1: " ",
+        desc2: " ",
+        descDetail1: " ",
+        descDetail2: " ",
+        content: [
+            "--"
+        ]
+    },
+    {
+        id: "XW",
+        chara1: "xiu",
+        chara2: "wade",
+        label: " ",
+        desc1: " ",
+        desc2: " ",
+        descDetail1: " ",
+        descDetail2: " ",
+        content: [
+            "--"
+        ]
+    },
+    {
+        id: "EW",
+        chara1: "edd",
+        chara2: "wade",
+        label: " ",
+        desc1: " ",
+        desc2: " ",
+        descDetail1: " ",
+        descDetail2: " ",
+        content: [
+            "--"
+        ]
+    },
+    {
+        id: "RVn",
+        chara1: "ryan",
+        chara2: "angel",
+        label: " ",
+        desc1: " ",
+        desc2: " ",
+        descDetail1: " ",
+        descDetail2: " ",
+        content: [
+            "--"
+        ]
+    },
+    {
+        id: "LVn",
+        chara1: "lance",
+        chara2: "angel",
+        label: " ",
+        desc1: " ",
+        desc2: " ",
+        descDetail1: " ",
+        descDetail2: " ",
+        content: [
+            "--"
+        ]
+    },
+    {
+        id: "HVn",
+        chara1: "hannah",
+        chara2: "angel",
+        label: " ",
+        desc1: " ",
+        desc2: " ",
+        descDetail1: " ",
+        descDetail2: " ",
+        content: [
+            "--"
+        ]
+    },
+    {
+        id: "MVn",
+        chara1: "minerva",
+        chara2: "angel",
+        label: " ",
+        desc1: " ",
+        desc2: " ",
+        descDetail1: " ",
+        descDetail2: " ",
+        content: [
+            "--"
+        ]
+    },    
+    {
+        id: "VpB",
         label: "Enemies...?",
         chara1: "blade",
-        chara2: "simon",
+        chara2: "viper",
         desc1: "God you're ANNOYING",
         desc2: "One-side rivalry",
         content: [
@@ -459,10 +626,10 @@ var relationshipData_en = [
         ]
     },
     {
-        id: "SA",
+        id: "VpA",
         label: "Enemies",
         chara1: "axel",
-        chara2: "simon",
+        chara2: "viper",
         desc1: "Fucking Octarian scum!",
         desc2: "Shut up Inkling pest!",
         content: [
@@ -536,7 +703,6 @@ var bioData_en = [
             ""            
         ],
         refsheets: [
-            "assets/img/refsheets/axel1.png",
         ]
     },
     {
@@ -605,7 +771,6 @@ var bioData_en = [
             ""            
         ],        
         refsheets: [
-            "assets/img/refsheets/yoni1.png",
         ]
     },
     {
@@ -736,8 +901,8 @@ var bioData_en = [
         trivia:[]
     },
     {
-        id: "simon",
-        name: "Simon",
+        id: "viper",
+        name: "viper",
         gender: "Male",
         like: "DJ Octavio, robotic stuff",
         dislike: "Heroes",
@@ -751,7 +916,7 @@ var bioData_en = [
             "Always fails miserably"
         ],
         outfits: [
-            { name: "Regular", url: "profile/simon.png" }
+            { name: "Regular", url: "profile/viper.png" }
         ],
         bio: [
             "A member of the Octorian underground army. He is obsessed with DJ Octavio. A self-proclaimed \"DJ Octavio\'s greatest assistant\" and \"Evil genius Octorian engineer\" or some such. He seems to be extremely skilled and efficient when it comes to tech stuff, which includes programming AI, building robotics or even hacking.",
