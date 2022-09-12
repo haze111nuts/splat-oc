@@ -40,8 +40,8 @@ var relationshipPosData = [
     { id: "LVn", x: 45, y: 535, start: "lance" },
     { id: "HVn", x: 265, y: 810, start: "hannah" },
     { id: "MVn", x: 265, y: 960, start: "angel" },
-    { id: "VpB", x: 970, y: 975, start: "viper" },
-    { id: "VpA", x: 1110, y: 880, start: "viper" },
+    { id: "VpB", x: 970, y: 975, start: "blade" },
+    { id: "VpA", x: 1110, y: 880, start: "axel" },
 ]
 
 const charaData = {
