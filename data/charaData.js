@@ -15,7 +15,7 @@ var relationshipPosData = [
     { id: "EX", x: 965, y: 675, start: "xiu" },
     { id: "XE", x: 1115, y: 250, start: "xiu" },
     { id: "XA", x: 1040, y: 380, start: "xiu" },
-    { id: "RH", x: 155, y: 595, start: "ryan" },
+    { id: "RH", x: 160, y: 535, start: "ryan" },
     { id: "LH", x: 275, y: 470, start: "lance" },
     { id: "YB", x: 630, y: 405, start: "yoni" },
     { id: "YA", x: 775, y: 385, start: "yoni" },
@@ -24,22 +24,22 @@ var relationshipPosData = [
     { id: "AB", x: 800, y: 530, start: "blade" },
     { id: "AE", x: 1165, y: 545, start: "ellie" },
     { id: "RM", x: 290, y: 735, start: "ryan" },
-    { id: "RB", x: 390, y: 515, start: "ryan" },
+    { id: "RB", x: 390, y: 510, start: "ryan" },
     { id: "MH", x: 405, y: 695, start: "hannah" },
     { id: "BM", x: 540, y: 680, start: "blade" },
     { id: "EB", x: 620, y: 655, start: "blade" },
     { id: "EA", x: 715, y: 655, start: "axel" },
     { id: "EM", x: 520, y: 960, start: "minerva" },
-    { id: "WB", x: 810, y: 615, start: "blade" },
+    { id: "WB", x: 820, y: 630, start: "blade" },
     { id: "AW", x: 1030, y: 610, start: "axel" },
     { id: "XW", x: 1045, y: 785, start: "xiu" },
     { id: "EW", x: 785, y: 830, start: "edd" },
-    { id: "WE", x: 785, y: 830, start: "wade" },
-    { id: "BVn", x: 90, y: 670, start: "angel" },
-    { id: "RVn", x: 90, y: 670, start: "ryan" },
-    { id: "LVn", x: 85, y: 280, start: "lance" },
-    { id: "HVn", x: 260, y: 850, start: "hannah" },
-    { id: "MVn", x: 245, y: 960, start: "angel" },
+    { id: "WE", x: 0, y: 0, start: "wade" },
+    { id: "BVn", x: 345, y: 990, start: "angel" },
+    { id: "RVn", x: 95, y: 640, start: "ryan" },
+    { id: "LVn", x: 45, y: 535, start: "lance" },
+    { id: "HVn", x: 265, y: 810, start: "hannah" },
+    { id: "MVn", x: 265, y: 960, start: "angel" },
     { id: "VpB", x: 970, y: 975, start: "viper" },
     { id: "VpA", x: 1110, y: 880, start: "viper" },
 ]
@@ -191,12 +191,12 @@ const charaData = {
     scott: {
         jpname: "",
         age: 19,
-        color: "rgb(139, 114, 108)",
+        color: "rgb(173, 166, 129)",
         button: "",
         photoPos: {
             x: 1145,
             y: 610,
-            rotation: 5
+            rotation: -2
         }
     },
     zoelle: {
@@ -228,7 +228,7 @@ var relationshipData_en = [
         id: "RY",
         chara1: "yoni",
         chara2: "ryan",
-        label: "At war",
+        label: "Co-worker?",
         desc1: "So badass!!!",
         desc2: "You little shit...",
         descDetail1: "Bro's badass friend!!<br> SO COOL",
@@ -316,11 +316,11 @@ var relationshipData_en = [
     },
     {
         id: "EX",
-        label: "Co-workers",
+        label: "Like-minded ",
         chara1: "xiu",
         chara2: "edd",
-        desc1: "Sarcastic",
-        desc2: "Tries to impress",
+        desc1: "Interested",
+        desc2: "Envies",
         content: [
             "Under construction..."
         ]
@@ -341,8 +341,8 @@ var relationshipData_en = [
         label: "Ex Boyfriends",
         chara1: "xiu",
         chara2: "axel",
-        desc1: "Hey chill",
-        desc2: "Not happy about",
+        desc1: "Still cares",
+        desc2: "Awkward",
         content: [
             "Under construction..."
         ]

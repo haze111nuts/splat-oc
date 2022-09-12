@@ -4,7 +4,7 @@ var relationshipData_ch = [
         id: "RY",
         chara1: "yoni",
         chara2: "ryan",
-        label: "一觸即發",
+        label: "同事？",
         desc1: "好強！！！",
         desc2: "臭小鬼殺了你",
         descDetail1: "大哥的超強超兇隊友？？！！",
@@ -427,13 +427,13 @@ var relationshipData_ch = [
     },
     {
         id: "WB",
-        chara1: "wade",
-        chara2: "blade",
-        label: " ",
-        desc1: " ",
-        desc2: " ",
-        descDetail1: " ",
-        descDetail2: " ",
+        chara1: "blade",
+        chara2: "wade",
+        label: "前後輩",
+        desc1: "照顧",
+        desc2: "敬佩",
+        descDetail1: "",
+        descDetail2: "",
         content: [
             "--"
         ]
@@ -445,8 +445,8 @@ var relationshipData_ch = [
         label: " ",
         desc1: " ",
         desc2: " ",
-        descDetail1: " ",
-        descDetail2: " ",
+        descDetail1: "",
+        descDetail2: "",
         content: [
             "--"
         ]
@@ -458,8 +458,8 @@ var relationshipData_ch = [
         label: " ",
         desc1: " ",
         desc2: " ",
-        descDetail1: " ",
-        descDetail2: " ",
+        descDetail1: "",
+        descDetail2: "",
         content: [
             "--"
         ]
@@ -471,8 +471,8 @@ var relationshipData_ch = [
         label: " ",
         desc1: " ",
         desc2: " ",
-        descDetail1: " ",
-        descDetail2: " ",
+        descDetail1: "",
+        descDetail2: "",
         content: [
             "--"
         ]
@@ -484,8 +484,8 @@ var relationshipData_ch = [
         label: " ",
         desc1: " ",
         desc2: " ",
-        descDetail1: " ",
-        descDetail2: " ",
+        descDetail1: "",
+        descDetail2: "",
         content: [
             "--"
         ]
@@ -494,11 +494,11 @@ var relationshipData_ch = [
         id: "BVn",
         chara1: "blade",
         chara2: "angel",
-        label: " ",
-        desc1: " ",
-        desc2: " ",
-        descDetail1: " ",
-        descDetail2: " ",
+        label: "微妙朋友",
+        desc1: "有點嚇人",
+        desc2: "願主養護你",
+        descDetail1: "",
+        descDetail2: "",
         content: [
             "--"
         ]
@@ -507,11 +507,11 @@ var relationshipData_ch = [
         id: "RVn",
         chara1: "ryan",
         chara2: "angel",
-        label: " ",
-        desc1: " ",
-        desc2: " ",
-        descDetail1: " ",
-        descDetail2: " ",
+        label: "同事&隊友",
+        desc1: "想痛扁",
+        desc2: "願主開導你",
+        descDetail1: "",
+        descDetail2: "",
         content: [
             "--"
         ]
@@ -520,11 +520,11 @@ var relationshipData_ch = [
         id: "LVn",
         chara1: "lance",
         chara2: "angel",
-        label: " ",
-        desc1: " ",
-        desc2: " ",
-        descDetail1: " ",
-        descDetail2: " ",
+        label: "隊友",
+        desc1: "熟悉感",
+        desc2: "願主祝福你",
+        descDetail1: "",
+        descDetail2: "",
         content: [
             "--"
         ]
@@ -533,11 +533,11 @@ var relationshipData_ch = [
         id: "HVn",
         chara1: "hannah",
         chara2: "angel",
-        label: " ",
-        desc1: " ",
-        desc2: " ",
-        descDetail1: " ",
-        descDetail2: " ",
+        label: "隊友",
+        desc1: "覺得有點危險",
+        desc2: "願主祝福你",
+        descDetail1: "",
+        descDetail2: "",
         content: [
             "--"
         ]
@@ -546,11 +546,11 @@ var relationshipData_ch = [
         id: "MVn",
         chara1: "minerva",
         chara2: "angel",
-        label: " ",
-        desc1: " ",
-        desc2: " ",
-        descDetail1: " ",
-        descDetail2: " ",
+        label: "隊友",
+        desc1: "覺得有點危險",
+        desc2: "願主祝福你",
+        descDetail1: "",
+        descDetail2: "",
         content: [
             "--"
         ]
