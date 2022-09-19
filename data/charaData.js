@@ -12,7 +12,7 @@ var relationshipPosData = [
     { id: "LY", x: 530, y: 285, start: "lance" },
     { id: "LB", x: 535, y: 435, start: "lance" },
     { id: "XB", x: 795, y: 290, start: "xiu" },
-    { id: "EX", x: 945, y: 675, start: "xiu" },
+    { id: "EX", x: 925, y: 675, start: "xiu" },
     { id: "XE", x: 1115, y: 250, start: "xiu" },
     { id: "XA", x: 1040, y: 380, start: "xiu" },
     { id: "RH", x: 160, y: 535, start: "ryan" },
@@ -35,10 +35,10 @@ var relationshipPosData = [
     { id: "XW", x: 1065, y: 785, start: "xiu" },
     { id: "EW", x: 800, y: 830, start: "edd" },
     { id: "WE", x: 1250, y: 830, start: "wade" },
-    { id: "BVn", x: 345, y: 990, start: "angel" },
+    { id: "BVn", x: 375, y: 990, start: "angel" },
     { id: "RVn", x: 100, y: 640, start: "ryan" },
     { id: "LVn", x: 45, y: 535, start: "lance" },
-    { id: "HVn", x: 265, y: 810, start: "hannah" },
+    { id: "HVn", x: 275, y: 810, start: "hannah" },
     { id: "MVn", x: 265, y: 960, start: "angel" },
     { id: "VpB", x: 970, y: 975, start: "blade" },
     { id: "VpA", x: 1110, y: 880, start: "axel" },
@@ -148,7 +148,7 @@ const charaData = {
         jpname: "",
         age: 18,
         color: "rgb(216, 40, 163)",
-        button: "",
+        button: "",
         photoPos: {
             x: 1050,
             y: 950,
@@ -170,7 +170,7 @@ const charaData = {
         jpname: "",
         age: 19,
         color: "rgb(190, 190, 190)",
-        button: "",
+        button: "",
         photoPos: {
             x: 75,
             y: 770,
@@ -261,11 +261,11 @@ var relationshipData_en = [
     },
     {
         id: "RL",
-        label: "Close Friends",
-        chara1: "lance",
-        chara2: "ryan",
-        desc1: "Get your shit together.",
-        desc2: "What shit?",
+        label: "Friends",
+        chara1: "ryan",
+        chara2: "lance",
+        desc1: "Let's duel",
+        desc2: "Bring it on",
         content: [
             "Under construction..."
         ]
@@ -459,7 +459,7 @@ var relationshipData_en = [
     },
     {
         id: "MH",
-        label: "Roomates",
+        label: "Roommates",
         chara1: "hannah",
         chara2: "minerva",
         desc1: "Recruits",
@@ -485,7 +485,7 @@ var relationshipData_en = [
         chara1: "blade",
         chara2: "edd",
         desc1: "Annoyed by",
-        desc2: "Wants to be close",
+        desc2: "Wants",
         content: [
             "Under construction..."
         ]
@@ -495,8 +495,8 @@ var relationshipData_en = [
         label: "Rivals",
         chara1: "axel",
         chara2: "edd",
-        desc1: "Dislike",
-        desc2: "Hostile",
+        desc1: "Hostile",
+        desc2: "Dislike",
         content: [
             "Under construction..."
         ]
@@ -530,10 +530,10 @@ var relationshipData_en = [
         chara1: "axel",
         chara2: "wade",
         label: "Teammates",
-        desc1: "Too weak!",
-        desc2: "Please coach me!",
-        descDetail1: " ",
-        descDetail2: " ",
+        desc1: "???",
+        desc2: "????",
+        descDetail1: "",
+        descDetail2: "",
         content: [
             "Under construction..."
         ]
@@ -543,10 +543,10 @@ var relationshipData_en = [
         chara1: "xiu",
         chara2: "wade",
         label: "Kinship",
-        desc1: "Likes",
-        desc2: "One more game!",
-        descDetail1: " ",
-        descDetail2: " ",
+        desc1: "Teases",
+        desc2: "Fond of",
+        descDetail1: "",
+        descDetail2: "",
         content: [
             "Under construction..."
         ]
@@ -557,9 +557,9 @@ var relationshipData_en = [
         chara2: "wade",
         label: "Teammates",
         desc1: "Gives a hard time",
-        desc2: "Tries to impress",
-        descDetail1: " ",
-        descDetail2: " ",
+        desc2: "Looks up to",
+        descDetail1: "",
+        descDetail2: "",
         content: [
             "Under construction..."
         ]
@@ -568,11 +568,11 @@ var relationshipData_en = [
         id: "WE",
         chara1: "ellie",
         chara2: "wade",
-        label: "Gaming Pal",
+        label: "Friends",
         desc1: "Funny dork",
-        desc2: "Gets along well",
-        descDetail1: " ",
-        descDetail2: " ",
+        desc2: "Funny irl",
+        descDetail1: "",
+        descDetail2: "",
         content: [
             "Under construction..."
         ]
@@ -581,11 +581,11 @@ var relationshipData_en = [
         id: "BVn",
         chara1: "blade",
         chara2: "angel",
-        label: "Friend?",
+        label: "Friends?",
         desc1: "Kind of scary",
-        desc2: "May God watch over you",
-        descDetail1: " ",
-        descDetail2: " ",
+        desc2: "May Lord watch over you",
+        descDetail1: "",
+        descDetail2: "",
         content: [
             "Under construction..."
         ]
@@ -595,12 +595,12 @@ var relationshipData_en = [
         chara1: "ryan",
         chara2: "angel",
         label: "Co-worker",
-        desc1: "Wants to kill",
-        desc2: "May God bless you",
-        descDetail1: " ",
-        descDetail2: " ",
+        desc1: "Bitch",
+        desc2: "May Lord bless you",
+        descDetail1: "",
+        descDetail2: "",
         content: [
-            "--"
+            "Under construction..."
         ]
     },
     {
@@ -608,12 +608,12 @@ var relationshipData_en = [
         chara1: "lance",
         chara2: "angel",
         label: "Teammates",
-        desc1: "Have déjà vu",
-        desc2: "May God bless you",
-        descDetail1: " ",
-        descDetail2: " ",
+        desc1: "Somewhat familiar",
+        desc2: "May Lord bless you",
+        descDetail1: "",
+        descDetail2: "",
         content: [
-            "--"
+            "Under construction..."
         ]
     },
     {
@@ -622,11 +622,11 @@ var relationshipData_en = [
         chara2: "angel",
         label: "Teammates",
         desc1: "A little wary of",
-        desc2: "May God bless you",
+        desc2: "May Lord bless you",
         descDetail1: " ",
         descDetail2: " ",
         content: [
-            "--"
+            "Under construction..."
         ]
     },
     {
@@ -635,11 +635,11 @@ var relationshipData_en = [
         chara2: "angel",
         label: "Teammates",
         desc1: "A little wary of",
-        desc2: "May God Bless you",
+        desc2: "May Lord bless you",
         descDetail1: " ",
         descDetail2: " ",
         content: [
-            "--"
+            "Under construction..."
         ]
     },
     {
@@ -978,7 +978,36 @@ var bioData_en = [
             "Drinks only straight espresso."
         ],
         trivia: []
-    }
+    },
+    {
+        id: "angel",
+        name: "Ɐngelica",
+        gender: "Female",
+        like: "Lord",
+        dislike: "???",
+        rank: "???",
+        mains: "???",
+        traits: [
+            "Polite, other-worldly",
+            "Cult missionary",
+            "Lord, Lord, Lord",
+            "From the Deep"
+        ],
+        outfits: [
+            { name: "Regular", url: "profile/vngelica.png" }
+        ],
+        bio: [
+            "??",
+        ],
+        personality: [
+            "??"
+        ],
+        trivia: [
+            "??"
+        ],
+        themes: [
+        ]
+    }    
 ]
 
 var relationPhotoReverse = [

@@ -8,7 +8,7 @@ var relationshipData_ch = [
         desc1: "好強！！！",
         desc2: "臭小鬼殺了你",
         descDetail1: "大哥的超強超兇隊友？？！！",
-        descDetail2: "死吧過動兒。",
+        descDetail2: "死吧過動兒",
         content: [
             "尤尼是少數在對戰時能偶爾打中RJ的人，雖然每次都只是互相ＫＯ，但這導致RJ對他很不爽，一看到就想扁。",
             "似乎在什麼時候開始一起參與了某個可疑團體，也因為這樣所以後期交情變得比較深。"
@@ -46,13 +46,13 @@ var relationshipData_ch = [
     },
     {
         id: "RL",
-        chara1: "lance",
-        chara2: "ryan",
+        chara1: "ryan",
+        chara2: "lance",
         label: "親友",
-        desc1: "不要再添麻煩了",
-        desc2: "什麼麻煩？",
-        descDetail1: "只要不碰到界線<br>就是個很好的戰友跟朋友",
-        descDetail2: "想打架？隨時奉陪。",
+        desc1: "一決勝負吧",
+        desc2: "隨時奉陪",
+        descDetail1: "當我的敵人吧",
+        descDetail2: "只要不越過界線<br>就是個很好的戰友跟朋友",
         content: [
             "RJ跟蘭斯幾次的初對面都是在漆彈對戰中生死搏鬥，因為雙方都認可對方的技術，不知不覺就混熟了。兩人可以說是越打感情越好的關係。",
             "RJ基本上是因為被蘭斯說服才答應加入黑娜的隊。",
@@ -319,7 +319,7 @@ var relationshipData_ch = [
         label: "隊友",
         desc1: "有何貴幹?",
         desc2: "可怕的人…",
-        descDetail1: "隊友，除此以外沒啥好說的",
+        descDetail1: "隊友，<br>除此以外沒啥好說的",
         descDetail2: "到底是什麼來歷…",
         content: [
             "因為黑娜組了Royal Flush才認識，因為RJ出現時機比較不一定，所以如果不是隊伍活動的時間的話兩人基本上不會見到。",
@@ -437,7 +437,7 @@ var relationshipData_ch = [
         descDetail1: "",
         descDetail2: "",
         content: [
-            "--"
+            "待補"
         ]
     },
     {
@@ -445,12 +445,12 @@ var relationshipData_ch = [
         chara1: "axel",
         chara2: "wade",
         label: "隊友",
-        desc1: "太弱了吧！",
-        desc2: "請教我打架",
+        desc1: "？？？",
+        desc2: "？？？",
         descDetail1: "",
         descDetail2: "",
         content: [
-            "--"
+            "待補"
         ]
     },
     {
@@ -458,12 +458,12 @@ var relationshipData_ch = [
         chara1: "xiu",
         chara2: "wade",
         label: "志同道合",
-        desc1: "滿喜歡的",
-        desc2: "桌遊好友",
+        desc1: "捉弄",
+        desc2: "聊得來",
         descDetail1: "",
         descDetail2: "",
         content: [
-            "--"
+            "待補"
         ]
     },
     {
@@ -472,24 +472,24 @@ var relationshipData_ch = [
         chara2: "wade",
         label: "隊友",
         desc1: "刁難",
-        desc2: "努力表現",
+        desc2: "追趕中",
         descDetail1: "",
         descDetail2: "",
         content: [
-            "--"
+            "待補"
         ]
     },
     {
         id: "WE",
         chara1: "ellie",
         chara2: "wade",
-        label: "遊戲朋友",
+        label: "朋友",
         desc1: "呆呆的很好笑",
-        desc2: "很好相處",
+        desc2: "講話很有趣",
         descDetail1: "",
         descDetail2: "",
         content: [
-            "--"
+            "待補"
         ]
     },
     {
@@ -502,7 +502,7 @@ var relationshipData_ch = [
         descDetail1: "",
         descDetail2: "",
         content: [
-            "--"
+            "待補"
         ]
     },
     {
@@ -515,7 +515,7 @@ var relationshipData_ch = [
         descDetail1: "",
         descDetail2: "",
         content: [
-            "--"
+            "待補"
         ]
     },
     {
@@ -528,7 +528,7 @@ var relationshipData_ch = [
         descDetail1: "",
         descDetail2: "",
         content: [
-            "--"
+            "待補"
         ]
     },
     {
@@ -541,7 +541,7 @@ var relationshipData_ch = [
         descDetail1: "",
         descDetail2: "",
         content: [
-            "--"
+            "待補"
         ]
     },
     {
@@ -554,7 +554,7 @@ var relationshipData_ch = [
         descDetail1: "",
         descDetail2: "",
         content: [
-            "--"
+            "待補"
         ]
     },
     {
@@ -1021,7 +1021,6 @@ var bioData_ch = [
         dislike: "不守信用者",
         rank: "X",
         mains: "狙擊全般",
-        favFood: "雙倍義式濃縮咖啡",
         traits: [
             "冷血、殘酷、沒耐性",
             "毫無同理心和憐憫心",
@@ -1053,6 +1052,36 @@ var bioData_ch = [
             { id: "2uYFtCSxoPk" },
             { id: "jTIQhTdy4ZU" },
             { id: "_91Ndwhz68E" }
+        ]
+    },
+    {
+        id: "angel",
+        name: "Ɐngelica",
+        gender: "女",
+        like: "主",
+        dislike: "？",
+        rank: "？",
+        mains: "？",
+        traits: [
+            "氣質、禮貌、空靈",
+            "虔誠的深淵教傳教士",
+            "滿口都是上帝",
+            "來自深海"
+        ],
+        outfits: [
+            { name: "通常服", url: "profile/vngelica.png" }
+        ],
+        bio: [
+            "？",
+        ],
+        personality: [
+            "？"
+        ],
+        trivia: [
+            "？",
+            "她在Royal Flush中代表的牌是10。"
+        ],
+        themes: [
         ]
     }
 ]
