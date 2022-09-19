@@ -5,13 +5,13 @@
 var siteData = {
     en: {
         title: "Hazy Splatverse",
-        description: ["Haze's Splatoon OC bio/lore dump", "Currently under construction⚠️","English translation still in progress plz come back later :s"],
+        description: ["Haze's Splatoon OC bio/lore dump", "⚠️Currently under construction","English translation still in progress so plz come back later :s"],
         bioDetailTabs: ["Bio", "Personality", "Trivia"],
         buttonTrivia: "associated Nintendo Switch button is"
     },
     ch: {
         title: "Hazy Splatverse",
-        description: ["Haze家漆彈角色懶人總整理+全員介紹頁面", "初期施工階段，角色設定會微調⚠️","定期更新素材跟設定中"],
+        description: ["Haze家漆彈角色懶人總整理+全員介紹頁面", "⚠️初期施工階段，角色設定會微調","定期更新素材跟設定中"],
         bioDetailTabs: ["背景", "性格", "補充"],
         buttonTrivia: "代表按鈕是"
     }

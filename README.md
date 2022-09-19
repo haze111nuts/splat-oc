@@ -22,11 +22,11 @@
 - ~~all the string in charaData should use the same kind of quotes~~
 - ~~remove unused fonts~~
 - need actual image loading functionality (the current one is prob not working)
-- swap out character page name title font for ios
+- ~~swap out character page name title font for ios~~
 - light box is acting weird...needs fix
-- drawing anims and a page for teams???
+- make pop-ups for teams
 - ~~youtube iframe console error~~
-- build warning pop-up page for TWCC
+- build warning section for TWCC??
   - MENTAL/VERBAL ABUSE
   - ADDICTION
   - DEPRESSION
