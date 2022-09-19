@@ -5,13 +5,13 @@
 var siteData = {
     en: {
         title: "Hazy Splatverse",
-        description: ["Splatoon OC info/bio dump", "Currently under construction⚠️","Lots things are not final and TBD!! Will be updating frequently"],
+        description: ["Haze's Splatoon OC bio/lore dump", "Currently under construction⚠️","English translation still in progress plz come back later :s"],
         bioDetailTabs: ["Bio", "Personality", "Trivia"],
         buttonTrivia: "associated Nintendo Switch button is"
     },
     ch: {
         title: "Hazy Splatverse",
-        description: ["懶人總整理+全員介紹頁面", "初期施工階段，角色會微調⚠️","定期更新素材跟設定中"],
+        description: ["Haze家漆彈角色懶人總整理+全員介紹頁面", "初期施工階段，角色設定會微調⚠️","定期更新素材跟設定中"],
         bioDetailTabs: ["背景", "性格", "補充"],
         buttonTrivia: "代表按鈕是"
     }
@@ -173,7 +173,7 @@ function setUpBioPageFor(charaBioData) {
     if(charaBioData.id == "ryan"){
         bioHeaderName = "R.J."
     }else if(charaBioData.id == "angel"){
-        bioHeaderName = "Ɐngelica"
+        bioHeaderName = "<span class='upSideDown'>A</span>ngelica"
     }else{
         bioHeaderName = charaBioData.id.toUpperCase()
     }
@@ -512,7 +512,7 @@ function getDisplayName(name) {
     if(name == "ryan"){
         result = "R.J."
     }else if(name == "angel"){
-        result = "Ɐngelica"
+        result = "<span class='upSideDown'>A</span>ngelica"
     }else{
         result = name.charAt(0).toUpperCase() + name.slice(1)
     }

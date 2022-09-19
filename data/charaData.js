@@ -530,8 +530,8 @@ var relationshipData_en = [
         chara1: "axel",
         chara2: "wade",
         label: "Teammates",
-        desc1: "???",
-        desc2: "????",
+        desc1: "Dumb newbie",
+        desc2: "Looks up to",
         descDetail1: "",
         descDetail2: "",
         content: [
@@ -623,8 +623,8 @@ var relationshipData_en = [
         label: "Teammates",
         desc1: "A little wary of",
         desc2: "May Lord bless you",
-        descDetail1: " ",
-        descDetail2: " ",
+        descDetail1: "",
+        descDetail2: "",
         content: [
             "Under construction..."
         ]
@@ -636,8 +636,8 @@ var relationshipData_en = [
         label: "Teammates",
         desc1: "A little wary of",
         desc2: "May Lord bless you",
-        descDetail1: " ",
-        descDetail2: " ",
+        descDetail1: "",
+        descDetail2: "",
         content: [
             "Under construction..."
         ]
@@ -981,7 +981,7 @@ var bioData_en = [
     },
     {
         id: "angel",
-        name: "Ɐngelica",
+        name: "<span class='upSideDown'>A</span>ngelica",
         gender: "Female",
         like: "Lord",
         dislike: "???",
@@ -989,8 +989,8 @@ var bioData_en = [
         mains: "???",
         traits: [
             "Polite, other-worldly",
-            "Cult missionary",
-            "Lord, Lord, Lord",
+            "Devoted cult missionary",
+            "Lord this, Lord that",
             "From the Deep"
         ],
         outfits: [

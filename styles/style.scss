@@ -87,6 +87,16 @@ $chara: (
 }
 
 @font-face {
+  font-family: FairView;
+  src: url(../assets/fonts/FairView.ttf);
+}
+
+@font-face {
+  font-family: Haettenschweiler;
+  src: url(../assets/fonts/Haettenschweiler.ttf);
+}
+
+@font-face {
   font-family: NintendoExtLE003;
   src: url(../assets/fonts/nintendo_ext_LE_003.ttf);
 }
@@ -242,6 +252,11 @@ ul {
   font-size: 20px;
 }
 
+.upSideDown{
+  @include prefix(transform, rotate(180deg), webkit moz ms);
+  display: inline-block;
+}
+
 //=======================//
 //===                 ===//
 //===   Chart Stuff   ===//
@@ -287,9 +302,10 @@ ul {
 
 .nameSticker {
   color: white;
-  font-family: RevnosaRegular;
-  padding-top: 3px;
-  font-size: 19px;
+  font-family: FairView;
+  padding-top: 2px;
+  font-size: 11px;
+  text-transform: uppercase;
 }
 
 #chartSVG {
@@ -390,24 +406,6 @@ ul {
 
 .faded {
   opacity: 0.1;
-}
-
-.group {
-  stroke-width: 0.5px;
-}
-
-#RB {
-  stroke: map-deep-get($chara, "blade", "color");
-  stroke-opacity: 0.3;
-  fill: map-deep-get($chara, "blade", "color");
-  fill-opacity: 0.1;
-}
-
-#MM {
-  stroke: map-deep-get($chara, "hannah", "color");
-  stroke-opacity: 0.3;
-  fill: map-deep-get($chara, "hannah", "color");
-  fill-opacity: 0.1;
 }
 
 //===========================//
@@ -555,13 +553,13 @@ ul {
   }
 }
 
-.iconBi {
-  background: linear-gradient(-45deg, rgba(214, 2, 112, 1) 40%, rgba(155, 79, 150, 1) 45%, rgba(155, 79, 150, 1) 55%, rgba(0, 56, 168, 1) 60%);
-}
+// .iconBi {
+//   background: linear-gradient(-45deg, rgba(214, 2, 112, 1) 40%, rgba(155, 79, 150, 1) 45%, rgba(155, 79, 150, 1) 55%, rgba(0, 56, 168, 1) 60%);
+// }
 
-.iconPan {
-  background: linear-gradient(-45deg, rgba(255, 33, 140, 1) 36%, rgba(255, 216, 0, 1) 45%, rgba(255, 216, 0, 1) 55%, rgba(33, 177, 255, 1) 64%);
-}
+// .iconPan {
+//   background: linear-gradient(-45deg, rgba(255, 33, 140, 1) 36%, rgba(255, 216, 0, 1) 45%, rgba(255, 216, 0, 1) 55%, rgba(33, 177, 255, 1) 64%);
+// }
 
 // Chara Art Panel
 .bioArt {
@@ -616,24 +614,24 @@ ul {
   }
 
   li:nth-child(1) {
-    transform: rotate(7deg);
+    @include prefix(transform, rotate(7deg), webkit moz ms);
     top: 20px;
   }
 
   li:nth-child(2) {
-    transform: rotate(-6deg);
+    @include prefix(transform, rotate(-6deg), webkit moz ms);
     top: 65px;
     right: -5px;
   }
 
   li:nth-child(3) {
-    transform: rotate(2deg);
+    @include prefix(transform, rotate(2deg), webkit moz ms);
     top: 115px;
     right: -10px;
   }
 
   li:nth-child(4) {
-    transform: rotate(-7deg);
+    @include prefix(transform, rotate(-7deg), webkit moz ms);
     top: 170px;
     right: -10px;
   }

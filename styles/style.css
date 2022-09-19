@@ -9,6 +9,14 @@
   src: url(../assets/fonts/TexasGrungeDemo.ttf);
 }
 @font-face {
+  font-family: FairView;
+  src: url(../assets/fonts/FairView.ttf);
+}
+@font-face {
+  font-family: Haettenschweiler;
+  src: url(../assets/fonts/Haettenschweiler.ttf);
+}
+@font-face {
   font-family: NintendoExtLE003;
   src: url(../assets/fonts/nintendo_ext_LE_003.ttf);
 }
@@ -175,6 +183,14 @@ ul {
   font-size: 20px;
 }
 
+.upSideDown {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  display: inline-block;
+}
+
 .chartWrapper {
   position: relative;
   width: 1350px;
@@ -213,9 +229,10 @@ ul {
 
 .nameSticker {
   color: white;
-  font-family: RevnosaRegular;
-  padding-top: 3px;
-  font-size: 19px;
+  font-family: FairView;
+  padding-top: 2px;
+  font-size: 11px;
+  text-transform: uppercase;
 }
 
 #chartSVG {
@@ -298,24 +315,6 @@ ul {
 
 .faded {
   opacity: 0.1;
-}
-
-.group {
-  stroke-width: 0.5px;
-}
-
-#RB {
-  stroke: rgb(127, 180, 57);
-  stroke-opacity: 0.3;
-  fill: rgb(127, 180, 57);
-  fill-opacity: 0.1;
-}
-
-#MM {
-  stroke: rgb(41, 81, 194);
-  stroke-opacity: 0.3;
-  fill: rgb(41, 81, 194);
-  fill-opacity: 0.1;
 }
 
 .noscroll {
@@ -453,14 +452,6 @@ ul {
   content: "＃ ";
 }
 
-.iconBi {
-  background: linear-gradient(-45deg, rgb(214, 2, 112) 40%, rgb(155, 79, 150) 45%, rgb(155, 79, 150) 55%, rgb(0, 56, 168) 60%);
-}
-
-.iconPan {
-  background: linear-gradient(-45deg, rgb(255, 33, 140) 36%, rgb(255, 216, 0) 45%, rgb(255, 216, 0) 55%, rgb(33, 177, 255) 64%);
-}
-
 .bioArt {
   z-index: 10;
 }
@@ -511,20 +502,32 @@ ul {
   color: white !important;
 }
 .outfitSelect li:nth-child(1) {
+  -webkit-transform: rotate(7deg);
+  -moz-transform: rotate(7deg);
+  -ms-transform: rotate(7deg);
   transform: rotate(7deg);
   top: 20px;
 }
 .outfitSelect li:nth-child(2) {
+  -webkit-transform: rotate(-6deg);
+  -moz-transform: rotate(-6deg);
+  -ms-transform: rotate(-6deg);
   transform: rotate(-6deg);
   top: 65px;
   right: -5px;
 }
 .outfitSelect li:nth-child(3) {
+  -webkit-transform: rotate(2deg);
+  -moz-transform: rotate(2deg);
+  -ms-transform: rotate(2deg);
   transform: rotate(2deg);
   top: 115px;
   right: -10px;
 }
 .outfitSelect li:nth-child(4) {
+  -webkit-transform: rotate(-7deg);
+  -moz-transform: rotate(-7deg);
+  -ms-transform: rotate(-7deg);
   transform: rotate(-7deg);
   top: 170px;
   right: -10px;
