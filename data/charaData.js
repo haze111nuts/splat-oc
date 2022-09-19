@@ -35,11 +35,11 @@ var relationshipPosData = [
     { id: "XW", x: 1065, y: 785, start: "xiu" },
     { id: "EW", x: 800, y: 830, start: "edd" },
     { id: "WE", x: 1250, y: 830, start: "wade" },
-    { id: "BVn", x: 375, y: 990, start: "angel" },
+    { id: "BVn", x: 375, y: 990, start: "vngelica" },
     { id: "RVn", x: 100, y: 640, start: "ryan" },
     { id: "LVn", x: 45, y: 535, start: "lance" },
     { id: "HVn", x: 275, y: 810, start: "hannah" },
-    { id: "MVn", x: 265, y: 960, start: "angel" },
+    { id: "MVn", x: 265, y: 960, start: "vngelica" },
     { id: "VpB", x: 970, y: 975, start: "blade" },
     { id: "VpA", x: 1110, y: 880, start: "axel" },
 ]
@@ -166,7 +166,7 @@ const charaData = {
             rotation: -5
         }
     },
-    angel: {
+    vngelica: {
         jpname: "",
         age: 19,
         color: "rgb(190, 190, 190)",
@@ -580,7 +580,7 @@ var relationshipData_en = [
     {
         id: "BVn",
         chara1: "blade",
-        chara2: "angel",
+        chara2: "vngelica",
         label: "Friends?",
         desc1: "Kind of scary",
         desc2: "May Lord watch over you",
@@ -593,7 +593,7 @@ var relationshipData_en = [
     {
         id: "RVn",
         chara1: "ryan",
-        chara2: "angel",
+        chara2: "vngelica",
         label: "Co-worker",
         desc1: "Bitch",
         desc2: "May Lord bless you",
@@ -606,7 +606,7 @@ var relationshipData_en = [
     {
         id: "LVn",
         chara1: "lance",
-        chara2: "angel",
+        chara2: "vngelica",
         label: "Teammates",
         desc1: "Somewhat familiar",
         desc2: "May Lord bless you",
@@ -619,7 +619,7 @@ var relationshipData_en = [
     {
         id: "HVn",
         chara1: "hannah",
-        chara2: "angel",
+        chara2: "vngelica",
         label: "Teammates",
         desc1: "A little wary of",
         desc2: "May Lord bless you",
@@ -632,7 +632,7 @@ var relationshipData_en = [
     {
         id: "MVn",
         chara1: "minerva",
-        chara2: "angel",
+        chara2: "vngelica",
         label: "Teammates",
         desc1: "A little wary of",
         desc2: "May Lord bless you",
@@ -980,7 +980,7 @@ var bioData_en = [
         trivia: []
     },
     {
-        id: "angel",
+        id: "vngelica",
         name: "<span class='upSideDown'>A</span>ngelica",
         gender: "Female",
         like: "Lord",

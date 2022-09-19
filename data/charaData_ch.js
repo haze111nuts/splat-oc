@@ -495,7 +495,7 @@ var relationshipData_ch = [
     {
         id: "BVn",
         chara1: "blade",
-        chara2: "angel",
+        chara2: "vngelica",
         label: "微妙朋友",
         desc1: "有點嚇人",
         desc2: "願主養護你…",
@@ -508,7 +508,7 @@ var relationshipData_ch = [
     {
         id: "RVn",
         chara1: "ryan",
-        chara2: "angel",
+        chara2: "vngelica",
         label: "同事&隊友",
         desc1: "想痛扁",
         desc2: "願主開導你…",
@@ -521,7 +521,7 @@ var relationshipData_ch = [
     {
         id: "LVn",
         chara1: "lance",
-        chara2: "angel",
+        chara2: "vngelica",
         label: "隊友",
         desc1: "熟悉感",
         desc2: "願主祝福你…",
@@ -534,7 +534,7 @@ var relationshipData_ch = [
     {
         id: "HVn",
         chara1: "hannah",
-        chara2: "angel",
+        chara2: "vngelica",
         label: "隊友",
         desc1: "覺得有點危險",
         desc2: "願主祝福你…",
@@ -547,7 +547,7 @@ var relationshipData_ch = [
     {
         id: "MVn",
         chara1: "minerva",
-        chara2: "angel",
+        chara2: "vngelica",
         label: "隊友",
         desc1: "覺得有點危險",
         desc2: "願主祝福你…",
@@ -1056,7 +1056,7 @@ var bioData_ch = [
         ]
     },
     {
-        id: "angel",
+        id: "vngelica",
         name: "鮟潔莉卡",
         gender: "女",
         like: "主",

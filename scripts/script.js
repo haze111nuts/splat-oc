@@ -169,14 +169,7 @@ function setUpCharaHoverEvent(relationshipData) {
 
 function setUpBioPageFor(charaBioData) {
     //Fill header
-    var bioHeaderName = "";
-    if(charaBioData.id == "ryan"){
-        bioHeaderName = "R.J."
-    }else if(charaBioData.id == "angel"){
-        bioHeaderName = "<span class='upSideDown'>A</span>ngelica"
-    }else{
-        bioHeaderName = charaBioData.id.toUpperCase()
-    }
+    var bioHeaderName = getDisplayName(charaBioData.id);
     $(".bioHeader span:first-child").html(bioHeaderName);
     $(".bioHeader span:nth-child(2)").html(charaData[charaBioData.id].jpname);
 
@@ -507,11 +500,10 @@ function printLinesAsList(array) {
 }
 
 function getDisplayName(name) {
-
     var result = "";
     if(name == "ryan"){
         result = "R.J."
-    }else if(name == "angel"){
+    }else if(name == "vngelica"){
         result = "<span class='upSideDown'>A</span>ngelica"
     }else{
         result = name.charAt(0).toUpperCase() + name.slice(1)
