@@ -374,7 +374,7 @@ var relationshipData_en = [
         label: "Childhood<br>Friends",
         chara1: "yoni",
         chara2: "blade",
-        desc1: "Love you bro!",
+        desc1: "Let's play!",
         desc2: "Annoyed by",
         content: [
             "Under construction..."
@@ -397,7 +397,7 @@ var relationshipData_en = [
         chara1: "ellie",
         chara2: "blade",
         desc1: "Slight crush",
-        desc2: "A bit noisy",
+        desc2: "Good person",
         content: [
             "Under construction..."
         ]
@@ -407,7 +407,7 @@ var relationshipData_en = [
         label: "Siblings",
         chara1: "blade",
         chara2: "hannah",
-        desc1: "Hates/afraid of",
+        desc1: "Afraid of",
         desc2: "Hates/torments",
         content: [
             "Under construction..."
@@ -459,7 +459,7 @@ var relationshipData_en = [
     },
     {
         id: "MH",
-        label: "Friends",
+        label: "Roomates",
         chara1: "hannah",
         chara2: "minerva",
         desc1: "Recruits",
@@ -496,7 +496,7 @@ var relationshipData_en = [
         chara1: "axel",
         chara2: "edd",
         desc1: "Dislike",
-        desc2: "Displeased",
+        desc2: "Hostile",
         content: [
             "Under construction..."
         ]
@@ -522,81 +522,81 @@ var relationshipData_en = [
         descDetail1: "",
         descDetail2: "",
         content: [
-            "--"
+            "Under construction..."
         ]
     },
     {
         id: "AW",
         chara1: "axel",
         chara2: "wade",
-        label: " ",
-        desc1: " ",
-        desc2: " ",
+        label: "Teammates",
+        desc1: "Too weak!",
+        desc2: "Please coach me!",
         descDetail1: " ",
         descDetail2: " ",
         content: [
-            "--"
+            "Under construction..."
         ]
     },
     {
         id: "XW",
         chara1: "xiu",
         chara2: "wade",
-        label: " ",
-        desc1: " ",
-        desc2: " ",
+        label: "Kinship",
+        desc1: "Likes",
+        desc2: "One more game!",
         descDetail1: " ",
         descDetail2: " ",
         content: [
-            "--"
+            "Under construction..."
         ]
     },
     {
         id: "EW",
         chara1: "edd",
         chara2: "wade",
-        label: " ",
-        desc1: " ",
-        desc2: " ",
+        label: "Teammates",
+        desc1: "Gives a hard time",
+        desc2: "Tries to impress",
         descDetail1: " ",
         descDetail2: " ",
         content: [
-            "--"
+            "Under construction..."
         ]
     },
     {
         id: "WE",
-        chara1: "wade",
-        chara2: "ellie",
-        label: " ",
-        desc1: " ",
-        desc2: " ",
+        chara1: "ellie",
+        chara2: "wade",
+        label: "Gaming Pal",
+        desc1: "Funny dork",
+        desc2: "Gets along well",
         descDetail1: " ",
         descDetail2: " ",
         content: [
-            "--"
+            "Under construction..."
         ]
     },
     {
         id: "BVn",
         chara1: "blade",
         chara2: "angel",
-        label: "Acquaintance",
-        desc1: " ",
-        desc2: " ",
+        label: "Friend?",
+        desc1: "Kind of scary",
+        desc2: "May God watch over you",
         descDetail1: " ",
         descDetail2: " ",
         content: [
-            "--"
+            "Under construction..."
         ]
     },
     {
         id: "RVn",
         chara1: "ryan",
         chara2: "angel",
-        label: " ",
-        desc1: " ",
-        desc2: " ",
+        label: "Co-worker",
+        desc1: "Wants to kill",
+        desc2: "May God bless you",
         descDetail1: " ",
         descDetail2: " ",
         content: [
@@ -607,9 +607,9 @@ var relationshipData_en = [
         id: "LVn",
         chara1: "lance",
         chara2: "angel",
-        label: " ",
-        desc1: " ",
-        desc2: " ",
+        label: "Teammates",
+        desc1: "Have déjà vu",
+        desc2: "May God bless you",
         descDetail1: " ",
         descDetail2: " ",
         content: [
@@ -620,9 +620,9 @@ var relationshipData_en = [
         id: "HVn",
         chara1: "hannah",
         chara2: "angel",
-        label: " ",
-        desc1: " ",
-        desc2: " ",
+        label: "Teammates",
+        desc1: "A little wary of",
+        desc2: "May God bless you",
         descDetail1: " ",
         descDetail2: " ",
         content: [
@@ -633,9 +633,9 @@ var relationshipData_en = [
         id: "MVn",
         chara1: "minerva",
         chara2: "angel",
-        label: " ",
-        desc1: " ",
-        desc2: " ",
+        label: "Teammates",
+        desc1: "A little wary of",
+        desc2: "May God Bless you",
         descDetail1: " ",
         descDetail2: " ",
         content: [
@@ -648,7 +648,7 @@ var relationshipData_en = [
         chara1: "blade",
         chara2: "viper",
         desc1: "God you're ANNOYING",
-        desc2: "One-side rivalry",
+        desc2: "My eternal rival!",
         content: [
             "Under construction..."
         ]
@@ -688,6 +688,7 @@ var bioData_en = [
             { name: "Younger", url: "profile/blade.png" }
         ],
         bio: [
+            // "A timid and docile boy when he is young. He is favored by his mother, much to his older sister - Hannah's dismay. After their mother passed, Hannah's hatred toward him become full-blown domestic violence. Long term abuse from his sister turned Blade into a ",
             "He used to refuse playing any turf/ranked and would push away anyone who wants to be friend due to his anxious nature. After being abruptly scouted by Captain Cuttlefish as Agent 3, he received support from captain and the other two agents, it was then he decided to make change and begin the process of healing. Operating as agent 3 has helped him both mentally and physically, he is now able to play competitively. It was around this time he moved out to live on his own.",
             "He then met Axel and other friends and eventually got along since he is now a bit more opened-up to other people, and they decided to form a team called “Bad Buttons” with Blade as leader.",
         ],
