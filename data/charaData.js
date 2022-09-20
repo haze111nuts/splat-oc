@@ -676,7 +676,7 @@ var bioData_en = [
         rank: "S+",
         mains: "Splattershot Pro, .96, Carbon",
         traits: [
-            "Gloomy, angsty, quiet",
+            "Gloomy, Angsty, Quiet",
             "Has anxiety issue",
             "Lack of confidence",
             "Tries to act cool",
@@ -713,7 +713,7 @@ var bioData_en = [
         rank: "S+",
         mains: "Dualies",
         traits: [
-            "Rude, brusque, cocky",
+            "Rude, Brusque, Cocky",
             "Has anger management issue",
             "Aggressive behaviors",
             "Picks fights daily",
@@ -743,7 +743,7 @@ var bioData_en = [
         rank: "S+",
         mains: "Sloshing Machine",
         traits: [
-            "Dashing, charming, sociable",
+            "Dashing, Charming, Sociable",
             "Social media addict",
             "Craves for attention",
             "Cares about his appearance",
@@ -781,7 +781,7 @@ var bioData_en = [
         rank: "S+",
         mains: "Hydra, Dynamo Roller",
         traits: [
-            "Goofy, happy, bizarre",
+            "Goofy, Happy, Bizarre",
             "Is a junkie",
             "Get excited easily",
             "Has destructive strength",
@@ -811,7 +811,7 @@ var bioData_en = [
         rank: "X",
         mains: "N-zap, .52",
         traits: [
-            "Vicious, intimidating, hostile",
+            "Vicious, Intimidating, Hostile",
             "Abusive to her brother",
             "Very mean",
             "Laughs like a maniac",
@@ -838,7 +838,7 @@ var bioData_en = [
         rank: "X",
         mains: "Blasters & Nozzlenose",
         traits: [
-            "Level-headed, righteous",
+            "Level-headed, Righteous",
             "OCPD, a bit of a neat freak",
             "A reliable brotherly figure",
             "Also has destructive strength",
@@ -863,7 +863,7 @@ var bioData_en = [
         rank: "A+",
         mains: "Splash-o-matic",
         traits: [
-            "Outgoing, humorous",
+            "Outgoing, Humorous",
             "Is a SJW",
             "Engages in online shaming",
             "Loves to chitchat",
@@ -889,7 +889,7 @@ var bioData_en = [
         rank: "S+",
         mains: "Octo brushes",
         traits: [
-            "Stoic, aloof, curious",
+            "Stoic, Aloof, Curious",
             "Rather cunning",
             "Talks in a distant/dreamy way",
             "Daydreams about...stuff",
@@ -914,7 +914,7 @@ var bioData_en = [
         rank: "X",
         mains: "Octoshot",
         traits: [
-            "Loyal, honest",
+            "Loyal, Honest",
             "Stockholm Syndrome?",
             "Workholic",
             "Enters \"flow state\" often",
@@ -938,7 +938,7 @@ var bioData_en = [
         rank: "???",
         mains: "???",
         traits: [
-            "Arrogant, ambitious",
+            "Arrogant, Ambitious",
             "Delusional",
             "DJ Octavio's biggest fanboy",
             "Just your typical villian",
@@ -963,7 +963,7 @@ var bioData_en = [
         rank: "X",
         mains: "All chargers",
         traits: [
-            "Cruel, cold-blooded, impatient",
+            "Cruel, Cold-blooded, Impatient",
             "Lack of empathy",
             "Rather sadistic",
             "Efficient and professional",
@@ -988,7 +988,7 @@ var bioData_en = [
         rank: "???",
         mains: "???",
         traits: [
-            "Polite, other-worldly",
+            "Polite, Other-worldly",
             "Devoted cult missionary",
             "Lord this, Lord that",
             "From the Deep"
@@ -1017,10 +1017,10 @@ var bioData_en = [
         rank: "A-",
         mains: "Aerospray",
         traits: [
-            "Game nerd", // average? mediocre? normie?
+            "Simple, Dorky, Incompetent",
             "Gacha game whale",
             "A bit shy",
-            "Dork virgin"
+            "Dumb virgin"
         ],
         outfits: [
         ],
