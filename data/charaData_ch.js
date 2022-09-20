@@ -17,7 +17,7 @@ var relationshipData_ch = [
     {
         id: "YE",
         chara1: "yoni",
-        chara2: "ellie",
+        chara2: "estelle",
         label: "朋友",
         desc1: "吃軟糖ㄇ！",
         desc2: "超怪的人笑死",
@@ -148,7 +148,7 @@ var relationshipData_ch = [
     {
         id: "XE",
         chara1: "xiu",
-        chara2: "ellie",
+        chara2: "estelle",
         label: "網路閨密",
         desc1: "信賴",
         desc2: "支持",
@@ -249,7 +249,7 @@ var relationshipData_ch = [
     },
     {
         id: "BE",
-        chara1: "ellie",
+        chara1: "estelle",
         chara2: "blade",
         label: "朋友",
         desc1: "心儀＆崇拜",
@@ -298,7 +298,7 @@ var relationshipData_ch = [
     },
     {
         id: "AE",
-        chara1: "ellie",
+        chara1: "estelle",
         chara2: "axel",
         label: "兄妹",
         desc1: "吵死了！",
@@ -481,7 +481,7 @@ var relationshipData_ch = [
     },
     {
         id: "WE",
-        chara1: "ellie",
+        chara1: "estelle",
         chara2: "wade",
         label: "朋友",
         desc1: "呆呆的很好笑",
@@ -855,7 +855,7 @@ var bioData_ch = [
         ]
     },
     {
-        id: "ellie",
+        id: "estelle",
         name: "艾絲泰爾（艾莉）",
         gender: "女",
         like: "聊八卦",
@@ -870,7 +870,7 @@ var bioData_ch = [
             "意外的很會讀空氣"
         ],
         outfits: [
-            { name: "通常服", url: "profile/ellie.png" }
+            { name: "通常服", url: "profile/estelle.png" }
         ],
         bio: [
             "亞克索爾的妹妹，從小就跟哥哥和奶奶一起長大，跟家人感情很好。",

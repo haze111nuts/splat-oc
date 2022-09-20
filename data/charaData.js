@@ -22,7 +22,7 @@ var relationshipPosData = [
     { id: "BE", x: 910, y: 410, start: "blade" },
     { id: "HB", x: 450, y: 560, start: "hannah" },
     { id: "AB", x: 800, y: 530, start: "blade" },
-    { id: "AE", x: 1165, y: 545, start: "ellie" },
+    { id: "AE", x: 1165, y: 545, start: "estelle" },
     { id: "RM", x: 290, y: 735, start: "ryan" },
     { id: "RB", x: 390, y: 510, start: "ryan" },
     { id: "MH", x: 405, y: 695, start: "hannah" },
@@ -111,7 +111,7 @@ const charaData = {
             rotation: 0
         }
     },
-    ellie: {
+    estelle: {
         jpname: "エステル（エリ）",
         age: 14,
         color: "rgb(17, 148, 87)",
@@ -241,7 +241,7 @@ var relationshipData_en = [
         id: "YE",
         label: "Friends",
         chara1: "yoni",
-        chara2: "ellie",
+        chara2: "estelle",
         desc1: "*Shoves gummies*",
         desc2: "So funny and weird",
         content: [
@@ -329,7 +329,7 @@ var relationshipData_en = [
         id: "XE",
         label: "Online Pals",
         chara1: "xiu",
-        chara2: "ellie",
+        chara2: "estelle",
         desc1: "Trusts",
         desc2: "Supportive",
         content: [
@@ -394,7 +394,7 @@ var relationshipData_en = [
     {
         id: "BE",
         label: "Friends",
-        chara1: "ellie",
+        chara1: "estelle",
         chara2: "blade",
         desc1: "Slight crush",
         desc2: "Good person",
@@ -419,7 +419,7 @@ var relationshipData_en = [
         chara1: "blade",
         chara2: "axel",
         desc1: "Annoyed by",
-        desc2: "Has feelings for",
+        desc2: "Loves",
         content: [
             "Under construction..."
         ]
@@ -427,7 +427,7 @@ var relationshipData_en = [
     {
         id: "AE",
         label: "Siblings",
-        chara1: "ellie",
+        chara1: "estelle",
         chara2: "axel",
         desc1: "Nags",
         desc2: "Urgh!",
@@ -566,7 +566,7 @@ var relationshipData_en = [
     },
     {
         id: "WE",
-        chara1: "ellie",
+        chara1: "estelle",
         chara2: "wade",
         label: "Friends",
         desc1: "Funny dork",
@@ -855,7 +855,7 @@ var bioData_en = [
         trivia: []
     },
     {
-        id: "ellie",
+        id: "estelle",
         name: "Estelle \"Ellie\"",
         gender: "Female",
         like: "Gossips",
@@ -871,7 +871,7 @@ var bioData_en = [
 
         ],
         outfits: [
-            { name: "Regular", url: "profile/ellie.png" }
+            { name: "Regular", url: "profile/estelle.png" }
         ],
         bio: [
             "Axel\'s younger sister,  a typical happy teenage girl. She is friendly and nice but rather immature, her sense of justice is so strong that she would actively seek out questionable people online to harass and \"cancel\".",
