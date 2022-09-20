@@ -597,7 +597,7 @@ $(document).ready(function () {
 
     var language = window.navigator.userLanguage || window.navigator.language;
 
-    if (language === "en") {
+    if (language === "en-US") {
         [currentLang, nextLang] = [nextLang, currentLang];
     }
     setupLang();
