@@ -181,7 +181,7 @@ const charaData = {
         jpname: "",
         age: 17,
         color: "rgb(87, 65, 168)",
-        button: "",
+        button: "",
         photoPos: {
             x: 865,
             y: 715,
@@ -192,7 +192,7 @@ const charaData = {
         jpname: "",
         age: 19,
         color: "rgb(173, 166, 129)",
-        button: "",
+        button: "",
         photoPos: {
             x: 1145,
             y: 610,
@@ -203,7 +203,7 @@ const charaData = {
         jpname: "",
         age: 19,
         color: "rgb(58, 71, 101)",
-        button: "",
+        button: "",
         photoPos: {
             x: 340,
             y: 65,
@@ -214,7 +214,7 @@ const charaData = {
         jpname: "",
         age: 19,
         color: "rgb(64, 61, 41)",
-        button: "",
+        button: "",
         photoPos: {
             x: 75,
             y: 65,
