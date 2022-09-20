@@ -1013,7 +1013,7 @@ var bioData_en = [
         name: "Wade",
         gender: "Male",
         like: "Video game",
-        dislike: "social contact",
+        dislike: "Social contact",
         rank: "A-",
         mains: "Aerospray",
         traits: [
