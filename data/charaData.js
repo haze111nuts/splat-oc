@@ -745,8 +745,8 @@ var bioData_en = [
         traits: [
             "Dashing, Charming, Sociable",
             "Social media addict",
-            "Craves for attention",
-            "Cares about his appearance",
+            "Can't resist hot guys",
+            "Likes to impress people",
             "Is a train wreck inside"
         ],
         outfits: [
@@ -781,10 +781,10 @@ var bioData_en = [
         rank: "S+",
         mains: "Hydra, Dynamo Roller",
         traits: [
-            "Goofy, Happy, Bizarre",
+            "Goofy, Hyper, Bizarre",
             "Is a junkie",
             "Get excited easily",
-            "Has destructive strength",
+            "Just a happy crackpot",
             "Can make lots of money"
         ],
         outfits: [
@@ -841,7 +841,6 @@ var bioData_en = [
             "Level-headed, Righteous",
             "OCPD, a bit of a neat freak",
             "A reliable brotherly figure",
-            "Also has destructive strength",
             "Is a good listener"
         ],
         outfits: [
@@ -889,9 +888,9 @@ var bioData_en = [
         rank: "S+",
         mains: "Octo brushes",
         traits: [
-            "Stoic, Aloof, Curious",
-            "Rather cunning",
-            "Talks in a distant/dreamy way",
+            "Stoic, Aloof, Selfish",
+            "Doesn't trust anyone",
+            "Tends to observe people",
             "Daydreams about...stuff",
             "Horny af"
         ],
