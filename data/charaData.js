@@ -1017,10 +1017,10 @@ var bioData_en = [
         rank: "A-",
         mains: "Aerospray",
         traits: [
-            "Nerd",
-            "Mobile game whale",
+            "Game nerd",
+            "Gacha game whale",
             "A bit shy",
-            "Dork, thick-headed",
+            "Dork virgin"
         ],
         outfits: [
         ],
