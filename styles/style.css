@@ -404,16 +404,17 @@ ul {
 
 .bioHeader {
   z-index: 10;
-  top: 60px;
+  top: 65px;
   left: 550px;
   color: white;
+  text-transform: uppercase;
 }
 .bioHeader :first-child {
-  font-size: 55px;
+  font-size: 50px;
   font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat";
 }
 .bioHeader :nth-child(2) {
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .bioBasic {
@@ -681,6 +682,7 @@ ul {
 }
 .ytPlayer img:hover {
   -webkit-filter: brightness(75%);
+  filter: brightness(75%);
 }
 .ytPlayer .play {
   height: 72px;
