@@ -1017,7 +1017,7 @@ var bioData_en = [
         rank: "A-",
         mains: "Aerospray",
         traits: [
-            "Game nerd",
+            "Game nerd", // average? mediocre? normie?
             "Gacha game whale",
             "A bit shy",
             "Dork virgin"
