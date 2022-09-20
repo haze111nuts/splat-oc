@@ -1084,6 +1084,7 @@ var bioData_ch = [
             "她在Royal Flush中代表的牌是10。"
         ],
         themes: [
+            "dEQHvokfnQk"
         ]
     },
     {
@@ -1112,6 +1113,7 @@ var bioData_ch = [
             "養了一隻小鮭魚，因為很會大便所以偉德總是在幫牠換褲子，也因此被他取名叫做便便王。偉德通常會暱稱牠「便便」或是「尿布」",
         ],
         themes: [
+            "aszlqBdGWLE"
         ]
     }
 ]
