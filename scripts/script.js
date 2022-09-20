@@ -587,8 +587,8 @@ function checkWindowSize() {
 //===                ===//
 //======================//
 
-var currentLang = "EN";
-var nextLang = "CH";
+var currentLang = "CH";
+var nextLang = "EN";
 
 $(document).ready(function () {
 
@@ -597,7 +597,7 @@ $(document).ready(function () {
 
     var language = window.navigator.userLanguage || window.navigator.language;
 
-    if (language === "zh-TW" || language === "zh-CN") {
+    if (language === "en-US") {
         [currentLang, nextLang] = [nextLang, currentLang];
     }
     setupLang();
