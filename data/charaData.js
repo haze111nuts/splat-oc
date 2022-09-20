@@ -1007,7 +1007,35 @@ var bioData_en = [
         ],
         themes: [
         ]
-    }    
+    },
+    {
+        id: "wade",
+        name: "Wade",
+        gender: "Male",
+        like: "Video game",
+        dislike: "social contact",
+        rank: "A-",
+        mains: "Aerospray",
+        traits: [
+            "Nerd",
+            "Mobile game whale",
+            "A bit shy",
+            "Dork, thick-headed",
+        ],
+        outfits: [
+        ],
+        bio: [
+            "??",
+        ],
+        personality: [
+            "??"
+        ],
+        trivia: [
+            "??"
+        ],
+        themes: [
+        ]
+    }        
 ]
 
 var relationPhotoReverse = [
