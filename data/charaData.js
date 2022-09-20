@@ -167,7 +167,7 @@ const charaData = {
         }
     },
     vngelica: {
-        jpname: "",
+        jpname: "アンジェリカ",
         age: 19,
         color: "rgb(190, 190, 190)",
         button: "",
