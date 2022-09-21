@@ -178,7 +178,7 @@ const charaData = {
         }
     },
     wade: {
-        jpname: "",
+        jpname: "ウェイド",
         age: 17,
         color: "rgb(87, 65, 168)",
         button: "",
@@ -189,7 +189,7 @@ const charaData = {
         }
     },
     scott: {
-        jpname: "",
+        jpname: "スコット",
         age: 19,
         color: "rgb(173, 166, 129)",
         button: "",
