@@ -126,7 +126,7 @@ const charaData = {
         jpname: "エッド",
         age: 18,
         color: "rgb(211, 43, 43)",
-        button: "",
+        button: "",
         photoPos: {
             x: 595,
             y: 715,
@@ -137,7 +137,7 @@ const charaData = {
         jpname: "ミネルヴァ",
         age: 18,
         color: "rgb(167, 87, 83)",
-        button: "",
+        button: "",
         photoPos: {
             x: 340,
             y: 770,
