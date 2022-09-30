@@ -593,7 +593,7 @@ var bioData_ch = [
         id: "blade",
         name: "布雷德（小布）",
         gender: "男",
-        like: "獨處",
+        like: "朋友",
         dislike: "自己",
         rank: "S+",
         mains: "P槍、.96、炭滾",
@@ -632,7 +632,6 @@ var bioData_ch = [
             "assets/img/refsheets/blade_v2.png",
         ],
         themes: [
-            { id: "euiCw4e-E28" },
             { id: "JlcZmA7aEJc" }
         ]
     },
