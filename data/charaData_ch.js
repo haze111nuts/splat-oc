@@ -436,7 +436,7 @@ var relationshipData_ch = [
         descDetail1: "",
         descDetail2: "",
         content: [
-            ""
+            "待補"
         ]
     },
     {
