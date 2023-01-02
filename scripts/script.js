@@ -350,7 +350,7 @@ function setUpThemeClickEvents() {
     $(".themes").children().removeClass("focusedTheme");
     $(".themes div").click(function () {
         //if the theme clicked is diff from the last one clicked
-        if (!$(this).hasClass("closing")) {
+        if (!$(this).hasClass("disabled")) {
             if(currentVideoId != this.dataset.id){
                 $(this).addClass("focusedTheme");
                 $(this).siblings().removeClass("focusedTheme");
@@ -392,7 +392,7 @@ function modalEffectsInit(bioData, relationshipData) {
     modal.forEach(function (el) {
         var close = el.querySelector(".md-close");
         function removeModalHandler() {
-            $(".themes div").addClass("closing");      
+            $(".themes div").addClass("disabled");      
             // removeModal(classie.has(el, "md-setperspective"));
             classie.remove(el, "md-show");
             $(".langNav").removeClass("blur");
