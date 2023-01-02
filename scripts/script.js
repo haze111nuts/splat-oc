@@ -350,19 +350,20 @@ function setUpThemeClickEvents() {
     $(".themes").children().removeClass("focusedTheme");
     $(".themes div").click(function () {
         //if the theme clicked is diff from the last one clicked
-        if(currentVideoId != this.dataset.id){
-            $(this).addClass("focusedTheme");
-            $(this).siblings().removeClass("focusedTheme");
-            removePlayer();
-            var delay = currentVideoId?400:0    
-            setTimeout(loadPlayer, delay, this.dataset.id);
-            currentVideoId = this.dataset.id;
-        }else{
-            $(this).removeClass("focusedTheme");
-            removePlayer();
-            currentVideoId = "";
-        }
-
+        if (!$(this).hasClass("closing")) {
+            if(currentVideoId != this.dataset.id){
+                $(this).addClass("focusedTheme");
+                $(this).siblings().removeClass("focusedTheme");
+                removePlayer();
+                var delay = currentVideoId?400:0    
+                setTimeout(loadPlayer, delay, this.dataset.id);
+                currentVideoId = this.dataset.id;
+            }else{
+                $(this).removeClass("focusedTheme");
+                removePlayer();
+                currentVideoId = "";
+            }
+    }
     });
 }
 
@@ -391,6 +392,7 @@ function modalEffectsInit(bioData, relationshipData) {
     modal.forEach(function (el) {
         var close = el.querySelector(".md-close");
         function removeModalHandler() {
+            $(".themes div").addClass("closing");      
             // removeModal(classie.has(el, "md-setperspective"));
             classie.remove(el, "md-show");
             $(".langNav").removeClass("blur");
