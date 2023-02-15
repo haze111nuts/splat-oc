@@ -701,11 +701,9 @@ var bioData_en = [
         ],
         bio: [
             "Under construction..."
-
         ],
         personality: [
             "Under construction..."
-
         ],
         trivia: [
             "His actual name is Branden, Axel was the one who started calling him \"Blade\", which came from his online handle, and the rest of his friends started doing the same.",
