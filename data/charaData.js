@@ -696,8 +696,8 @@ var bioData_en = [
         outfits: [
             { name: "Regular", url: "profile/blade.png" },
             { name: "Agent 3", url: "profile/blade_agent3.png" },
-            { name: "Captain", url: "profile/blade_captain3.png" },
-            { name: "Splatsville", url: "profile/blade_s3.png" }
+            { name: "Captain", url: "profile/blade_captain.png" },
+            { name: "Splatsville", url: "profile/blade_sp3.png" }
         ],
         bio: [
             "Under construction..."
