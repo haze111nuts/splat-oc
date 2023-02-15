@@ -457,6 +457,7 @@ ul {
   z-index: 10;
 }
 .bioArt > img {
+  height: 800px;
   left: 130px;
   top: 350px;
   position: absolute;
@@ -1055,7 +1056,7 @@ ul {
 
 .hannahPhoto {
   background-color: rgb(41, 81, 194);
-  background-position: 0px -120px;
+  background-position: 0px -240px;
 }
 
 .lance {
@@ -1065,7 +1066,7 @@ ul {
 
 .lancePhoto {
   background-color: rgb(148, 77, 206);
-  background-position: -120px -120px;
+  background-position: -120px -240px;
 }
 
 .estelle {
@@ -1075,7 +1076,7 @@ ul {
 
 .estellePhoto {
   background-color: rgb(17, 148, 87);
-  background-position: 0px -240px;
+  background-position: -240px -120px;
 }
 
 .edd {
@@ -1085,7 +1086,7 @@ ul {
 
 .eddPhoto {
   background-color: rgb(211, 43, 43);
-  background-position: -240px -240px;
+  background-position: -120px -120px;
 }
 
 .minerva {
@@ -1095,7 +1096,7 @@ ul {
 
 .minervaPhoto {
   background-color: rgb(167, 87, 83);
-  background-position: -240px -120px;
+  background-position: -360px -240px;
 }
 
 .viper {
@@ -1105,7 +1106,7 @@ ul {
 
 .viperPhoto {
   background-color: rgb(216, 40, 163);
-  background-position: -120px -240px;
+  background-position: -360px -120px;
 }
 
 .ryan {
@@ -1115,7 +1116,7 @@ ul {
 
 .ryanPhoto {
   background-color: rgb(92, 165, 155);
-  background-position: -360px -120px;
+  background-position: -240px -240px;
 }
 
 .vngelica {
@@ -1125,7 +1126,7 @@ ul {
 
 .vngelicaPhoto {
   background-color: rgb(190, 190, 190);
-  background-position: -360px -240px;
+  background-position: 0px -480px;
 }
 
 .wade {
@@ -1135,7 +1136,7 @@ ul {
 
 .wadePhoto {
   background-color: rgb(87, 65, 168);
-  background-position: 0px -360px;
+  background-position: 0px -120px;
 }
 
 .scott {
@@ -1145,26 +1146,36 @@ ul {
 
 .scottPhoto {
   background-color: rgb(173, 166, 129);
+  background-position: 0px -360px;
+}
+
+.susie {
+  color: rgb(243, 238, 189);
+  stroke: rgb(243, 238, 189);
+}
+
+.susiePhoto {
+  background-color: rgb(243, 238, 189);
   background-position: -120px -360px;
 }
 
 .zoelle {
-  color: rgb(58, 71, 101);
-  stroke: rgb(58, 71, 101);
+  color: rgb(101, 113, 143);
+  stroke: rgb(101, 113, 143);
 }
 
 .zoellePhoto {
-  background-color: rgb(58, 71, 101);
+  background-color: rgb(101, 113, 143);
   background-position: -240px -360px;
 }
 
 .zarah {
-  color: rgb(64, 61, 41);
-  stroke: rgb(64, 61, 41);
+  color: rgb(106, 114, 39);
+  stroke: rgb(106, 114, 39);
 }
 
 .zarahPhoto {
-  background-color: rgb(64, 61, 41);
+  background-color: rgb(106, 114, 39);
   background-position: -360px -360px;
 }
 

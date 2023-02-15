@@ -199,10 +199,21 @@ const charaData = {
             rotation: -2
         }
     },
+    susie: {
+        jpname: "スージー",
+        age: 10,
+        color: "rgb(243, 238, 189)",
+        button: "",
+        photoPos: {
+            x: 700,
+            y: 940,
+            rotation: -2
+        }
+    },
     zoelle: {
-        jpname: "",
-        age: 19,
-        color: "rgb(58, 71, 101)",
+        jpname: "ゾエル（ゾーイ）",
+        age: 10,
+        color: "rgb(101, 113, 143)",
         button: "",
         photoPos: {
             x: 340,
@@ -211,9 +222,9 @@ const charaData = {
         }
     },
     zarah: {
-        jpname: "",
-        age: 19,
-        color: "rgb(64, 61, 41)",
+        jpname: "サラ",
+        age: 23,
+        color: "rgb(106, 114, 39)",
         button: "",
         photoPos: {
             x: 75,
@@ -684,8 +695,10 @@ var bioData_en = [
         ],
         outfits: [
             { name: "Regular", url: "profile/blade.png" },
-            { name: "Agent 3", url: "profile/blade.png" },
-            { name: "Younger", url: "profile/blade.png" }
+            { name: "Agent 3", url: "profile/blade_agent3.png" },
+            { name: "Captain", url: "profile/blade_captain3.png" },
+            { name: "S3", url: "profile/blade_s3.png" }
+
         ],
         bio: [
             "Under construction..."
@@ -720,7 +733,8 @@ var bioData_en = [
             "Cares about his grandma"
         ],
         outfits: [
-            { name: "Regular", url: "profile/axel.png" }
+            { name: "Regular", url: "profile/axel.png" },
+            { name: "Agent 4", url: "profile/axel_agent4.png" }
         ],
         bio: [
             "Under construction..."
@@ -876,7 +890,8 @@ var bioData_en = [
             "Horny af"
         ],
         outfits: [
-            { name: "Regular", url: "profile/edd.png" }
+            { name: "Regular", url: "profile/edd.png" },
+            { name: "Agent 8", url: "profile/edd_agent8.png" }
         ],
         bio: [
             "Under construction..."
@@ -995,6 +1010,9 @@ var bioData_en = [
             "Dumb virgin"
         ],
         outfits: [
+            { name: "Regular", url: "profile/wade.png" },
+            { name: "Agent 3", url: "profile/wade_agent3.png" },
+            { name: "Agent 3+", url: "profile/wade_agent3full.png" }
         ],
         bio: [
             "Under construction..."
@@ -1006,7 +1024,119 @@ var bioData_en = [
         ],
         themes: [
         ]
-    }        
+    },
+    {
+        id: "scott",
+        name: "Scott",
+        gender: "Male",
+        like: "--",
+        dislike: "--",
+        rank: "--",
+        mains: "--",
+        traits: [
+            "--",
+            "--",
+            "--",
+            "--"
+        ],
+        outfits: [
+            { name: "Regular", url: "profile/scott.png" }
+        ],
+        bio: [
+            "Under construction..."
+        ],
+        personality: [
+            "Under construction..."
+        ],
+        trivia: [
+        ],
+        themes: [
+        ]
+    },
+    {
+        id: "susie",
+        name: "Susie",
+        gender: "Female",
+        like: "--",
+        dislike: "--",
+        rank: "--",
+        mains: "--",
+        traits: [
+            "--",
+            "--",
+            "--",
+            "--"
+        ],
+        outfits: [
+            { name: "Regular", url: "profile/susie.png" }
+        ],
+        bio: [
+            "Under construction..."
+        ],
+        personality: [
+            "Under construction..."
+        ],
+        trivia: [
+        ],
+        themes: [
+        ]
+    },
+    {
+        id: "zoelle",
+        name: "Zoelle",
+        gender: "Female",
+        like: "--",
+        dislike: "--",
+        rank: "--",
+        mains: "--",
+        traits: [
+            "--",
+            "--",
+            "--",
+            "--"
+        ],
+        outfits: [
+            { name: "Regular", url: "profile/zoelle.png" }
+        ],
+        bio: [
+            "Under construction..."
+        ],
+        personality: [
+            "Under construction..."
+        ],
+        trivia: [
+        ],
+        themes: [
+        ]
+    },
+    {
+        id: "zarah",
+        name: "Zarah",
+        gender: "Female",
+        like: "--",
+        dislike: "--",
+        rank: "--",
+        mains: "--",
+        traits: [
+            "--",
+            "--",
+            "--",
+            "--"
+        ],
+        outfits: [
+            { name: "Regular", url: "profile/zarah.png" }
+        ],
+        bio: [
+            "Under construction..."
+        ],
+        personality: [
+            "Under construction..."
+        ],
+        trivia: [
+        ],
+        themes: [
+        ]
+    } 
 ]
 
 var relationPhotoReverse = [

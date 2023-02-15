@@ -1111,6 +1111,7 @@ var bioData_ch = [
             "傻瓜處男、很單純",
         ],
         outfits: [
+            { name: "Regular", url: "profile/wade.png" }
         ],
         bio: [
             "在蠻殼鎮長大，跟媽媽住在一起。因為性格內向所以不太常和別人社交，只在網路上交了一小群一起打線上遊戲的網友。總是覺得自己運動神經很爛所以不玩漆彈，導致他變成一個只喜歡窩在家裡打電動虛度人生的宅宅。",
@@ -1133,5 +1134,117 @@ var bioData_ch = [
         themes: [
             { id: "aszlqBdGWLE" }
         ]
-    }
+    },
+    {
+        id: "scott",
+        name: "斯柯特",
+        gender: "Male",
+        like: "--",
+        dislike: "--",
+        rank: "--",
+        mains: "--",
+        traits: [
+            "--",
+            "--",
+            "--",
+            "--"
+        ],
+        outfits: [
+            { name: "Regular", url: "profile/scott.png" }
+        ],
+        bio: [
+            "Under construction..."
+        ],
+        personality: [
+            "Under construction..."
+        ],
+        trivia: [
+        ],
+        themes: [
+        ]
+    },
+    {
+        id: "susie",
+        name: "蘇西",
+        gender: "Female",
+        like: "--",
+        dislike: "--",
+        rank: "--",
+        mains: "--",
+        traits: [
+            "--",
+            "--",
+            "--",
+            "--"
+        ],
+        outfits: [
+            { name: "Regular", url: "profile/susie.png" }
+        ],
+        bio: [
+            "Under construction..."
+        ],
+        personality: [
+            "Under construction..."
+        ],
+        trivia: [
+        ],
+        themes: [
+        ]
+    },
+    {
+        id: "zoelle",
+        name: "佐薇兒（佐伊）",
+        gender: "Female",
+        like: "--",
+        dislike: "--",
+        rank: "--",
+        mains: "--",
+        traits: [
+            "--",
+            "--",
+            "--",
+            "--"
+        ],
+        outfits: [
+            { name: "Regular", url: "profile/zoelle.png" }
+        ],
+        bio: [
+            "Under construction..."
+        ],
+        personality: [
+            "Under construction..."
+        ],
+        trivia: [
+        ],
+        themes: [
+        ]
+    },
+    {
+        id: "zarah",
+        name: "薩拉",
+        gender: "Female",
+        like: "--",
+        dislike: "--",
+        rank: "--",
+        mains: "--",
+        traits: [
+            "--",
+            "--",
+            "--",
+            "--"
+        ],
+        outfits: [
+            { name: "Regular", url: "profile/zarah.png" }
+        ],
+        bio: [
+            "Under construction..."
+        ],
+        personality: [
+            "Under construction..."
+        ],
+        trivia: [
+        ],
+        themes: [
+        ]
+    } 
 ]
