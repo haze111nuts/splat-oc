@@ -607,8 +607,8 @@ var bioData_ch = [
         outfits: [
             { name: "通常服", url: "profile/blade.png" },
             { name: "3號", url: "profile/blade_agent3.png" },
-            { name: "司令", url: "profile/blade_captain3.png" },
-            { name: "蠻頹新裝", url: "profile/blade_s3.png" }
+            { name: "司令", url: "profile/blade_captain.png" },
+            { name: "蠻頹新裝", url: "profile/blade_sp3.png" }
         ],
         bio: [
             "年幼時是個乖寶寶，收到了母親所有的關注和疼愛，也因此導致姊姊一直看他不順眼。母親不在後，姊姊對他的厭惡愈發強烈，演變成了言語跟肢體暴力，長期的欺凌跟貶低導致了他孤僻內向的性格。",
