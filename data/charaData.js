@@ -22,7 +22,7 @@ var relationshipPosData = [
     { id: "BE", x: 935, y: 300, start: "blade" },
     { id: "HB", x: 475, y: 450, start: "hannah" },
     { id: "AB", x: 825, y: 420, start: "blade" },
-    { id: "AE", x: 1080, y: 365, start: "estelle" },
+    { id: "AE", x: 1090, y: 365, start: "estelle" },
     { id: "RM", x: 260, y: 625, start: "ryan" },
     { id: "RB", x: 415, y: 400, start: "ryan" },
     { id: "MH", x: 430, y: 585, start: "hannah" },
@@ -213,7 +213,7 @@ const charaData = {
         jpname: "スージー",
         age: 10,
         color: "rgb(243, 238, 189)",
-        button: "",
+        button: "",
         photoPos: {
             x: 735,
             y: 843,
@@ -224,7 +224,7 @@ const charaData = {
         jpname: "ゾエル（ゾーイ）",
         age: 10,
         color: "rgb(91, 108, 139)",
-        button: "",
+        button: "",
         photoPos: {
             x: 442,
             y: 900,
@@ -235,7 +235,7 @@ const charaData = {
         jpname: "サラ",
         age: 23,
         color: "rgb(106, 114, 39)",
-        button: "",
+        button: "",
         photoPos: {
             x: 148,
             y: 900,
@@ -755,8 +755,8 @@ var relationshipData_en = [
         chara1: "susie",
         chara2: "zoelle",
         desc1: "I won't lose!",
-        desc2: "Fair opponent",
-        content: [
+        desc2: "A fair opponent",
+        content:[
             "---"
         ]
     },
