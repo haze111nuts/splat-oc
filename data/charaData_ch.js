@@ -288,7 +288,7 @@ var relationshipData_ch = [
         descDetail1: "不可或缺的存在<br>偶爾讓人操心",
         descDetail2: "各種方面都好喜歡<br>想一直一直混一起",
         content: [
-            "第一次見面那時的亞克一直在尋找能夠長期一起比賽的戰友，當天他比賽隨機排到小布，亞克因為小布在戰鬥中不斷針對自己而心生不爽，在賽後跑去給小布找碴，兩人接著起了衝突並且演變成打架，最後搞到不歡而散時，亞克才忽然萌生了想和小布組隊的想法，不幸的是他掉頭追他時追丟了，還誤入了蛸壺峽谷，為了要獲得小布聯絡方式，亞克特地答應螢的請求當上了４號。經過一番折騰後才終於如願以償的和小布再會。",
+            "第一次見面那時的亞克一直在尋找能夠長期一起比賽的戰友，當天他比賽隨機排到小布，亞克因為小布在戰鬥中不斷針對自己而心生不爽，在賽後跑去給小布找碴，兩人接著起了衝突並且演變成打架，最後搞到不歡而散時，亞克才忽然萌生了想和小布組隊的想法，不幸的是他掉頭追他時追丟了，還誤入了蛸壺峽谷，為了要獲得小布的聯絡方式，亞克特地答應螢的請求當上了４號。經過一番折騰後才終於如願以償的和小布再會。",
             "亞克一直把小布當成厲害的勁敵，喜歡和他比較跟切磋，也很喜歡跟他一起並肩作戰，經常滿腦子都是小布。經過一段時間的相處亞克才發現自己原來在很早的時候就對小布有好感，而且當他注意到的時候，這份感覺已經變得很強烈了。對亞克來說小布就是有種說不上來的魅力，或許是被他溫和又不退縮的個性吸引，也可能是欣賞小布一個人默默努力的樣子。",
             "亞克常常會跑去小布家拜訪，不過每次想跟小布獨處都事與願違。不管是妹妹還是前男友都要跟他搶男人，這讓亞克非常靠北。",
             "雖然表面上一直表現得很煩，但是小布其實很珍惜亞克的陪伴。對小布來說沒有亞克就沒有Bad Button Boys，沒有Bad Button Boys也就不會有現在的自己，種種原因上來說亞克就是他生活不可或缺的一部分，也經常會情不自禁的跟亞克黏在一起。",
@@ -306,7 +306,7 @@ var relationshipData_ch = [
         descDetail2: "幹不要吵<br>你才北七",
         content: [
             "小時後妹妹總是跟在亞克屁股後面，不管亞克做什麼她都想參一腳。因為妹妹比較懂事也比較會做家務，可以常常看到她對亞克的行為指指點點然後亞克被煩到找地方躲起來的畫面。現在的艾莉跟以前差不多，看到哥哥總是要唸上幾句。兩人經常鬥嘴互嗆，但實際上還是很關心對方，大概是越吵感情越好的那種手足。兄妹兩個人目前跟奶奶一起住。兩個人會輪流照顧奶奶，兩人都超級喜歡吃奶奶做的夏威夷蓋飯。",
-            "艾莉雖然比亞克懂事，但在漆彈的部分懂得比較少，每次看到哥哥玩漆彈都會有想要學習跟加入的衝動。亞克在和小布組成Bad Button Boys後更是天天往外跑，艾莉每次看到這群男生溺在一起都會有幾分羨慕，這也成為她下定決心特訓漆彈的契機。",
+            "艾莉雖然比亞克懂事，但在漆彈的部分懂得比較少，每次看到哥哥玩漆彈都會有想要學習跟加入的衝動。亞克在和小布組成Bad Button Boys後更是天天往外跑，艾莉每次看到這群男生膩在一起都會有幾分羨慕，這也成為她下定決心特訓漆彈的契機。",
             "亞克因為愛打架，常常會弄得身上到處是傷，有時他會因為不想讓妹妹看到自己這樣而躲在朋友家過夜。另外，亞克雖然很兇又愛扁人，但他絕對不會對家人出手，在他們家可以常常看到艾莉用力捏亞克或是用手掌打他，然後亞克只會嚇的跳起來或是跑掉。",
             "兩人對互相的交際圈跟心儀對象瞭若指掌，亞克曾對艾莉放過話「不要跟我搶男人」，結果最後還是演變成發廚分享大會。"
         ]
@@ -436,7 +436,7 @@ var relationshipData_ch = [
         descDetail1: "",
         descDetail2: "",
         content: [
-            "待補"
+            "在蠻殼鎮上"
         ]
     },
     {
@@ -605,10 +605,7 @@ var bioData_ch = [
             "其實很乖、很為人著想"
         ],
         outfits: [
-            { name: "通常服", url: "profile/blade.png" },
-            { name: "3號", url: "profile/blade_agent3.png" },
-            { name: "司令", url: "profile/blade_captain.png" },
-            { name: "蠻頹新裝", url: "profile/blade_sp3.png" }
+            { name: "通常服", url: "profile/blade.png" }
         ],
         bio: [
             "年幼時是個乖寶寶，收到了母親所有的關注和疼愛，也因此導致姊姊一直看他不順眼。母親不在後，姊姊對他的厭惡愈發強烈，演變成了言語跟肢體暴力，長期的欺凌跟貶低導致了他孤僻內向的性格。",
@@ -654,8 +651,7 @@ var bioData_ch = [
             "很照顧自己的奶奶"
         ],
         outfits: [
-            { name: "通常服", url: "profile/axel.png" },
-            { name: "4號", url: "profile/axel_agent4.png" }
+            { name: "通常服", url: "profile/axel.png" }
         ],
         bio: [
             "從小是個脾氣暴躁常常鬧事的小流氓，有事沒事就會跟身邊的人吵起來然後演變成打架。長大後多少有跟一些不良少年混過，但因為不喜歡被使喚而經常起內鬨，最後就沒有持續往來。",
@@ -824,7 +820,7 @@ var bioData_ch = [
         id: "lance",
         name: "蘭斯",
         gender: "男",
-        like: "？",
+        like: "幫助他人",
         dislike: "計畫被打亂",
         rank: "X",
         mains: "爆破槍、捲管槍",
@@ -914,8 +910,7 @@ var bioData_ch = [
             "對色色的事情很感興趣",
         ],
         outfits: [
-            { name: "通常服", url: "profile/edd.png" },
-            { name: "8號", url: "profile/edd_agent8.png" }
+            { name: "通常服", url: "profile/edd.png" }
         ],
         bio: [
             "米奈瓦的雙胞胎弟弟，在地下成長，偶然撿到了來自陸上的禁書所以開始對陸上產生了嚮往，在那之後他的思想開始與章魚軍團的教育背道而馳。他堅信陸上的自由生活比地下的守序社會還要好得多，但抱持這種少數意見讓他變得跟大部分的章魚同事都處不來，也因為行為叛逆和思想異端所以常常被上級懲處，更是因為多次嘗試叛逃而受到特別嚴厲的看管，導致他的逃脫計畫變得更加不順利。這樣長期被困在地下無處可逃的狀況多少讓他變得有些精神崩潰。",
@@ -1116,9 +1111,6 @@ var bioData_ch = [
             "傻瓜處男、很單純",
         ],
         outfits: [
-            { name: "通常服", url: "profile/wade.png" },
-            { name: "3號(破舊)", url: "profile/wade_agent3.png" },
-            { name: "3號", url: "profile/wade_agent3full.png" }
         ],
         bio: [
             "在蠻殼鎮長大，跟媽媽住在一起。因為性格內向所以不太常和別人社交，只在網路上交了一小群一起打線上遊戲的網友。總是覺得自己運動神經很爛所以不玩漆彈，導致他變成一個只喜歡窩在家裡打電動虛度人生的宅宅。",
@@ -1141,117 +1133,5 @@ var bioData_ch = [
         themes: [
             { id: "aszlqBdGWLE" }
         ]
-    },
-    {
-        id: "scott",
-        name: "斯柯特",
-        gender: "Male",
-        like: "--",
-        dislike: "--",
-        rank: "--",
-        mains: "--",
-        traits: [
-            "--",
-            "--",
-            "--",
-            "--"
-        ],
-        outfits: [
-            { name: "Regular", url: "profile/scott.png" }
-        ],
-        bio: [
-            "Under construction..."
-        ],
-        personality: [
-            "Under construction..."
-        ],
-        trivia: [
-        ],
-        themes: [
-        ]
-    },
-    {
-        id: "susie",
-        name: "蘇西",
-        gender: "Female",
-        like: "--",
-        dislike: "--",
-        rank: "--",
-        mains: "--",
-        traits: [
-            "--",
-            "--",
-            "--",
-            "--"
-        ],
-        outfits: [
-            { name: "Regular", url: "profile/susie.png" }
-        ],
-        bio: [
-            "Under construction..."
-        ],
-        personality: [
-            "Under construction..."
-        ],
-        trivia: [
-        ],
-        themes: [
-        ]
-    },
-    {
-        id: "zoelle",
-        name: "佐薇兒（佐伊）",
-        gender: "Female",
-        like: "--",
-        dislike: "--",
-        rank: "--",
-        mains: "--",
-        traits: [
-            "--",
-            "--",
-            "--",
-            "--"
-        ],
-        outfits: [
-            { name: "Regular", url: "profile/zoelle.png" }
-        ],
-        bio: [
-            "Under construction..."
-        ],
-        personality: [
-            "Under construction..."
-        ],
-        trivia: [
-        ],
-        themes: [
-        ]
-    },
-    {
-        id: "zarah",
-        name: "薩拉",
-        gender: "Female",
-        like: "--",
-        dislike: "--",
-        rank: "--",
-        mains: "--",
-        traits: [
-            "--",
-            "--",
-            "--",
-            "--"
-        ],
-        outfits: [
-            { name: "Regular", url: "profile/zarah.png" }
-        ],
-        bio: [
-            "Under construction..."
-        ],
-        personality: [
-            "Under construction..."
-        ],
-        trivia: [
-        ],
-        themes: [
-        ]
-    } 
+    }
 ]
