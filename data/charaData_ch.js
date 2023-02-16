@@ -436,7 +436,7 @@ var relationshipData_ch = [
         descDetail1: "",
         descDetail2: "",
         content: [
-            "在蠻殼鎮上"
+            "待補"
         ]
     },
     {
@@ -713,7 +713,10 @@ var bioData_ch = [
             "其實很乖、很為人著想"
         ],
         outfits: [
-            { name: "通常服", url: "profile/blade.png" }
+            { name: "通常服", url: "profile/blade.png" },
+            { name: "3號", url: "profile/blade_agent3.png" },
+            { name: "司令", url: "profile/blade_captain.png" },
+            { name: "蠻頹新裝", url: "profile/blade_sp3.png" }
         ],
         bio: [
             "年幼時是個乖寶寶，收到了母親所有的關注和疼愛，也因此導致姊姊一直看他不順眼。母親不在後，姊姊對他的厭惡愈發強烈，演變成了言語跟肢體暴力，長期的欺凌跟貶低導致了他孤僻內向的性格。",
@@ -760,7 +763,8 @@ var bioData_ch = [
             "很照顧自己的奶奶"
         ],
         outfits: [
-            { name: "通常服", url: "profile/axel.png" }
+            { name: "通常服", url: "profile/axel.png" },
+            { name: "4號", url: "profile/axel_agent4.png" }
         ],
         bio: [
             "從小是個脾氣暴躁常常鬧事的小流氓，有事沒事就會跟身邊的人吵起來然後演變成打架。長大後多少有跟一些不良少年混過，但因為不喜歡被使喚而經常起內鬨，最後就沒有持續往來。",
@@ -1018,7 +1022,8 @@ var bioData_ch = [
             "對色色的事情很感興趣",
         ],
         outfits: [
-            { name: "通常服", url: "profile/edd.png" }
+            { name: "通常服", url: "profile/edd.png" },
+            { name: "8號", url: "profile/edd_agent8.png" }
         ],
         bio: [
             "米奈瓦的雙胞胎弟弟，在地下成長，偶然撿到了來自陸上的禁書所以開始對陸上產生了嚮往，在那之後他的思想開始與章魚軍團的教育背道而馳。他堅信陸上的自由生活比地下的守序社會還要好得多，但抱持這種少數意見讓他變得跟大部分的章魚同事都處不來，也因為行為叛逆和思想異端所以常常被上級懲處，更是因為多次嘗試叛逃而受到特別嚴厲的看管，導致他的逃脫計畫變得更加不順利。這樣長期被困在地下無處可逃的狀況多少讓他變得有些精神崩潰。",
@@ -1219,6 +1224,9 @@ var bioData_ch = [
             "傻瓜處男、很單純",
         ],
         outfits: [
+            { name: "通常服", url: "profile/wade.png" },
+            { name: "3號(破舊)", url: "profile/wade_agent3.png" },
+            { name: "3號", url: "profile/wade_agent3full.png" }
         ],
         bio: [
             "在蠻殼鎮長大，跟媽媽住在一起。因為性格內向所以不太常和別人社交，只在網路上交了一小群一起打線上遊戲的網友。總是覺得自己運動神經很爛所以不玩漆彈，導致他變成一個只喜歡窩在家裡打電動虛度人生的宅宅。",
