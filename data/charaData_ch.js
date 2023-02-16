@@ -483,21 +483,8 @@ var relationshipData_ch = [
         chara1: "estelle",
         chara2: "wade",
         label: "朋友",
-        desc1: "呆呆的很好笑",
-        desc2: "講話很有趣",
-        descDetail1: "",
-        descDetail2: "",
-        content: [
-            "待補"
-        ]
-    },
-    {
-        id: "BVn",
-        chara1: "blade",
-        chara2: "vngelica",
-        label: "微妙朋友",
-        desc1: "有點嚇人",
-        desc2: "願主養護你…",
+        desc1: "好笑的宅宅",
+        desc2: "有趣的現充",
         descDetail1: "",
         descDetail2: "",
         content: [
@@ -584,6 +571,127 @@ var relationshipData_ch = [
             "自從毒牙纏上３號之後，他就開始把注意力都放在英雄勢力上。第一次見面是毒牙不小心把４號亞克誤認成３號而把他抓了起來，發現根本不是目標後就一臉嫌惡的把他放掉了，這舉動激怒了亞克，一氣之下大肆破壞了毒牙的機器，見到此情此景的毒牙也不甘示弱地對亞克展開攻擊，兩人就此結下了梁子。",
             "可以說是死對頭。兩人都是固執又不會輕易認輸的性格，講話還都非常的挑釁，所以每次碰上就會吵個沒完沒了，就算到了該撤退的時候還是會繼續爭執，這讓他們的同夥都非常困擾。",
             "雖說是死對頭，但這樣的互動持續久了也產生了另類的親切感，兩人在互相對抗的時候其實都還挺享受的，只是沒發現或是不想承認罷了。"
+        ]
+    },
+    {
+        id: "BS",
+        label: "師徒",
+        chara1: "blade",
+        chara2: "susie",
+        desc1: "指導",
+        desc2: "非常崇拜",
+        content: [
+            "---"
+        ]
+    },
+    {
+        id: "SW",
+        label: "好友",
+        chara1: "wade",
+        chara2: "susie",
+        desc1: "厲害的小鬼",
+        desc2: "不準欺負小鮭魚！",
+        content: [
+            "---"
+        ]
+    },
+    {
+        id: "ScS",
+        label: "兄妹",
+        chara1: "scott",
+        chara2: "susie",
+        desc1: "默默關心",
+        desc2: "尊敬",
+        content: [
+            "---"
+        ]
+    },
+    {
+        id: "ScW",
+        label: "微妙",
+        chara1: "wade",
+        chara2: "scott",
+        desc1: "奇怪的人…",
+        desc2: "觀察中",
+        content: [
+            "---"
+        ]
+    },
+    {
+        id: "HSc",
+        label: "互相挖苦",
+        chara1: "hannah",
+        chara2: "scott",
+        desc1: "反感",
+        desc2: "嘲諷",
+        content: [
+            "---"
+        ]
+    },
+    {
+        id: "LSc",
+        label: "朋友",
+        chara1: "lance",
+        chara2: "scott",
+        desc1: "信任",
+        desc2: "很感興趣",
+        content: [
+            "---"
+        ]
+    },
+    {
+        id: "ZRZL",
+        label: "姊妹",
+        chara1: "zarah",
+        chara2: "zoelle",
+        desc1: "不在乎",
+        desc2: "不喜歡",
+        content: [
+            "---"
+        ]
+    },
+    {
+        id: "SZL",
+        label: "勁敵",
+        chara1: "susie",
+        chara2: "zoelle",
+        desc1: "不會認輸的！",
+        desc2: "不錯的對手…",
+        content: [
+            "---"
+        ]
+    },
+    {
+        id: "LZL",
+        label: "師徒",
+        chara1: "lance",
+        chara2: "zoelle",
+        desc1: "指導",
+        desc2: "非常崇拜",
+        content: [
+            "---"
+        ]
+    },
+    {
+        id: "ZRY",
+        label: "同事？",
+        chara1: "yoni",
+        chara2: "zarah",
+        desc1: "覺得很潮",
+        desc2: "經常捉弄",
+        content: [
+            "---"
+        ]
+    },
+    {
+        id: "ZRR",
+        label: "同事？",
+        chara1: "ryan",
+        chara2: "zarah",
+        desc1: "令人不爽",
+        desc2: "真野蠻",
+        content: [
+            "---"
         ]
     }
 ]
@@ -1200,7 +1308,7 @@ var bioData_ch = [
     },
     {
         id: "zoelle",
-        name: "佐薇兒（佐伊）",
+        name: "佐薇爾（佐伊）",
         gender: "Female",
         like: "--",
         dislike: "--",
