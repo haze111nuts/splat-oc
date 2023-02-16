@@ -155,7 +155,7 @@ const charaData = {
         }
     },
     viper: {
-        jpname: "",
+        jpname: "毒牙",
         age: 18,
         color: "rgb(216, 40, 163)",
         button: "",
@@ -206,7 +206,7 @@ const charaData = {
         photoPos: {
             x: 1025,
             y: 843,
-            rotation: -2
+            rotation: -1
         }
     },
     susie: {
@@ -232,7 +232,7 @@ const charaData = {
         }
     },
     zarah: {
-        jpname: "サラ",
+        jpname: "ザラ",
         age: 23,
         color: "rgb(106, 114, 39)",
         button: "",
