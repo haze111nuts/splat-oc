@@ -1253,7 +1253,7 @@ var bioData_ch = [
     {
         id: "scott",
         name: "斯柯特",
-        gender: "Male",
+        gender: "男",
         like: "--",
         dislike: "--",
         rank: "--",
@@ -1281,7 +1281,7 @@ var bioData_ch = [
     {
         id: "susie",
         name: "蘇西",
-        gender: "Female",
+        gender: "女",
         like: "--",
         dislike: "--",
         rank: "--",
@@ -1311,7 +1311,7 @@ var bioData_ch = [
     {
         id: "zoelle",
         name: "佐薇爾（佐伊）",
-        gender: "Female",
+        gender: "女",
         like: "--",
         dislike: "--",
         rank: "--",
@@ -1339,7 +1339,7 @@ var bioData_ch = [
     {
         id: "zarah",
         name: "薩拉",
-        gender: "Female",
+        gender: "女",
         like: "--",
         dislike: "--",
         rank: "--",
