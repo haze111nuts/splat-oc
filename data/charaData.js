@@ -190,7 +190,7 @@ const charaData = {
     wade: {
         jpname: "ウェイド",
         age: 17,
-        color: "rgb(82, 69, 126)",
+        color: "rgb(97, 89, 129)",
         button: "",
         photoPos: {
             x: 890,
@@ -234,7 +234,7 @@ const charaData = {
     zarah: {
         jpname: "サラ",
         age: 23,
-        color: "rgb(64, 61, 41)",
+        color: "rgb(106, 114, 39)",
         button: "",
         photoPos: {
             x: 148,
@@ -1255,7 +1255,7 @@ var bioData_en = [
 ]
 
 var relationPhotoReverse = [
-    "HB", "EB", "LY", "AB"
+    "HB", "EB", "LY", "AB", "SZL"
 ]
 
 
