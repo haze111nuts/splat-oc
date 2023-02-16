@@ -598,10 +598,10 @@ var relationshipData_ch = [
     {
         id: "ScS",
         label: "兄妹",
-        chara1: "scott",
-        chara2: "susie",
-        desc1: "默默關心",
-        desc2: "尊敬",
+        chara1: "susie",
+        chara2: "scott",
+        desc1: "尊敬",
+        desc2: "默默守護",
         content: [
             "---"
         ]
@@ -743,7 +743,8 @@ var bioData_ch = [
             "assets/img/refsheets/blade_v2.png",
         ],
         themes: [
-            { id: "JlcZmA7aEJc" }
+            { id: "JlcZmA7aEJc" },
+            { id: "td3P1-cfZ4E" }
         ]
     },
     {
@@ -836,7 +837,6 @@ var bioData_ch = [
         themes: [
             { "id": "MPmD6hFaomk" },
             { "id": "YLt6PtXzp5E" },
-            { "id": "KM83uMBz8Zg" },
             { "id": "TG_i1FgK6u0" }
         ]
     },
@@ -1204,8 +1204,8 @@ var bioData_ch = [
             "她在Royal Flush中代表的牌是10。"
         ],
         themes: [
-            { id: "Bktp5p2IW9w" },
-            { id: "dEQHvokfnQk" }
+            { id: "1nB6bFt7ghE" },
+            { id: "Bktp5p2IW9w" }
         ]
     },
     {
@@ -1304,6 +1304,8 @@ var bioData_ch = [
         trivia: [
         ],
         themes: [
+            { id: "LMTGKi5ql04" },
+            { id: "C5YNxvk0qyM" }
         ]
     },
     {
@@ -1360,6 +1362,7 @@ var bioData_ch = [
         trivia: [
         ],
         themes: [
+            { id: "Nr9ctdMu2Rg" }
         ]
     } 
 ]

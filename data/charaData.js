@@ -40,7 +40,7 @@ var relationshipPosData = [
     { id: "HVn", x: 300, y: 700, start: "hannah" },
     { id: "MVn", x: 290, y: 850, start: "vngelica" },
     { id: "VpB", x: 1210, y: 800, start: "viper" },
-    { id: "VpA", x: 1210, y: 435, start: "viper" },
+    { id: "VpA", x: 1210, y: 433, start: "viper" },
     { id: "BS", x: 590, y: 790, start: "blade" },
     { id: "SW", x: 935, y: 835, start: "susie" },
     { id: "ScS", x: 950, y: 1035, start: "susie" },
@@ -51,7 +51,7 @@ var relationshipPosData = [
     { id: "SZL", x: 660, y: 975, start: "zoelle" },
     { id: "LZL", x: 545, y: 850, start: "lance" },
     { id: "ZRY", x: 70, y: 140, start: "zarah" },
-    { id: "ZRR", x: 70, y: 950, start: "zarah" }
+    { id: "ZRR", x: 100, y: 875, start: "zarah" }
 ]
 
 const charaData = {
@@ -697,10 +697,10 @@ var relationshipData_en = [
     {
         id: "ScS",
         label: "Siblings",
-        chara1: "scott",
-        chara2: "susie",
-        desc1: "Watches over",
-        desc2: "Respects",
+        chara1: "susie",
+        chara2: "scott",
+        desc1: "Respects",
+        desc2: "Watches over",
         content: [
             "---"
         ]
