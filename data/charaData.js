@@ -4,44 +4,54 @@
 //=====================//
 
 var relationshipPosData = [
-    { id: "RY", x: 275, y: 260, start: "ryan" },
-    { id: "YE", x: 1180, y: 185, start: "yoni" },
-    { id: "XY", x: 795, y: 145, start: "yoni" },
-    { id: "RL", x: 280, y: 365, start: "ryan" },
-    { id: "LM", x: 500, y: 625, start: "lance" },
-    { id: "LY", x: 530, y: 285, start: "lance" },
-    { id: "LB", x: 535, y: 435, start: "lance" },
-    { id: "XB", x: 795, y: 290, start: "xiu" },
-    { id: "EX", x: 925, y: 675, start: "xiu" },
-    { id: "XE", x: 1115, y: 250, start: "xiu" },
-    { id: "XA", x: 1040, y: 380, start: "xiu" },
-    { id: "RH", x: 160, y: 535, start: "ryan" },
-    { id: "LH", x: 275, y: 470, start: "lance" },
-    { id: "YB", x: 630, y: 405, start: "yoni" },
-    { id: "YA", x: 775, y: 385, start: "yoni" },
-    { id: "BE", x: 910, y: 410, start: "blade" },
-    { id: "HB", x: 450, y: 560, start: "hannah" },
-    { id: "AB", x: 800, y: 530, start: "blade" },
-    { id: "AE", x: 1165, y: 545, start: "estelle" },
-    { id: "RM", x: 290, y: 735, start: "ryan" },
-    { id: "RB", x: 390, y: 510, start: "ryan" },
-    { id: "MH", x: 405, y: 695, start: "hannah" },
-    { id: "BM", x: 540, y: 680, start: "blade" },
-    { id: "EB", x: 625, y: 655, start: "blade" },
-    { id: "EA", x: 715, y: 655, start: "axel" },
-    { id: "EM", x: 520, y: 960, start: "minerva" },
-    { id: "WB", x: 820, y: 630, start: "blade" },
-    { id: "AW", x: 1030, y: 655, start: "axel" },
-    { id: "XW", x: 1065, y: 785, start: "xiu" },
-    { id: "EW", x: 800, y: 830, start: "edd" },
-    { id: "WE", x: 1250, y: 830, start: "wade" },
-    { id: "BVn", x: 375, y: 990, start: "vngelica" },
-    { id: "RVn", x: 100, y: 640, start: "ryan" },
-    { id: "LVn", x: 45, y: 535, start: "lance" },
-    { id: "HVn", x: 275, y: 810, start: "hannah" },
-    { id: "MVn", x: 265, y: 960, start: "vngelica" },
-    { id: "VpB", x: 970, y: 975, start: "blade" },
-    { id: "VpA", x: 1110, y: 880, start: "axel" },
+    { id: "RY", x: 300, y: 110, start: "ryan" },
+    { id: "YE", x: 1205, y: 75, start: "yoni" },
+    { id: "XY", x: 820, y: 35, start: "yoni" },
+    { id: "RL", x: 305, y: 255, start: "ryan" },
+    { id: "LM", x: 525, y: 515, start: "lance" },
+    { id: "LY", x: 555, y: 35, start: "lance" },
+    { id: "LB", x: 565, y: 230, start: "lance" },
+    { id: "XB", x: 820, y: 180, start: "xiu" },
+    { id: "EX", x: 950, y: 565, start: "xiu" },
+    { id: "XE", x: 1140, y: 140, start: "xiu" },
+    { id: "XA", x: 1065, y: 270, start: "xiu" },
+    { id: "RH", x: 175, y: 425, start: "ryan" },
+    { id: "LH", x: 300, y: 360, start: "lance" },
+    { id: "YB", x: 655, y: 290, start: "yoni" },
+    { id: "YA", x: 800, y: 275, start: "yoni" },
+    { id: "BE", x: 935, y: 300, start: "blade" },
+    { id: "HB", x: 475, y: 450, start: "hannah" },
+    { id: "AB", x: 825, y: 420, start: "blade" },
+    { id: "AE", x: 1090, y: 365, start: "estelle" },
+    { id: "RM", x: 260, y: 625, start: "ryan" },
+    { id: "RB", x: 415, y: 400, start: "ryan" },
+    { id: "MH", x: 430, y: 585, start: "hannah" },
+    { id: "BM", x: 565, y: 570, start: "blade" },
+    { id: "EB", x: 650, y: 550, start: "blade" },
+    { id: "EA", x: 740, y: 545, start: "axel" },
+    { id: "EM", x: 675, y: 850, start: "minerva" },
+    { id: "WB", x: 845, y: 520, start: "blade" },
+    { id: "AW", x: 1055, y: 545, start: "axel" },
+    { id: "XW", x: 1090, y: 675, start: "xiu" },
+    { id: "EW", x: 825, y: 720, start: "edd" },
+    { id: "WE", x: 1190, y: 720, start: "wade" },
+    { id: "RVn", x: 125, y: 530, start: "ryan" },
+    { id: "LVn", x: 70, y: 425, start: "lance" },
+    { id: "HVn", x: 300, y: 700, start: "hannah" },
+    { id: "MVn", x: 290, y: 850, start: "vngelica" },
+    { id: "VpB", x: 1210, y: 800, start: "viper" },
+    { id: "VpA", x: 1210, y: 433, start: "viper" },
+    { id: "BS", x: 590, y: 790, start: "blade" },
+    { id: "SW", x: 935, y: 835, start: "susie" },
+    { id: "ScS", x: 950, y: 1035, start: "susie" },
+    { id: "ScW", x: 960, y: 950, start: "wade" },
+    { id: "HSc", x: 740, y: 1090, start: "hannah" },
+    { id: "LSc", x: 1100, y: 745, start: "lance" },
+    { id: "ZRZL", x: 370, y: 975, start: "zarah" },
+    { id: "SZL", x: 660, y: 975, start: "zoelle" },
+    { id: "LZL", x: 545, y: 850, start: "lance" },
+    { id: "ZRY", x: 70, y: 140, start: "zarah" },
+    { id: "ZRR", x: 100, y: 875, start: "zarah" }
 ]
 
 const charaData = {
@@ -51,8 +61,8 @@ const charaData = {
         color: "rgb(127, 180, 57)",
         button: "",
         photoPos: {
-            x: 595,
-            y: 450,
+            x: 620,
+            y: 340,
             rotation: 4
         }
     },
@@ -62,8 +72,8 @@ const charaData = {
         color: "rgb(221, 140, 33)",
         button: "",
         photoPos: {
-            x: 865,
-            y: 450,
+            x: 890,
+            y: 340,
             rotation: -4
         }
     },
@@ -73,8 +83,8 @@ const charaData = {
         color: "rgb(65, 173, 206)",
         button: "",
         photoPos: {
-            x: 865,
-            y: 195,
+            x: 890,
+            y: 85,
             rotation: 3
         }
     },
@@ -84,8 +94,8 @@ const charaData = {
         color: "rgb(224, 213, 54)",
         button: "",
         photoPos: {
-            x: 595,
-            y: 195,
+            x: 620,
+            y: 85,
             rotation: -4
         }
     },
@@ -95,8 +105,8 @@ const charaData = {
         color: "rgb(41, 81, 194)",
         button: "",
         photoPos: {
-            x: 210,
-            y: 535,
+            x: 235,
+            y: 425,
             rotation: -2
         }
     },
@@ -106,8 +116,8 @@ const charaData = {
         color: "rgb(148, 77, 206)",
         button: "",
         photoPos: {
-            x: 340,
-            y: 310,
+            x: 365,
+            y: 200,
             rotation: 0
         }
     },
@@ -117,8 +127,8 @@ const charaData = {
         color: "rgb(17, 148, 87)",
         button: "",
         photoPos: {
-            x: 1110,
-            y: 340,
+            x: 1140,
+            y: 230,
             rotation: 3
         }
     },
@@ -128,8 +138,8 @@ const charaData = {
         color: "rgb(211, 43, 43)",
         button: "",
         photoPos: {
-            x: 595,
-            y: 715,
+            x: 620,
+            y: 605,
             rotation: -2
         }
     },
@@ -139,8 +149,8 @@ const charaData = {
         color: "rgb(167, 87, 83)",
         button: "",
         photoPos: {
-            x: 340,
-            y: 770,
+            x: 365,
+            y: 660,
             rotation: 3
         }
     },
@@ -150,8 +160,8 @@ const charaData = {
         color: "rgb(216, 40, 163)",
         button: "",
         photoPos: {
-            x: 1050,
-            y: 950,
+            x: 1167,
+            y: 490,
             rotation: 6
         }
     },
@@ -161,8 +171,8 @@ const charaData = {
         color: "rgb(92, 165, 155)",
         button: "",
         photoPos: {
-            x: 75,
-            y: 310,
+            x: 100,
+            y: 200,
             rotation: -5
         }
     },
@@ -172,30 +182,30 @@ const charaData = {
         color: "rgb(190, 190, 190)",
         button: "",
         photoPos: {
-            x: 75,
-            y: 770,
+            x: 100,
+            y: 660,
             rotation: -2
         }
     },
     wade: {
         jpname: "ウェイド",
         age: 17,
-        color: "rgb(87, 65, 168)",
+        color: "rgb(97, 89, 129)",
         button: "",
         photoPos: {
-            x: 865,
-            y: 715,
+            x: 890,
+            y: 605,
             rotation: 5
         }
     },
     scott: {
         jpname: "スコット",
         age: 19,
-        color: "rgb(173, 166, 129)",
+        color: "rgb(158, 152, 119)",
         button: "",
         photoPos: {
-            x: 1145,
-            y: 610,
+            x: 1025,
+            y: 843,
             rotation: -2
         }
     },
@@ -203,21 +213,21 @@ const charaData = {
         jpname: "スージー",
         age: 10,
         color: "rgb(243, 238, 189)",
-        button: "",
+        button: "",
         photoPos: {
-            x: 700,
-            y: 940,
+            x: 735,
+            y: 843,
             rotation: -2
         }
     },
     zoelle: {
         jpname: "ゾエル（ゾーイ）",
         age: 10,
-        color: "rgb(101, 113, 143)",
-        button: "",
+        color: "rgb(91, 108, 139)",
+        button: "",
         photoPos: {
-            x: 340,
-            y: 65,
+            x: 442,
+            y: 900,
             rotation: -3
         }
     },
@@ -225,10 +235,10 @@ const charaData = {
         jpname: "サラ",
         age: 23,
         color: "rgb(106, 114, 39)",
-        button: "",
+        button: "",
         photoPos: {
-            x: 75,
-            y: 65,
+            x: 148,
+            y: 900,
             rotation: 3
         }
     },
@@ -553,7 +563,7 @@ var relationshipData_en = [
         id: "XW",
         chara1: "xiu",
         chara2: "wade",
-        label: "Kinship",
+        label: "Friends",
         desc1: "Teases",
         desc2: "Fond of",
         descDetail1: "",
@@ -580,21 +590,8 @@ var relationshipData_en = [
         chara1: "estelle",
         chara2: "wade",
         label: "Friends",
-        desc1: "Funny dork",
+        desc1: "Funny weeb",
         desc2: "Funny irl",
-        descDetail1: "",
-        descDetail2: "",
-        content: [
-            "Under construction..."
-        ]
-    },
-    {
-        id: "BVn",
-        chara1: "blade",
-        chara2: "vngelica",
-        label: "Friends?",
-        desc1: "Kind of scary",
-        desc2: "May Lord watch over you",
         descDetail1: "",
         descDetail2: "",
         content: [
@@ -673,6 +670,127 @@ var relationshipData_en = [
         desc2: "Shut up Inkling pest!",
         content: [
             "Under construction..."
+        ]
+    },
+    {
+        id: "BS",
+        label: "Mentorship",
+        chara1: "blade",
+        chara2: "susie",
+        desc1: "Coaches",
+        desc2: "Admires",
+        content: [
+            "---"
+        ]
+    },
+    {
+        id: "SW",
+        label: "Freinds",
+        chara1: "wade",
+        chara2: "susie",
+        desc1: "Impressed by",
+        desc2: "Nags",
+        content: [
+            "---"
+        ]
+    },
+    {
+        id: "ScS",
+        label: "Siblings",
+        chara1: "susie",
+        chara2: "scott",
+        desc1: "Respects",
+        desc2: "Watches over",
+        content: [
+            "---"
+        ]
+    },
+    {
+        id: "ScW",
+        label: "Acquaintance",
+        chara1: "wade",
+        chara2: "scott",
+        desc1: "Awkward",
+        desc2: "Observes",
+        content: [
+            "---"
+        ]
+    },
+    {
+        id: "HSc",
+        label: "Old friends",
+        chara1: "hannah",
+        chara2: "scott",
+        desc1: "Loathes",
+        desc2: "Makes fun of",
+        content: [
+            "---"
+        ]
+    },
+    {
+        id: "LSc",
+        label: "Friends",
+        chara1: "lance",
+        chara2: "scott",
+        desc1: "Trust",
+        desc2: "Interested in",
+        content: [
+            "---"
+        ]
+    },
+    {
+        id: "ZRZL",
+        label: "Siblings",
+        chara1: "zarah",
+        chara2: "zoelle",
+        desc1: "Doesn't care",
+        desc2: "Doesn't like",
+        content: [
+            "---"
+        ]
+    },
+    {
+        id: "SZL",
+        label: "Rivals",
+        chara1: "susie",
+        chara2: "zoelle",
+        desc1: "I won't lose!",
+        desc2: "A fair opponent",
+        content:[
+            "---"
+        ]
+    },
+    {
+        id: "LZL",
+        label: "Mentorship",
+        chara1: "lance",
+        chara2: "zoelle",
+        desc1: "Coaches",
+        desc2: "Admires",
+        content: [
+            "---"
+        ]
+    },
+    {
+        id: "ZRY",
+        label: "Co-worker?",
+        chara1: "yoni",
+        chara2: "zarah",
+        desc1: "Cool lady!!",
+        desc2: "Teases",
+        content: [
+            "---"
+        ]
+    },
+    {
+        id: "ZRR",
+        label: "Co-worker?",
+        chara1: "ryan",
+        chara2: "zarah",
+        desc1: "Tall bitch",
+        desc2: "Brat",
+        content: [
+            "---"
         ]
     }
 ]
@@ -1137,7 +1255,7 @@ var bioData_en = [
 ]
 
 var relationPhotoReverse = [
-    "HB", "EB", "LY", "AB"
+    "HB", "EB", "LY", "AB", "SZL"
 ]
 
 

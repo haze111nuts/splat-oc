@@ -483,21 +483,8 @@ var relationshipData_ch = [
         chara1: "estelle",
         chara2: "wade",
         label: "朋友",
-        desc1: "呆呆的很好笑",
-        desc2: "講話很有趣",
-        descDetail1: "",
-        descDetail2: "",
-        content: [
-            "待補"
-        ]
-    },
-    {
-        id: "BVn",
-        chara1: "blade",
-        chara2: "vngelica",
-        label: "微妙朋友",
-        desc1: "有點嚇人",
-        desc2: "願主養護你…",
+        desc1: "好笑的宅宅",
+        desc2: "有趣的現充",
         descDetail1: "",
         descDetail2: "",
         content: [
@@ -585,6 +572,127 @@ var relationshipData_ch = [
             "可以說是死對頭。兩人都是固執又不會輕易認輸的性格，講話還都非常的挑釁，所以每次碰上就會吵個沒完沒了，就算到了該撤退的時候還是會繼續爭執，這讓他們的同夥都非常困擾。",
             "雖說是死對頭，但這樣的互動持續久了也產生了另類的親切感，兩人在互相對抗的時候其實都還挺享受的，只是沒發現或是不想承認罷了。"
         ]
+    },
+    {
+        id: "BS",
+        label: "師徒",
+        chara1: "blade",
+        chara2: "susie",
+        desc1: "指導",
+        desc2: "非常崇拜",
+        content: [
+            "---"
+        ]
+    },
+    {
+        id: "SW",
+        label: "好友",
+        chara1: "wade",
+        chara2: "susie",
+        desc1: "厲害的小鬼",
+        desc2: "不準欺負小鮭魚！",
+        content: [
+            "---"
+        ]
+    },
+    {
+        id: "ScS",
+        label: "兄妹",
+        chara1: "susie",
+        chara2: "scott",
+        desc1: "尊敬",
+        desc2: "默默守護",
+        content: [
+            "---"
+        ]
+    },
+    {
+        id: "ScW",
+        label: "微妙",
+        chara1: "wade",
+        chara2: "scott",
+        desc1: "奇怪的人…",
+        desc2: "觀察中",
+        content: [
+            "---"
+        ]
+    },
+    {
+        id: "HSc",
+        label: "互相挖苦",
+        chara1: "hannah",
+        chara2: "scott",
+        desc1: "反感",
+        desc2: "嘲諷",
+        content: [
+            "---"
+        ]
+    },
+    {
+        id: "LSc",
+        label: "朋友",
+        chara1: "lance",
+        chara2: "scott",
+        desc1: "信任",
+        desc2: "很感興趣",
+        content: [
+            "---"
+        ]
+    },
+    {
+        id: "ZRZL",
+        label: "姊妹",
+        chara1: "zarah",
+        chara2: "zoelle",
+        desc1: "不在乎",
+        desc2: "不喜歡",
+        content: [
+            "---"
+        ]
+    },
+    {
+        id: "SZL",
+        label: "勁敵",
+        chara1: "susie",
+        chara2: "zoelle",
+        desc1: "不會認輸的！",
+        desc2: "不錯的對手…",
+        content: [
+            "---"
+        ]
+    },
+    {
+        id: "LZL",
+        label: "師徒",
+        chara1: "lance",
+        chara2: "zoelle",
+        desc1: "指導",
+        desc2: "非常崇拜",
+        content: [
+            "---"
+        ]
+    },
+    {
+        id: "ZRY",
+        label: "同事？",
+        chara1: "yoni",
+        chara2: "zarah",
+        desc1: "覺得很潮",
+        desc2: "經常捉弄",
+        content: [
+            "---"
+        ]
+    },
+    {
+        id: "ZRR",
+        label: "同事？",
+        chara1: "ryan",
+        chara2: "zarah",
+        desc1: "令人不爽",
+        desc2: "真野蠻",
+        content: [
+            "---"
+        ]
     }
 ]
 
@@ -632,7 +740,8 @@ var bioData_ch = [
             "assets/img/refsheets/blade_v2.png",
         ],
         themes: [
-            { id: "JlcZmA7aEJc" }
+            { id: "JlcZmA7aEJc" },
+            { id: "td3P1-cfZ4E" }
         ]
     },
     {
@@ -724,7 +833,6 @@ var bioData_ch = [
         themes: [
             { "id": "MPmD6hFaomk" },
             { "id": "YLt6PtXzp5E" },
-            { "id": "KM83uMBz8Zg" },
             { "id": "TG_i1FgK6u0" }
         ]
     },
@@ -1091,8 +1199,8 @@ var bioData_ch = [
             "她在Royal Flush中代表的牌是10。"
         ],
         themes: [
-            { id: "Bktp5p2IW9w" },
-            { id: "dEQHvokfnQk" }
+            { id: "1nB6bFt7ghE" },
+            { id: "Bktp5p2IW9w" }
         ]
     },
     {
@@ -1133,5 +1241,120 @@ var bioData_ch = [
         themes: [
             { id: "aszlqBdGWLE" }
         ]
-    }
+    },
+    {
+        id: "scott",
+        name: "斯柯特",
+        gender: "男",
+        like: "--",
+        dislike: "--",
+        rank: "--",
+        mains: "--",
+        traits: [
+            "--",
+            "--",
+            "--",
+            "--"
+        ],
+        outfits: [
+            { name: "Regular", url: "profile/scott.png" }
+        ],
+        bio: [
+            "Under construction..."
+        ],
+        personality: [
+            "Under construction..."
+        ],
+        trivia: [
+        ],
+        themes: [
+        ]
+    },
+    {
+        id: "susie",
+        name: "蘇西",
+        gender: "女",
+        like: "--",
+        dislike: "--",
+        rank: "--",
+        mains: "--",
+        traits: [
+            "--",
+            "--",
+            "--",
+            "--"
+        ],
+        outfits: [
+            { name: "Regular", url: "profile/susie.png" }
+        ],
+        bio: [
+            "Under construction..."
+        ],
+        personality: [
+            "Under construction..."
+        ],
+        trivia: [
+        ],
+        themes: [
+            { id: "LMTGKi5ql04" },
+            { id: "C5YNxvk0qyM" }
+        ]
+    },
+    {
+        id: "zoelle",
+        name: "佐薇爾（佐伊）",
+        gender: "女",
+        like: "--",
+        dislike: "--",
+        rank: "--",
+        mains: "--",
+        traits: [
+            "--",
+            "--",
+            "--",
+            "--"
+        ],
+        outfits: [
+            { name: "Regular", url: "profile/zoelle.png" }
+        ],
+        bio: [
+            "Under construction..."
+        ],
+        personality: [
+            "Under construction..."
+        ],
+        trivia: [
+        ],
+        themes: [
+        ]
+    },
+    {
+        id: "zarah",
+        name: "薩拉",
+        gender: "女",
+        like: "--",
+        dislike: "--",
+        rank: "--",
+        mains: "--",
+        traits: [
+            "--",
+            "--",
+            "--",
+            "--"
+        ],
+        outfits: [
+            { name: "Regular", url: "profile/zarah.png" }
+        ],
+        bio: [
+            "Under construction..."
+        ],
+        personality: [
+            "Under construction..."
+        ],
+        trivia: [
+        ],
+        themes: [
+            { id: "Nr9ctdMu2Rg" }
+        ]
+    } 
 ]

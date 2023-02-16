@@ -286,7 +286,7 @@ ul {
     stroke-dashoffset: 0;
   }
   to {
-    stroke-dashoffset: 19;
+    stroke-dashoffset: 20;
   }
 }
 .relation {
@@ -1130,22 +1130,22 @@ ul {
 }
 
 .wade {
-  color: rgb(87, 65, 168);
-  stroke: rgb(87, 65, 168);
+  color: rgb(97, 89, 129);
+  stroke: rgb(97, 89, 129);
 }
 
 .wadePhoto {
-  background-color: rgb(87, 65, 168);
+  background-color: rgb(97, 89, 129);
   background-position: 0px -120px;
 }
 
 .scott {
-  color: rgb(173, 166, 129);
-  stroke: rgb(173, 166, 129);
+  color: rgb(158, 152, 119);
+  stroke: rgb(158, 152, 119);
 }
 
 .scottPhoto {
-  background-color: rgb(173, 166, 129);
+  background-color: rgb(158, 152, 119);
   background-position: 0px -360px;
 }
 
@@ -1160,12 +1160,12 @@ ul {
 }
 
 .zoelle {
-  color: rgb(101, 113, 143);
-  stroke: rgb(101, 113, 143);
+  color: rgb(91, 108, 139);
+  stroke: rgb(91, 108, 139);
 }
 
 .zoellePhoto {
-  background-color: rgb(101, 113, 143);
+  background-color: rgb(91, 108, 139);
   background-position: -240px -360px;
 }
 
