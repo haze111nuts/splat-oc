@@ -856,7 +856,8 @@ var bioData_ch = [
             "非常會賺錢"
         ],
         outfits: [
-            { name: "通常服", url: "profile/yoni.png" }
+            { name: "通常服", url: "profile/yoni.png" },
+            { name: "墨鏡off", url: "profile/yoni_noShade.png" }
         ],
         bio: [
             "蘭斯的弟弟，小時候因為跟小布住得很近所以常常跟他一起玩。從小就精力過剩而且常常坐不住，還特別喜歡爬樹或爬屋頂之類的，還好有蘭斯看著所以沒有給別人添太多麻煩。",
@@ -1268,10 +1269,10 @@ var bioData_ch = [
             { name: "Regular", url: "profile/scott.png" }
         ],
         bio: [
-            "Under construction..."
+            "背景待補"
         ],
         personality: [
-            "Under construction..."
+            "個性待補"
         ],
         trivia: [
         ],
@@ -1296,10 +1297,10 @@ var bioData_ch = [
             { name: "Regular", url: "profile/susie.png" }
         ],
         bio: [
-            "Under construction..."
+            "背景待補"
         ],
         personality: [
-            "Under construction..."
+            "個性待補"
         ],
         trivia: [
         ],
@@ -1326,10 +1327,10 @@ var bioData_ch = [
             { name: "Regular", url: "profile/zoelle.png" }
         ],
         bio: [
-            "Under construction..."
+            "背景待補"
         ],
         personality: [
-            "Under construction..."
+            "個性待補"
         ],
         trivia: [
         ],
@@ -1354,10 +1355,10 @@ var bioData_ch = [
             { name: "Regular", url: "profile/zarah.png" }
         ],
         bio: [
-            "Under construction..."
+            "背景待補"
         ],
         personality: [
-            "Under construction..."
+            "個性待補"
         ],
         trivia: [
         ],

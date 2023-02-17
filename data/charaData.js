@@ -908,7 +908,8 @@ var bioData_en = [
             "Can make lots of money"
         ],
         outfits: [
-            { name: "Regular", url: "profile/yoni.png" }
+            { name: "Regular", url: "profile/yoni.png" },
+            { name: "No Shade", url: "profile/yoni_noShade.png" }
         ],
         bio: [
             "Under construction..."
