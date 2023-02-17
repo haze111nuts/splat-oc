@@ -300,8 +300,8 @@ var relationshipData_ch = [
         chara1: "estelle",
         chara2: "axel",
         label: "兄妹",
-        desc1: "吵死了！",
-        desc2: "你才吵！",
+        desc1: "笨蛋！",
+        desc2: "吵死了！",
         descDetail1: "北七少打點架啦<br>奶奶很擔心你欸",
         descDetail2: "幹不要吵<br>你才北七",
         content: [
@@ -347,7 +347,7 @@ var relationshipData_ch = [
         id: "MH",
         chara1: "hannah",
         chara2: "minerva",
-        label: "同居朋友",
+        label: "同居親友",
         desc1: "堅持拉進隊裡",
         desc2: "在意",
         descDetail1: "廢話少說乖乖練槍<br>有才華就該培養",
@@ -397,7 +397,7 @@ var relationshipData_ch = [
         id: "EA",
         chara1: "axel",
         chara2: "edd",
-        label: "朋友?敵人?",
+        label: "勁敵",
         desc1: "非常不爽",
         desc2: "敵意",
         descDetail1: "一看到你的臉就<br>超想直接揍下去",
@@ -586,7 +586,7 @@ var relationshipData_ch = [
     },
     {
         id: "SW",
-        label: "好友",
+        label: "朋友",
         chara1: "wade",
         chara2: "susie",
         desc1: "厲害的小鬼",
@@ -704,13 +704,13 @@ var bioData_ch = [
         like: "朋友",
         dislike: "自己",
         rank: "S+",
-        mains: "P槍、.96、炭滾",
+        mains: "P槍、.96",
         traits: [
             "陰鬱、孤僻、彆扭",
             "有嚴重焦慮問題",
             "沒自信、排斥社交",
             "在不熟的人面前會裝酷",
-            "其實很乖、很為人著想"
+            "其實很乖、非常為他人著想"
         ],
         outfits: [
             { name: "通常服", url: "profile/blade.png" },
