@@ -1205,8 +1205,8 @@ var bioData_ch = [
             "她在Royal Flush中代表的牌是10。"
         ],
         themes: [
-            { id: "1nB6bFt7ghE" },
-            { id: "Bktp5p2IW9w" }
+            { id: "Bktp5p2IW9w" },
+            { id: "1nB6bFt7ghE" }
         ]
     },
     {
