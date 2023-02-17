@@ -40,7 +40,7 @@ var relationshipPosData = [
     { id: "HVn", x: 300, y: 700, start: "hannah" },
     { id: "MVn", x: 290, y: 850, start: "vngelica" },
     { id: "VpB", x: 1210, y: 800, start: "viper" },
-    { id: "VpA", x: 1210, y: 433, start: "viper" },
+    { id: "VpA", x: 1190, y: 434, start: "viper" },
     { id: "BS", x: 590, y: 790, start: "blade" },
     { id: "SW", x: 935, y: 835, start: "susie" },
     { id: "ScS", x: 950, y: 1035, start: "susie" },
