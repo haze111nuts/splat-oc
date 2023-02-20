@@ -486,14 +486,13 @@ ul {
 .outfitSelect {
   position: relative;
 }
-.outfitSelect .spIcon {
+.outfitSelect .splashIconSvg {
   height: 54px;
   width: 54px;
   position: absolute;
   top: -13px;
   left: 5px;
   z-index: -1;
-  opacity: 0;
 }
 .outfitSelect li {
   cursor: pointer;
@@ -513,9 +512,6 @@ ul {
 .outfitSelect li:hover,
 .outfitSelect .focusedOutfit {
   color: white !important;
-}
-.outfitSelect .selectedOutfitIcon {
-  opacity: 1 !important;
 }
 .outfitSelect li:nth-child(1) {
   -webkit-transform: rotate(4deg);

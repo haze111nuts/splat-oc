@@ -601,14 +601,13 @@ ul {
 .outfitSelect {
   position: relative;
 
-  .spIcon {
+  .splashIconSvg {
     height: 54px;
     width: 54px;
     position: absolute;
     top: -13px;
     left: 5px;
     z-index: -1;
-    opacity: 0;
   }
 
   li {
@@ -631,10 +630,6 @@ ul {
   li:hover,
   .focusedOutfit {
     color: white !important;
-  }
-  
-  .selectedOutfitIcon{
-    opacity: 1 !important;
   }
 
   li:nth-child(1) {
