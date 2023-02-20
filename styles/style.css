@@ -191,26 +191,26 @@ ul {
   display: inline-block;
 }
 
-.chartWrapper {
+.diagramWrapper {
   position: relative;
   width: 1350px;
   height: 1150px;
   margin: 50px auto 50px auto;
 }
 
-#chart {
+#diagram {
   width: 1350px;
   height: 1150px;
   position: absolute;
 }
 
-#chart ul {
+#diagram ul {
   display: block;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
 
-#chart li {
+#diagram li {
   position: absolute;
   display: block;
 }
@@ -235,14 +235,14 @@ ul {
   text-transform: uppercase;
 }
 
-#chartSVG {
+#diagramSVG {
   width: 1350px;
   height: 1150px;
   position: absolute;
   display: block;
 }
 
-#chartSVG path {
+#diagramSVG path {
   stroke-width: 2.3px;
 }
 
@@ -1211,7 +1211,7 @@ ul {
 }
 
 @media only screen and (max-width: 1200px) {
-  .chartWrapper {
+  .diagramWrapper {
     width: 100%;
     overflow-x: auto;
     padding: 20px 0px;

@@ -2,8 +2,8 @@
 @use 'sass:math';
 @import url(https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap);
 
-$chart-width: 1350px;
-$chart-height: 1150px;
+$diagram-width: 1350px;
+$diagram-height: 1150px;
 $chara-box-width: 135px;
 $chara-box-height: 155px;
 $chara-photo-size: 120px;
@@ -259,33 +259,33 @@ ul {
   display: inline-block;
 }
 
-//=======================//
-//===                 ===//
-//===   Chart Stuff   ===//
-//===                 ===//
-//=======================//
+//=========================//
+//===                   ===//
+//===   Diagram Stuff   ===//
+//===                   ===//
+//=========================//
 
-.chartWrapper {
+.diagramWrapper {
   position: relative;
-  width: $chart-width;
-  height: $chart-height;
+  width: $diagram-width;
+  height: $diagram-height;
   margin: 50px auto 50px auto;
 }
 
-#chart {
+#diagram {
   // border: 1px solid #000;
-  width: $chart-width;
-  height: $chart-height;
+  width: $diagram-width;
+  height: $diagram-height;
   position: absolute;
 }
 
-#chart ul {
+#diagram ul {
   display: block;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
 
-#chart li {
+#diagram li {
   position: absolute;
   display: block;
 }
@@ -310,14 +310,14 @@ ul {
   text-transform: uppercase;
 }
 
-#chartSVG {
-  width: $chart-width;
-  height: $chart-height;
+#diagramSVG {
+  width: $diagram-width;
+  height: $diagram-height;
   position: absolute;
   display: block;
 }
 
-#chartSVG path {
+#diagramSVG path {
   stroke-width: 2.3px;
 }
 
@@ -1146,7 +1146,7 @@ $data in $chara {
 }
 
 @media only screen and (max-width: 1200px) {
-  .chartWrapper {
+  .diagramWrapper {
     width: 100%;
     overflow-x: auto;
     padding: 20px 0px;

@@ -21,28 +21,28 @@ var siteData = {
 //===   functions   ===//
 //=====================//
 
-function buildChart(relationshipData) {
-    var chartHTML = "";
-    chartHTML += "<ul>";
-    chartHTML += "<li class='group teamBB'></li>";
+function buildDiagram(relationshipData) {
+    var diagramHTML = "";
+    diagramHTML += "<ul>";
+    diagramHTML += "<li class='group teamBB'></li>";
     for (var chara in charaData) {
-        chartHTML += "<li class='charaPhotoBox md-trigger' id='" + chara + "' data-modal='modal-chara'>";
-        chartHTML += "<div class='charaPhoto " + chara + "Photo'></div>";
-        chartHTML += "<div class='nameSticker'>" + getDisplayName(chara) + "</div>";
-        chartHTML += "</li>";
+        diagramHTML += "<li class='charaPhotoBox md-trigger' id='" + chara + "' data-modal='modal-chara'>";
+        diagramHTML += "<div class='charaPhoto " + chara + "Photo'></div>";
+        diagramHTML += "<div class='nameSticker'>" + getDisplayName(chara) + "</div>";
+        diagramHTML += "</li>";
     }
     for (var j = 0; j < relationshipData.length; j++) {
-        chartHTML += "<li class='relation md-trigger' id='rel_" + relationshipData[j].id + "' data-modal='modal-relationship'>";
-        chartHTML += "<span class='relDesc " + relationshipData[j].chara1 + "' >" + relationshipData[j].desc1 + "</span>"
-        chartHTML += "<div class='relLabel'>" + relationshipData[j].label + "</div>";
-        chartHTML += "<span class='relDesc " + relationshipData[j].chara2 + "' >" + relationshipData[j].desc2 + "</span>"
-        chartHTML += "</li>";
+        diagramHTML += "<li class='relation md-trigger' id='rel_" + relationshipData[j].id + "' data-modal='modal-relationship'>";
+        diagramHTML += "<span class='relDesc " + relationshipData[j].chara1 + "' >" + relationshipData[j].desc1 + "</span>"
+        diagramHTML += "<div class='relLabel'>" + relationshipData[j].label + "</div>";
+        diagramHTML += "<span class='relDesc " + relationshipData[j].chara2 + "' >" + relationshipData[j].desc2 + "</span>"
+        diagramHTML += "</li>";
     }
-    chartHTML += "<ul>";
-    $("#chart").html(chartHTML);
+    diagramHTML += "<ul>";
+    $("#diagram").html(diagramHTML);
 }
 
-function arrangeChartContent() {
+function arrangeDiagramContent() {
     //set icon positions
     for (var chara in charaData) {
         $("#" + chara).css("left", charaData[chara].photoPos.x);
@@ -563,11 +563,11 @@ function setupLang() {
 
 function setupStuff(relationshipData, bioData, siteInfo) {
     setUpSiteInfo(siteInfo)
-    buildChart(relationshipData);
+    buildDiagram(relationshipData);
     modalEffectsInit(bioData, relationshipData);
     setUpRelationshipHoverEvent(relationshipData);
     setUpCharaHoverEvent(relationshipData);
-    arrangeChartContent();
+    arrangeDiagramContent();
 }
 
 //======================================//
@@ -584,10 +584,10 @@ function checkWindowSize() {
     } else {
         $(".md-modal").height("auto");
     }
-    //scroll to center for chart
+    //scroll to center for diagram
     if (windowWidth <= 1200) {
-        var scrollto = ($("#chart").width() / 2) - ($(".chartWrapper").width() / 2);
-        $(".chartWrapper").scrollLeft(scrollto);
+        var scrollto = ($("#diagram").width() / 2) - ($(".diagramWrapper").width() / 2);
+        $(".diagramWrapper").scrollLeft(scrollto);
     }
 }
 
