@@ -321,21 +321,20 @@ ul {
   stroke-width: 2.3px;
 }
 
-.basePath {
+.basePathGroup>path{
   stroke-opacity: 0.2;
   @include prefix(transition, all 0.7s, webkit moz);
 }
 
-.clonePath {
+.clonePathGroup>path, .clonePathGroup_REV>path{
   stroke-opacity: 0;
   stroke-dasharray: 1500;
-  // stroke-dasharray: 10;
 }
 
 .duoPath {
-  stroke-opacity: 1;
-  stroke-dasharray: 10;
-  animation: dash 0.7s forwards linear infinite;
+  stroke-opacity: 1  !important;
+  stroke-dasharray: 10  !important;
+  animation: dash 0.7s forwards linear infinite  !important;
 }
 
 .duoPathBase {
@@ -343,8 +342,8 @@ ul {
 }
 
 .animatedPath {
-  stroke-opacity: 1;
-  animation: draw 1.3s forwards linear;
+  stroke-opacity: 1 !important;
+  animation: draw 1.3s forwards linear  !important;
   // animation: dash 0.8s forwards infinite linear;
 }
 
@@ -639,19 +638,19 @@ ul {
 
   li:nth-child(2) {
     @include prefix(transform, rotate(-2deg), webkit moz ms);
-    top: 50px;
+    top: 55px;
     right: 5px;
   }
 
   li:nth-child(3) {
     @include prefix(transform, rotate(1deg), webkit moz ms);
-    top: 85px;
+    top: 95px;
     right: -5px;
   }
 
   li:nth-child(4) {
     @include prefix(transform, rotate(-3deg), webkit moz ms);
-    top: 120px;
+    top: 135px;
   }
 }
 
