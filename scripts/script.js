@@ -177,7 +177,7 @@ function setUpBioPageFor(charaBioData) {
     var outfitListHTML = ""
     if (charaBioData.outfits.length > 1) {
         for (const ourfitData of charaBioData.outfits) {
-            outfitListHTML += "<li>" + ourfitData.name + "</li>";
+            outfitListHTML += "<li><svg class='spIcon' viewBox='0 0 3000 3000' width='54' height='54' style='stroke-width:12;fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;'></svg>"+ ourfitData.name + "</li>";
         }
     }
     $(".outfitSelect").html(outfitListHTML);
@@ -306,6 +306,7 @@ function setUpRelationPageFor(relationData) {
 }
 
 function setUpOutfitSwitchEvents(charaBioData) {
+    var useSplashSVGDef = "<use xlink:href='#splash'>"
     var newArtHTML = "";
     for (const outfit of charaBioData.outfits) {
         newArtHTML += "<img src='assets/img/" + outfit.url + "'>";
@@ -313,11 +314,21 @@ function setUpOutfitSwitchEvents(charaBioData) {
     $(".bioArt").html(newArtHTML);
     $(".bioArt img:not(:first-child)").addClass("hide");
     $(".outfitSelect li:first-child").addClass("focusedOutfit");
+    $(".outfitSelect li:first-child").find(".spIcon").addClass("selectedOutfitIcon");
+    $(".outfitSelect li:first-child").find(".spIcon").html(useSplashSVGDef);
+    $(".spIcon").css("fill", charaData[charaBioData.id].color);
+
     $(".outfitSelect li").click(function () {
         $(this).addClass("focusedOutfit");
         $(this).siblings().removeClass("focusedOutfit");
         $(".bioArt img:nth-child(" + ($(this).index() + 1) + ")").removeClass("hide");
         $(".bioArt img:not(:nth-child(" + ($(this).index() + 1) + "))").addClass("hide");
+
+        $(this).find(".spIcon").addClass("selectedOutfitIcon");
+        $(this).find(".spIcon").html(useSplashSVGDef);
+        $(this).siblings().find(".spIcon").removeClass("selectedOutfitIcon");
+        $(this).siblings().find(".spIcon").html("");
+        $(".spIcon").css("fill", charaData[charaBioData.id].color);
     });
 }
 

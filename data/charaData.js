@@ -22,7 +22,7 @@ var relationshipPosData = [
     { id: "BE", x: 935, y: 300, start: "blade" },
     { id: "HB", x: 475, y: 450, start: "hannah" },
     { id: "AB", x: 825, y: 420, start: "blade" },
-    { id: "AE", x: 1090, y: 365, start: "estelle" },
+    { id: "AE", x: 1090, y: 370, start: "estelle" },
     { id: "RM", x: 260, y: 625, start: "ryan" },
     { id: "RB", x: 415, y: 400, start: "ryan" },
     { id: "MH", x: 430, y: 585, start: "hannah" },
@@ -815,7 +815,7 @@ var bioData_en = [
             { name: "Regular", url: "profile/blade.png" },
             { name: "Agent 3", url: "profile/blade_agent3.png" },
             { name: "Captain", url: "profile/blade_captain.png" },
-            { name: "Splatsville", url: "profile/blade_sp3.png" }
+            { name: "S3", url: "profile/blade_sp3.png" }
         ],
         bio: [
             "Under construction..."
@@ -1256,7 +1256,7 @@ var bioData_en = [
 ]
 
 var relationPhotoReverse = [
-    "HB", "EB", "LY", "AB", "SZL"
+    "HB", "EB", "LY", "AB", "SZL", "ScS"
 ]
 
 
