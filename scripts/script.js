@@ -24,7 +24,6 @@ var siteData = {
 function buildDiagram(relationshipData) {
     var diagramHTML = "";
     diagramHTML += "<ul>";
-    diagramHTML += "<li class='group teamBB'></li>";
     for (var chara in charaData) {
         diagramHTML += "<li class='charaPhotoBox md-trigger' id='" + chara + "' data-modal='modal-chara'>";
         diagramHTML += "<div class='charaPhoto " + chara + "Photo'></div>";

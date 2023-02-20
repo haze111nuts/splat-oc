@@ -4,17 +4,18 @@
 
 $diagram-width: 1350px;
 $diagram-height: 1150px;
-$chara-box-width: 135px;
-$chara-box-height: 155px;
+
+$chara-photo-box-width: 135px;
+$chara-photo-box-height: 155px;
 $chara-photo-size: 120px;
 
-$raw-photo-size: 150px;
-$raw-photo-asset-x: 600px;
-$raw-photo-asset-y: 600px;
+$raw-chara-photo-size: 150px;
+$raw-photo-sheet-width: 600px;
+$raw-photo-sheet-height: 750px;
 
 @function photo-bg-pos($index) {
-  $array-x-length: math.div($raw-photo-asset-x, $raw-photo-size);
-  $array-y-length: math.div($raw-photo-asset-y, $raw-photo-size);
+  $array-x-length: math.div($raw-photo-sheet-width, $raw-chara-photo-size);
+  $array-y-length: math.div($raw-photo-sheet-height, $raw-chara-photo-size);
 
   $x-position: $index % $array-x-length;
   $y-position: floor(math.div($index, $array-x-length));
@@ -293,8 +294,8 @@ ul {
 .charaPhotoBox {
   cursor: pointer;
   border: 2px white solid;
-  width: $chara-box-width;
-  height: $chara-box-height;
+  width: $chara-photo-box-width;
+  height: $chara-photo-box-height;
   background: url(../assets/img/bg1.png) fixed repeat;
   -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3), inset 0px 0px 10px 3px rgba(0, 0, 0, 0.4);
   box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3), inset 0px 0px 10px 3px rgba(0, 0, 0, 0.4);
@@ -928,8 +929,8 @@ $rel-arrow-width: 160px;
 
 .relPhotoBox {
   border: 2px white solid;
-  width: $chara-box-width;
-  height: $chara-box-height;
+  width: $chara-photo-box-width;
+  height: $chara-photo-box-height;
   background: url(../assets/img/bg1.png) fixed repeat;
   -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3), inset 0px 0px 10px 3px rgba(0, 0, 0, 0.4);
   box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3), inset 0px 0px 10px 3px rgba(0, 0, 0, 0.4);
@@ -940,7 +941,7 @@ $rel-arrow-width: 160px;
   left: $rel-page-outerPaddingLR + $rel-page-width * 0.5;
   // border: 1px solid red;
   width: $rel-arrow-width;
-  height: $chara-box-height;
+  height: $chara-photo-box-height;
   @include prefix(transform, translateX(-50%), webkit moz ms);
 
 
@@ -1088,7 +1089,7 @@ $rel-arrow-width: 160px;
   height: $chara-photo-size;
   background-image: url(../assets/img/profile/0thumbs.png);
   background-repeat: no-repeat;
-  background-size: $chara-photo-size * math.div($raw-photo-asset-x, $raw-photo-size) auto;
+  background-size: $chara-photo-size * math.div($raw-photo-sheet-width, $raw-chara-photo-size) auto;
   margin: 8px auto 0px auto;
 }
 
