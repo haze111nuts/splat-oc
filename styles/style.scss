@@ -538,14 +538,15 @@ ul {
   }
 
   // Traits section
-  .traitLabel {
-    margin: 15px auto 5px auto;
+  .sectionLabel {
+    margin: 10px auto 5px auto;
     padding-bottom: 2px;
     width: 150px;
     text-align: center;
   }
 
   td li,
+  .quirk li,
   .traits li {
     text-align: center;
     color: white;
@@ -653,6 +654,11 @@ ul {
     @include prefix(transform, rotate(-3deg), webkit moz ms);
     top: 135px;
   }
+
+  li:nth-child(5) {
+    @include prefix(transform, rotate(2deg), webkit moz ms);
+    top: 175px;
+  }
 }
 
 // Detail Bio Panel
@@ -697,7 +703,7 @@ ul {
   .itemIcon {
     height: 37px;
     display: inline-block;
-    vertical-align: top;
+    vertical-align: middle;
   }
 
   ul li {
@@ -1203,7 +1209,7 @@ $data in $chara {
     >img {
       margin: 0px auto;
       left: 350px;
-      top: 360px;
+      top: 400px;
     }
   }
 

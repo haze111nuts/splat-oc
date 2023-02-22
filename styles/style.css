@@ -438,13 +438,14 @@ ul {
   border-radius: 15px;
   display: inline-block;
 }
-.bioBasic .traitLabel {
-  margin: 15px auto 5px auto;
+.bioBasic .sectionLabel {
+  margin: 10px auto 5px auto;
   padding-bottom: 2px;
   width: 150px;
   text-align: center;
 }
 .bioBasic td li,
+.bioBasic .quirk li,
 .bioBasic .traits li {
   text-align: center;
   color: white;
@@ -543,6 +544,13 @@ ul {
   transform: rotate(-3deg);
   top: 135px;
 }
+.outfitSelect li:nth-child(5) {
+  -webkit-transform: rotate(2deg);
+  -moz-transform: rotate(2deg);
+  -ms-transform: rotate(2deg);
+  transform: rotate(2deg);
+  top: 175px;
+}
 
 .bioDetailTabs {
   position: absolute;
@@ -588,7 +596,7 @@ ul {
 .bioDetailInner .itemIcon {
   height: 37px;
   display: inline-block;
-  vertical-align: top;
+  vertical-align: middle;
 }
 .bioDetailInner ul li {
   margin-bottom: 10px;
@@ -1255,7 +1263,7 @@ ul {
   .bioArt > img {
     margin: 0px auto;
     left: 350px;
-    top: 360px;
+    top: 400px;
   }
   .bioBasic {
     margin: 0 0 0 auto;

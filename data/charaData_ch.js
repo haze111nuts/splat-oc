@@ -705,9 +705,9 @@ var bioData_ch = [
         dislike: "自己",
         rank: "S+",
         mains: "P槍、.96",
+        quirk: "焦慮",
         traits: [
             "陰鬱、孤僻、彆扭",
-            "有嚴重焦慮問題",
             "沒自信、排斥社交",
             "在不熟的人面前會裝酷",
             "其實很乖、非常為他人著想"
@@ -715,6 +715,7 @@ var bioData_ch = [
         outfits: [
             { name: "通常服", url: "profile/blade.png" },
             { name: "3號", url: "profile/blade_agent3.png" },
+            // { name: "二代3號", url: "profile/blade_agent3_2.png" },
             { name: "司令", url: "profile/blade_captain.png" },
             { name: "蠻頹新裝", url: "profile/blade_sp3.png" }
         ],
@@ -755,9 +756,9 @@ var bioData_ch = [
         dislike: "被使喚、被嘲笑",
         rank: "S+",
         mains: "機動槍類",
+        quirk: "易怒",
         traits: [
             "無禮、暴躁、囂張",
-            "有憤怒管理問題",
             "攻擊＆侵略行為",
             "總是打架＆找麻煩",
             "很照顧自己的奶奶"
@@ -804,9 +805,10 @@ var bioData_ch = [
         dislike: "掉粉",
         rank: "S+",
         mains: "迴旋潑桶",
+        quirk: "問題網紅",   
         traits: [
             "有風度、愛表現、擅長社交",
-            "有社交平台成癮問題",
+            "總是在看手機",
             "經常拈花惹草",
             "喜歡娛樂表演，追求時尚",
             "理智薄弱，容易失控"
@@ -848,9 +850,9 @@ var bioData_ch = [
         dislike: "偷竊行為",
         rank: "S+",
         mains: "消防栓、重滾",
+        quirk: "嗑藥",           
         traits: [
             "精力旺盛、少根筋",
-            "有毒癮問題",
             "很容易就興奮、坐不住",
             "快樂的瘋子",
             "非常會賺錢"
@@ -895,9 +897,9 @@ var bioData_ch = [
         dislike: "自己的弟弟",
         rank: "X",
         mains: "N-zap、.52",
+        quirk: "家暴",        
         traits: [
             "凶狠，惡劣，難親近",
-            "有家暴弟弟的行為",
             "講話惡毒的不良少女",
             "笑聲很狂",
             "其實是個稱職的隊長"
@@ -937,9 +939,9 @@ var bioData_ch = [
         dislike: "計畫被打亂",
         rank: "X",
         mains: "爆破槍、捲管槍",
+        quirk: "OCPD＆潔癖",
         traits: [
             "冷靜、正直、重義氣",
-            "OCPD＆輕度潔癖",
             "可靠的大哥類型",
             "很擅長聽人訴苦"
         ],
@@ -977,9 +979,9 @@ var bioData_ch = [
         dislike: "自私的人",
         rank: "A",
         mains: "窄域標記槍",
+        quirk: "SJW＆網暴",        
         traits: [
             "開朗、幽默、重義氣",
-            "會網路霸凌他人的SJW",
             "擅長蒐集資料跟人肉",
             "愛閒聊的雞婆小妹",
             "意外的很會讀空氣"
@@ -1015,12 +1017,12 @@ var bioData_ch = [
         dislike: "幽閉&黑暗場所",
         rank: "S+",
         mains: "北齋",
+        quirk: "叛逆",
         traits: [
             "沉穩、表情不多",
-            "自私、叛逆、不信任社會",
+            "自私、不信任社會",
             "經常在觀察別人",
-            "好像會幻想些有的沒的",
-            "對色色的事情很感興趣",
+            "強欲＆很色",
         ],
         outfits: [
             { name: "通常服", url: "profile/edd.png" },
@@ -1061,9 +1063,9 @@ var bioData_ch = [
         dislike: "太亮的地方",
         rank: "X",
         mains: "章魚射擊槍",
+        quirk: "盲從規矩",        
         traits: [
             "忠心、誠實、謹慎",
-            "疑似斯德哥爾摩綜合症",
             "做事認真的工作狂",
             "很常進入心流狀態",
             "是個中規中矩的老實人"
@@ -1101,9 +1103,9 @@ var bioData_ch = [
         dislike: "英雄",
         rank: "???",
         mains: "???",
+        quirk: "妄想習慣",
         traits: [
             "自大、野心強、死纏不放",
-            "很會妄想",
             "章魚將軍的頭號粉絲",
             "經典定番惡役",
             "是個老是出包的白痴"
@@ -1142,9 +1144,9 @@ var bioData_ch = [
         dislike: "不守信用者",
         rank: "X",
         mains: "狙擊槍類",
+        quirk: "沒有同理心",
         traits: [
             "冷血、殘酷、沒耐性",
-            "毫無同理心和憐憫心",
             "辦事專業俐落、高效率",
             "各種方面的抖S",
             "天然呆…？"
@@ -1167,7 +1169,7 @@ var bioData_ch = [
         trivia: [
             "右耳的耳環是復古步槍子彈（30-06 winchester？）",
             "跟他對視的話，會發現他不曾眨眼。",
-            "不會喝義式濃縮咖啡以外的飲品%doppio/義式濃縮咖啡%",
+            "不會喝%doppio/義式濃縮咖啡%以外的飲品。",
             "他在Royal Flush中代表的牌是Jack。"
         ],
         themes: [
@@ -1184,6 +1186,7 @@ var bioData_ch = [
         dislike: "？",
         rank: "？",
         mains: "？",
+        quirk: "邪教徒",
         traits: [
             "氣質、禮貌、空靈",
             "虔誠的深淵教傳教士",
@@ -1218,8 +1221,9 @@ var bioData_ch = [
         dislike: "現充、社交",
         rank: "A-",
         mains: "專業模型槍",
+        quirk: "廢柴",
         traits: [
-            "平凡、遲鈍、廢",
+            "平凡、遲鈍、笨拙",
             "重度課金遊戲宅",
             "做事總是半途而廢",
             "有些怕生",
@@ -1260,6 +1264,7 @@ var bioData_ch = [
         dislike: "--",
         rank: "--",
         mains: "--",
+        quirk: "沒良心記者",
         traits: [
             "--",
             "--",
@@ -1289,6 +1294,7 @@ var bioData_ch = [
         dislike: "--",
         rank: "--",
         mains: "--",
+        quirk: "過激素食主義者",
         traits: [
             "--",
             "--",
@@ -1320,6 +1326,7 @@ var bioData_ch = [
         dislike: "--",
         rank: "--",
         mains: "--",
+        quirk: "囤物癖",
         traits: [
             "--",
             "--",
@@ -1349,6 +1356,7 @@ var bioData_ch = [
         dislike: "--",
         rank: "--",
         mains: "--",
+        quirk: "詐騙師",        
         traits: [
             "--",
             "--",

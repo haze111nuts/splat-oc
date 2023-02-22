@@ -199,13 +199,17 @@ function setUpBioPageFor(charaBioData) {
     bioBasicHTML += "<tr><td>Rank</td><td>" + charaBioData.rank + "</td></tr>";
     bioBasicHTML += "<tr><td>Mains</td><td>" + charaBioData.mains + "</td></tr>";
     bioBasicHTML += "</table>";
-    var bioTraitsHTML = "<div class='traitLabel'>Traits</div>";
+
+    var bioQuirkHTML = "<div class='sectionLabel'>Quirk</div>";
+    bioQuirkHTML += "<ul class='quirk'><li>"+charaBioData.quirk+"</li></ul>";
+
+    var bioTraitsHTML = "<div class='sectionLabel'>Traits</div>";
     bioTraitsHTML += "<ul class='traits'>";
     for (const traitsData of charaBioData.traits)
         bioTraitsHTML += "<li>" + traitsData + "</li>";
     bioTraitsHTML += "</ul>";
 
-    $(".bioBasic").html(bioBasicHTML + bioTraitsHTML);
+    $(".bioBasic").html(bioBasicHTML + bioQuirkHTML + bioTraitsHTML);
 
     //Fill detailed bio panel
     setUpBioSwitchEvents(charaBioData);
@@ -242,8 +246,8 @@ function setUpBioPageFor(charaBioData) {
     var color = charaData[charaBioData.id].color;
     $(".bioBasic table tr td:first-child").css("color", color);
     $(".bioBasic table tr td:first-child").css("border-right", "3px solid " + color);
-    $(".traitLabel").css("border-bottom", "3px solid " + color);
-    $(".traitLabel").css("color", color);
+    $(".sectionLabel").css("border-bottom", "3px solid " + color);
+    $(".sectionLabel").css("color", color);
     $(".bioDetail").css("box-shadow", "-25px -45px 0 " + color);
     // $(".refSheets > a div:hover").css("box-shadow", "-8px -8px 0px 0px "+color);
     $(".refSheets").children().children().hover(function () {

@@ -804,10 +804,10 @@ var bioData_en = [
         dislike: "Self",
         rank: "S+",
         mains: "Splattershot Pro, .96, Carbon",
+        quirk: "Has Anxiety Issue",
         traits: [
             "Gloomy, Angsty, Quiet",
-            "Has anxiety issue",
-            "Lack of confidence",
+            "Lack of onfidence",
             "Tries to act cool",
             "Is actually a sweet boy"
         ],
@@ -840,9 +840,9 @@ var bioData_en = [
         dislike: "Losing or getting mocked",
         rank: "S+",
         mains: "Dualies",
+        quirk: "Has Anger Management Issue",
         traits: [
             "Rude, Brusque, Cocky",
-            "Has anger management issue",
             "Aggressive behaviors",
             "Picks fights daily",
             "Cares about his grandma"
@@ -868,11 +868,11 @@ var bioData_en = [
         dislike: "Losing followers",
         rank: "S+",
         mains: "Sloshing Machine",
+        quirk: "Is a Problmetic Influencer",
         traits: [
             "Dashing, Charming, Sociable",
-            "Social media addict",
+            "24/7 on phone",
             "Can't resist hot guys",
-            "Likes to impress people",
             "Is a train wreck inside"
         ],
         outfits: [
@@ -900,9 +900,9 @@ var bioData_en = [
         dislike: "Theft",
         rank: "S+",
         mains: "Hydra, Dynamo Roller",
+        quirk: "Is a Junkie",        
         traits: [
             "Goofy, Hyper, Bizarre",
-            "Is a junkie",
             "Get excited easily",
             "Just a happy crackpot",
             "Can make lots of money"
@@ -928,9 +928,9 @@ var bioData_en = [
         dislike: "Blade",
         rank: "X",
         mains: "N-zap, .52",
+        quirk: "Uses Domestic Violence",        
         traits: [
             "Vicious, Intimidating, Hostile",
-            "Abusive to her brother",
             "Very mean",
             "Laughs like a maniac",
             "Is actually a great leader"
@@ -952,9 +952,9 @@ var bioData_en = [
         dislike: "Sudden change in plan",
         rank: "X",
         mains: "Blasters & Nozzlenose",
+        quirk: "Is a OCPD & Neat Freak",
         traits: [
             "Level-headed, Righteous",
-            "OCPD, a bit of a neat freak",
             "A reliable brotherly figure",
             "Is a good listener"
         ],
@@ -974,9 +974,9 @@ var bioData_en = [
         dislike: "Selfish people",
         rank: "A+",
         mains: "Splash-o-matic",
+        quirk: "Is a SJW",
         traits: [
             "Outgoing, Humorous",
-            "Is a SJW",
             "Engages in online shaming",
             "Loves to chitchat",
             "Is actually very empathetic"
@@ -998,11 +998,11 @@ var bioData_en = [
         dislike: "Dark places",
         rank: "S+",
         mains: "Octo brushes",
+        quirk: "Is a Rebel",
         traits: [
             "Stoic, Aloof, Selfish",
             "Doesn't trust anyone",
             "Tends to observe people",
-            "Daydreams about...stuff",
             "Horny af"
         ],
         outfits: [
@@ -1022,9 +1022,9 @@ var bioData_en = [
         dislike: "Bright place",
         rank: "X",
         mains: "Octoshot",
+        quirk: "Is a Conformist",       
         traits: [
             "Loyal, Honest",
-            "Stockholm Syndrome?",
             "Workholic",
             "Enters \"flow state\" often",
             "Just a law-abiding normal girl"
@@ -1045,9 +1045,9 @@ var bioData_en = [
         dislike: "Heroes",
         rank: "???",
         mains: "???",
+        quirk: "Is Delusional",
         traits: [
             "Arrogant, Ambitious",
-            "Delusional",
             "DJ Octavio's biggest fanboy",
             "Just your typical villian",
             "Always fails miserably"
@@ -1068,9 +1068,9 @@ var bioData_en = [
         dislike: "Broken promise",
         rank: "X",
         mains: "All chargers",
+        quirk: "Has Lack of Empathy",
         traits: [
             "Cruel, Cold-blooded, Impatient",
-            "Lack of empathy",
             "Efficient and professional",
             "Rather sadistic",
             "Doesn't know how to socialize"
@@ -1091,9 +1091,9 @@ var bioData_en = [
         dislike: "???",
         rank: "???",
         mains: "???",
+        quirk: "Conducts Cultism",
         traits: [
             "Polite, Other-worldly",
-            "Devoted cult missionary",
             "Lord this, Lord that",
             "From the Deep"
         ],
@@ -1119,6 +1119,7 @@ var bioData_en = [
         dislike: "Social contact",
         rank: "A-",
         mains: "Aerospray",
+        quirk: "Is a Wimp",
         traits: [
             "Simple, Dorky, Incompetent",
             "Gacha game whale",
@@ -1149,6 +1150,7 @@ var bioData_en = [
         dislike: "--",
         rank: "--",
         mains: "--",
+        quirk: "Is a Malicious Reporter",
         traits: [
             "--",
             "--",
@@ -1177,6 +1179,7 @@ var bioData_en = [
         dislike: "--",
         rank: "--",
         mains: "--",
+        quirk: "Is a Vegan Activist",
         traits: [
             "--",
             "--",
@@ -1205,6 +1208,7 @@ var bioData_en = [
         dislike: "--",
         rank: "--",
         mains: "--",
+        quirk: "Is a Hoarder",
         traits: [
             "--",
             "--",
@@ -1233,6 +1237,7 @@ var bioData_en = [
         dislike: "--",
         rank: "--",
         mains: "--",
+        quirk: "Is a Con Artist",     
         traits: [
             "--",
             "--",
