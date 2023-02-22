@@ -249,6 +249,7 @@ function setUpBioPageFor(charaBioData) {
     $(".sectionLabel").css("border-bottom", "3px solid " + color);
     $(".sectionLabel").css("color", color);
     $(".bioDetail").css("box-shadow", "-25px -45px 0 " + color);
+    $(".bioOutfits").css("top", $(".bioBasic").outerHeight() +  10);
     // $(".refSheets > a div:hover").css("box-shadow", "-8px -8px 0px 0px "+color);
     $(".refSheets").children().children().hover(function () {
         $(this).css("box-shadow", "-8px -8px 0px 0px " + color);

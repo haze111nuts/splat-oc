@@ -558,14 +558,6 @@ ul {
   }
 }
 
-// .iconBi {
-//   background: linear-gradient(-45deg, rgba(214, 2, 112, 1) 40%, rgba(155, 79, 150, 1) 45%, rgba(155, 79, 150, 1) 55%, rgba(0, 56, 168, 1) 60%);
-// }
-
-// .iconPan {
-//   background: linear-gradient(-45deg, rgba(255, 33, 140, 1) 36%, rgba(255, 216, 0, 1) 45%, rgba(255, 216, 0, 1) 55%, rgba(33, 177, 255, 1) 64%);
-// }
-
 // Chara Art Panel
 .bioArt {
   z-index: 10;
@@ -584,8 +576,8 @@ ul {
 .bioOutfits {
   padding: 0;
   width: 240px;
-  height: 200px;
-  top: 420px;
+  height: 210px;
+  // top: 420px;
   left: 250px;
   z-index: 6;
 }
@@ -634,14 +626,16 @@ ul {
     color: white !important;
   }
 
-  $degree: 4deg, -2deg, 1deg, -3deg, 2deg;
-  $topStart: 15px;
-  $spacing: 40px; 
 
-  @for $i from 1 through length($degree) {
-    li:nth-child(#{length($degree)}n+#{$i}) {
-      @include prefix(transform, rotate(list.nth($degree, $i)), webkit moz ms);
-      top: $topStart + $spacing * ($i - 1);
+  // === Outfit select button group ===
+  $outfitButton_degree: 4deg, -2deg, 1deg, -3deg, 2deg;
+  $outfitButton_topStart: 45px;
+  $outfitButton_spacing: 40px; 
+
+  @for $i from 1 through length($outfitButton_degree) {
+    li:nth-child(#{length($outfitButton_degree)}n+#{$i}) {
+      @include prefix(transform, rotate(list.nth($outfitButton_degree, $i)), webkit moz ms);
+      top: $outfitButton_topStart + $outfitButton_spacing * ($i - 1);
     }
   }
 }
@@ -1203,8 +1197,12 @@ $data in $chara {
   }
 
   .bioOutfits {
-    padding-top: 130px;
+    padding-top: 120px;
     margin: 0px 50px 0 auto;
+  }
+
+  .outfitSelect li {
+    filter: drop-shadow(5px 4px 0px rgb(150 150 150));    
   }
 
   .bioDetail {

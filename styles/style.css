@@ -469,8 +469,7 @@ ul {
 .bioOutfits {
   padding: 0;
   width: 240px;
-  height: 200px;
-  top: 420px;
+  height: 210px;
   left: 250px;
   z-index: 6;
 }
@@ -514,42 +513,40 @@ ul {
 .outfitSelect .focusedOutfit {
   color: white !important;
 }
-.outfitSelect li:nth-child(1) {
+.outfitSelect li:nth-child(5n+1) {
   -webkit-transform: rotate(4deg);
   -moz-transform: rotate(4deg);
   -ms-transform: rotate(4deg);
   transform: rotate(4deg);
-  top: 15px;
+  top: 45px;
 }
-.outfitSelect li:nth-child(2) {
+.outfitSelect li:nth-child(5n+2) {
   -webkit-transform: rotate(-2deg);
   -moz-transform: rotate(-2deg);
   -ms-transform: rotate(-2deg);
   transform: rotate(-2deg);
-  top: 55px;
-  right: 5px;
+  top: 85px;
 }
-.outfitSelect li:nth-child(3) {
+.outfitSelect li:nth-child(5n+3) {
   -webkit-transform: rotate(1deg);
   -moz-transform: rotate(1deg);
   -ms-transform: rotate(1deg);
   transform: rotate(1deg);
-  top: 95px;
-  right: -5px;
+  top: 125px;
 }
-.outfitSelect li:nth-child(4) {
+.outfitSelect li:nth-child(5n+4) {
   -webkit-transform: rotate(-3deg);
   -moz-transform: rotate(-3deg);
   -ms-transform: rotate(-3deg);
   transform: rotate(-3deg);
-  top: 135px;
+  top: 165px;
 }
-.outfitSelect li:nth-child(5) {
+.outfitSelect li:nth-child(5n+5) {
   -webkit-transform: rotate(2deg);
   -moz-transform: rotate(2deg);
   -ms-transform: rotate(2deg);
   transform: rotate(2deg);
-  top: 175px;
+  top: 205px;
 }
 
 .bioDetailTabs {
@@ -1269,8 +1266,11 @@ ul {
     margin: 0 0 0 auto;
   }
   .bioOutfits {
-    padding-top: 130px;
+    padding-top: 120px;
     margin: 0px 50px 0 auto;
+  }
+  .outfitSelect li {
+    filter: drop-shadow(5px 4px 0px rgb(150, 150, 150));
   }
   .bioDetail {
     margin: 40px 0 40px auto;
