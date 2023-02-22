@@ -897,7 +897,7 @@ var bioData_ch = [
         dislike: "自己的弟弟",
         rank: "X",
         mains: "N-zap、.52",
-        quirk: "家暴",        
+        quirk: "惡毒、家暴",        
         traits: [
             "凶狠，惡劣，難親近",
             "講話惡毒的不良少女",
@@ -1022,7 +1022,7 @@ var bioData_ch = [
             "沉穩、表情不多",
             "自私、不信任社會",
             "經常在觀察別人",
-            "強欲＆很色",
+            "強欲、很色",
         ],
         outfits: [
             { name: "通常服", url: "profile/edd.png" },

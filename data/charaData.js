@@ -928,7 +928,7 @@ var bioData_en = [
         dislike: "Blade",
         rank: "X",
         mains: "N-zap, .52",
-        quirk: "Domestic Violence",        
+        quirk: "Toxic",        
         traits: [
             "Vicious, Intimidating, Hostile",
             "Very mean",
