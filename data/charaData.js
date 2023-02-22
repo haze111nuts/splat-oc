@@ -824,7 +824,7 @@ var bioData_en = [
             "Under construction..."
         ],
         trivia: [
-            "His actual name is Branden, Axel was the one who started calling him \"Blade\", which came from his online handle, and the rest of his friends started doing the same.",
+            "His name was acutally Branden. It was after Axel started calling him \"Blade\" which came from his online handle, the rest of his friends started doing the same, and he ended up officially changing his name to Blade",
             "He is a great cook, mostly excels in home style cooking.",
             "His braclet, ear cuff, hair ties and necklace are all gifts from his friend."
         ],
