@@ -1270,7 +1270,7 @@ var bioData_ch = [
         name: "斯柯特",
         gender: "男",
         like: "真相",
-        dislike: "花生",
+        dislike: "???",
         rank: "S",
         mains: "圓珠筆",
         quirk: "沒良心記者",
@@ -1285,12 +1285,13 @@ var bioData_ch = [
             { name: "Regular", url: "profile/scott.png" }
         ],
         bio: [
-            ""
+            "背景待補"
         ],
         personality: [
             "個性待補"
         ],
         trivia: [
+            "對花生過敏。",
             "喜歡喝%earlGreyTea/伯爵茶%"
         ],
         themes: [
@@ -1333,7 +1334,7 @@ var bioData_ch = [
         name: "佐薇爾（佐伊）",
         gender: "女",
         like: "貓",
-        dislike: "菸味",
+        dislike: "???",
         rank: "S",
         mains: "衝塗爆破槍",
         quirk: "囤物癖",
