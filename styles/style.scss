@@ -80,6 +80,19 @@ $chara: (
   #{$property}: $value;
 }
 
+@each $name,
+$data in $chara {
+  .#{$name} {
+    color: map.get($data, "color");
+    stroke: map.get($data, "color");
+  }
+
+  .#{$name}Photo {
+    background-color: map.get($data, "color");
+    background-position: photo-bg-pos(map.get($data, "photo-index"));
+  }
+}
+
 @font-face {
   font-family: RevnosaRegular;
   src: url(../assets/fonts/RevnosaRegular.ttf);
@@ -290,6 +303,15 @@ ul {
 #diagram li {
   position: absolute;
   display: block;
+}
+
+.charaPhoto {
+  width: $chara-photo-size;
+  height: $chara-photo-size;
+  background-image: url(../assets/img/profile/0thumbs.png);
+  background-repeat: no-repeat;
+  background-size: $chara-photo-size * math.div($raw-photo-sheet-width, $raw-chara-photo-size) auto;
+  margin: 8px auto 0px auto;
 }
 
 .charaPhotoBox {
@@ -1041,6 +1063,53 @@ $rel-arrow-width: 160px;
   opacity: 1;
 }
 
+
+.shimmer {
+  color: rgba(218, 196, 101);
+  -webkit-mask:linear-gradient(-60deg,#fff 30%,rgba(255, 255, 255, 0.333),#fff 70%) right/300% 100%;
+  background-repeat: no-repeat;
+  animation: shimmer 2.5s infinite;
+  padding: 0px 2px;
+}
+
+@keyframes shimmer {
+  100% {-webkit-mask-position:left}
+}
+
+// @keyframes glow {
+//   from {
+//     text-shadow: 0 0 2px #ffed85;
+//   }
+  
+//   to {
+//     text-shadow: 0 0 0px #ffed85;
+//   }
+// }
+
+
+.no-js #loader {
+  display: none;
+}
+
+.js #loader {
+  display: block;
+  position: absolute;
+  left: 100px;
+  top: 0;
+}
+
+.se-pre-con {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url(../assets/img/loading.gif) center no-repeat #000;
+  background-size: 100px 100px;
+}
+
+
 //============================//
 //===                      ===//
 //===   Custom Scrollbar   ===//
@@ -1069,67 +1138,11 @@ $rel-arrow-width: 160px;
   background-color: #a1a1a1;
 }
 
-.charaPhoto {
-  width: $chara-photo-size;
-  height: $chara-photo-size;
-  background-image: url(../assets/img/profile/0thumbs.png);
-  background-repeat: no-repeat;
-  background-size: $chara-photo-size * math.div($raw-photo-sheet-width, $raw-chara-photo-size) auto;
-  margin: 8px auto 0px auto;
-}
-
-
-@each $name,
-$data in $chara {
-  .#{$name} {
-    color: map.get($data, "color");
-    stroke: map.get($data, "color");
-  }
-
-  .#{$name}Photo {
-    background-color: map.get($data, "color");
-    background-position: photo-bg-pos(map.get($data, "photo-index"));
-  }
-}
-
-// @keyframes glow {
-//   from {
-//     text-shadow: 0 0 5px rgb(255, 255, 155), 0 0 15px rgb(255, 255, 255), 0 0 25px #e60073, 0 0 35px #e60073, 0 0 45px ;
-//   }
-//   to {
-//     text-shadow: 0 0 15px #fff, 0 0 25px #ff4da6, 0 0 35px #ff4da6, 0 0 45px #ff4da6, 0 0 55px ;
-//   }
-// }
-
-// #simon .nameSticker{
-//   -webkit-animation: glow 1s ease-in-out infinite alternate;
-//   -moz-animation: glow 1s ease-in-out infinite alternate;
-//   animation: glow 1s ease-in-out infinite alternate;    
-// }
-
-
-
-.no-js #loader {
-  display: none;
-}
-
-.js #loader {
-  display: block;
-  position: absolute;
-  left: 100px;
-  top: 0;
-}
-
-.se-pre-con {
-  position: fixed;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  height: 100%;
-  z-index: 9999;
-  background: url(../assets/img/loading.gif) center no-repeat #000;
-  background-size: 100px 100px;
-}
+//=========================//
+//===                   ===//
+//===   MEDIA SCREENS   ===//
+//===                   ===//
+//=========================//
 
 @media only screen and (max-width: 1200px) {
   .diagramWrapper {

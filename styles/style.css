@@ -1,5 +1,175 @@
 @charset "UTF-8";
 @import url(https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap);
+.blade {
+  color: rgb(127, 180, 57);
+  stroke: rgb(127, 180, 57);
+}
+
+.bladePhoto {
+  background-color: rgb(127, 180, 57);
+  background-position: 0px 0px;
+}
+
+.axel {
+  color: rgb(221, 140, 33);
+  stroke: rgb(221, 140, 33);
+}
+
+.axelPhoto {
+  background-color: rgb(221, 140, 33);
+  background-position: -120px 0px;
+}
+
+.xiu {
+  color: rgb(65, 173, 206);
+  stroke: rgb(65, 173, 206);
+}
+
+.xiuPhoto {
+  background-color: rgb(65, 173, 206);
+  background-position: -240px 0px;
+}
+
+.yoni {
+  color: rgb(224, 213, 54);
+  stroke: rgb(224, 213, 54);
+}
+
+.yoniPhoto {
+  background-color: rgb(224, 213, 54);
+  background-position: -360px 0px;
+}
+
+.hannah {
+  color: rgb(41, 81, 194);
+  stroke: rgb(41, 81, 194);
+}
+
+.hannahPhoto {
+  background-color: rgb(41, 81, 194);
+  background-position: 0px -240px;
+}
+
+.lance {
+  color: rgb(148, 77, 206);
+  stroke: rgb(148, 77, 206);
+}
+
+.lancePhoto {
+  background-color: rgb(148, 77, 206);
+  background-position: -120px -240px;
+}
+
+.estelle {
+  color: rgb(17, 148, 87);
+  stroke: rgb(17, 148, 87);
+}
+
+.estellePhoto {
+  background-color: rgb(17, 148, 87);
+  background-position: -240px -120px;
+}
+
+.edd {
+  color: rgb(211, 43, 43);
+  stroke: rgb(211, 43, 43);
+}
+
+.eddPhoto {
+  background-color: rgb(211, 43, 43);
+  background-position: -120px -120px;
+}
+
+.minerva {
+  color: rgb(167, 87, 83);
+  stroke: rgb(167, 87, 83);
+}
+
+.minervaPhoto {
+  background-color: rgb(167, 87, 83);
+  background-position: -360px -240px;
+}
+
+.viper {
+  color: rgb(216, 40, 163);
+  stroke: rgb(216, 40, 163);
+}
+
+.viperPhoto {
+  background-color: rgb(216, 40, 163);
+  background-position: -360px -120px;
+}
+
+.ryan {
+  color: rgb(92, 165, 155);
+  stroke: rgb(92, 165, 155);
+}
+
+.ryanPhoto {
+  background-color: rgb(92, 165, 155);
+  background-position: -240px -240px;
+}
+
+.vngelica {
+  color: rgb(190, 190, 190);
+  stroke: rgb(190, 190, 190);
+}
+
+.vngelicaPhoto {
+  background-color: rgb(190, 190, 190);
+  background-position: 0px -480px;
+}
+
+.wade {
+  color: rgb(97, 89, 129);
+  stroke: rgb(97, 89, 129);
+}
+
+.wadePhoto {
+  background-color: rgb(97, 89, 129);
+  background-position: 0px -120px;
+}
+
+.scott {
+  color: rgb(158, 152, 119);
+  stroke: rgb(158, 152, 119);
+}
+
+.scottPhoto {
+  background-color: rgb(158, 152, 119);
+  background-position: 0px -360px;
+}
+
+.susie {
+  color: rgb(243, 238, 189);
+  stroke: rgb(243, 238, 189);
+}
+
+.susiePhoto {
+  background-color: rgb(243, 238, 189);
+  background-position: -120px -360px;
+}
+
+.zoelle {
+  color: rgb(91, 108, 139);
+  stroke: rgb(91, 108, 139);
+}
+
+.zoellePhoto {
+  background-color: rgb(91, 108, 139);
+  background-position: -240px -360px;
+}
+
+.zarah {
+  color: rgb(106, 114, 39);
+  stroke: rgb(106, 114, 39);
+}
+
+.zarahPhoto {
+  background-color: rgb(106, 114, 39);
+  background-position: -360px -360px;
+}
+
 @font-face {
   font-family: RevnosaRegular;
   src: url(../assets/fonts/RevnosaRegular.ttf);
@@ -213,6 +383,15 @@ ul {
 #diagram li {
   position: absolute;
   display: block;
+}
+
+.charaPhoto {
+  width: 120px;
+  height: 120px;
+  background-image: url(../assets/img/profile/0thumbs.png);
+  background-repeat: no-repeat;
+  background-size: 480px auto;
+  margin: 8px auto 0px auto;
 }
 
 .charaPhotoBox {
@@ -991,6 +1170,41 @@ ul {
   opacity: 1;
 }
 
+.shimmer {
+  color: rgb(218, 196, 101);
+  -webkit-mask: linear-gradient(-60deg, #fff 30%, rgba(255, 255, 255, 0.333), #fff 70%) right/300% 100%;
+  background-repeat: no-repeat;
+  animation: shimmer 2.5s infinite;
+  padding: 0px 2px;
+}
+
+@keyframes shimmer {
+  100% {
+    -webkit-mask-position: left;
+  }
+}
+.no-js #loader {
+  display: none;
+}
+
+.js #loader {
+  display: block;
+  position: absolute;
+  left: 100px;
+  top: 0;
+}
+
+.se-pre-con {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url(../assets/img/loading.gif) center no-repeat #000;
+  background-size: 100px 100px;
+}
+
 ::-webkit-scrollbar {
   width: 18px;
 }
@@ -1012,207 +1226,6 @@ ul {
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: #a1a1a1;
-}
-
-.charaPhoto {
-  width: 120px;
-  height: 120px;
-  background-image: url(../assets/img/profile/0thumbs.png);
-  background-repeat: no-repeat;
-  background-size: 480px auto;
-  margin: 8px auto 0px auto;
-}
-
-.blade {
-  color: rgb(127, 180, 57);
-  stroke: rgb(127, 180, 57);
-}
-
-.bladePhoto {
-  background-color: rgb(127, 180, 57);
-  background-position: 0px 0px;
-}
-
-.axel {
-  color: rgb(221, 140, 33);
-  stroke: rgb(221, 140, 33);
-}
-
-.axelPhoto {
-  background-color: rgb(221, 140, 33);
-  background-position: -120px 0px;
-}
-
-.xiu {
-  color: rgb(65, 173, 206);
-  stroke: rgb(65, 173, 206);
-}
-
-.xiuPhoto {
-  background-color: rgb(65, 173, 206);
-  background-position: -240px 0px;
-}
-
-.yoni {
-  color: rgb(224, 213, 54);
-  stroke: rgb(224, 213, 54);
-}
-
-.yoniPhoto {
-  background-color: rgb(224, 213, 54);
-  background-position: -360px 0px;
-}
-
-.hannah {
-  color: rgb(41, 81, 194);
-  stroke: rgb(41, 81, 194);
-}
-
-.hannahPhoto {
-  background-color: rgb(41, 81, 194);
-  background-position: 0px -240px;
-}
-
-.lance {
-  color: rgb(148, 77, 206);
-  stroke: rgb(148, 77, 206);
-}
-
-.lancePhoto {
-  background-color: rgb(148, 77, 206);
-  background-position: -120px -240px;
-}
-
-.estelle {
-  color: rgb(17, 148, 87);
-  stroke: rgb(17, 148, 87);
-}
-
-.estellePhoto {
-  background-color: rgb(17, 148, 87);
-  background-position: -240px -120px;
-}
-
-.edd {
-  color: rgb(211, 43, 43);
-  stroke: rgb(211, 43, 43);
-}
-
-.eddPhoto {
-  background-color: rgb(211, 43, 43);
-  background-position: -120px -120px;
-}
-
-.minerva {
-  color: rgb(167, 87, 83);
-  stroke: rgb(167, 87, 83);
-}
-
-.minervaPhoto {
-  background-color: rgb(167, 87, 83);
-  background-position: -360px -240px;
-}
-
-.viper {
-  color: rgb(216, 40, 163);
-  stroke: rgb(216, 40, 163);
-}
-
-.viperPhoto {
-  background-color: rgb(216, 40, 163);
-  background-position: -360px -120px;
-}
-
-.ryan {
-  color: rgb(92, 165, 155);
-  stroke: rgb(92, 165, 155);
-}
-
-.ryanPhoto {
-  background-color: rgb(92, 165, 155);
-  background-position: -240px -240px;
-}
-
-.vngelica {
-  color: rgb(190, 190, 190);
-  stroke: rgb(190, 190, 190);
-}
-
-.vngelicaPhoto {
-  background-color: rgb(190, 190, 190);
-  background-position: 0px -480px;
-}
-
-.wade {
-  color: rgb(97, 89, 129);
-  stroke: rgb(97, 89, 129);
-}
-
-.wadePhoto {
-  background-color: rgb(97, 89, 129);
-  background-position: 0px -120px;
-}
-
-.scott {
-  color: rgb(158, 152, 119);
-  stroke: rgb(158, 152, 119);
-}
-
-.scottPhoto {
-  background-color: rgb(158, 152, 119);
-  background-position: 0px -360px;
-}
-
-.susie {
-  color: rgb(243, 238, 189);
-  stroke: rgb(243, 238, 189);
-}
-
-.susiePhoto {
-  background-color: rgb(243, 238, 189);
-  background-position: -120px -360px;
-}
-
-.zoelle {
-  color: rgb(91, 108, 139);
-  stroke: rgb(91, 108, 139);
-}
-
-.zoellePhoto {
-  background-color: rgb(91, 108, 139);
-  background-position: -240px -360px;
-}
-
-.zarah {
-  color: rgb(106, 114, 39);
-  stroke: rgb(106, 114, 39);
-}
-
-.zarahPhoto {
-  background-color: rgb(106, 114, 39);
-  background-position: -360px -360px;
-}
-
-.no-js #loader {
-  display: none;
-}
-
-.js #loader {
-  display: block;
-  position: absolute;
-  left: 100px;
-  top: 0;
-}
-
-.se-pre-con {
-  position: fixed;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  height: 100%;
-  z-index: 9999;
-  background: url(../assets/img/loading.gif) center no-repeat #000;
-  background-size: 100px 100px;
 }
 
 @media only screen and (max-width: 1200px) {
