@@ -233,7 +233,7 @@ const charaData = {
     },
     zarah: {
         jpname: "ザラ",
-        age: 23,
+        age: 25,
         color: "rgb(106, 114, 39)",
         button: "",
         photoPos: {
