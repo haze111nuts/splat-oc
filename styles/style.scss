@@ -1220,13 +1220,13 @@ $rel-arrow-width: 160px;
 
   .bioDetail {
     margin: 40px 0 40px auto;
-    padding: 30px 50px 100px 50px;
-    width: 75%;
+    padding: 30px 40px 100px 50px;
+    width: 80%;
   }
 
   .bioDetailInner {
     width: 100%;
-    height: 100%;
+    // height: 100%;
   }
 
   .refSheets {
@@ -1238,6 +1238,7 @@ $rel-arrow-width: 160px;
   .themes {
     left: 40px;
     top: 800px;
+    right: 0;
   }
 
   .barHide {

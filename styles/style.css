@@ -1174,7 +1174,7 @@ ul {
   color: rgb(218, 196, 101);
   -webkit-mask: linear-gradient(-60deg, #fff 30%, rgba(255, 255, 255, 0.333), #fff 70%) right/300% 100%;
   background-repeat: no-repeat;
-  animation: shimmer 2.5s infinite;
+  animation: shimmer 1s infinite;
   padding: 0px 2px;
 }
 
@@ -1287,12 +1287,11 @@ ul {
   }
   .bioDetail {
     margin: 40px 0 40px auto;
-    padding: 30px 50px 100px 50px;
-    width: 75%;
+    padding: 30px 40px 100px 50px;
+    width: 80%;
   }
   .bioDetailInner {
     width: 100%;
-    height: 100%;
   }
   .refSheets {
     margin-top: -110px;
@@ -1302,6 +1301,7 @@ ul {
   .themes {
     left: 40px;
     top: 800px;
+    right: 0;
   }
   .barHide {
     left: -210px;
