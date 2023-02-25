@@ -624,7 +624,7 @@ ul {
   text-align: center;
 }
 .bioBasic td li,
-.bioBasic .quirk li,
+.bioBasic .keyTrait li,
 .bioBasic .traits li {
   text-align: center;
   color: white;
