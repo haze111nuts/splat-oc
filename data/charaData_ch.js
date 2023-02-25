@@ -1030,7 +1030,7 @@ var bioData_ch = [
         like: "被稱讚",
         dislike: "幽閉空間",
         rank: "S+",
-        mains: "北齋",
+        mains: "北齋、刮水刀類",
         quirk: "叛逆",
         traits: [
             "乖戾、難配合、表情不多",
