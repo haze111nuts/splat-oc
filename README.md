@@ -1,18 +1,21 @@
 
-## 📝&nbsp; Project Notes
+## 🦑📝&nbsp; Project Notes
 - The link to the site is [https://haze111nuts.github.io/splat-oc/](https://haze111nuts.github.io/splat-oc/)
 - Remember to run sass to compile style for locall changes
 ```bash
 sass --watch styles/style.scss styles/style.css
 ```
-## 📅&nbsp; Current TODOs
+## 🦑📅&nbsp; Current TODOs
 
 - [x] Make creator/author panels
-- [ ] Improve language button style (it's the same color as the creator panel)
+- [ ] Improve language button style (it's hardly visible when being shown on top of creator panel)
 - [ ] Add a feature to swap view between relationship diagram and simple view?
 - [ ] Add meta data for Twitter 
+- [ ] Add fav icon
 - [ ] Refactor background image file names
-- [ ] Improve style code by refactoring px unit style code to rem/em
+- [ ] Change more px to rem/em in the css
+- [ ] Improve character bio page style for mobile (it's still not very desirable)
+- [ ] Add a link/pop-up for smallfry🐟
 - [ ] Add simple content warning?
 - [ ] Implement actual working light box
 - [ ] Make pop-up page for teams
@@ -22,7 +25,7 @@ sass --watch styles/style.scss styles/style.css
 - [ ] BUG - Page has weird extra width when shirnking window, it only shows up before window width hits 1200px.
 
 
-## 🗑️&nbsp; 2022 TODOs
+## 🦑🗑️&nbsp; 2022 TODOs
 
 - [x] Fix lang button blur issue
 - [x] Add extra div in profile page for name translation
@@ -49,7 +52,7 @@ sass --watch styles/style.scss styles/style.css
 - [x] Fix Youtube iframe console error
 
 
-## 🌎&nbsp; Resources
+## 🦑🌎&nbsp; Resources
 - [Codrops](https://tympanus.net/codrops/)
 - [SVGOMG](https://jakearchibald.github.io/svgomg/)
 - [スプラトゥーン3風背景（黒）](https://commons.nicovideo.jp/material/nc283273)
