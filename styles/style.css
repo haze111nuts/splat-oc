@@ -318,9 +318,15 @@ ul {
   color: rgb(127, 180, 57);
 }
 
+.nav {
+  min-height: 5rem;
+  background: #000;
+}
+
 .breather {
   min-height: 5rem;
-  background-color: #000;
+  background: #000 url(../assets/img/bg4.png) fixed;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .hide {
@@ -370,7 +376,7 @@ ul {
 .creators li {
   border-radius: 10px;
   width: 320px;
-  padding: 2rem 0;
+  padding: 2rem 0 2.6rem 0;
 }
 .creators li:nth-child(1) {
   background: rgb(130, 159, 180) url(../assets/img/bg3.png) repeat center center;
@@ -431,8 +437,9 @@ ul {
   border-width: 20px 20px 0 0;
   border-color: #ddd transparent transparent transparent;
   bottom: -15px;
-  left: 20%;
+  left: 15%;
   margin-left: -10px;
+  filter: drop-shadow(-3px 5px 2px rgba(0, 0, 0, 0.3));
 }
 .creators .name {
   margin-top: -15px;
@@ -1390,6 +1397,7 @@ ul {
   }
   .bioDetailInner {
     width: 100%;
+    height: 100%;
   }
   .refSheets {
     margin-top: -110px;
@@ -1454,7 +1462,8 @@ ul {
 }
 @media only screen and (max-width: 479px) {
   .creators .quote {
-    position: static;
+    position: relative;
+    right: 0;
     width: 65%;
     margin: auto;
   }

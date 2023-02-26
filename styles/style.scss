@@ -14,6 +14,9 @@ $raw-chara-photo-size: 150px;
 $raw-photo-sheet-width: 600px;
 $raw-photo-sheet-height: 750px;
 
+$haze-color: rgb(130 159 180);
+$woopa-color: rgb(219 145 176);
+
 @function photo-bg-pos($index) {
   $array-x-length: math.div($raw-photo-sheet-width, $raw-chara-photo-size);
   $array-y-length: math.div($raw-photo-sheet-height, $raw-chara-photo-size);
@@ -240,9 +243,15 @@ ul {
   }
 }
 
+.nav {
+  min-height: 5rem;
+  background: #000;
+}
+
 .breather {
   min-height: 5rem;
-  background-color: #000;
+  background: #000 url(../assets/img/bg4.png) fixed;
+  box-shadow: inset 0 0 10px rgb(0 0 0 / 0.5);
 }
 
 .hide {
@@ -283,18 +292,18 @@ ul {
   li{
     border-radius: 10px;
     width: 320px;
-    padding: 2rem 0;
+    padding: 2rem 0 2.6rem 0;
   }
   li:nth-child(1){
-    background: rgb(130 159 180) url(../assets/img/bg3.png) repeat center center;
+    background: $haze-color url(../assets/img/bg3.png) repeat center center;
     .name p:nth-child(1){
-      background: rgb(130 159 180) url(../assets/img/bg2.png) repeat center center;
+      background: $haze-color url(../assets/img/bg2.png) repeat center center;
     }
   }
   li:nth-child(2){
-    background: rgb(219 145 176) url(../assets/img/bg3.png) repeat bottom right;
+    background: $woopa-color url(../assets/img/bg3.png) repeat bottom right;
     .name p:nth-child(1){
-      background: rgb(219 145 176) url(../assets/img/bg2.png) repeat center center;
+      background: $woopa-color url(../assets/img/bg2.png) repeat center center;
     }
   }
   .hookCardInner{
@@ -305,6 +314,7 @@ ul {
   h3{
     color: #2b2b2b;
     margin-bottom: 1rem;
+    // font-family: 'Yusei Magic', sans-serif !important;
   }
   img{
     width: 130px;
@@ -337,8 +347,9 @@ ul {
     border-width: 20px 20px 0 0;
     border-color: #ddd transparent transparent transparent;
     bottom: -15px;
-    left: 20%;
+    left: 15%;
     margin-left: -10px;
+    filter: drop-shadow(-3px 5px 2px rgba(0, 0, 0, 0.3));
 }
   .name{
     margin-top: -15px;
@@ -1311,7 +1322,7 @@ $rel-arrow-width: 160px;
 
   .bioDetailInner {
     width: 100%;
-    // height: 100%;
+    height: 100%;
   }
 
   .refSheets {
@@ -1394,7 +1405,8 @@ $rel-arrow-width: 160px;
 @media only screen and (max-width: 479px) {
   .creators{
     .quote{
-      position: static;
+      position: relative;
+      right: 0;
       width: 65%;
       margin: auto;
     }   

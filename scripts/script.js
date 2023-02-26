@@ -40,18 +40,18 @@ var siteData = {
         creatorList: [
             {
                 name: "Haze",
-                title: "主要創作人",
+                title: "大家ㄉ親阿嬤",
                 quote: "一代男主我乖孫🥺",
                 imageUrl: "assets/img/creator_hz.png",
                 subNames: ["Hazy", "嘿紫", "嘿Z", "迷霧"],
                 infoList:[
-                    "負責每個角色的基本構思、設定、背景故事、美術、互動關係等等，也負責網站大部分的內容跟版型。三不五時就要被自己做出來的東西cringe一下。",
+                    "負責每個角色的基本構思、設定、背景故事、美術、互動關係等等，也負責網站大部分的內容跟版型。<br><br>",
                     "《漆彈資歷》<br>一代一發售就入坑（雖然只有玩到S）二代全X。愛用武器雜多。"
                 ]
             },
             {
                 name: "58",
-                title: "共構小夥伴",
+                title: "共構夥伴",
                 quote: "吃我ㄉ考察推啦！！",
                 imageUrl: "assets/img/creator_58.jpg",
                 subNames: ["Woopa", "烏波", "ㄨㄆ"],
