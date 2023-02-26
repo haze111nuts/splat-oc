@@ -618,7 +618,7 @@ function setUpCreatorInfo(siteInfo) {
         for (const subname of creator.subNames) {
             creatorSectionHTML += subname + " | ";
         }
-        creatorSectionHTML.slice(0,-3);
+        creatorSectionHTML = creatorSectionHTML.slice(0,-3);
         creatorSectionHTML += "</p>" +
                               "</div>" +
                               "<div class='info'>";
