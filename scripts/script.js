@@ -583,7 +583,7 @@ function parseToIcon(bioLines) {
         if (matches === null) {
             result.push(line);
         } else {
-            result.push(line.replaceAll(regExp, "<img class='itemIcon' src='assets/img/profile/items/" + matches[1] + ".png' title='" + matches[2] + "'>"));
+            result.push(line.replaceAll(regExp, "<img class='itemIcon' src='assets/img/item/" + matches[1] + ".png' title='" + matches[2] + "'>"));
         }
     }
     return result;

@@ -12,7 +12,7 @@ sass --watch styles/style.scss styles/style.css
 - [ ] (8p) Add a feature to swap view between relationship diagram and simple view?
 - [ ] (5p) Add meta data for Twitter 
 - [ ] (5p) Add fav icon
-- [ ] (1p) Refactor background image file names
+- [x] (1p) Refactor image file names
 - [ ] (3p) Change more px to rem/em in the css
 - [ ] (3p) Improve character bio page style for mobile (it's still not very desirable)
 - [ ] (8p) Add a link/pop-up for smallfry🐟

@@ -722,11 +722,11 @@ var bioData_ch = [
             "其實很乖、非常為他人著想"
         ],
         outfits: [
-            { name: "通常服", url: "profile/blade.png" },
-            { name: "3號", url: "profile/blade_agent3.png" },
-            // { name: "二代3號", url: "profile/blade_agent3_2.png" },
-            { name: "司令", url: "profile/blade_captain.png" },
-            { name: "蠻頹新裝", url: "profile/blade_sp3.png" }
+            { name: "通常服", url: "full-body/blade.png" },
+            { name: "3號", url: "full-body/blade_agent3.png" },
+            // { name: "二代3號", url: "full-body/blade_agent3_2.png" },
+            { name: "司令", url: "full-body/blade_captain.png" },
+            { name: "蠻頹新裝", url: "full-body/blade_sp3.png" }
         ],
         bio: [
             "年幼時是個乖寶寶，收到了母親所有的關注和疼愛，也因此導致姊姊一直看他不順眼。母親不在後，姊姊對他的厭惡愈發強烈，演變成了言語跟肢體暴力，長期的欺凌跟貶低導致了他孤僻內向的性格。",
@@ -750,7 +750,7 @@ var bioData_ch = [
             "最喜歡吃的東西是%fruitTart/水果塔%"
         ],
         refsheets: [
-            "assets/img/refsheets/blade_v2.png",
+            "assets/img/refsheet/blade_v2.png",
         ],
         themes: [
             { id: "JlcZmA7aEJc" },
@@ -773,8 +773,8 @@ var bioData_ch = [
             "很照顧自己的奶奶"
         ],
         outfits: [
-            { name: "通常服", url: "profile/axel.png" },
-            { name: "4號", url: "profile/axel_agent4.png" }
+            { name: "通常服", url: "full-body/axel.png" },
+            { name: "4號", url: "full-body/axel_agent4.png" }
         ],
         bio: [
             "從小是個脾氣暴躁常常鬧事的小流氓，有事沒事就會跟身邊的人吵起來然後演變成打架。長大後多少有跟一些不良少年混過，但因為不喜歡被使喚而經常起內鬨，最後就沒有持續往來。",
@@ -823,7 +823,7 @@ var bioData_ch = [
             "理智薄弱，容易失控"
         ],
         outfits: [
-            { name: "通常服", url: "profile/xiu.png" }
+            { name: "通常服", url: "full-body/xiu.png" }
         ],
         bio: [
             "曾經是很和平單純的書呆子男生，跟亞克認識了很久並交往了一段時間，兩人常常一起玩漆彈。後來在這段時期修遭到了來自同齡朋友的暗算與羞辱，並且演變成了霸凌，這件事情造成的打擊嚴重影響了修的心理狀態，導致他性情大變，學會了報復，甚至選擇用不擇手段的方式解決問題。雖然變得更大膽有自信，但也開始惹上不少麻煩事。也是在這個時候被亞克提出分手。",
@@ -867,8 +867,8 @@ var bioData_ch = [
             "非常會賺錢"
         ],
         outfits: [
-            { name: "通常服", url: "profile/yoni.png" },
-            { name: "墨鏡off", url: "profile/yoni_noShade.png" }
+            { name: "通常服", url: "full-body/yoni.png" },
+            { name: "墨鏡off", url: "full-body/yoni_noShade.png" }
         ],
         bio: [
             "蘭斯的弟弟，小時候因為跟小布住得很近所以常常跟他一起玩。從小就精力過剩而且常常坐不住，還特別喜歡爬樹或爬屋頂之類的，還好有蘭斯看著所以沒有給別人添太多麻煩。",
@@ -938,7 +938,7 @@ var bioData_ch = [
             "她在Royal Flush中代表的牌是Ace。"
         ],
         outfits: [
-            { name: "通常服", url: "profile/hannah.png" }
+            { name: "通常服", url: "full-body/hannah.png" }
         ],
         themes: [
             { id: "7F040GS3hXg" }
@@ -959,7 +959,7 @@ var bioData_ch = [
             "很擅長聽人訴苦"
         ],
         outfits: [
-            { name: "通常服", url: "profile/lance.png" }
+            { name: "通常服", url: "full-body/lance.png" }
         ],
         bio: [
             "尤尼的哥哥，從小就認識黑娜跟小布姊弟倆，當時兩家人住很近所以他很常和姊弟一起玩。他經常給年幼的小布各種支持和保護，還會幫忙協調跟緩解黑娜的問題行為，也可以看到他花不少時間在照顧調皮的小尤尼。有次在生日派對上接觸到跳跳糖立刻喜歡上那種爆開的口感，也是因為這樣才對爆裂槍產生興趣。",
@@ -1001,7 +1001,7 @@ var bioData_ch = [
             "意外的很會讀空氣"
         ],
         outfits: [
-            { name: "通常服", url: "profile/estelle.png" }
+            { name: "通常服", url: "full-body/estelle.png" }
         ],
         bio: [
             "亞克索爾的妹妹，從小就跟哥哥和奶奶一起長大，跟家人感情很好。",
@@ -1039,8 +1039,8 @@ var bioData_ch = [
             "強欲、很色",
         ],
         outfits: [
-            { name: "通常服", url: "profile/edd.png" },
-            { name: "8號", url: "profile/edd_agent8.png" }
+            { name: "通常服", url: "full-body/edd.png" },
+            { name: "8號", url: "full-body/edd_agent8.png" }
         ],
         bio: [
             "米奈瓦的雙胞胎弟弟，在地下成長，偶然撿到了來自陸上的禁書所以開始對陸上產生了嚮往，在那之後他的思想開始與章魚軍團的教育背道而馳。他堅信陸上的自由生活比地下的守序社會還要好得多，但抱持這種少數意見讓他變得跟大部分的章魚同事都處不來，也因為行為叛逆和思想異端所以常常被上級懲處，更是因為多次嘗試叛逃而受到特別嚴厲的看管，導致他的逃脫計畫變得更加不順利。這樣長期被困在地下無處可逃的狀況多少讓他變得有些精神崩潰。",
@@ -1085,7 +1085,7 @@ var bioData_ch = [
             "是個中規中矩的老實人"
         ],
         outfits: [
-            { name: "通常服", url: "profile/minerva.png" }
+            { name: "通常服", url: "full-body/minerva.png" }
         ],
         bio: [
             "從小就在地下出生成長，才剛到能拿槍的年紀就被強迫接受格外嚴苛的訓練，起先過得很不快樂，但是時間久了還是對軍團產生了深厚的感情，認為軍團給予自己很多支持，總是覺得自己應該要對此恩惠加以回報，所以她對上級很跟工作的事情都非常上心。因為成績很好而且戰鬥表現傑出，她後來一直以菁英章魚女戰士的身分為軍團效勞，可以說她是地下社會的榜樣。",
@@ -1125,7 +1125,7 @@ var bioData_ch = [
             "是個老是出包的白痴"
         ],
         outfits: [
-            { name: "通常服", url: "profile/viper.png" }
+            { name: "通常服", url: "full-body/viper.png" }
         ],
         bio: [
             "在地下出生，是個年紀小小就會自製無人機的小天才。現在是章魚軍團所屬工程師，是個成天窩在研究室的家裡蹲，有著非凡高超的機器人工程知識和技術，因此上級還給他一間他專用的研究室用來讓他研發機械兵器。他非常非常癡迷DJ芥末章魚將軍，自稱是「將軍的心腹」或「章魚軍團的天才工程師」之類的。",
@@ -1166,7 +1166,7 @@ var bioData_ch = [
             "天然呆…？"
         ],
         outfits: [
-            { name: "通常服", url: "profile/rj.png" }
+            { name: "通常服", url: "full-body/rj.png" }
         ],
         bio: [
             "在貧民窟出生的孤兒，那時困苦艱難的環境激發了他的生存本能，年紀小小就身手俐落又不留情、行為非常暴力野性，明明只是個小孩卻可以像鬼一樣出沒，甚至能悄悄繞到成人背後給對方致命一擊。一天被<span class='shimmer'>教父</span>相中後被他收養，正式變成了<span class='shimmer'>教父</span>的養子，在那時才被賦予了名字。之後在<span class='shimmer'>教父</span>的細心培養跟提拔之下，RJ變成了他非常得力的助手。",
@@ -1209,7 +1209,7 @@ var bioData_ch = [
             "來自深海"
         ],
         outfits: [
-            { name: "通常服", url: "profile/vngelica.png" }
+            { name: "通常服", url: "full-body/vngelica.png" }
         ],
         bio: [
             "在深海地區出生的孤兒，被深海一處教堂收留並扶養，從小就接受了深淵教信仰的洗禮，成為了教派「利維坦見證人」的教徒。",
@@ -1250,9 +1250,9 @@ var bioData_ch = [
             "傻瓜處男、很單純",
         ],
         outfits: [
-            { name: "通常服", url: "profile/wade.png" },
-            { name: "3號(破舊)", url: "profile/wade_agent3.png" },
-            { name: "3號", url: "profile/wade_agent3full.png" }
+            { name: "通常服", url: "full-body/wade.png" },
+            { name: "3號(破舊)", url: "full-body/wade_agent3.png" },
+            { name: "3號", url: "full-body/wade_agent3full.png" }
         ],
         bio: [
             "在蠻殼鎮長大，跟媽媽住在一起。因為性格內向所以不太常和別人社交，能說話的對象只有網路上一起打遊戲的幾個網友。他總是覺得自己運動神經很爛，因此一點都不想碰漆彈運動，這導致他變成一個只喜歡窩在家裡打電動虛度人生的宅宅。",
@@ -1294,7 +1294,7 @@ var bioData_ch = [
             "有必要的話會不擇手段"
         ],
         outfits: [
-            { name: "Regular", url: "profile/scott.png" }
+            { name: "Regular", url: "full-body/scott.png" }
         ],
         bio: [
             "名政治家的長子，蘇西的哥哥。在高領市長大，因為家境優渥所以從小就接受了良好的教育，是名校的學生，天資聰穎、成績優異、在學校的表現很是傑出。",
@@ -1337,7 +1337,7 @@ var bioData_ch = [
             "致力於環境和動物保護",
         ],
         outfits: [
-            { name: "Regular", url: "profile/susie.png" }
+            { name: "Regular", url: "full-body/susie.png" }
         ],
         bio: [
             "斯柯特的妹妹，和哥哥一樣在家境優渥的環境下長大，可以說是大小姐。因為父母給她很足夠的寵愛和適當的指導，她被培養成了一個樂觀又熱心的好女孩。",
@@ -1377,7 +1377,7 @@ var bioData_ch = [
             "喜歡收集各種歷史文物"
         ],
         outfits: [
-            { name: "Regular", url: "profile/zoelle.png" }
+            { name: "Regular", url: "full-body/zoelle.png" }
         ],
         bio: [
             "背景待補"
@@ -1407,7 +1407,7 @@ var bioData_ch = [
             "對社交已經麻木"
         ],
         outfits: [
-            { name: "Regular", url: "profile/zarah.png" }
+            { name: "Regular", url: "full-body/zarah.png" }
         ],
         bio: [
             "背景待補"

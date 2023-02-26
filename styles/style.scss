@@ -98,27 +98,27 @@ $data in $chara {
 
 @font-face {
   font-family: RevnosaRegular;
-  src: url(../assets/fonts/RevnosaRegular.ttf);
+  src: url(../assets/font/RevnosaRegular.ttf);
 }
 
 @font-face {
   font-family: TexasGrungeDemo;
-  src: url(../assets/fonts/TexasGrungeDemo.ttf);
+  src: url(../assets/font/TexasGrungeDemo.ttf);
 }
 
 @font-face {
   font-family: FairView;
-  src: url(../assets/fonts/FairView.ttf);
+  src: url(../assets/font/FairView.ttf);
 }
 
 @font-face {
   font-family: Haettenschweiler;
-  src: url(../assets/fonts/Haettenschweiler.ttf);
+  src: url(../assets/font/Haettenschweiler.ttf);
 }
 
 @font-face {
   font-family: NintendoExtLE003;
-  src: url(../assets/fonts/nintendo_ext_LE_003.ttf);
+  src: url(../assets/font/nintendo_ext_LE_003.ttf);
 }
 
 
@@ -213,7 +213,7 @@ ul {
   border: #f5f5f5 0px solid;
   background-color: rgb(44, 44, 44);
   margin: 0px auto;
-  background: url(../assets/img/bg1.png) fixed repeat;
+  background: url(../assets/img/bg_stripe.png) fixed repeat;
   // background-size: cover;
   color: #fff;
   text-align: center;
@@ -250,7 +250,7 @@ ul {
 
 .breather {
   min-height: 5rem;
-  background: #000 url(../assets/img/bg4.png) fixed;
+  background: #000 url(../assets/img/bg_labels.png) fixed;
   box-shadow: inset 0 0 10px rgb(0 0 0 / 0.5);
 }
 
@@ -286,7 +286,7 @@ ul {
   flex-direction: row;
   justify-content: center;
   gap: 1.5rem;
-  margin: 0px auto;
+  margin: 2.5rem auto;
   padding: 2rem 0;
 
   li{
@@ -295,15 +295,15 @@ ul {
     padding: 2rem 0 2.6rem 0;
   }
   li:nth-child(1){
-    background: $haze-color url(../assets/img/bg3.png) repeat center center;
+    background: $haze-color url(../assets/img/bg_inkydots.png) repeat center center;
     .name p:nth-child(1){
-      background: $haze-color url(../assets/img/bg2.png) repeat center center;
+      background: $haze-color url(../assets/img/bg_stripe_trans.png) repeat center center;
     }
   }
   li:nth-child(2){
-    background: $woopa-color url(../assets/img/bg3.png) repeat bottom right;
+    background: $woopa-color url(../assets/img/bg_inkydots.png) repeat bottom right;
     .name p:nth-child(1){
-      background: $woopa-color url(../assets/img/bg2.png) repeat center center;
+      background: $woopa-color url(../assets/img/bg_stripe_trans.png) repeat center center;
     }
   }
   .hookCardInner{
@@ -389,7 +389,7 @@ ul {
   position: relative;
   width: $diagram-width;
   height: $diagram-height;
-  margin: 4rem auto;
+  margin: 2.5rem auto;
 }
 
 #diagram {
@@ -413,7 +413,7 @@ ul {
 .charaPhoto {
   width: $chara-photo-size;
   height: $chara-photo-size;
-  background-image: url(../assets/img/profile/0thumbs.png);
+  background-image: url(../assets/img/portraits.png);
   background-repeat: no-repeat;
   background-size: $chara-photo-size * math.div($raw-photo-sheet-width, $raw-chara-photo-size) auto;
   margin: 8px auto 0 auto;
@@ -424,7 +424,7 @@ ul {
   border: 2px white solid;
   width: $chara-photo-box-width;
   height: $chara-photo-box-height;
-  background: url(../assets/img/bg1.png) fixed repeat;
+  background: url(../assets/img/bg_stripe.png) fixed repeat;
   -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3), inset 0px 0px 10px 3px rgba(0, 0, 0, 0.4);
   box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3), inset 0px 0px 10px 3px rgba(0, 0, 0, 0.4);
   opacity: 1;
@@ -842,7 +842,7 @@ ul {
 .themes div {
   width: 35px;
   height: 35px;
-  background: rgb(110, 110, 110) url(../assets/img/music-note.svg) no-repeat center center;
+  background: rgb(110, 110, 110) url(../assets/img/icon_music.svg) no-repeat center center;
   border-radius: 40px;
   margin-bottom: 10px;
   cursor: pointer;
@@ -1201,7 +1201,7 @@ $rel-arrow-width: 160px;
   width: 100%;
   height: 100%;
   z-index: 9999;
-  background: url(../assets/img/loading.gif) center no-repeat #000;
+  background: url(../assets/img/icon_loading.gif) center no-repeat #000;
   background-size: 100px 100px;
 }
 

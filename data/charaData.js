@@ -812,10 +812,10 @@ var bioData_en = [
             "Is actually a sweet boy"
         ],
         outfits: [
-            { name: "Regular", url: "profile/blade.png" },
-            { name: "Agent 3", url: "profile/blade_agent3.png" },
-            { name: "Captain", url: "profile/blade_captain.png" },
-            { name: "S3", url: "profile/blade_sp3.png" }
+            { name: "Regular", url: "full-body/blade.png" },
+            { name: "Agent 3", url: "full-body/blade_agent3.png" },
+            { name: "Captain", url: "full-body/blade_captain.png" },
+            { name: "S3", url: "full-body/blade_sp3.png" }
         ],
         bio: [
             "Under construction..."
@@ -829,7 +829,7 @@ var bioData_en = [
             "His braclet, ear cuff, hair ties and necklace are all gifts from his friend."
         ],
         refsheets: [
-            "assets/img/refsheets/blade_v2.png",
+            "assets/img/refsheet/blade_v2.png",
         ]
     },
     {
@@ -848,8 +848,8 @@ var bioData_en = [
             "Cares about his grandma"
         ],
         outfits: [
-            { name: "Regular", url: "profile/axel.png" },
-            { name: "Agent 4", url: "profile/axel_agent4.png" }
+            { name: "Regular", url: "full-body/axel.png" },
+            { name: "Agent 4", url: "full-body/axel_agent4.png" }
         ],
         bio: [
             "Under construction..."
@@ -876,7 +876,7 @@ var bioData_en = [
             "Is a train wreck inside"
         ],
         outfits: [
-            { name: "Regular", url: "profile/xiu.png" }
+            { name: "Regular", url: "full-body/xiu.png" }
         ],
         bio: [
             "Under construction..."
@@ -908,8 +908,8 @@ var bioData_en = [
             "Can make lots of money"
         ],
         outfits: [
-            { name: "Regular", url: "profile/yoni.png" },
-            { name: "No Shade", url: "profile/yoni_noShade.png" }
+            { name: "Regular", url: "full-body/yoni.png" },
+            { name: "No Shade", url: "full-body/yoni_noShade.png" }
         ],
         bio: [
             "Under construction..."
@@ -936,7 +936,7 @@ var bioData_en = [
             "Is actually a great leader"
         ],
         outfits: [
-            { name: "Regular", url: "profile/hannah.png" }
+            { name: "Regular", url: "full-body/hannah.png" }
         ],
         bio: [
             "Under construction..."
@@ -959,7 +959,7 @@ var bioData_en = [
             "Is a good listener"
         ],
         outfits: [
-            { name: "Regular", url: "profile/lance.png" }
+            { name: "Regular", url: "full-body/lance.png" }
         ],
         bio: [
             "Under construction..."
@@ -983,7 +983,7 @@ var bioData_en = [
 
         ],
         outfits: [
-            { name: "Regular", url: "profile/estelle.png" }
+            { name: "Regular", url: "full-body/estelle.png" }
         ],
         bio: [
             "Under construction..."
@@ -1006,8 +1006,8 @@ var bioData_en = [
             "Horny af"
         ],
         outfits: [
-            { name: "Regular", url: "profile/edd.png" },
-            { name: "Agent 8", url: "profile/edd_agent8.png" }
+            { name: "Regular", url: "full-body/edd.png" },
+            { name: "Agent 8", url: "full-body/edd_agent8.png" }
         ],
         bio: [
             "Under construction..."
@@ -1030,7 +1030,7 @@ var bioData_en = [
             "Just a law-abiding normal girl"
         ],
         outfits: [
-            { name: "Regular", url: "profile/minerva.png" }
+            { name: "Regular", url: "full-body/minerva.png" }
         ],
         bio: [
             "Under construction..."
@@ -1053,7 +1053,7 @@ var bioData_en = [
             "Always fails miserably"
         ],
         outfits: [
-            { name: "Regular", url: "profile/viper.png" }
+            { name: "Regular", url: "full-body/viper.png" }
         ],
         bio: [
             "Under construction..."
@@ -1076,7 +1076,7 @@ var bioData_en = [
             "Doesn't know how to socialize"
         ],
         outfits: [
-            { name: "Regular", url: "profile/rj.png" }
+            { name: "Regular", url: "full-body/rj.png" }
         ],
         bio: [
             "Under construction..."
@@ -1098,7 +1098,7 @@ var bioData_en = [
             "From the Deep"
         ],
         outfits: [
-            { name: "Regular", url: "profile/vngelica.png" }
+            { name: "Regular", url: "full-body/vngelica.png" }
         ],
         bio: [
             "Under construction..."
@@ -1127,9 +1127,9 @@ var bioData_en = [
             "Dumb virgin"
         ],
         outfits: [
-            { name: "Regular", url: "profile/wade.png" },
-            { name: "Agent 3", url: "profile/wade_agent3.png" },
-            { name: "Agent 3+", url: "profile/wade_agent3full.png" }
+            { name: "Regular", url: "full-body/wade.png" },
+            { name: "Agent 3", url: "full-body/wade_agent3.png" },
+            { name: "Agent 3+", url: "full-body/wade_agent3full.png" }
         ],
         bio: [
             "Under construction..."
@@ -1158,7 +1158,7 @@ var bioData_en = [
             "--"
         ],
         outfits: [
-            { name: "Regular", url: "profile/scott.png" }
+            { name: "Regular", url: "full-body/scott.png" }
         ],
         bio: [
             "Under construction..."
@@ -1187,7 +1187,7 @@ var bioData_en = [
             "--"
         ],
         outfits: [
-            { name: "Regular", url: "profile/susie.png" }
+            { name: "Regular", url: "full-body/susie.png" }
         ],
         bio: [
             "Under construction..."
@@ -1216,7 +1216,7 @@ var bioData_en = [
             "--"
         ],
         outfits: [
-            { name: "Regular", url: "profile/zoelle.png" }
+            { name: "Regular", url: "full-body/zoelle.png" }
         ],
         bio: [
             "Under construction..."
@@ -1245,7 +1245,7 @@ var bioData_en = [
             "--"
         ],
         outfits: [
-            { name: "Regular", url: "profile/zarah.png" }
+            { name: "Regular", url: "full-body/zarah.png" }
         ],
         bio: [
             "Under construction..."
