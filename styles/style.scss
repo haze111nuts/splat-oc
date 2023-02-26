@@ -214,38 +214,35 @@ ul {
   // background-size: cover;
   color: #fff;
   text-align: center;
-  padding: 100px 0px;
+  padding: 6.3rem 0;
 
   h1 {
     font-family: "-apple-system", BlinkMacSystemFont, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "Noto Sans Japanese", "ヒラギノ角ゴ Pro W3", "メイリオ", "Hiragino Kaku Gothic ProN", "MS PGothic", Osaka, "sans-serif";
-    font-size: 34px;
-    margin-bottom: 8px;
+    font-size: 2.1rem;
+    margin-bottom: 0.45rem;
 
     .title {
-      padding: 0px 15px;
+      padding: 0 0.5em;
     }
   }
 
   h2 {
-    font-size: 14px;
-    line-height: 1.5em;
+    font-size: 0.88rem;
     font-weight: 500;
-    margin-top: 0px;
+    line-height: 1.4rem;
     color: #aaa;
   }
 
   .beta {
-    font-size: 15px;
-    padding: 0px 5px;
+    font-size: 1rem;
+    padding: 0 0.33rem;
     color: map-deep-get($chara, "blade", "color");
   }
 }
 
 .breather {
-  width: 100%;
-  height: 80px;
+  min-height: 5rem;
   background-color: #000;
-  color: #fff;
 }
 
 .hide {
@@ -264,15 +261,112 @@ ul {
 }
 
 .nsButton{
-  padding-left: 3px;
+  padding-left: 0.3rem;
   font-family: NintendoExtLE003 ;
-  font-size: 20px;
+  font-size: 1.28rem;
 }
 
 .upSideDown{
   @include prefix(transform, rotate(180deg), webkit moz ms);
   display: inline-block;
 }
+
+.creators{
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 0px auto;
+  padding: 2rem 0;
+
+  li{
+    border-radius: 10px;
+    width: 320px;
+    padding: 2rem 0;
+  }
+  li:nth-child(1){
+    background: rgb(130 159 180) url(../assets/img/bg3.png) repeat center center;
+    .name p:nth-child(1){
+      background: rgb(130 159 180) url(../assets/img/bg2.png) repeat center center;
+    }
+  }
+  li:nth-child(2){
+    background: rgb(219 145 176) url(../assets/img/bg3.png) repeat bottom right;
+    .name p:nth-child(1){
+      background: rgb(219 145 176) url(../assets/img/bg2.png) repeat center center;
+    }
+  }
+  .hookCardInner{
+    background-color: dimgrey;
+    padding: 1.9rem;
+    position: relative;
+  }
+  h3{
+    color: #2b2b2b;
+    margin-bottom: 1rem;
+  }
+  img{
+    width: 130px;
+    height: 130px;
+    border-radius: 130px;
+    transition: 0.4s ease;
+  }
+  img:hover{
+    @include prefix(transform, scale(1.1), webkit moz ms);
+  }
+  .quote{
+    z-index: 8;
+    font-weight: bold;
+    position: absolute;
+    right: -35px;
+    background: #ddd;
+    color: #2b2b2b;
+    padding: 0.5em 0.8em;
+    border-radius: 3px;
+    @include prefix(transform, rotate(5deg), webkit moz ms);
+    @include prefix(box-shadow, -2px 2px 5px  rgba(0 0 0/0.3), webkit);
+  }
+  .quote:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    z-index: 1;
+    border-style: solid;
+    border-width: 20px 20px 0 0;
+    border-color: #ddd transparent transparent transparent;
+    bottom: -15px;
+    left: 20%;
+    margin-left: -10px;
+}
+  .name{
+    margin-top: -15px;
+    position: relative;
+    z-index: 1;
+    p:nth-child(1) {
+      margin: 0 auto;
+      width: 9rem;
+      font-size: 1.5rem;
+      border-radius: 3px;
+      box-shadow: 2px 2px 5px rgba(0 0 0/0.2);
+      font-weight: bold;
+      text-shadow: 2px 2px 3px rgba(0 0 0/0.3);
+    }
+    p:nth-child(2) {
+      margin-top: 0.2em;
+      font-size: 0.9rem;
+    }
+  }
+  .info{
+    font-size: 0.95rem;
+    p{
+      padding-top: 1em;
+    }
+  }
+
+}
+
 
 //=========================//
 //===                   ===//
@@ -284,7 +378,7 @@ ul {
   position: relative;
   width: $diagram-width;
   height: $diagram-height;
-  margin: 50px auto 50px auto;
+  margin: 4rem auto;
 }
 
 #diagram {
@@ -296,8 +390,8 @@ ul {
 
 #diagram ul {
   display: block;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
 }
 
 #diagram li {
@@ -311,7 +405,7 @@ ul {
   background-image: url(../assets/img/profile/0thumbs.png);
   background-repeat: no-repeat;
   background-size: $chara-photo-size * math.div($raw-photo-sheet-width, $raw-chara-photo-size) auto;
-  margin: 8px auto 0px auto;
+  margin: 8px auto 0 auto;
 }
 
 .charaPhotoBox {
@@ -390,15 +484,6 @@ ul {
     stroke-dashoffset: 20;
   }
 }
-
-// @keyframes dash-reverse {
-//   from {
-//     stroke-dashoffset: 19;
-//   }
-//   to {
-//     stroke-dashoffset: 0;
-//   }
-// }
 
 .relation {
   text-align: center;
@@ -492,7 +577,7 @@ ul {
   z-index: 10;
 }
 
-.md-show.md-window~.container {
+.md-show.md-window~.blurContainer {
   @include prefix(filter, blur(5px), webkit moz);
 }
 
@@ -1252,6 +1337,17 @@ $rel-arrow-width: 160px;
 }
 
 @media only screen and (max-width: 719px) {
+  .creators{
+    flex-direction: column;
+    justify-content: center;
+    li{
+      margin: auto;
+      width: 90%;
+    }
+    .quote{
+      right: 10%;
+    }    
+  }
   .bioArt {
     >img {
       left: 210px;
@@ -1296,6 +1392,16 @@ $rel-arrow-width: 160px;
 }
 
 @media only screen and (max-width: 479px) {
+  .creators{
+    .quote{
+      position: static;
+      width: 65%;
+      margin: auto;
+    }   
+    .quote:after {
+      left: 83%;
+  } 
+  }  
   .header {
     h1 {
       font-size: 25px;

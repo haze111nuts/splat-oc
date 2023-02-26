@@ -7,12 +7,60 @@ var siteData = {
         title: "Hazy's SplatVerse",
         description: ["Hazy's Splatoon OC bio/lore dump", "⚠️Currently under construction","English translation still in progress so plz come back later :s"],
         bioDetailTabs: ["Bio", "Personality", "Trivia"],
+        creatorList: [
+            {
+                name: "Haze",
+                title: "Creator",
+                quote: "i stan ponytail boi",
+                imageUrl: "assets/img/creator_hz.png",
+                subNames: ["Hazy", "Hazel", "HZ"],
+                infoList:[
+                    "Hi I am one who designed the art/concepts/story for these OCs, I also made this website.",
+                    "I'm very shy and I cringe at myself everyday, so it means alot to me that someone is actually looking at this page🥺. Thanks so much for visiting!!!"
+                ]
+            },
+            {
+                name: "58",
+                title: "Co-Creator",
+                quote: "----------",
+                imageUrl: "assets/img/creator_58.jpg",
+                subNames: ["Woopa", "Xolot"],
+                infoList:[
+                    "",
+                    ""
+                ]
+            }
+        ],
         buttonTrivia: "associated Nintendo Switch button is"
     },
     ch: {
         title: "Hazy's SplatVerse",
         description: ["Hazy家漆彈角色懶人總整理+全員介紹頁面","⚠️請注意一些地名跟偶像團體名會採用我流翻譯", "定期更新素材跟設定中，時常微調"],
         bioDetailTabs: ["背景", "性格", "補充"],
+        creatorList: [
+            {
+                name: "Haze",
+                title: "主要創作人",
+                quote: "一代男主我乖孫🥺",
+                imageUrl: "assets/img/creator_hz.png",
+                subNames: ["Hazy", "嘿紫", "嘿Z", "迷霧"],
+                infoList:[
+                    "負責每個角色的基本構思、設定、背景故事、美術、互動關係等等，也負責網站大部分的內容跟版型。三不五時就要被自己做出來的東西cringe一下。",
+                    "《漆彈資歷》<br>一代一發售就入坑（雖然只有玩到S）二代全X。愛用武器雜多。"
+                ]
+            },
+            {
+                name: "58",
+                title: "共構小夥伴",
+                quote: "吃我ㄉ考察推啦！！",
+                imageUrl: "assets/img/creator_58.jpg",
+                subNames: ["Woopa", "烏波", "ㄨㄆ"],
+                infoList:[
+                    "負責角色各種設定的優化、延伸、補完等等。也會幫忙填寫網站部分的文稿。負責部分佔比較多的角色包含艾德、尤尼、偉德、毒牙。	",
+                    "《漆彈資歷》<br>一代時期只有看Haze玩比較多，二代全X。MAIN水栓。"
+                ]
+            }
+        ],
         buttonTrivia: "代表按鈕是"
     }
 }
@@ -555,6 +603,35 @@ function setUpSiteInfo(siteInfo) {
     }
 }
 
+function setUpCreatorInfo(siteInfo) {
+    var creatorSectionHTML = "";
+    for (const creator of siteInfo.creatorList) {
+        creatorSectionHTML += "<li>" +
+                              "<div class='hookCardInner'>";
+
+        creatorSectionHTML += "<h3>【" + creator.title + "】</h3>";
+        creatorSectionHTML += "<div class='quote'>" + creator.quote + "</div>";
+        creatorSectionHTML += "<img src='" + creator.imageUrl + "'>";
+        creatorSectionHTML += "<div class='name'>" + 
+                              "<p>" + creator.name +"</p>" +
+                              "<p>";
+        for (const subname of creator.subNames) {
+            creatorSectionHTML += subname + " | ";
+        }
+        creatorSectionHTML.slice(0,-3);
+        creatorSectionHTML += "</p>" +
+                              "</div>" +
+                              "<div class='info'>";
+        for (const info of creator.infoList) {
+            creatorSectionHTML += "<p>" + info + "</p>";
+        }
+        creatorSectionHTML += "</div>" + 
+                              "</div>" + 
+                              "</li>";
+    }
+    $(".creators").html(creatorSectionHTML);
+}
+
 function setupLang() {
     $(".langNav").removeClass("focusOn" + currentLang);
     $(".langNav").addClass("focusOn" + nextLang);
@@ -572,6 +649,7 @@ function setupStuff(relationshipData, bioData, siteInfo) {
     setUpRelationshipHoverEvent(relationshipData);
     setUpCharaHoverEvent(relationshipData);
     arrangeDiagramContent();
+    setUpCreatorInfo(siteInfo);
 }
 
 //======================================//

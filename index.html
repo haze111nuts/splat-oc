@@ -27,12 +27,6 @@
 	<script type="text/javascript" src="data/charaData_ch.js"></script>
 	<script type="text/javascript" src="scripts/script.js"></script>
 	<script type="text/javascript" src="scripts/classie.js"></script>
-	<script type='text/javascript' src='scripts/loadImg.js'></script>
-	<script type='text/javascript'>
-		$(function () {
-			$('img').imgPreload();
-		})
-	</script>
 
 	<link rel="stylesheet" href="styles/lightbox.css">
 	<link rel="stylesheet" href="styles/style.css" />
@@ -51,7 +45,7 @@
 		</g>
 	</svg>
 	<!--================-->
-	<!--   Bio pop-up   -->
+	<!--   Bio Pop-up   -->
 	<!--================-->
 	<div class="md-modal md-window" id="modal-chara">
 		<div class="md-content charaBio">
@@ -88,7 +82,7 @@
 		</div>
 	</div>
 	<!--=========================-->
-	<!--   Relationship pop-up   -->
+	<!--   Relationship Pop-up   -->
 	<!--=========================-->
 	<div class="md-modal md-window" id="modal-relationship">
 		<div class="md-content relationshipPage">
@@ -135,12 +129,14 @@
 		<div id="langCH" class="langSwitch noSelect">中文</div>
 		<div id="langEN" class="langSwitch noSelect">ENG</div>
 	</div>
-	<div class="container">
+	<div class="blurContainer">
+		<!--== Header ==-->
 		<div class="header">
 			<h1>{<span class="title"><span class="beta">BETA</span></span>}</h1>
 			<h2></h2>
 		</div>
 		<div class="breather"></div>
+		<!--== Diagram ==-->
 		<div class="diagramWrapper">
 			<svg id="diagramSVG" version="1.1" xml:space="preserve"
 				style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.5;stroke:#fff;fill:none">
@@ -301,6 +297,9 @@
 			</svg>
 			<div id="diagram"></div>
 		</div>
+		<div class="breather"></div>
+		<!--== Creators ==-->
+		<ul class="creators"></ul>
 		<div class="breather"></div>
 	</div>
 
