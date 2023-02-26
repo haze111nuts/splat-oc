@@ -1,28 +1,28 @@
 
 ## 🦑📝&nbsp; Project Notes
 - The link to the site is [https://haze111nuts.github.io/splat-oc/](https://haze111nuts.github.io/splat-oc/)
-- Remember to run sass to compile style for locall changes
+- Remember to run sass to compile style for any local change
 ```bash
 sass --watch styles/style.scss styles/style.css
 ```
 ## 🦑📅&nbsp; Current TODOs
 
-- [x] Make creator/author panels
-- [ ] Improve language button style (it's hardly visible when being shown on top of creator panel)
-- [ ] Add a feature to swap view between relationship diagram and simple view?
-- [ ] Add meta data for Twitter 
-- [ ] Add fav icon
-- [ ] Refactor background image file names
-- [ ] Change more px to rem/em in the css
-- [ ] Improve character bio page style for mobile (it's still not very desirable)
-- [ ] Add a link/pop-up for smallfry🐟
-- [ ] Add simple content warning?
-- [ ] Implement actual working light box
-- [ ] Make pop-up page for teams
+- [x] (5p) Make creator/author panels
+- [ ] (3p) Improve language button style (it's hardly visible when being shown on top of creator panel)
+- [ ] (8p) Add a feature to swap view between relationship diagram and simple view?
+- [ ] (5p) Add meta data for Twitter 
+- [ ] (5p) Add fav icon
+- [ ] (1p) Refactor background image file names
+- [ ] (3p) Change more px to rem/em in the css
+- [ ] (3p) Improve character bio page style for mobile (it's still not very desirable)
+- [ ] (8p) Add a link/pop-up for smallfry🐟
+- [ ] (5p) Add simple content warning?
+- [ ] (8p) Implement actual working light box
+- [ ] (13p) Make pop-up page for teams
   - [ ] BBB
   - [ ] RF
-- [ ] May need actual image loading functionality? (the current one is commented out for not working)
-- [ ] BUG - Page has weird extra width when shirnking window, it only shows up before window width hits 1200px.
+- [ ] (5p) May need actual image loading functionality? (the current one is commented out for not working)
+- [ ] (5p) BUG - Page has weird extra width when shirnking window, it only shows up before window width hits 1200px.
 
 
 ## 🦑🗑️&nbsp; 2022 TODOs
