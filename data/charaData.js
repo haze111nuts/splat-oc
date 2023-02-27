@@ -58,7 +58,7 @@ const charaData = {
     blade: {
         jpname: "ブレイド",
         age: 16,
-        color: "rgb(127, 180, 57)",
+        color: "rgb(127 180 57)",
         button: "",
         photoPos: {
             x: 620,
@@ -69,7 +69,7 @@ const charaData = {
     axel: {
         jpname: "アクセル",
         age: 15,
-        color: "rgb(221, 140, 33)",
+        color: "rgb(221 140 33)",
         button: "",
         photoPos: {
             x: 890,
@@ -80,7 +80,7 @@ const charaData = {
     xiu: {
         jpname: "シュウ",
         age: 18,
-        color: "rgb(65, 173, 206)",
+        color: "rgb(65 173 206)",
         button: "",
         photoPos: {
             x: 890,
@@ -91,7 +91,7 @@ const charaData = {
     yoni: {
         jpname: "ヨニ",
         age: 16,
-        color: "rgb(224, 213, 54)",
+        color: "rgb(224 213 54)",
         button: "",
         photoPos: {
             x: 620,
@@ -102,7 +102,7 @@ const charaData = {
     hannah: {
         jpname: "ハンナ",
         age: 19,
-        color: "rgb(41, 81, 194)",
+        color: "rgb(41 81 194)",
         button: "",
         photoPos: {
             x: 235,
@@ -113,7 +113,7 @@ const charaData = {
     lance: {
         jpname: "ランス",
         age: 20,
-        color: "rgb(148, 77, 206)",
+        color: "rgb(148 77 206)",
         button: "",
         photoPos: {
             x: 365,
@@ -124,7 +124,7 @@ const charaData = {
     estelle: {
         jpname: "エステル（エリ）",
         age: 14,
-        color: "rgb(17, 148, 87)",
+        color: "rgb(17 148 87)",
         button: "",
         photoPos: {
             x: 1140,
@@ -135,7 +135,7 @@ const charaData = {
     edd: {
         jpname: "エッド",
         age: 18,
-        color: "rgb(211, 43, 43)",
+        color: "rgb(211 43 43)",
         button: "",
         photoPos: {
             x: 620,
@@ -146,7 +146,7 @@ const charaData = {
     minerva: {
         jpname: "ミネルヴァ",
         age: 18,
-        color: "rgb(167, 87, 83)",
+        color: "rgb(167 87 83)",
         button: "",
         photoPos: {
             x: 365,
@@ -157,7 +157,7 @@ const charaData = {
     viper: {
         jpname: "毒牙",
         age: 18,
-        color: "rgb(216, 40, 163)",
+        color: "rgb(216 40 163)",
         button: "",
         photoPos: {
             x: 1167,
@@ -168,7 +168,7 @@ const charaData = {
     ryan: {
         jpname: "",
         age: 20,
-        color: "rgb(92, 165, 155)",
+        color: "rgb(92 165 155)",
         button: "",
         photoPos: {
             x: 100,
@@ -179,7 +179,7 @@ const charaData = {
     vngelica: {
         jpname: "アンジェリカ",
         age: 19,
-        color: "rgb(190, 190, 190)",
+        color: "rgb(190 190 190)",
         button: "",
         photoPos: {
             x: 100,
@@ -190,7 +190,7 @@ const charaData = {
     wade: {
         jpname: "ウェイド",
         age: 17,
-        color: "rgb(97, 89, 129)",
+        color: "rgb(97 89 129)",
         button: "",
         photoPos: {
             x: 890,
@@ -201,7 +201,7 @@ const charaData = {
     scott: {
         jpname: "スコット",
         age: 19,
-        color: "rgb(158, 152, 119)",
+        color: "rgb(158 152 119)",
         button: "",
         photoPos: {
             x: 1025,
@@ -212,7 +212,7 @@ const charaData = {
     susie: {
         jpname: "スージー",
         age: 10,
-        color: "rgb(243, 238, 189)",
+        color: "rgb(243 238 189)",
         button: "",
         photoPos: {
             x: 735,
@@ -223,7 +223,7 @@ const charaData = {
     zoelle: {
         jpname: "ゾエル（ゾーイ）",
         age: 10,
-        color: "rgb(91, 108, 139)",
+        color: "rgb(91 108 139)",
         button: "",
         photoPos: {
             x: 442,
@@ -234,7 +234,7 @@ const charaData = {
     zarah: {
         jpname: "ザラ",
         age: 25,
-        color: "rgb(106, 114, 39)",
+        color: "rgb(106 114 39)",
         button: "",
         photoPos: {
             x: 148,

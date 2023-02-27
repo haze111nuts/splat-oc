@@ -396,7 +396,7 @@ ul {
   position: relative;
 }
 .creators h3 {
-  color: #2b2b2b;
+  color: rgb(30, 30, 30);
   margin-bottom: 1rem;
 }
 .creators img {
@@ -417,7 +417,7 @@ ul {
   position: absolute;
   right: -35px;
   background: #ddd;
-  color: #2b2b2b;
+  color: rgb(30, 30, 30);
   padding: 0.5em 0.8em;
   border-radius: 3px;
   -webkit-transform: rotate(5deg);
@@ -451,9 +451,10 @@ ul {
   width: 9rem;
   font-size: 1.5rem;
   border-radius: 3px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
   font-weight: bold;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 .creators .name p:nth-child(2) {
   margin-top: 0.2em;
@@ -508,7 +509,9 @@ ul {
   -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3), inset 0px 0px 10px 3px rgba(0, 0, 0, 0.4);
   box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3), inset 0px 0px 10px 3px rgba(0, 0, 0, 0.4);
   opacity: 1;
-  transition: 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 .nameSticker {
@@ -578,7 +581,9 @@ ul {
   border: 0px solid lightgrey;
   font-size: 0.75em;
   cursor: pointer;
-  transition: 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  transition: all 0.4s ease;
   -webkit-transform: translateX(-50%) translateY(-50%);
   -moz-transform: translateX(-50%) translateY(-50%);
   -ms-transform: translateX(-50%) translateY(-50%);
@@ -593,7 +598,9 @@ ul {
   border: 0px solid #000;
   padding: 2px 0 2px 0;
   line-height: 100%;
-  transition: 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  transition: all 0.4s ease;
   text-shadow: -1px 1px 0 black, 1px 1px 0 black, 1px -1px 0 black, -1px -1px 0 black, -2px 2px 0 black, 2px 2px 0 black, 2px -2px 0 black, -2px -2px 0 black;
 }
 
@@ -784,7 +791,9 @@ ul {
   background-image: linear-gradient(137deg, #2b2b2b 14.29%, #000000 14.29%, #000000 50%, #2b2b2b 50%, #2b2b2b 64.29%, #000000 64.29%, #000000 100%);
   background-size: 51px 47px;
   filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.5));
-  transition: 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 .outfitSelect li:hover,
 .outfitSelect .focusedOutfit {
@@ -1381,6 +1390,8 @@ ul {
     margin: 0px 50px 0 auto;
   }
   .outfitSelect li {
+    -webkit-filter: drop-shadow(5px 4px 0px rgb(150, 150, 150));
+    -moz-filter: drop-shadow(5px 4px 0px rgb(150, 150, 150));
     filter: drop-shadow(5px 4px 0px rgb(150, 150, 150));
   }
   .bioDetail {

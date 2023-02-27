@@ -39,39 +39,39 @@ $woopa-color: rgb(219 145 176);
 }
 
 $chara: (
-  blade: (color: rgb(127, 180, 57),
+  blade: (color: rgb(127 180 57),
     photo-index: 0),
-  axel: (color: rgb(221, 140, 33),
+  axel: (color: rgb(221 140 33),
     photo-index: 1),
-  xiu: (color: rgb(65, 173, 206),
+  xiu: (color: rgb(65 173 206),
     photo-index: 2),
-  yoni: (color: rgb(224, 213, 54),
+  yoni: (color: rgb(224 213 54),
     photo-index: 3),
-  hannah: (color: rgb(41, 81, 194),
+  hannah: (color: rgb(41 81 194),
     photo-index: 8),
-  lance: (color: rgb(148, 77, 206),
+  lance: (color: rgb(148 77 206),
     photo-index: 9),
-  estelle: (color: rgb(17, 148, 87),
+  estelle: (color: rgb(17 148 87),
     photo-index: 6),
-  edd: (color: rgb(211, 43, 43),
+  edd: (color: rgb(211 43 43),
     photo-index: 5),
-  minerva: (color: rgb(167, 87, 83),
+  minerva: (color: rgb(167 87 83),
     photo-index: 11),
-  viper: (color: rgb(216, 40, 163),
+  viper: (color: rgb(216 40 163),
     photo-index: 7),
-  ryan: (color: rgb(92, 165, 155),
+  ryan: (color: rgb(92 165 155),
     photo-index: 10),
-  vngelica: (color: rgb(190, 190, 190),
+  vngelica: (color: rgb(190 190 190),
     photo-index: 16),
-  wade: (color: rgb(97, 89, 129),
+  wade: (color: rgb(97 89 129),
     photo-index: 4),
-  scott: (color: rgb(158, 152, 119),
+  scott: (color: rgb(158 152 119),
     photo-index: 12),
-  susie: (color: rgb(243, 238, 189),
+  susie: (color: rgb(243 238 189),
     photo-index: 13),
-  zoelle: (color: rgb(91, 108, 139),
+  zoelle: (color: rgb(91 108 139),
     photo-index: 14),
-  zarah: (color: rgb(106, 114, 39),
+  zarah: (color: rgb(106 114 39),
     photo-index: 15)    
 );
 
@@ -130,15 +130,15 @@ $data in $chara {
 html {
   text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: rgb(25, 25, 25);
+  background-color: rgb(25 25 25);
 }
 
 ::selection {
-  background: rgb(120, 120, 120);
+  background: rgb(120 120 120);
 }
 
 ::-moz-selection {
-  background: rgb(120, 120, 120);
+  background: rgb(120 120 120);
 }
 
 ul {
@@ -211,7 +211,7 @@ ul {
 .header {
   width: 100%;
   border: #f5f5f5 0px solid;
-  background-color: rgb(44, 44, 44);
+  background-color: rgb(44 44 44);
   margin: 0px auto;
   background: url(../assets/img/bg_stripe.png) fixed repeat;
   // background-size: cover;
@@ -312,9 +312,8 @@ ul {
     position: relative;
   }
   h3{
-    color: #2b2b2b;
+    color: rgba(30 30 30);
     margin-bottom: 1rem;
-    // font-family: 'Yusei Magic', sans-serif !important;
   }
   img{
     width: 130px;
@@ -331,7 +330,7 @@ ul {
     position: absolute;
     right: -35px;
     background: #ddd;
-    color: #2b2b2b;
+    color: rgb(30 30 30);
     padding: 0.5em 0.8em;
     border-radius: 3px;
     @include prefix(transform, rotate(5deg), webkit moz ms);
@@ -360,9 +359,9 @@ ul {
       width: 9rem;
       font-size: 1.5rem;
       border-radius: 3px;
-      box-shadow: 2px 2px 5px rgba(0 0 0/0.2);
       font-weight: bold;
-      text-shadow: 2px 2px 3px rgba(0 0 0/0.3);
+      text-shadow: 2px 2px 3px rgba(0 0 0 / 0.3);
+      @include prefix(box-shadow, 2px 2px 5px rgba(0 0 0 / 0.2), webkit);
     }
     p:nth-child(2) {
       margin-top: 0.2em;
@@ -425,10 +424,10 @@ ul {
   width: $chara-photo-box-width;
   height: $chara-photo-box-height;
   background: url(../assets/img/bg_stripe.png) fixed repeat;
-  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3), inset 0px 0px 10px 3px rgba(0, 0, 0, 0.4);
-  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3), inset 0px 0px 10px 3px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0 0 0 / 0.3), inset 0px 0px 10px 3px rgba(0 0 0 / 0.4);
+  box-shadow: 5px 5px 5px 0px rgba(0 0 0 / 0.3), inset 0px 0px 10px 3px rgba(0 0 0 / 0.4);
   opacity: 1;
-  transition: 0.4s ease;
+  @include prefix(transition, all 0.4s ease, webkit moz);
 }
 
 .nameSticker {
@@ -461,9 +460,9 @@ ul {
 }
 
 .duoPath {
-  stroke-opacity: 1  !important;
-  stroke-dasharray: 10  !important;
-  animation: dash 0.7s forwards linear infinite  !important;
+  stroke-opacity: 1 !important;
+  stroke-dasharray: 10 !important;
+  animation: dash 0.7s forwards linear infinite !important;
 }
 
 .duoPathBase {
@@ -480,7 +479,6 @@ ul {
   from {
     stroke-dashoffset: 1500;
   }
-
   to {
     stroke-dashoffset: 0;
   }
@@ -490,7 +488,6 @@ ul {
   from {
     stroke-dashoffset: 0;
   }
-
   to {
     stroke-dashoffset: 20;
   }
@@ -501,7 +498,7 @@ ul {
   border: 0px solid lightgrey;
   font-size: 0.75em;
   cursor: pointer;
-  transition: 0.4s ease;
+  @include prefix(transition, all 0.4s ease, webkit moz);
   @include prefix(transform, translateX(-50%) translateY(-50%), webkit moz ms);
   text-shadow: 1px 1px 0 black,
 }
@@ -513,7 +510,7 @@ ul {
   border: 0px solid #000;
   padding: 2px 0 2px 0;
   line-height: 100%;
-  transition: 0.4s ease;
+  @include prefix(transition, all 0.4s ease, webkit moz);
   text-shadow:
     -1px 1px 0 black,
     1px 1px 0 black,
@@ -561,7 +558,7 @@ ul {
   left: 0;
   z-index: 1000;
   opacity: 0;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0 0 0 / 0.6);
   @include prefix(transition, all 0.3s, webkit moz);
 }
 
@@ -726,7 +723,7 @@ ul {
     background-size: 51px 47px;
     // box-shadow: -5px -5px 5px 0px rgba(0, 0, 0, 0.5);
     filter: drop-shadow(2px 2px 1px rgb(0 0 0 / 0.5));
-    transition: 0.2s ease;
+    @include prefix(transition, all 0.2s ease, webkit moz);
   }
 
   li:hover,
@@ -756,7 +753,7 @@ ul {
 .bioDetailTabs li {
   opacity: 0.5;
   font-size: 1rem;
-  background-color: rgba(50, 50, 50, 1);
+  background-color: rgb(50 50 50 / 1);
   padding: 0.33rem 1rem 0.2rem 1rem;
   float: left;
   margin-left: 0.5rem;
@@ -773,7 +770,7 @@ ul {
 
 .bioDetail {
   padding: 20px 45px 110px 50px;
-  background-color: rgba(50, 50, 50, 1);
+  background-color: rgb(50 50 50 / 1);
   line-height: 150%;
   right: -30px;
   bottom: 40px;
@@ -811,7 +808,7 @@ ul {
     float: right;
     background-color: white;
     overflow: hidden;
-    @include prefix(box-shadow, -8px -8px 0px 0px rgba(0, 0, 0, 1), webkit);
+    @include prefix(box-shadow, -8px -8px 0px 0px rgb(0 0 0 / 1), webkit);
     @include prefix(transition, all 0.4s, webkit moz);
     image-rendering: -moz-crisp-edges;
     // img {
@@ -831,7 +828,7 @@ ul {
 .themes div {
   width: 35px;
   height: 35px;
-  background: rgb(110, 110, 110) url(../assets/img/icon_music.svg) no-repeat center center;
+  background: rgb(110 110 110) url(../assets/img/icon_music.svg) no-repeat center center;
   border-radius: 40px;
   margin-bottom: 10px;
   cursor: pointer;
@@ -892,9 +889,7 @@ ul {
     border: none;
     height: auto;
     cursor: pointer;
-    -webkit-transition: 0.4s all;
-    -moz-transition: 0.4s all;
-    transition: 0.4s all;
+    @include prefix(transition, 0.4s all, webkit moz);
   }
 
   img:hover {
@@ -985,7 +980,7 @@ $rel-title-top-offset: -20px;
 $rel-arrow-width: 160px;
 
 .relationshipPage {
-  background-color: rgba(40, 40, 40, 1);
+  background-color: rgb(40 40 40 / 1);
   line-height: 150%;
   width: $rel-page-width;
   height: $rel-page-height;
@@ -1024,8 +1019,8 @@ $rel-arrow-width: 160px;
   width: $chara-photo-box-width;
   height: $chara-photo-box-height;
   background: url(../assets/img/bg_stripe.png) fixed repeat;
-  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3), inset 0px 0px 10px 3px rgba(0, 0, 0, 0.4);
-  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3), inset 0px 0px 10px 3px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0 0 0/0.3), inset 0px 0px 10px 3px rgba(0 0 0/0.4);
+  box-shadow: 5px 5px 5px 0px rgba(0 0 0/0.3), inset 0px 0px 10px 3px rgba(0 0 0/0.4);
 }
 
 .relTitle {
@@ -1150,7 +1145,7 @@ $rel-arrow-width: 160px;
 
 .shimmer {
   color: rgba(218, 196, 101);
-  -webkit-mask:linear-gradient(-60deg,#fff 30%,rgba(255, 255, 255, 0.333),#fff 70%) right/300% 100%;
+  -webkit-mask:linear-gradient(-60deg,#fff 30%,rgba(255 255 255 / 0.333), #fff 70%) right/300% 100%;
   background-repeat: no-repeat;
   animation: shimmer 1s infinite;
   padding: 0px 2px;
@@ -1247,7 +1242,7 @@ $rel-arrow-width: 160px;
   }
 
   .md-modal {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgb(0 0 0 / 0.2);
     width: 100%;
     overflow-y: auto;
   }
@@ -1298,7 +1293,7 @@ $rel-arrow-width: 160px;
   }
 
   .outfitSelect li {
-    filter: drop-shadow(5px 4px 0px rgb(150 150 150));    
+    @include prefix(filter, drop-shadow(5px 4px 0px rgb(150 150 150)), webkit moz);
   }
 
   .bioDetail {
