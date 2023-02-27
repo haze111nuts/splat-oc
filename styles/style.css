@@ -683,7 +683,7 @@ ul {
 .bioBasic,
 .bioDetail,
 .relDetail {
-  font-size: 14px;
+  font-size: 0.89rem;
 }
 
 .bioHeader {
@@ -703,28 +703,21 @@ ul {
 
 .bioBasic {
   background-color: #000;
-  padding: 30px 25px 30px 25px;
+  padding: 30px 25px;
   width: 215px;
   top: 50px;
   left: 260px;
   z-index: 5;
 }
 .bioBasic table tr td:first-child {
-  padding: 1px 7px 1px 5px;
+  padding: 1px 0.5em 1px 0.4em;
 }
 .bioBasic table tr td:nth-child(2) {
-  padding-left: 5px;
-}
-.bioBasic td div {
-  width: 15px;
-  height: 15px;
-  margin-right: 3px;
-  border-radius: 15px;
-  display: inline-block;
+  padding-left: 0.3em;
 }
 .bioBasic .sectionLabel {
-  margin: 10px auto 5px auto;
-  padding-bottom: 2px;
+  margin: 0.7em auto 0.3em auto;
+  padding-bottom: 0.1em;
   width: 150px;
   text-align: center;
 }
@@ -789,7 +782,7 @@ ul {
   padding: 5px 20px;
   text-align: center;
   background-image: linear-gradient(137deg, #2b2b2b 14.29%, #000000 14.29%, #000000 50%, #2b2b2b 50%, #2b2b2b 64.29%, #000000 64.29%, #000000 100%);
-  background-size: 51.32px 47.86px;
+  background-size: 51px 47px;
   filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.5));
   transition: 0.2s ease;
 }
@@ -840,11 +833,11 @@ ul {
 
 .bioDetailTabs li {
   opacity: 0.5;
-  font-size: 15px;
+  font-size: 1rem;
   background-color: rgb(50, 50, 50);
-  padding: 5px 15px 3px 15px;
+  padding: 0.33rem 1rem 0.2rem 1rem;
   float: left;
-  margin-left: 10px;
+  margin-left: 0.5rem;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   cursor: pointer;
@@ -875,12 +868,12 @@ ul {
   height: 350px;
 }
 .bioDetailInner .itemIcon {
-  height: 37px;
+  height: 2.5em;
   display: inline-block;
   vertical-align: middle;
 }
 .bioDetailInner ul li {
-  margin-bottom: 10px;
+  margin-bottom: 0.65em;
 }
 
 .refSheets {
@@ -922,7 +915,7 @@ ul {
 }
 
 .focusedTheme {
-  background-color: #bbb !important;
+  background-color: #ddd !important;
 }
 
 .miniBar {
@@ -1126,13 +1119,13 @@ ul {
   border: 2px white solid;
   width: 135px;
   height: 155px;
-  background: url(../assets/img/bg1.png) fixed repeat;
+  background: url(../assets/img/bg_stripe.png) fixed repeat;
   -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3), inset 0px 0px 10px 3px rgba(0, 0, 0, 0.4);
   box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3), inset 0px 0px 10px 3px rgba(0, 0, 0, 0.4);
 }
 
 .relTitle {
-  top: -10px;
+  top: -0.33rem;
   left: 315px;
   width: 160px;
   height: 155px;
@@ -1150,7 +1143,7 @@ ul {
   font-size: 0.8rem;
 }
 .relTitle .middle {
-  font-size: 20px;
+  font-size: 1.3rem;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
@@ -1159,7 +1152,7 @@ ul {
 }
 .relTitle .upper,
 .relTitle .lower {
-  height: 50px;
+  height: 3.9em;
   line-height: 130%;
 }
 .relTitle .upper {
@@ -1342,10 +1335,10 @@ ul {
 }
 @media only screen and (max-width: 959px) {
   .header h1 {
-    font-size: 25px;
+    font-size: 1.55rem;
   }
   .header .beta {
-    font-size: 12px;
+    font-size: 0.75rem;
   }
   .md-modal {
     background-color: rgba(0, 0, 0, 0.2);
@@ -1471,7 +1464,10 @@ ul {
     left: 83%;
   }
   .header h1 {
-    font-size: 25px;
+    font-size: 1.4rem;
+  }
+  .header .beta {
+    font-size: 0.6rem;
   }
   .bioOutfits {
     padding-top: 500px;

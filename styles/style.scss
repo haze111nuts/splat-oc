@@ -608,7 +608,7 @@ ul {
 .bioBasic,
 .bioDetail,
 .relDetail {
-  font-size: 14px;
+  font-size: 0.89rem;
 }
 
 // Header
@@ -632,34 +632,24 @@ ul {
 // Basic Info Panel
 .bioBasic {
   background-color: #000;
-  padding: 30px 25px 30px 25px;
+  padding: 30px 25px;
   width: 215px;
   top: 50px;
   left: 260px;
   z-index: 5;
 
   table tr td:first-child {
-    padding: 1px 7px 1px 5px;
+    padding: 1px 0.5em 1px 0.4em;
   }
 
   table tr td:nth-child(2) {
-    padding-left: 5px;
-  }
-
-  td div {
-    width: 15px;
-    height: 15px;
-    margin-right: 3px;
-    border-radius: 15px;
-    display: inline-block;
-    // clip-path: polygon(100% 50%, 80% 50%, 80% 100%, 20% 100%, 20% 50%, 0 50%, 50% 0);
-    // clip-path: polygon(0 60%, 20% 30%, 7% 16%, 100% 0, 85% 95%, 70% 80%, 40% 100%);
+    padding-left: 0.3em;
   }
 
   // Traits section
   .sectionLabel {
-    margin: 10px auto 5px auto;
-    padding-bottom: 2px;
+    margin: 0.7em auto 0.3em auto;
+    padding-bottom: 0.1em;
     width: 150px;
     text-align: center;
   }
@@ -733,7 +723,7 @@ ul {
     padding: 5px 20px;
     text-align: center;
     background-image: linear-gradient(137deg, #2b2b2b 14.29%, #000000 14.29%, #000000 50%, #2b2b2b 50%, #2b2b2b 64.29%, #000000 64.29%, #000000 100%);
-    background-size: 51.32px 47.86px;
+    background-size: 51px 47px;
     // box-shadow: -5px -5px 5px 0px rgba(0, 0, 0, 0.5);
     filter: drop-shadow(2px 2px 1px rgb(0 0 0 / 0.5));
     transition: 0.2s ease;
@@ -743,7 +733,6 @@ ul {
   .focusedOutfit {
     color: white !important;
   }
-
 
   // === Outfit select button group ===
   $outfitButton_degree: 4deg, -2deg, 1deg, -3deg, 2deg;
@@ -766,11 +755,11 @@ ul {
 
 .bioDetailTabs li {
   opacity: 0.5;
-  font-size: 15px;
+  font-size: 1rem;
   background-color: rgba(50, 50, 50, 1);
-  padding: 5px 15px 3px 15px;
+  padding: 0.33rem 1rem 0.2rem 1rem;
   float: left;
-  margin-left: 10px;
+  margin-left: 0.5rem;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   cursor: pointer;
@@ -798,13 +787,13 @@ ul {
   height: 350px;
 
   .itemIcon {
-    height: 37px;
+    height: 2.5em;
     display: inline-block;
     vertical-align: middle;
   }
 
   ul li {
-    margin-bottom: 10px;
+    margin-bottom: 0.65em;
   }
 }
 
@@ -850,7 +839,7 @@ ul {
 }
 
 .focusedTheme {
-  background-color: #bbb !important;
+  background-color: #ddd !important;
 }
 
 // Mini player
@@ -1034,15 +1023,14 @@ $rel-arrow-width: 160px;
   border: 2px white solid;
   width: $chara-photo-box-width;
   height: $chara-photo-box-height;
-  background: url(../assets/img/bg1.png) fixed repeat;
+  background: url(../assets/img/bg_stripe.png) fixed repeat;
   -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3), inset 0px 0px 10px 3px rgba(0, 0, 0, 0.4);
   box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3), inset 0px 0px 10px 3px rgba(0, 0, 0, 0.4);
 }
 
 .relTitle {
-  top: -10px;
+  top: -0.33rem;
   left: $rel-page-outerPaddingLR + $rel-page-width * 0.5;
-  // border: 1px solid red;
   width: $rel-arrow-width;
   height: $chara-photo-box-height;
   @include prefix(transform, translateX(-50%), webkit moz ms);
@@ -1058,14 +1046,14 @@ $rel-arrow-width: 160px;
   }
 
   .middle {
-    font-size: 20px;
+    font-size: 1.3rem;
     top: 50%;
     @include prefix(transform, translate(-50%, -50%), webkit moz ms);
   }
 
   .upper,
   .lower {
-    height: 50px;
+    height: 3.9em;
     line-height: 130%;
   }
 
@@ -1251,11 +1239,10 @@ $rel-arrow-width: 160px;
 @media only screen and (max-width: 959px) {
   .header {
     h1 {
-      font-size: 25px;
+      font-size: 1.55rem;
     }
-
     .beta {
-      font-size: 12px;
+      font-size: 0.75rem;
     }
   }
 
@@ -1412,11 +1399,15 @@ $rel-arrow-width: 160px;
     }   
     .quote:after {
       left: 83%;
-  } 
-  }  
+    } 
+  }
+
   .header {
     h1 {
-      font-size: 25px;
+      font-size: 1.4rem;
+    }    
+    .beta {
+      font-size: 0.6rem;
     }
   }
 

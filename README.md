@@ -9,20 +9,21 @@ sass --watch styles/style.scss styles/style.css
 
 - [x] (5p) Make creator/author panels
 - [ ] (3p) Improve language button style (it's hardly visible when being shown on top of creator panel)
+- [ ] (1p) Make sure to properly replace -webkit style stuff with the @include prefix() function
 - [ ] (8p) Add a feature to swap view between relationship diagram and simple view?
 - [ ] (5p) Add meta data for Twitter 
 - [ ] (5p) Add fav icon
 - [x] (1p) Refactor image file names
-- [ ] (3p) Change more px to rem/em in the css
+- [x] (3p) Change more px to rem/em in the css
 - [ ] (3p) Improve character bio page style for mobile (it's still not very desirable)
-- [ ] (8p) Add a link/pop-up for smallfry🐟
+- [ ] (8p) Add a link/pop-up for smallfry
 - [ ] (5p) Add simple content warning?
 - [ ] (8p) Implement actual working light box
 - [ ] (13p) Make pop-up page for teams
   - [ ] BBB
   - [ ] RF
 - [ ] (5p) May need actual image loading functionality? (the current one is commented out for not working)
-- [ ] (5p) BUG - Page has weird extra width when shirnking window, it only shows up before window width hits 1200px.
+- [ ] (5p) BUG🪲 - Page has weird extra width when shirnking window, it only shows up before window width hits 1200px.
 
 
 ## 🦑🗑️&nbsp; 2022 TODOs
