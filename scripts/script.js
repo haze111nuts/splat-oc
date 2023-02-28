@@ -56,7 +56,7 @@ var siteData = {
                 imageUrl: "assets/img/creator_58.jpg",
                 subNames: ["Woopa", "烏波", "ㄨㄆ"],
                 infoList:[
-                    "負責角色各種設定的優化、延伸、補完等等。也會幫忙填寫網站部分的文稿。負責部分佔比較多的角色包含艾德、尤尼、偉德、毒牙。	",
+                    "負責角色各種設定的優化、延伸、補完等等。也會幫忙填寫跟修訂網站文稿。認養的角色包含艾德、尤尼、偉德、毒牙、蘭斯。	",
                     "《漆彈資歷》<br>一代時期只有看Haze玩比較多，二代全X。MAIN水栓。"
                 ]
             }
@@ -633,8 +633,10 @@ function setUpCreatorInfo(siteInfo) {
 }
 
 function setupLang() {
-    $(".langNav").removeClass("focusOn" + currentLang);
-    $(".langNav").addClass("focusOn" + nextLang);
+    $(".langSwitch li:nth-child(1)").removeClass("focusOn" + nextLang);
+    $(".langSwitch li:nth-child(1)").addClass("focusOn" + currentLang);
+    $("#lang"+nextLang).removeClass("focusedLang");
+    $("#lang"+currentLang).addClass("focusedLang");
     if (currentLang == "CH") {
         setupStuff(relationshipData_ch, bioData_ch, siteData[currentLang.toLowerCase()]);
     } else {

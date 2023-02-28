@@ -8,8 +8,8 @@ sass --watch styles/style.scss styles/style.css
 ## 🦑📅&nbsp; Current TODOs
 
 - [x] (5p) Make creator/author panels
-- [ ] (3p) Improve language button style (it's hardly visible when being shown on top of creator panel)
-- [ ] (1p) Make sure to properly replace -webkit style stuff with the @include prefix() function
+- [x] (3p) Improve language button style (it's hardly visible when being shown on top of creator panel)
+- [x] (1p) Make sure to properly replace -webkit style stuff with the @include prefix() function
 - [ ] (8p) Add a feature to swap view between relationship diagram and simple view?
 - [ ] (5p) Add meta data for Twitter 
 - [ ] (5p) Add fav icon
