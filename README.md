@@ -10,12 +10,13 @@ sass --watch styles/style.scss styles/style.css
 - [x] (5p) Make creator/author panels
 - [x] (3p) Improve language button style (it's hardly visible when being shown on top of creator panel)
 - [x] (1p) Make sure to properly replace -webkit style stuff with the @include prefix() function
-- [ ] (8p) Add a feature to swap view between relationship diagram and simple view?
 - [ ] (5p) Add meta data for Twitter 
 - [ ] (5p) Add fav icon
+- [ ] (8p) Add a feature to swap view between relationship diagram and simple view?
 - [x] (1p) Refactor image file names
 - [x] (3p) Change more px to rem/em in the css
 - [ ] (3p) Improve character bio page style for mobile (it's still not very desirable)
+- [ ] (1p) Remove unused image preload files
 - [ ] (8p) Add a link/pop-up for smallfry
 - [ ] (5p) Add simple content warning?
 - [ ] (8p) Implement actual working light box

@@ -5,7 +5,7 @@
 var siteData = {
     en: {
         title: "Hazy's SplatVerse",
-        description: ["Hazy's Splatoon OC bio/lore dump", "⚠️Currently under construction","English translation still in progress so plz come back later :s"],
+        description: ["Hazy's Splatoon OC bio/lore dump", "⚠️Currently under construction","English translation still in progress plz come back later :s"],
         bioDetailTabs: ["Bio", "Personality", "Trivia"],
         creatorList: [
             {

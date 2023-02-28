@@ -166,7 +166,7 @@ $langSwitch-fontSize: 0.9rem;
 
 .langSwitch{
   background-color: rgb(25 25 25);
-  border: 4px solid #6d6d6d;
+  border: 3px solid #aaa;
   border-radius: 5px;
   color: #aaa;
   box-shadow: 3px 3px 5px rgb(0 0 0/0.5), inset 0 0 10px rgb(0 0 0 / 0.5);
@@ -316,7 +316,7 @@ $langSwitch-fontSize: 0.9rem;
     }
   }
   .hookCardInner{
-    background-color: dimgrey;
+    background-color: rgb(90, 90, 90);
     padding: 1.9rem;
     position: relative;
   }
@@ -329,6 +329,7 @@ $langSwitch-fontSize: 0.9rem;
     height: 130px;
     border-radius: 130px;
     transition: 0.4s ease;
+    @include prefix(box-shadow, 2px 2px 5px rgba(0 0 0 / 0.2), webkit);
   }
   img:hover{
     @include prefix(transform, scale(1.1), webkit moz ms);
