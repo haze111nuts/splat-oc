@@ -455,7 +455,7 @@ function modalEffectsInit(bioData, relationshipData) {
             $(".themes div").addClass("disabled");      
             // removeModal(classie.has(el, "md-setperspective"));
             classie.remove(el, "md-show");
-            $(".langNav").removeClass("blur");
+            $(".langSwitch").removeClass("blur");
             $(document.body).removeClass("noscroll");
             removePlayer();
         }
@@ -486,7 +486,7 @@ function modalEffectsInit(bioData, relationshipData) {
             setTimeout(function () {
                 classie.add(currentModal, "md-show");
             }, 1);
-            $(".langNav").addClass("blur");
+            $(".langSwitch").addClass("blur");
             if (classie.has(el, "md-setperspective")) {
                 setTimeout(function () {
                     classie.add(document.documentElement, "md-perspective");
