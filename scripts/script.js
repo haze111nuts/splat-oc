@@ -696,11 +696,9 @@ $(document).ready(function () {
     }
     setupLang();
 
-    $("[id^=lang]").each(function () {
-        $(this).click(function () {
-            [currentLang, nextLang] = [nextLang, currentLang];
-            setupLang();
-        })
+    $(".langSwitch").click(function () {
+        [currentLang, nextLang] = [nextLang, currentLang];
+        setupLang();
     })
 
     setTimeout(() => $(".se-pre-con").fadeOut("slow"), 200);
