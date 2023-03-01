@@ -22,7 +22,7 @@ var siteData = {
             {
                 name: "58",
                 title: "Co-Creator",
-                quote: "SUUUCK MYYY HEADCANONNN!!!!!!",
+                quote: "SUUCK MYY HEADCANONN!!!",
                 imageUrl: "assets/img/creator_58.jpg",
                 subNames: ["Woopa", "Xolot"],
                 infoList:[
