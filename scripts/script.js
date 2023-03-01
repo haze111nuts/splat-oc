@@ -16,18 +16,18 @@ var siteData = {
                 subNames: ["Hazy", "Hazel", "HZ"],
                 infoList:[
                     "Hi I am one who designed the art/concepts/story for these OCs, I also made this website.",
-                    "I'm very shy and I cringe at myself everyday, so it means alot to me that someone is actually looking at this page🥺. Thanks so much for visiting!!!"
+                    "I'm very shy and I cringe at myself everyday, so it means a lot to me that someone is actually looking at this page🥺. Thanks so much for visiting!!!"
                 ]
             },
             {
                 name: "58",
                 title: "Co-Creator",
-                quote: "----------",
+                quote: "SUUCK MYY HEADCANONN!!!",
                 imageUrl: "assets/img/creator_58.jpg",
                 subNames: ["Woopa", "Xolot"],
                 infoList:[
-                    "",
-                    ""
+                    "I help with flesh out these OC's personality and stories! I write some of the text blocks and also handle website coding optimization.",
+                    "I am still practicing my writing skill so I would love any feedback for the wording and text on this site!"
                 ]
             }
         ],
@@ -56,7 +56,7 @@ var siteData = {
                 imageUrl: "assets/img/creator_58.jpg",
                 subNames: ["Woopa", "烏波", "ㄨㄆ"],
                 infoList:[
-                    "負責角色各種設定的優化、延伸、補完等等。也會幫忙填寫跟修訂網站文稿。認養的角色包含艾德、尤尼、偉德、毒牙、蘭斯。	",
+                    "負責角色各種設定的優化、延伸、補完等等。也會幫忙填寫跟修訂網站文稿和優化網站編碼。認養的角色包含艾德、尤尼、偉德、毒牙、蘭斯。	",
                     "《漆彈資歷》<br>一代時期只有看Haze玩比較多，二代全X。MAIN水栓。"
                 ]
             }
