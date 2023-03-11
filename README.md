@@ -1,4 +1,6 @@
 
+![banner](https://haze111nuts.github.io/splat-oc/assets/img/banner.png)
+
 ## 🦑📝&nbsp; Project Notes
 - The link to the site is [https://haze111nuts.github.io/splat-oc/](https://haze111nuts.github.io/splat-oc/)
 - Remember to run sass to compile style for any local change
