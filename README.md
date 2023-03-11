@@ -10,7 +10,7 @@ sass --watch styles/style.scss styles/style.css
 - [x] (5p) Make creator/author panels
 - [x] (3p) Improve language button style (it's hardly visible when being shown on top of creator panel)
 - [x] (1p) Make sure to properly replace -webkit style stuff with the @include prefix() function
-- [ ] (5p) Add meta data for Twitter 
+- [x] (5p) Add meta data for Twitter 
 - [ ] (5p) Add fav icon
 - [ ] (8p) Add a feature to swap view between relationship diagram and simple view?
 - [x] (1p) Refactor image file names
