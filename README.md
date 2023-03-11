@@ -1,5 +1,7 @@
 
-![banner](https://haze111nuts.github.io/splat-oc/assets/img/banner.png)
+<p align="center">
+  <img src="https://haze111nuts.github.io/splat-oc/assets/img/banner.png"/>
+</p>
 
 ## 🦑📝&nbsp; Project Notes
 - The link to the site is [https://haze111nuts.github.io/splat-oc/](https://haze111nuts.github.io/splat-oc/)
