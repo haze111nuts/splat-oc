@@ -263,7 +263,7 @@ var relationshipData_en = [
         label: "Friends",
         chara1: "yoni",
         chara2: "estelle",
-        desc1: "Cool gal!!!",
+        desc1: "Booyah!!",
         desc2: "So funny and weird",
         content: [
             "Under construction..."
@@ -274,7 +274,7 @@ var relationshipData_en = [
         label: "Friends",
         chara1: "yoni",
         chara2: "xiu",
-        desc1: "Let's hang out!!!",
+        desc1: "bOoYaAH!!",
         desc2: "A little wary of",
         content: [
             "Under construction..."
@@ -395,7 +395,7 @@ var relationshipData_en = [
         label: "Childhood<br>Friends",
         chara1: "yoni",
         chara2: "blade",
-        desc1: "Let's play!",
+        desc1: "BEST BRO!!",
         desc2: "Annoyed by",
         content: [
             "Under construction..."
@@ -406,7 +406,7 @@ var relationshipData_en = [
         label: "Friends",
         chara1: "yoni",
         chara2: "axel",
-        desc1: "Best bro!!!",
+        desc1: "BOOOYAAH!!!",
         desc2: "What an oddball",
         content: [
             "Under construction..."
