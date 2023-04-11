@@ -701,5 +701,5 @@ $(document).ready(function () {
         setupLang();
     })
 
-    setTimeout(() => $(".se-pre-con").fadeOut("slow"), 200);
+    setTimeout(() => $(".se-pre-con").fadeOut("slow"), 300);
 });
