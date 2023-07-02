@@ -248,7 +248,7 @@ function setUpBioPageFor(charaBioData) {
     bioBasicHTML += "<tr><td>Mains</td><td>" + charaBioData.mains + "</td></tr>";
     bioBasicHTML += "</table>";
 
-    var bioQuirkHTML = "<div class='sectionLabel'>Key Trait</div>";
+    var bioQuirkHTML = "<div class='sectionLabel'>Theme</div>";
     bioQuirkHTML += "<ul class='keyTrait'><li>"+charaBioData.quirk+"</li></ul>";
 
     var bioTraitsHTML = "<div class='sectionLabel'>Traits</div>";
