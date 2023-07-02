@@ -773,7 +773,7 @@ var bioData_ch = [
             "無禮、暴躁、囂張",
             "攻擊＆侵略行為",
             "總是打架＆找麻煩",
-            "很照顧自己的奶奶"
+            "對奶奶很孝順"
         ],
         outfits: [
             { name: "通常服", url: "full-body/axel.png" },
