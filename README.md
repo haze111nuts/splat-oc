@@ -15,7 +15,7 @@ sass --watch styles/style.scss styles/style.css
 - [x] (3p) Improve language button style (it's hardly visible when being shown on top of creator panel)
 - [x] (1p) Make sure to properly replace -webkit style stuff with the @include prefix() function
 - [x] (5p) Add meta data for Twitter 
-- [ ] (5p) Add fav icon
+- [x] (5p) Add fav icon (using fruit tart for temp solution)
 - [ ] (8p) Add a feature to swap view between relationship diagram and simple view?
 - [x] (1p) Refactor image file names
 - [x] (3p) Change more px to rem/em in the css
