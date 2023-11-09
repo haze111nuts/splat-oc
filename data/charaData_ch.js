@@ -371,9 +371,13 @@ var relationshipData_ch = [
         descDetail1: "值得敬佩的好姊姊<br>想和她學習",
         descDetail2: "是個很努力的好弟弟<br>很有潛能",
         content: [
-            "小布跟米奈瓦原本交集不是很多，但因為有些共同關係者（艾德、蘭斯、黑娜等），兩人偶爾還是會碰上。",
-            "米奈瓦知道自己的弟弟很癡迷這個叫做小布的男生，也曾經在地下的章魚軍團聽過小布的事蹟，所以一直對他都有點好奇。在見識過小布在戰場上的表現後，認為對方很有潛力，後來還會主動和他搭話。",
-            "小布對米奈瓦的印象就是非常傑出、技術一流的前輩玩家。小布對她的才華是非常羨慕的，總會想要變得像她一樣成功。和她相處時，小布常常顯得有些受寵若驚。",
+            // Being an Octarian Soldier, Minerva had cross path with Blade as Agent 3 a few times. At first, Minerva didn't think much of him because Blade is no match to her, compared to the ex Agent 3 Hannah. However, this all changed on that fateful day when Blade defeated DJ Octavio, which shaken the army's status quo to the core. In an desperate attempt to restore the army's order, Minerva personally intercepted Blade's escape, determined to take him down. To Minerva's surprise, she lost. this encounter is one the main reason that lead Minerva to the surface, searching for anwser to what she is lacking.
+
+            // Blade didn't know Minerva very well at first. To him, Minerva is one of the most brillant player he have ever met, he admires her skill and talent. One day, Minerva approached him, asked about his Agent 3 works, that's when Blade realized that Minerva was the one who intercepted his escape on that day. They bonded over conversation, and started writing each other email for occasional chat. They often discuss about their sibling, Blade would share things about Hannah, and Minerva would talk about Edd.
+
+            // Blade can't help but thinks Minerva as a sister he would like to have. Minerva felt similar, she thought Blade as a pleasant brother that she would love to take care of.
+            "身為章魚軍團的一員，米奈瓦曾經跟３號小布有過幾次接觸。因為米奈瓦已經跟上個３號－漆彈技術一流的黑娜交戰過了幾次，跟漆彈比較不熟的小布對她來說沒有什麼威脅性，她還曾經因為多次擊退３號小布而獲得軍團的表揚。直到小布打倒芥末章魚將軍的那一天，米奈瓦的想法才發生了轉變。注意到整個軍團發生了變化，米奈瓦親自攔截了那時逃跑的小布想挽回現況，但是米奈瓦卻在這個時候輸給了小布。為了尋找自己的不足之處，米奈瓦才決定去陸上尋找答案。",
+            "小布原本跟米奈瓦並不太熟，但因為有些共同關係者（艾德、蘭斯、黑娜等），兩人偶爾還是會碰上。小布對米奈瓦的印象就是非常傑出、技術一流的前輩玩家，小布對她的才華是非常羨慕的，總會想要變得像她一樣成功。某一天米奈瓦突然找上了他，跟小布問起了３號的工作。小布這時才知道，原來他那天打敗的菁英女戰士正是米奈瓦。他們聊上後就打開了話匣子，後來開始很常用電子郵件寄信談天，信中話題常常圍繞在他們的手足上，小布會分享姊姊黑娜的事情，米奈瓦則會分享雙胞胎弟弟艾德的事情。",
             "兩人一次因緣際會對上話後就打開了話匣子，後來開始很常用電子郵件寄信談天，信中話題常常圍繞在他們的手足上，小布會分享姊姊黑娜的事情，米奈瓦則會分享雙胞胎弟弟艾德的事情。",
             "小布一直不由自主的認為米奈瓦散發著一種好姊姊的氣息；米奈瓦則是認為小布散發著一種乖弟弟的氣息。"
         ]
@@ -388,8 +392,9 @@ var relationshipData_ch = [
         descDetail1: "這傢伙<br>也太黏了吧…",
         descDetail2: "真是完美的存在",
         content: [
-            "在章魚軍團的艾德一直都對３號（小布）的事蹟略有所聞。某天３號闖入基地的時候，艾德有了利用３號來逃脫的點子。艾德的計劃是把追著自己的章魚兵引向３號的位置來分散他們的注意力，但沒料到３號迅速解決所有章魚兵然後盯上了自己，結果兩人就打了起來，但在他們還沒分出勝負之前就遭到第三方襲擊並一起被捲入地下鐵事件。他等到事件結束後才正式認識了小布。",
-            "艾德原本就對陸上世界有無限憧憬，並對魷魚這個種族抱有強烈好奇心，還因為無法脫離地下軍團一直處在心智崩潰的邊緣，因此小布那天的現身跟幫助徹底的改變了他的人生。小布可以說是他所有憧憬事物的匯聚體，也是少數真心對他伸出援手的人，艾德對他產生了非常劇烈的感情，甚至在心中無意間神化了小布，曾經說過他是「救世主」。當上朋友後艾德就成天只想著他，迫切的希望可以成為他生活中的一部份。",
+            // When Blade first appeared in Edd's life, Edd was in a period of time where he struggles to defect from the Octarian army. The scene of Agent 3 defeating DJ Octavio meaned so much to Edd that it rekindled his hope. Edd even had yet another escape attempt, this time by following Angent 3 to the surface, but in the end it still failed due to some complication. It wasn't until two years later that they cross path again in the Octo Valley. The appearance of Agent 3 gave Edd a perfect chance to leave, but Edd choose to challenge Agent 3 first on some sort of impulse. Before either could claim victory, they were attacked by someone else and got caught into the Deepsea Metro incident. He finally got to know Blade in person after he reached the surface.
+            "艾德原本就對陸上世界有無限憧憬，並對魷魚這個種族抱有強烈好奇心，還因為無法脫離地下軍團一直處在心智崩潰的邊緣，正因如此３號打倒將軍的舉動帶給了艾德特別大的衝擊。當初艾德試著跟蹤３號離開地下，雖然最後因為一些狀況他還是沒能成功逃脫，但小布的出現還是給艾德重新燃起了離開的希望。直到兩年後，他們才再次在章魚峽谷碰上。３號的出現給了艾德一個脫出軍團的大好機會，明明可以就這樣離開的艾德，卻因為某種衝動先選擇跟３號來一場單挑。在兩人還沒分出勝負之前，他們遭到第三方襲擊，最後一起被捲入地下鐵事件。他等到事件結束後才正式認識了小布。",
+            "小布可以說是艾德所有憧憬事物的匯聚體，也是少數真心對他伸出援手的人。他們幾次相遇的狀況對於艾德來說都是生死的關鍵時刻，可能多少都是吊橋效應作祟，艾德對他產生了非常劇烈的感情，甚至在心中無意間神化了小布，曾經說過他是「救世主」。當上朋友後艾德就成天只想著他，迫切的希望可以成為他生活中的一部份。",
             "在小布因為地下鐵事件的關係而病倒的期間，艾德主動介入並替補了小布在特工和漆彈比賽的位子。小布倒下的這件事對艾德帶來了不小的衝擊，一直讓他的心裡存有一定程度的內疚，為此他做了不少事想要彌補，也讓他在之後對於小布的人身安全特別上心。",
             "小布常常覺得艾德很莫名其妙又很煩，但小布對他基本上就是那種想幫助的心情，或許有部分是因為在艾德身上看到了以前寂寞的自己、又或許只是想要當個好人，因為覺得自己很沒用，才會一直無意間想透過照顧艾德來獲得一點自尊跟自我價值。小布後來也發現他常會不小心一直包容艾德的奇怪行為，雖然也算是喜歡跟艾德黏一起，但後來有開始試著跟他協調和劃清一些界線，不過有時候難免還是會不小心太寵他。",
             "艾德對小布的渴望有很多種層面，不管是心理、戰鬥、生活還是身體方面上都想要跟小布更親密，艾德時不時的暗示跟意義不明的發言總是讓小布連打好幾個冷顫。"
@@ -1046,10 +1051,10 @@ var bioData_ch = [
             { name: "8號", url: "full-body/edd_agent8.png" }
         ],
         bio: [
-            "米奈瓦的雙胞胎弟弟，在地下成長，偶然撿到了來自陸上的禁書所以開始對陸上產生了嚮往，在那之後他的思想開始與章魚軍團的教育背道而馳。他堅信陸上的自由生活比地下的守序社會還要好得多，但抱持這種少數意見讓他變得跟大部分的章魚同事都處不來，也因為行為叛逆和思想異端所以常常被上級懲處，更是因為多次嘗試叛逃而受到特別嚴厲的看管，導致他的逃脫計畫變得更加不順利。這樣長期被困在地下無處可逃的狀況多少讓他變得有些精神崩潰。",
-            "在一次偶然機會下利用闖進基地的３號制定了逃脫計畫，執行中途不幸出了意外並被捲入深海地下鐵事件而變成了８號，但也因此在最後如願到達陸上。當時作為３號出勤的小布對他來說是非常特別的存在，自由後的他執意地要進入小布的生活。兩人當上朋友後，艾德成為了Bad Button Boys的第五個成員，起初因為艾德態度不佳所以跟其他成員關係一直有點尷尬，在經過大家互相努力磨合之後才終於相處的比較融洽。",
+            "米奈瓦的雙胞胎弟弟，在地下成長，小時候偶然撿到了來自陸上的禁書，所以開始對陸上產生了嚮往，在那之後他的思想開始與章魚軍團的教育背道而馳。他堅信陸上的自由生活比地下的守序社會還要好得多，但抱持這種少數意見讓他變得跟大部分的章魚同事都處不來，也因為行為叛逆和思想異端所以常常被上級懲處，更是因為多次嘗試叛逃而受到特別嚴厲的看管，導致他的逃脫計畫變得更加不順利。這樣長期被困在地下無處可逃的狀況多少讓他變得有些精神崩潰。",
+            "曾在３號擊敗將軍時試著趁亂逃脫但沒能成功，直到兩年後的某天３號再次出現才又有了逃脫的機會，在這過程中卻出了意外被捲入深海地下鐵事件而變成了８號，最後總算在經歷這些風波後如願到達陸上。當時作為３號出勤的小布對他來說是非常特別的存在，自由後的他執意地要進入小布的生活。兩人當上朋友後，艾德成為了Bad Button Boys的第五個成員，起初因為艾德態度不佳所以跟其他成員關係一直有點尷尬，在經過大家互相努力磨合之後才終於相處的比較融洽。",
             "還在地下時總是渴望想接觸更多外界的知識，所以以前就對資訊安全的領域特別有興趣，在章魚軍團時也報名了駭客訓練營，對於破解電腦和資訊追蹤特別有一套，也是暗網的常客。",
-            "因為嚮往自由的感覺，所以他特別喜歡在陸上欣賞廣闊的風景，也因此提起了對開車的興趣。目前沒有固定居所，獨自住在一個小型房車裡，偶爾會以開大卡車作為兼職。",
+            "因為嚮往自由的感覺，所以他特別喜歡在陸上欣賞廣闊的風景，也因此提起了對開車的興趣。目前沒有固定居所，獨自住在一個小型房車裡。",
             "有持續在跟魚乾爺爺來往，而且很乾脆地接受了對方的請求並正式加入New!噴嘴部隊，一半是覺得欠爺爺一點人情，一半是想對章魚軍團報復。數次與３號和４號一起在前線出征，也因為對地下的內部構造和科技比較了解所以會在後台給予資訊技術上的支援，偶爾還會向飯田請求一些電子工程上的指導。"
         ],
         personality: [
