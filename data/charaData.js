@@ -508,7 +508,7 @@ var relationshipData_en = [
         desc1: "Annoyed by",
         desc2: "Wants",
         content: [
-            "When Agent 3 defeated DJ Octavio, it was like a ray of light shone on him, this gave him hope of escape from underground. He then followed Agent 3 to get out but it ended in failure due to some particular complication. "
+            "Under construction..."
         ]
     },
     {
@@ -819,7 +819,6 @@ var bioData_en = [
         ],
         bio: [
             "Under construction..."
-
         ],
         personality: [
             "Under construction..."
