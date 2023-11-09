@@ -818,23 +818,11 @@ var bioData_en = [
             { name: "S3", url: "full-body/blade_sp3.png" }
         ],
         bio: [
-            "Blade used to be a gentle and docile boy when he was little. He was favored by his mother, much to his older sister Hannah's dismay. After their mother passed, Hannah's hatred toward him turned into full-blown domestic violence. The long-term abuse from his sister turned Blade into a gloomy introvert.",
-            "Following Hannah's step, he took interest in playing Turf War when he was young, but Hannah's constant belittlement toward his skill crushed his confidence, caused him to utterly gave up on sport, and he lost any will to social with others.",
-            "After being abruptly scouted by Captain Cuttlefish as Agent 3, he received support from captain and the first two agents, it was then he decided to step out his comfort zone and start making change. The work and training he has done as Agent 3 gave him the necessary boost in confidence, which allowed him to regain his will to play.",
-            "He then met Axel and other friends, they eventually got along well as Blade is now a bit more opened-up to people. They decided to form a team called \"Bad Button Boys\" with Blade as leader. As his sister Hannah moved out, he currently live alone in a house that is under his Father's name. His Father rarely visit him, but he supports Blade financially from time to time.",
-            "Blade is diligent on his role as Agent 3, he met Edd as Agent 8 in the Deepsea Metro ordeal, and then eventually became Captain of New Squidbeak Splatoon and met Wade, the new Agent 3. He recruited both Octoling into Bad Button Boys."
+            "Under construction..."
+
         ],
         personality: [
-            "Blade used to be a timid but kindhearted boy, a bit needy at times. His older sister Hannah often play pranks on him to a point that he would get very scared at things like imaginary monsters.",
-            // "Hannah's abuse and insult had only escalated after their mother passed. Hannah despises young Blade's Splat skill, she frequently mocked his mistake. Living under such condition caused Blade to develop a very withdrawn personality. He often tried to act cool in front of others in order to cope with his insecurity.",
-            // "He is ",
-            "Living under Hannah's abuse and insult caused Blade to develop a very withdrawn personality, even more so after their mother passed. He is insecure and anxious around other people, he prefers wearing cloth that could cover his neck, he also had a habit to use his visor to conseal his face and avoid making eye contact with stranger. He often has depressed and nervous",
-
-
-            "*Blade's overall personality and personal antic*",
-            "*His true kindhearted nature*",
-            "*His tendency to do the right thing*",
-            "*He's attitude toward love*"
+            "Under construction..."
         ],
         trivia: [
             "His name was acutally Branden. It was after Axel started calling him \"Blade\" which came from his online handle, the rest of his friends started doing the same, and he ended up officially changing his name to Blade",
@@ -1023,17 +1011,10 @@ var bioData_en = [
             { name: "Agent 8", url: "full-body/edd_agent8.png" }
         ],
         bio: [
-            "Edd is Minerva's younger twin brother, He grew up in Octarian society like most other octolings. During his elementary school years, he came across some Inkopolis books that is banned in Octarian world, it sparked his interest to the Surface. Contrary to the Octarian army's teaching, he believed that free life on the surface is much superior than the obedient society in the underground. It was still a very unpopular opinion back then, not only did he have trouble getting along with his peers, he was also harshly disciplined for his insubordination and false belief. He was constantly under surveillance after many failed escape attempts, so he was unable to leave even when many others defected after that fateful event. It made him a very bitter person.", 
-            "One day, Agent 3 broke into the section of Octarian base he was in. Edd used him to create an oppertunity for escaping from the army, but unforturnately he got caught up in the Deepsea Metro Ordeal, where he become Agent 8 and eventually made it to the surface. Blade, who is still Angent 3 at the time, became a very special person to him, and Edd found his way into Blade's Splatoon team. His uncooperative attittude caused some friction amongst the team, it took them time and effort, but they eventually got along better.",
+            "Under construction..."
         ],
         personality: [
-            "An opinionated person, he has an inquiring mind and is always quesioning the social norms when he is still in the underground. He used to be talktive over his ideals, but being an Octarian society reject had made him taciturn and morose. Nowdays he keeps his distance with others, observing people from the side.",
-            "He does thing his own way and does not abide by the rules, He hates being forced into a situation against his will.",
-            "做事非常的我行我素，而且不喜歡被束縛住，因而嚮往章魚軍團世界外的自由生活，也因如此非常的討厭那種自己束手無策、什麼都做不了的狀況。",
-            "對他人非常不信任，因而有點自私且常常不在乎他人的感受，行事總以自己的利益為優先，所以會有些不擇手段，甚至會利用別人來達到自己想要的目的。",
-            "很少跟別人溝通，也不在乎別人對自己的看法，時常以強迫的方式讓別人照著自己的想法走，即使他的理由很正當又或是出自好心。被他人責怪時不管是不是自己的錯都不會替自己辯解，因此很容易鬧出對自己不利的誤會，對於這件事艾德似乎只覺得無所謂。",
-            "小布的出現讓他心中的各種希望復燃，和小布相處讓他找回了一點對世界的信任，也在加入Bad Button Boys後開始感受到以前沒有的歸屬感，這也漸漸的改善了他利己又自私的觀念。不過因為他不善於溝通所以關心別人的方式通常都很怪。",
-            "曾經多次在章魚軍團的懲戒所被長時間關禁閉並接受行為矯正，長期下來他開始變得會對窄小的地方感到非常不適。"
+            "Under construction..."
         ],
         trivia: []
     },
