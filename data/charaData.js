@@ -1012,6 +1012,9 @@ var bioData_en = [
         bio: [
             "Under construction..."
         ],
+        personality: [
+            "Under construction..."
+        ],
         trivia: []
     },
     {
